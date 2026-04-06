@@ -13,7 +13,7 @@ Prosjektet gjør tre ting:
 - `scripts/build_data.py`
   Leser Excel-filen, bygger `data/hksstats.sqlite`, oppdaterer `data/name_match_review.csv`, og genererer JSON for nettsiden.
 - `scripts/build_static_site.py`
-  Pakker den statiske nettsiden til `dist/`.
+  Pakker den statiske nettsiden til `dist/` og speiler den til `docs/`.
 - `data/hksstats.sqlite`
   Databasen som nettsiden bygges fra.
 - `data/name_match_review.csv`
@@ -64,13 +64,15 @@ python scripts/build_static_site.py
 
 ## Publisering
 
-Repoet er satt opp for GitHub Pages via `.github/workflows/deploy-pages.yml`.
+Repoet er lagt opp for GitHub Pages fra `main/docs`.
 
-Når innholdet pushes til `main`:
+Når innholdet oppdateres:
 
-1. Data bygges på nytt fra Excel-filen.
-2. Den statiske nettsiden pakkes i `dist/`.
-3. GitHub Pages publiserer `dist/`.
+1. Kjør `python scripts/build_data.py`.
+2. Kjør `python scripts/build_static_site.py`.
+3. Commit og push til `main`.
+
+Da publiserer GitHub Pages innholdet som ligger i `docs/`.
 
 ## Datamodell
 

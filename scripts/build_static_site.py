@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DIST_DIR = ROOT / "dist"
+DOCS_DIR = ROOT / "docs"
 
 
 def copy_if_exists(source: Path, target: Path) -> None:
@@ -27,7 +28,11 @@ def main() -> None:
     copy_if_exists(ROOT / "public" / "data", DIST_DIR / "public" / "data")
     copy_if_exists(ROOT / "public" / "downloads", DIST_DIR / "downloads")
 
-    print(f"Built static site in {DIST_DIR}.")
+    if DOCS_DIR.exists():
+        shutil.rmtree(DOCS_DIR)
+    shutil.copytree(DIST_DIR, DOCS_DIR)
+
+    print(f"Built static site in {DIST_DIR} and mirrored it to {DOCS_DIR}.")
 
 
 if __name__ == "__main__":

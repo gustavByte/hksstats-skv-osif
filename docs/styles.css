@@ -117,7 +117,8 @@ select {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   font-family: "Bricolage Grotesque", sans-serif;
   letter-spacing: -0.04em;
@@ -187,6 +188,100 @@ h2 {
   border: 1px solid var(--line);
   background: rgba(255, 250, 243, 0.86);
   box-shadow: 0 20px 48px rgba(16, 38, 31, 0.08);
+}
+
+.honours-panel {
+  margin-top: 24px;
+}
+
+.stage-intro {
+  margin-top: 0;
+}
+
+.tab-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0 14px;
+}
+
+.tab-button {
+  appearance: none;
+  border: 1px solid rgba(16, 38, 31, 0.14);
+  background: rgba(255, 252, 247, 0.78);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 11px 15px;
+  cursor: pointer;
+  transition:
+    transform 140ms ease,
+    background 140ms ease,
+    border-color 140ms ease;
+}
+
+.tab-button:hover,
+.tab-button.is-active {
+  background: linear-gradient(135deg, rgba(201, 76, 49, 0.15), rgba(122, 140, 65, 0.18));
+  border-color: rgba(16, 38, 31, 0.24);
+  transform: translateY(-1px);
+}
+
+.stage-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.stage-summary span {
+  color: var(--muted);
+}
+
+.honours-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.honour-stage-card {
+  padding: 16px;
+  border-radius: 22px;
+  border: 1px solid rgba(16, 38, 31, 0.08);
+  background:
+    linear-gradient(135deg, rgba(255, 253, 249, 0.82), rgba(244, 236, 223, 0.72)),
+    rgba(255, 251, 245, 0.85);
+}
+
+.honour-stage-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.record-chip {
+  min-width: 150px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(16, 38, 31, 0.06);
+}
+
+.record-chip strong,
+.record-chip span,
+.record-chip small {
+  display: block;
+}
+
+.record-chip span,
+.record-chip small {
+  color: var(--muted);
+}
+
+.honour-table {
+  min-width: 880px;
 }
 
 .filter-panel label {
@@ -400,7 +495,8 @@ code {
   .hero,
   .content-grid,
   .breakdown-grid,
-  .filter-panel {
+  .filter-panel,
+  .honours-grid {
     grid-template-columns: 1fr;
   }
 
@@ -428,6 +524,11 @@ code {
 
   .bar-row {
     grid-template-columns: 1fr;
+  }
+
+  .honour-stage-header,
+  .stage-summary {
+    flex-direction: column;
   }
 
   .leader-card {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T20:03:41",
+  "generatedAt": "2026-04-06T20:36:31",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "years": [
@@ -841,6 +841,4395 @@
       }
     ]
   },
+  "stageHonours": [
+    {
+      "key": "skv-men",
+      "title": "SK Vidar menn",
+      "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+      "organization_code": "SKV",
+      "division": "men",
+      "limit": 5,
+      "stages": [
+        {
+          "stage_number": 1,
+          "stage_label": "01. Bislett",
+          "record": {
+            "stage_label": "01. Bislett",
+            "record_text": "2:49",
+            "record_seconds": 169,
+            "record_holder": "Snorre Holtan Løken",
+            "record_club": "IK Tjalve",
+            "record_year": 2016.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Theodor Berre Jacobsen",
+              "raw_name": "Theodor Berre Jacobsen",
+              "split_text": "2:57",
+              "split_seconds": 177,
+              "percent_of_record": 95.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Tobias Holdø Skog",
+              "raw_name": "Tobias Holdø Skog",
+              "split_text": "3:04",
+              "split_seconds": 184,
+              "percent_of_record": 91.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            },
+            {
+              "rank": 3,
+              "person_name": "Erlend Gjerdevik Sørtveit",
+              "raw_name": "Erlend Gjerdevik Sørtveit",
+              "split_text": "3:06",
+              "split_seconds": 186,
+              "percent_of_record": 90.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 10,
+              "category_rank": 7
+            },
+            {
+              "rank": 4,
+              "person_name": "Steinar Bøe",
+              "raw_name": "Steinar Bøe",
+              "split_text": "3:09",
+              "split_seconds": 189,
+              "percent_of_record": 89.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2024",
+              "year": 2024,
+              "oa_rank": 17,
+              "category_rank": 13
+            },
+            {
+              "rank": 5,
+              "person_name": "Joakhim Mohn",
+              "raw_name": "Joakhim Mohn",
+              "split_text": "3:09",
+              "split_seconds": 189,
+              "percent_of_record": 89.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 19,
+              "category_rank": 15
+            }
+          ]
+        },
+        {
+          "stage_number": 1,
+          "stage_label": "01. St. Hanshaugen",
+          "record": null,
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Andreas Solheim",
+              "raw_name": "Andreas Solheim",
+              "split_text": "3:32",
+              "split_seconds": 212,
+              "percent_of_record": null,
+              "class_code": "MiksSKV",
+              "class_label": "SK Vidar miks",
+              "team_name": "miks-og-bue  2025",
+              "year": 2025,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Eskil Høstad",
+              "raw_name": "Eskil Høstad",
+              "split_text": "3:40",
+              "split_seconds": 220,
+              "percent_of_record": null,
+              "class_code": "MiksSKV",
+              "class_label": "SK Vidar miks",
+              "team_name": "bue-og-miks  2025",
+              "year": 2025,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Thomas Misje Mathiisen",
+              "raw_name": "Thomas Misje Mathiisen",
+              "split_text": "3:43",
+              "split_seconds": 223,
+              "percent_of_record": null,
+              "class_code": "MiksSKV",
+              "class_label": "SK Vidar miks",
+              "team_name": "Sk Vidar Bue & Mix",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 2,
+          "stage_label": "02. Norabakken",
+          "record": {
+            "stage_label": "02. Norabakken",
+            "record_text": "3:04",
+            "record_seconds": 184,
+            "record_holder": "Eivind Jenssen",
+            "record_club": "Steinkjer FIK",
+            "record_year": 2013.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Mathias Moen",
+              "raw_name": "Mathias Moen",
+              "split_text": "3:21",
+              "split_seconds": 201,
+              "percent_of_record": 91.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 2,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Joakim Mohn",
+              "raw_name": "Joakim Mohn",
+              "split_text": "3:22",
+              "split_seconds": 202,
+              "percent_of_record": 91.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 5,
+              "category_rank": 5
+            },
+            {
+              "rank": 3,
+              "person_name": "Fredrik Sætran",
+              "raw_name": "Fredrik Sætran",
+              "split_text": "3:24",
+              "split_seconds": 204,
+              "percent_of_record": 90.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 7
+            },
+            {
+              "rank": 4,
+              "person_name": "Eirik Ophus",
+              "raw_name": "Eirik Ophus",
+              "split_text": "3:25",
+              "split_seconds": 205,
+              "percent_of_record": 89.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            },
+            {
+              "rank": 5,
+              "person_name": "Ulrik Strømmen Røstad Hovig",
+              "raw_name": "Ulrik Strømmen Røstad Hovig",
+              "split_text": "3:28",
+              "split_seconds": 208,
+              "percent_of_record": 88.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 2,
+          "stage_label": "02. Norabakken (St. Hauge)",
+          "record": null,
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Nikolai Skyrud",
+              "raw_name": "Nikolai Skyrud",
+              "split_text": "3:34",
+              "split_seconds": 214,
+              "percent_of_record": null,
+              "class_code": "MiksSKV",
+              "class_label": "SK Vidar miks",
+              "team_name": "Sk Vidar Bue & Mix",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            }
+          ]
+        },
+        {
+          "stage_number": 3,
+          "stage_label": "03. Blåsen",
+          "record": {
+            "stage_label": "03. Blåsen",
+            "record_text": "1:15",
+            "record_seconds": 75,
+            "record_holder": "Andreas Kulseng",
+            "record_club": "IK Tjalve",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Alfonso Echezarreta",
+              "raw_name": "Alfonso Echezarreta",
+              "split_text": "1:22",
+              "split_seconds": 82,
+              "percent_of_record": 91.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 6,
+              "category_rank": 5
+            },
+            {
+              "rank": 2,
+              "person_name": "Markus Westhagen",
+              "raw_name": "Markus Westhagen",
+              "split_text": "1:25",
+              "split_seconds": 85,
+              "percent_of_record": 88.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            },
+            {
+              "rank": 3,
+              "person_name": "Axel Wollan",
+              "raw_name": "Axel Wollan",
+              "split_text": "1:28",
+              "split_seconds": 88,
+              "percent_of_record": 85.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 4,
+              "person_name": "Henrik Victor Hansen",
+              "raw_name": "Henrik Victor Hansen",
+              "split_text": "1:28",
+              "split_seconds": 88,
+              "percent_of_record": 85.2,
+              "class_code": "SeniorSKV",
+              "class_label": "SK Vidar senior",
+              "team_name": "Menn senior 1  2025",
+              "year": 2025,
+              "oa_rank": 21,
+              "category_rank": 9
+            },
+            {
+              "rank": 5,
+              "person_name": "Jonas Njerve",
+              "raw_name": "Jonas Njerve",
+              "split_text": "1:30",
+              "split_seconds": 90,
+              "percent_of_record": 83.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 9,
+              "category_rank": 7
+            }
+          ]
+        },
+        {
+          "stage_number": 4,
+          "stage_label": "04. Berg og dal",
+          "record": {
+            "stage_label": "04. Berg og dal",
+            "record_text": "5:03",
+            "record_seconds": 303,
+            "record_holder": "Samuel Pihlström",
+            "record_club": "Hälle IF",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Theodor Berre Jacobsen",
+              "raw_name": "Theodor Berre Jacobsen",
+              "split_text": "5:21",
+              "split_seconds": 321,
+              "percent_of_record": 94.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 3,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Theodor Berre Jacobsen",
+              "raw_name": "Theodor Berre Jacobsen",
+              "split_text": "5:25",
+              "split_seconds": 325,
+              "percent_of_record": 93.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            },
+            {
+              "rank": 3,
+              "person_name": "Sondre Rishøi",
+              "raw_name": "Sondre Rishøi",
+              "split_text": "5:31",
+              "split_seconds": 331,
+              "percent_of_record": 91.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 8,
+              "category_rank": 8
+            },
+            {
+              "rank": 4,
+              "person_name": "Daniel Fikstveita",
+              "raw_name": "Daniel Fikstveita",
+              "split_text": "5:40",
+              "split_seconds": 340,
+              "percent_of_record": 89.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 12
+            },
+            {
+              "rank": 5,
+              "person_name": "Jostein Rogstad",
+              "raw_name": "Jostein Rogstad",
+              "split_text": "5:43",
+              "split_seconds": 343,
+              "percent_of_record": 88.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2024",
+              "year": 2024,
+              "oa_rank": 12,
+              "category_rank": 11
+            }
+          ]
+        },
+        {
+          "stage_number": 5,
+          "stage_label": "05. Forskningsparken",
+          "record": {
+            "stage_label": "05. Forskningsparken",
+            "record_text": "3:06",
+            "record_seconds": 186,
+            "record_holder": "Trym Fjøsne-Hexeberg",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Henry McNulty",
+              "raw_name": "Henry McNulty",
+              "split_text": "3:13",
+              "split_seconds": 193,
+              "percent_of_record": 96.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 3,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Jonas Njerve",
+              "raw_name": "Jonas Njerve",
+              "split_text": "3:16",
+              "split_seconds": 196,
+              "percent_of_record": 94.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 5,
+              "category_rank": 5
+            },
+            {
+              "rank": 3,
+              "person_name": "Henning Mæle",
+              "raw_name": "Henning Mæle",
+              "split_text": "3:17",
+              "split_seconds": 197,
+              "percent_of_record": 94.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 4,
+              "person_name": "Steinar Bøe",
+              "raw_name": "Steinar Bøe",
+              "split_text": "3:18",
+              "split_seconds": 198,
+              "percent_of_record": 93.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            },
+            {
+              "rank": 5,
+              "person_name": "Henning Mæhle",
+              "raw_name": "Henning Mæhle",
+              "split_text": "3:18",
+              "split_seconds": 198,
+              "percent_of_record": 93.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 2 - menn  2025",
+              "year": 2025,
+              "oa_rank": 9,
+              "category_rank": 8
+            }
+          ]
+        },
+        {
+          "stage_number": 6,
+          "stage_label": "06. Lille Besserud",
+          "record": {
+            "stage_label": "06. Lille Besserud",
+            "record_text": "3:46",
+            "record_seconds": 226,
+            "record_holder": "Joel Bodén",
+            "record_club": "Hälle IF (SWE)",
+            "record_year": 2008.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Eirik Gramstad",
+              "raw_name": "Eirik Gramstad",
+              "split_text": "3:57",
+              "split_seconds": 237,
+              "percent_of_record": 95.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 5,
+              "category_rank": 5
+            },
+            {
+              "rank": 2,
+              "person_name": "Henry McNulty",
+              "raw_name": "Henry McNulty",
+              "split_text": "3:58",
+              "split_seconds": 238,
+              "percent_of_record": 95.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 1,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Anders Fox",
+              "raw_name": "Anders Fox",
+              "split_text": "3:59",
+              "split_seconds": 239,
+              "percent_of_record": 94.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2024",
+              "year": 2024,
+              "oa_rank": 7,
+              "category_rank": 6
+            },
+            {
+              "rank": 4,
+              "person_name": "Ådne Andersen",
+              "raw_name": "Ådne Andersen",
+              "split_text": "4:04",
+              "split_seconds": 244,
+              "percent_of_record": 92.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 2 - menn  2025",
+              "year": 2025,
+              "oa_rank": 7,
+              "category_rank": 6
+            },
+            {
+              "rank": 5,
+              "person_name": "Kristan Bjune Sveen",
+              "raw_name": "Kristan Bjune Sveen",
+              "split_text": "4:05",
+              "split_seconds": 245,
+              "percent_of_record": 92.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            }
+          ]
+        },
+        {
+          "stage_number": 7,
+          "stage_label": "07. Besserud",
+          "record": {
+            "stage_label": "07. Besserud",
+            "record_text": "5:26",
+            "record_seconds": 326,
+            "record_holder": "Jacob Boutera",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Sondre Norstad Moen",
+              "raw_name": "Sondre Norstad Moen",
+              "split_text": "5:37",
+              "split_seconds": 337,
+              "percent_of_record": 96.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 2,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Sjur Prestsæter",
+              "raw_name": "Sjur Prestsæter",
+              "split_text": "5:41",
+              "split_seconds": 341,
+              "percent_of_record": 95.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 4,
+              "category_rank": 4
+            },
+            {
+              "rank": 3,
+              "person_name": "Sjur Prestsæter",
+              "raw_name": "Sjur Prestsæter",
+              "split_text": "5:41",
+              "split_seconds": 341,
+              "percent_of_record": 95.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            },
+            {
+              "rank": 4,
+              "person_name": "Magnus Hjellum",
+              "raw_name": "Magnus Hjellum",
+              "split_text": "6:02",
+              "split_seconds": 362,
+              "percent_of_record": 90.1,
+              "class_code": "SeniorSKV",
+              "class_label": "SK Vidar senior",
+              "team_name": "Sk Vidar Senior 1 2024",
+              "year": 2024,
+              "oa_rank": 18,
+              "category_rank": 6
+            },
+            {
+              "rank": 5,
+              "person_name": "Austin Podhajsky",
+              "raw_name": "Austin Podhajsky",
+              "split_text": "6:03",
+              "split_seconds": 363,
+              "percent_of_record": 89.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2024",
+              "year": 2024,
+              "oa_rank": 21,
+              "category_rank": 12
+            }
+          ]
+        },
+        {
+          "stage_number": 8,
+          "stage_label": "08. Utfor",
+          "record": {
+            "stage_label": "08. Utfor",
+            "record_text": "4:03",
+            "record_seconds": 243,
+            "record_holder": "Anders Boye",
+            "record_club": "Rindal IL",
+            "record_year": 2019.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "David Lukas Bleich",
+              "raw_name": "David Lukas Bleich",
+              "split_text": "4:15",
+              "split_seconds": 255,
+              "percent_of_record": 95.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            },
+            {
+              "rank": 2,
+              "person_name": "Eivind Klokkehaug",
+              "raw_name": "Eivind Klokkehaug",
+              "split_text": "4:16",
+              "split_seconds": 256,
+              "percent_of_record": 94.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 2 - menn  2025",
+              "year": 2025,
+              "oa_rank": 4,
+              "category_rank": 4
+            },
+            {
+              "rank": 3,
+              "person_name": "Eivind Klokkehaug",
+              "raw_name": "Eivind Klokkehaug",
+              "split_text": "4:16",
+              "split_seconds": 256,
+              "percent_of_record": 94.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 4,
+              "person_name": "Haakon Engelsen Berg",
+              "raw_name": "Haakon Engelsen Berg",
+              "split_text": "4:18",
+              "split_seconds": 258,
+              "percent_of_record": 94.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 4,
+              "category_rank": 3
+            },
+            {
+              "rank": 5,
+              "person_name": "Haakon Engelsen Berg",
+              "raw_name": "Haakon Engelsen Berg",
+              "split_text": "4:18",
+              "split_seconds": 258,
+              "percent_of_record": 94.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 6,
+              "category_rank": 6
+            }
+          ]
+        },
+        {
+          "stage_number": 9,
+          "stage_label": "09. Gressbanen",
+          "record": {
+            "stage_label": "09. Gressbanen",
+            "record_text": "1:21",
+            "record_seconds": 81,
+            "record_holder": "Sander Skotheim",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Axel Wollan",
+              "raw_name": "Axel Wollan",
+              "split_text": "1:29",
+              "split_seconds": 89,
+              "percent_of_record": 91.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            },
+            {
+              "rank": 2,
+              "person_name": "Martin Seland Simensen",
+              "raw_name": "Martin Seland Simensen",
+              "split_text": "1:30",
+              "split_seconds": 90,
+              "percent_of_record": 90.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 2 - menn  2025",
+              "year": 2025,
+              "oa_rank": 6,
+              "category_rank": 6
+            },
+            {
+              "rank": 3,
+              "person_name": "Jens Kortner",
+              "raw_name": "Jens Kortner",
+              "split_text": "1:30",
+              "split_seconds": 90,
+              "percent_of_record": 90.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 7
+            },
+            {
+              "rank": 4,
+              "person_name": "Jens Kortner",
+              "raw_name": "Jens Kortner",
+              "split_text": "1:31",
+              "split_seconds": 91,
+              "percent_of_record": 89.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 6,
+              "category_rank": 5
+            },
+            {
+              "rank": 5,
+              "person_name": "Thomas Kjellberg",
+              "raw_name": "Thomas Kjellberg",
+              "split_text": "1:31",
+              "split_seconds": 91,
+              "percent_of_record": 89.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 12,
+              "category_rank": 10
+            }
+          ]
+        },
+        {
+          "stage_number": 10,
+          "stage_label": "10. Den lange",
+          "record": {
+            "stage_label": "10. Den lange",
+            "record_text": "7:11",
+            "record_seconds": 431,
+            "record_holder": "Marius Vedvik",
+            "record_club": "IL Gular",
+            "record_year": "2019*"
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Trond Einar Moen Pedersli",
+              "raw_name": "Trond Einar Moen Pedersli",
+              "split_text": "7:42",
+              "split_seconds": 462,
+              "percent_of_record": 93.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 8,
+              "category_rank": 7
+            },
+            {
+              "rank": 2,
+              "person_name": "Theodor Berre Jacobsen",
+              "raw_name": "Theodor Berre Jacobsen",
+              "split_text": "7:47",
+              "split_seconds": 467,
+              "percent_of_record": 92.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 13,
+              "category_rank": 9
+            },
+            {
+              "rank": 3,
+              "person_name": "Rune Solli",
+              "raw_name": "Rune Solli",
+              "split_text": "7:49",
+              "split_seconds": 469,
+              "percent_of_record": 91.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 11
+            },
+            {
+              "rank": 4,
+              "person_name": "Magnus W Warvik",
+              "raw_name": "Magnus W Warvik",
+              "split_text": "7:54",
+              "split_seconds": 474,
+              "percent_of_record": 90.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 13
+            },
+            {
+              "rank": 5,
+              "person_name": "Nicolay Andersen",
+              "raw_name": "Nicolay Andersen",
+              "split_text": "7:55",
+              "split_seconds": 475,
+              "percent_of_record": 90.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 2 - menn  2025",
+              "year": 2025,
+              "oa_rank": 23,
+              "category_rank": 16
+            }
+          ]
+        },
+        {
+          "stage_number": 11,
+          "stage_label": "11. Frognerparken",
+          "record": {
+            "stage_label": "11. Frognerparken",
+            "record_text": "3:54",
+            "record_seconds": 234,
+            "record_holder": "Per Svela",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Mathias Moen",
+              "raw_name": "Mathias Moen",
+              "split_text": "4:10",
+              "split_seconds": 250,
+              "percent_of_record": 93.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 2,
+              "person_name": "Mathias Moen",
+              "raw_name": "Mathias Moen",
+              "split_text": "4:10",
+              "split_seconds": 250,
+              "percent_of_record": 93.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 3,
+              "person_name": "Mathias Moen",
+              "raw_name": "Mathias Moen",
+              "split_text": "4:12",
+              "split_seconds": 252,
+              "percent_of_record": 92.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 6,
+              "category_rank": 6
+            },
+            {
+              "rank": 4,
+              "person_name": "Magnus Warvik",
+              "raw_name": "Magnus Warvik",
+              "split_text": "4:14",
+              "split_seconds": 254,
+              "percent_of_record": 92.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2024",
+              "year": 2024,
+              "oa_rank": 7,
+              "category_rank": 6
+            },
+            {
+              "rank": 5,
+              "person_name": "Eivind Klokkhaug",
+              "raw_name": "Eivind Klokkhaug",
+              "split_text": "4:15",
+              "split_seconds": 255,
+              "percent_of_record": 91.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 8,
+              "category_rank": 7
+            }
+          ]
+        },
+        {
+          "stage_number": 12,
+          "stage_label": "12. Dumpa",
+          "record": {
+            "stage_label": "12. Dumpa",
+            "record_text": "0:44",
+            "record_seconds": 44,
+            "record_holder": "Paul Anders Holte",
+            "record_club": "IL Skjalg",
+            "record_year": 2006.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Emiliano Røgeberg",
+              "raw_name": "Emiliano Røgeberg",
+              "split_text": "0:45",
+              "split_seconds": 45,
+              "percent_of_record": 97.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Simen Nordheim Berg",
+              "raw_name": "Simen Nordheim Berg",
+              "split_text": "0:46",
+              "split_seconds": 46,
+              "percent_of_record": 95.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Rasmus Tibar",
+              "raw_name": "Rasmus Tibar",
+              "split_text": "0:47",
+              "split_seconds": 47,
+              "percent_of_record": 93.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 2,
+              "category_rank": 2
+            },
+            {
+              "rank": 4,
+              "person_name": "Rasmus Tibar",
+              "raw_name": "Rasmus Tibar",
+              "split_text": "0:47",
+              "split_seconds": 47,
+              "percent_of_record": 93.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 2,
+              "category_rank": 2
+            },
+            {
+              "rank": 5,
+              "person_name": "Tore Lervik",
+              "raw_name": "Tore Lervik",
+              "split_text": "0:51",
+              "split_seconds": 51,
+              "percent_of_record": 86.3,
+              "class_code": "SeniorSKV",
+              "class_label": "SK Vidar senior",
+              "team_name": "Sk Vidar Senior 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 13,
+          "stage_label": "13. Trappa",
+          "record": {
+            "stage_label": "13. Trappa",
+            "record_text": "2:39",
+            "record_seconds": 159,
+            "record_holder": "Andreas Fjeld Halvorsen",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Sander Dybwad Mathiesen",
+              "raw_name": "Sander Dybwad Mathiesen",
+              "split_text": "2:46",
+              "split_seconds": 166,
+              "percent_of_record": 95.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Erlend Gjerdevik Sørtveit",
+              "raw_name": "Erlend Gjerdevik Sørtveit",
+              "split_text": "2:57",
+              "split_seconds": 177,
+              "percent_of_record": 89.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 4,
+              "category_rank": 4
+            },
+            {
+              "rank": 3,
+              "person_name": "Markus Borge Harbo",
+              "raw_name": "Markus Borge Harbo",
+              "split_text": "3:01",
+              "split_seconds": 181,
+              "percent_of_record": 87.8,
+              "class_code": "SeniorSKV",
+              "class_label": "SK Vidar senior",
+              "team_name": "SK Vidar Senior 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 4,
+              "person_name": "Morten Dalhaug",
+              "raw_name": "Morten Dalhaug",
+              "split_text": "3:02",
+              "split_seconds": 182,
+              "percent_of_record": 87.4,
+              "class_code": "SeniorSKV",
+              "class_label": "SK Vidar senior",
+              "team_name": "Menn senior 1  2025",
+              "year": 2025,
+              "oa_rank": 12,
+              "category_rank": 4
+            },
+            {
+              "rank": 5,
+              "person_name": "Steinar Bøe",
+              "raw_name": "Steinar Bøe",
+              "split_text": "3:02",
+              "split_seconds": 182,
+              "percent_of_record": 87.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 13,
+              "category_rank": 9
+            }
+          ]
+        },
+        {
+          "stage_number": 14,
+          "stage_label": "14. Sjarmøren",
+          "record": {
+            "stage_label": "14. Sjarmøren",
+            "record_text": "1:39",
+            "record_seconds": 99,
+            "record_holder": "Thomas Roth",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Iver Johan Andreassen-Holm",
+              "raw_name": "Iver Johan Andreassen-Holm",
+              "split_text": "1:47",
+              "split_seconds": 107,
+              "percent_of_record": 92.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 8,
+              "category_rank": 7
+            },
+            {
+              "rank": 2,
+              "person_name": "Anton Heldal",
+              "raw_name": "Anton Heldal",
+              "split_text": "1:48",
+              "split_seconds": 108,
+              "percent_of_record": 91.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2024",
+              "year": 2024,
+              "oa_rank": 9,
+              "category_rank": 8
+            },
+            {
+              "rank": 3,
+              "person_name": "Tobias Holdø Skog",
+              "raw_name": "Tobias Holdø Skog",
+              "split_text": "1:49",
+              "split_seconds": 109,
+              "percent_of_record": 90.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 4,
+              "person_name": "Anton Heldal",
+              "raw_name": "Anton Heldal",
+              "split_text": "1:50",
+              "split_seconds": 110,
+              "percent_of_record": 90.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 9,
+              "category_rank": 8
+            },
+            {
+              "rank": 5,
+              "person_name": "Anas",
+              "raw_name": "Anas",
+              "split_text": "1:52",
+              "split_seconds": 112,
+              "percent_of_record": 88.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 8
+            }
+          ]
+        },
+        {
+          "stage_number": 15,
+          "stage_label": "15. Siste",
+          "record": {
+            "stage_label": "15. Siste",
+            "record_text": "1:11",
+            "record_seconds": 71,
+            "record_holder": "Luca Thompson",
+            "record_club": "IL i BUL",
+            "record_year": 2018.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Davide Petrella",
+              "raw_name": "Davide Petrella",
+              "split_text": "1:12",
+              "split_seconds": 72,
+              "percent_of_record": 98.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Emiliano Røgeberg",
+              "raw_name": "Emiliano Røgeberg",
+              "split_text": "1:13",
+              "split_seconds": 73,
+              "percent_of_record": 97.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Emiliano Røgeberg",
+              "raw_name": "Emiliano Røgeberg",
+              "split_text": "1:14",
+              "split_seconds": 74,
+              "percent_of_record": 95.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "Elite 1 - menn 2025",
+              "year": 2025,
+              "oa_rank": 4,
+              "category_rank": 4
+            },
+            {
+              "rank": 4,
+              "person_name": "Joakim S. Mohn",
+              "raw_name": "Joakim S. Mohn",
+              "split_text": "1:15",
+              "split_seconds": 75,
+              "percent_of_record": 94.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2 Elite 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            },
+            {
+              "rank": 5,
+              "person_name": "Emiliano Røgeberg",
+              "raw_name": "Emiliano Røgeberg",
+              "split_text": "1:18",
+              "split_seconds": 78,
+              "percent_of_record": 91.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
+              "year": 2024,
+              "oa_rank": 6,
+              "category_rank": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "skv-women",
+      "title": "SK Vidar kvinner",
+      "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+      "organization_code": "SKV",
+      "division": "women",
+      "limit": 5,
+      "stages": [
+        {
+          "stage_number": 1,
+          "stage_label": "01. Bislett",
+          "record": {
+            "stage_label": "01. Bislett",
+            "record_text": "3:16",
+            "record_seconds": 196,
+            "record_holder": "Ingeborg Østgård",
+            "record_club": "IK Tjalve",
+            "record_year": 2024.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Anne Gine Løvnes",
+              "raw_name": "Anne Gine Løvnes",
+              "split_text": "3:22",
+              "split_seconds": 202,
+              "percent_of_record": 97.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Vilde Antonsen",
+              "raw_name": "Vilde Antonsen",
+              "split_text": "3:28",
+              "split_seconds": 208,
+              "percent_of_record": 94.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 52,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Sara Aarvoll Svarstad",
+              "raw_name": "Sara Aarvoll Svarstad",
+              "split_text": "3:31",
+              "split_seconds": 211,
+              "percent_of_record": 92.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 4,
+              "person_name": "Ingvild Brennhovd",
+              "raw_name": "Ingvild Brennhovd",
+              "split_text": "3:37",
+              "split_seconds": 217,
+              "percent_of_record": 90.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 7
+            },
+            {
+              "rank": 5,
+              "person_name": "Sofie Amundsgård",
+              "raw_name": "Sofie Amundsgård",
+              "split_text": "3:38",
+              "split_seconds": 218,
+              "percent_of_record": 89.9,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2  2025",
+              "year": 2025,
+              "oa_rank": 85,
+              "category_rank": 6
+            }
+          ]
+        },
+        {
+          "stage_number": 2,
+          "stage_label": "02. Norabakken",
+          "record": {
+            "stage_label": "02. Norabakken",
+            "record_text": "3:41",
+            "record_seconds": 221,
+            "record_holder": "Ingrid Kristiansen",
+            "record_club": "IL i BUL",
+            "record_year": 2018.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Ane Bakken Hodt",
+              "raw_name": "Ane Bakken Hodt",
+              "split_text": "3:46",
+              "split_seconds": 226,
+              "percent_of_record": 97.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Frida Bjørnstad Konow",
+              "raw_name": "Frida Bjørnstad Konow",
+              "split_text": "3:50",
+              "split_seconds": 230,
+              "percent_of_record": 96.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 48,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Marianne Harnes",
+              "raw_name": "Marianne Harnes",
+              "split_text": "3:54",
+              "split_seconds": 234,
+              "percent_of_record": 94.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 49,
+              "category_rank": 3
+            },
+            {
+              "rank": 4,
+              "person_name": "Telma Dagestad",
+              "raw_name": "Telma Dagestad",
+              "split_text": "3:55",
+              "split_seconds": 235,
+              "percent_of_record": 94.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 5,
+              "person_name": "Anette Killerud",
+              "raw_name": "Anette Killerud",
+              "split_text": "4:04",
+              "split_seconds": 244,
+              "percent_of_record": 90.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 7
+            }
+          ]
+        },
+        {
+          "stage_number": 2,
+          "stage_label": "02. Norabakken (St. Hauge)",
+          "record": null,
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Eline Rud Wagle",
+              "raw_name": "Eline Rud Wagle",
+              "split_text": "4:05",
+              "split_seconds": 245,
+              "percent_of_record": null,
+              "class_code": "MiksSKV",
+              "class_label": "SK Vidar miks",
+              "team_name": "bue-og-miks  2025",
+              "year": 2025,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 2,
+              "person_name": "Ida-Synnøve Kristiansen",
+              "raw_name": "Ida-Synnøve Kristiansen",
+              "split_text": "5:00",
+              "split_seconds": 300,
+              "percent_of_record": null,
+              "class_code": "MiksSKV",
+              "class_label": "SK Vidar miks",
+              "team_name": "miks-og-bue  2025",
+              "year": 2025,
+              "oa_rank": null,
+              "category_rank": 10
+            }
+          ]
+        },
+        {
+          "stage_number": 3,
+          "stage_label": "03. Blåsen",
+          "record": {
+            "stage_label": "03. Blåsen",
+            "record_text": "1:32",
+            "record_seconds": 92,
+            "record_holder": "Ellen Schoug",
+            "record_club": "Hälle IF",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Mari Andreasen Rud",
+              "raw_name": "Mari Andreasen Rud",
+              "split_text": "1:37",
+              "split_seconds": 97,
+              "percent_of_record": 94.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Nina Andersen",
+              "raw_name": "Nina Andersen",
+              "split_text": "1:40",
+              "split_seconds": 100,
+              "percent_of_record": 92.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 37,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Andrea Rekdal",
+              "raw_name": "Andrea Rekdal",
+              "split_text": "1:41",
+              "split_seconds": 101,
+              "percent_of_record": 91.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2  2025",
+              "year": 2025,
+              "oa_rank": 75,
+              "category_rank": 6
+            },
+            {
+              "rank": 4,
+              "person_name": "Mai Watson",
+              "raw_name": "Mai Watson",
+              "split_text": "1:41",
+              "split_seconds": 101,
+              "percent_of_record": 91.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 76,
+              "category_rank": 7
+            },
+            {
+              "rank": 5,
+              "person_name": "Marte Gleditsch",
+              "raw_name": "Marte Gleditsch",
+              "split_text": "1:44",
+              "split_seconds": 104,
+              "percent_of_record": 88.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 3 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            }
+          ]
+        },
+        {
+          "stage_number": 4,
+          "stage_label": "04. Berg og dal",
+          "record": {
+            "stage_label": "04. Berg og dal",
+            "record_text": "5:56",
+            "record_seconds": 356,
+            "record_holder": "Ingvill Måkestad Bovim",
+            "record_club": "IK Tjalve",
+            "record_year": 2016.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Malin Edland",
+              "raw_name": "Malin Edland",
+              "split_text": "6:11",
+              "split_seconds": 371,
+              "percent_of_record": 96.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 54,
+              "category_rank": 4
+            },
+            {
+              "rank": 2,
+              "person_name": "Kristine Meinert Rød",
+              "raw_name": "Kristine Meinert Rød",
+              "split_text": "6:27",
+              "split_seconds": 387,
+              "percent_of_record": 92.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 65,
+              "category_rank": 6
+            },
+            {
+              "rank": 3,
+              "person_name": "Karoline Wisløff Rud",
+              "raw_name": "Karoline Wisløff Rud",
+              "split_text": "6:31",
+              "split_seconds": 391,
+              "percent_of_record": 91.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 4,
+              "person_name": "Anna Marie Nordengen",
+              "raw_name": "Anna Marie Nordengen",
+              "split_text": "6:35",
+              "split_seconds": 395,
+              "percent_of_record": 90.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 7
+            },
+            {
+              "rank": 5,
+              "person_name": "Runa Skrove Falch",
+              "raw_name": "Runa Skrove Falch",
+              "split_text": "6:38",
+              "split_seconds": 398,
+              "percent_of_record": 89.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 5
+            }
+          ]
+        },
+        {
+          "stage_number": 5,
+          "stage_label": "05. Forskningsparken",
+          "record": {
+            "stage_label": "05. Forskningsparken",
+            "record_text": "3:41",
+            "record_seconds": 221,
+            "record_holder": "Ingrid Helene Nyhus",
+            "record_club": "SK Vidar",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Ingrid Helene Nyhus",
+              "raw_name": "Ingrid Helene Nyhus",
+              "split_text": "3:41",
+              "split_seconds": 221,
+              "percent_of_record": 100.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 43,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Hanna Kristine Larsen",
+              "raw_name": "Hanna Kristine Larsen",
+              "split_text": "3:43",
+              "split_seconds": 223,
+              "percent_of_record": 99.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 42,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Vilde Antonsen",
+              "raw_name": "Vilde Antonsen",
+              "split_text": "3:44",
+              "split_seconds": 224,
+              "percent_of_record": 98.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 4,
+              "person_name": "Hanna Kristine Larsen",
+              "raw_name": "Hanna Kristine Larsen",
+              "split_text": "3:45",
+              "split_seconds": 225,
+              "percent_of_record": 98.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 5,
+              "person_name": "Asta Ellingvåg",
+              "raw_name": "Asta Ellingvåg",
+              "split_text": "3:50",
+              "split_seconds": 230,
+              "percent_of_record": 96.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2  2025",
+              "year": 2025,
+              "oa_rank": 60,
+              "category_rank": 5
+            }
+          ]
+        },
+        {
+          "stage_number": 6,
+          "stage_label": "06. Lille Besserud",
+          "record": {
+            "stage_label": "06. Lille Besserud",
+            "record_text": "4:29",
+            "record_seconds": 269,
+            "record_holder": "Maria Wågan",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Mathilde Theisen",
+              "raw_name": "Mathilde Theisen",
+              "split_text": "4:33",
+              "split_seconds": 273,
+              "percent_of_record": 98.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Marte Lien Johnsen",
+              "raw_name": "Marte Lien Johnsen",
+              "split_text": "4:40",
+              "split_seconds": 280,
+              "percent_of_record": 96.1,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 68,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Anne Årrestad",
+              "raw_name": "Anne Årrestad",
+              "split_text": "4:42",
+              "split_seconds": 282,
+              "percent_of_record": 95.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 4,
+              "person_name": "Julie Aspesletten",
+              "raw_name": "Julie Aspesletten",
+              "split_text": "4:45",
+              "split_seconds": 285,
+              "percent_of_record": 94.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 65,
+              "category_rank": 1
+            },
+            {
+              "rank": 5,
+              "person_name": "Tea Sætereng Fyksen",
+              "raw_name": "Tea Sætereng Fyksen",
+              "split_text": "4:54",
+              "split_seconds": 294,
+              "percent_of_record": 91.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 7
+            }
+          ]
+        },
+        {
+          "stage_number": 7,
+          "stage_label": "07. Besserud",
+          "record": {
+            "stage_label": "07. Besserud",
+            "record_text": "5:57",
+            "record_seconds": 357,
+            "record_holder": "Karoline Bjerkeli Grøvdal",
+            "record_club": "IK Tjalve",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Runa Skrove Falch",
+              "raw_name": "Runa Skrove Falch",
+              "split_text": "6:42",
+              "split_seconds": 402,
+              "percent_of_record": 88.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Therese Johaug",
+              "raw_name": "Therese Johaug",
+              "split_text": "6:49",
+              "split_seconds": 409,
+              "percent_of_record": 87.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Ida Amelie Robsahm",
+              "raw_name": "Ida Amelie Robsahm",
+              "split_text": "6:56",
+              "split_seconds": 416,
+              "percent_of_record": 85.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 74,
+              "category_rank": 6
+            },
+            {
+              "rank": 4,
+              "person_name": "Anna Sirevåg",
+              "raw_name": "Anna Sirevåg",
+              "split_text": "6:58",
+              "split_seconds": 418,
+              "percent_of_record": 85.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 87,
+              "category_rank": 8
+            },
+            {
+              "rank": 5,
+              "person_name": "Anne Årrestad",
+              "raw_name": "Anne Årrestad",
+              "split_text": "7:03",
+              "split_seconds": 423,
+              "percent_of_record": 84.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 7
+            }
+          ]
+        },
+        {
+          "stage_number": 8,
+          "stage_label": "08. Utfor",
+          "record": {
+            "stage_label": "08. Utfor",
+            "record_text": "4:47",
+            "record_seconds": 287,
+            "record_holder": "Ingeborg Løvnes",
+            "record_club": "IK Tjave",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Sara Kjeldsen Lie",
+              "raw_name": "Sara Kjeldsen Lie",
+              "split_text": "4:53",
+              "split_seconds": 293,
+              "percent_of_record": 98.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 51,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Marianne Harnes",
+              "raw_name": "Marianne Harnes",
+              "split_text": "4:58",
+              "split_seconds": 298,
+              "percent_of_record": 96.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 5
+            },
+            {
+              "rank": 3,
+              "person_name": "Sofie Kjos Bergum",
+              "raw_name": "Sofie Kjos Bergum",
+              "split_text": "5:00",
+              "split_seconds": 300,
+              "percent_of_record": 95.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 4,
+              "person_name": "Frida Bjørnstad Konow",
+              "raw_name": "Frida Bjørnstad Konow",
+              "split_text": "5:00",
+              "split_seconds": 300,
+              "percent_of_record": 95.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 61,
+              "category_rank": 5
+            },
+            {
+              "rank": 5,
+              "person_name": "Sofie Kjos Bergum",
+              "raw_name": "Sofie Kjos Bergum",
+              "split_text": "5:01",
+              "split_seconds": 301,
+              "percent_of_record": 95.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            }
+          ]
+        },
+        {
+          "stage_number": 9,
+          "stage_label": "09. Gressbanen",
+          "record": {
+            "stage_label": "09. Gressbanen",
+            "record_text": "1:37",
+            "record_seconds": 97,
+            "record_holder": "Margrete Baustad",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Nina Andersen",
+              "raw_name": "Nina Andersen",
+              "split_text": "1:39",
+              "split_seconds": 99,
+              "percent_of_record": 98.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Frida Thorsås",
+              "raw_name": "Frida Thorsås",
+              "split_text": "1:40",
+              "split_seconds": 100,
+              "percent_of_record": 97.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 33,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Astrid Ingebrigtsen",
+              "raw_name": "Astrid Ingebrigtsen",
+              "split_text": "1:45",
+              "split_seconds": 105,
+              "percent_of_record": 92.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 4,
+              "person_name": "Sigrun Aker Nordeng",
+              "raw_name": "Sigrun Aker Nordeng",
+              "split_text": "1:46",
+              "split_seconds": 106,
+              "percent_of_record": 91.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            },
+            {
+              "rank": 5,
+              "person_name": "Anne-Line Dahlen",
+              "raw_name": "Anne-Line Dahlen",
+              "split_text": "1:47",
+              "split_seconds": 107,
+              "percent_of_record": 90.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 72,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 10,
+          "stage_label": "10. Den lange",
+          "record": {
+            "stage_label": "10. Den lange",
+            "record_text": "8:21",
+            "record_seconds": 501,
+            "record_holder": "Amalie Sæten",
+            "record_club": "SK Vidar",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Amalie Sæten",
+              "raw_name": "Amalie Sæten",
+              "split_text": "8:21",
+              "split_seconds": 501,
+              "percent_of_record": 100.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 39,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Madelène Wanvik Holum",
+              "raw_name": "Madelène Wanvik Holum",
+              "split_text": "8:41",
+              "split_seconds": 521,
+              "percent_of_record": 96.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 60,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Ine Bakken",
+              "raw_name": "Ine Bakken",
+              "split_text": "8:51",
+              "split_seconds": 531,
+              "percent_of_record": 94.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 4,
+              "person_name": "Emilie Mo",
+              "raw_name": "Emilie Mo",
+              "split_text": "8:56",
+              "split_seconds": 536,
+              "percent_of_record": 93.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 5,
+              "person_name": "Bethina Løver Valle",
+              "raw_name": "Bethina Løver Valle",
+              "split_text": "9:07",
+              "split_seconds": 547,
+              "percent_of_record": 91.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 2  2025",
+              "year": 2025,
+              "oa_rank": 95,
+              "category_rank": 10
+            }
+          ]
+        },
+        {
+          "stage_number": 11,
+          "stage_label": "11. Frognerparken",
+          "record": {
+            "stage_label": "11. Frognerparken",
+            "record_text": "4:35",
+            "record_seconds": 275,
+            "record_holder": "Amanda Frøynes",
+            "record_club": "IK Tjalve",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Madelène Wanvik Holum",
+              "raw_name": "Madelène Wanvik Holum",
+              "split_text": "4:44",
+              "split_seconds": 284,
+              "percent_of_record": 96.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 53,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Anna Marie Nordengen",
+              "raw_name": "Anna Marie Nordengen",
+              "split_text": "4:47",
+              "split_seconds": 287,
+              "percent_of_record": 95.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Vilde Antonsen",
+              "raw_name": "Vilde Antonsen",
+              "split_text": "4:50",
+              "split_seconds": 290,
+              "percent_of_record": 94.8,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 4,
+              "person_name": "June Bakken Hodt",
+              "raw_name": "June Bakken Hodt",
+              "split_text": "4:54",
+              "split_seconds": 294,
+              "percent_of_record": 93.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            },
+            {
+              "rank": 5,
+              "person_name": "Marit Haslie",
+              "raw_name": "Marit Haslie",
+              "split_text": "4:55",
+              "split_seconds": 295,
+              "percent_of_record": 93.2,
+              "class_code": "SeniorSKV",
+              "class_label": "SK Vidar senior",
+              "team_name": "SK Vidar Senior 1 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            }
+          ]
+        },
+        {
+          "stage_number": 12,
+          "stage_label": "12. Dumpa",
+          "record": {
+            "stage_label": "12. Dumpa",
+            "record_text": "0:50",
+            "record_seconds": 50,
+            "record_holder": "Ingrid Pernille Rismark",
+            "record_club": "SK Vidar",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Ingrid Pernille Rismark",
+              "raw_name": "Ingrid Pernille Rismark",
+              "split_text": "0:50",
+              "split_seconds": 50,
+              "percent_of_record": 100.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Ingrid Pernille Rismark",
+              "raw_name": "Ingrid Pernille Rismark",
+              "split_text": "0:51",
+              "split_seconds": 51,
+              "percent_of_record": 98.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Sunniva Fjeld",
+              "raw_name": "Sunniva Fjeld",
+              "split_text": "0:53",
+              "split_seconds": 53,
+              "percent_of_record": 94.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 28,
+              "category_rank": 1
+            },
+            {
+              "rank": 4,
+              "person_name": "Cassandra Ødegård Nilsen",
+              "raw_name": "Cassandra Ødegård Nilsen",
+              "split_text": "0:57",
+              "split_seconds": 57,
+              "percent_of_record": 87.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 52,
+              "category_rank": 2
+            },
+            {
+              "rank": 5,
+              "person_name": "Andrea Rekdal",
+              "raw_name": "Andrea Rekdal",
+              "split_text": "0:58",
+              "split_seconds": 58,
+              "percent_of_record": 86.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 13,
+          "stage_label": "13. Trappa",
+          "record": {
+            "stage_label": "13. Trappa",
+            "record_text": "3:05",
+            "record_seconds": 185,
+            "record_holder": "Pernille Karlsen Antonsen",
+            "record_club": "SK Vidar",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Pernille Karlsen Antonsen",
+              "raw_name": "Pernille Karlsen Antonsen",
+              "split_text": "3:05",
+              "split_seconds": 185,
+              "percent_of_record": 100.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Ane Bakken Hodt",
+              "raw_name": "Ane Bakken Hodt",
+              "split_text": "3:21",
+              "split_seconds": 201,
+              "percent_of_record": 92.0,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 43,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Madelène Wanvik Holum",
+              "raw_name": "Madelène Wanvik Holum",
+              "split_text": "3:25",
+              "split_seconds": 205,
+              "percent_of_record": 90.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 4,
+              "person_name": "Line Askehim",
+              "raw_name": "Line Askehim",
+              "split_text": "3:31",
+              "split_seconds": 211,
+              "percent_of_record": 87.7,
+              "class_code": "SeniorSKV",
+              "class_label": "SK Vidar senior",
+              "team_name": "SK Vidar Senior 1 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 5,
+              "person_name": "Madelene Tronstad Sagebakken",
+              "raw_name": "Madelene Tronstad Sagebakken",
+              "split_text": "3:32",
+              "split_seconds": 212,
+              "percent_of_record": 87.3,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 83,
+              "category_rank": 6
+            }
+          ]
+        },
+        {
+          "stage_number": 14,
+          "stage_label": "14. Sjarmøren",
+          "record": {
+            "stage_label": "14. Sjarmøren",
+            "record_text": "1:54",
+            "record_seconds": 114,
+            "record_holder": "Hedda Hynne",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Synne Våge Bertelsmann Opheim",
+              "raw_name": "Synne Våge Bertelsmann Opheim",
+              "split_text": "2:05",
+              "split_seconds": 125,
+              "percent_of_record": 91.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2024",
+              "year": 2024,
+              "oa_rank": 59,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Synne Opheim",
+              "raw_name": "Synne Opheim",
+              "split_text": "2:06",
+              "split_seconds": 126,
+              "percent_of_record": 90.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Nina Andersen",
+              "raw_name": "Nina Andersen",
+              "split_text": "2:06",
+              "split_seconds": 126,
+              "percent_of_record": 90.5,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 65,
+              "category_rank": 3
+            },
+            {
+              "rank": 4,
+              "person_name": "Frida Bjørnstad Konow",
+              "raw_name": "Frida Bjørnstad Konow",
+              "split_text": "2:10",
+              "split_seconds": 130,
+              "percent_of_record": 87.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            },
+            {
+              "rank": 5,
+              "person_name": "Andrea Rekdal",
+              "raw_name": "Andrea Rekdal",
+              "split_text": "2:12",
+              "split_seconds": 132,
+              "percent_of_record": 86.4,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2024",
+              "year": 2024,
+              "oa_rank": 86,
+              "category_rank": 10
+            }
+          ]
+        },
+        {
+          "stage_number": 15,
+          "stage_label": "15. Siste",
+          "record": {
+            "stage_label": "15. Siste",
+            "record_text": "1:18",
+            "record_seconds": 78,
+            "record_holder": "Amalie Iuel",
+            "record_club": "IK Tjalve",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Frida Thorsås",
+              "raw_name": "Frida Thorsås",
+              "split_text": "1:28",
+              "split_seconds": 88,
+              "percent_of_record": 88.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 1 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Vilja Gruben",
+              "raw_name": "Vilja Gruben",
+              "split_text": "1:29",
+              "split_seconds": 89,
+              "percent_of_record": 87.6,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar 1  2025",
+              "year": 2025,
+              "oa_rank": 60,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Ida Marie Nordengen",
+              "raw_name": "Ida Marie Nordengen",
+              "split_text": "1:30",
+              "split_seconds": 90,
+              "percent_of_record": 86.7,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar elite 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 4,
+              "person_name": "Mette Brandstamoen",
+              "raw_name": "Mette Brandstamoen",
+              "split_text": "1:34",
+              "split_seconds": 94,
+              "percent_of_record": 83.0,
+              "class_code": "Veteran",
+              "class_label": "SK Vidar veteran",
+              "team_name": "SK Vidar Veteran 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 5,
+              "person_name": "Veselemøy Rønnevik",
+              "raw_name": "Veselemøy Rønnevik",
+              "split_text": "1:36",
+              "split_seconds": 96,
+              "percent_of_record": 81.2,
+              "class_code": "EliteSKV",
+              "class_label": "SK Vidar elite",
+              "team_name": "SK Vidar Elite 2 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "osi-men",
+      "title": "OSI Friidrett menn",
+      "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+      "organization_code": "OSIF",
+      "division": "men",
+      "limit": 3,
+      "stages": [
+        {
+          "stage_number": 1,
+          "stage_label": "01. Bislett",
+          "record": {
+            "stage_label": "01. Bislett",
+            "record_text": "2:49",
+            "record_seconds": 169,
+            "record_holder": "Snorre Holtan Løken",
+            "record_club": "IK Tjalve",
+            "record_year": 2016.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Tobias Baumann",
+              "raw_name": "Tobias Baumann",
+              "split_text": "3:17",
+              "split_seconds": 197,
+              "percent_of_record": 85.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Sigurd Østlie",
+              "raw_name": "Sigurd Østlie",
+              "split_text": "3:21",
+              "split_seconds": 201,
+              "percent_of_record": 84.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Sigurd Østlie",
+              "raw_name": "Sigurd Østlie",
+              "split_text": "3:23",
+              "split_seconds": 203,
+              "percent_of_record": 83.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 47,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 2,
+          "stage_label": "02. Norabakken",
+          "record": {
+            "stage_label": "02. Norabakken",
+            "record_text": "3:04",
+            "record_seconds": 184,
+            "record_holder": "Eivind Jenssen",
+            "record_club": "Steinkjer FIK",
+            "record_year": 2013.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Vetle Nevland",
+              "raw_name": "Vetle Nevland",
+              "split_text": "3:43",
+              "split_seconds": 223,
+              "percent_of_record": 82.5,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Iben Armann Jeppesen",
+              "raw_name": "Iben Armann Jeppesen",
+              "split_text": "3:52",
+              "split_seconds": 232,
+              "percent_of_record": 79.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 43,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Jonatan Winsvold",
+              "raw_name": "Jonatan Winsvold",
+              "split_text": "3:53",
+              "split_seconds": 233,
+              "percent_of_record": 79.0,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 53,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 3,
+          "stage_label": "03. Blåsen",
+          "record": {
+            "stage_label": "03. Blåsen",
+            "record_text": "1:15",
+            "record_seconds": 75,
+            "record_holder": "Andreas Kulseng",
+            "record_club": "IK Tjalve",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Frederik Eichenberger",
+              "raw_name": "Frederik Eichenberger",
+              "split_text": "1:35",
+              "split_seconds": 95,
+              "percent_of_record": 78.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 46,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Oliver Sunde",
+              "raw_name": "Oliver Sunde",
+              "split_text": "1:36",
+              "split_seconds": 96,
+              "percent_of_record": 78.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Luc Kummer",
+              "raw_name": "Luc Kummer",
+              "split_text": "1:38",
+              "split_seconds": 98,
+              "percent_of_record": 76.5,
+              "class_code": "MiksOSI",
+              "class_label": "OSI miks",
+              "team_name": "OSI O2 mix 2025",
+              "year": 2025,
+              "oa_rank": 38,
+              "category_rank": 1
+            }
+          ]
+        },
+        {
+          "stage_number": 4,
+          "stage_label": "04. Berg og dal",
+          "record": {
+            "stage_label": "04. Berg og dal",
+            "record_text": "5:03",
+            "record_seconds": 303,
+            "record_holder": "Samuel Pihlström",
+            "record_club": "Hälle IF",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Håkon Mindrebøe",
+              "raw_name": "Håkon Mindrebøe",
+              "split_text": "5:40",
+              "split_seconds": 340,
+              "percent_of_record": 89.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 11,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Tobias Bauman",
+              "raw_name": "Tobias Bauman",
+              "split_text": "5:48",
+              "split_seconds": 348,
+              "percent_of_record": 87.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Martin Nygard",
+              "raw_name": "Martin Nygard",
+              "split_text": "6:01",
+              "split_seconds": 361,
+              "percent_of_record": 83.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 39,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 5,
+          "stage_label": "05. Forskningsparken",
+          "record": {
+            "stage_label": "05. Forskningsparken",
+            "record_text": "3:06",
+            "record_seconds": 186,
+            "record_holder": "Trym Fjøsne-Hexeberg",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Adrian Westli",
+              "raw_name": "Adrian Westli",
+              "split_text": "3:25",
+              "split_seconds": 205,
+              "percent_of_record": 90.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 14,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Alfonso Echezarreta",
+              "raw_name": "Alfonso Echezarreta",
+              "split_text": "3:43",
+              "split_seconds": 223,
+              "percent_of_record": 83.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 49,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Henrik Hareide Holstad",
+              "raw_name": "Henrik Hareide Holstad",
+              "split_text": "3:43",
+              "split_seconds": 223,
+              "percent_of_record": 83.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 6,
+          "stage_label": "06. Lille Besserud",
+          "record": {
+            "stage_label": "06. Lille Besserud",
+            "record_text": "3:46",
+            "record_seconds": 226,
+            "record_holder": "Joel Bodén",
+            "record_club": "Hälle IF (SWE)",
+            "record_year": 2008.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Håvard Fluge Petterson",
+              "raw_name": "Håvard Fluge Petterson",
+              "split_text": "4:20",
+              "split_seconds": 260,
+              "percent_of_record": 86.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 30,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Håkon J Tømmervåg",
+              "raw_name": "Håkon J Tømmervåg",
+              "split_text": "4:31",
+              "split_seconds": 271,
+              "percent_of_record": 83.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Einar Waldeland Gautvik",
+              "raw_name": "Einar Waldeland Gautvik",
+              "split_text": "4:39",
+              "split_seconds": 279,
+              "percent_of_record": 81.0,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 65,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 7,
+          "stage_label": "07. Besserud",
+          "record": {
+            "stage_label": "07. Besserud",
+            "record_text": "5:26",
+            "record_seconds": 326,
+            "record_holder": "Jacob Boutera",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Loan Gavel",
+              "raw_name": "Loan Gavel",
+              "split_text": "6:12",
+              "split_seconds": 372,
+              "percent_of_record": 87.6,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 36,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Ruairi Long",
+              "raw_name": "Ruairi Long",
+              "split_text": "6:16",
+              "split_seconds": 376,
+              "percent_of_record": 86.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 35,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Ruairi Long",
+              "raw_name": "Ruairi Long",
+              "split_text": "6:24",
+              "split_seconds": 384,
+              "percent_of_record": 84.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            }
+          ]
+        },
+        {
+          "stage_number": 8,
+          "stage_label": "08. Utfor",
+          "record": {
+            "stage_label": "08. Utfor",
+            "record_text": "4:03",
+            "record_seconds": 243,
+            "record_holder": "Anders Boye",
+            "record_club": "Rindal IL",
+            "record_year": 2019.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Tobias Baumann",
+              "raw_name": "Tobias Baumann",
+              "split_text": "4:32",
+              "split_seconds": 272,
+              "percent_of_record": 89.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 20,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "David Stefan Riger",
+              "raw_name": "David Stefan Riger",
+              "split_text": "4:58",
+              "split_seconds": 298,
+              "percent_of_record": 81.5,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Erlend Rinden",
+              "raw_name": "Erlend Rinden",
+              "split_text": "5:01",
+              "split_seconds": 301,
+              "percent_of_record": 80.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 9,
+          "stage_label": "09. Gressbanen",
+          "record": {
+            "stage_label": "09. Gressbanen",
+            "record_text": "1:21",
+            "record_seconds": 81,
+            "record_holder": "Sander Skotheim",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Felix Kjønsberg",
+              "raw_name": "Felix Kjønsberg",
+              "split_text": "1:41",
+              "split_seconds": 101,
+              "percent_of_record": 80.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 41,
+              "category_rank": 4
+            },
+            {
+              "rank": 2,
+              "person_name": "Tristan Hellstrand",
+              "raw_name": "Tristan Hellstrand",
+              "split_text": "1:44",
+              "split_seconds": 104,
+              "percent_of_record": 77.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 56,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Simon Seland",
+              "raw_name": "Simon Seland",
+              "split_text": "1:48",
+              "split_seconds": 108,
+              "percent_of_record": 75.0,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 5
+            }
+          ]
+        },
+        {
+          "stage_number": 10,
+          "stage_label": "10. Den lange",
+          "record": {
+            "stage_label": "10. Den lange",
+            "record_text": "7:11",
+            "record_seconds": 431,
+            "record_holder": "Marius Vedvik",
+            "record_club": "IL Gular",
+            "record_year": "2019*"
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Lukas Gardeweg",
+              "raw_name": "Lukas Gardeweg",
+              "split_text": "8:17",
+              "split_seconds": 497,
+              "percent_of_record": 86.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 35,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Anjara R.",
+              "raw_name": "Anjara R.",
+              "split_text": "8:21",
+              "split_seconds": 501,
+              "percent_of_record": 86.0,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 34,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Magnus Gjersvold Haug",
+              "raw_name": "Magnus Gjersvold Haug",
+              "split_text": "8:37",
+              "split_seconds": 517,
+              "percent_of_record": 83.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 11,
+          "stage_label": "11. Frognerparken",
+          "record": {
+            "stage_label": "11. Frognerparken",
+            "record_text": "3:54",
+            "record_seconds": 234,
+            "record_holder": "Per Svela",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Andreas Vågen",
+              "raw_name": "Andreas Vågen",
+              "split_text": "4:25",
+              "split_seconds": 265,
+              "percent_of_record": 88.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Bendik Håland Pedersen",
+              "raw_name": "Bendik Håland Pedersen",
+              "split_text": "4:36",
+              "split_seconds": 276,
+              "percent_of_record": 84.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 35,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "David Stefan Rieger",
+              "raw_name": "David Stefan Rieger",
+              "split_text": "4:38",
+              "split_seconds": 278,
+              "percent_of_record": 84.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 12,
+          "stage_label": "12. Dumpa",
+          "record": {
+            "stage_label": "12. Dumpa",
+            "record_text": "0:44",
+            "record_seconds": 44,
+            "record_holder": "Paul Anders Holte",
+            "record_club": "IL Skjalg",
+            "record_year": 2006.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Félicien Sala--Mizermont",
+              "raw_name": "Félicien Sala--Mizermont",
+              "split_text": "0:51",
+              "split_seconds": 51,
+              "percent_of_record": 86.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 14,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Valon Hoti",
+              "raw_name": "Valon Hoti",
+              "split_text": "0:57",
+              "split_seconds": 57,
+              "percent_of_record": 77.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Robert Kammel",
+              "raw_name": "Robert Kammel",
+              "split_text": "0:57",
+              "split_seconds": 57,
+              "percent_of_record": 77.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 48,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 13,
+          "stage_label": "13. Trappa",
+          "record": {
+            "stage_label": "13. Trappa",
+            "record_text": "2:39",
+            "record_seconds": 159,
+            "record_holder": "Andreas Fjeld Halvorsen",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Magnus Myrmo Osberg",
+              "raw_name": "Magnus Myrmo Osberg",
+              "split_text": "3:11",
+              "split_seconds": 191,
+              "percent_of_record": 83.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Magnus Myrmo Osberg",
+              "raw_name": "Magnus Myrmo Osberg",
+              "split_text": "3:18",
+              "split_seconds": 198,
+              "percent_of_record": 80.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "🔁Håkon Lund",
+              "raw_name": "🔁Håkon Lund",
+              "split_text": "3:24",
+              "split_seconds": 204,
+              "percent_of_record": 77.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI herrer 1 2025",
+              "year": 2025,
+              "oa_rank": 55,
+              "category_rank": 5
+            }
+          ]
+        },
+        {
+          "stage_number": 14,
+          "stage_label": "14. Sjarmøren",
+          "record": {
+            "stage_label": "14. Sjarmøren",
+            "record_text": "1:39",
+            "record_seconds": 99,
+            "record_holder": "Thomas Roth",
+            "record_club": "Ull/Kisa IL",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Emil Tofte Røhne",
+              "raw_name": "Emil Tofte Røhne",
+              "split_text": "2:01",
+              "split_seconds": 121,
+              "percent_of_record": 81.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Heine Sandvik Brekke",
+              "raw_name": "Heine Sandvik Brekke",
+              "split_text": "2:08",
+              "split_seconds": 128,
+              "percent_of_record": 77.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 73,
+              "category_rank": 5
+            },
+            {
+              "rank": 3,
+              "person_name": "Vetle Nevland",
+              "raw_name": "Vetle Nevland",
+              "split_text": "2:13",
+              "split_seconds": 133,
+              "percent_of_record": 74.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 15,
+          "stage_label": "15. Siste",
+          "record": {
+            "stage_label": "15. Siste",
+            "record_text": "1:11",
+            "record_seconds": 71,
+            "record_holder": "Luca Thompson",
+            "record_club": "IL i BUL",
+            "record_year": 2018.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Ola Løfald",
+              "raw_name": "Ola Løfald",
+              "split_text": "1:20",
+              "split_seconds": 80,
+              "percent_of_record": 88.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Simen Lunderød Øverbø",
+              "raw_name": "Simen Lunderød Øverbø",
+              "split_text": "1:26",
+              "split_seconds": 86,
+              "percent_of_record": 82.6,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Frederik Eichenberger",
+              "raw_name": "Frederik Eichenberger",
+              "split_text": "1:30",
+              "split_seconds": 90,
+              "percent_of_record": 78.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2024",
+              "year": 2024,
+              "oa_rank": 54,
+              "category_rank": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "osi-women",
+      "title": "OSI Friidrett kvinner",
+      "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+      "organization_code": "OSIF",
+      "division": "women",
+      "limit": 3,
+      "stages": [
+        {
+          "stage_number": 1,
+          "stage_label": "01. Bislett",
+          "record": {
+            "stage_label": "01. Bislett",
+            "record_text": "3:16",
+            "record_seconds": 196,
+            "record_holder": "Ingeborg Østgård",
+            "record_club": "IK Tjalve",
+            "record_year": 2024.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Louise Høj Jensen",
+              "raw_name": "Louise Høj Jensen",
+              "split_text": "3:51",
+              "split_seconds": 231,
+              "percent_of_record": 84.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 103,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Eliska Sottova",
+              "raw_name": "Eliska Sottova",
+              "split_text": "3:54",
+              "split_seconds": 234,
+              "percent_of_record": 83.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Mari Jakobsen",
+              "raw_name": "Mari Jakobsen",
+              "split_text": "4:03",
+              "split_seconds": 243,
+              "percent_of_record": 80.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 130,
+              "category_rank": 2
+            }
+          ]
+        },
+        {
+          "stage_number": 1,
+          "stage_label": "01. St. Hanshaugen",
+          "record": null,
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Tuva Marie Lindstad",
+              "raw_name": "Tuva Marie Lindstad",
+              "split_text": "4:45",
+              "split_seconds": 285,
+              "percent_of_record": null,
+              "class_code": "MiksOSI",
+              "class_label": "OSI miks",
+              "team_name": "OSI O2 mix 2025",
+              "year": 2025,
+              "oa_rank": 2326,
+              "category_rank": 11
+            }
+          ]
+        },
+        {
+          "stage_number": 2,
+          "stage_label": "02. Norabakken",
+          "record": {
+            "stage_label": "02. Norabakken",
+            "record_text": "3:41",
+            "record_seconds": 221,
+            "record_holder": "Ingrid Kristiansen",
+            "record_club": "IL i BUL",
+            "record_year": 2018.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Siri Staver",
+              "raw_name": "Siri Staver",
+              "split_text": "4:23",
+              "split_seconds": 263,
+              "percent_of_record": 84.0,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 111,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Ingrid Aarbogh Skogum",
+              "raw_name": "Ingrid Aarbogh Skogum",
+              "split_text": "4:26",
+              "split_seconds": 266,
+              "percent_of_record": 83.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 112,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Marine Challamel",
+              "raw_name": "Marine Challamel",
+              "split_text": "4:32",
+              "split_seconds": 272,
+              "percent_of_record": 81.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            }
+          ]
+        },
+        {
+          "stage_number": 2,
+          "stage_label": "02. Norabakken (St. Hauge)",
+          "record": null,
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Noor Breedveld",
+              "raw_name": "Noor Breedveld",
+              "split_text": "4:50",
+              "split_seconds": 290,
+              "percent_of_record": null,
+              "class_code": "MiksOSI",
+              "class_label": "OSI miks",
+              "team_name": "OSI O2 mix 2025",
+              "year": 2025,
+              "oa_rank": 2020,
+              "category_rank": 9
+            }
+          ]
+        },
+        {
+          "stage_number": 3,
+          "stage_label": "03. Blåsen",
+          "record": {
+            "stage_label": "03. Blåsen",
+            "record_text": "1:32",
+            "record_seconds": 92,
+            "record_holder": "Ellen Schoug",
+            "record_club": "Hälle IF",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Helene Ronglan",
+              "raw_name": "Helene Ronglan",
+              "split_text": "1:55",
+              "split_seconds": 115,
+              "percent_of_record": 80.0,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 106,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Siri Vegsund Staver",
+              "raw_name": "Siri Vegsund Staver",
+              "split_text": "1:56",
+              "split_seconds": 116,
+              "percent_of_record": 79.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 122,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Sigrid Fu Skjelbostad",
+              "raw_name": "Sigrid Fu Skjelbostad",
+              "split_text": "2:03",
+              "split_seconds": 123,
+              "percent_of_record": 74.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            }
+          ]
+        },
+        {
+          "stage_number": 4,
+          "stage_label": "04. Berg og dal",
+          "record": {
+            "stage_label": "04. Berg og dal",
+            "record_text": "5:56",
+            "record_seconds": 356,
+            "record_holder": "Ingvill Måkestad Bovim",
+            "record_club": "IK Tjalve",
+            "record_year": 2016.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Andrea Opstad Andersen",
+              "raw_name": "Andrea Opstad Andersen",
+              "split_text": "7:02",
+              "split_seconds": 422,
+              "percent_of_record": 84.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 116,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Ingvild Tveita",
+              "raw_name": "Ingvild Tveita",
+              "split_text": "7:20",
+              "split_seconds": 440,
+              "percent_of_record": 80.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 130,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Clotilde Ginestet",
+              "raw_name": "Clotilde Ginestet",
+              "split_text": "7:36",
+              "split_seconds": 456,
+              "percent_of_record": 78.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 5,
+          "stage_label": "05. Forskningsparken",
+          "record": {
+            "stage_label": "05. Forskningsparken",
+            "record_text": "3:41",
+            "record_seconds": 221,
+            "record_holder": "Ingrid Helene Nyhus",
+            "record_club": "SK Vidar",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Ingrid Skogum",
+              "raw_name": "Ingrid Skogum",
+              "split_text": "4:09",
+              "split_seconds": 249,
+              "percent_of_record": 88.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 107,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Siri Vegsund Staver",
+              "raw_name": "Siri Vegsund Staver",
+              "split_text": "4:15",
+              "split_seconds": 255,
+              "percent_of_record": 86.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Erika Turunen",
+              "raw_name": "Erika Turunen",
+              "split_text": "4:34",
+              "split_seconds": 274,
+              "percent_of_record": 80.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 141,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 6,
+          "stage_label": "06. Lille Besserud",
+          "record": {
+            "stage_label": "06. Lille Besserud",
+            "record_text": "4:29",
+            "record_seconds": 269,
+            "record_holder": "Maria Wågan",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Nora Serres",
+              "raw_name": "Nora Serres",
+              "split_text": "5:08",
+              "split_seconds": 308,
+              "percent_of_record": 87.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Sunniva Sheffield",
+              "raw_name": "Sunniva Sheffield",
+              "split_text": "5:16",
+              "split_seconds": 316,
+              "percent_of_record": 85.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 108,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Ragnhild Brørs Kløven",
+              "raw_name": "Ragnhild Brørs Kløven",
+              "split_text": "5:21",
+              "split_seconds": 321,
+              "percent_of_record": 83.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 125,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 7,
+          "stage_label": "07. Besserud",
+          "record": {
+            "stage_label": "07. Besserud",
+            "record_text": "5:57",
+            "record_seconds": 357,
+            "record_holder": "Karoline Bjerkeli Grøvdal",
+            "record_club": "IK Tjalve",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Julie Støverstein",
+              "raw_name": "Julie Støverstein",
+              "split_text": "7:43",
+              "split_seconds": 463,
+              "percent_of_record": 77.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Julie Støverstein",
+              "raw_name": "Julie Støverstein",
+              "split_text": "7:51",
+              "split_seconds": 471,
+              "percent_of_record": 75.8,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 129,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Ragnhild Brøs Kløven",
+              "raw_name": "Ragnhild Brøs Kløven",
+              "split_text": "8:02",
+              "split_seconds": 482,
+              "percent_of_record": 74.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            }
+          ]
+        },
+        {
+          "stage_number": 8,
+          "stage_label": "08. Utfor",
+          "record": {
+            "stage_label": "08. Utfor",
+            "record_text": "4:47",
+            "record_seconds": 287,
+            "record_holder": "Ingeborg Løvnes",
+            "record_club": "IK Tjave",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Lene Heimdal",
+              "raw_name": "Lene Heimdal",
+              "split_text": "5:35",
+              "split_seconds": 335,
+              "percent_of_record": 85.7,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 3
+            },
+            {
+              "rank": 2,
+              "person_name": "Lene Heimdal",
+              "raw_name": "Lene Heimdal",
+              "split_text": "5:45",
+              "split_seconds": 345,
+              "percent_of_record": 83.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 123,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Lene Heimdal",
+              "raw_name": "Lene Heimdal",
+              "split_text": "5:48",
+              "split_seconds": 348,
+              "percent_of_record": 82.5,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 138,
+              "category_rank": 2
+            }
+          ]
+        },
+        {
+          "stage_number": 9,
+          "stage_label": "09. Gressbanen",
+          "record": {
+            "stage_label": "09. Gressbanen",
+            "record_text": "1:37",
+            "record_seconds": 97,
+            "record_holder": "Margrete Baustad",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Eileen Kolberg",
+              "raw_name": "Eileen Kolberg",
+              "split_text": "1:52",
+              "split_seconds": 112,
+              "percent_of_record": 86.6,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Louisa Omoruyi",
+              "raw_name": "Louisa Omoruyi",
+              "split_text": "1:54",
+              "split_seconds": 114,
+              "percent_of_record": 85.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 83,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Henriette Louise Malerstuen",
+              "raw_name": "Henriette Louise Malerstuen",
+              "split_text": "1:57",
+              "split_seconds": 117,
+              "percent_of_record": 82.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 1
+            }
+          ]
+        },
+        {
+          "stage_number": 10,
+          "stage_label": "10. Den lange",
+          "record": {
+            "stage_label": "10. Den lange",
+            "record_text": "8:21",
+            "record_seconds": 501,
+            "record_holder": "Amalie Sæten",
+            "record_club": "SK Vidar",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Petronella Tordsdatter Halle",
+              "raw_name": "Petronella Tordsdatter Halle",
+              "split_text": "9:15",
+              "split_seconds": 555,
+              "percent_of_record": 90.3,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 99,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Helene Melsom",
+              "raw_name": "Helene Melsom",
+              "split_text": "9:30",
+              "split_seconds": 570,
+              "percent_of_record": 87.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 3,
+              "person_name": "Andrea Opstad Andersen",
+              "raw_name": "Andrea Opstad Andersen",
+              "split_text": "9:48",
+              "split_seconds": 588,
+              "percent_of_record": 85.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 116,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 11,
+          "stage_label": "11. Frognerparken",
+          "record": {
+            "stage_label": "11. Frognerparken",
+            "record_text": "4:35",
+            "record_seconds": 275,
+            "record_holder": "Amanda Frøynes",
+            "record_club": "IK Tjalve",
+            "record_year": 2025.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Kristin Svendby Otervik",
+              "raw_name": "Kristin Svendby Otervik",
+              "split_text": "4:49",
+              "split_seconds": 289,
+              "percent_of_record": 95.2,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Tabea Sostmann",
+              "raw_name": "Tabea Sostmann",
+              "split_text": "5:25",
+              "split_seconds": 325,
+              "percent_of_record": 84.6,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 114,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Hannah Engeskaug Nilsen",
+              "raw_name": "Hannah Engeskaug Nilsen",
+              "split_text": "5:27",
+              "split_seconds": 327,
+              "percent_of_record": 84.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 4
+            }
+          ]
+        },
+        {
+          "stage_number": 12,
+          "stage_label": "12. Dumpa",
+          "record": {
+            "stage_label": "12. Dumpa",
+            "record_text": "0:50",
+            "record_seconds": 50,
+            "record_holder": "Ingrid Pernille Rismark",
+            "record_club": "SK Vidar",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Myrthe Tilleman",
+              "raw_name": "Myrthe Tilleman",
+              "split_text": "1:02",
+              "split_seconds": 62,
+              "percent_of_record": 80.6,
+              "class_code": "MiksOSI",
+              "class_label": "OSI miks",
+              "team_name": "OSI O2 mix 2025",
+              "year": 2025,
+              "oa_rank": 250,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Sofie Gotholt",
+              "raw_name": "Sofie Gotholt",
+              "split_text": "1:05",
+              "split_seconds": 65,
+              "percent_of_record": 76.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Henriette Louise Malerstuen",
+              "raw_name": "Henriette Louise Malerstuen",
+              "split_text": "1:07",
+              "split_seconds": 67,
+              "percent_of_record": 74.6,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 124,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 13,
+          "stage_label": "13. Trappa",
+          "record": {
+            "stage_label": "13. Trappa",
+            "record_text": "3:05",
+            "record_seconds": 185,
+            "record_holder": "Pernille Karlsen Antonsen",
+            "record_club": "SK Vidar",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Louise Høj Jensen",
+              "raw_name": "Louise Høj Jensen",
+              "split_text": "3:40",
+              "split_seconds": 220,
+              "percent_of_record": 84.1,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Kristine Flaatten",
+              "raw_name": "Kristine Flaatten",
+              "split_text": "3:56",
+              "split_seconds": 236,
+              "percent_of_record": 78.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 117,
+              "category_rank": 4
+            },
+            {
+              "rank": 3,
+              "person_name": "Ida Widing",
+              "raw_name": "Ida Widing",
+              "split_text": "3:59",
+              "split_seconds": 239,
+              "percent_of_record": 77.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 133,
+              "category_rank": 3
+            }
+          ]
+        },
+        {
+          "stage_number": 14,
+          "stage_label": "14. Sjarmøren",
+          "record": {
+            "stage_label": "14. Sjarmøren",
+            "record_text": "1:54",
+            "record_seconds": 114,
+            "record_holder": "Hedda Hynne",
+            "record_club": "IK Tjalve",
+            "record_year": 2023.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Sanna Skancke Krauss",
+              "raw_name": "Sanna Skancke Krauss",
+              "split_text": "2:15",
+              "split_seconds": 135,
+              "percent_of_record": 84.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 97,
+              "category_rank": 1
+            },
+            {
+              "rank": 2,
+              "person_name": "Sanna Skancke Krauss",
+              "raw_name": "Sanna Skancke Krauss",
+              "split_text": "2:15",
+              "split_seconds": 135,
+              "percent_of_record": 84.4,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 3,
+              "person_name": "Nele Lammers",
+              "raw_name": "Nele Lammers",
+              "split_text": "2:17",
+              "split_seconds": 137,
+              "percent_of_record": 83.2,
+              "class_code": "MiksOSI",
+              "class_label": "OSI miks",
+              "team_name": "OSI O2 mix 2025",
+              "year": 2025,
+              "oa_rank": 223,
+              "category_rank": 2
+            }
+          ]
+        },
+        {
+          "stage_number": 15,
+          "stage_label": "15. Siste",
+          "record": {
+            "stage_label": "15. Siste",
+            "record_text": "1:18",
+            "record_seconds": 78,
+            "record_holder": "Amalie Iuel",
+            "record_club": "IK Tjalve",
+            "record_year": 2022.0
+          },
+          "entries": [
+            {
+              "rank": 1,
+              "person_name": "Sofie Gotuholt",
+              "raw_name": "Sofie Gotuholt",
+              "split_text": "1:42",
+              "split_seconds": 102,
+              "percent_of_record": 76.5,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2023",
+              "year": 2023,
+              "oa_rank": null,
+              "category_rank": 2
+            },
+            {
+              "rank": 2,
+              "person_name": "Thea Østreng",
+              "raw_name": "Thea Østreng",
+              "split_text": "1:42",
+              "split_seconds": 102,
+              "percent_of_record": 76.5,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI damer 2024",
+              "year": 2024,
+              "oa_rank": 118,
+              "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Clotilde Ginestet",
+              "raw_name": "Clotilde Ginestet",
+              "split_text": "1:46",
+              "split_seconds": 106,
+              "percent_of_record": 73.6,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "results": [
     {
       "id": 526,

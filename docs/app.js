@@ -4,6 +4,7 @@ const state = {
   selectedYear: "all",
   selectedOrganization: "all",
   selectedClass: "all",
+  honoursTab: "skv-men",
   search: "",
   data: null,
 };
@@ -44,6 +45,7 @@ function buildPersonStats(results) {
     }
     people.set(row.person_name, current);
   }
+
   return [...people.values()]
     .map((item) => ({
       canonical_name: item.canonical_name,
@@ -89,15 +91,6 @@ function filterData() {
     return matchesYear && matchesOrganization && matchesClass && matchesSearch(haystack, searchValue);
   });
 
-  const leaderboard = [...filteredResults]
-    .sort((a, b) => {
-      const aSeconds = a.split_seconds ?? Number.POSITIVE_INFINITY;
-      const bSeconds = b.split_seconds ?? Number.POSITIVE_INFINITY;
-      if (aSeconds !== bSeconds) return aSeconds - bSeconds;
-      return (a.category_rank ?? Number.POSITIVE_INFINITY) - (b.category_rank ?? Number.POSITIVE_INFINITY);
-    })
-    .slice(0, 12);
-
   const pendingReview = state.data.nameReview.filter((row) => {
     const decision = String(row.decision ?? "").trim().toLowerCase();
     if (["approve", "approved", "reject", "rejected"].includes(decision)) {
@@ -112,19 +105,123 @@ function filterData() {
   return {
     filteredResults,
     filteredTeams,
-    leaderboard,
     personStats: buildPersonStats(filteredResults),
     pendingReview,
   };
 }
 
+function renderStageHonours() {
+  const groups = state.data.stageHonours ?? [];
+  const activeGroup = groups.find((group) => group.key === state.honoursTab) ?? groups[0];
+  if (!activeGroup) {
+    return "";
+  }
+
+  return `
+    <section class="panel panel-wide honours-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Etappe for etappe</p>
+          <h2>Hederliste per etappe</h2>
+        </div>
+        <span class="muted">Her sammenlignes bare tider innen samme etappe.</span>
+      </div>
+      <p class="panel-copy stage-intro">
+        SK Vidar viser topp 5 per etappe, slik du har i Hedersliste-arket. OSI Friidrett viser topp 3.
+        Hver rad viser splittid, prosent av etapperekord, klasse, overall-plassering, kategori,
+        lag og år.
+      </p>
+      <div class="tab-row">
+        ${groups
+          .map(
+            (group) => `
+              <button class="tab-button ${group.key === activeGroup.key ? "is-active" : ""}" data-tab="${group.key}">
+                ${escapeHtml(group.title)}
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+      <div class="stage-summary">
+        <strong>${escapeHtml(activeGroup.title)}</strong>
+        <span>${escapeHtml(activeGroup.subtitle)}</span>
+      </div>
+      <div class="honours-grid">
+        ${activeGroup.stages
+          .map(
+            (stage) => `
+              <article class="honour-stage-card">
+                <div class="honour-stage-header">
+                  <div>
+                    <p class="eyebrow">Etappe ${String(stage.stage_number).padStart(2, "0")}</p>
+                    <h3>${escapeHtml(stage.stage_label)}</h3>
+                  </div>
+                  ${
+                    stage.record
+                      ? `
+                        <div class="record-chip">
+                          <strong>${escapeHtml(stage.record.record_text)}</strong>
+                          <span>${escapeHtml(stage.record.record_holder ?? "")}</span>
+                          <small>${escapeHtml(stage.record.record_club ?? "")} ${escapeHtml(
+                            stage.record.record_year ?? "",
+                          )}</small>
+                        </div>
+                      `
+                      : ""
+                  }
+                </div>
+                <div class="table-wrap">
+                  <table class="honour-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Navn</th>
+                        <th>Tid</th>
+                        <th>% rek.</th>
+                        <th>Klasse</th>
+                        <th>O/A</th>
+                        <th>Cat</th>
+                        <th>Lag</th>
+                        <th>År</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${stage.entries
+                        .map(
+                          (entry) => `
+                            <tr>
+                              <td>${entry.rank}</td>
+                              <td><strong>${escapeHtml(entry.person_name)}</strong></td>
+                              <td>${escapeHtml(entry.split_text ?? "-")}</td>
+                              <td>${entry.percent_of_record ? `${entry.percent_of_record}%` : "-"}</td>
+                              <td>${escapeHtml(entry.class_label)}</td>
+                              <td>${escapeHtml(entry.oa_rank ?? "-")}</td>
+                              <td>${escapeHtml(entry.category_rank ?? "-")}</td>
+                              <td>${escapeHtml(entry.team_name)}</td>
+                              <td>${escapeHtml(entry.year)}</td>
+                            </tr>
+                          `,
+                        )
+                        .join("")}
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
 function render() {
   if (!state.data) {
-    app.innerHTML = "<p>Laster data …</p>";
+    app.innerHTML = "<p>Laster data ...</p>";
     return;
   }
 
-  const { filteredTeams, leaderboard, personStats, pendingReview } = filterData();
+  const { filteredTeams, personStats, pendingReview } = filterData();
 
   app.innerHTML = `
     <div class="page-shell">
@@ -136,8 +233,8 @@ function render() {
           <p class="eyebrow">Holmenkollstafetten</p>
           <h1>HKSstatsSKV&amp;OSIF</h1>
           <p class="hero-lead">
-            Ett datagrunnlag for SK Vidar og OSI Friidrett, bygget fra Excel-arket
-            "HKS-resultater 2022 – d.d." og klargjort for statistikk, personhistorikk og kontrollert navnematching.
+            Etappesammenligning for SK Vidar og OSI Friidrett, bygget fra
+            "HKS-resultater 2022 – d.d." med database, navnematching og offentlig statistikk.
           </p>
         </div>
         <div class="hero-grid">
@@ -153,6 +250,8 @@ function render() {
             .join("")}
         </div>
       </header>
+
+      ${renderStageHonours()}
 
       <section class="filter-panel">
         <label>
@@ -263,7 +362,7 @@ function render() {
           <div class="table-wrap">
             <table>
               <thead>
-                <tr><th>Navn</th><th>Etapper</th><th>År</th><th>Klasser</th><th>Beste kat.</th></tr>
+                <tr><th>Navn</th><th>Etapper</th><th>År</th><th>Klasser</th><th>Beste cat.</th></tr>
               </thead>
               <tbody>
                 ${personStats
@@ -308,35 +407,6 @@ function render() {
                     <div class="team-meta">
                       <span>Total: ${escapeHtml(team.total_time_text ?? "-")}</span>
                       <span>Plass: ${escapeHtml(team.team_rank ?? "-")}</span>
-                    </div>
-                  </article>
-                `,
-              )
-              .join("")}
-          </div>
-        </section>
-
-        <section class="panel panel-wide">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Etappeprestasjoner</p>
-              <h2>Raskeste i gjeldende filter</h2>
-            </div>
-            <span class="muted">Sortert på splittid</span>
-          </div>
-          <div class="leaderboard-grid">
-            ${leaderboard
-              .map(
-                (row, index) => `
-                  <article class="leader-card">
-                    <span class="leader-rank">${String(index + 1).padStart(2, "0")}</span>
-                    <div>
-                      <strong>${escapeHtml(row.person_name)}</strong>
-                      <p>${escapeHtml(row.stage_label)} · ${row.year} · ${escapeHtml(row.team_name)}</p>
-                    </div>
-                    <div class="leader-values">
-                      <span>${escapeHtml(row.split_text ?? "-")}</span>
-                      <small>Cat ${escapeHtml(row.category_rank ?? "-")}</small>
                     </div>
                   </article>
                 `,
@@ -401,10 +471,16 @@ function render() {
     state.search = event.target.value;
     render();
   });
+  document.querySelectorAll("[data-tab]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      state.honoursTab = event.currentTarget.dataset.tab;
+      render();
+    });
+  });
 }
 
 async function bootstrap() {
-  app.innerHTML = "<p>Laster data …</p>";
+  app.innerHTML = "<p>Laster data ...</p>";
   const response = await fetch("./public/data/site-data.json");
   state.data = await response.json();
   render();

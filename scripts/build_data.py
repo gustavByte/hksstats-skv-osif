@@ -93,6 +93,7 @@ class ResultRecord:
     source_col: int
     header_row: int
     group_index: int
+    division: str
     stage_number: int
     stage_label: str
     stage_label_source: str
@@ -236,32 +237,65 @@ def infer_organization_code(team_name: str, class_code: str) -> str:
     return "OSIF" if "osi" in team_name.lower() else "SKV"
 
 
-def choose_stage_label(
-    lookup: dict[tuple[int, str, int], str],
+def choose_stage_meta(
+    lookup: dict[tuple[int, str, int, str], dict[str, str]],
     year: int,
     class_code: str,
     stage_number: int,
+    raw_name: str,
     fallback: str,
-) -> str:
-    return lookup.get((year, class_code, stage_number), fallback)
+) -> dict[str, str]:
+    return lookup.get(
+        (year, class_code, stage_number, normalize_name(raw_name)),
+        {"label": fallback, "division": "women" if class_code == "Veteran" else "men"},
+    )
 
 
-def parse_split_stage_lookup(workbook_path: Path) -> dict[tuple[int, str, int], str]:
+def parse_split_stage_lookup(workbook_path: Path) -> dict[tuple[int, str, int, str], dict[str, str]]:
     workbook = load_workbook(workbook_path, data_only=True)
-    lookup: dict[tuple[int, str, int], str] = {}
-    for sheet_name in ("HKS_menn_splitt", "HKS_kvinner_splitt"):
+    lookup: dict[tuple[int, str, int, str], dict[str, str]] = {}
+    for sheet_name, division in (("HKS_menn_splitt", "men"), ("HKS_kvinner_splitt", "women")):
         sheet = workbook[sheet_name]
         for row in sheet.iter_rows(min_row=2, values_only=True):
             stage_label, raw_name, _, class_code, _, _, year, *_ = row
             if not stage_label or not raw_name or not class_code or not year:
                 continue
             stage_number = parse_stage_number(stage_label, 0)
-            lookup[(int(year), str(class_code).strip(), stage_number)] = str(stage_label).strip()
+            lookup[(int(year), str(class_code).strip(), stage_number, normalize_name(str(raw_name).strip()))] = {
+                "label": str(stage_label).strip(),
+                "division": division,
+            }
+    return lookup
+
+
+def parse_record_lookup(workbook_path: Path) -> dict[tuple[str, str], dict[str, Any]]:
+    workbook = load_workbook(workbook_path, data_only=True)
+    sheet = workbook["Rekorder"]
+    lookup: dict[tuple[str, str], dict[str, Any]] = {}
+    columns = {
+        "men": {"stage": 1, "time": 2, "name": 3, "club": 4, "year": 5},
+        "women": {"stage": 8, "time": 9, "name": 10, "club": 11, "year": 12},
+    }
+    for row_index in range(3, sheet.max_row + 1):
+        for division, cols in columns.items():
+            stage_value = sheet.cell(row_index, cols["stage"]).value
+            time_value = sheet.cell(row_index, cols["time"]).value
+            if not stage_value or not time_value:
+                continue
+            time_text, time_seconds = parse_time_value(time_value)
+            lookup[(division, str(stage_value).strip())] = {
+                "stage_label": str(stage_value).strip(),
+                "record_text": time_text,
+                "record_seconds": time_seconds,
+                "record_holder": sheet.cell(row_index, cols["name"]).value,
+                "record_club": sheet.cell(row_index, cols["club"]).value,
+                "record_year": sheet.cell(row_index, cols["year"]).value,
+            }
     return lookup
 
 
 def parse_year_sheets(
-    workbook_path: Path, stage_lookup: dict[tuple[int, str, int], str]
+    workbook_path: Path, stage_lookup: dict[tuple[int, str, int, str], dict[str, str]]
 ) -> tuple[list[TeamRecord], list[ResultRecord]]:
     workbook = load_workbook(workbook_path, data_only=True)
     teams: list[TeamRecord] = []
@@ -318,8 +352,13 @@ def parse_year_sheets(
                         continue
                     stage_label_source = str(sheet.cell(row_index, 1).value).strip()
                     stage_number = parse_stage_number(stage_label_source, offset)
-                    stage_label = choose_stage_label(
-                        stage_lookup, year, class_code, stage_number, stage_label_source
+                    stage_meta = choose_stage_meta(
+                        stage_lookup,
+                        year,
+                        class_code,
+                        stage_number,
+                        str(raw_name_value).strip(),
+                        stage_label_source,
                     )
                     split_text, split_seconds = parse_time_value(
                         sheet.cell(row_index, start_col + 1).value
@@ -335,8 +374,9 @@ def parse_year_sheets(
                             source_col=start_col,
                             header_row=header_row,
                             group_index=group_index,
+                            division=stage_meta["division"],
                             stage_number=stage_number,
-                            stage_label=stage_label,
+                            stage_label=stage_meta["label"],
                             stage_label_source=stage_label_source,
                             raw_name=str(raw_name_value).strip(),
                             split_text=split_text,
@@ -593,13 +633,7 @@ def build_database(
     if DB_PATH.exists():
         DB_PATH.unlink()
 
-    approved_map: dict[str, str] = {}
-    for row in review_rows:
-        raw_name = row["raw_name"].strip()
-        target = row["suggested_canonical_name"].strip()
-        decision = row["decision"].strip().lower()
-        if raw_name and target and decision in {"approve", "approved"}:
-            approved_map[raw_name] = target
+    approved_map = build_approved_name_map(review_rows)
 
     connection = sqlite3.connect(DB_PATH)
     connection.row_factory = sqlite3.Row
@@ -723,7 +757,128 @@ def build_database(
     connection.close()
 
 
-def export_site_data(review_rows: list[dict[str, Any]]) -> None:
+def build_approved_name_map(review_rows: list[dict[str, Any]]) -> dict[str, str]:
+    approved_map: dict[str, str] = {}
+    for row in review_rows:
+        raw_name = row["raw_name"].strip()
+        target = row["suggested_canonical_name"].strip()
+        decision = row["decision"].strip().lower()
+        if raw_name and target and decision in {"approve", "approved"}:
+            approved_map[raw_name] = target
+    return approved_map
+
+
+def build_stage_honours(
+    results: list[ResultRecord],
+    review_rows: list[dict[str, Any]],
+    record_lookup: dict[tuple[str, str], dict[str, Any]],
+) -> list[dict[str, Any]]:
+    approved_map = build_approved_name_map(review_rows)
+    grouped: dict[tuple[str, str, int, str], list[dict[str, Any]]] = defaultdict(list)
+
+    for result in results:
+        if result.split_seconds is None:
+            continue
+        record = record_lookup.get((result.division, result.stage_label), {})
+        percent_of_record = None
+        if record.get("record_seconds"):
+            percent_of_record = round(record["record_seconds"] / result.split_seconds * 100, 1)
+        grouped[(result.organization_code, result.division, result.stage_number, result.stage_label)].append(
+            {
+                "person_name": approved_map.get(result.raw_name, result.raw_name),
+                "raw_name": result.raw_name,
+                "split_text": result.split_text,
+                "split_seconds": result.split_seconds,
+                "percent_of_record": percent_of_record,
+                "class_code": result.class_code,
+                "class_label": CLASS_META[result.class_code]["label"],
+                "team_name": result.team_name,
+                "year": result.year,
+                "oa_rank": result.oa_rank,
+                "category_rank": result.category_rank,
+            }
+        )
+
+    group_specs = [
+        {
+            "key": "skv-men",
+            "title": "SK Vidar menn",
+            "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+            "organization_code": "SKV",
+            "division": "men",
+            "limit": 5,
+        },
+        {
+            "key": "skv-women",
+            "title": "SK Vidar kvinner",
+            "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+            "organization_code": "SKV",
+            "division": "women",
+            "limit": 5,
+        },
+        {
+            "key": "osi-men",
+            "title": "OSI Friidrett menn",
+            "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+            "organization_code": "OSIF",
+            "division": "men",
+            "limit": 3,
+        },
+        {
+            "key": "osi-women",
+            "title": "OSI Friidrett kvinner",
+            "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+            "organization_code": "OSIF",
+            "division": "women",
+            "limit": 3,
+        },
+    ]
+
+    honour_groups: list[dict[str, Any]] = []
+    for spec in group_specs:
+        stages: list[dict[str, Any]] = []
+        matching_keys = sorted(
+            [
+                key
+                for key in grouped
+                if key[0] == spec["organization_code"] and key[1] == spec["division"]
+            ],
+            key=lambda item: (item[2], item[3]),
+        )
+        for _, _, stage_number, stage_label in matching_keys:
+            entries = sorted(
+                grouped[(spec["organization_code"], spec["division"], stage_number, stage_label)],
+                key=lambda item: (
+                    item["split_seconds"],
+                    item["category_rank"] if item["category_rank"] is not None else 9999,
+                    item["oa_rank"] if item["oa_rank"] is not None else 9999,
+                    item["year"],
+                ),
+            )[: spec["limit"]]
+            stages.append(
+                {
+                    "stage_number": stage_number,
+                    "stage_label": stage_label,
+                    "record": record_lookup.get((spec["division"], stage_label)),
+                    "entries": [
+                        {
+                            "rank": index + 1,
+                            **entry,
+                        }
+                        for index, entry in enumerate(entries)
+                    ],
+                }
+            )
+        honour_groups.append({**spec, "stages": stages})
+
+    return honour_groups
+
+
+def export_site_data(
+    review_rows: list[dict[str, Any]],
+    raw_results: list[ResultRecord],
+    record_lookup: dict[tuple[str, str], dict[str, Any]],
+) -> None:
     connection = sqlite3.connect(DB_PATH)
     connection.row_factory = sqlite3.Row
 
@@ -873,6 +1028,7 @@ def export_site_data(review_rows: list[dict[str, Any]]) -> None:
         for row in review_rows
         if row["decision"].strip().lower() not in {"approve", "approved", "reject", "rejected"}
     )
+    stage_honours = build_stage_honours(raw_results, review_rows, record_lookup)
 
     site_data = {
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
@@ -914,6 +1070,7 @@ def export_site_data(review_rows: list[dict[str, Any]]) -> None:
                 key=lambda row: (-row["category_wins"], -row["appearances"], row["canonical_name"]),
             )[:12],
         },
+        "stageHonours": stage_honours,
         "results": results,
         "teams": teams,
         "people": people_rows,
@@ -932,11 +1089,12 @@ def main() -> None:
     ensure_directories()
     workbook_path = find_workbook()
     stage_lookup = parse_split_stage_lookup(workbook_path)
+    record_lookup = parse_record_lookup(workbook_path)
     teams, results = parse_year_sheets(workbook_path, stage_lookup)
     suggestions = build_match_suggestions(results)
     review_rows = write_review_file(suggestions)
     build_database(teams, results, review_rows)
-    export_site_data(review_rows)
+    export_site_data(review_rows, results, record_lookup)
     print(
         f"Imported {len(results)} etapper, {len(teams)} lag og skrev {DB_PATH.name}, "
         f"site-data.json og {REVIEW_PATH.name}."

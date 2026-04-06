@@ -481,12 +481,20 @@ function render() {
 
 async function bootstrap() {
   app.innerHTML = "<p>Laster data ...</p>";
-  const response = await fetch("./public/data/site-data.json");
+  const dataUrl = new URL("./public/data/site-data.json", window.location.href);
+  dataUrl.searchParams.set("v", "2026-04-06-1");
+
+  const response = await fetch(dataUrl.toString(), { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Kunne ikke hente datafilen (${response.status}).`);
+  }
+
   state.data = await response.json();
   render();
 }
 
 bootstrap().catch((error) => {
   console.error(error);
-  app.innerHTML = "<p>Kunne ikke laste site-data.json.</p>";
+  app.innerHTML =
+    "<p>Kunne ikke laste site-data.json. Prøv å laste siden på nytt. Hvis feilen fortsetter, er det sannsynligvis en cache-feil i nettleseren.</p>";
 });

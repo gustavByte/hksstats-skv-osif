@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T20:44:35",
+  "generatedAt": "2026-04-06T20:58:06",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "years": [
@@ -845,7 +845,7 @@
     {
       "key": "skv-men",
       "title": "SK Vidar menn",
-      "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+      "subtitle": "Topp 5 per etappe på tvers av elite, senior og veteran.",
       "organization_code": "SKV",
       "division": "men",
       "limit": 5,
@@ -935,55 +935,6 @@
           ]
         },
         {
-          "stage_number": 1,
-          "stage_label": "01. St. Hanshaugen",
-          "record": null,
-          "entries": [
-            {
-              "rank": 1,
-              "person_name": "Andreas Solheim",
-              "raw_name": "Andreas Solheim",
-              "split_text": "3:32",
-              "split_seconds": 212,
-              "percent_of_record": null,
-              "class_code": "MiksSKV",
-              "class_label": "SK Vidar miks",
-              "team_name": "miks-og-bue  2025",
-              "year": 2025,
-              "oa_rank": null,
-              "category_rank": 1
-            },
-            {
-              "rank": 2,
-              "person_name": "Eskil Høstad",
-              "raw_name": "Eskil Høstad",
-              "split_text": "3:40",
-              "split_seconds": 220,
-              "percent_of_record": null,
-              "class_code": "MiksSKV",
-              "class_label": "SK Vidar miks",
-              "team_name": "bue-og-miks  2025",
-              "year": 2025,
-              "oa_rank": null,
-              "category_rank": 3
-            },
-            {
-              "rank": 3,
-              "person_name": "Thomas Misje Mathiisen",
-              "raw_name": "Thomas Misje Mathiisen",
-              "split_text": "3:43",
-              "split_seconds": 223,
-              "percent_of_record": null,
-              "class_code": "MiksSKV",
-              "class_label": "SK Vidar miks",
-              "team_name": "Sk Vidar Bue & Mix",
-              "year": 2023,
-              "oa_rank": null,
-              "category_rank": 3
-            }
-          ]
-        },
-        {
           "stage_number": 2,
           "stage_label": "02. Norabakken",
           "record": {
@@ -1064,27 +1015,6 @@
               "year": 2022,
               "oa_rank": null,
               "category_rank": 3
-            }
-          ]
-        },
-        {
-          "stage_number": 2,
-          "stage_label": "02. Norabakken (St. Hauge)",
-          "record": null,
-          "entries": [
-            {
-              "rank": 1,
-              "person_name": "Nikolai Skyrud",
-              "raw_name": "Nikolai Skyrud",
-              "split_text": "3:34",
-              "split_seconds": 214,
-              "percent_of_record": null,
-              "class_code": "MiksSKV",
-              "class_label": "SK Vidar miks",
-              "team_name": "Sk Vidar Bue & Mix",
-              "year": 2023,
-              "oa_rank": null,
-              "category_rank": 2
             }
           ]
         },
@@ -2185,7 +2115,7 @@
     {
       "key": "skv-women",
       "title": "SK Vidar kvinner",
-      "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+      "subtitle": "Topp 5 per etappe på tvers av elite, senior og veteran.",
       "organization_code": "SKV",
       "division": "women",
       "limit": 5,
@@ -2355,41 +2285,6 @@
               "year": 2023,
               "oa_rank": null,
               "category_rank": 7
-            }
-          ]
-        },
-        {
-          "stage_number": 2,
-          "stage_label": "02. Norabakken (St. Hauge)",
-          "record": null,
-          "entries": [
-            {
-              "rank": 1,
-              "person_name": "Eline Rud Wagle",
-              "raw_name": "Eline Rud Wagle",
-              "split_text": "4:05",
-              "split_seconds": 245,
-              "percent_of_record": null,
-              "class_code": "MiksSKV",
-              "class_label": "SK Vidar miks",
-              "team_name": "bue-og-miks  2025",
-              "year": 2025,
-              "oa_rank": null,
-              "category_rank": 5
-            },
-            {
-              "rank": 2,
-              "person_name": "Ida-Synnøve Kristiansen",
-              "raw_name": "Ida-Synnøve Kristiansen",
-              "split_text": "5:00",
-              "split_seconds": 300,
-              "percent_of_record": null,
-              "class_code": "MiksSKV",
-              "class_label": "SK Vidar miks",
-              "team_name": "miks-og-bue  2025",
-              "year": 2025,
-              "oa_rank": null,
-              "category_rank": 10
             }
           ]
         },
@@ -3489,8 +3384,8 @@
     },
     {
       "key": "osi-men",
-      "title": "OSI Friidrett menn",
-      "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+      "title": "OSI Friidrett menn student",
+      "subtitle": "Topp 3 per etappe for studentklassen.",
       "organization_code": "OSIF",
       "division": "men",
       "limit": 3,
@@ -3649,17 +3544,17 @@
             },
             {
               "rank": 3,
-              "person_name": "Luc Kummer",
-              "raw_name": "Luc Kummer",
-              "split_text": "1:38",
-              "split_seconds": 98,
-              "percent_of_record": 76.5,
-              "class_code": "MiksOSI",
-              "class_label": "OSI miks",
-              "team_name": "OSI O2 mix 2025",
-              "year": 2025,
-              "oa_rank": 38,
-              "category_rank": 1
+              "person_name": "Sindre Jakobsen",
+              "raw_name": "Sindre Jakobsen",
+              "split_text": "1:40",
+              "split_seconds": 100,
+              "percent_of_record": 75.0,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI F student 2022",
+              "year": 2022,
+              "oa_rank": null,
+              "category_rank": 4
             }
           ]
         },
@@ -4339,8 +4234,8 @@
     },
     {
       "key": "osi-women",
-      "title": "OSI Friidrett kvinner",
-      "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+      "title": "OSI Friidrett kvinner student",
+      "subtitle": "Topp 3 per etappe for studentklassen.",
       "organization_code": "OSIF",
       "division": "women",
       "limit": 3,
@@ -4402,27 +4297,6 @@
           ]
         },
         {
-          "stage_number": 1,
-          "stage_label": "01. St. Hanshaugen",
-          "record": null,
-          "entries": [
-            {
-              "rank": 1,
-              "person_name": "Tuva Marie Lindstad",
-              "raw_name": "Tuva Marie Lindstad",
-              "split_text": "4:45",
-              "split_seconds": 285,
-              "percent_of_record": null,
-              "class_code": "MiksOSI",
-              "class_label": "OSI miks",
-              "team_name": "OSI O2 mix 2025",
-              "year": 2025,
-              "oa_rank": 2326,
-              "category_rank": 11
-            }
-          ]
-        },
-        {
           "stage_number": 2,
           "stage_label": "02. Norabakken",
           "record": {
@@ -4475,27 +4349,6 @@
               "year": 2022,
               "oa_rank": null,
               "category_rank": 2
-            }
-          ]
-        },
-        {
-          "stage_number": 2,
-          "stage_label": "02. Norabakken (St. Hauge)",
-          "record": null,
-          "entries": [
-            {
-              "rank": 1,
-              "person_name": "Noor Breedveld",
-              "raw_name": "Noor Breedveld",
-              "split_text": "4:50",
-              "split_seconds": 290,
-              "percent_of_record": null,
-              "class_code": "MiksOSI",
-              "class_label": "OSI miks",
-              "team_name": "OSI O2 mix 2025",
-              "year": 2025,
-              "oa_rank": 2020,
-              "category_rank": 9
             }
           ]
         },
@@ -5017,20 +4870,6 @@
           "entries": [
             {
               "rank": 1,
-              "person_name": "Myrthe Tilleman",
-              "raw_name": "Myrthe Tilleman",
-              "split_text": "1:02",
-              "split_seconds": 62,
-              "percent_of_record": 80.6,
-              "class_code": "MiksOSI",
-              "class_label": "OSI miks",
-              "team_name": "OSI O2 mix 2025",
-              "year": 2025,
-              "oa_rank": 250,
-              "category_rank": 1
-            },
-            {
-              "rank": 2,
               "person_name": "Sofie Gotholt",
               "raw_name": "Sofie Gotholt",
               "split_text": "1:05",
@@ -5044,7 +4883,7 @@
               "category_rank": 2
             },
             {
-              "rank": 3,
+              "rank": 2,
               "person_name": "Henriette Louise Malerstuen",
               "raw_name": "Henriette Louise Malerstuen",
               "split_text": "1:07",
@@ -5056,6 +4895,20 @@
               "year": 2024,
               "oa_rank": 124,
               "category_rank": 3
+            },
+            {
+              "rank": 3,
+              "person_name": "Alicia May Woestenberg",
+              "raw_name": "Alicia May Woestenberg",
+              "split_text": "1:08",
+              "split_seconds": 68,
+              "percent_of_record": 73.5,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
+              "year": 2025,
+              "oa_rank": 129,
+              "category_rank": 2
             }
           ]
         },
@@ -5157,17 +5010,17 @@
             },
             {
               "rank": 3,
-              "person_name": "Nele Lammers",
-              "raw_name": "Nele Lammers",
-              "split_text": "2:17",
-              "split_seconds": 137,
-              "percent_of_record": 83.2,
-              "class_code": "MiksOSI",
-              "class_label": "OSI miks",
-              "team_name": "OSI O2 mix 2025",
+              "person_name": "Sarah Rehn",
+              "raw_name": "Sarah Rehn",
+              "split_text": "2:21",
+              "split_seconds": 141,
+              "percent_of_record": 80.9,
+              "class_code": "StudOSI",
+              "class_label": "OSI student",
+              "team_name": "OSI Grils 2025",
               "year": 2025,
-              "oa_rank": 223,
-              "category_rank": 2
+              "oa_rank": 112,
+              "category_rank": 1
             }
           ]
         },

@@ -300,6 +300,25 @@ def parse_year_sheets(
     workbook = load_workbook(workbook_path, data_only=True)
     teams: list[TeamRecord] = []
     results: list[ResultRecord] = []
+    osif_configs = {
+        2025: [
+            {"start_col": 2, "class_code": "StudOSI"},
+            {"start_col": 6, "class_code": "StudOSI"},
+            {"start_col": 10, "class_code": "MiksOSI"},
+        ],
+        2024: [
+            {"start_col": 2, "class_code": "StudOSI"},
+            {"start_col": 6, "class_code": "StudOSI"},
+        ],
+        2023: [
+            {"start_col": 2, "class_code": "StudOSI"},
+            {"start_col": 6, "class_code": "StudOSI"},
+        ],
+        2022: [
+            {"start_col": 2, "class_code": "StudOSI"},
+            {"start_col": 6, "class_code": "StudOSI"},
+        ],
+    }
 
     year_sheets = sorted(
         (sheet for sheet in workbook.sheetnames if sheet.isdigit()),
@@ -319,6 +338,75 @@ def parse_year_sheets(
             while data_row <= sheet.max_row and sheet.cell(data_row, 1).value:
                 data_row += 1
             total_row = data_row
+
+            if header_row == 38 and year in osif_configs:
+                group_index = 0
+                for config in osif_configs[year]:
+                    start_col = config["start_col"]
+                    team_name_value = sheet.cell(header_row, start_col).value
+                    if not team_name_value:
+                        continue
+                    team_name = str(team_name_value).strip()
+                    class_code = config["class_code"]
+                    group_index += 1
+                    total_time_text, total_seconds = parse_time_value(
+                        sheet.cell(total_row, start_col + 1).value
+                    )
+                    teams.append(
+                        TeamRecord(
+                            year=year,
+                            organization_code="OSIF",
+                            class_code=class_code,
+                            team_name=team_name,
+                            source_sheet=sheet_name,
+                            header_row=header_row,
+                            group_index=group_index,
+                            total_time_text=total_time_text,
+                            total_seconds=total_seconds,
+                            team_rank=coerce_rank(sheet.cell(total_row, start_col + 3).value),
+                        )
+                    )
+                    for offset, row_index in enumerate(range(header_row + 1, total_row), start=1):
+                        raw_name_value = sheet.cell(row_index, start_col).value
+                        if not raw_name_value:
+                            continue
+                        stage_label_source = str(sheet.cell(row_index, 1).value).strip()
+                        stage_number = parse_stage_number(stage_label_source, offset)
+                        stage_meta = choose_stage_meta(
+                            stage_lookup,
+                            year,
+                            class_code,
+                            stage_number,
+                            str(raw_name_value).strip(),
+                            stage_label_source,
+                        )
+                        split_text, split_seconds = parse_time_value(
+                            sheet.cell(row_index, start_col + 1).value
+                        )
+                        results.append(
+                            ResultRecord(
+                                year=year,
+                                organization_code="OSIF",
+                                class_code=class_code,
+                                team_name=team_name,
+                                source_sheet=sheet_name,
+                                source_row=row_index,
+                                source_col=start_col,
+                                header_row=header_row,
+                                group_index=group_index,
+                                division=stage_meta["division"],
+                                stage_number=stage_number,
+                                stage_label=stage_meta["label"],
+                                stage_label_source=stage_label_source,
+                                raw_name=str(raw_name_value).strip(),
+                                split_text=split_text,
+                                split_seconds=split_seconds,
+                                oa_rank=coerce_rank(sheet.cell(row_index, start_col + 2).value),
+                                category_rank=coerce_rank(sheet.cell(row_index, start_col + 3).value),
+                            )
+                        )
+                continue
+
             group_index = 0
             for start_col in range(2, sheet.max_column + 1, 4):
                 team_name_value = sheet.cell(header_row, start_col).value
@@ -803,34 +891,38 @@ def build_stage_honours(
         {
             "key": "skv-men",
             "title": "SK Vidar menn",
-            "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+            "subtitle": "Topp 5 per etappe på tvers av elite, senior og veteran.",
             "organization_code": "SKV",
             "division": "men",
             "limit": 5,
+            "class_codes": {"EliteSKV", "SeniorSKV", "Veteran"},
         },
         {
             "key": "skv-women",
             "title": "SK Vidar kvinner",
-            "subtitle": "Topp 5 per etappe, inspirert av Hedersliste-arket.",
+            "subtitle": "Topp 5 per etappe på tvers av elite, senior og veteran.",
             "organization_code": "SKV",
             "division": "women",
             "limit": 5,
+            "class_codes": {"EliteSKV", "SeniorSKV", "Veteran"},
         },
         {
             "key": "osi-men",
-            "title": "OSI Friidrett menn",
-            "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+            "title": "OSI Friidrett menn student",
+            "subtitle": "Topp 3 per etappe for studentklassen.",
             "organization_code": "OSIF",
             "division": "men",
             "limit": 3,
+            "class_codes": {"StudOSI"},
         },
         {
             "key": "osi-women",
-            "title": "OSI Friidrett kvinner",
-            "subtitle": "Topp 3 per etappe for OSI Friidrett.",
+            "title": "OSI Friidrett kvinner student",
+            "subtitle": "Topp 3 per etappe for studentklassen.",
             "organization_code": "OSIF",
             "division": "women",
             "limit": 3,
+            "class_codes": {"StudOSI"},
         },
     ]
 
@@ -841,13 +933,23 @@ def build_stage_honours(
             [
                 key
                 for key in grouped
-                if key[0] == spec["organization_code"] and key[1] == spec["division"]
+                if key[0] == spec["organization_code"]
+                and key[1] == spec["division"]
+                and any(
+                    entry["class_code"] in spec["class_codes"]
+                    for entry in grouped[key]
+                )
             ],
             key=lambda item: (item[2], item[3]),
         )
         for _, _, stage_number, stage_label in matching_keys:
+            eligible_entries = [
+                entry
+                for entry in grouped[(spec["organization_code"], spec["division"], stage_number, stage_label)]
+                if entry["class_code"] in spec["class_codes"]
+            ]
             entries = sorted(
-                grouped[(spec["organization_code"], spec["division"], stage_number, stage_label)],
+                eligible_entries,
                 key=lambda item: (
                     item["split_seconds"],
                     item["category_rank"] if item["category_rank"] is not None else 9999,
@@ -869,7 +971,17 @@ def build_stage_honours(
                     ],
                 }
             )
-        honour_groups.append({**spec, "stages": stages})
+        honour_groups.append(
+            {
+                "key": spec["key"],
+                "title": spec["title"],
+                "subtitle": spec["subtitle"],
+                "organization_code": spec["organization_code"],
+                "division": spec["division"],
+                "limit": spec["limit"],
+                "stages": stages,
+            }
+        )
 
     return honour_groups
 

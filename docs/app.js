@@ -16,6 +16,15 @@ const escapeHtml = (value) =>
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
 
+const meterFormatter = new Intl.NumberFormat("nb-NO");
+
+function formatDistanceMeters(value) {
+  if (!Number.isFinite(value)) {
+    return "";
+  }
+  return `${meterFormatter.format(value)} m`;
+}
+
 function matchesSearch(haystack, needle) {
   return !needle || haystack.toLowerCase().includes(needle);
 }
@@ -154,7 +163,14 @@ function renderStageHonours() {
                 <div class="honour-stage-header">
                   <div>
                     <p class="eyebrow">Etappe ${String(stage.stage_number).padStart(2, "0")}</p>
-                    <h3>${escapeHtml(stage.stage_label)}</h3>
+                    <div class="stage-title-row">
+                      <h3>${escapeHtml(stage.stage_label)}</h3>
+                      ${
+                        stage.distance_m
+                          ? `<span class="distance-badge">${escapeHtml(formatDistanceMeters(stage.distance_m))}</span>`
+                          : ""
+                      }
+                    </div>
                   </div>
                   ${
                     stage.record

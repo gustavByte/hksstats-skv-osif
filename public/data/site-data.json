@@ -1,7 +1,8 @@
 {
-  "generatedAt": "2026-04-06T20:58:06",
+  "generatedAt": "2026-04-07T14:22:51",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
+    "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
     "years": [
       2025,
       2024,
@@ -853,6 +854,7 @@
         {
           "stage_number": 1,
           "stage_label": "01. Bislett",
+          "distance_m": 1170,
           "record": {
             "stage_label": "01. Bislett",
             "record_text": "2:49",
@@ -937,6 +939,7 @@
         {
           "stage_number": 2,
           "stage_label": "02. Norabakken",
+          "distance_m": 1130,
           "record": {
             "stage_label": "02. Norabakken",
             "record_text": "3:04",
@@ -1021,6 +1024,7 @@
         {
           "stage_number": 3,
           "stage_label": "03. Blåsen",
+          "distance_m": 595,
           "record": {
             "stage_label": "03. Blåsen",
             "record_text": "1:15",
@@ -1105,6 +1109,7 @@
         {
           "stage_number": 4,
           "stage_label": "04. Berg og dal",
+          "distance_m": 1920,
           "record": {
             "stage_label": "04. Berg og dal",
             "record_text": "5:03",
@@ -1189,6 +1194,7 @@
         {
           "stage_number": 5,
           "stage_label": "05. Forskningsparken",
+          "distance_m": 1210,
           "record": {
             "stage_label": "05. Forskningsparken",
             "record_text": "3:06",
@@ -1273,6 +1279,7 @@
         {
           "stage_number": 6,
           "stage_label": "06. Lille Besserud",
+          "distance_m": 1250,
           "record": {
             "stage_label": "06. Lille Besserud",
             "record_text": "3:46",
@@ -1357,6 +1364,7 @@
         {
           "stage_number": 7,
           "stage_label": "07. Besserud",
+          "distance_m": 1770,
           "record": {
             "stage_label": "07. Besserud",
             "record_text": "5:26",
@@ -1441,6 +1449,7 @@
         {
           "stage_number": 8,
           "stage_label": "08. Utfor",
+          "distance_m": 1780,
           "record": {
             "stage_label": "08. Utfor",
             "record_text": "4:03",
@@ -1525,6 +1534,7 @@
         {
           "stage_number": 9,
           "stage_label": "09. Gressbanen",
+          "distance_m": 625,
           "record": {
             "stage_label": "09. Gressbanen",
             "record_text": "1:21",
@@ -1609,6 +1619,7 @@
         {
           "stage_number": 10,
           "stage_label": "10. Den lange",
+          "distance_m": 2860,
           "record": {
             "stage_label": "10. Den lange",
             "record_text": "7:11",
@@ -1693,6 +1704,7 @@
         {
           "stage_number": 11,
           "stage_label": "11. Frognerparken",
+          "distance_m": 1520,
           "record": {
             "stage_label": "11. Frognerparken",
             "record_text": "3:54",
@@ -1777,6 +1789,7 @@
         {
           "stage_number": 12,
           "stage_label": "12. Dumpa",
+          "distance_m": 350,
           "record": {
             "stage_label": "12. Dumpa",
             "record_text": "0:44",
@@ -1861,6 +1874,7 @@
         {
           "stage_number": 13,
           "stage_label": "13. Trappa",
+          "distance_m": 1080,
           "record": {
             "stage_label": "13. Trappa",
             "record_text": "2:39",
@@ -1945,6 +1959,7 @@
         {
           "stage_number": 14,
           "stage_label": "14. Sjarmøren",
+          "distance_m": 710,
           "record": {
             "stage_label": "14. Sjarmøren",
             "record_text": "1:39",
@@ -2029,6 +2044,7 @@
         {
           "stage_number": 15,
           "stage_label": "15. Siste",
+          "distance_m": 535,
           "record": {
             "stage_label": "15. Siste",
             "record_text": "1:11",
@@ -2123,6 +2139,7 @@
         {
           "stage_number": 1,
           "stage_label": "01. Bislett",
+          "distance_m": 1170,
           "record": {
             "stage_label": "01. Bislett",
             "record_text": "3:16",
@@ -2207,6 +2224,7 @@
         {
           "stage_number": 2,
           "stage_label": "02. Norabakken",
+          "distance_m": 1130,
           "record": {
             "stage_label": "02. Norabakken",
             "record_text": "3:41",
@@ -2291,6 +2309,7 @@
         {
           "stage_number": 3,
           "stage_label": "03. Blåsen",
+          "distance_m": 595,
           "record": {
             "stage_label": "03. Blåsen",
             "record_text": "1:32",
@@ -2375,6 +2394,7 @@
         {
           "stage_number": 4,
           "stage_label": "04. Berg og dal",
+          "distance_m": 1920,
           "record": {
             "stage_label": "04. Berg og dal",
             "record_text": "5:56",
@@ -2459,6 +2479,7 @@
         {
           "stage_number": 5,
           "stage_label": "05. Forskningsparken",
+          "distance_m": 1210,
           "record": {
             "stage_label": "05. Forskningsparken",
             "record_text": "3:41",
@@ -2543,6 +2564,7 @@
         {
           "stage_number": 6,
           "stage_label": "06. Lille Besserud",
+          "distance_m": 1250,
           "record": {
             "stage_label": "06. Lille Besserud",
             "record_text": "4:29",
@@ -2627,6 +2649,7 @@
         {
           "stage_number": 7,
           "stage_label": "07. Besserud",
+          "distance_m": 1770,
           "record": {
             "stage_label": "07. Besserud",
             "record_text": "5:57",
@@ -2711,6 +2734,7 @@
         {
           "stage_number": 8,
           "stage_label": "08. Utfor",
+          "distance_m": 1780,
           "record": {
             "stage_label": "08. Utfor",
             "record_text": "4:47",
@@ -2795,6 +2819,7 @@
         {
           "stage_number": 9,
           "stage_label": "09. Gressbanen",
+          "distance_m": 625,
           "record": {
             "stage_label": "09. Gressbanen",
             "record_text": "1:37",
@@ -2879,6 +2904,7 @@
         {
           "stage_number": 10,
           "stage_label": "10. Den lange",
+          "distance_m": 2860,
           "record": {
             "stage_label": "10. Den lange",
             "record_text": "8:21",
@@ -2963,6 +2989,7 @@
         {
           "stage_number": 11,
           "stage_label": "11. Frognerparken",
+          "distance_m": 1520,
           "record": {
             "stage_label": "11. Frognerparken",
             "record_text": "4:35",
@@ -3047,6 +3074,7 @@
         {
           "stage_number": 12,
           "stage_label": "12. Dumpa",
+          "distance_m": 350,
           "record": {
             "stage_label": "12. Dumpa",
             "record_text": "0:50",
@@ -3131,6 +3159,7 @@
         {
           "stage_number": 13,
           "stage_label": "13. Trappa",
+          "distance_m": 1080,
           "record": {
             "stage_label": "13. Trappa",
             "record_text": "3:05",
@@ -3215,6 +3244,7 @@
         {
           "stage_number": 14,
           "stage_label": "14. Sjarmøren",
+          "distance_m": 710,
           "record": {
             "stage_label": "14. Sjarmøren",
             "record_text": "1:54",
@@ -3299,6 +3329,7 @@
         {
           "stage_number": 15,
           "stage_label": "15. Siste",
+          "distance_m": 535,
           "record": {
             "stage_label": "15. Siste",
             "record_text": "1:18",
@@ -3393,6 +3424,7 @@
         {
           "stage_number": 1,
           "stage_label": "01. Bislett",
+          "distance_m": 1170,
           "record": {
             "stage_label": "01. Bislett",
             "record_text": "2:49",
@@ -3449,6 +3481,7 @@
         {
           "stage_number": 2,
           "stage_label": "02. Norabakken",
+          "distance_m": 1130,
           "record": {
             "stage_label": "02. Norabakken",
             "record_text": "3:04",
@@ -3505,6 +3538,7 @@
         {
           "stage_number": 3,
           "stage_label": "03. Blåsen",
+          "distance_m": 595,
           "record": {
             "stage_label": "03. Blåsen",
             "record_text": "1:15",
@@ -3561,6 +3595,7 @@
         {
           "stage_number": 4,
           "stage_label": "04. Berg og dal",
+          "distance_m": 1920,
           "record": {
             "stage_label": "04. Berg og dal",
             "record_text": "5:03",
@@ -3617,6 +3652,7 @@
         {
           "stage_number": 5,
           "stage_label": "05. Forskningsparken",
+          "distance_m": 1210,
           "record": {
             "stage_label": "05. Forskningsparken",
             "record_text": "3:06",
@@ -3673,6 +3709,7 @@
         {
           "stage_number": 6,
           "stage_label": "06. Lille Besserud",
+          "distance_m": 1250,
           "record": {
             "stage_label": "06. Lille Besserud",
             "record_text": "3:46",
@@ -3729,6 +3766,7 @@
         {
           "stage_number": 7,
           "stage_label": "07. Besserud",
+          "distance_m": 1770,
           "record": {
             "stage_label": "07. Besserud",
             "record_text": "5:26",
@@ -3785,6 +3823,7 @@
         {
           "stage_number": 8,
           "stage_label": "08. Utfor",
+          "distance_m": 1780,
           "record": {
             "stage_label": "08. Utfor",
             "record_text": "4:03",
@@ -3841,6 +3880,7 @@
         {
           "stage_number": 9,
           "stage_label": "09. Gressbanen",
+          "distance_m": 625,
           "record": {
             "stage_label": "09. Gressbanen",
             "record_text": "1:21",
@@ -3897,6 +3937,7 @@
         {
           "stage_number": 10,
           "stage_label": "10. Den lange",
+          "distance_m": 2860,
           "record": {
             "stage_label": "10. Den lange",
             "record_text": "7:11",
@@ -3953,6 +3994,7 @@
         {
           "stage_number": 11,
           "stage_label": "11. Frognerparken",
+          "distance_m": 1520,
           "record": {
             "stage_label": "11. Frognerparken",
             "record_text": "3:54",
@@ -4009,6 +4051,7 @@
         {
           "stage_number": 12,
           "stage_label": "12. Dumpa",
+          "distance_m": 350,
           "record": {
             "stage_label": "12. Dumpa",
             "record_text": "0:44",
@@ -4065,6 +4108,7 @@
         {
           "stage_number": 13,
           "stage_label": "13. Trappa",
+          "distance_m": 1080,
           "record": {
             "stage_label": "13. Trappa",
             "record_text": "2:39",
@@ -4121,6 +4165,7 @@
         {
           "stage_number": 14,
           "stage_label": "14. Sjarmøren",
+          "distance_m": 710,
           "record": {
             "stage_label": "14. Sjarmøren",
             "record_text": "1:39",
@@ -4177,6 +4222,7 @@
         {
           "stage_number": 15,
           "stage_label": "15. Siste",
+          "distance_m": 535,
           "record": {
             "stage_label": "15. Siste",
             "record_text": "1:11",
@@ -4243,6 +4289,7 @@
         {
           "stage_number": 1,
           "stage_label": "01. Bislett",
+          "distance_m": 1170,
           "record": {
             "stage_label": "01. Bislett",
             "record_text": "3:16",
@@ -4299,6 +4346,7 @@
         {
           "stage_number": 2,
           "stage_label": "02. Norabakken",
+          "distance_m": 1130,
           "record": {
             "stage_label": "02. Norabakken",
             "record_text": "3:41",
@@ -4355,6 +4403,7 @@
         {
           "stage_number": 3,
           "stage_label": "03. Blåsen",
+          "distance_m": 595,
           "record": {
             "stage_label": "03. Blåsen",
             "record_text": "1:32",
@@ -4411,6 +4460,7 @@
         {
           "stage_number": 4,
           "stage_label": "04. Berg og dal",
+          "distance_m": 1920,
           "record": {
             "stage_label": "04. Berg og dal",
             "record_text": "5:56",
@@ -4467,6 +4517,7 @@
         {
           "stage_number": 5,
           "stage_label": "05. Forskningsparken",
+          "distance_m": 1210,
           "record": {
             "stage_label": "05. Forskningsparken",
             "record_text": "3:41",
@@ -4523,6 +4574,7 @@
         {
           "stage_number": 6,
           "stage_label": "06. Lille Besserud",
+          "distance_m": 1250,
           "record": {
             "stage_label": "06. Lille Besserud",
             "record_text": "4:29",
@@ -4579,6 +4631,7 @@
         {
           "stage_number": 7,
           "stage_label": "07. Besserud",
+          "distance_m": 1770,
           "record": {
             "stage_label": "07. Besserud",
             "record_text": "5:57",
@@ -4635,6 +4688,7 @@
         {
           "stage_number": 8,
           "stage_label": "08. Utfor",
+          "distance_m": 1780,
           "record": {
             "stage_label": "08. Utfor",
             "record_text": "4:47",
@@ -4691,6 +4745,7 @@
         {
           "stage_number": 9,
           "stage_label": "09. Gressbanen",
+          "distance_m": 625,
           "record": {
             "stage_label": "09. Gressbanen",
             "record_text": "1:37",
@@ -4747,6 +4802,7 @@
         {
           "stage_number": 10,
           "stage_label": "10. Den lange",
+          "distance_m": 2860,
           "record": {
             "stage_label": "10. Den lange",
             "record_text": "8:21",
@@ -4803,6 +4859,7 @@
         {
           "stage_number": 11,
           "stage_label": "11. Frognerparken",
+          "distance_m": 1520,
           "record": {
             "stage_label": "11. Frognerparken",
             "record_text": "4:35",
@@ -4859,6 +4916,7 @@
         {
           "stage_number": 12,
           "stage_label": "12. Dumpa",
+          "distance_m": 350,
           "record": {
             "stage_label": "12. Dumpa",
             "record_text": "0:50",
@@ -4915,6 +4973,7 @@
         {
           "stage_number": 13,
           "stage_label": "13. Trappa",
+          "distance_m": 1080,
           "record": {
             "stage_label": "13. Trappa",
             "record_text": "3:05",
@@ -4971,6 +5030,7 @@
         {
           "stage_number": 14,
           "stage_label": "14. Sjarmøren",
+          "distance_m": 710,
           "record": {
             "stage_label": "14. Sjarmøren",
             "record_text": "1:54",
@@ -5027,6 +5087,7 @@
         {
           "stage_number": 15,
           "stage_label": "15. Siste",
+          "distance_m": 535,
           "record": {
             "stage_label": "15. Siste",
             "record_text": "1:18",

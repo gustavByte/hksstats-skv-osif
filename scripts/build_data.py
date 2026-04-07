@@ -67,6 +67,28 @@ ORGANIZATIONS = {
     "OSIF": {"name": "OSI Friidrett", "short_name": "OSIF"},
 }
 
+STANDARD_STAGE_DISTANCES_M = {
+    1: 1170,
+    2: 1130,
+    3: 595,
+    4: 1920,
+    5: 1210,
+    6: 1250,
+    7: 1770,
+    8: 1780,
+    9: 625,
+    10: 2860,
+    11: 1520,
+    12: 350,
+    13: 1080,
+    14: 710,
+    15: 535,
+}
+
+STAGE_DISTANCE_SOURCE = (
+    "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser"
+)
+
 
 @dataclass
 class TeamRecord:
@@ -185,6 +207,10 @@ def seconds_to_display(seconds: int) -> str:
     if hours:
         return f"{hours}:{minutes:02d}:{secs:02d}"
     return f"{minutes}:{secs:02d}"
+
+
+def lookup_standard_stage_distance(stage_number: int) -> int | None:
+    return STANDARD_STAGE_DISTANCES_M.get(stage_number)
 
 
 def parse_time_value(value: Any) -> tuple[str | None, int | None]:
@@ -961,6 +987,7 @@ def build_stage_honours(
                 {
                     "stage_number": stage_number,
                     "stage_label": stage_label,
+                    "distance_m": lookup_standard_stage_distance(stage_number),
                     "record": record_lookup.get((spec["division"], stage_label)),
                     "entries": [
                         {
@@ -1146,6 +1173,7 @@ def export_site_data(
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
         "metadata": {
             "title": "HKSstatsSKV&OSIF",
+            "stageDistanceSource": STAGE_DISTANCE_SOURCE,
             "years": sorted({row["year"] for row in teams}, reverse=True),
             "organizations": [
                 {"code": code, "name": meta["name"], "shortName": meta["short_name"]}

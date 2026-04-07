@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T14:22:51",
+  "generatedAt": "2026-04-07T15:15:14",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -63,7 +63,7 @@
       "results": 660,
       "teams": 44,
       "people": 463,
-      "pendingNameReviews": 56
+      "pendingNameReviews": 8
     }
   },
   "overview": {
@@ -82,7 +82,7 @@
       },
       {
         "label": "Navn til gjennomgang",
-        "value": 56
+        "value": 8
       }
     ],
     "classBreakdown": [
@@ -90,14 +90,14 @@
         "class_label": "SK Vidar elite",
         "class_code": "EliteSKV",
         "result_count": 285,
-        "people_count": 200,
+        "people_count": 191,
         "team_count": 19
       },
       {
         "class_label": "SK Vidar senior",
         "class_code": "SeniorSKV",
         "result_count": 180,
-        "people_count": 148,
+        "people_count": 145,
         "team_count": 12
       },
       {
@@ -111,14 +111,14 @@
         "class_label": "OSI student",
         "class_code": "StudOSI",
         "result_count": 120,
-        "people_count": 98,
+        "people_count": 92,
         "team_count": 8
       },
       {
         "class_label": "SK Vidar miks",
         "class_code": "MiksSKV",
         "result_count": 45,
-        "people_count": 42,
+        "people_count": 41,
         "team_count": 3
       },
       {
@@ -156,6 +156,36 @@
       }
     ],
     "topAppearances": [
+      {
+        "id": 105,
+        "canonical_name": "Emma Liv Leiner",
+        "appearances": 4,
+        "seasons": 4,
+        "teams": 4,
+        "best_category_rank": 1,
+        "category_wins": 1,
+        "best_split_seconds": 98,
+        "best_split_text": "1:38",
+        "classes": [
+          "SK Vidar elite",
+          "SK Vidar senior"
+        ],
+        "years": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "organizations": [
+          "SKV"
+        ],
+        "team_history": [
+          "2025 · SK Vidar Queens  2025",
+          "2024 · SK Vidar Elite Dreamteam 2024",
+          "2023 · SK Vidar Elite 3 2023",
+          "2022 · SK Vidar Senior 1 2022"
+        ]
+      },
       {
         "id": 157,
         "canonical_name": "Hanne Marthe Lie",
@@ -477,34 +507,6 @@
           "2023 · SK Vidar 1 Elite 2023",
           "2022 · SK Vidar Elite 2022"
         ]
-      },
-      {
-        "id": 265,
-        "canonical_name": "Louise Høj Jensen",
-        "appearances": 3,
-        "seasons": 2,
-        "teams": 3,
-        "best_category_rank": 1,
-        "category_wins": 3,
-        "best_split_seconds": 220,
-        "best_split_text": "3:40",
-        "classes": [
-          "OSI student",
-          "SK Vidar senior"
-        ],
-        "years": [
-          2024,
-          2022
-        ],
-        "organizations": [
-          "OSIF",
-          "SKV"
-        ],
-        "team_history": [
-          "2024 · OSI damer 2024",
-          "2022 · SK Vidar Senior 1 2022",
-          "2022 · OSI F student 2022"
-        ]
       }
     ],
     "topCategoryWins": [
@@ -534,6 +536,33 @@
           "2024 · OSI damer 2024",
           "2022 · SK Vidar Senior 1 2022",
           "2022 · OSI F student 2022"
+        ]
+      },
+      {
+        "id": 388,
+        "canonical_name": "Siri Vegsund Staver",
+        "appearances": 3,
+        "seasons": 3,
+        "teams": 3,
+        "best_category_rank": 1,
+        "category_wins": 3,
+        "best_split_seconds": 116,
+        "best_split_text": "1:56",
+        "classes": [
+          "OSI student"
+        ],
+        "years": [
+          2025,
+          2024,
+          2023
+        ],
+        "organizations": [
+          "OSIF"
+        ],
+        "team_history": [
+          "2025 · OSI Grils 2025",
+          "2024 · OSI damer 2024",
+          "2023 · OSI damer 2023"
         ]
       },
       {
@@ -646,28 +675,33 @@
         ]
       },
       {
-        "id": 388,
-        "canonical_name": "Siri Vegsund Staver",
-        "appearances": 2,
-        "seasons": 2,
-        "teams": 2,
+        "id": 105,
+        "canonical_name": "Emma Liv Leiner",
+        "appearances": 4,
+        "seasons": 4,
+        "teams": 4,
         "best_category_rank": 1,
-        "category_wins": 2,
-        "best_split_seconds": 116,
-        "best_split_text": "1:56",
+        "category_wins": 1,
+        "best_split_seconds": 98,
+        "best_split_text": "1:38",
         "classes": [
-          "OSI student"
+          "SK Vidar elite",
+          "SK Vidar senior"
         ],
         "years": [
           2025,
-          2023
+          2024,
+          2023,
+          2022
         ],
         "organizations": [
-          "OSIF"
+          "SKV"
         ],
         "team_history": [
-          "2025 · OSI Grils 2025",
-          "2023 · OSI damer 2023"
+          "2025 · SK Vidar Queens  2025",
+          "2024 · SK Vidar Elite Dreamteam 2024",
+          "2023 · SK Vidar Elite 3 2023",
+          "2022 · SK Vidar Senior 1 2022"
         ]
       },
       {
@@ -724,34 +758,6 @@
         ],
         "team_history": [
           "2025 · SK Vidar Queens  2025",
-          "2023 · SK Vidar Elite 3 2023",
-          "2022 · SK Vidar Senior 1 2022"
-        ]
-      },
-      {
-        "id": 104,
-        "canonical_name": "Emma Leiner",
-        "appearances": 3,
-        "seasons": 3,
-        "teams": 3,
-        "best_category_rank": 1,
-        "category_wins": 1,
-        "best_split_seconds": 98,
-        "best_split_text": "1:38",
-        "classes": [
-          "SK Vidar elite",
-          "SK Vidar senior"
-        ],
-        "years": [
-          2024,
-          2023,
-          2022
-        ],
-        "organizations": [
-          "SKV"
-        ],
-        "team_history": [
-          "2024 · SK Vidar Elite Dreamteam 2024",
           "2023 · SK Vidar Elite 3 2023",
           "2022 · SK Vidar Senior 1 2022"
         ]
@@ -965,7 +971,7 @@
             },
             {
               "rank": 2,
-              "person_name": "Joakim Mohn",
+              "person_name": "Joakim S. Mohn",
               "raw_name": "Joakim Mohn",
               "split_text": "3:22",
               "split_seconds": 202,
@@ -1347,7 +1353,7 @@
             },
             {
               "rank": 5,
-              "person_name": "Kristan Bjune Sveen",
+              "person_name": "Kristian Bjune Sveen",
               "raw_name": "Kristan Bjune Sveen",
               "split_text": "4:05",
               "split_seconds": 245,
@@ -1758,7 +1764,7 @@
             },
             {
               "rank": 4,
-              "person_name": "Magnus Warvik",
+              "person_name": "Magnus W Warvik",
               "raw_name": "Magnus Warvik",
               "split_text": "4:14",
               "split_seconds": 254,
@@ -1928,7 +1934,7 @@
             },
             {
               "rank": 4,
-              "person_name": "Morten Dalhaug",
+              "person_name": "Morten Olsen Dalhaug",
               "raw_name": "Morten Dalhaug",
               "split_text": "3:02",
               "split_seconds": 182,
@@ -2618,7 +2624,7 @@
             },
             {
               "rank": 4,
-              "person_name": "Julie Aspesletten",
+              "person_name": "Julie Benedicte Aspesletten",
               "raw_name": "Julie Aspesletten",
               "split_text": "4:45",
               "split_seconds": 285,
@@ -2887,7 +2893,7 @@
             },
             {
               "rank": 5,
-              "person_name": "Anne-Line Dahlen",
+              "person_name": "Anne-Line Evenstad Dahlen",
               "raw_name": "Anne-Line Dahlen",
               "split_text": "1:47",
               "split_seconds": 107,
@@ -3397,7 +3403,7 @@
             },
             {
               "rank": 5,
-              "person_name": "Veselemøy Rønnevik",
+              "person_name": "Veslemøy Rønnevik",
               "raw_name": "Veselemøy Rønnevik",
               "split_text": "1:36",
               "split_seconds": 96,
@@ -4148,7 +4154,7 @@
             },
             {
               "rank": 3,
-              "person_name": "🔁Håkon Lund",
+              "person_name": "Håkon Lund",
               "raw_name": "🔁Håkon Lund",
               "split_text": "3:24",
               "split_seconds": 204,
@@ -4358,7 +4364,7 @@
           "entries": [
             {
               "rank": 1,
-              "person_name": "Siri Staver",
+              "person_name": "Siri Vegsund Staver",
               "raw_name": "Siri Staver",
               "split_text": "4:23",
               "split_seconds": 263,
@@ -4529,7 +4535,7 @@
           "entries": [
             {
               "rank": 1,
-              "person_name": "Ingrid Skogum",
+              "person_name": "Ingrid Aarbogh Skogum",
               "raw_name": "Ingrid Skogum",
               "split_text": "4:09",
               "split_seconds": 249,
@@ -4671,7 +4677,7 @@
             },
             {
               "rank": 3,
-              "person_name": "Ragnhild Brøs Kløven",
+              "person_name": "Ragnhild Brørs Kløven",
               "raw_name": "Ragnhild Brøs Kløven",
               "split_text": "8:02",
               "split_seconds": 482,
@@ -4828,7 +4834,7 @@
             },
             {
               "rank": 2,
-              "person_name": "Helene Melsom",
+              "person_name": "Helene Støle Melsom",
               "raw_name": "Helene Melsom",
               "split_text": "9:30",
               "split_seconds": 570,
@@ -5178,7 +5184,7 @@
       "team_rank": 5,
       "stage_number": 2,
       "stage_label": "02. Norabakken",
-      "person_name": "Joakim Mohn",
+      "person_name": "Joakim S. Mohn",
       "raw_name": "Joakim Mohn",
       "split_text": "3:22",
       "split_seconds": 202,
@@ -5938,7 +5944,7 @@
       "team_rank": 9,
       "stage_number": 10,
       "stage_label": "10. Den lange",
-      "person_name": "Magnus Warvik",
+      "person_name": "Magnus W Warvik",
       "raw_name": "Magnus Warvik",
       "split_text": "8:04",
       "split_seconds": 484,
@@ -5998,7 +6004,7 @@
       "team_rank": 9,
       "stage_number": 13,
       "stage_label": "13. Trappa",
-      "person_name": "Morten Dalhaug",
+      "person_name": "Morten Olsen Dalhaug",
       "raw_name": "Morten Dalhaug",
       "split_text": "3:02",
       "split_seconds": 182,
@@ -6898,7 +6904,7 @@
       "team_rank": 4,
       "stage_number": 13,
       "stage_label": "13. Trappa",
-      "person_name": "🔁Håkon Lund",
+      "person_name": "Håkon Lund",
       "raw_name": "🔁Håkon Lund",
       "split_text": "3:24",
       "split_seconds": 204,
@@ -7118,7 +7124,7 @@
       "team_rank": 2,
       "stage_number": 9,
       "stage_label": "09. Gressbanen",
-      "person_name": "Anne-Line Dahlen",
+      "person_name": "Anne-Line Evenstad Dahlen",
       "raw_name": "Anne-Line Dahlen",
       "split_text": "1:47",
       "split_seconds": 107,
@@ -7778,7 +7784,7 @@
       "team_rank": 18,
       "stage_number": 12,
       "stage_label": "12. Dumpa",
-      "person_name": "Ingrid Huitfeldt",
+      "person_name": "Ingrid Marie Schaumburg Huitfeldt",
       "raw_name": "Ingrid Huitfeldt",
       "split_text": "1:04",
       "split_seconds": 64,
@@ -9258,7 +9264,7 @@
       "team_rank": 1,
       "stage_number": 11,
       "stage_label": "11. Frognerparken",
-      "person_name": "David Rieger",
+      "person_name": "David Stefan Rieger",
       "raw_name": "David Rieger",
       "split_text": "4:45",
       "split_seconds": 285,
@@ -9378,7 +9384,7 @@
       "team_rank": 2,
       "stage_number": 2,
       "stage_label": "02. Norabakken",
-      "person_name": "Siri Staver",
+      "person_name": "Siri Vegsund Staver",
       "raw_name": "Siri Staver",
       "split_text": "4:23",
       "split_seconds": 263,
@@ -9438,7 +9444,7 @@
       "team_rank": 2,
       "stage_number": 5,
       "stage_label": "05. Forskningsparken",
-      "person_name": "Ingrid Skogum",
+      "person_name": "Ingrid Aarbogh Skogum",
       "raw_name": "Ingrid Skogum",
       "split_text": "4:09",
       "split_seconds": 249,
@@ -10158,7 +10164,7 @@
       "team_rank": 12,
       "stage_number": 11,
       "stage_label": "11. Frognerparken",
-      "person_name": "Magnus Warvik",
+      "person_name": "Magnus W Warvik",
       "raw_name": "Magnus Warvik",
       "split_text": "4:14",
       "split_seconds": 254,
@@ -10358,7 +10364,7 @@
       "team_rank": 2,
       "stage_number": 6,
       "stage_label": "06. Lille Besserud",
-      "person_name": "Julie Aspesletten",
+      "person_name": "Julie Benedicte Aspesletten",
       "raw_name": "Julie Aspesletten",
       "split_text": "4:45",
       "split_seconds": 285,
@@ -10858,7 +10864,7 @@
       "team_rank": 14,
       "stage_number": 1,
       "stage_label": "01. Bislett",
-      "person_name": "Emma Leiner",
+      "person_name": "Emma Liv Leiner",
       "raw_name": "Emma Leiner",
       "split_text": "3:57",
       "split_seconds": 237,
@@ -11418,7 +11424,7 @@
       "team_rank": 16,
       "stage_number": 14,
       "stage_label": "14. Sjarmøren",
-      "person_name": "Karoline Kjærnes",
+      "person_name": "Karoline Holum Kjærnes",
       "raw_name": "Karoline Kjærnes",
       "split_text": "2:20",
       "split_seconds": 140,
@@ -13058,7 +13064,7 @@
       "team_rank": 5,
       "stage_number": 6,
       "stage_label": "06. Lille Besserud",
-      "person_name": "Kristan Bjune Sveen",
+      "person_name": "Kristian Bjune Sveen",
       "raw_name": "Kristan Bjune Sveen",
       "split_text": "4:05",
       "split_seconds": 245,
@@ -13598,7 +13604,7 @@
       "team_rank": 2,
       "stage_number": 3,
       "stage_label": "03. Blåsen",
-      "person_name": "Ida Nordengen",
+      "person_name": "Ida Marie Nordengen",
       "raw_name": "Ida Nordengen",
       "split_text": "1:45",
       "split_seconds": 105,
@@ -14138,7 +14144,7 @@
       "team_rank": 6,
       "stage_number": 15,
       "stage_label": "15. Siste",
-      "person_name": "Veselemøy Rønnevik",
+      "person_name": "Veslemøy Rønnevik",
       "raw_name": "Veselemøy Rønnevik",
       "split_text": "1:36",
       "split_seconds": 96,
@@ -14238,7 +14244,7 @@
       "team_rank": 9,
       "stage_number": 5,
       "stage_label": "05. Forskningsparken",
-      "person_name": "Elene Tangen",
+      "person_name": "Elene Mauseth Tangen",
       "raw_name": "Elene Tangen",
       "split_text": "4:03",
       "split_seconds": 243,
@@ -14318,7 +14324,7 @@
       "team_rank": 9,
       "stage_number": 9,
       "stage_label": "09. Gressbanen",
-      "person_name": "Emma Leiner",
+      "person_name": "Emma Liv Leiner",
       "raw_name": "Emma Leiner",
       "split_text": "1:52",
       "split_seconds": 112,
@@ -14338,7 +14344,7 @@
       "team_rank": 9,
       "stage_number": 10,
       "stage_label": "10. Den lange",
-      "person_name": "Eldbjørg Moxnes",
+      "person_name": "Eldbjørg D. Moxnes",
       "raw_name": "Eldbjørg Moxnes",
       "split_text": "9:25",
       "split_seconds": 565,
@@ -14498,7 +14504,7 @@
       "team_rank": 1,
       "stage_number": 3,
       "stage_label": "03. Blåsen",
-      "person_name": "Maja Blegen",
+      "person_name": "Maja Maria Blegen",
       "raw_name": "Maja Blegen",
       "split_text": "1:58",
       "split_seconds": 118,
@@ -14558,7 +14564,7 @@
       "team_rank": 1,
       "stage_number": 6,
       "stage_label": "06. Lille Besserud",
-      "person_name": "Karoline Kjærnes",
+      "person_name": "Karoline Holum Kjærnes",
       "raw_name": "Karoline Kjærnes",
       "split_text": "5:35",
       "split_seconds": 335,
@@ -14678,7 +14684,7 @@
       "team_rank": 1,
       "stage_number": 12,
       "stage_label": "12. Dumpa",
-      "person_name": "Ingrid Huitfeldt",
+      "person_name": "Ingrid Marie Schaumburg Huitfeldt",
       "raw_name": "Ingrid Huitfeldt",
       "split_text": "1:02",
       "split_seconds": 62,
@@ -14738,7 +14744,7 @@
       "team_rank": 1,
       "stage_number": 15,
       "stage_label": "15. Siste",
-      "person_name": "Hanna Arnes Nisja",
+      "person_name": "Hanna Aarnes Nisja",
       "raw_name": "Hanna Arnes Nisja",
       "split_text": "1:37",
       "split_seconds": 97,
@@ -15158,7 +15164,7 @@
       "team_rank": 2,
       "stage_number": 6,
       "stage_label": "06. Lille Besserud",
-      "person_name": "Simen Hagrup Kjeldsen",
+      "person_name": "Simen Hagerup Kjeldsen",
       "raw_name": "Simen Hagrup Kjeldsen",
       "split_text": "5:23",
       "split_seconds": 323,
@@ -15438,7 +15444,7 @@
       "team_rank": 7,
       "stage_number": 5,
       "stage_label": "05. Forskningsparken",
-      "person_name": "Fredrik Fyksen",
+      "person_name": "Fredrik Sætereng Fyksen",
       "raw_name": "Fredrik Fyksen",
       "split_text": "3:32",
       "split_seconds": 212,
@@ -16218,7 +16224,7 @@
       "team_rank": 1,
       "stage_number": 7,
       "stage_label": "07. Besserud",
-      "person_name": "Ragnhild Brøs Kløven",
+      "person_name": "Ragnhild Brørs Kløven",
       "raw_name": "Ragnhild Brøs Kløven",
       "split_text": "8:02",
       "split_seconds": 482,
@@ -16338,7 +16344,7 @@
       "team_rank": 1,
       "stage_number": 10,
       "stage_label": "10. Den lange",
-      "person_name": "Helene Melsom",
+      "person_name": "Helene Støle Melsom",
       "raw_name": "Helene Melsom",
       "split_text": "9:30",
       "split_seconds": 570,
@@ -17138,7 +17144,7 @@
       "team_rank": 1,
       "stage_number": 15,
       "stage_label": "15. Siste",
-      "person_name": "Emma Leiner",
+      "person_name": "Emma Liv Leiner",
       "raw_name": "Emma Leiner",
       "split_text": "1:38",
       "split_seconds": 98,
@@ -18258,7 +18264,7 @@
       "team_rank": 13,
       "stage_number": 11,
       "stage_label": "11. Frognerparken",
-      "person_name": "Fredrik Emil Juul",
+      "person_name": "Frederik Emil Juul",
       "raw_name": "Fredrik Emil Juul",
       "split_text": "4:48",
       "split_seconds": 288,
@@ -18922,6 +18928,36 @@
   ],
   "people": [
     {
+      "id": 105,
+      "canonical_name": "Emma Liv Leiner",
+      "appearances": 4,
+      "seasons": 4,
+      "teams": 4,
+      "best_category_rank": 1,
+      "category_wins": 1,
+      "best_split_seconds": 98,
+      "best_split_text": "1:38",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · SK Vidar Queens  2025",
+        "2024 · SK Vidar Elite Dreamteam 2024",
+        "2023 · SK Vidar Elite 3 2023",
+        "2022 · SK Vidar Senior 1 2022"
+      ]
+    },
+    {
       "id": 157,
       "canonical_name": "Hanne Marthe Lie",
       "appearances": 4,
@@ -19244,6 +19280,36 @@
       ]
     },
     {
+      "id": 447,
+      "canonical_name": "Veslemøy Rønnevik",
+      "appearances": 4,
+      "seasons": 4,
+      "teams": 4,
+      "best_category_rank": 6,
+      "category_wins": 0,
+      "best_split_seconds": 96,
+      "best_split_text": "1:36",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · SK Vidar Queens  2025",
+        "2024 · SK Vidar Elite Dreamteam 2024",
+        "2023 · SK Vidar Elite 2 2023",
+        "2022 · SK Vidar Senior 2 2022"
+      ]
+    },
+    {
       "id": 265,
       "canonical_name": "Louise Høj Jensen",
       "appearances": 3,
@@ -19269,6 +19335,33 @@
         "2024 · OSI damer 2024",
         "2022 · SK Vidar Senior 1 2022",
         "2022 · OSI F student 2022"
+      ]
+    },
+    {
+      "id": 388,
+      "canonical_name": "Siri Vegsund Staver",
+      "appearances": 3,
+      "seasons": 3,
+      "teams": 3,
+      "best_category_rank": 1,
+      "category_wins": 3,
+      "best_split_seconds": 116,
+      "best_split_text": "1:56",
+      "classes": [
+        "OSI student"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023
+      ],
+      "organizations": [
+        "OSIF"
+      ],
+      "team_history": [
+        "2025 · OSI Grils 2025",
+        "2024 · OSI damer 2024",
+        "2023 · OSI damer 2023"
       ]
     },
     {
@@ -19379,34 +19472,6 @@
       ],
       "team_history": [
         "2025 · SK Vidar Queens  2025",
-        "2023 · SK Vidar Elite 3 2023",
-        "2022 · SK Vidar Senior 1 2022"
-      ]
-    },
-    {
-      "id": 104,
-      "canonical_name": "Emma Leiner",
-      "appearances": 3,
-      "seasons": 3,
-      "teams": 3,
-      "best_category_rank": 1,
-      "category_wins": 1,
-      "best_split_seconds": 98,
-      "best_split_text": "1:38",
-      "classes": [
-        "SK Vidar elite",
-        "SK Vidar senior"
-      ],
-      "years": [
-        2024,
-        2023,
-        2022
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2024 · SK Vidar Elite Dreamteam 2024",
         "2023 · SK Vidar Elite 3 2023",
         "2022 · SK Vidar Senior 1 2022"
       ]
@@ -19772,6 +19837,33 @@
       ]
     },
     {
+      "id": 132,
+      "canonical_name": "Fredrik Sætereng Fyksen",
+      "appearances": 3,
+      "seasons": 3,
+      "teams": 3,
+      "best_category_rank": 4,
+      "category_wins": 0,
+      "best_split_seconds": 212,
+      "best_split_text": "3:32",
+      "classes": [
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · SK Vidar MS 2  2025",
+        "2024 · Sk Vidar senior 2 2024",
+        "2023 · Sk Vidar Senior 1 2023"
+      ]
+    },
+    {
       "id": 133,
       "canonical_name": "Fredrik Sætran",
       "appearances": 3,
@@ -19854,6 +19946,34 @@
       ]
     },
     {
+      "id": 195,
+      "canonical_name": "Ingrid Marie Schaumburg Huitfeldt",
+      "appearances": 3,
+      "seasons": 3,
+      "teams": 3,
+      "best_category_rank": 4,
+      "category_wins": 0,
+      "best_split_seconds": 62,
+      "best_split_text": "1:02",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · SK Vidar Dreamteam  2025",
+        "2024 · SK Vidar Elite 2 2024",
+        "2023 · SK Vidar Senior 1 2023"
+      ]
+    },
+    {
       "id": 214,
       "canonical_name": "Jostein Rogstad",
       "appearances": 3,
@@ -19909,6 +20029,34 @@
       ]
     },
     {
+      "id": 228,
+      "canonical_name": "Karoline Holum Kjærnes",
+      "appearances": 3,
+      "seasons": 3,
+      "teams": 3,
+      "best_category_rank": 3,
+      "category_wins": 0,
+      "best_split_seconds": 119,
+      "best_split_text": "1:59",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · SK Vidar Dreamteam  2025",
+        "2024 · SK Vidar Villa 2024",
+        "2023 · SK Vidar Senior 1 2023"
+      ]
+    },
+    {
       "id": 275,
       "canonical_name": "Magnus Hjellum",
       "appearances": 3,
@@ -19961,6 +20109,34 @@
         "2024 · OSI F student 2024",
         "2023 · OSI F student 2023",
         "2022 · OSI F student 2022"
+      ]
+    },
+    {
+      "id": 278,
+      "canonical_name": "Magnus W Warvik",
+      "appearances": 3,
+      "seasons": 3,
+      "teams": 3,
+      "best_category_rank": 6,
+      "category_wins": 0,
+      "best_split_seconds": 254,
+      "best_split_text": "4:14",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · Menn senior 1  2025",
+        "2024 · SK Vidar 2 Elite 2024",
+        "2023 · SK Vidar 2 Elite 2023"
       ]
     },
     {
@@ -20042,6 +20218,61 @@
         "2024 · Sk Vidar Senior 1 2024",
         "2023 · Sk Vidar Senior 1 2023",
         "2022 · Sk Vidar senior 2 2022"
+      ]
+    },
+    {
+      "id": 353,
+      "canonical_name": "Ragnhild Brørs Kløven",
+      "appearances": 3,
+      "seasons": 3,
+      "teams": 3,
+      "best_category_rank": 2,
+      "category_wins": 0,
+      "best_split_seconds": 321,
+      "best_split_text": "5:21",
+      "classes": [
+        "OSI student"
+      ],
+      "years": [
+        2025,
+        2024,
+        2022
+      ],
+      "organizations": [
+        "OSIF"
+      ],
+      "team_history": [
+        "2025 · OSI Grils 2025",
+        "2024 · OSI damer 2024",
+        "2022 · OSI F student 2022"
+      ]
+    },
+    {
+      "id": 379,
+      "canonical_name": "Simen Hagerup Kjeldsen",
+      "appearances": 3,
+      "seasons": 3,
+      "teams": 3,
+      "best_category_rank": 3,
+      "category_wins": 0,
+      "best_split_seconds": 64,
+      "best_split_text": "1:04",
+      "classes": [
+        "SK Vidar miks",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · bue-og-miks  2025",
+        "2024 · Sk Vidar senior 2 2024",
+        "2023 · Sk Vidar Bue & Mix"
       ]
     },
     {
@@ -20210,34 +20441,6 @@
       ]
     },
     {
-      "id": 447,
-      "canonical_name": "Veslemøy Rønnevik",
-      "appearances": 3,
-      "seasons": 3,
-      "teams": 3,
-      "best_category_rank": 6,
-      "category_wins": 0,
-      "best_split_seconds": 256,
-      "best_split_text": "4:16",
-      "classes": [
-        "SK Vidar elite",
-        "SK Vidar senior"
-      ],
-      "years": [
-        2025,
-        2024,
-        2022
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · SK Vidar Queens  2025",
-        "2024 · SK Vidar Elite Dreamteam 2024",
-        "2022 · SK Vidar Senior 2 2022"
-      ]
-    },
-    {
       "id": 451,
       "canonical_name": "Vilde Antonsen",
       "appearances": 3,
@@ -20287,31 +20490,6 @@
       "team_history": [
         "2023 · SK Vidar Elite 1 2023",
         "2022 · SK Vidar elite 2022"
-      ]
-    },
-    {
-      "id": 388,
-      "canonical_name": "Siri Vegsund Staver",
-      "appearances": 2,
-      "seasons": 2,
-      "teams": 2,
-      "best_category_rank": 1,
-      "category_wins": 2,
-      "best_split_seconds": 116,
-      "best_split_text": "1:56",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2025,
-        2023
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2025 · OSI Grils 2025",
-        "2023 · OSI damer 2023"
       ]
     },
     {
@@ -20365,6 +20543,32 @@
       ]
     },
     {
+      "id": 89,
+      "canonical_name": "Elene Mauseth Tangen",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 1,
+      "category_wins": 1,
+      "best_split_seconds": 113,
+      "best_split_text": "1:53",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2023,
+        2022
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2023 · SK Vidar Elite 3 2023",
+        "2022 · SK Vidar Senior 1 2022"
+      ]
+    },
+    {
       "id": 94,
       "canonical_name": "Elisabet Rørvik",
       "appearances": 2,
@@ -20413,6 +20617,31 @@
       "team_history": [
         "2024 · SK Vidar Elite 1 2024",
         "2023 · SK Vidar Elite 1 2023"
+      ]
+    },
+    {
+      "id": 169,
+      "canonical_name": "Helene Støle Melsom",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 1,
+      "category_wins": 1,
+      "best_split_seconds": 570,
+      "best_split_text": "9:30",
+      "classes": [
+        "OSI student"
+      ],
+      "years": [
+        2023,
+        2022
+      ],
+      "organizations": [
+        "OSIF"
+      ],
+      "team_history": [
+        "2023 · OSI damer 2023",
+        "2022 · OSI F student 2022"
       ]
     },
     {
@@ -20492,6 +20721,31 @@
       ]
     },
     {
+      "id": 192,
+      "canonical_name": "Ingrid Aarbogh Skogum",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 1,
+      "category_wins": 1,
+      "best_split_seconds": 249,
+      "best_split_text": "4:09",
+      "classes": [
+        "OSI student"
+      ],
+      "years": [
+        2025,
+        2024
+      ],
+      "organizations": [
+        "OSIF"
+      ],
+      "team_history": [
+        "2025 · OSI Grils 2025",
+        "2024 · OSI damer 2024"
+      ]
+    },
+    {
       "id": 193,
       "canonical_name": "Ingrid Helene Nyhus",
       "appearances": 2,
@@ -20513,6 +20767,31 @@
       ],
       "team_history": [
         "2025 · SK Vidar 1  2025",
+        "2024 · SK Vidar Elite 1 2024"
+      ]
+    },
+    {
+      "id": 218,
+      "canonical_name": "Julie Benedicte Aspesletten",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 1,
+      "category_wins": 1,
+      "best_split_seconds": 285,
+      "best_split_text": "4:45",
+      "classes": [
+        "SK Vidar elite"
+      ],
+      "years": [
+        2025,
+        2024
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · SK Vidar Queens  2025",
         "2024 · SK Vidar Elite 1 2024"
       ]
     },
@@ -20564,6 +20843,32 @@
       "team_history": [
         "2024 · OSI damer 2024",
         "2023 · OSI damer 2023"
+      ]
+    },
+    {
+      "id": 282,
+      "canonical_name": "Maja Maria Blegen",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 1,
+      "category_wins": 1,
+      "best_split_seconds": 106,
+      "best_split_text": "1:46",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2024,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2024 · SK Vidar Villa 2024",
+        "2023 · SK Vidar Senior 1 2023"
       ]
     },
     {
@@ -20770,6 +21075,31 @@
       ]
     },
     {
+      "id": 41,
+      "canonical_name": "Anne-Line Evenstad Dahlen",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 3,
+      "category_wins": 0,
+      "best_split_seconds": 107,
+      "best_split_text": "1:47",
+      "classes": [
+        "SK Vidar elite"
+      ],
+      "years": [
+        2025,
+        2024
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · SK Vidar 1  2025",
+        "2024 · SK Vidar Elite 2 2024"
+      ]
+    },
+    {
       "id": 44,
       "canonical_name": "Anton Heldal",
       "appearances": 2,
@@ -20870,6 +21200,31 @@
       ]
     },
     {
+      "id": 70,
+      "canonical_name": "David Stefan Rieger",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 3,
+      "category_wins": 0,
+      "best_split_seconds": 278,
+      "best_split_text": "4:38",
+      "classes": [
+        "OSI student"
+      ],
+      "years": [
+        2024,
+        2022
+      ],
+      "organizations": [
+        "OSIF"
+      ],
+      "team_history": [
+        "2024 · OSI F student 2024",
+        "2022 · OSI F student 2022"
+      ]
+    },
+    {
       "id": 74,
       "canonical_name": "Dina Anjara",
       "appearances": 2,
@@ -20943,6 +21298,32 @@
       "team_history": [
         "2025 · Elite 2 - menn  2025",
         "2023 · SK Vidar 1 Elite 2023"
+      ]
+    },
+    {
+      "id": 87,
+      "canonical_name": "Eldbjørg D. Moxnes",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 3,
+      "category_wins": 0,
+      "best_split_seconds": 565,
+      "best_split_text": "9:25",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2023,
+        2022
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2023 · SK Vidar Elite 3 2023",
+        "2022 · SK Vidar Senior 2 2022"
       ]
     },
     {
@@ -21177,6 +21558,32 @@
       ]
     },
     {
+      "id": 124,
+      "canonical_name": "Frederik Emil Juul",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 2,
+      "category_wins": 0,
+      "best_split_seconds": 288,
+      "best_split_text": "4:48",
+      "classes": [
+        "SK Vidar miks",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2023,
+        2022
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2023 · Sk Vidar Bue & Mix",
+        "2022 · Sk Vidar senior 2 2022"
+      ]
+    },
+    {
       "id": 131,
       "canonical_name": "Fredrik Strohkirchen",
       "appearances": 2,
@@ -21203,31 +21610,6 @@
       ]
     },
     {
-      "id": 132,
-      "canonical_name": "Fredrik Sætereng Fyksen",
-      "appearances": 2,
-      "seasons": 2,
-      "teams": 2,
-      "best_category_rank": 13,
-      "category_wins": 0,
-      "best_split_seconds": 281,
-      "best_split_text": "4:41",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2025,
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · SK Vidar MS 2  2025",
-        "2024 · Sk Vidar senior 2 2024"
-      ]
-    },
-    {
       "id": 145,
       "canonical_name": "Haakon Engelsen Berg",
       "appearances": 2,
@@ -21250,6 +21632,31 @@
       "team_history": [
         "2025 · Elite 1 - menn 2025",
         "2024 · SK Vidar 1 | Bib 1204 | 13:15"
+      ]
+    },
+    {
+      "id": 148,
+      "canonical_name": "Hanna Aarnes Nisja",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 2,
+      "category_wins": 0,
+      "best_split_seconds": 97,
+      "best_split_text": "1:37",
+      "classes": [
+        "SK Vidar senior"
+      ],
+      "years": [
+        2023,
+        2022
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2023 · SK Vidar Senior 1 2023",
+        "2022 · SK Vidar Senior 2 2022"
       ]
     },
     {
@@ -21357,29 +21764,53 @@
       ]
     },
     {
-      "id": 194,
-      "canonical_name": "Ingrid Huitfeldt",
+      "id": 179,
+      "canonical_name": "Håkon Lund",
       "appearances": 2,
       "seasons": 2,
       "teams": 2,
-      "best_category_rank": 4,
+      "best_category_rank": 3,
       "category_wins": 0,
-      "best_split_seconds": 62,
-      "best_split_text": "1:02",
+      "best_split_seconds": 204,
+      "best_split_text": "3:24",
       "classes": [
-        "SK Vidar elite",
-        "SK Vidar senior"
+        "OSI student"
       ],
       "years": [
         2025,
         2023
       ],
       "organizations": [
+        "OSIF"
+      ],
+      "team_history": [
+        "2025 · OSI herrer 1 2025",
+        "2023 · OSI F student 2023"
+      ]
+    },
+    {
+      "id": 185,
+      "canonical_name": "Ida Marie Nordengen",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 3,
+      "category_wins": 0,
+      "best_split_seconds": 90,
+      "best_split_text": "1:30",
+      "classes": [
+        "SK Vidar elite"
+      ],
+      "years": [
+        2023,
+        2022
+      ],
+      "organizations": [
         "SKV"
       ],
       "team_history": [
-        "2025 · SK Vidar Dreamteam  2025",
-        "2023 · SK Vidar Senior 1 2023"
+        "2023 · SK Vidar Elite 1 2023",
+        "2022 · SK Vidar elite 2022"
       ]
     },
     {
@@ -21405,6 +21836,31 @@
       "team_history": [
         "2025 · SK Vidar MS 2  2025",
         "2024 · Sk Vidar senior 2 2024"
+      ]
+    },
+    {
+      "id": 209,
+      "canonical_name": "Joakim S. Mohn",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 5,
+      "category_wins": 0,
+      "best_split_seconds": 75,
+      "best_split_text": "1:15",
+      "classes": [
+        "SK Vidar elite"
+      ],
+      "years": [
+        2025,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · Elite 1 - menn 2025",
+        "2023 · SK Vidar 2 Elite 2023"
       ]
     },
     {
@@ -21484,32 +21940,6 @@
       ]
     },
     {
-      "id": 229,
-      "canonical_name": "Karoline Kjærnes",
-      "appearances": 2,
-      "seasons": 2,
-      "teams": 2,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 140,
-      "best_split_text": "2:20",
-      "classes": [
-        "SK Vidar elite",
-        "SK Vidar senior"
-      ],
-      "years": [
-        2024,
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2024 · SK Vidar Villa 2024",
-        "2023 · SK Vidar Senior 1 2023"
-      ]
-    },
-    {
       "id": 232,
       "canonical_name": "Katerina Hatzigiannis",
       "appearances": 2,
@@ -21557,6 +21987,32 @@
       "team_history": [
         "2024 · Sk Vidar Senior 1 2024",
         "2023 · Sk Vidar Senior 1 2023"
+      ]
+    },
+    {
+      "id": 239,
+      "canonical_name": "Kristian Bjune Sveen",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 6,
+      "category_wins": 0,
+      "best_split_seconds": 245,
+      "best_split_text": "4:05",
+      "classes": [
+        "SK Vidar elite",
+        "SK Vidar senior"
+      ],
+      "years": [
+        2024,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2024 · Sk Vidar Senior 1 2024",
+        "2023 · SK Vidar 1 Elite 2023"
       ]
     },
     {
@@ -21661,32 +22117,6 @@
       "team_history": [
         "2024 · Sk Vidar senior 2 2024",
         "2022 · SK Vidar Elite 2022"
-      ]
-    },
-    {
-      "id": 279,
-      "canonical_name": "Magnus Warvik",
-      "appearances": 2,
-      "seasons": 2,
-      "teams": 2,
-      "best_category_rank": 6,
-      "category_wins": 0,
-      "best_split_seconds": 254,
-      "best_split_text": "4:14",
-      "classes": [
-        "SK Vidar elite",
-        "SK Vidar senior"
-      ],
-      "years": [
-        2025,
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · Menn senior 1  2025",
-        "2024 · SK Vidar 2 Elite 2024"
       ]
     },
     {
@@ -21869,6 +22299,31 @@
       ]
     },
     {
+      "id": 326,
+      "canonical_name": "Morten Olsen Dalhaug",
+      "appearances": 2,
+      "seasons": 2,
+      "teams": 2,
+      "best_category_rank": 2,
+      "category_wins": 0,
+      "best_split_seconds": 182,
+      "best_split_text": "3:02",
+      "classes": [
+        "SK Vidar senior"
+      ],
+      "years": [
+        2025,
+        2023
+      ],
+      "organizations": [
+        "SKV"
+      ],
+      "team_history": [
+        "2025 · Menn senior 1  2025",
+        "2023 · Sk Vidar Senior 1 2023"
+      ]
+    },
+    {
       "id": 342,
       "canonical_name": "Ole Anders Stokker",
       "appearances": 2,
@@ -21943,31 +22398,6 @@
       "team_history": [
         "2025 · SK Vidar Dreamteam  2025",
         "2023 · SK Vidar Senior 1 2023"
-      ]
-    },
-    {
-      "id": 353,
-      "canonical_name": "Ragnhild Brørs Kløven",
-      "appearances": 2,
-      "seasons": 2,
-      "teams": 2,
-      "best_category_rank": 4,
-      "category_wins": 0,
-      "best_split_seconds": 321,
-      "best_split_text": "5:21",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2025,
-        2024
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2025 · OSI Grils 2025",
-        "2024 · OSI damer 2024"
       ]
     },
     {
@@ -22170,32 +22600,6 @@
       "team_history": [
         "2024 · OSI F student 2024",
         "2023 · OSI F student 2023"
-      ]
-    },
-    {
-      "id": 379,
-      "canonical_name": "Simen Hagerup Kjeldsen",
-      "appearances": 2,
-      "seasons": 2,
-      "teams": 2,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 64,
-      "best_split_text": "1:04",
-      "classes": [
-        "SK Vidar miks",
-        "SK Vidar senior"
-      ],
-      "years": [
-        2025,
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · bue-og-miks  2025",
-        "2024 · Sk Vidar senior 2 2024"
       ]
     },
     {
@@ -22737,29 +23141,6 @@
       ]
     },
     {
-      "id": 89,
-      "canonical_name": "Elene Mauseth Tangen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 1,
-      "category_wins": 1,
-      "best_split_seconds": 113,
-      "best_split_text": "1:53",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2022 · SK Vidar Senior 1 2022"
-      ]
-    },
-    {
       "id": 92,
       "canonical_name": "Elin Mellomstrand",
       "appearances": 1,
@@ -22898,29 +23279,6 @@
       ]
     },
     {
-      "id": 167,
-      "canonical_name": "Helene Melsom",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 1,
-      "category_wins": 1,
-      "best_split_seconds": 570,
-      "best_split_text": "9:30",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2022 · OSI F student 2022"
-      ]
-    },
-    {
       "id": 180,
       "canonical_name": "Håkon Mindrebøe",
       "appearances": 1,
@@ -22967,29 +23325,6 @@
       ]
     },
     {
-      "id": 197,
-      "canonical_name": "Ingrid Skogum",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 1,
-      "category_wins": 1,
-      "best_split_seconds": 249,
-      "best_split_text": "4:09",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2024 · OSI damer 2024"
-      ]
-    },
-    {
       "id": 206,
       "canonical_name": "Jo Trieu Søreide",
       "appearances": 1,
@@ -23010,29 +23345,6 @@
       ],
       "team_history": [
         "2025 · bue-og-miks  2025"
-      ]
-    },
-    {
-      "id": 217,
-      "canonical_name": "Julie Aspesletten",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 1,
-      "category_wins": 1,
-      "best_split_seconds": 285,
-      "best_split_text": "4:45",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2024 · SK Vidar Elite 1 2024"
       ]
     },
     {
@@ -23217,29 +23529,6 @@
       ],
       "team_history": [
         "2025 · OSI O2 mix 2025"
-      ]
-    },
-    {
-      "id": 281,
-      "canonical_name": "Maja Blegen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 1,
-      "category_wins": 1,
-      "best_split_seconds": 118,
-      "best_split_text": "1:58",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar Senior 1 2023"
       ]
     },
     {
@@ -23562,29 +23851,6 @@
       ],
       "team_history": [
         "2023 · OSI damer 2023"
-      ]
-    },
-    {
-      "id": 387,
-      "canonical_name": "Siri Staver",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 1,
-      "category_wins": 1,
-      "best_split_seconds": 263,
-      "best_split_text": "4:23",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2024 · OSI damer 2024"
       ]
     },
     {
@@ -24232,52 +24498,6 @@
       ]
     },
     {
-      "id": 40,
-      "canonical_name": "Anne-Line Dahlen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 107,
-      "best_split_text": "1:47",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · SK Vidar 1  2025"
-      ]
-    },
-    {
-      "id": 41,
-      "canonical_name": "Anne-Line Evenstad Dahlen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 11,
-      "category_wins": 0,
-      "best_split_seconds": 223,
-      "best_split_text": "3:43",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2024 · SK Vidar Elite 2 2024"
-      ]
-    },
-    {
       "id": 42,
       "canonical_name": "Anne-Line Evenstad Dalen",
       "appearances": 1,
@@ -24646,52 +24866,6 @@
       ]
     },
     {
-      "id": 69,
-      "canonical_name": "David Rieger",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 285,
-      "best_split_text": "4:45",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2024 · OSI F student 2024"
-      ]
-    },
-    {
-      "id": 70,
-      "canonical_name": "David Stefan Rieger",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 4,
-      "category_wins": 0,
-      "best_split_seconds": 278,
-      "best_split_text": "4:38",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2022 · OSI F student 2022"
-      ]
-    },
-    {
       "id": 71,
       "canonical_name": "David Stefan Riger",
       "appearances": 1,
@@ -24945,75 +25119,6 @@
       ]
     },
     {
-      "id": 87,
-      "canonical_name": "Eldbjørg D. Moxnes",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 583,
-      "best_split_text": "9:43",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2022 · SK Vidar Senior 2 2022"
-      ]
-    },
-    {
-      "id": 88,
-      "canonical_name": "Eldbjørg Moxnes",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 9,
-      "category_wins": 0,
-      "best_split_seconds": 565,
-      "best_split_text": "9:25",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar Elite 3 2023"
-      ]
-    },
-    {
-      "id": 90,
-      "canonical_name": "Elene Tangen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 8,
-      "category_wins": 0,
-      "best_split_seconds": 243,
-      "best_split_text": "4:03",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar Elite 3 2023"
-      ]
-    },
-    {
       "id": 93,
       "canonical_name": "Eline Rud Wagle",
       "appearances": 1,
@@ -25172,29 +25277,6 @@
       ],
       "team_history": [
         "2023 · OSI F student 2023"
-      ]
-    },
-    {
-      "id": 105,
-      "canonical_name": "Emma Liv Leiner",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 20,
-      "category_wins": 0,
-      "best_split_seconds": 480,
-      "best_split_text": "8:00",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · SK Vidar Queens  2025"
       ]
     },
     {
@@ -25359,29 +25441,6 @@
       ]
     },
     {
-      "id": 124,
-      "canonical_name": "Frederik Emil Juul",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 2,
-      "category_wins": 0,
-      "best_split_seconds": 392,
-      "best_split_text": "6:32",
-      "classes": [
-        "SK Vidar miks"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · Sk Vidar Bue & Mix"
-      ]
-    },
-    {
       "id": 125,
       "canonical_name": "Fredrik Camilo Halsbog",
       "appearances": 1,
@@ -25402,52 +25461,6 @@
       ],
       "team_history": [
         "2024 · Sk Vidar senior 2 2024"
-      ]
-    },
-    {
-      "id": 126,
-      "canonical_name": "Fredrik Emil Juul",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 16,
-      "category_wins": 0,
-      "best_split_seconds": 288,
-      "best_split_text": "4:48",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2022 · Sk Vidar senior 2 2022"
-      ]
-    },
-    {
-      "id": 127,
-      "canonical_name": "Fredrik Fyksen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 4,
-      "category_wins": 0,
-      "best_split_seconds": 212,
-      "best_split_text": "3:32",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · Sk Vidar Senior 1 2023"
       ]
     },
     {
@@ -25658,29 +25671,6 @@
       ]
     },
     {
-      "id": 148,
-      "canonical_name": "Hanna Aarnes Nisja",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 2,
-      "category_wins": 0,
-      "best_split_seconds": 114,
-      "best_split_text": "1:54",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2022 · SK Vidar Senior 2 2022"
-      ]
-    },
-    {
       "id": 149,
       "canonical_name": "Hanna Altmeier",
       "appearances": 1,
@@ -25701,29 +25691,6 @@
       ],
       "team_history": [
         "2023 · OSI damer 2023"
-      ]
-    },
-    {
-      "id": 150,
-      "canonical_name": "Hanna Arnes Nisja",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 97,
-      "best_split_text": "1:37",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar Senior 1 2023"
       ]
     },
     {
@@ -25980,29 +25947,6 @@
       ]
     },
     {
-      "id": 169,
-      "canonical_name": "Helene Støle Melsom",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 593,
-      "best_split_text": "9:53",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2023 · OSI damer 2023"
-      ]
-    },
-    {
       "id": 170,
       "canonical_name": "Henning Mæhle",
       "appearances": 1,
@@ -26095,29 +26039,6 @@
       ]
     },
     {
-      "id": 179,
-      "canonical_name": "Håkon Lund",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 230,
-      "best_split_text": "3:50",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2023 · OSI F student 2023"
-      ]
-    },
-    {
       "id": 181,
       "canonical_name": "Håvard Fluge Petterson",
       "appearances": 1,
@@ -26184,52 +26105,6 @@
       ],
       "team_history": [
         "2024 · SK Vidar Elite 1 2024"
-      ]
-    },
-    {
-      "id": 185,
-      "canonical_name": "Ida Marie Nordengen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 90,
-      "best_split_text": "1:30",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2022 · SK Vidar elite 2022"
-      ]
-    },
-    {
-      "id": 186,
-      "canonical_name": "Ida Nordengen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 4,
-      "category_wins": 0,
-      "best_split_seconds": 105,
-      "best_split_text": "1:45",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar Elite 1 2023"
       ]
     },
     {
@@ -26345,52 +26220,6 @@
       ],
       "team_history": [
         "2024 · SK Vidar Villa 2024"
-      ]
-    },
-    {
-      "id": 192,
-      "canonical_name": "Ingrid Aarbogh Skogum",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 266,
-      "best_split_text": "4:26",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2025 · OSI Grils 2025"
-      ]
-    },
-    {
-      "id": 195,
-      "canonical_name": "Ingrid Marie Schaumburg Huitfeldt",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 12,
-      "category_wins": 0,
-      "best_split_seconds": 100,
-      "best_split_text": "1:40",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2024 · SK Vidar Elite 2 2024"
       ]
     },
     {
@@ -26555,52 +26384,6 @@
       ]
     },
     {
-      "id": 208,
-      "canonical_name": "Joakim Mohn",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 5,
-      "category_wins": 0,
-      "best_split_seconds": 202,
-      "best_split_text": "3:22",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · Elite 1 - menn 2025"
-      ]
-    },
-    {
-      "id": 209,
-      "canonical_name": "Joakim S. Mohn",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 6,
-      "category_wins": 0,
-      "best_split_seconds": 75,
-      "best_split_text": "1:15",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar 2 Elite 2023"
-      ]
-    },
-    {
       "id": 212,
       "canonical_name": "Jonatan Winsvold",
       "appearances": 1,
@@ -26690,29 +26473,6 @@
       ],
       "team_history": [
         "2024 · Sk Vidar senior 3 2024"
-      ]
-    },
-    {
-      "id": 218,
-      "canonical_name": "Julie Benedicte Aspesletten",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 15,
-      "category_wins": 0,
-      "best_split_seconds": 569,
-      "best_split_text": "9:29",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · SK Vidar Queens  2025"
       ]
     },
     {
@@ -26831,29 +26591,6 @@
       ]
     },
     {
-      "id": 228,
-      "canonical_name": "Karoline Holum Kjærnes",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 15,
-      "category_wins": 0,
-      "best_split_seconds": 119,
-      "best_split_text": "1:59",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · SK Vidar Dreamteam  2025"
-      ]
-    },
-    {
       "id": 230,
       "canonical_name": "Karoline Wisløff Rud",
       "appearances": 1,
@@ -26943,52 +26680,6 @@
       ],
       "team_history": [
         "2024 · Sk Vidar senior 2 2024"
-      ]
-    },
-    {
-      "id": 238,
-      "canonical_name": "Kristan Bjune Sveen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 6,
-      "category_wins": 0,
-      "best_split_seconds": 245,
-      "best_split_text": "4:05",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar 1 Elite 2023"
-      ]
-    },
-    {
-      "id": 239,
-      "canonical_name": "Kristian Bjune Sveen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 6,
-      "category_wins": 0,
-      "best_split_seconds": 255,
-      "best_split_text": "4:15",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2024 · Sk Vidar Senior 1 2024"
       ]
     },
     {
@@ -27498,29 +27189,6 @@
       ]
     },
     {
-      "id": 278,
-      "canonical_name": "Magnus W Warvik",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 13,
-      "category_wins": 0,
-      "best_split_seconds": 474,
-      "best_split_text": "7:54",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar 2 Elite 2023"
-      ]
-    },
-    {
       "id": 280,
       "canonical_name": "Mai Watson",
       "appearances": 1,
@@ -27541,29 +27209,6 @@
       ],
       "team_history": [
         "2025 · SK Vidar 1  2025"
-      ]
-    },
-    {
-      "id": 282,
-      "canonical_name": "Maja Maria Blegen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 17,
-      "category_wins": 0,
-      "best_split_seconds": 106,
-      "best_split_text": "1:46",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2024 · SK Vidar Villa 2024"
       ]
     },
     {
@@ -28142,52 +27787,6 @@
       ]
     },
     {
-      "id": 325,
-      "canonical_name": "Morten Dalhaug",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 4,
-      "category_wins": 0,
-      "best_split_seconds": 182,
-      "best_split_text": "3:02",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2025 · Menn senior 1  2025"
-      ]
-    },
-    {
-      "id": 326,
-      "canonical_name": "Morten Olsen Dalhaug",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 2,
-      "category_wins": 0,
-      "best_split_seconds": 189,
-      "best_split_text": "3:09",
-      "classes": [
-        "SK Vidar senior"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · Sk Vidar Senior 1 2023"
-      ]
-    },
-    {
       "id": 328,
       "canonical_name": "Natalie Aasen",
       "appearances": 1,
@@ -28579,29 +28178,6 @@
       ]
     },
     {
-      "id": 354,
-      "canonical_name": "Ragnhild Brøs Kløven",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 2,
-      "category_wins": 0,
-      "best_split_seconds": 482,
-      "best_split_text": "8:02",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2022
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2022 · OSI F student 2022"
-      ]
-    },
-    {
       "id": 359,
       "canonical_name": "Robert Kammel",
       "appearances": 1,
@@ -28852,29 +28428,6 @@
       ],
       "team_history": [
         "2024 · Sk Vidar senior 3 2024"
-      ]
-    },
-    {
-      "id": 380,
-      "canonical_name": "Simen Hagrup Kjeldsen",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 4,
-      "category_wins": 0,
-      "best_split_seconds": 323,
-      "best_split_text": "5:23",
-      "classes": [
-        "SK Vidar miks"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · Sk Vidar Bue & Mix"
       ]
     },
     {
@@ -29775,29 +29328,6 @@
       ]
     },
     {
-      "id": 446,
-      "canonical_name": "Veselemøy Rønnevik",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 6,
-      "category_wins": 0,
-      "best_split_seconds": 96,
-      "best_split_text": "1:36",
-      "classes": [
-        "SK Vidar elite"
-      ],
-      "years": [
-        2023
-      ],
-      "organizations": [
-        "SKV"
-      ],
-      "team_history": [
-        "2023 · SK Vidar Elite 2 2023"
-      ]
-    },
-    {
       "id": 449,
       "canonical_name": "Victoria Rochelois",
       "appearances": 1,
@@ -30005,222 +29535,367 @@
       ]
     },
     {
+      "id": 40,
+      "canonical_name": "Anne-Line Dahlen",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 69,
+      "canonical_name": "David Rieger",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 88,
+      "canonical_name": "Eldbjørg Moxnes",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 90,
+      "canonical_name": "Elene Tangen",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 104,
+      "canonical_name": "Emma Leiner",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 126,
+      "canonical_name": "Fredrik Emil Juul",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 127,
+      "canonical_name": "Fredrik Fyksen",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 150,
+      "canonical_name": "Hanna Arnes Nisja",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 167,
+      "canonical_name": "Helene Melsom",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 186,
+      "canonical_name": "Ida Nordengen",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 194,
+      "canonical_name": "Ingrid Huitfeldt",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 197,
+      "canonical_name": "Ingrid Skogum",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 208,
+      "canonical_name": "Joakim Mohn",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 217,
+      "canonical_name": "Julie Aspesletten",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 229,
+      "canonical_name": "Karoline Kjærnes",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 238,
+      "canonical_name": "Kristan Bjune Sveen",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 279,
+      "canonical_name": "Magnus Warvik",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 281,
+      "canonical_name": "Maja Blegen",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 325,
+      "canonical_name": "Morten Dalhaug",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 354,
+      "canonical_name": "Ragnhild Brøs Kløven",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 380,
+      "canonical_name": "Simen Hagrup Kjeldsen",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 387,
+      "canonical_name": "Siri Staver",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
+      "id": 446,
+      "canonical_name": "Veselemøy Rønnevik",
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
+      "category_wins": 0,
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
+    },
+    {
       "id": 463,
       "canonical_name": "🔁Håkon Lund",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 5,
+      "appearances": 0,
+      "seasons": 0,
+      "teams": 0,
+      "best_category_rank": null,
       "category_wins": 0,
-      "best_split_seconds": 204,
-      "best_split_text": "3:24",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2025 · OSI herrer 1 2025"
-      ]
+      "best_split_seconds": null,
+      "best_split_text": null,
+      "classes": [],
+      "years": [],
+      "organizations": [],
+      "team_history": []
     }
   ],
   "nameReview": [
-    {
-      "raw_name": "🔁Håkon Lund",
-      "suggested_canonical_name": "Håkon Lund",
-      "confidence": "0.99",
-      "reason": "Lik stavemåte etter normalisering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Kristan Bjune Sveen",
-      "suggested_canonical_name": "Kristian Bjune Sveen",
-      "confidence": "0.95",
-      "reason": "Nesten identisk navn med liten staveforskjell",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ragnhild Brøs Kløven",
-      "suggested_canonical_name": "Ragnhild Brørs Kløven",
-      "confidence": "0.95",
-      "reason": "Samme fornavn og etternavn med liten skriveforskjell",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Simen Hagrup Kjeldsen",
-      "suggested_canonical_name": "Simen Hagerup Kjeldsen",
-      "confidence": "0.95",
-      "reason": "Samme fornavn og etternavn med liten skriveforskjell",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Fredrik Emil Juul",
-      "suggested_canonical_name": "Frederik Emil Juul",
-      "confidence": "0.94",
-      "reason": "Nesten identisk navn med liten staveforskjell",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Hanna Arnes Nisja",
-      "suggested_canonical_name": "Hanna Aarnes Nisja",
-      "confidence": "0.94",
-      "reason": "Samme fornavn og etternavn med liten skriveforskjell",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Veslemøy Rønnevik",
-      "suggested_canonical_name": "Veselemøy Rønnevik",
-      "confidence": "0.94",
-      "reason": "Nesten identisk navn med liten staveforskjell",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Eldbjørg Moxnes",
-      "suggested_canonical_name": "Eldbjørg D. Moxnes",
-      "confidence": "0.88",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Anne-Line Dahlen",
-      "suggested_canonical_name": "Anne-Line Evenstad Dahlen",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "David Rieger",
-      "suggested_canonical_name": "David Stefan Rieger",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Elene Tangen",
-      "suggested_canonical_name": "Elene Mauseth Tangen",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Emma Leiner",
-      "suggested_canonical_name": "Emma Liv Leiner",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Fredrik Fyksen",
-      "suggested_canonical_name": "Fredrik Sætereng Fyksen",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Helene Melsom",
-      "suggested_canonical_name": "Helene Støle Melsom",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ida Nordengen",
-      "suggested_canonical_name": "Ida Marie Nordengen",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ingrid Huitfeldt",
-      "suggested_canonical_name": "Ingrid Marie Schaumburg Huitfeldt",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ingrid Skogum",
-      "suggested_canonical_name": "Ingrid Aarbogh Skogum",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Joakim Mohn",
-      "suggested_canonical_name": "Joakim S. Mohn",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Julie Aspesletten",
-      "suggested_canonical_name": "Julie Benedicte Aspesletten",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Karoline Kjærnes",
-      "suggested_canonical_name": "Karoline Holum Kjærnes",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Magnus Warvik",
-      "suggested_canonical_name": "Magnus W Warvik",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Maja Blegen",
-      "suggested_canonical_name": "Maja Maria Blegen",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Morten Dalhaug",
-      "suggested_canonical_name": "Morten Olsen Dalhaug",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Siri Staver",
-      "suggested_canonical_name": "Siri Vegsund Staver",
-      "confidence": "0.87",
-      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
-      "decision": "",
-      "notes": ""
-    },
     {
       "raw_name": "Sofie Amundsgård",
       "suggested_canonical_name": "Sofie Karlsen Amundsgård",
@@ -30254,190 +29929,6 @@
       "notes": ""
     },
     {
-      "raw_name": "Anne-Line Evenstad Dahlen",
-      "suggested_canonical_name": "Anne-Line Dahlen",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "David Stefan Rieger",
-      "suggested_canonical_name": "David Rieger",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Eldbjørg D. Moxnes",
-      "suggested_canonical_name": "Eldbjørg Moxnes",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Elene Mauseth Tangen",
-      "suggested_canonical_name": "Elene Tangen",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Emma Liv Leiner",
-      "suggested_canonical_name": "Emma Leiner",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Frederik Emil Juul",
-      "suggested_canonical_name": "Fredrik Emil Juul",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Fredrik Sætereng Fyksen",
-      "suggested_canonical_name": "Fredrik Fyksen",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Hanna Aarnes Nisja",
-      "suggested_canonical_name": "Hanna Arnes Nisja",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Helene Støle Melsom",
-      "suggested_canonical_name": "Helene Melsom",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Håkon Lund",
-      "suggested_canonical_name": "🔁Håkon Lund",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ida Marie Nordengen",
-      "suggested_canonical_name": "Ida Nordengen",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ingrid Aarbogh Skogum",
-      "suggested_canonical_name": "Ingrid Skogum",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ingrid Marie Schaumburg Huitfeldt",
-      "suggested_canonical_name": "Ingrid Huitfeldt",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Joakim S. Mohn",
-      "suggested_canonical_name": "Joakim Mohn",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Julie Benedicte Aspesletten",
-      "suggested_canonical_name": "Julie Aspesletten",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Karoline Holum Kjærnes",
-      "suggested_canonical_name": "Karoline Kjærnes",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Kristian Bjune Sveen",
-      "suggested_canonical_name": "Kristan Bjune Sveen",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Magnus W Warvik",
-      "suggested_canonical_name": "Magnus Warvik",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Maja Maria Blegen",
-      "suggested_canonical_name": "Maja Blegen",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Morten Olsen Dalhaug",
-      "suggested_canonical_name": "Morten Dalhaug",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Ragnhild Brørs Kløven",
-      "suggested_canonical_name": "Ragnhild Brøs Kløven",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Simen Hagerup Kjeldsen",
-      "suggested_canonical_name": "Simen Hagrup Kjeldsen",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
-      "raw_name": "Siri Vegsund Staver",
-      "suggested_canonical_name": "Siri Staver",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
       "raw_name": "Sofie Karlsen Amundsgård",
       "suggested_canonical_name": "Sofie Amundsgård",
       "confidence": "",
@@ -30462,20 +29953,396 @@
       "notes": ""
     },
     {
-      "raw_name": "Veselemøy Rønnevik",
-      "suggested_canonical_name": "Veslemøy Rønnevik",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
       "raw_name": "Åsne Skram Trømborg",
       "suggested_canonical_name": "Åsne Trømborg",
       "confidence": "",
       "reason": "Bevart tidligere vurdering",
       "decision": "",
       "notes": ""
+    },
+    {
+      "raw_name": "🔁Håkon Lund",
+      "suggested_canonical_name": "Håkon Lund",
+      "confidence": "0.99",
+      "reason": "Lik stavemåte etter normalisering",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Kristan Bjune Sveen",
+      "suggested_canonical_name": "Kristian Bjune Sveen",
+      "confidence": "0.95",
+      "reason": "Nesten identisk navn med liten staveforskjell",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Ragnhild Brøs Kløven",
+      "suggested_canonical_name": "Ragnhild Brørs Kløven",
+      "confidence": "0.95",
+      "reason": "Samme fornavn og etternavn med liten skriveforskjell",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Simen Hagrup Kjeldsen",
+      "suggested_canonical_name": "Simen Hagerup Kjeldsen",
+      "confidence": "0.95",
+      "reason": "Samme fornavn og etternavn med liten skriveforskjell",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Fredrik Emil Juul",
+      "suggested_canonical_name": "Frederik Emil Juul",
+      "confidence": "0.94",
+      "reason": "Nesten identisk navn med liten staveforskjell",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Hanna Arnes Nisja",
+      "suggested_canonical_name": "Hanna Aarnes Nisja",
+      "confidence": "0.94",
+      "reason": "Samme fornavn og etternavn med liten skriveforskjell",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Veslemøy Rønnevik",
+      "suggested_canonical_name": "Veselemøy Rønnevik",
+      "confidence": "0.94",
+      "reason": "Nesten identisk navn med liten staveforskjell",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Eldbjørg Moxnes",
+      "suggested_canonical_name": "Eldbjørg D. Moxnes",
+      "confidence": "0.88",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Anne-Line Dahlen",
+      "suggested_canonical_name": "Anne-Line Evenstad Dahlen",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "David Rieger",
+      "suggested_canonical_name": "David Stefan Rieger",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Elene Tangen",
+      "suggested_canonical_name": "Elene Mauseth Tangen",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Emma Leiner",
+      "suggested_canonical_name": "Emma Liv Leiner",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Fredrik Fyksen",
+      "suggested_canonical_name": "Fredrik Sætereng Fyksen",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Helene Melsom",
+      "suggested_canonical_name": "Helene Støle Melsom",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Ida Nordengen",
+      "suggested_canonical_name": "Ida Marie Nordengen",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Ingrid Huitfeldt",
+      "suggested_canonical_name": "Ingrid Marie Schaumburg Huitfeldt",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Ingrid Skogum",
+      "suggested_canonical_name": "Ingrid Aarbogh Skogum",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Joakim Mohn",
+      "suggested_canonical_name": "Joakim S. Mohn",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Julie Aspesletten",
+      "suggested_canonical_name": "Julie Benedicte Aspesletten",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Karoline Kjærnes",
+      "suggested_canonical_name": "Karoline Holum Kjærnes",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Magnus Warvik",
+      "suggested_canonical_name": "Magnus W Warvik",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Maja Blegen",
+      "suggested_canonical_name": "Maja Maria Blegen",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Morten Dalhaug",
+      "suggested_canonical_name": "Morten Olsen Dalhaug",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Siri Staver",
+      "suggested_canonical_name": "Siri Vegsund Staver",
+      "confidence": "0.87",
+      "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
+    },
+    {
+      "raw_name": "Anne-Line Evenstad Dahlen",
+      "suggested_canonical_name": "Anne-Line Dahlen",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "David Stefan Rieger",
+      "suggested_canonical_name": "David Rieger",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Eldbjørg D. Moxnes",
+      "suggested_canonical_name": "Eldbjørg Moxnes",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Elene Mauseth Tangen",
+      "suggested_canonical_name": "Elene Tangen",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Emma Liv Leiner",
+      "suggested_canonical_name": "Emma Leiner",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Frederik Emil Juul",
+      "suggested_canonical_name": "Fredrik Emil Juul",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Fredrik Sætereng Fyksen",
+      "suggested_canonical_name": "Fredrik Fyksen",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Hanna Aarnes Nisja",
+      "suggested_canonical_name": "Hanna Arnes Nisja",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Helene Støle Melsom",
+      "suggested_canonical_name": "Helene Melsom",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Håkon Lund",
+      "suggested_canonical_name": "🔁Håkon Lund",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Ida Marie Nordengen",
+      "suggested_canonical_name": "Ida Nordengen",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Ingrid Aarbogh Skogum",
+      "suggested_canonical_name": "Ingrid Skogum",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Ingrid Marie Schaumburg Huitfeldt",
+      "suggested_canonical_name": "Ingrid Huitfeldt",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Joakim S. Mohn",
+      "suggested_canonical_name": "Joakim Mohn",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Julie Benedicte Aspesletten",
+      "suggested_canonical_name": "Julie Aspesletten",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Karoline Holum Kjærnes",
+      "suggested_canonical_name": "Karoline Kjærnes",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Kristian Bjune Sveen",
+      "suggested_canonical_name": "Kristan Bjune Sveen",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Magnus W Warvik",
+      "suggested_canonical_name": "Magnus Warvik",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Maja Maria Blegen",
+      "suggested_canonical_name": "Maja Blegen",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Morten Olsen Dalhaug",
+      "suggested_canonical_name": "Morten Dalhaug",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Ragnhild Brørs Kløven",
+      "suggested_canonical_name": "Ragnhild Brøs Kløven",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Simen Hagerup Kjeldsen",
+      "suggested_canonical_name": "Simen Hagrup Kjeldsen",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Siri Vegsund Staver",
+      "suggested_canonical_name": "Siri Staver",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Veselemøy Rønnevik",
+      "suggested_canonical_name": "Veslemøy Rønnevik",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-07"
     }
   ]
 }

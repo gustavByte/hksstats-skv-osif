@@ -774,7 +774,9 @@ def build_database(
         )
 
     raw_names = sorted({result.raw_name for result in results})
-    canonical_names = sorted(set(raw_names) | set(approved_map.values()))
+    canonical_names = sorted(
+        {approved_map.get(raw_name, raw_name) for raw_name in raw_names} | set(approved_map.values())
+    )
     person_ids: dict[str, int] = {}
     alias_ids: dict[str, int] = {}
 

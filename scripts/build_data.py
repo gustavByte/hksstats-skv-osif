@@ -1027,7 +1027,7 @@ def build_stage_honours(
                 spec["expanded_limit"] > spec["default_limit"]
                 and len(eligible_entries) > spec["default_limit"]
             )
-            entries = sorted(
+            sorted_entries = sorted(
                 eligible_entries,
                 key=lambda item: (
                     item["split_seconds"],
@@ -1035,7 +1035,9 @@ def build_stage_honours(
                     item["oa_rank"] if item["oa_rank"] is not None else 9999,
                     item["year"],
                 ),
-            )[: spec["expanded_limit"]]
+            )
+            default_entries = sorted_entries[: spec["default_limit"]]
+            expanded_entries = sorted_entries[: spec["expanded_limit"]]
             stages.append(
                 {
                     "stage_number": stage_number,
@@ -1050,7 +1052,14 @@ def build_stage_honours(
                             "rank": index + 1,
                             **entry,
                         }
-                        for index, entry in enumerate(entries)
+                        for index, entry in enumerate(default_entries)
+                    ],
+                    "expanded_entries": [
+                        {
+                            "rank": index + 1,
+                            **entry,
+                        }
+                        for index, entry in enumerate(expanded_entries)
                     ],
                 }
             )

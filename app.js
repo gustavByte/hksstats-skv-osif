@@ -149,10 +149,9 @@ function renderStageHonours() {
           .map((stage) => {
             const stageKey = `${activeGroup.key}:${stage.stage_number}`;
             const isExpanded = Boolean(state.expandedHonours[stageKey]);
-            const visibleLimit = isExpanded
-              ? stage.expanded_limit ?? stage.entries.length
-              : stage.default_limit ?? activeGroup.limit;
-            const visibleEntries = stage.entries.slice(0, visibleLimit);
+            const visibleEntries = isExpanded
+              ? stage.expanded_entries ?? stage.entries
+              : stage.entries;
             return `
               <article class="honour-stage-card">
                 <div class="honour-stage-header">

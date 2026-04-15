@@ -965,7 +965,8 @@ def build_stage_honours(
             "subtitle": "Topp 5 per etappe på tvers av elite, senior og veteran.",
             "organization_code": "SKV",
             "division": "men",
-            "limit": 5,
+            "default_limit": 5,
+            "expanded_limit": 10,
             "class_codes": {"EliteSKV", "SeniorSKV", "Veteran"},
         },
         {
@@ -974,7 +975,8 @@ def build_stage_honours(
             "subtitle": "Topp 5 per etappe på tvers av elite, senior og veteran.",
             "organization_code": "SKV",
             "division": "women",
-            "limit": 5,
+            "default_limit": 5,
+            "expanded_limit": 10,
             "class_codes": {"EliteSKV", "SeniorSKV", "Veteran"},
         },
         {
@@ -983,7 +985,8 @@ def build_stage_honours(
             "subtitle": "Topp 3 per etappe for studentklassen.",
             "organization_code": "OSIF",
             "division": "men",
-            "limit": 3,
+            "default_limit": 3,
+            "expanded_limit": 3,
             "class_codes": {"StudOSI"},
         },
         {
@@ -992,7 +995,8 @@ def build_stage_honours(
             "subtitle": "Topp 3 per etappe for studentklassen.",
             "organization_code": "OSIF",
             "division": "women",
-            "limit": 3,
+            "default_limit": 3,
+            "expanded_limit": 3,
             "class_codes": {"StudOSI"},
         },
     ]
@@ -1019,6 +1023,10 @@ def build_stage_honours(
                 for entry in grouped[(spec["organization_code"], spec["division"], stage_number, stage_label)]
                 if entry["class_code"] in spec["class_codes"]
             ]
+            has_expansion = bool(
+                spec["expanded_limit"] > spec["default_limit"]
+                and len(eligible_entries) > spec["default_limit"]
+            )
             entries = sorted(
                 eligible_entries,
                 key=lambda item: (
@@ -1027,12 +1035,15 @@ def build_stage_honours(
                     item["oa_rank"] if item["oa_rank"] is not None else 9999,
                     item["year"],
                 ),
-            )[: spec["limit"]]
+            )[: spec["expanded_limit"]]
             stages.append(
                 {
                     "stage_number": stage_number,
                     "stage_label": stage_label,
                     "distance_m": lookup_standard_stage_distance(stage_number),
+                    "default_limit": spec["default_limit"],
+                    "expanded_limit": spec["expanded_limit"],
+                    "has_expansion": has_expansion,
                     "record": record_lookup.get((spec["division"], stage_label)),
                     "entries": [
                         {
@@ -1050,7 +1061,7 @@ def build_stage_honours(
                 "subtitle": spec["subtitle"],
                 "organization_code": spec["organization_code"],
                 "division": spec["division"],
-                "limit": spec["limit"],
+                "limit": spec["default_limit"],
                 "stages": stages,
             }
         )

@@ -31,12 +31,28 @@ body,
 
 body {
   min-width: 320px;
+  overflow-x: clip;
 }
 
 button,
 input,
 select {
   font: inherit;
+}
+
+a,
+button,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(201, 76, 49, 0.32);
+  outline-offset: 3px;
 }
 
 .page-shell {
@@ -107,6 +123,13 @@ select {
   z-index: 1;
 }
 
+.hero-copy {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-width: 0;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   letter-spacing: 0.16em;
@@ -139,6 +162,7 @@ h2 {
   max-width: 60ch;
   color: var(--muted);
   line-height: 1.6;
+  margin: 0;
 }
 
 .hero-grid {
@@ -151,6 +175,7 @@ h2 {
 .quick-jump-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-top: 18px;
   padding: 13px 18px;
@@ -179,6 +204,8 @@ h2 {
 .team-card,
 .leader-card,
 .panel,
+.honour-stage-card,
+.person-card,
 .filter-panel {
   backdrop-filter: blur(18px);
 }
@@ -199,6 +226,7 @@ h2 {
 .metric-card strong {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 2rem;
+  line-height: 1;
 }
 
 .filter-panel {
@@ -229,6 +257,7 @@ h2 {
   gap: 10px;
   flex-wrap: wrap;
   margin: 20px 0 14px;
+  min-width: 0;
 }
 
 .tab-button {
@@ -243,6 +272,7 @@ h2 {
     transform 140ms ease,
     background 140ms ease,
     border-color 140ms ease;
+  flex: 0 0 auto;
 }
 
 .tab-button:hover,
@@ -311,6 +341,7 @@ h2 {
 
 .record-chip {
   min-width: 150px;
+  max-width: 100%;
   padding: 12px 14px;
   border-radius: 16px;
   background: rgba(16, 38, 31, 0.06);
@@ -331,9 +362,42 @@ h2 {
   min-width: 880px;
 }
 
+.stage-toggle-row {
+  margin-top: 10px;
+}
+
+.stage-toggle-button {
+  appearance: none;
+  border: 1px solid rgba(16, 38, 31, 0.12);
+  background: rgba(255, 252, 247, 0.88);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease,
+    transform 140ms ease;
+}
+
+.stage-toggle-button:hover {
+  background: rgba(201, 76, 49, 0.1);
+  border-color: rgba(16, 38, 31, 0.2);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
 .filter-panel label {
   display: grid;
   gap: 8px;
+}
+
+.filter-panel label span {
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .filter-panel span,
@@ -344,11 +408,22 @@ h2 {
 .filter-panel input,
 .filter-panel select {
   width: 100%;
+  min-height: 50px;
   border-radius: 14px;
   border: 1px solid rgba(16, 38, 31, 0.14);
   padding: 12px 14px;
   background: rgba(255, 255, 255, 0.72);
   color: var(--ink);
+  transition:
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    background 140ms ease;
+}
+
+.filter-panel input:focus-visible,
+.filter-panel select:focus-visible {
+  border-color: rgba(201, 76, 49, 0.45);
+  box-shadow: 0 0 0 4px rgba(201, 76, 49, 0.14);
 }
 
 .content-grid {
@@ -382,6 +457,8 @@ h2 {
 }
 
 .download-link {
+  display: inline-flex;
+  align-items: center;
   color: var(--ink);
   text-decoration: none;
   background: var(--accent-soft);
@@ -450,6 +527,9 @@ h2 {
 
 .table-wrap {
   overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 table {
@@ -478,6 +558,7 @@ th {
   color: var(--muted);
   font-size: 0.9rem;
   margin-top: 2px;
+  overflow-wrap: anywhere;
 }
 
 .team-list,
@@ -490,6 +571,65 @@ th {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.team-card strong,
+.person-card strong,
+.stage-title-row h3,
+.record-chip span,
+.record-chip small {
+  overflow-wrap: anywhere;
+}
+
+.desktop-table {
+  display: block;
+}
+
+.person-card-list {
+  display: none;
+  gap: 12px;
+}
+
+.person-card {
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(16, 38, 31, 0.08);
+  background: rgba(255, 252, 248, 0.78);
+}
+
+.person-card-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.person-rank {
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), #dd8f36);
+  color: #fff;
+  font-weight: 700;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.person-card-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 12px;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.person-card-stats span {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(16, 38, 31, 0.05);
+  overflow-wrap: anywhere;
 }
 
 .leader-card {
@@ -546,9 +686,16 @@ code {
   .hero,
   .content-grid,
   .breakdown-grid,
-  .filter-panel,
   .honours-grid {
     grid-template-columns: 1fr;
+  }
+
+  .filter-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    gap: 20px;
   }
 
   .hero::after {
@@ -558,7 +705,7 @@ code {
 
 @media (max-width: 720px) {
   .page-shell {
-    padding-inline: 14px;
+    padding: 18px 14px 40px;
   }
 
   .hero,
@@ -573,6 +720,25 @@ code {
     flex-direction: column;
   }
 
+  .download-link,
+  .quick-jump-link {
+    width: 100%;
+  }
+
+  .filter-panel {
+    position: static;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .tab-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-inline: -4px;
+    padding: 2px 4px 6px;
+    scrollbar-width: thin;
+  }
+
   .bar-row {
     grid-template-columns: 1fr;
   }
@@ -582,6 +748,23 @@ code {
     flex-direction: column;
   }
 
+  .honour-stage-card {
+    padding: 14px;
+  }
+
+  .record-chip {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .desktop-table {
+    display: none;
+  }
+
+  .person-card-list {
+    display: grid;
+  }
+
   .leader-card {
     grid-template-columns: auto 1fr;
   }
@@ -589,5 +772,29 @@ code {
   .leader-values {
     grid-column: 2;
     text-align: left;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: clamp(2rem, 12vw, 3.1rem);
+    max-width: 8ch;
+  }
+
+  .hero-grid,
+  .person-card-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-card,
+  .year-card,
+  .team-card,
+  .person-card {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .stage-title-row {
+    gap: 8px;
   }
 }

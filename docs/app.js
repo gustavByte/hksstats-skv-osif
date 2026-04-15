@@ -5,6 +5,7 @@ const state = {
   selectedOrganization: "all",
   selectedClass: "all",
   honoursTab: "skv-men",
+  expandedHonours: {},
   search: "",
   data: null,
 };
@@ -145,8 +146,14 @@ function renderStageHonours() {
       </div>
       <div class="honours-grid">
         ${activeGroup.stages
-          .map(
-            (stage) => `
+          .map((stage) => {
+            const stageKey = `${activeGroup.key}:${stage.stage_number}`;
+            const isExpanded = Boolean(state.expandedHonours[stageKey]);
+            const visibleLimit = isExpanded
+              ? stage.expanded_limit ?? stage.entries.length
+              : stage.default_limit ?? activeGroup.limit;
+            const visibleEntries = stage.entries.slice(0, visibleLimit);
+            return `
               <article class="honour-stage-card">
                 <div class="honour-stage-header">
                   <div>
@@ -190,7 +197,7 @@ function renderStageHonours() {
                       </tr>
                     </thead>
                     <tbody>
-                      ${stage.entries
+                      ${visibleEntries
                         .map(
                           (entry) => `
                             <tr>
@@ -210,12 +217,57 @@ function renderStageHonours() {
                     </tbody>
                   </table>
                 </div>
+                ${
+                  stage.has_expansion
+                    ? `
+                      <div class="stage-toggle-row">
+                        <button
+                          class="stage-toggle-button"
+                          type="button"
+                          data-stage-toggle="${stageKey}"
+                          aria-expanded="${isExpanded ? "true" : "false"}"
+                        >
+                          ${isExpanded ? "Skjul" : "Vis topp 10"}
+                        </button>
+                      </div>
+                    `
+                    : ""
+                }
               </article>
-            `,
-          )
+            `;
+          })
           .join("")}
       </div>
     </section>
+  `;
+}
+
+function renderPersonCards(personStats) {
+  return `
+    <div class="person-card-list" aria-label="Mest deltakelse mobilvisning">
+      ${personStats
+        .slice(0, 18)
+        .map(
+          (row, index) => `
+            <article class="person-card">
+              <div class="person-card-header">
+                <span class="person-rank">${index + 1}</span>
+                <div>
+                  <strong>${escapeHtml(row.canonical_name)}</strong>
+                  <span class="cell-subtle">${escapeHtml(row.organizations.join(" / "))}</span>
+                </div>
+              </div>
+              <div class="person-card-stats">
+                <span><strong>${row.appearances}</strong> etapper</span>
+                <span><strong>${row.seasons}</strong> år</span>
+                <span><strong>${escapeHtml(row.classes.join(", "))}</strong> klasser</span>
+                <span><strong>${row.best_category_rank ?? "-"}</strong> beste cat.</span>
+              </div>
+            </article>
+          `,
+        )
+        .join("")}
+    </div>
   `;
 }
 
@@ -365,7 +417,7 @@ function render() {
             </div>
             <span class="muted">${personStats.length} treff i gjeldende filter</span>
           </div>
-          <div class="table-wrap">
+          <div class="table-wrap desktop-table">
             <table>
               <thead>
                 <tr><th>Navn</th><th>Etapper</th><th>År</th><th>Klasser</th><th>Beste cat.</th></tr>
@@ -391,6 +443,7 @@ function render() {
               </tbody>
             </table>
           </div>
+          ${renderPersonCards(personStats)}
         </section>
 
         <section class="panel">
@@ -443,6 +496,13 @@ function render() {
   document.querySelectorAll("[data-tab]").forEach((button) => {
     button.addEventListener("click", (event) => {
       state.honoursTab = event.currentTarget.dataset.tab;
+      render();
+    });
+  });
+  document.querySelectorAll("[data-stage-toggle]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const stageKey = event.currentTarget.dataset.stageToggle;
+      state.expandedHonours[stageKey] = !state.expandedHonours[stageKey];
       render();
     });
   });

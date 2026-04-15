@@ -240,6 +240,7 @@ function render() {
             Etappesammenligning for SK Vidar og OSI Friidrett, bygget fra regneark
             "HKS-resultater 2022 - d.d.".
           </p>
+          <a class="quick-jump-link" href="#most-deltakelse">Mest deltakelse &lt;3</a>
         </div>
         <div class="hero-grid">
           ${state.data.overview.kpis
@@ -255,10 +256,6 @@ function render() {
             .join("")}
         </div>
       </header>
-
-      <div class="quick-jump-row">
-        <a class="quick-jump-link" href="#most-deltakelse">Mest deltakelse &lt;3</a>
-      </div>
 
       ${renderStageHonours()}
 

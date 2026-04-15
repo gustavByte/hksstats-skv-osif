@@ -148,16 +148,11 @@ h2 {
   align-content: start;
 }
 
-.quick-jump-row {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 18px;
-}
-
 .quick-jump-link {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  margin-top: 18px;
   padding: 13px 18px;
   border-radius: 999px;
   border: 1px solid rgba(16, 38, 31, 0.14);
@@ -170,6 +165,7 @@ h2 {
     transform 140ms ease,
     box-shadow 140ms ease,
     border-color 140ms ease;
+  width: fit-content;
 }
 
 .quick-jump-link:hover {

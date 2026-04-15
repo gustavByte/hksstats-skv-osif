@@ -351,14 +351,13 @@ function render() {
 
       <main class="content-grid">
         <section class="panel panel-wide">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Oversikt</p>
-              <h2>Klasser og sesonger</h2>
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Oversikt</p>
+                <h2>Klasser og sesonger</h2>
+              </div>
             </div>
-            <a class="download-link" href="./downloads/hksstats.sqlite">Last ned SQLite</a>
-          </div>
-          <div class="breakdown-grid">
+            <div class="breakdown-grid">
             <div class="stack">
               ${state.data.overview.classBreakdown
                 .map((item) => {

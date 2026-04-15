@@ -5,7 +5,7 @@ const state = {
   selectedOrganization: "all",
   selectedClass: "all",
   honoursTab: "skv-men",
-  expandedHonours: {},
+  honoursDisplay: "top5",
   search: "",
   data: null,
 };
@@ -147,11 +147,8 @@ function renderStageHonours() {
       <div class="honours-grid">
         ${activeGroup.stages
           .map((stage) => {
-            const stageKey = `${activeGroup.key}:${stage.stage_number}`;
-            const isExpanded = Boolean(state.expandedHonours[stageKey]);
-            const visibleEntries = isExpanded
-              ? stage.expanded_entries ?? stage.entries
-              : stage.entries;
+            const visibleEntries =
+              state.honoursDisplay === "top10" ? stage.expanded_entries ?? stage.entries : stage.entries;
             return `
               <article class="honour-stage-card">
                 <div class="honour-stage-header">
@@ -216,22 +213,6 @@ function renderStageHonours() {
                     </tbody>
                   </table>
                 </div>
-                ${
-                  stage.has_expansion
-                    ? `
-                      <div class="stage-toggle-row">
-                        <button
-                          class="stage-toggle-button"
-                          type="button"
-                          data-stage-toggle="${stageKey}"
-                          aria-expanded="${isExpanded ? "true" : "false"}"
-                        >
-                          ${isExpanded ? "Skjul" : "Vis topp 10"}
-                        </button>
-                      </div>
-                    `
-                    : ""
-                }
               </article>
             `;
           })
@@ -353,6 +334,13 @@ function render() {
                 `,
               )
               .join("")}
+          </select>
+        </label>
+        <label>
+          <span>Etapper</span>
+          <select id="honours-display-filter">
+            <option value="top5" ${state.honoursDisplay === "top5" ? "selected" : ""}>Topp 5</option>
+            <option value="top10" ${state.honoursDisplay === "top10" ? "selected" : ""}>Topp 10</option>
           </select>
         </label>
         <label class="search-field">
@@ -488,6 +476,10 @@ function render() {
     state.selectedClass = event.target.value;
     render();
   });
+  document.querySelector("#honours-display-filter")?.addEventListener("change", (event) => {
+    state.honoursDisplay = event.target.value;
+    render();
+  });
   document.querySelector("#search-filter")?.addEventListener("input", (event) => {
     state.search = event.target.value;
     render();
@@ -495,13 +487,6 @@ function render() {
   document.querySelectorAll("[data-tab]").forEach((button) => {
     button.addEventListener("click", (event) => {
       state.honoursTab = event.currentTarget.dataset.tab;
-      render();
-    });
-  });
-  document.querySelectorAll("[data-stage-toggle]").forEach((button) => {
-    button.addEventListener("click", (event) => {
-      const stageKey = event.currentTarget.dataset.stageToggle;
-      state.expandedHonours[stageKey] = !state.expandedHonours[stageKey];
       render();
     });
   });

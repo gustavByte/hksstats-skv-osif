@@ -179,6 +179,33 @@ def similarity(a: str, b: str) -> float:
     return 1 - distance / max(len(na), len(nb))
 
 
+def is_initial_token(token: str) -> bool:
+    return len(token) == 1
+
+
+def ordered_subsequence(needle: list[str], haystack: list[str]) -> bool:
+    if not needle:
+        return False
+    index = 0
+    for token in haystack:
+        if token == needle[index]:
+            index += 1
+            if index == len(needle):
+                return True
+    return False
+
+
+def initials_match(short_tokens: list[str], long_tokens: list[str]) -> bool:
+    significant = [token for token in short_tokens if not is_initial_token(token)]
+    initials = [token for token in short_tokens if is_initial_token(token)]
+    if not significant or not initials:
+        return False
+    if not all(token in long_tokens for token in significant):
+        return False
+    remaining = [token for token in long_tokens if token not in significant]
+    return all(any(candidate.startswith(initial) for candidate in remaining) for initial in initials)
+
+
 def parse_stage_number(label: Any, fallback: int) -> int:
     if isinstance(label, str):
         match = re.match(r"^\s*(\d+)", label)
@@ -556,6 +583,7 @@ def build_match_suggestions(results: list[ResultRecord]) -> list[dict[str, Any]]
             same_first = tokens[0] == candidate_tokens[0]
             same_last = tokens[-1] == candidate_tokens[-1]
             first_distance = edit_distance(tokens[0], candidate_tokens[0])
+            last_distance = edit_distance(tokens[-1], candidate_tokens[-1])
             subset = set(tokens).issubset(set(candidate_tokens)) or set(candidate_tokens).issubset(set(tokens))
 
             if normalize_name(raw_name) == normalize_name(candidate):
@@ -564,9 +592,24 @@ def build_match_suggestions(results: list[ResultRecord]) -> list[dict[str, Any]]
             elif same_first and same_last and subset:
                 score = max(score, 0.87)
                 reason = "Samme fornavn/etternavn, ulik bruk av mellomnavn"
+            elif ordered_subsequence(tokens, candidate_tokens) and len(candidate_tokens) > len(tokens):
+                score = max(score, 0.86)
+                reason = "Kortform av fullt navn"
+            elif initials_match(tokens, candidate_tokens) and len(candidate_tokens) > len(tokens):
+                score = max(score, 0.86)
+                reason = "Kortform med initialer som matcher fullt navn"
             elif same_first and same_last and score >= 0.75:
                 score = max(score, 0.83)
                 reason = "Samme fornavn og etternavn med liten skriveforskjell"
+            elif (
+                same_first
+                and len(tokens) == 2
+                and len(candidate_tokens) == 2
+                and last_distance <= 2
+                and similarity(tokens[-1], candidate_tokens[-1]) >= 0.7
+            ):
+                score = max(score, 0.82)
+                reason = "Samme fornavn og liten skriveforskjell i etternavn"
             elif same_last and score >= 0.94 and first_distance <= 2:
                 score = max(score, 0.8)
                 reason = "Nesten identisk navn med liten staveforskjell"

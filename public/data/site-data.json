@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T15:16:33",
+  "generatedAt": "2026-04-15T09:56:37",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -62,8 +62,8 @@
     "totals": {
       "results": 660,
       "teams": 44,
-      "people": 439,
-      "pendingNameReviews": 8
+      "people": 437,
+      "pendingNameReviews": 13
     }
   },
   "overview": {
@@ -78,11 +78,11 @@
       },
       {
         "label": "Unike personer",
-        "value": 439
+        "value": 437
       },
       {
         "label": "Navn til gjennomgang",
-        "value": 8
+        "value": 13
       }
     ],
     "classBreakdown": [
@@ -111,7 +111,7 @@
         "class_label": "OSI student",
         "class_code": "StudOSI",
         "result_count": 120,
-        "people_count": 92,
+        "people_count": 90,
         "team_count": 8
       },
       {
@@ -157,7 +157,7 @@
     ],
     "topAppearances": [
       {
-        "id": 100,
+        "id": 98,
         "canonical_name": "Emma Liv Leiner",
         "appearances": 4,
         "seasons": 4,
@@ -187,7 +187,7 @@
         ]
       },
       {
-        "id": 149,
+        "id": 147,
         "canonical_name": "Hanne Marthe Lie",
         "appearances": 4,
         "seasons": 4,
@@ -217,7 +217,36 @@
         ]
       },
       {
-        "id": 87,
+        "id": 71,
+        "canonical_name": "Dina Anjara Herilanto Randrianampiantsoa",
+        "appearances": 4,
+        "seasons": 4,
+        "teams": 4,
+        "best_category_rank": 3,
+        "category_wins": 0,
+        "best_split_seconds": 205,
+        "best_split_text": "3:25",
+        "classes": [
+          "OSI student"
+        ],
+        "years": [
+          2025,
+          2024,
+          2023,
+          2022
+        ],
+        "organizations": [
+          "OSIF"
+        ],
+        "team_history": [
+          "2025 · OSI herrer 1 2025",
+          "2024 · OSI F student 2024",
+          "2023 · OSI F student 2023",
+          "2022 · OSI F student 2022"
+        ]
+      },
+      {
+        "id": 85,
         "canonical_name": "Elias Haugen Torjussen",
         "appearances": 4,
         "seasons": 4,
@@ -247,7 +276,7 @@
         ]
       },
       {
-        "id": 98,
+        "id": 96,
         "canonical_name": "Emiliano Røgeberg",
         "appearances": 4,
         "seasons": 4,
@@ -276,7 +305,7 @@
         ]
       },
       {
-        "id": 106,
+        "id": 104,
         "canonical_name": "Erik Sørensen",
         "appearances": 4,
         "seasons": 4,
@@ -306,7 +335,7 @@
         ]
       },
       {
-        "id": 135,
+        "id": 133,
         "canonical_name": "Graeme Carey",
         "appearances": 4,
         "seasons": 4,
@@ -335,7 +364,7 @@
         ]
       },
       {
-        "id": 140,
+        "id": 138,
         "canonical_name": "Halvor Myhrvold",
         "appearances": 4,
         "seasons": 4,
@@ -364,7 +393,7 @@
         ]
       },
       {
-        "id": 193,
+        "id": 191,
         "canonical_name": "Jens Kortner",
         "appearances": 4,
         "seasons": 4,
@@ -393,7 +422,7 @@
         ]
       },
       {
-        "id": 242,
+        "id": 240,
         "canonical_name": "Lene Heimdal",
         "appearances": 4,
         "seasons": 4,
@@ -422,7 +451,7 @@
         ]
       },
       {
-        "id": 295,
+        "id": 293,
         "canonical_name": "Mathias Moen",
         "appearances": 4,
         "seasons": 4,
@@ -451,7 +480,7 @@
         ]
       },
       {
-        "id": 375,
+        "id": 373,
         "canonical_name": "Sofie Kjos Bergum",
         "appearances": 4,
         "seasons": 4,
@@ -478,40 +507,11 @@
           "2023 · SK Vidar Elite 2 2023",
           "2022 · SK Vidar elite 2022"
         ]
-      },
-      {
-        "id": 400,
-        "canonical_name": "Theodor Berre Jacobsen",
-        "appearances": 4,
-        "seasons": 4,
-        "teams": 4,
-        "best_category_rank": 3,
-        "category_wins": 0,
-        "best_split_seconds": 177,
-        "best_split_text": "2:57",
-        "classes": [
-          "SK Vidar elite"
-        ],
-        "years": [
-          2025,
-          2024,
-          2023,
-          2022
-        ],
-        "organizations": [
-          "SKV"
-        ],
-        "team_history": [
-          "2025 · Elite 1 - menn 2025",
-          "2024 · SK Vidar 1 | Bib 1204 | 13:15",
-          "2023 · SK Vidar 1 Elite 2023",
-          "2022 · SK Vidar Elite 2022"
-        ]
       }
     ],
     "topCategoryWins": [
       {
-        "id": 249,
+        "id": 247,
         "canonical_name": "Louise Høj Jensen",
         "appearances": 3,
         "seasons": 2,
@@ -539,7 +539,7 @@
         ]
       },
       {
-        "id": 366,
+        "id": 364,
         "canonical_name": "Siri Vegsund Staver",
         "appearances": 3,
         "seasons": 3,
@@ -593,7 +593,7 @@
         ]
       },
       {
-        "id": 144,
+        "id": 142,
         "canonical_name": "Hanna Kristine Larsen",
         "appearances": 3,
         "seasons": 3,
@@ -621,7 +621,7 @@
         ]
       },
       {
-        "id": 340,
+        "id": 338,
         "canonical_name": "Ruairi Long",
         "appearances": 3,
         "seasons": 3,
@@ -650,7 +650,7 @@
         ]
       },
       {
-        "id": 185,
+        "id": 183,
         "canonical_name": "Ingrid Pernille Rismark",
         "appearances": 2,
         "seasons": 2,
@@ -675,7 +675,7 @@
         ]
       },
       {
-        "id": 100,
+        "id": 98,
         "canonical_name": "Emma Liv Leiner",
         "appearances": 4,
         "seasons": 4,
@@ -705,7 +705,7 @@
         ]
       },
       {
-        "id": 149,
+        "id": 147,
         "canonical_name": "Hanne Marthe Lie",
         "appearances": 4,
         "seasons": 4,
@@ -735,7 +735,7 @@
         ]
       },
       {
-        "id": 37,
+        "id": 36,
         "canonical_name": "Anne Murvold",
         "appearances": 3,
         "seasons": 3,
@@ -763,7 +763,7 @@
         ]
       },
       {
-        "id": 197,
+        "id": 195,
         "canonical_name": "Johanne Lægran",
         "appearances": 3,
         "seasons": 3,
@@ -791,7 +791,7 @@
         ]
       },
       {
-        "id": 256,
+        "id": 254,
         "canonical_name": "Madelène Wanvik Holum",
         "appearances": 3,
         "seasons": 3,
@@ -818,7 +818,7 @@
         ]
       },
       {
-        "id": 299,
+        "id": 297,
         "canonical_name": "Matias Brekkå",
         "appearances": 3,
         "seasons": 3,
@@ -3969,7 +3969,7 @@
             },
             {
               "rank": 2,
-              "person_name": "Anjara R.",
+              "person_name": "Dina Anjara Herilanto Randrianampiantsoa",
               "raw_name": "Anjara R.",
               "split_text": "8:21",
               "split_seconds": 501,
@@ -9244,7 +9244,7 @@
       "team_rank": 1,
       "stage_number": 10,
       "stage_label": "10. Den lange",
-      "person_name": "Anjara R.",
+      "person_name": "Dina Anjara Herilanto Randrianampiantsoa",
       "raw_name": "Anjara R.",
       "split_text": "8:21",
       "split_seconds": 501,
@@ -12544,7 +12544,7 @@
       "team_rank": 2,
       "stage_number": 10,
       "stage_label": "10. Den lange",
-      "person_name": "Dina Anjara",
+      "person_name": "Dina Anjara Herilanto Randrianampiantsoa",
       "raw_name": "Dina Anjara",
       "split_text": "8:43",
       "split_seconds": 523,
@@ -16084,7 +16084,7 @@
       "team_rank": 3,
       "stage_number": 4,
       "stage_label": "04. Berg og dal",
-      "person_name": "Dina Anjara",
+      "person_name": "Dina Anjara Herilanto Randrianampiantsoa",
       "raw_name": "Dina Anjara",
       "split_text": "6:22",
       "split_seconds": 382,
@@ -18928,7 +18928,7 @@
   ],
   "people": [
     {
-      "id": 100,
+      "id": 98,
       "canonical_name": "Emma Liv Leiner",
       "appearances": 4,
       "seasons": 4,
@@ -18958,7 +18958,7 @@
       ]
     },
     {
-      "id": 149,
+      "id": 147,
       "canonical_name": "Hanne Marthe Lie",
       "appearances": 4,
       "seasons": 4,
@@ -18988,7 +18988,36 @@
       ]
     },
     {
-      "id": 87,
+      "id": 71,
+      "canonical_name": "Dina Anjara Herilanto Randrianampiantsoa",
+      "appearances": 4,
+      "seasons": 4,
+      "teams": 4,
+      "best_category_rank": 3,
+      "category_wins": 0,
+      "best_split_seconds": 205,
+      "best_split_text": "3:25",
+      "classes": [
+        "OSI student"
+      ],
+      "years": [
+        2025,
+        2024,
+        2023,
+        2022
+      ],
+      "organizations": [
+        "OSIF"
+      ],
+      "team_history": [
+        "2025 · OSI herrer 1 2025",
+        "2024 · OSI F student 2024",
+        "2023 · OSI F student 2023",
+        "2022 · OSI F student 2022"
+      ]
+    },
+    {
+      "id": 85,
       "canonical_name": "Elias Haugen Torjussen",
       "appearances": 4,
       "seasons": 4,
@@ -19018,7 +19047,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 96,
       "canonical_name": "Emiliano Røgeberg",
       "appearances": 4,
       "seasons": 4,
@@ -19047,7 +19076,7 @@
       ]
     },
     {
-      "id": 106,
+      "id": 104,
       "canonical_name": "Erik Sørensen",
       "appearances": 4,
       "seasons": 4,
@@ -19077,7 +19106,7 @@
       ]
     },
     {
-      "id": 135,
+      "id": 133,
       "canonical_name": "Graeme Carey",
       "appearances": 4,
       "seasons": 4,
@@ -19106,7 +19135,7 @@
       ]
     },
     {
-      "id": 140,
+      "id": 138,
       "canonical_name": "Halvor Myhrvold",
       "appearances": 4,
       "seasons": 4,
@@ -19135,7 +19164,7 @@
       ]
     },
     {
-      "id": 193,
+      "id": 191,
       "canonical_name": "Jens Kortner",
       "appearances": 4,
       "seasons": 4,
@@ -19164,7 +19193,7 @@
       ]
     },
     {
-      "id": 242,
+      "id": 240,
       "canonical_name": "Lene Heimdal",
       "appearances": 4,
       "seasons": 4,
@@ -19193,7 +19222,7 @@
       ]
     },
     {
-      "id": 295,
+      "id": 293,
       "canonical_name": "Mathias Moen",
       "appearances": 4,
       "seasons": 4,
@@ -19222,7 +19251,7 @@
       ]
     },
     {
-      "id": 375,
+      "id": 373,
       "canonical_name": "Sofie Kjos Bergum",
       "appearances": 4,
       "seasons": 4,
@@ -19251,7 +19280,7 @@
       ]
     },
     {
-      "id": 400,
+      "id": 398,
       "canonical_name": "Theodor Berre Jacobsen",
       "appearances": 4,
       "seasons": 4,
@@ -19280,7 +19309,7 @@
       ]
     },
     {
-      "id": 424,
+      "id": 422,
       "canonical_name": "Veslemøy Rønnevik",
       "appearances": 4,
       "seasons": 4,
@@ -19310,7 +19339,7 @@
       ]
     },
     {
-      "id": 249,
+      "id": 247,
       "canonical_name": "Louise Høj Jensen",
       "appearances": 3,
       "seasons": 2,
@@ -19338,7 +19367,7 @@
       ]
     },
     {
-      "id": 366,
+      "id": 364,
       "canonical_name": "Siri Vegsund Staver",
       "appearances": 3,
       "seasons": 3,
@@ -19392,7 +19421,7 @@
       ]
     },
     {
-      "id": 144,
+      "id": 142,
       "canonical_name": "Hanna Kristine Larsen",
       "appearances": 3,
       "seasons": 3,
@@ -19420,7 +19449,7 @@
       ]
     },
     {
-      "id": 340,
+      "id": 338,
       "canonical_name": "Ruairi Long",
       "appearances": 3,
       "seasons": 3,
@@ -19449,7 +19478,7 @@
       ]
     },
     {
-      "id": 37,
+      "id": 36,
       "canonical_name": "Anne Murvold",
       "appearances": 3,
       "seasons": 3,
@@ -19477,7 +19506,7 @@
       ]
     },
     {
-      "id": 197,
+      "id": 195,
       "canonical_name": "Johanne Lægran",
       "appearances": 3,
       "seasons": 3,
@@ -19505,7 +19534,7 @@
       ]
     },
     {
-      "id": 256,
+      "id": 254,
       "canonical_name": "Madelène Wanvik Holum",
       "appearances": 3,
       "seasons": 3,
@@ -19532,7 +19561,7 @@
       ]
     },
     {
-      "id": 299,
+      "id": 297,
       "canonical_name": "Matias Brekkå",
       "appearances": 3,
       "seasons": 3,
@@ -19561,7 +19590,7 @@
       ]
     },
     {
-      "id": 406,
+      "id": 404,
       "canonical_name": "Tobias Baumann",
       "appearances": 3,
       "seasons": 3,
@@ -19617,7 +19646,7 @@
       ]
     },
     {
-      "id": 42,
+      "id": 41,
       "canonical_name": "Anniken Holst",
       "appearances": 3,
       "seasons": 3,
@@ -19645,7 +19674,7 @@
       ]
     },
     {
-      "id": 50,
+      "id": 49,
       "canonical_name": "Axel Wollan",
       "appearances": 3,
       "seasons": 3,
@@ -19672,7 +19701,7 @@
       ]
     },
     {
-      "id": 54,
+      "id": 53,
       "canonical_name": "Benjamin Thürer",
       "appearances": 3,
       "seasons": 3,
@@ -19699,7 +19728,7 @@
       ]
     },
     {
-      "id": 62,
+      "id": 61,
       "canonical_name": "Christoffer Hagen",
       "appearances": 3,
       "seasons": 3,
@@ -19727,7 +19756,7 @@
       ]
     },
     {
-      "id": 63,
+      "id": 62,
       "canonical_name": "Clotilde Ginestet",
       "appearances": 3,
       "seasons": 3,
@@ -19756,7 +19785,7 @@
       ]
     },
     {
-      "id": 67,
+      "id": 66,
       "canonical_name": "David Reiss-Andersen",
       "appearances": 3,
       "seasons": 3,
@@ -19783,7 +19812,7 @@
       ]
     },
     {
-      "id": 110,
+      "id": 108,
       "canonical_name": "Erlend Gjerdevik Sørtveit",
       "appearances": 3,
       "seasons": 3,
@@ -19810,7 +19839,7 @@
       ]
     },
     {
-      "id": 123,
+      "id": 121,
       "canonical_name": "Fredrik Killerud",
       "appearances": 3,
       "seasons": 3,
@@ -19837,7 +19866,7 @@
       ]
     },
     {
-      "id": 125,
+      "id": 123,
       "canonical_name": "Fredrik Sætereng Fyksen",
       "appearances": 3,
       "seasons": 3,
@@ -19864,7 +19893,7 @@
       ]
     },
     {
-      "id": 126,
+      "id": 124,
       "canonical_name": "Fredrik Sætran",
       "appearances": 3,
       "seasons": 3,
@@ -19892,7 +19921,7 @@
       ]
     },
     {
-      "id": 128,
+      "id": 126,
       "canonical_name": "Frida Bjørnstad Konow",
       "appearances": 3,
       "seasons": 3,
@@ -19919,7 +19948,7 @@
       ]
     },
     {
-      "id": 151,
+      "id": 149,
       "canonical_name": "Hanne Tingelstad",
       "appearances": 3,
       "seasons": 3,
@@ -19946,7 +19975,7 @@
       ]
     },
     {
-      "id": 184,
+      "id": 182,
       "canonical_name": "Ingrid Marie Schaumburg Huitfeldt",
       "appearances": 3,
       "seasons": 3,
@@ -19974,7 +20003,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 199,
       "canonical_name": "Jostein Rogstad",
       "appearances": 3,
       "seasons": 3,
@@ -20002,7 +20031,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 209,
       "canonical_name": "Kara Meunier",
       "appearances": 3,
       "seasons": 3,
@@ -20029,7 +20058,7 @@
       ]
     },
     {
-      "id": 214,
+      "id": 212,
       "canonical_name": "Karoline Holum Kjærnes",
       "appearances": 3,
       "seasons": 3,
@@ -20057,7 +20086,7 @@
       ]
     },
     {
-      "id": 259,
+      "id": 257,
       "canonical_name": "Magnus Hjellum",
       "appearances": 3,
       "seasons": 3,
@@ -20085,7 +20114,7 @@
       ]
     },
     {
-      "id": 261,
+      "id": 259,
       "canonical_name": "Magnus Myrmo Osberg",
       "appearances": 3,
       "seasons": 3,
@@ -20112,7 +20141,7 @@
       ]
     },
     {
-      "id": 262,
+      "id": 260,
       "canonical_name": "Magnus W Warvik",
       "appearances": 3,
       "seasons": 3,
@@ -20140,7 +20169,7 @@
       ]
     },
     {
-      "id": 271,
+      "id": 269,
       "canonical_name": "Mari Brøndbo Dahl",
       "appearances": 3,
       "seasons": 3,
@@ -20167,7 +20196,7 @@
       ]
     },
     {
-      "id": 316,
+      "id": 314,
       "canonical_name": "Nina Andersen",
       "appearances": 3,
       "seasons": 3,
@@ -20194,7 +20223,7 @@
       ]
     },
     {
-      "id": 322,
+      "id": 320,
       "canonical_name": "Ola Matre",
       "appearances": 3,
       "seasons": 3,
@@ -20221,7 +20250,7 @@
       ]
     },
     {
-      "id": 334,
+      "id": 332,
       "canonical_name": "Ragnhild Brørs Kløven",
       "appearances": 3,
       "seasons": 3,
@@ -20248,7 +20277,7 @@
       ]
     },
     {
-      "id": 359,
+      "id": 357,
       "canonical_name": "Simen Hagerup Kjeldsen",
       "appearances": 3,
       "seasons": 3,
@@ -20276,7 +20305,7 @@
       ]
     },
     {
-      "id": 368,
+      "id": 366,
       "canonical_name": "Sjur Prestsæter",
       "appearances": 3,
       "seasons": 3,
@@ -20304,7 +20333,7 @@
       ]
     },
     {
-      "id": 377,
+      "id": 375,
       "canonical_name": "Sondre Kongsgård",
       "appearances": 3,
       "seasons": 3,
@@ -20331,7 +20360,7 @@
       ]
     },
     {
-      "id": 381,
+      "id": 379,
       "canonical_name": "Steinar Bøe",
       "appearances": 3,
       "seasons": 3,
@@ -20358,7 +20387,7 @@
       ]
     },
     {
-      "id": 410,
+      "id": 408,
       "canonical_name": "Tone Staum",
       "appearances": 3,
       "seasons": 3,
@@ -20385,7 +20414,7 @@
       ]
     },
     {
-      "id": 413,
+      "id": 411,
       "canonical_name": "Torill Ytterhus Haugset",
       "appearances": 3,
       "seasons": 3,
@@ -20413,7 +20442,7 @@
       ]
     },
     {
-      "id": 416,
+      "id": 414,
       "canonical_name": "Truls Skarvøy",
       "appearances": 3,
       "seasons": 3,
@@ -20441,7 +20470,7 @@
       ]
     },
     {
-      "id": 428,
+      "id": 426,
       "canonical_name": "Vilde Antonsen",
       "appearances": 3,
       "seasons": 3,
@@ -20468,7 +20497,7 @@
       ]
     },
     {
-      "id": 185,
+      "id": 183,
       "canonical_name": "Ingrid Pernille Rismark",
       "appearances": 2,
       "seasons": 2,
@@ -20493,7 +20522,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": 30,
       "canonical_name": "Anna Marie Nordengen",
       "appearances": 2,
       "seasons": 2,
@@ -20518,7 +20547,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": 38,
       "canonical_name": "Anne Årrestad",
       "appearances": 2,
       "seasons": 2,
@@ -20543,7 +20572,7 @@
       ]
     },
     {
-      "id": 86,
+      "id": 84,
       "canonical_name": "Elene Mauseth Tangen",
       "appearances": 2,
       "seasons": 2,
@@ -20569,7 +20598,7 @@
       ]
     },
     {
-      "id": 90,
+      "id": 88,
       "canonical_name": "Elisabet Rørvik",
       "appearances": 2,
       "seasons": 2,
@@ -20595,7 +20624,7 @@
       ]
     },
     {
-      "id": 129,
+      "id": 127,
       "canonical_name": "Frida Thorsås",
       "appearances": 2,
       "seasons": 2,
@@ -20620,7 +20649,7 @@
       ]
     },
     {
-      "id": 160,
+      "id": 158,
       "canonical_name": "Helene Støle Melsom",
       "appearances": 2,
       "seasons": 2,
@@ -20645,7 +20674,7 @@
       ]
     },
     {
-      "id": 163,
+      "id": 161,
       "canonical_name": "Henriette Louise Malerstuen",
       "appearances": 2,
       "seasons": 2,
@@ -20670,7 +20699,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 163,
       "canonical_name": "Henrik Paus",
       "appearances": 2,
       "seasons": 2,
@@ -20696,7 +20725,7 @@
       ]
     },
     {
-      "id": 167,
+      "id": 165,
       "canonical_name": "Henry McNulty",
       "appearances": 2,
       "seasons": 2,
@@ -20721,7 +20750,7 @@
       ]
     },
     {
-      "id": 182,
+      "id": 180,
       "canonical_name": "Ingrid Aarbogh Skogum",
       "appearances": 2,
       "seasons": 2,
@@ -20746,7 +20775,7 @@
       ]
     },
     {
-      "id": 183,
+      "id": 181,
       "canonical_name": "Ingrid Helene Nyhus",
       "appearances": 2,
       "seasons": 2,
@@ -20771,7 +20800,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 202,
       "canonical_name": "Julie Benedicte Aspesletten",
       "appearances": 2,
       "seasons": 2,
@@ -20796,7 +20825,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 203,
       "canonical_name": "Julie Støverstein",
       "appearances": 2,
       "seasons": 2,
@@ -20821,7 +20850,7 @@
       ]
     },
     {
-      "id": 247,
+      "id": 245,
       "canonical_name": "Louisa Omoruyi",
       "appearances": 2,
       "seasons": 2,
@@ -20846,7 +20875,7 @@
       ]
     },
     {
-      "id": 264,
+      "id": 262,
       "canonical_name": "Maja Maria Blegen",
       "appearances": 2,
       "seasons": 2,
@@ -20872,7 +20901,7 @@
       ]
     },
     {
-      "id": 345,
+      "id": 343,
       "canonical_name": "Sanna Skancke Krauss",
       "appearances": 2,
       "seasons": 2,
@@ -20897,7 +20926,7 @@
       ]
     },
     {
-      "id": 403,
+      "id": 401,
       "canonical_name": "Thomas Misje Mathiisen",
       "appearances": 2,
       "seasons": 2,
@@ -21050,7 +21079,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": 29,
       "canonical_name": "Anna Liv Leikanger Aasen",
       "appearances": 2,
       "seasons": 2,
@@ -21075,7 +21104,7 @@
       ]
     },
     {
-      "id": 40,
+      "id": 39,
       "canonical_name": "Anne-Line Evenstad Dahlen",
       "appearances": 2,
       "seasons": 2,
@@ -21100,7 +21129,7 @@
       ]
     },
     {
-      "id": 43,
+      "id": 42,
       "canonical_name": "Anton Heldal",
       "appearances": 2,
       "seasons": 2,
@@ -21125,7 +21154,7 @@
       ]
     },
     {
-      "id": 48,
+      "id": 47,
       "canonical_name": "August Flø",
       "appearances": 2,
       "seasons": 2,
@@ -21150,7 +21179,7 @@
       ]
     },
     {
-      "id": 51,
+      "id": 50,
       "canonical_name": "Bastian Fjermeros",
       "appearances": 2,
       "seasons": 2,
@@ -21175,7 +21204,7 @@
       ]
     },
     {
-      "id": 66,
+      "id": 65,
       "canonical_name": "David Lukas Bleich",
       "appearances": 2,
       "seasons": 2,
@@ -21200,7 +21229,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": 67,
       "canonical_name": "David Stefan Rieger",
       "appearances": 2,
       "seasons": 2,
@@ -21226,31 +21255,6 @@
     },
     {
       "id": 72,
-      "canonical_name": "Dina Anjara",
-      "appearances": 2,
-      "seasons": 2,
-      "teams": 2,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 382,
-      "best_split_text": "6:22",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2023,
-        2022
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2023 · OSI F student 2023",
-        "2022 · OSI F student 2022"
-      ]
-    },
-    {
-      "id": 74,
       "canonical_name": "Dina Erika Hansen",
       "appearances": 2,
       "seasons": 2,
@@ -21276,7 +21280,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": 81,
       "canonical_name": "Eivind Klokkehaug",
       "appearances": 2,
       "seasons": 2,
@@ -21301,7 +21305,7 @@
       ]
     },
     {
-      "id": 85,
+      "id": 83,
       "canonical_name": "Eldbjørg D. Moxnes",
       "appearances": 2,
       "seasons": 2,
@@ -21327,7 +21331,7 @@
       ]
     },
     {
-      "id": 102,
+      "id": 100,
       "canonical_name": "Erik Bucher Johannessen",
       "appearances": 2,
       "seasons": 2,
@@ -21353,7 +21357,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": 101,
       "canonical_name": "Erik Bøhn",
       "appearances": 2,
       "seasons": 2,
@@ -21379,7 +21383,7 @@
       ]
     },
     {
-      "id": 105,
+      "id": 103,
       "canonical_name": "Erik Rønneberg",
       "appearances": 2,
       "seasons": 2,
@@ -21405,7 +21409,7 @@
       ]
     },
     {
-      "id": 108,
+      "id": 106,
       "canonical_name": "Erlend Berger",
       "appearances": 2,
       "seasons": 2,
@@ -21431,7 +21435,7 @@
       ]
     },
     {
-      "id": 111,
+      "id": 109,
       "canonical_name": "Erlend Helgesen",
       "appearances": 2,
       "seasons": 2,
@@ -21457,7 +21461,7 @@
       ]
     },
     {
-      "id": 115,
+      "id": 113,
       "canonical_name": "Espen Bielke",
       "appearances": 2,
       "seasons": 2,
@@ -21483,7 +21487,7 @@
       ]
     },
     {
-      "id": 116,
+      "id": 114,
       "canonical_name": "Even Lund",
       "appearances": 2,
       "seasons": 2,
@@ -21508,7 +21512,7 @@
       ]
     },
     {
-      "id": 117,
+      "id": 115,
       "canonical_name": "Felix Kjønsberg",
       "appearances": 2,
       "seasons": 2,
@@ -21533,7 +21537,7 @@
       ]
     },
     {
-      "id": 118,
+      "id": 116,
       "canonical_name": "Frederik Eichenberger",
       "appearances": 2,
       "seasons": 2,
@@ -21558,7 +21562,7 @@
       ]
     },
     {
-      "id": 119,
+      "id": 117,
       "canonical_name": "Frederik Emil Juul",
       "appearances": 2,
       "seasons": 2,
@@ -21584,7 +21588,7 @@
       ]
     },
     {
-      "id": 124,
+      "id": 122,
       "canonical_name": "Fredrik Strohkirchen",
       "appearances": 2,
       "seasons": 2,
@@ -21610,7 +21614,7 @@
       ]
     },
     {
-      "id": 138,
+      "id": 136,
       "canonical_name": "Haakon Engelsen Berg",
       "appearances": 2,
       "seasons": 2,
@@ -21635,7 +21639,7 @@
       ]
     },
     {
-      "id": 141,
+      "id": 139,
       "canonical_name": "Hanna Aarnes Nisja",
       "appearances": 2,
       "seasons": 2,
@@ -21660,7 +21664,7 @@
       ]
     },
     {
-      "id": 152,
+      "id": 150,
       "canonical_name": "Hans Christian Tungesvik",
       "appearances": 2,
       "seasons": 2,
@@ -21686,7 +21690,7 @@
       ]
     },
     {
-      "id": 153,
+      "id": 151,
       "canonical_name": "Harald Solhaug Næss",
       "appearances": 2,
       "seasons": 2,
@@ -21712,7 +21716,7 @@
       ]
     },
     {
-      "id": 162,
+      "id": 160,
       "canonical_name": "Henning Mæle",
       "appearances": 2,
       "seasons": 2,
@@ -21737,7 +21741,7 @@
       ]
     },
     {
-      "id": 169,
+      "id": 167,
       "canonical_name": "Håkon J Tømmervåg",
       "appearances": 2,
       "seasons": 2,
@@ -21764,7 +21768,7 @@
       ]
     },
     {
-      "id": 170,
+      "id": 168,
       "canonical_name": "Håkon Lund",
       "appearances": 2,
       "seasons": 2,
@@ -21789,7 +21793,7 @@
       ]
     },
     {
-      "id": 176,
+      "id": 174,
       "canonical_name": "Ida Marie Nordengen",
       "appearances": 2,
       "seasons": 2,
@@ -21814,7 +21818,7 @@
       ]
     },
     {
-      "id": 191,
+      "id": 189,
       "canonical_name": "Jan Schneider",
       "appearances": 2,
       "seasons": 2,
@@ -21839,7 +21843,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 194,
       "canonical_name": "Joakim S. Mohn",
       "appearances": 2,
       "seasons": 2,
@@ -21864,7 +21868,7 @@
       ]
     },
     {
-      "id": 198,
+      "id": 196,
       "canonical_name": "Jonas Njerve",
       "appearances": 2,
       "seasons": 2,
@@ -21889,7 +21893,7 @@
       ]
     },
     {
-      "id": 207,
+      "id": 205,
       "canonical_name": "June Kieu-Van Bui",
       "appearances": 2,
       "seasons": 2,
@@ -21914,7 +21918,7 @@
       ]
     },
     {
-      "id": 212,
+      "id": 210,
       "canonical_name": "Kari Lien Johnsen",
       "appearances": 2,
       "seasons": 2,
@@ -21940,7 +21944,7 @@
       ]
     },
     {
-      "id": 217,
+      "id": 215,
       "canonical_name": "Katerina Hatzigiannis",
       "appearances": 2,
       "seasons": 2,
@@ -21965,7 +21969,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": 220,
       "canonical_name": "Knut Hjertvik",
       "appearances": 2,
       "seasons": 2,
@@ -21990,7 +21994,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 221,
       "canonical_name": "Kristian Bjune Sveen",
       "appearances": 2,
       "seasons": 2,
@@ -22016,7 +22020,7 @@
       ]
     },
     {
-      "id": 237,
+      "id": 235,
       "canonical_name": "Lars Hauge",
       "appearances": 2,
       "seasons": 2,
@@ -22042,7 +22046,7 @@
       ]
     },
     {
-      "id": 239,
+      "id": 237,
       "canonical_name": "Lars Martin Falck",
       "appearances": 2,
       "seasons": 2,
@@ -22068,7 +22072,7 @@
       ]
     },
     {
-      "id": 257,
+      "id": 255,
       "canonical_name": "Magnus Benoni",
       "appearances": 2,
       "seasons": 2,
@@ -22094,7 +22098,7 @@
       ]
     },
     {
-      "id": 260,
+      "id": 258,
       "canonical_name": "Magnus Højen",
       "appearances": 2,
       "seasons": 2,
@@ -22120,7 +22124,7 @@
       ]
     },
     {
-      "id": 265,
+      "id": 263,
       "canonical_name": "Malene Knutsen Breivik",
       "appearances": 2,
       "seasons": 2,
@@ -22147,7 +22151,7 @@
       ]
     },
     {
-      "id": 273,
+      "id": 271,
       "canonical_name": "Mari Vatn",
       "appearances": 2,
       "seasons": 2,
@@ -22173,7 +22177,7 @@
       ]
     },
     {
-      "id": 277,
+      "id": 275,
       "canonical_name": "Marianne Harnes",
       "appearances": 2,
       "seasons": 2,
@@ -22198,7 +22202,7 @@
       ]
     },
     {
-      "id": 279,
+      "id": 277,
       "canonical_name": "Marie Haga",
       "appearances": 2,
       "seasons": 2,
@@ -22224,7 +22228,7 @@
       ]
     },
     {
-      "id": 284,
+      "id": 282,
       "canonical_name": "Markus Borge Harbo",
       "appearances": 2,
       "seasons": 2,
@@ -22249,7 +22253,7 @@
       ]
     },
     {
-      "id": 297,
+      "id": 295,
       "canonical_name": "Mathilde Theisen",
       "appearances": 2,
       "seasons": 2,
@@ -22274,7 +22278,7 @@
       ]
     },
     {
-      "id": 300,
+      "id": 298,
       "canonical_name": "Matilde Reinholdt Belsvik",
       "appearances": 2,
       "seasons": 2,
@@ -22299,7 +22303,7 @@
       ]
     },
     {
-      "id": 307,
+      "id": 305,
       "canonical_name": "Morten Olsen Dalhaug",
       "appearances": 2,
       "seasons": 2,
@@ -22324,7 +22328,7 @@
       ]
     },
     {
-      "id": 323,
+      "id": 321,
       "canonical_name": "Ole Anders Stokker",
       "appearances": 2,
       "seasons": 2,
@@ -22349,7 +22353,7 @@
       ]
     },
     {
-      "id": 326,
+      "id": 324,
       "canonical_name": "Ole Ravna",
       "appearances": 2,
       "seasons": 2,
@@ -22375,7 +22379,7 @@
       ]
     },
     {
-      "id": 328,
+      "id": 326,
       "canonical_name": "Pauline Sjøvold",
       "appearances": 2,
       "seasons": 2,
@@ -22401,7 +22405,7 @@
       ]
     },
     {
-      "id": 335,
+      "id": 333,
       "canonical_name": "Ragnhild Narvestad Hungnes",
       "appearances": 2,
       "seasons": 2,
@@ -22427,7 +22431,7 @@
       ]
     },
     {
-      "id": 336,
+      "id": 334,
       "canonical_name": "Rasmus Tibar",
       "appearances": 2,
       "seasons": 2,
@@ -22452,7 +22456,7 @@
       ]
     },
     {
-      "id": 337,
+      "id": 335,
       "canonical_name": "Rebekka Haugland",
       "appearances": 2,
       "seasons": 2,
@@ -22477,7 +22481,7 @@
       ]
     },
     {
-      "id": 338,
+      "id": 336,
       "canonical_name": "Richard Waren",
       "appearances": 2,
       "seasons": 2,
@@ -22502,7 +22506,7 @@
       ]
     },
     {
-      "id": 341,
+      "id": 339,
       "canonical_name": "Runa Skrove Falch",
       "appearances": 2,
       "seasons": 2,
@@ -22527,7 +22531,7 @@
       ]
     },
     {
-      "id": 343,
+      "id": 341,
       "canonical_name": "Rune Solli",
       "appearances": 2,
       "seasons": 2,
@@ -22552,7 +22556,7 @@
       ]
     },
     {
-      "id": 354,
+      "id": 352,
       "canonical_name": "Sigrun Aker Nordeng",
       "appearances": 2,
       "seasons": 2,
@@ -22578,7 +22582,7 @@
       ]
     },
     {
-      "id": 358,
+      "id": 356,
       "canonical_name": "Sigurd Østlie",
       "appearances": 2,
       "seasons": 2,
@@ -22603,7 +22607,7 @@
       ]
     },
     {
-      "id": 369,
+      "id": 367,
       "canonical_name": "Sofie Amundsgård",
       "appearances": 2,
       "seasons": 2,
@@ -22628,7 +22632,7 @@
       ]
     },
     {
-      "id": 373,
+      "id": 371,
       "canonical_name": "Sofie Gotuholt",
       "appearances": 2,
       "seasons": 2,
@@ -22655,7 +22659,7 @@
       ]
     },
     {
-      "id": 378,
+      "id": 376,
       "canonical_name": "Sondre Lomeland",
       "appearances": 2,
       "seasons": 2,
@@ -22680,7 +22684,7 @@
       ]
     },
     {
-      "id": 383,
+      "id": 381,
       "canonical_name": "Stine Holager",
       "appearances": 2,
       "seasons": 2,
@@ -22705,7 +22709,7 @@
       ]
     },
     {
-      "id": 390,
+      "id": 388,
       "canonical_name": "Synne Karlsen Amundsgård",
       "appearances": 2,
       "seasons": 2,
@@ -22730,7 +22734,7 @@
       ]
     },
     {
-      "id": 394,
+      "id": 392,
       "canonical_name": "Tea Sætereng Fyksen",
       "appearances": 2,
       "seasons": 2,
@@ -22755,7 +22759,7 @@
       ]
     },
     {
-      "id": 402,
+      "id": 400,
       "canonical_name": "Thomas Kjellberg",
       "appearances": 2,
       "seasons": 2,
@@ -22780,7 +22784,7 @@
       ]
     },
     {
-      "id": 404,
+      "id": 402,
       "canonical_name": "Tina Kleven",
       "appearances": 2,
       "seasons": 2,
@@ -22805,7 +22809,7 @@
       ]
     },
     {
-      "id": 408,
+      "id": 406,
       "canonical_name": "Tobias Holdø Skog",
       "appearances": 2,
       "seasons": 2,
@@ -22830,7 +22834,7 @@
       ]
     },
     {
-      "id": 411,
+      "id": 409,
       "canonical_name": "Tore Lervik",
       "appearances": 2,
       "seasons": 2,
@@ -22856,7 +22860,7 @@
       ]
     },
     {
-      "id": 425,
+      "id": 423,
       "canonical_name": "Vetle Nevland",
       "appearances": 2,
       "seasons": 2,
@@ -22881,7 +22885,7 @@
       ]
     },
     {
-      "id": 434,
+      "id": 432,
       "canonical_name": "Zainab Al-Sultan",
       "appearances": 2,
       "seasons": 2,
@@ -22907,7 +22911,7 @@
       ]
     },
     {
-      "id": 435,
+      "id": 433,
       "canonical_name": "Ådne Andersen",
       "appearances": 2,
       "seasons": 2,
@@ -22932,7 +22936,7 @@
       ]
     },
     {
-      "id": 437,
+      "id": 435,
       "canonical_name": "Åsne Trømborg",
       "appearances": 2,
       "seasons": 2,
@@ -23072,7 +23076,7 @@
       ]
     },
     {
-      "id": 44,
+      "id": 43,
       "canonical_name": "Asta Ellingsen",
       "appearances": 1,
       "seasons": 1,
@@ -23095,7 +23099,7 @@
       ]
     },
     {
-      "id": 70,
+      "id": 69,
       "canonical_name": "Davide Petrella",
       "appearances": 1,
       "seasons": 1,
@@ -23118,7 +23122,7 @@
       ]
     },
     {
-      "id": 75,
+      "id": 73,
       "canonical_name": "Edvard Kamperud Nygaard",
       "appearances": 1,
       "seasons": 1,
@@ -23141,7 +23145,7 @@
       ]
     },
     {
-      "id": 88,
+      "id": 86,
       "canonical_name": "Elin Mellomstrand",
       "appearances": 1,
       "seasons": 1,
@@ -23164,7 +23168,7 @@
       ]
     },
     {
-      "id": 92,
+      "id": 90,
       "canonical_name": "Elisabeth Kollerød",
       "appearances": 1,
       "seasons": 1,
@@ -23187,7 +23191,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 97,
       "canonical_name": "Emilie Mo",
       "appearances": 1,
       "seasons": 1,
@@ -23210,7 +23214,7 @@
       ]
     },
     {
-      "id": 131,
+      "id": 129,
       "canonical_name": "Félicien Sala--Mizermont",
       "appearances": 1,
       "seasons": 1,
@@ -23233,7 +23237,7 @@
       ]
     },
     {
-      "id": 134,
+      "id": 132,
       "canonical_name": "Gloria Vinstedt",
       "appearances": 1,
       "seasons": 1,
@@ -23256,7 +23260,7 @@
       ]
     },
     {
-      "id": 155,
+      "id": 153,
       "canonical_name": "Hege Njaa Bjørkmann",
       "appearances": 1,
       "seasons": 1,
@@ -23279,7 +23283,7 @@
       ]
     },
     {
-      "id": 171,
+      "id": 169,
       "canonical_name": "Håkon Mindrebøe",
       "appearances": 1,
       "seasons": 1,
@@ -23302,7 +23306,7 @@
       ]
     },
     {
-      "id": 175,
+      "id": 173,
       "canonical_name": "Ida Flaatten",
       "appearances": 1,
       "seasons": 1,
@@ -23325,7 +23329,7 @@
       ]
     },
     {
-      "id": 194,
+      "id": 192,
       "canonical_name": "Jo Trieu Søreide",
       "appearances": 1,
       "seasons": 1,
@@ -23348,7 +23352,7 @@
       ]
     },
     {
-      "id": 218,
+      "id": 216,
       "canonical_name": "Kathrine Kvernmo",
       "appearances": 1,
       "seasons": 1,
@@ -23371,7 +23375,7 @@
       ]
     },
     {
-      "id": 220,
+      "id": 218,
       "canonical_name": "Kidane Berahki",
       "appearances": 1,
       "seasons": 1,
@@ -23394,7 +23398,7 @@
       ]
     },
     {
-      "id": 226,
+      "id": 224,
       "canonical_name": "Kristin Fagerli",
       "appearances": 1,
       "seasons": 1,
@@ -23417,7 +23421,7 @@
       ]
     },
     {
-      "id": 227,
+      "id": 225,
       "canonical_name": "Kristin Overvaag",
       "appearances": 1,
       "seasons": 1,
@@ -23440,7 +23444,7 @@
       ]
     },
     {
-      "id": 228,
+      "id": 226,
       "canonical_name": "Kristin Svendby Otervik",
       "appearances": 1,
       "seasons": 1,
@@ -23463,7 +23467,7 @@
       ]
     },
     {
-      "id": 243,
+      "id": 241,
       "canonical_name": "Line Askehim",
       "appearances": 1,
       "seasons": 1,
@@ -23486,7 +23490,7 @@
       ]
     },
     {
-      "id": 244,
+      "id": 242,
       "canonical_name": "Linn Stråbøl",
       "appearances": 1,
       "seasons": 1,
@@ -23509,7 +23513,7 @@
       ]
     },
     {
-      "id": 251,
+      "id": 249,
       "canonical_name": "Luc Kummer",
       "appearances": 1,
       "seasons": 1,
@@ -23532,7 +23536,7 @@
       ]
     },
     {
-      "id": 275,
+      "id": 273,
       "canonical_name": "Marianne Dønnem",
       "appearances": 1,
       "seasons": 1,
@@ -23555,7 +23559,7 @@
       ]
     },
     {
-      "id": 276,
+      "id": 274,
       "canonical_name": "Marianne G Ullsand",
       "appearances": 1,
       "seasons": 1,
@@ -23578,7 +23582,7 @@
       ]
     },
     {
-      "id": 282,
+      "id": 280,
       "canonical_name": "Marit Brennhovd",
       "appearances": 1,
       "seasons": 1,
@@ -23601,7 +23605,7 @@
       ]
     },
     {
-      "id": 283,
+      "id": 281,
       "canonical_name": "Marit Haslie",
       "appearances": 1,
       "seasons": 1,
@@ -23624,7 +23628,7 @@
       ]
     },
     {
-      "id": 289,
+      "id": 287,
       "canonical_name": "Martha Gulbrandsen",
       "appearances": 1,
       "seasons": 1,
@@ -23647,7 +23651,7 @@
       ]
     },
     {
-      "id": 304,
+      "id": 302,
       "canonical_name": "Mette Brandstamoen",
       "appearances": 1,
       "seasons": 1,
@@ -23670,7 +23674,7 @@
       ]
     },
     {
-      "id": 305,
+      "id": 303,
       "canonical_name": "Mette Riise",
       "appearances": 1,
       "seasons": 1,
@@ -23693,7 +23697,7 @@
       ]
     },
     {
-      "id": 308,
+      "id": 306,
       "canonical_name": "Myrthe Tilleman",
       "appearances": 1,
       "seasons": 1,
@@ -23716,7 +23720,7 @@
       ]
     },
     {
-      "id": 319,
+      "id": 317,
       "canonical_name": "Nora Serres",
       "appearances": 1,
       "seasons": 1,
@@ -23739,7 +23743,7 @@
       ]
     },
     {
-      "id": 327,
+      "id": 325,
       "canonical_name": "Oliver Sunde",
       "appearances": 1,
       "seasons": 1,
@@ -23762,7 +23766,7 @@
       ]
     },
     {
-      "id": 330,
+      "id": 328,
       "canonical_name": "Petronella Tordsdatter Halle",
       "appearances": 1,
       "seasons": 1,
@@ -23785,7 +23789,7 @@
       ]
     },
     {
-      "id": 348,
+      "id": 346,
       "canonical_name": "Sara Kjeldsen Lie",
       "appearances": 1,
       "seasons": 1,
@@ -23808,7 +23812,7 @@
       ]
     },
     {
-      "id": 349,
+      "id": 347,
       "canonical_name": "Sarah Rehn",
       "appearances": 1,
       "seasons": 1,
@@ -23831,7 +23835,7 @@
       ]
     },
     {
-      "id": 353,
+      "id": 351,
       "canonical_name": "Sigrid Fu Skjelbostad",
       "appearances": 1,
       "seasons": 1,
@@ -23854,7 +23858,7 @@
       ]
     },
     {
-      "id": 384,
+      "id": 382,
       "canonical_name": "Sunniva Fjeld",
       "appearances": 1,
       "seasons": 1,
@@ -23877,7 +23881,7 @@
       ]
     },
     {
-      "id": 387,
+      "id": 385,
       "canonical_name": "Sveinung Brenno Flæthe",
       "appearances": 1,
       "seasons": 1,
@@ -23900,7 +23904,7 @@
       ]
     },
     {
-      "id": 391,
+      "id": 389,
       "canonical_name": "Synne Opheim",
       "appearances": 1,
       "seasons": 1,
@@ -23923,7 +23927,7 @@
       ]
     },
     {
-      "id": 405,
+      "id": 403,
       "canonical_name": "Tobias Bauman",
       "appearances": 1,
       "seasons": 1,
@@ -23946,7 +23950,7 @@
       ]
     },
     {
-      "id": 430,
+      "id": 428,
       "canonical_name": "Vilde Moser",
       "appearances": 1,
       "seasons": 1,
@@ -24337,30 +24341,7 @@
       ]
     },
     {
-      "id": 29,
-      "canonical_name": "Anjara R.",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 501,
-      "best_split_text": "8:21",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2024
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2024 · OSI F student 2024"
-      ]
-    },
-    {
-      "id": 32,
+      "id": 31,
       "canonical_name": "Anna Sirevåg",
       "appearances": 1,
       "seasons": 1,
@@ -24383,7 +24364,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": 32,
       "canonical_name": "Anne Cecilie Grindstad",
       "appearances": 1,
       "seasons": 1,
@@ -24406,7 +24387,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 33,
       "canonical_name": "Anne Gine Løvnes",
       "appearances": 1,
       "seasons": 1,
@@ -24429,7 +24410,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": 34,
       "canonical_name": "Anne Grethe Lindeberg",
       "appearances": 1,
       "seasons": 1,
@@ -24452,7 +24433,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": 35,
       "canonical_name": "Anne Løvendahl Berg",
       "appearances": 1,
       "seasons": 1,
@@ -24475,7 +24456,7 @@
       ]
     },
     {
-      "id": 38,
+      "id": 37,
       "canonical_name": "Anne Myht",
       "appearances": 1,
       "seasons": 1,
@@ -24498,7 +24479,7 @@
       ]
     },
     {
-      "id": 41,
+      "id": 40,
       "canonical_name": "Anne-Line Evenstad Dalen",
       "appearances": 1,
       "seasons": 1,
@@ -24521,7 +24502,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": 44,
       "canonical_name": "Asta Ellingvåg",
       "appearances": 1,
       "seasons": 1,
@@ -24544,7 +24525,7 @@
       ]
     },
     {
-      "id": 46,
+      "id": 45,
       "canonical_name": "Astrid Ingebrigtsen",
       "appearances": 1,
       "seasons": 1,
@@ -24567,7 +24548,7 @@
       ]
     },
     {
-      "id": 47,
+      "id": 46,
       "canonical_name": "Astrid Skyrud",
       "appearances": 1,
       "seasons": 1,
@@ -24590,7 +24571,7 @@
       ]
     },
     {
-      "id": 49,
+      "id": 48,
       "canonical_name": "Austin Podhajsky",
       "appearances": 1,
       "seasons": 1,
@@ -24613,7 +24594,7 @@
       ]
     },
     {
-      "id": 52,
+      "id": 51,
       "canonical_name": "Bendik Håland Pedersen",
       "appearances": 1,
       "seasons": 1,
@@ -24636,7 +24617,7 @@
       ]
     },
     {
-      "id": 53,
+      "id": 52,
       "canonical_name": "Benjamin Marx",
       "appearances": 1,
       "seasons": 1,
@@ -24659,7 +24640,7 @@
       ]
     },
     {
-      "id": 55,
+      "id": 54,
       "canonical_name": "Bethina Løver Valle",
       "appearances": 1,
       "seasons": 1,
@@ -24682,7 +24663,7 @@
       ]
     },
     {
-      "id": 56,
+      "id": 55,
       "canonical_name": "Bjorn Wastvedt",
       "appearances": 1,
       "seasons": 1,
@@ -24705,7 +24686,7 @@
       ]
     },
     {
-      "id": 57,
+      "id": 56,
       "canonical_name": "Bjørnar Kjønnøy Slettvåg",
       "appearances": 1,
       "seasons": 1,
@@ -24728,7 +24709,7 @@
       ]
     },
     {
-      "id": 58,
+      "id": 57,
       "canonical_name": "Caroline Brekke Karlsen",
       "appearances": 1,
       "seasons": 1,
@@ -24751,7 +24732,7 @@
       ]
     },
     {
-      "id": 59,
+      "id": 58,
       "canonical_name": "Caroline Marie Wiig",
       "appearances": 1,
       "seasons": 1,
@@ -24774,7 +24755,7 @@
       ]
     },
     {
-      "id": 60,
+      "id": 59,
       "canonical_name": "Cassandra Ødegård Nilsen",
       "appearances": 1,
       "seasons": 1,
@@ -24797,7 +24778,7 @@
       ]
     },
     {
-      "id": 61,
+      "id": 60,
       "canonical_name": "Celine Håkestad",
       "appearances": 1,
       "seasons": 1,
@@ -24820,7 +24801,7 @@
       ]
     },
     {
-      "id": 64,
+      "id": 63,
       "canonical_name": "Daniel Børseth",
       "appearances": 1,
       "seasons": 1,
@@ -24843,7 +24824,7 @@
       ]
     },
     {
-      "id": 65,
+      "id": 64,
       "canonical_name": "Daniel Fikstveita",
       "appearances": 1,
       "seasons": 1,
@@ -24866,7 +24847,7 @@
       ]
     },
     {
-      "id": 69,
+      "id": 68,
       "canonical_name": "David Stefan Riger",
       "appearances": 1,
       "seasons": 1,
@@ -24889,7 +24870,7 @@
       ]
     },
     {
-      "id": 71,
+      "id": 70,
       "canonical_name": "Delphine Poirot",
       "appearances": 1,
       "seasons": 1,
@@ -24912,30 +24893,7 @@
       ]
     },
     {
-      "id": 73,
-      "canonical_name": "Dina Anjara Herilanto Randrianampiantsoa",
-      "appearances": 1,
-      "seasons": 1,
-      "teams": 1,
-      "best_category_rank": 3,
-      "category_wins": 0,
-      "best_split_seconds": 205,
-      "best_split_text": "3:25",
-      "classes": [
-        "OSI student"
-      ],
-      "years": [
-        2025
-      ],
-      "organizations": [
-        "OSIF"
-      ],
-      "team_history": [
-        "2025 · OSI herrer 1 2025"
-      ]
-    },
-    {
-      "id": 76,
+      "id": 74,
       "canonical_name": "Eileen Kolberg",
       "appearances": 1,
       "seasons": 1,
@@ -24958,7 +24916,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": 75,
       "canonical_name": "Eilen Katarina Lunde",
       "appearances": 1,
       "seasons": 1,
@@ -24981,7 +24939,7 @@
       ]
     },
     {
-      "id": 78,
+      "id": 76,
       "canonical_name": "Einar Waldeland Gautvik",
       "appearances": 1,
       "seasons": 1,
@@ -25004,7 +24962,7 @@
       ]
     },
     {
-      "id": 79,
+      "id": 77,
       "canonical_name": "Eirik Dyrseth",
       "appearances": 1,
       "seasons": 1,
@@ -25027,7 +24985,7 @@
       ]
     },
     {
-      "id": 80,
+      "id": 78,
       "canonical_name": "Eirik Gramstad",
       "appearances": 1,
       "seasons": 1,
@@ -25050,7 +25008,7 @@
       ]
     },
     {
-      "id": 81,
+      "id": 79,
       "canonical_name": "Eirik Ophus",
       "appearances": 1,
       "seasons": 1,
@@ -25073,7 +25031,7 @@
       ]
     },
     {
-      "id": 82,
+      "id": 80,
       "canonical_name": "Eivind Heggelund Tørstad",
       "appearances": 1,
       "seasons": 1,
@@ -25096,7 +25054,7 @@
       ]
     },
     {
-      "id": 84,
+      "id": 82,
       "canonical_name": "Eivind Klokkhaug",
       "appearances": 1,
       "seasons": 1,
@@ -25119,7 +25077,7 @@
       ]
     },
     {
-      "id": 89,
+      "id": 87,
       "canonical_name": "Eline Rud Wagle",
       "appearances": 1,
       "seasons": 1,
@@ -25142,7 +25100,7 @@
       ]
     },
     {
-      "id": 91,
+      "id": 89,
       "canonical_name": "Elisabeth H G Øiulfstad",
       "appearances": 1,
       "seasons": 1,
@@ -25165,7 +25123,7 @@
       ]
     },
     {
-      "id": 93,
+      "id": 91,
       "canonical_name": "Elise Katrine Amdal",
       "appearances": 1,
       "seasons": 1,
@@ -25188,7 +25146,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": 92,
       "canonical_name": "Eliska Sottova",
       "appearances": 1,
       "seasons": 1,
@@ -25211,7 +25169,7 @@
       ]
     },
     {
-      "id": 95,
+      "id": 93,
       "canonical_name": "Ellinoora Tuominen",
       "appearances": 1,
       "seasons": 1,
@@ -25234,7 +25192,7 @@
       ]
     },
     {
-      "id": 96,
+      "id": 94,
       "canonical_name": "Else Remen",
       "appearances": 1,
       "seasons": 1,
@@ -25257,7 +25215,7 @@
       ]
     },
     {
-      "id": 97,
+      "id": 95,
       "canonical_name": "Emil Tofte Røhne",
       "appearances": 1,
       "seasons": 1,
@@ -25280,7 +25238,7 @@
       ]
     },
     {
-      "id": 101,
+      "id": 99,
       "canonical_name": "Erik B Andersen",
       "appearances": 1,
       "seasons": 1,
@@ -25303,7 +25261,7 @@
       ]
     },
     {
-      "id": 104,
+      "id": 102,
       "canonical_name": "Erik Kamstrup Hovind",
       "appearances": 1,
       "seasons": 1,
@@ -25326,7 +25284,7 @@
       ]
     },
     {
-      "id": 107,
+      "id": 105,
       "canonical_name": "Erika Turunen",
       "appearances": 1,
       "seasons": 1,
@@ -25349,7 +25307,7 @@
       ]
     },
     {
-      "id": 109,
+      "id": 107,
       "canonical_name": "Erlend Bruaset",
       "appearances": 1,
       "seasons": 1,
@@ -25372,7 +25330,7 @@
       ]
     },
     {
-      "id": 112,
+      "id": 110,
       "canonical_name": "Erlend Rinden",
       "appearances": 1,
       "seasons": 1,
@@ -25395,7 +25353,7 @@
       ]
     },
     {
-      "id": 113,
+      "id": 111,
       "canonical_name": "Eskil Aas",
       "appearances": 1,
       "seasons": 1,
@@ -25418,7 +25376,7 @@
       ]
     },
     {
-      "id": 114,
+      "id": 112,
       "canonical_name": "Eskil Høstad",
       "appearances": 1,
       "seasons": 1,
@@ -25441,7 +25399,7 @@
       ]
     },
     {
-      "id": 120,
+      "id": 118,
       "canonical_name": "Fredrik Camilo Halsbog",
       "appearances": 1,
       "seasons": 1,
@@ -25464,7 +25422,7 @@
       ]
     },
     {
-      "id": 121,
+      "id": 119,
       "canonical_name": "Fredrik Hjorth Bentsen",
       "appearances": 1,
       "seasons": 1,
@@ -25487,7 +25445,7 @@
       ]
     },
     {
-      "id": 122,
+      "id": 120,
       "canonical_name": "Fredrik Hjorth Berntsen",
       "appearances": 1,
       "seasons": 1,
@@ -25510,7 +25468,7 @@
       ]
     },
     {
-      "id": 127,
+      "id": 125,
       "canonical_name": "Fredrik Tøien",
       "appearances": 1,
       "seasons": 1,
@@ -25533,7 +25491,7 @@
       ]
     },
     {
-      "id": 130,
+      "id": 128,
       "canonical_name": "Fritjof Wedum",
       "appearances": 1,
       "seasons": 1,
@@ -25556,7 +25514,7 @@
       ]
     },
     {
-      "id": 132,
+      "id": 130,
       "canonical_name": "Gaute Olberg",
       "appearances": 1,
       "seasons": 1,
@@ -25579,7 +25537,7 @@
       ]
     },
     {
-      "id": 133,
+      "id": 131,
       "canonical_name": "Gina Didriksen",
       "appearances": 1,
       "seasons": 1,
@@ -25602,7 +25560,7 @@
       ]
     },
     {
-      "id": 136,
+      "id": 134,
       "canonical_name": "Gudmund Toverud Høglund",
       "appearances": 1,
       "seasons": 1,
@@ -25625,7 +25583,7 @@
       ]
     },
     {
-      "id": 137,
+      "id": 135,
       "canonical_name": "Gustav Vasdal",
       "appearances": 1,
       "seasons": 1,
@@ -25648,7 +25606,7 @@
       ]
     },
     {
-      "id": 139,
+      "id": 137,
       "canonical_name": "Halvor Haugan",
       "appearances": 1,
       "seasons": 1,
@@ -25671,7 +25629,7 @@
       ]
     },
     {
-      "id": 142,
+      "id": 140,
       "canonical_name": "Hanna Altmeier",
       "appearances": 1,
       "seasons": 1,
@@ -25694,7 +25652,7 @@
       ]
     },
     {
-      "id": 143,
+      "id": 141,
       "canonical_name": "Hanna Bertzen",
       "appearances": 1,
       "seasons": 1,
@@ -25717,7 +25675,7 @@
       ]
     },
     {
-      "id": 145,
+      "id": 143,
       "canonical_name": "Hannah Bentzen",
       "appearances": 1,
       "seasons": 1,
@@ -25740,7 +25698,7 @@
       ]
     },
     {
-      "id": 146,
+      "id": 144,
       "canonical_name": "Hannah Cole",
       "appearances": 1,
       "seasons": 1,
@@ -25763,7 +25721,7 @@
       ]
     },
     {
-      "id": 147,
+      "id": 145,
       "canonical_name": "Hannah Engeskaug Nilsen",
       "appearances": 1,
       "seasons": 1,
@@ -25786,7 +25744,7 @@
       ]
     },
     {
-      "id": 148,
+      "id": 146,
       "canonical_name": "Hanne Kristiansen",
       "appearances": 1,
       "seasons": 1,
@@ -25809,7 +25767,7 @@
       ]
     },
     {
-      "id": 150,
+      "id": 148,
       "canonical_name": "Hanne Osvold Ness",
       "appearances": 1,
       "seasons": 1,
@@ -25832,7 +25790,7 @@
       ]
     },
     {
-      "id": 154,
+      "id": 152,
       "canonical_name": "Hedda Njå Bjørkmann",
       "appearances": 1,
       "seasons": 1,
@@ -25855,7 +25813,7 @@
       ]
     },
     {
-      "id": 156,
+      "id": 154,
       "canonical_name": "Heine Sandvik Brekke",
       "appearances": 1,
       "seasons": 1,
@@ -25878,7 +25836,7 @@
       ]
     },
     {
-      "id": 157,
+      "id": 155,
       "canonical_name": "Helene Huglen",
       "appearances": 1,
       "seasons": 1,
@@ -25901,7 +25859,7 @@
       ]
     },
     {
-      "id": 158,
+      "id": 156,
       "canonical_name": "Helene Kallekleiv",
       "appearances": 1,
       "seasons": 1,
@@ -25924,7 +25882,7 @@
       ]
     },
     {
-      "id": 159,
+      "id": 157,
       "canonical_name": "Helene Ronglan",
       "appearances": 1,
       "seasons": 1,
@@ -25947,7 +25905,7 @@
       ]
     },
     {
-      "id": 161,
+      "id": 159,
       "canonical_name": "Henning Mæhle",
       "appearances": 1,
       "seasons": 1,
@@ -25970,7 +25928,7 @@
       ]
     },
     {
-      "id": 164,
+      "id": 162,
       "canonical_name": "Henrik Hareide Holstad",
       "appearances": 1,
       "seasons": 1,
@@ -25993,7 +25951,7 @@
       ]
     },
     {
-      "id": 166,
+      "id": 164,
       "canonical_name": "Henrik Victor Hansen",
       "appearances": 1,
       "seasons": 1,
@@ -26016,7 +25974,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 166,
       "canonical_name": "Hugo GROUHEL",
       "appearances": 1,
       "seasons": 1,
@@ -26039,7 +25997,7 @@
       ]
     },
     {
-      "id": 172,
+      "id": 170,
       "canonical_name": "Håvard Fluge Petterson",
       "appearances": 1,
       "seasons": 1,
@@ -26062,7 +26020,7 @@
       ]
     },
     {
-      "id": 173,
+      "id": 171,
       "canonical_name": "Iben Armann Jeppesen",
       "appearances": 1,
       "seasons": 1,
@@ -26085,7 +26043,7 @@
       ]
     },
     {
-      "id": 174,
+      "id": 172,
       "canonical_name": "Ida Amelie Robsahm",
       "appearances": 1,
       "seasons": 1,
@@ -26108,7 +26066,7 @@
       ]
     },
     {
-      "id": 177,
+      "id": 175,
       "canonical_name": "Ida Widing",
       "appearances": 1,
       "seasons": 1,
@@ -26131,7 +26089,7 @@
       ]
     },
     {
-      "id": 178,
+      "id": 176,
       "canonical_name": "Ida-Marie Nordengen Sirevåg",
       "appearances": 1,
       "seasons": 1,
@@ -26154,7 +26112,7 @@
       ]
     },
     {
-      "id": 179,
+      "id": 177,
       "canonical_name": "Ida-Synnøve Kristiansen",
       "appearances": 1,
       "seasons": 1,
@@ -26177,7 +26135,7 @@
       ]
     },
     {
-      "id": 180,
+      "id": 178,
       "canonical_name": "Ine Bakken",
       "appearances": 1,
       "seasons": 1,
@@ -26200,7 +26158,7 @@
       ]
     },
     {
-      "id": 181,
+      "id": 179,
       "canonical_name": "Ine Skjellum",
       "appearances": 1,
       "seasons": 1,
@@ -26223,7 +26181,7 @@
       ]
     },
     {
-      "id": 186,
+      "id": 184,
       "canonical_name": "Ingrid Skomedal Klovning",
       "appearances": 1,
       "seasons": 1,
@@ -26246,7 +26204,7 @@
       ]
     },
     {
-      "id": 187,
+      "id": 185,
       "canonical_name": "Ingvild Brennhovd",
       "appearances": 1,
       "seasons": 1,
@@ -26269,7 +26227,7 @@
       ]
     },
     {
-      "id": 188,
+      "id": 186,
       "canonical_name": "Ingvild Tveita",
       "appearances": 1,
       "seasons": 1,
@@ -26292,7 +26250,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 187,
       "canonical_name": "Iver Johan Andreassen-Holm",
       "appearances": 1,
       "seasons": 1,
@@ -26315,7 +26273,7 @@
       ]
     },
     {
-      "id": 190,
+      "id": 188,
       "canonical_name": "Jakob Slengesol",
       "appearances": 1,
       "seasons": 1,
@@ -26338,7 +26296,7 @@
       ]
     },
     {
-      "id": 192,
+      "id": 190,
       "canonical_name": "Jenna Tulonen",
       "appearances": 1,
       "seasons": 1,
@@ -26361,7 +26319,7 @@
       ]
     },
     {
-      "id": 195,
+      "id": 193,
       "canonical_name": "Joakhim Mohn",
       "appearances": 1,
       "seasons": 1,
@@ -26384,7 +26342,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 197,
       "canonical_name": "Jonatan Winsvold",
       "appearances": 1,
       "seasons": 1,
@@ -26407,7 +26365,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 198,
       "canonical_name": "Josefine Lind",
       "appearances": 1,
       "seasons": 1,
@@ -26430,7 +26388,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 200,
       "canonical_name": "Julian Brantjes",
       "appearances": 1,
       "seasons": 1,
@@ -26453,7 +26411,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 201,
       "canonical_name": "Julian Roess",
       "appearances": 1,
       "seasons": 1,
@@ -26476,7 +26434,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 204,
       "canonical_name": "June Bakken Hodt",
       "appearances": 1,
       "seasons": 1,
@@ -26499,7 +26457,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 206,
       "canonical_name": "Justus Gaude",
       "appearances": 1,
       "seasons": 1,
@@ -26522,7 +26480,7 @@
       ]
     },
     {
-      "id": 209,
+      "id": 207,
       "canonical_name": "Jørgen Moen",
       "appearances": 1,
       "seasons": 1,
@@ -26545,7 +26503,7 @@
       ]
     },
     {
-      "id": 210,
+      "id": 208,
       "canonical_name": "Kaja Sjøl Christensen",
       "appearances": 1,
       "seasons": 1,
@@ -26568,7 +26526,7 @@
       ]
     },
     {
-      "id": 213,
+      "id": 211,
       "canonical_name": "Karl Nystøyl",
       "appearances": 1,
       "seasons": 1,
@@ -26591,7 +26549,7 @@
       ]
     },
     {
-      "id": 215,
+      "id": 213,
       "canonical_name": "Karoline Wisløff Rud",
       "appearances": 1,
       "seasons": 1,
@@ -26614,7 +26572,7 @@
       ]
     },
     {
-      "id": 216,
+      "id": 214,
       "canonical_name": "Katarina Thraning",
       "appearances": 1,
       "seasons": 1,
@@ -26637,7 +26595,7 @@
       ]
     },
     {
-      "id": 219,
+      "id": 217,
       "canonical_name": "Katrine Rolid",
       "appearances": 1,
       "seasons": 1,
@@ -26660,7 +26618,7 @@
       ]
     },
     {
-      "id": 221,
+      "id": 219,
       "canonical_name": "Knut Borkholm",
       "appearances": 1,
       "seasons": 1,
@@ -26683,7 +26641,7 @@
       ]
     },
     {
-      "id": 224,
+      "id": 222,
       "canonical_name": "Kristian Myhre",
       "appearances": 1,
       "seasons": 1,
@@ -26706,7 +26664,7 @@
       ]
     },
     {
-      "id": 225,
+      "id": 223,
       "canonical_name": "Kristin Brataas",
       "appearances": 1,
       "seasons": 1,
@@ -26729,7 +26687,7 @@
       ]
     },
     {
-      "id": 229,
+      "id": 227,
       "canonical_name": "Kristina Axelsson",
       "appearances": 1,
       "seasons": 1,
@@ -26752,7 +26710,7 @@
       ]
     },
     {
-      "id": 230,
+      "id": 228,
       "canonical_name": "Kristine Alne",
       "appearances": 1,
       "seasons": 1,
@@ -26775,7 +26733,7 @@
       ]
     },
     {
-      "id": 231,
+      "id": 229,
       "canonical_name": "Kristine Flaatten",
       "appearances": 1,
       "seasons": 1,
@@ -26798,7 +26756,7 @@
       ]
     },
     {
-      "id": 232,
+      "id": 230,
       "canonical_name": "Kristine Meinert Rød",
       "appearances": 1,
       "seasons": 1,
@@ -26821,7 +26779,7 @@
       ]
     },
     {
-      "id": 233,
+      "id": 231,
       "canonical_name": "Kristine Thomassen",
       "appearances": 1,
       "seasons": 1,
@@ -26844,7 +26802,7 @@
       ]
     },
     {
-      "id": 234,
+      "id": 232,
       "canonical_name": "Kristine Valle",
       "appearances": 1,
       "seasons": 1,
@@ -26867,7 +26825,7 @@
       ]
     },
     {
-      "id": 235,
+      "id": 233,
       "canonical_name": "Kristoffer Opshaug Pedersen",
       "appearances": 1,
       "seasons": 1,
@@ -26890,7 +26848,7 @@
       ]
     },
     {
-      "id": 236,
+      "id": 234,
       "canonical_name": "Lars Gellein Halvorsen",
       "appearances": 1,
       "seasons": 1,
@@ -26913,7 +26871,7 @@
       ]
     },
     {
-      "id": 238,
+      "id": 236,
       "canonical_name": "Lars Hegg",
       "appearances": 1,
       "seasons": 1,
@@ -26936,7 +26894,7 @@
       ]
     },
     {
-      "id": 240,
+      "id": 238,
       "canonical_name": "Lea Bullenkamp",
       "appearances": 1,
       "seasons": 1,
@@ -26959,7 +26917,7 @@
       ]
     },
     {
-      "id": 241,
+      "id": 239,
       "canonical_name": "Leif Ole Håvardsrud",
       "appearances": 1,
       "seasons": 1,
@@ -26982,7 +26940,7 @@
       ]
     },
     {
-      "id": 245,
+      "id": 243,
       "canonical_name": "Liv Richter",
       "appearances": 1,
       "seasons": 1,
@@ -27005,7 +26963,7 @@
       ]
     },
     {
-      "id": 246,
+      "id": 244,
       "canonical_name": "Loan Gavel",
       "appearances": 1,
       "seasons": 1,
@@ -27028,7 +26986,7 @@
       ]
     },
     {
-      "id": 248,
+      "id": 246,
       "canonical_name": "Louise Bauer-Nilsen",
       "appearances": 1,
       "seasons": 1,
@@ -27051,7 +27009,7 @@
       ]
     },
     {
-      "id": 250,
+      "id": 248,
       "canonical_name": "Louise Marie Grinder",
       "appearances": 1,
       "seasons": 1,
@@ -27074,7 +27032,7 @@
       ]
     },
     {
-      "id": 252,
+      "id": 250,
       "canonical_name": "Lukas Gardeweg",
       "appearances": 1,
       "seasons": 1,
@@ -27097,7 +27055,7 @@
       ]
     },
     {
-      "id": 253,
+      "id": 251,
       "canonical_name": "Léanne Garcia",
       "appearances": 1,
       "seasons": 1,
@@ -27120,7 +27078,7 @@
       ]
     },
     {
-      "id": 254,
+      "id": 252,
       "canonical_name": "Madeleine Heiberg",
       "appearances": 1,
       "seasons": 1,
@@ -27143,7 +27101,7 @@
       ]
     },
     {
-      "id": 255,
+      "id": 253,
       "canonical_name": "Madelene Tronstad Sagebakken",
       "appearances": 1,
       "seasons": 1,
@@ -27166,7 +27124,7 @@
       ]
     },
     {
-      "id": 258,
+      "id": 256,
       "canonical_name": "Magnus Gjersvold Haug",
       "appearances": 1,
       "seasons": 1,
@@ -27189,7 +27147,7 @@
       ]
     },
     {
-      "id": 263,
+      "id": 261,
       "canonical_name": "Mai Watson",
       "appearances": 1,
       "seasons": 1,
@@ -27212,7 +27170,7 @@
       ]
     },
     {
-      "id": 266,
+      "id": 264,
       "canonical_name": "Malin Edland",
       "appearances": 1,
       "seasons": 1,
@@ -27235,7 +27193,7 @@
       ]
     },
     {
-      "id": 267,
+      "id": 265,
       "canonical_name": "Malin Solberg Sommerstad",
       "appearances": 1,
       "seasons": 1,
@@ -27258,7 +27216,7 @@
       ]
     },
     {
-      "id": 268,
+      "id": 266,
       "canonical_name": "Marcus Berget",
       "appearances": 1,
       "seasons": 1,
@@ -27281,7 +27239,7 @@
       ]
     },
     {
-      "id": 269,
+      "id": 267,
       "canonical_name": "Marcus Engebretsen",
       "appearances": 1,
       "seasons": 1,
@@ -27304,7 +27262,7 @@
       ]
     },
     {
-      "id": 270,
+      "id": 268,
       "canonical_name": "Mari Andreasen Rud",
       "appearances": 1,
       "seasons": 1,
@@ -27327,7 +27285,7 @@
       ]
     },
     {
-      "id": 272,
+      "id": 270,
       "canonical_name": "Mari Jakobsen",
       "appearances": 1,
       "seasons": 1,
@@ -27350,7 +27308,7 @@
       ]
     },
     {
-      "id": 274,
+      "id": 272,
       "canonical_name": "Maria Ringstad",
       "appearances": 1,
       "seasons": 1,
@@ -27373,7 +27331,7 @@
       ]
     },
     {
-      "id": 278,
+      "id": 276,
       "canonical_name": "Marie Abelsen Arntsen",
       "appearances": 1,
       "seasons": 1,
@@ -27396,7 +27354,7 @@
       ]
     },
     {
-      "id": 280,
+      "id": 278,
       "canonical_name": "Marine Challamel",
       "appearances": 1,
       "seasons": 1,
@@ -27419,7 +27377,7 @@
       ]
     },
     {
-      "id": 281,
+      "id": 279,
       "canonical_name": "Marion Tibar",
       "appearances": 1,
       "seasons": 1,
@@ -27442,7 +27400,7 @@
       ]
     },
     {
-      "id": 285,
+      "id": 283,
       "canonical_name": "Markus Westhagen",
       "appearances": 1,
       "seasons": 1,
@@ -27465,7 +27423,7 @@
       ]
     },
     {
-      "id": 286,
+      "id": 284,
       "canonical_name": "Marlen Stensrud",
       "appearances": 1,
       "seasons": 1,
@@ -27488,7 +27446,7 @@
       ]
     },
     {
-      "id": 287,
+      "id": 285,
       "canonical_name": "Marte Gleditsch",
       "appearances": 1,
       "seasons": 1,
@@ -27511,7 +27469,7 @@
       ]
     },
     {
-      "id": 288,
+      "id": 286,
       "canonical_name": "Marte Lien Johnsen",
       "appearances": 1,
       "seasons": 1,
@@ -27534,7 +27492,7 @@
       ]
     },
     {
-      "id": 290,
+      "id": 288,
       "canonical_name": "Martin Kjäll Ohlsson",
       "appearances": 1,
       "seasons": 1,
@@ -27557,7 +27515,7 @@
       ]
     },
     {
-      "id": 291,
+      "id": 289,
       "canonical_name": "Martin Nygard",
       "appearances": 1,
       "seasons": 1,
@@ -27580,7 +27538,7 @@
       ]
     },
     {
-      "id": 292,
+      "id": 290,
       "canonical_name": "Martin Seland Simensen",
       "appearances": 1,
       "seasons": 1,
@@ -27603,7 +27561,7 @@
       ]
     },
     {
-      "id": 293,
+      "id": 291,
       "canonical_name": "Martin Stay Egeberg",
       "appearances": 1,
       "seasons": 1,
@@ -27626,7 +27584,7 @@
       ]
     },
     {
-      "id": 294,
+      "id": 292,
       "canonical_name": "Martine Svendsen",
       "appearances": 1,
       "seasons": 1,
@@ -27649,7 +27607,7 @@
       ]
     },
     {
-      "id": 296,
+      "id": 294,
       "canonical_name": "Mathias Møller",
       "appearances": 1,
       "seasons": 1,
@@ -27672,7 +27630,7 @@
       ]
     },
     {
-      "id": 298,
+      "id": 296,
       "canonical_name": "Mathéo RAMPAL",
       "appearances": 1,
       "seasons": 1,
@@ -27695,7 +27653,7 @@
       ]
     },
     {
-      "id": 301,
+      "id": 299,
       "canonical_name": "Matisse Piriou",
       "appearances": 1,
       "seasons": 1,
@@ -27718,7 +27676,7 @@
       ]
     },
     {
-      "id": 302,
+      "id": 300,
       "canonical_name": "Mats Flogeland",
       "appearances": 1,
       "seasons": 1,
@@ -27741,7 +27699,7 @@
       ]
     },
     {
-      "id": 303,
+      "id": 301,
       "canonical_name": "Mehdi Gouasmi",
       "appearances": 1,
       "seasons": 1,
@@ -27764,7 +27722,7 @@
       ]
     },
     {
-      "id": 306,
+      "id": 304,
       "canonical_name": "Miguel Lomeland",
       "appearances": 1,
       "seasons": 1,
@@ -27787,7 +27745,7 @@
       ]
     },
     {
-      "id": 309,
+      "id": 307,
       "canonical_name": "Natalie Aasen",
       "appearances": 1,
       "seasons": 1,
@@ -27810,7 +27768,7 @@
       ]
     },
     {
-      "id": 310,
+      "id": 308,
       "canonical_name": "Navid Amiri",
       "appearances": 1,
       "seasons": 1,
@@ -27833,7 +27791,7 @@
       ]
     },
     {
-      "id": 311,
+      "id": 309,
       "canonical_name": "Nele Lammers",
       "appearances": 1,
       "seasons": 1,
@@ -27856,7 +27814,7 @@
       ]
     },
     {
-      "id": 312,
+      "id": 310,
       "canonical_name": "Niamh O'Dowd",
       "appearances": 1,
       "seasons": 1,
@@ -27879,7 +27837,7 @@
       ]
     },
     {
-      "id": 313,
+      "id": 311,
       "canonical_name": "Nicolai Fongaard",
       "appearances": 1,
       "seasons": 1,
@@ -27902,7 +27860,7 @@
       ]
     },
     {
-      "id": 314,
+      "id": 312,
       "canonical_name": "Nicolay Andersen",
       "appearances": 1,
       "seasons": 1,
@@ -27925,7 +27883,7 @@
       ]
     },
     {
-      "id": 315,
+      "id": 313,
       "canonical_name": "Nikolai Skyrud",
       "appearances": 1,
       "seasons": 1,
@@ -27948,7 +27906,7 @@
       ]
     },
     {
-      "id": 317,
+      "id": 315,
       "canonical_name": "Noah Johannessen",
       "appearances": 1,
       "seasons": 1,
@@ -27971,7 +27929,7 @@
       ]
     },
     {
-      "id": 318,
+      "id": 316,
       "canonical_name": "Noor Breedveld",
       "appearances": 1,
       "seasons": 1,
@@ -27994,7 +27952,7 @@
       ]
     },
     {
-      "id": 320,
+      "id": 318,
       "canonical_name": "Oda Alette Hole",
       "appearances": 1,
       "seasons": 1,
@@ -28017,7 +27975,7 @@
       ]
     },
     {
-      "id": 321,
+      "id": 319,
       "canonical_name": "Ola Løfald",
       "appearances": 1,
       "seasons": 1,
@@ -28040,7 +27998,7 @@
       ]
     },
     {
-      "id": 324,
+      "id": 322,
       "canonical_name": "Ole Jonas Nybø",
       "appearances": 1,
       "seasons": 1,
@@ -28063,7 +28021,7 @@
       ]
     },
     {
-      "id": 325,
+      "id": 323,
       "canonical_name": "Ole Petter K. Schmedling",
       "appearances": 1,
       "seasons": 1,
@@ -28086,7 +28044,7 @@
       ]
     },
     {
-      "id": 329,
+      "id": 327,
       "canonical_name": "Pernille Karlsen Antonsen",
       "appearances": 1,
       "seasons": 1,
@@ -28109,7 +28067,7 @@
       ]
     },
     {
-      "id": 331,
+      "id": 329,
       "canonical_name": "Petter Elias Røkke",
       "appearances": 1,
       "seasons": 1,
@@ -28132,7 +28090,7 @@
       ]
     },
     {
-      "id": 332,
+      "id": 330,
       "canonical_name": "Pål A",
       "appearances": 1,
       "seasons": 1,
@@ -28155,7 +28113,7 @@
       ]
     },
     {
-      "id": 333,
+      "id": 331,
       "canonical_name": "Pål Erik Johnsen",
       "appearances": 1,
       "seasons": 1,
@@ -28178,7 +28136,7 @@
       ]
     },
     {
-      "id": 339,
+      "id": 337,
       "canonical_name": "Robert Kammel",
       "appearances": 1,
       "seasons": 1,
@@ -28201,7 +28159,7 @@
       ]
     },
     {
-      "id": 342,
+      "id": 340,
       "canonical_name": "Runar Aadesen Østhaug",
       "appearances": 1,
       "seasons": 1,
@@ -28224,7 +28182,7 @@
       ]
     },
     {
-      "id": 344,
+      "id": 342,
       "canonical_name": "Sander Dybwad Mathiesen",
       "appearances": 1,
       "seasons": 1,
@@ -28247,7 +28205,7 @@
       ]
     },
     {
-      "id": 346,
+      "id": 344,
       "canonical_name": "Sara Aarvoll Svarstad",
       "appearances": 1,
       "seasons": 1,
@@ -28270,7 +28228,7 @@
       ]
     },
     {
-      "id": 347,
+      "id": 345,
       "canonical_name": "Sara Haga",
       "appearances": 1,
       "seasons": 1,
@@ -28293,7 +28251,7 @@
       ]
     },
     {
-      "id": 350,
+      "id": 348,
       "canonical_name": "Sean Monaghan",
       "appearances": 1,
       "seasons": 1,
@@ -28316,7 +28274,7 @@
       ]
     },
     {
-      "id": 351,
+      "id": 349,
       "canonical_name": "Sebastian Bachor",
       "appearances": 1,
       "seasons": 1,
@@ -28339,7 +28297,7 @@
       ]
     },
     {
-      "id": 352,
+      "id": 350,
       "canonical_name": "Sienna Dankworth",
       "appearances": 1,
       "seasons": 1,
@@ -28362,7 +28320,7 @@
       ]
     },
     {
-      "id": 355,
+      "id": 353,
       "canonical_name": "Sigurd Andreas Leikanger",
       "appearances": 1,
       "seasons": 1,
@@ -28385,7 +28343,7 @@
       ]
     },
     {
-      "id": 356,
+      "id": 354,
       "canonical_name": "Sigurd Helle Opedal",
       "appearances": 1,
       "seasons": 1,
@@ -28408,7 +28366,7 @@
       ]
     },
     {
-      "id": 357,
+      "id": 355,
       "canonical_name": "Sigurd Rustad",
       "appearances": 1,
       "seasons": 1,
@@ -28431,7 +28389,7 @@
       ]
     },
     {
-      "id": 360,
+      "id": 358,
       "canonical_name": "Simen Lunderød Øverbø",
       "appearances": 1,
       "seasons": 1,
@@ -28454,7 +28412,7 @@
       ]
     },
     {
-      "id": 361,
+      "id": 359,
       "canonical_name": "Simen Nordheim Berg",
       "appearances": 1,
       "seasons": 1,
@@ -28477,7 +28435,7 @@
       ]
     },
     {
-      "id": 362,
+      "id": 360,
       "canonical_name": "Simon Seland",
       "appearances": 1,
       "seasons": 1,
@@ -28500,7 +28458,7 @@
       ]
     },
     {
-      "id": 363,
+      "id": 361,
       "canonical_name": "Simon Tsuruta Pedersen",
       "appearances": 1,
       "seasons": 1,
@@ -28523,7 +28481,7 @@
       ]
     },
     {
-      "id": 364,
+      "id": 362,
       "canonical_name": "Sindre Jakobsen",
       "appearances": 1,
       "seasons": 1,
@@ -28546,7 +28504,7 @@
       ]
     },
     {
-      "id": 365,
+      "id": 363,
       "canonical_name": "Siri Schøne Ness",
       "appearances": 1,
       "seasons": 1,
@@ -28569,7 +28527,7 @@
       ]
     },
     {
-      "id": 367,
+      "id": 365,
       "canonical_name": "Sivert Schou Olsen",
       "appearances": 1,
       "seasons": 1,
@@ -28592,7 +28550,7 @@
       ]
     },
     {
-      "id": 370,
+      "id": 368,
       "canonical_name": "Sofie Fosseli",
       "appearances": 1,
       "seasons": 1,
@@ -28615,7 +28573,7 @@
       ]
     },
     {
-      "id": 371,
+      "id": 369,
       "canonical_name": "Sofie Fosslie",
       "appearances": 1,
       "seasons": 1,
@@ -28638,7 +28596,7 @@
       ]
     },
     {
-      "id": 372,
+      "id": 370,
       "canonical_name": "Sofie Gotholt",
       "appearances": 1,
       "seasons": 1,
@@ -28661,7 +28619,7 @@
       ]
     },
     {
-      "id": 374,
+      "id": 372,
       "canonical_name": "Sofie Karlsen Amundsgård",
       "appearances": 1,
       "seasons": 1,
@@ -28684,7 +28642,7 @@
       ]
     },
     {
-      "id": 376,
+      "id": 374,
       "canonical_name": "Sofie Kolsum",
       "appearances": 1,
       "seasons": 1,
@@ -28707,7 +28665,7 @@
       ]
     },
     {
-      "id": 379,
+      "id": 377,
       "canonical_name": "Sondre Norstad Moen",
       "appearances": 1,
       "seasons": 1,
@@ -28730,7 +28688,7 @@
       ]
     },
     {
-      "id": 380,
+      "id": 378,
       "canonical_name": "Sondre Rishøi",
       "appearances": 1,
       "seasons": 1,
@@ -28753,7 +28711,7 @@
       ]
     },
     {
-      "id": 382,
+      "id": 380,
       "canonical_name": "Stian Aas",
       "appearances": 1,
       "seasons": 1,
@@ -28776,7 +28734,7 @@
       ]
     },
     {
-      "id": 385,
+      "id": 383,
       "canonical_name": "Sunniva Jacobsen",
       "appearances": 1,
       "seasons": 1,
@@ -28799,7 +28757,7 @@
       ]
     },
     {
-      "id": 386,
+      "id": 384,
       "canonical_name": "Sunniva Sheffield",
       "appearances": 1,
       "seasons": 1,
@@ -28822,7 +28780,7 @@
       ]
     },
     {
-      "id": 388,
+      "id": 386,
       "canonical_name": "Sveinung Nersten",
       "appearances": 1,
       "seasons": 1,
@@ -28845,7 +28803,7 @@
       ]
     },
     {
-      "id": 389,
+      "id": 387,
       "canonical_name": "Sven Kilander",
       "appearances": 1,
       "seasons": 1,
@@ -28868,7 +28826,7 @@
       ]
     },
     {
-      "id": 392,
+      "id": 390,
       "canonical_name": "Synne Våge Bertelsmann Opheim",
       "appearances": 1,
       "seasons": 1,
@@ -28891,7 +28849,7 @@
       ]
     },
     {
-      "id": 393,
+      "id": 391,
       "canonical_name": "Tabea Sostmann",
       "appearances": 1,
       "seasons": 1,
@@ -28914,7 +28872,7 @@
       ]
     },
     {
-      "id": 395,
+      "id": 393,
       "canonical_name": "Telma Dagestad",
       "appearances": 1,
       "seasons": 1,
@@ -28937,7 +28895,7 @@
       ]
     },
     {
-      "id": 396,
+      "id": 394,
       "canonical_name": "Telma Eckhoff Dagestad",
       "appearances": 1,
       "seasons": 1,
@@ -28960,7 +28918,7 @@
       ]
     },
     {
-      "id": 397,
+      "id": 395,
       "canonical_name": "Tenzing Dolmans",
       "appearances": 1,
       "seasons": 1,
@@ -28983,7 +28941,7 @@
       ]
     },
     {
-      "id": 398,
+      "id": 396,
       "canonical_name": "Thea Elnan",
       "appearances": 1,
       "seasons": 1,
@@ -29006,7 +28964,7 @@
       ]
     },
     {
-      "id": 399,
+      "id": 397,
       "canonical_name": "Thea Østreng",
       "appearances": 1,
       "seasons": 1,
@@ -29029,7 +28987,7 @@
       ]
     },
     {
-      "id": 401,
+      "id": 399,
       "canonical_name": "Therese Johaug",
       "appearances": 1,
       "seasons": 1,
@@ -29052,7 +29010,7 @@
       ]
     },
     {
-      "id": 407,
+      "id": 405,
       "canonical_name": "Tobias Hansen",
       "appearances": 1,
       "seasons": 1,
@@ -29075,7 +29033,7 @@
       ]
     },
     {
-      "id": 409,
+      "id": 407,
       "canonical_name": "Tobias Karlsmose Svarer",
       "appearances": 1,
       "seasons": 1,
@@ -29098,7 +29056,7 @@
       ]
     },
     {
-      "id": 412,
+      "id": 410,
       "canonical_name": "Torhild Dybwad Mathisen",
       "appearances": 1,
       "seasons": 1,
@@ -29121,7 +29079,7 @@
       ]
     },
     {
-      "id": 414,
+      "id": 412,
       "canonical_name": "Tristan Hellstrand",
       "appearances": 1,
       "seasons": 1,
@@ -29144,7 +29102,7 @@
       ]
     },
     {
-      "id": 415,
+      "id": 413,
       "canonical_name": "Trond Einar Moen Pedersli",
       "appearances": 1,
       "seasons": 1,
@@ -29167,7 +29125,7 @@
       ]
     },
     {
-      "id": 417,
+      "id": 415,
       "canonical_name": "Tuva Marie Lindstad",
       "appearances": 1,
       "seasons": 1,
@@ -29190,7 +29148,7 @@
       ]
     },
     {
-      "id": 418,
+      "id": 416,
       "canonical_name": "Tuva Syrdal Tronstad",
       "appearances": 1,
       "seasons": 1,
@@ -29213,7 +29171,7 @@
       ]
     },
     {
-      "id": 419,
+      "id": 417,
       "canonical_name": "Ulrik Moen Ødegård",
       "appearances": 1,
       "seasons": 1,
@@ -29236,7 +29194,7 @@
       ]
     },
     {
-      "id": 420,
+      "id": 418,
       "canonical_name": "Ulrik Strømmen Røstad Hovig",
       "appearances": 1,
       "seasons": 1,
@@ -29259,7 +29217,7 @@
       ]
     },
     {
-      "id": 421,
+      "id": 419,
       "canonical_name": "Ulrika Axelsson",
       "appearances": 1,
       "seasons": 1,
@@ -29282,7 +29240,7 @@
       ]
     },
     {
-      "id": 422,
+      "id": 420,
       "canonical_name": "Valentin Hachet",
       "appearances": 1,
       "seasons": 1,
@@ -29305,7 +29263,7 @@
       ]
     },
     {
-      "id": 423,
+      "id": 421,
       "canonical_name": "Valon Hoti",
       "appearances": 1,
       "seasons": 1,
@@ -29328,7 +29286,7 @@
       ]
     },
     {
-      "id": 426,
+      "id": 424,
       "canonical_name": "Victoria Rochelois",
       "appearances": 1,
       "seasons": 1,
@@ -29351,7 +29309,7 @@
       ]
     },
     {
-      "id": 427,
+      "id": 425,
       "canonical_name": "Victoria Vermelid",
       "appearances": 1,
       "seasons": 1,
@@ -29374,7 +29332,7 @@
       ]
     },
     {
-      "id": 429,
+      "id": 427,
       "canonical_name": "Vilde Malmei",
       "appearances": 1,
       "seasons": 1,
@@ -29397,7 +29355,7 @@
       ]
     },
     {
-      "id": 431,
+      "id": 429,
       "canonical_name": "Vilja Gruben",
       "appearances": 1,
       "seasons": 1,
@@ -29420,7 +29378,7 @@
       ]
     },
     {
-      "id": 432,
+      "id": 430,
       "canonical_name": "Viljar Buer Christensen",
       "appearances": 1,
       "seasons": 1,
@@ -29443,7 +29401,7 @@
       ]
     },
     {
-      "id": 433,
+      "id": 431,
       "canonical_name": "Will Micklefield",
       "appearances": 1,
       "seasons": 1,
@@ -29466,7 +29424,7 @@
       ]
     },
     {
-      "id": 436,
+      "id": 434,
       "canonical_name": "Åsne Skram Trømborg",
       "appearances": 1,
       "seasons": 1,
@@ -29489,7 +29447,7 @@
       ]
     },
     {
-      "id": 438,
+      "id": 436,
       "canonical_name": "Øyvind Lie",
       "appearances": 1,
       "seasons": 1,
@@ -29512,7 +29470,7 @@
       ]
     },
     {
-      "id": 439,
+      "id": 437,
       "canonical_name": "🆕August Amundsen Ubeda",
       "appearances": 1,
       "seasons": 1,
@@ -29536,6 +29494,30 @@
     }
   ],
   "nameReview": [
+    {
+      "raw_name": "Eivind Klokkhaug",
+      "suggested_canonical_name": "Eivind Klokkehaug",
+      "confidence": "0.94",
+      "reason": "Samme fornavn og liten skriveforskjell i etternavn",
+      "decision": "",
+      "notes": ""
+    },
+    {
+      "raw_name": "Sofie Gotholt",
+      "suggested_canonical_name": "Sofie Gotuholt",
+      "confidence": "0.93",
+      "reason": "Samme fornavn og liten skriveforskjell i etternavn",
+      "decision": "",
+      "notes": ""
+    },
+    {
+      "raw_name": "Tobias Bauman",
+      "suggested_canonical_name": "Tobias Baumann",
+      "confidence": "0.93",
+      "reason": "Samme fornavn og liten skriveforskjell i etternavn",
+      "decision": "",
+      "notes": ""
+    },
     {
       "raw_name": "Sofie Amundsgård",
       "suggested_canonical_name": "Sofie Karlsen Amundsgård",
@@ -29565,6 +29547,22 @@
       "suggested_canonical_name": "Åsne Skram Trømborg",
       "confidence": "0.87",
       "reason": "Samme fornavn/etternavn, ulik bruk av mellomnavn",
+      "decision": "",
+      "notes": ""
+    },
+    {
+      "raw_name": "Anette Killerud",
+      "suggested_canonical_name": "Anette Killerud Ødegård",
+      "confidence": "0.86",
+      "reason": "Kortform av fullt navn",
+      "decision": "",
+      "notes": ""
+    },
+    {
+      "raw_name": "Sofie Fosslie",
+      "suggested_canonical_name": "Sofie Fosseli",
+      "confidence": "0.85",
+      "reason": "Samme fornavn og liten skriveforskjell i etternavn",
       "decision": "",
       "notes": ""
     },
@@ -29793,6 +29791,22 @@
       "notes": "Godkjent av bruker 2026-04-07"
     },
     {
+      "raw_name": "Anjara R.",
+      "suggested_canonical_name": "Dina Anjara Herilanto Randrianampiantsoa",
+      "confidence": "0.86",
+      "reason": "Kortform med initialer som matcher fullt navn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-15"
+    },
+    {
+      "raw_name": "Dina Anjara",
+      "suggested_canonical_name": "Dina Anjara Herilanto Randrianampiantsoa",
+      "confidence": "0.86",
+      "reason": "Kortform av fullt navn",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-15"
+    },
+    {
       "raw_name": "Anne-Line Evenstad Dahlen",
       "suggested_canonical_name": "Anne-Line Dahlen",
       "confidence": "",
@@ -29927,6 +29941,14 @@
       "reason": "Bevart tidligere vurdering",
       "decision": "reject",
       "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Kristine Alne",
+      "suggested_canonical_name": "Kristine Valle",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist 2026-04-15. For svak match."
     },
     {
       "raw_name": "Magnus W Warvik",

@@ -1,8 +1,13 @@
 raw_name,suggested_canonical_name,confidence,reason,decision,notes
+Eivind Klokkhaug,Eivind Klokkehaug,0.94,Samme fornavn og liten skriveforskjell i etternavn,,
+Sofie Gotholt,Sofie Gotuholt,0.93,Samme fornavn og liten skriveforskjell i etternavn,,
+Tobias Bauman,Tobias Baumann,0.93,Samme fornavn og liten skriveforskjell i etternavn,,
 Sofie Amundsgård,Sofie Karlsen Amundsgård,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
 Synne Opheim,Synne Våge Bertelsmann Opheim,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
 Telma Dagestad,Telma Eckhoff Dagestad,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
 Åsne Trømborg,Åsne Skram Trømborg,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
+Anette Killerud,Anette Killerud Ødegård,0.86,Kortform av fullt navn,,
+Sofie Fosslie,Sofie Fosseli,0.85,Samme fornavn og liten skriveforskjell i etternavn,,
 Sofie Karlsen Amundsgård,Sofie Amundsgård,,Bevart tidligere vurdering,,
 Synne Våge Bertelsmann Opheim,Synne Opheim,,Bevart tidligere vurdering,,
 Telma Eckhoff Dagestad,Telma Dagestad,,Bevart tidligere vurdering,,
@@ -31,6 +36,8 @@ Magnus Warvik,Magnus W Warvik,0.87,"Samme fornavn/etternavn, ulik bruk av mellom
 Maja Blegen,Maja Maria Blegen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Morten Dalhaug,Morten Olsen Dalhaug,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Siri Staver,Siri Vegsund Staver,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
+Anjara R.,Dina Anjara Herilanto Randrianampiantsoa,0.86,Kortform med initialer som matcher fullt navn,approve,Godkjent av bruker 2026-04-15
+Dina Anjara,Dina Anjara Herilanto Randrianampiantsoa,0.86,Kortform av fullt navn,approve,Godkjent av bruker 2026-04-15
 Anne-Line Evenstad Dahlen,Anne-Line Dahlen,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 David Stefan Rieger,David Rieger,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Eldbjørg D. Moxnes,Eldbjørg Moxnes,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
@@ -48,6 +55,7 @@ Joakim S. Mohn,Joakim Mohn,,Bevart tidligere vurdering,reject,Avvist av bruker 2
 Julie Benedicte Aspesletten,Julie Aspesletten,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Karoline Holum Kjærnes,Karoline Kjærnes,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Kristian Bjune Sveen,Kristan Bjune Sveen,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
+Kristine Alne,Kristine Valle,,Bevart tidligere vurdering,reject,Avvist 2026-04-15. For svak match.
 Magnus W Warvik,Magnus Warvik,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Maja Maria Blegen,Maja Blegen,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Morten Olsen Dalhaug,Morten Dalhaug,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.

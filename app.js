@@ -123,12 +123,12 @@ function renderStageHonours() {
           <h2>Hederliste per etappe</h2>
         </div>
         <span class="muted">Her sammenlignes bare tider innen samme etappe.</span>
-      </div>
-      <p class="panel-copy stage-intro">
-        SK Vidar viser topp 5 per etappe, slik du har i Hedersliste-arket. OSI Friidrett viser topp 3.
-        Hver rad viser splittid, prosent av etapperekord, klasse, overall-plassering, kategori,
-        lag og år.
-      </p>
+        </div>
+        <p class="panel-copy stage-intro">
+          SK Vidar viser topp 5 per etappe, slik du har i Hedersliste-arket, og du kan velge topp 10
+          i filteret. OSI Friidrett viser topp 3. Hver rad viser splittid, prosent av etapperekord,
+          klasse, overall-plassering, kategori, lag og år.
+        </p>
       <div class="tab-row">
         ${groups
           .map(

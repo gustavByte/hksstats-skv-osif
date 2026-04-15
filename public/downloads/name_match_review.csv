@@ -1,24 +1,14 @@
 raw_name,suggested_canonical_name,confidence,reason,decision,notes
-Eivind Klokkhaug,Eivind Klokkehaug,0.94,Samme fornavn og liten skriveforskjell i etternavn,,
-Sofie Gotholt,Sofie Gotuholt,0.93,Samme fornavn og liten skriveforskjell i etternavn,,
-Tobias Bauman,Tobias Baumann,0.93,Samme fornavn og liten skriveforskjell i etternavn,,
-Sofie Amundsgård,Sofie Karlsen Amundsgård,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
-Synne Opheim,Synne Våge Bertelsmann Opheim,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
-Telma Dagestad,Telma Eckhoff Dagestad,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
-Åsne Trømborg,Åsne Skram Trømborg,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",,
-Anette Killerud,Anette Killerud Ødegård,0.86,Kortform av fullt navn,,
-Sofie Fosslie,Sofie Fosseli,0.85,Samme fornavn og liten skriveforskjell i etternavn,,
-Sofie Karlsen Amundsgård,Sofie Amundsgård,,Bevart tidligere vurdering,,
-Synne Våge Bertelsmann Opheim,Synne Opheim,,Bevart tidligere vurdering,,
-Telma Eckhoff Dagestad,Telma Dagestad,,Bevart tidligere vurdering,,
-Åsne Skram Trømborg,Åsne Trømborg,,Bevart tidligere vurdering,,
 🔁Håkon Lund,Håkon Lund,0.99,Lik stavemåte etter normalisering,approve,Godkjent av bruker 2026-04-07
 Kristan Bjune Sveen,Kristian Bjune Sveen,0.95,Nesten identisk navn med liten staveforskjell,approve,Godkjent av bruker 2026-04-07
 Ragnhild Brøs Kløven,Ragnhild Brørs Kløven,0.95,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent av bruker 2026-04-07
 Simen Hagrup Kjeldsen,Simen Hagerup Kjeldsen,0.95,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent av bruker 2026-04-07
+Eivind Klokkhaug,Eivind Klokkehaug,0.94,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent av bruker 2026-04-15
 Fredrik Emil Juul,Frederik Emil Juul,0.94,Nesten identisk navn med liten staveforskjell,approve,Godkjent av bruker 2026-04-07
 Hanna Arnes Nisja,Hanna Aarnes Nisja,0.94,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent av bruker 2026-04-07
 Veslemøy Rønnevik,Veselemøy Rønnevik,0.94,Nesten identisk navn med liten staveforskjell,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
+Sofie Gotholt,Sofie Gotuholt,0.93,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent av bruker 2026-04-15
+Tobias Bauman,Tobias Baumann,0.93,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent av bruker 2026-04-15
 Eldbjørg Moxnes,Eldbjørg D. Moxnes,0.88,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Anne-Line Dahlen,Anne-Line Evenstad Dahlen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 David Rieger,David Stefan Rieger,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
@@ -36,8 +26,14 @@ Magnus Warvik,Magnus W Warvik,0.87,"Samme fornavn/etternavn, ulik bruk av mellom
 Maja Blegen,Maja Maria Blegen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Morten Dalhaug,Morten Olsen Dalhaug,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Siri Staver,Siri Vegsund Staver,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
+Sofie Amundsgård,Sofie Karlsen Amundsgård,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-15
+Synne Opheim,Synne Våge Bertelsmann Opheim,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-15
+Telma Dagestad,Telma Eckhoff Dagestad,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-15
+Åsne Trømborg,Åsne Skram Trømborg,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-15
+Anette Killerud,Anette Killerud Ødegård,0.86,Kortform av fullt navn,approve,Godkjent av bruker 2026-04-15
 Anjara R.,Dina Anjara Herilanto Randrianampiantsoa,0.86,Kortform med initialer som matcher fullt navn,approve,Godkjent av bruker 2026-04-15
 Dina Anjara,Dina Anjara Herilanto Randrianampiantsoa,0.86,Kortform av fullt navn,approve,Godkjent av bruker 2026-04-15
+Sofie Fosslie,Sofie Fosseli,0.85,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent av bruker 2026-04-15
 Anne-Line Evenstad Dahlen,Anne-Line Dahlen,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 David Stefan Rieger,David Rieger,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Eldbjørg D. Moxnes,Eldbjørg Moxnes,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
@@ -62,4 +58,8 @@ Morten Olsen Dalhaug,Morten Dalhaug,,Bevart tidligere vurdering,reject,Avvist av
 Ragnhild Brørs Kløven,Ragnhild Brøs Kløven,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Simen Hagerup Kjeldsen,Simen Hagrup Kjeldsen,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Siri Vegsund Staver,Siri Staver,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
+Sofie Karlsen Amundsgård,Sofie Amundsgård,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-15. Riktig kanonisk navn er motsatt vei.
+Synne Våge Bertelsmann Opheim,Synne Opheim,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-15. Riktig kanonisk navn er motsatt vei.
+Telma Eckhoff Dagestad,Telma Dagestad,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-15. Riktig kanonisk navn er motsatt vei.
 Veselemøy Rønnevik,Veslemøy Rønnevik,,Bevart tidligere vurdering,approve,Godkjent av bruker 2026-04-07
+Åsne Skram Trømborg,Åsne Trømborg,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-15. Riktig kanonisk navn er motsatt vei.

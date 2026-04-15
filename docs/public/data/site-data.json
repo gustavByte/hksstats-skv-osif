@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-15T09:56:07",
+  "generatedAt": "2026-04-15T09:56:37",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -63,7 +63,7 @@
       "results": 660,
       "teams": 44,
       "people": 437,
-      "pendingNameReviews": 14
+      "pendingNameReviews": 13
     }
   },
   "overview": {
@@ -82,7 +82,7 @@
       },
       {
         "label": "Navn til gjennomgang",
-        "value": 14
+        "value": 13
       }
     ],
     "classBreakdown": [
@@ -29567,14 +29567,6 @@
       "notes": ""
     },
     {
-      "raw_name": "Kristine Alne",
-      "suggested_canonical_name": "Kristine Valle",
-      "confidence": "",
-      "reason": "Bevart tidligere vurdering",
-      "decision": "",
-      "notes": ""
-    },
-    {
       "raw_name": "Sofie Karlsen Amundsgård",
       "suggested_canonical_name": "Sofie Amundsgård",
       "confidence": "",
@@ -29949,6 +29941,14 @@
       "reason": "Bevart tidligere vurdering",
       "decision": "reject",
       "notes": "Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei."
+    },
+    {
+      "raw_name": "Kristine Alne",
+      "suggested_canonical_name": "Kristine Valle",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "reject",
+      "notes": "Avvist 2026-04-15. For svak match."
     },
     {
       "raw_name": "Magnus W Warvik",

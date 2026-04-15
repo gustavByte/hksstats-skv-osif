@@ -143,7 +143,7 @@ function renderStageHonours() {
       </div>
         <div class="honours-toolbar">
           <label class="honours-display-control">
-            <span>Resultater per etappe</span>
+            <span>Vis antall toppresultater</span>
             <select id="honours-display-filter">
               <option value="top5" ${state.honoursDisplay === "top5" ? "selected" : ""}>Topp 5</option>
               <option value="top10" ${state.honoursDisplay === "top10" ? "selected" : ""}>Topp 10</option>

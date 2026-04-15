@@ -243,6 +243,7 @@ function render() {
         </div>
         <div class="hero-grid">
           ${state.data.overview.kpis
+            .filter((item) => item.label !== "Navn til gjennomgang")
             .map(
               (item) => `
                 <article class="metric-card">

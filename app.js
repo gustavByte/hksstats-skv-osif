@@ -249,8 +249,8 @@ function render() {
           <p class="eyebrow">Holmenkollstafetten</p>
           <h1>HKSstatsSKV&amp;OSIF</h1>
           <p class="hero-lead">
-            Etappesammenligning for SK Vidar og OSI Friidrett, bygget fra
-            "HKS-resultater 2022 – d.d." med database, navnematching og offentlig statistikk.
+            Etappesammenligning for SK Vidar og OSI Friidrett, bygget fra regneark
+            "HKS-resultater 2022 - d.d.".
           </p>
         </div>
         <div class="hero-grid">

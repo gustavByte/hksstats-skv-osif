@@ -255,6 +255,10 @@ function render() {
         </div>
       </header>
 
+      <div class="quick-jump-row">
+        <a class="quick-jump-link" href="#most-deltakelse">Mest deltakelse &lt;3</a>
+      </div>
+
       ${renderStageHonours()}
 
       <section class="filter-panel">
@@ -355,7 +359,7 @@ function render() {
           </div>
         </section>
 
-        <section class="panel">
+        <section class="panel" id="most-deltakelse">
           <div class="section-heading">
             <div>
               <p class="eyebrow">Personer</p>

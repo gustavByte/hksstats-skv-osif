@@ -6,6 +6,7 @@ const state = {
   selectedClass: "all",
   honoursTab: "skv-men",
   honoursDisplay: "top5",
+  expandedHonours: {},
   search: "",
   data: null,
 };
@@ -140,6 +141,15 @@ function renderStageHonours() {
           )
           .join("")}
       </div>
+      <div class="honours-toolbar">
+        <label class="honours-display-control">
+          <span>Etapper</span>
+          <select id="honours-display-filter">
+            <option value="top5" ${state.honoursDisplay === "top5" ? "selected" : ""}>Topp 5</option>
+            <option value="top10" ${state.honoursDisplay === "top10" ? "selected" : ""}>Topp 10</option>
+          </select>
+        </label>
+      </div>
       <div class="stage-summary">
         <strong>${escapeHtml(activeGroup.title)}</strong>
         <span>${escapeHtml(activeGroup.subtitle)}</span>
@@ -147,8 +157,12 @@ function renderStageHonours() {
       <div class="honours-grid">
         ${activeGroup.stages
           .map((stage) => {
+            const stageKey = `${activeGroup.key}:${stage.stage_number}`;
+            const isExpanded = Boolean(state.expandedHonours[stageKey]);
             const visibleEntries =
-              state.honoursDisplay === "top10" ? stage.expanded_entries ?? stage.entries : stage.entries;
+              state.honoursDisplay === "top10" || isExpanded
+                ? stage.expanded_entries ?? stage.entries
+                : stage.entries;
             return `
               <article class="honour-stage-card">
                 <div class="honour-stage-header">
@@ -213,6 +227,22 @@ function renderStageHonours() {
                     </tbody>
                   </table>
                 </div>
+                ${
+                  stage.has_expansion && state.honoursDisplay !== "top10"
+                    ? `
+                      <div class="stage-toggle-row">
+                        <button
+                          class="stage-toggle-button"
+                          type="button"
+                          data-stage-toggle="${stageKey}"
+                          aria-expanded="${isExpanded ? "true" : "false"}"
+                        >
+                          ${isExpanded ? "Skjul topp 10" : "Vis topp 10"}
+                        </button>
+                      </div>
+                    `
+                    : ""
+                }
               </article>
             `;
           })
@@ -334,13 +364,6 @@ function render() {
                 `,
               )
               .join("")}
-          </select>
-        </label>
-        <label>
-          <span>Etapper</span>
-          <select id="honours-display-filter">
-            <option value="top5" ${state.honoursDisplay === "top5" ? "selected" : ""}>Topp 5</option>
-            <option value="top10" ${state.honoursDisplay === "top10" ? "selected" : ""}>Topp 10</option>
           </select>
         </label>
         <label class="search-field">
@@ -486,6 +509,13 @@ function render() {
   document.querySelectorAll("[data-tab]").forEach((button) => {
     button.addEventListener("click", (event) => {
       state.honoursTab = event.currentTarget.dataset.tab;
+      render();
+    });
+  });
+  document.querySelectorAll("[data-stage-toggle]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const stageKey = event.currentTarget.dataset.stageToggle;
+      state.expandedHonours[stageKey] = !state.expandedHonours[stageKey];
       render();
     });
   });

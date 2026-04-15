@@ -100,22 +100,10 @@ function filterData() {
     return matchesYear && matchesOrganization && matchesClass && matchesSearch(haystack, searchValue);
   });
 
-  const pendingReview = state.data.nameReview.filter((row) => {
-    const decision = String(row.decision ?? "").trim().toLowerCase();
-    if (["approve", "approved", "reject", "rejected"].includes(decision)) {
-      return false;
-    }
-    return matchesSearch(
-      `${row.raw_name} ${row.suggested_canonical_name} ${row.reason}`,
-      searchValue,
-    );
-  });
-
   return {
     filteredResults,
     filteredTeams,
     personStats: buildPersonStats(filteredResults),
-    pendingReview,
   };
 }
 
@@ -237,7 +225,7 @@ function render() {
     return;
   }
 
-  const { filteredTeams, personStats, pendingReview } = filterData();
+  const { filteredTeams, personStats } = filterData();
 
   app.innerHTML = `
     <div class="page-shell">
@@ -428,43 +416,6 @@ function render() {
                 `,
               )
               .join("")}
-          </div>
-        </section>
-
-        <section class="panel panel-wide">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Navnematching</p>
-              <h2>Forslag som krever godkjenning</h2>
-            </div>
-            <a class="download-link" href="./downloads/name_match_review.csv">Last ned review-CSV</a>
-          </div>
-          <p class="panel-copy">
-            Ingen navn slås sammen automatisk. Filen <code>data/name_match_review.csv</code> er arbeidslisten:
-            sett <code>decision</code> til <code>approve</code> eller <code>reject</code>, kjør bygg på nytt,
-            og databasen oppdateres deretter.
-          </p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr><th>Rått navn</th><th>Foreslått kanonisk navn</th><th>Score</th><th>Begrunnelse</th></tr>
-              </thead>
-              <tbody>
-                ${pendingReview
-                  .slice(0, 24)
-                  .map(
-                    (row) => `
-                      <tr>
-                        <td>${escapeHtml(row.raw_name)}</td>
-                        <td>${escapeHtml(row.suggested_canonical_name)}</td>
-                        <td>${escapeHtml(row.confidence || "-")}</td>
-                        <td>${escapeHtml(row.reason)}</td>
-                      </tr>
-                    `,
-                  )
-                  .join("")}
-              </tbody>
-            </table>
           </div>
         </section>
       </main>

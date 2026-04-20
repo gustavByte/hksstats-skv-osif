@@ -70,7 +70,8 @@ Når innholdet oppdateres:
 2. Kjør `python scripts/build_static_site.py`.
 3. Kontroller at `public/data/site-data.json` og `docs/` er oppdatert.
 4. Commit endringene samlet.
-5. Opprett helst en PR til `main` og vent til `Validate`-workflowen er grønn.
+5. Opprett en PR til `main` og vent til `Validate`-workflowen er grønn.
+6. Merge når PR-en har nødvendig godkjenning.
 
 Da publiserer GitHub Pages innholdet som ligger i `docs/`.
 
@@ -80,6 +81,7 @@ Da publiserer GitHub Pages innholdet som ligger i `docs/`.
 - `docs/` skal alltid være et bygget speil av den publiserte versjonen.
 - Arbeidsfiler som SQLite-database og navnematch-review skal ikke publiseres offentlig.
 - `Validate`-workflowen er standard kvalitetssperre for nye endringer.
+- `main` er beskyttet med krav om grønn `Validate`, løst samtale-tråd og PR-godkjenning.
 
 Se også `CONTRIBUTING.md` og `SECURITY.md`.
 

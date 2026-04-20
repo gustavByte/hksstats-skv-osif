@@ -14,8 +14,9 @@ Dette er standarden fremover:
    - `public/data/site-data.json`
    - `docs/`
 4. Commit endringene samlet.
-5. Opprett helst en PR mot `main`.
+5. Opprett en PR mot `main`.
 6. Vent til `Validate`-workflowen er grønn før merge.
+7. Merge først når PR-en har nødvendig godkjenning.
 
 ## Kilde og genererte filer
 
@@ -36,6 +37,8 @@ De brukes i bygging og kvalitetssikring, men skal ikke kopieres til `public/` el
 
 ## Sikkerhet og kvalitet
 
+- `main` er beskyttet. Standard vei inn er PR, ikke direkte endring på branch.
+- `Validate` må være grønn før merge.
 - Bruk `escapeHtml` for dynamiske tekstverdier i frontend.
 - Ikke legg inn nye eksterne scripts uten at CSP vurderes samtidig.
 - Ikke svekk `Content-Security-Policy` uten en konkret teknisk grunn.

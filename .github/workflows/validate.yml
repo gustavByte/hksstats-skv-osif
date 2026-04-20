@@ -47,5 +47,13 @@ jobs:
           test ! -d public/downloads
           test ! -d docs/downloads
 
-      - name: Assert generated files are committed
-        run: git diff --exit-code
+      - name: Validate repository state
+        run: python scripts/validate_repository_state.py
+
+      - name: Assert stable tracked files are committed
+        run: |
+          git diff --exit-code -- . \
+            ':(exclude)data/hksstats.sqlite' \
+            ':(exclude)data/name_match_review.csv' \
+            ':(exclude)public/data/site-data.json' \
+            ':(exclude)docs/public/data/site-data.json'

@@ -39,4 +39,5 @@ De brukes i bygging og kvalitetssikring, men skal ikke kopieres til `public/` el
 - Bruk `escapeHtml` for dynamiske tekstverdier i frontend.
 - Ikke legg inn nye eksterne scripts uten at CSP vurderes samtidig.
 - Ikke svekk `Content-Security-Policy` uten en konkret teknisk grunn.
+- `generatedAt` i `site-data.json` er et byggestempel og behandles ikke som en meningsfull innholdsendring alene.
 - Hvis du endrer byggflyten, oppdater også `README.md`, `CONTRIBUTING.md` og relevante workflows.

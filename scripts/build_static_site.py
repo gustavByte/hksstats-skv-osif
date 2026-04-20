@@ -26,7 +26,6 @@ def main() -> None:
     copy_if_exists(ROOT / "styles.css", DIST_DIR / "styles.css")
     copy_if_exists(ROOT / "app.js", DIST_DIR / "app.js")
     copy_if_exists(ROOT / "public" / "data", DIST_DIR / "public" / "data")
-    copy_if_exists(ROOT / "public" / "downloads", DIST_DIR / "downloads")
 
     if DOCS_DIR.exists():
         shutil.rmtree(DOCS_DIR)

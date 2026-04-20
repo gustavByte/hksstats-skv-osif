@@ -17,7 +17,6 @@ from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
-DOWNLOADS_DIR = ROOT / "public" / "downloads"
 PUBLIC_DATA_DIR = ROOT / "public" / "data"
 DB_PATH = DATA_DIR / "hksstats.sqlite"
 REVIEW_PATH = DATA_DIR / "name_match_review.csv"
@@ -127,7 +126,7 @@ class ResultRecord:
 
 
 def ensure_directories() -> None:
-    for directory in (DATA_DIR, DOWNLOADS_DIR, PUBLIC_DATA_DIR):
+    for directory in (DATA_DIR, PUBLIC_DATA_DIR):
         directory.mkdir(parents=True, exist_ok=True)
 
 
@@ -1285,8 +1284,6 @@ def export_site_data(
     with (PUBLIC_DATA_DIR / "site-data.json").open("w", encoding="utf-8") as handle:
         json.dump(site_data, handle, ensure_ascii=False, indent=2)
 
-    shutil.copy2(DB_PATH, DOWNLOADS_DIR / DB_PATH.name)
-    shutil.copy2(REVIEW_PATH, DOWNLOADS_DIR / REVIEW_PATH.name)
     connection.close()
 
 

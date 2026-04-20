@@ -18,8 +18,6 @@ Prosjektet gjør tre ting:
   Databasen som nettsiden bygges fra.
 - `data/name_match_review.csv`
   Arbeidsfil for manuell godkjenning av navnematching.
-- `public/downloads/`
-  Publiserte nedlastinger av SQLite-databasen og review-filen.
 - `index.html`, `app.js`, `styles.css`
   Den publiserte statiske nettsiden.
 

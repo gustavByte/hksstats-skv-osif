@@ -68,9 +68,20 @@ Når innholdet oppdateres:
 
 1. Kjør `python scripts/build_data.py`.
 2. Kjør `python scripts/build_static_site.py`.
-3. Commit og push til `main`.
+3. Kontroller at `public/data/site-data.json` og `docs/` er oppdatert.
+4. Commit endringene samlet.
+5. Opprett helst en PR til `main` og vent til `Validate`-workflowen er grønn.
 
 Da publiserer GitHub Pages innholdet som ligger i `docs/`.
+
+## Standard fremover
+
+- Kilde endres i repo-roten og i `scripts/`, ikke direkte i `docs/`.
+- `docs/` skal alltid være et bygget speil av den publiserte versjonen.
+- Arbeidsfiler som SQLite-database og navnematch-review skal ikke publiseres offentlig.
+- `Validate`-workflowen er standard kvalitetssperre for nye endringer.
+
+Se også `CONTRIBUTING.md` og `SECURITY.md`.
 
 ## Datamodell
 

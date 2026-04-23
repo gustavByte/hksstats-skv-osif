@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      name="description"
+      content="Versjon 2 av HKSstats for SK Vidar og OSI Friidrett, med hederslister, deltakelse og lagstatistikk."
+    />
+    <meta name="theme-color" content="#f7f0e3" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="../public/assets/v2/hero-group-photo.jpg"
+      imagesrcset="../public/assets/v2/hero-group-photo.jpg 1x"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>HKSstatsSKV&OSIF V2</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Hopp til innhold</a>
+    <div id="app"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+  </html>

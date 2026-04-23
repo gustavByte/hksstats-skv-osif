@@ -20,6 +20,8 @@ Prosjektet gjør tre ting:
   Arbeidsfil for manuell godkjenning av navnematching.
 - `index.html`, `app.js`, `styles.css`
   Den publiserte statiske nettsiden.
+- `v2/`
+  Ny versjon av nettsiden med eget designspor, men samme datagrunnlag.
 
 ## Navnematching
 

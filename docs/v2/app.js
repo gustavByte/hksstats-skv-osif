@@ -549,20 +549,32 @@ function renderEmptyState(title, text) {
 function renderHeader() {
   return `
     <header class="site-header">
-      <a class="brand-lockup" href="#main-content" aria-label="Gå til HKSstats">
+      <div class="brand-lockup">
         <span class="brand-logos" aria-label="SK Vidar og OSI Friidrett">
-          <span class="logo-plate">
+          <a
+            class="logo-plate"
+            href="https://www.skvidar.no/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Gå til SK Vidar"
+          >
             <img class="brand-logo brand-logo-vidar" src="../public/assets/v2/sk-vidar-logo.png" alt="SK Vidar logo" />
-          </span>
-          <span class="logo-plate logo-plate-round">
+          </a>
+          <a
+            class="logo-plate logo-plate-round"
+            href="https://friidrett.osi.no/next/p/28104/home"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Gå til OSI Friidrett"
+          >
             <img class="brand-logo brand-logo-osi" src="../public/assets/v2/osi-logo.jpg" alt="OSI Friidrett logo" />
-          </span>
+          </a>
         </span>
-        <span class="brand-copy">
+        <a class="brand-copy" href="#main-content" aria-label="Gå til HKSstats">
           <span class="eyebrow">Holmenkollstafetten</span>
           <strong>HKSstats SKV + OSI</strong>
-        </span>
-      </a>
+        </a>
+      </div>
       <nav class="top-nav" aria-label="Hovednavigasjon">
         <a href="#hederslister" data-nav-link>Hederlister</a>
         <a href="#statistikk" data-nav-link>Deltakelse</a>

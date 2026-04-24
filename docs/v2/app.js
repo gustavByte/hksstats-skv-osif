@@ -1,6 +1,6 @@
 const app = document.querySelector("#app");
 
-const DATA_VERSION = "2026-04-24-v2-team-archive";
+const DATA_VERSION = "2026-04-24-v2-team-archive-division-filter";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
@@ -9,6 +9,7 @@ const DEFAULT_STATE = {
   selectedYear: "all",
   selectedOrganization: "all",
   selectedClass: "all",
+  selectedDivision: "all",
   honoursTab: "skv-men",
   honoursDisplay: "top5",
   search: "",
@@ -106,6 +107,7 @@ const URL_STATE_KEYS = {
   year: "selectedYear",
   club: "selectedOrganization",
   class: "selectedClass",
+  division: "selectedDivision",
   tab: "honoursTab",
   show: "honoursDisplay",
   q: "search",
@@ -142,6 +144,7 @@ function readStateFromUrl() {
   state.selectedYear = params.get("year") || DEFAULT_STATE.selectedYear;
   state.selectedOrganization = params.get("club") || DEFAULT_STATE.selectedOrganization;
   state.selectedClass = params.get("class") || DEFAULT_STATE.selectedClass;
+  state.selectedDivision = params.get("division") || DEFAULT_STATE.selectedDivision;
   state.honoursTab = params.get("tab") || DEFAULT_STATE.honoursTab;
   state.honoursDisplay = params.get("show") || DEFAULT_STATE.honoursDisplay;
   state.search = params.get("q") || DEFAULT_STATE.search;
@@ -158,6 +161,11 @@ function normaliseState() {
   const organizations = new Set((state.data.metadata.organizations ?? []).map((item) => item.code));
   const classes = new Set((state.data.metadata.classes ?? []).map((item) => item.code));
   const tabs = new Set((state.data.stageHonours ?? []).map((group) => group.key));
+  const divisions = new Set(
+    [...(state.data.results ?? []), ...(state.data.teams ?? [])]
+      .map((item) => item.division)
+      .filter((value) => value && value !== "unknown"),
+  );
   const teamGroups = new Set(Object.keys(TEAM_GROUP_META));
   const teamDivisions = new Set(["men", "women", "mixed", "unknown"]);
   const teamPlacements = new Set(["all", "wins", "podiums", "best", "bestTime"]);
@@ -171,6 +179,9 @@ function normaliseState() {
   }
   if (state.selectedClass !== "all" && !classes.has(state.selectedClass)) {
     state.selectedClass = DEFAULT_STATE.selectedClass;
+  }
+  if (state.selectedDivision !== "all" && !divisions.has(state.selectedDivision)) {
+    state.selectedDivision = DEFAULT_STATE.selectedDivision;
   }
   if (!tabs.has(state.honoursTab)) {
     state.honoursTab = state.data.stageHonours?.[0]?.key ?? DEFAULT_STATE.honoursTab;
@@ -350,6 +361,13 @@ function getActiveFilters() {
   if (state.selectedClass !== "all") {
     activeFilters.push({ key: "class", label: "Klasse", value: getClassName(state.selectedClass) });
   }
+  if (state.selectedDivision !== "all") {
+    activeFilters.push({
+      key: "division",
+      label: "Kjønn",
+      value: getDivisionLabel(state.selectedDivision),
+    });
+  }
   if (state.search.trim()) {
     activeFilters.push({ key: "search", label: "Søk", value: state.search.trim() });
   }
@@ -417,6 +435,7 @@ function filterData() {
     const matchesOrganization =
       state.selectedOrganization === "all" || row.organization_code === state.selectedOrganization;
     const matchesClass = state.selectedClass === "all" || row.class_code === state.selectedClass;
+    const matchesDivision = state.selectedDivision === "all" || row.division === state.selectedDivision;
     const haystack = [
       row.person_name,
       row.raw_name,
@@ -425,7 +444,13 @@ function filterData() {
       row.class_label,
       row.organization_name,
     ].join(" ");
-    return matchesYear && matchesOrganization && matchesClass && matchesSearch(haystack, searchValue);
+    return (
+      matchesYear &&
+      matchesOrganization &&
+      matchesClass &&
+      matchesDivision &&
+      matchesSearch(haystack, searchValue)
+    );
   });
 
   const resultTeamIds = new Set(filteredResults.map((row) => getTeamId(row)).filter(Boolean));
@@ -435,6 +460,7 @@ function filterData() {
     const matchesOrganization =
       state.selectedOrganization === "all" || row.organization_code === state.selectedOrganization;
     const matchesClass = state.selectedClass === "all" || row.class_code === state.selectedClass;
+    const matchesDivision = state.selectedDivision === "all" || row.division === state.selectedDivision;
     const haystack = [
       row.team_name,
       row.class_label,
@@ -447,6 +473,7 @@ function filterData() {
       matchesYear &&
       matchesOrganization &&
       matchesClass &&
+      matchesDivision &&
       (!searchValue || matchesTeam || resultTeamIds.has(getTeamId(row)))
     );
   });
@@ -460,12 +487,16 @@ function filterData() {
 
 function getAvailableStageGroups() {
   const groups = state.data.stageHonours ?? [];
-  if (state.selectedOrganization === "all") {
-    return groups;
-  }
-
-  const filteredGroups = groups.filter((group) => group.organization_code === state.selectedOrganization);
-  return filteredGroups.length ? filteredGroups : groups;
+  const filteredGroups = groups.filter((group) => {
+    const matchesOrganization =
+      state.selectedOrganization === "all" || group.organization_code === state.selectedOrganization;
+    const matchesDivision =
+      state.selectedDivision === "all" || group.division === state.selectedDivision;
+    return matchesOrganization && matchesDivision;
+  });
+  const hasScopedFilters =
+    state.selectedOrganization !== "all" || state.selectedDivision !== "all";
+  return hasScopedFilters ? filteredGroups : groups;
 }
 
 function getFilteredStageGroup(groups = getAvailableStageGroups()) {
@@ -504,10 +535,18 @@ function buildHonoursScopeLabel() {
   if (state.selectedClass !== "all") {
     parts.push(getClassName(state.selectedClass));
   }
+  if (state.selectedDivision !== "all") {
+    parts.push(getDivisionLabel(state.selectedDivision));
+  }
   if (state.search.trim()) {
     parts.push(`Søk: ${state.search.trim()}`);
   }
   return parts.join(" · ");
+}
+
+function getAvailableGlobalDivisions() {
+  return [...new Set(state.data.results.map((row) => row.division).filter((value) => value && value !== "unknown"))]
+    .sort(sortDivisionKeys);
 }
 
 function buildDynamicHonoursGroup(activeGroup, filteredResults) {
@@ -1583,6 +1622,7 @@ function renderActiveFilterChips(activeFilters) {
 function renderFilterPanel(filteredResults, filteredTeams) {
   const activeFilters = getActiveFilters();
   const hasActiveFilters = activeFilters.length > 0;
+  const divisionOptions = getAvailableGlobalDivisions();
 
   return `
     <section class="filter-shell ${state.filtersOpen ? "is-open" : ""}" id="filter-panel" aria-label="Filtrer resultater">
@@ -1651,6 +1691,23 @@ function renderFilterPanel(filteredResults, filteredTeams) {
                   (item) => `
                     <option value="${escapeHtml(item.code)}" ${item.code === state.selectedClass ? "selected" : ""}>
                       ${escapeHtml(item.label)}
+                    </option>
+                  `,
+                )
+                .join("")}
+            </select>
+          </label>
+          <label>
+            <span>Kjønn</span>
+            <select id="division-filter" name="division">
+              <option value="all">Alle kjønn</option>
+              ${divisionOptions
+                .map(
+                  (division) => `
+                    <option value="${escapeHtml(division)}" ${
+                      division === state.selectedDivision ? "selected" : ""
+                    }>
+                      ${escapeHtml(getDivisionLabel(division))}
                     </option>
                   `,
                 )
@@ -2052,6 +2109,7 @@ function removeFilter(filterKey) {
   if (filterKey === "year") state.selectedYear = DEFAULT_STATE.selectedYear;
   if (filterKey === "club") state.selectedOrganization = DEFAULT_STATE.selectedOrganization;
   if (filterKey === "class") state.selectedClass = DEFAULT_STATE.selectedClass;
+  if (filterKey === "division") state.selectedDivision = DEFAULT_STATE.selectedDivision;
   if (filterKey === "search") state.search = DEFAULT_STATE.search;
   state.filtersOpen = true;
   render();
@@ -2061,6 +2119,7 @@ function resetFilters() {
   state.selectedYear = DEFAULT_STATE.selectedYear;
   state.selectedOrganization = DEFAULT_STATE.selectedOrganization;
   state.selectedClass = DEFAULT_STATE.selectedClass;
+  state.selectedDivision = DEFAULT_STATE.selectedDivision;
   state.search = DEFAULT_STATE.search;
   state.teamClub = DEFAULT_STATE.teamClub;
   state.teamGroup = DEFAULT_STATE.teamGroup;
@@ -2115,6 +2174,11 @@ function attachEvents() {
   });
   document.querySelector("#class-filter")?.addEventListener("change", (event) => {
     state.selectedClass = event.target.value;
+    state.filtersOpen = true;
+    render();
+  });
+  document.querySelector("#division-filter")?.addEventListener("change", (event) => {
+    state.selectedDivision = event.target.value;
     state.filtersOpen = true;
     render();
   });

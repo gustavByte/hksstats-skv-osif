@@ -1009,7 +1009,7 @@ h3 {
 
 .filter-grid {
   display: grid;
-  grid-template-columns: 0.72fr 1fr 1fr minmax(220px, 1.35fr);
+  grid-template-columns: 0.72fr 1fr 1fr 0.82fr minmax(220px, 1.35fr);
   gap: 10px;
 }
 

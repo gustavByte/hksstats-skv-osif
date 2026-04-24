@@ -569,6 +569,348 @@ h3 {
   min-width: 0;
 }
 
+.club-honour-grid,
+.archive-grid,
+.time-series-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.club-honour-grid,
+.time-series-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.club-honour-card,
+.archive-card,
+.time-series-card,
+.team-hub-toolbar {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-soft);
+}
+
+.team-hub-stack {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.team-hub-toolbar {
+  margin-top: 0;
+}
+
+.club-honour-header,
+.archive-card-header,
+.time-series-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.club-honour-copy,
+.archive-card-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.club-honour-copy p,
+.club-honour-copy h3,
+.club-honour-copy strong,
+.archive-card-copy p,
+.archive-card-copy h3,
+.time-series-card-header p,
+.time-series-card-header h3 {
+  margin: 0;
+}
+
+.club-honour-list,
+.time-series-list {
+  display: grid;
+  gap: 10px;
+}
+
+.club-honour-row {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.9fr) minmax(0, 2fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.club-honour-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.club-honour-row-anchor {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+}
+
+.club-honour-row-anchor strong {
+  overflow-wrap: anywhere;
+}
+
+.club-honour-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.club-honour-row-meta,
+.archive-kicker,
+.archive-card-meta,
+.time-series-card-header p,
+.time-series-meta dt,
+.club-honour-footer small {
+  color: var(--ink-soft);
+}
+
+.club-honour-row-meta {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.club-honour-footer {
+  display: grid;
+  gap: 4px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.club-honour-footer p,
+.club-honour-footer small {
+  margin: 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: #f8efe4;
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.badge-men {
+  background: rgba(191, 67, 47, 0.12);
+  border-color: rgba(191, 67, 47, 0.28);
+  color: var(--vidar-dark);
+}
+
+.badge-women {
+  background: rgba(37, 75, 55, 0.12);
+  border-color: rgba(37, 75, 55, 0.24);
+  color: var(--osi-dark);
+}
+
+.badge-mixed {
+  background: rgba(103, 82, 38, 0.12);
+  border-color: rgba(103, 82, 38, 0.22);
+  color: #5d4722;
+}
+
+.badge-unknown,
+.badge-neutral {
+  background: #f4ede3;
+}
+
+.badge-winner {
+  background: rgba(191, 67, 47, 0.16);
+  border-color: rgba(191, 67, 47, 0.34);
+}
+
+.badge-podium {
+  background: rgba(205, 156, 63, 0.16);
+  border-color: rgba(205, 156, 63, 0.34);
+}
+
+.badge-time {
+  background: rgba(37, 75, 55, 0.16);
+  border-color: rgba(37, 75, 55, 0.26);
+}
+
+.stat-action,
+.archive-chip,
+.archive-toggle {
+  min-height: 38px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+}
+
+.stat-action,
+.archive-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.stat-action {
+  text-align: center;
+}
+
+.stat-action.is-disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.archive-view-switch,
+.archive-filter-bar {
+  display: grid;
+  gap: 10px;
+}
+
+.archive-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.archive-chip.is-active,
+.stat-action:hover,
+.club-honour-row-anchor:hover,
+.archive-toggle:hover {
+  border-color: var(--vidar);
+  color: var(--vidar-dark);
+}
+
+.archive-chip.is-active {
+  background: rgba(191, 67, 47, 0.12);
+}
+
+.archive-chip b {
+  font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  font-size: 1rem;
+}
+
+.archive-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.archive-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.archive-toggle {
+  justify-self: start;
+  padding: 0 12px;
+}
+
+.archive-card-details {
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.team-lineup-list {
+  display: grid;
+  gap: 8px;
+}
+
+.team-lineup-row {
+  display: grid;
+  grid-template-columns: minmax(90px, 0.55fr) minmax(0, 1.25fr) 84px repeat(2, minmax(72px, auto));
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(25, 36, 31, 0.08);
+}
+
+.team-lineup-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.team-lineup-stage,
+.team-lineup-runner {
+  overflow-wrap: anywhere;
+}
+
+.team-lineup-time,
+.team-lineup-rank {
+  white-space: nowrap;
+}
+
+.team-lineup-rank {
+  text-align: right;
+}
+
+.time-series-card-header strong,
+.time-series-year {
+  font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+}
+
+.time-series-row {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1.1fr) minmax(220px, 0.9fr);
+  gap: 12px;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.time-series-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.time-series-copy {
+  min-width: 0;
+}
+
+.time-series-copy strong,
+.time-series-copy p {
+  margin: 0;
+}
+
+.time-series-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.time-series-meta div {
+  min-width: 0;
+}
+
+.time-series-meta dd {
+  margin: 4px 0 0;
+  font-weight: 800;
+}
+
 .content-card,
 .filter-shell {
   padding: 18px;
@@ -1227,6 +1569,12 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .club-honour-grid,
+  .archive-grid,
+  .time-series-grid {
+    grid-template-columns: 1fr;
+  }
+
   .filter-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1268,6 +1616,23 @@ h3 {
   .stats-grid,
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .club-honour-row,
+  .time-series-row {
+    grid-template-columns: 1fr;
+  }
+
+  .club-honour-row-meta,
+  .archive-card-tags,
+  .time-series-meta,
+  .team-lineup-rank {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .team-lineup-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
   .section-span {
@@ -1405,7 +1770,10 @@ h3 {
 
   .section-header,
   .leader-card,
-  .spotlight-card {
+  .spotlight-card,
+  .club-honour-header,
+  .archive-card-header,
+  .time-series-card-header {
     flex-direction: column;
   }
 
@@ -1446,6 +1814,30 @@ h3 {
     align-items: flex-start;
   }
 
+  .club-honour-row-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-action,
+  .archive-chip {
+    width: 100%;
+  }
+
+  .time-series-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .team-lineup-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .team-lineup-time,
+  .team-lineup-rank {
+    white-space: normal;
+  }
+
   .site-footer {
     display: grid;
   }
@@ -1471,7 +1863,8 @@ h3 {
   .hero-meta,
   .club-summary-stats,
   .metric-legend,
-  .team-card-stats {
+  .team-card-stats,
+  .club-honour-row-actions {
     grid-template-columns: 1fr;
   }
 
@@ -1516,6 +1909,11 @@ h3 {
 
   .season-card strong {
     grid-row: auto;
+  }
+
+  .archive-filter-group,
+  .archive-card-tags {
+    display: grid;
   }
 }
 

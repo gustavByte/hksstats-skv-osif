@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T13:29:06",
+  "generatedAt": "2026-04-24T18:43:20",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -10917,6 +10917,7 @@
   "results": [
     {
       "id": 526,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -10938,6 +10939,7 @@
     },
     {
       "id": 527,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -10959,6 +10961,7 @@
     },
     {
       "id": 528,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -10980,6 +10983,7 @@
     },
     {
       "id": 529,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11001,6 +11005,7 @@
     },
     {
       "id": 530,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11022,6 +11027,7 @@
     },
     {
       "id": 531,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11043,6 +11049,7 @@
     },
     {
       "id": 532,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11064,6 +11071,7 @@
     },
     {
       "id": 533,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11085,6 +11093,7 @@
     },
     {
       "id": 534,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11106,6 +11115,7 @@
     },
     {
       "id": 535,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11127,6 +11137,7 @@
     },
     {
       "id": 536,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11148,6 +11159,7 @@
     },
     {
       "id": 537,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11169,6 +11181,7 @@
     },
     {
       "id": 538,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11190,6 +11203,7 @@
     },
     {
       "id": 539,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11211,6 +11225,7 @@
     },
     {
       "id": 540,
+      "team_id": 36,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11232,6 +11247,7 @@
     },
     {
       "id": 541,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11253,6 +11269,7 @@
     },
     {
       "id": 542,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11274,6 +11291,7 @@
     },
     {
       "id": 543,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11295,6 +11313,7 @@
     },
     {
       "id": 544,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11316,6 +11335,7 @@
     },
     {
       "id": 545,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11337,6 +11357,7 @@
     },
     {
       "id": 546,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11358,6 +11379,7 @@
     },
     {
       "id": 547,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11379,6 +11401,7 @@
     },
     {
       "id": 548,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11400,6 +11423,7 @@
     },
     {
       "id": 549,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11421,6 +11445,7 @@
     },
     {
       "id": 550,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11442,6 +11467,7 @@
     },
     {
       "id": 551,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11463,6 +11489,7 @@
     },
     {
       "id": 552,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11484,6 +11511,7 @@
     },
     {
       "id": 553,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11505,6 +11533,7 @@
     },
     {
       "id": 554,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11526,6 +11555,7 @@
     },
     {
       "id": 555,
+      "team_id": 37,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11547,6 +11577,7 @@
     },
     {
       "id": 556,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11568,6 +11599,7 @@
     },
     {
       "id": 557,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11589,6 +11621,7 @@
     },
     {
       "id": 558,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11610,6 +11643,7 @@
     },
     {
       "id": 559,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11631,6 +11665,7 @@
     },
     {
       "id": 560,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11652,6 +11687,7 @@
     },
     {
       "id": 561,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11673,6 +11709,7 @@
     },
     {
       "id": 562,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11694,6 +11731,7 @@
     },
     {
       "id": 563,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11715,6 +11753,7 @@
     },
     {
       "id": 564,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11736,6 +11775,7 @@
     },
     {
       "id": 565,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11757,6 +11797,7 @@
     },
     {
       "id": 566,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11778,6 +11819,7 @@
     },
     {
       "id": 567,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11799,6 +11841,7 @@
     },
     {
       "id": 568,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11820,6 +11863,7 @@
     },
     {
       "id": 569,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11841,6 +11885,7 @@
     },
     {
       "id": 570,
+      "team_id": 38,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -11862,6 +11907,7 @@
     },
     {
       "id": 631,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -11883,6 +11929,7 @@
     },
     {
       "id": 632,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -11904,6 +11951,7 @@
     },
     {
       "id": 633,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -11925,6 +11973,7 @@
     },
     {
       "id": 634,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -11946,6 +11995,7 @@
     },
     {
       "id": 635,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -11967,6 +12017,7 @@
     },
     {
       "id": 636,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -11988,6 +12039,7 @@
     },
     {
       "id": 637,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12009,6 +12061,7 @@
     },
     {
       "id": 638,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12030,6 +12083,7 @@
     },
     {
       "id": 639,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12051,6 +12105,7 @@
     },
     {
       "id": 640,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12072,6 +12127,7 @@
     },
     {
       "id": 641,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12093,6 +12149,7 @@
     },
     {
       "id": 642,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12114,6 +12171,7 @@
     },
     {
       "id": 643,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12135,6 +12193,7 @@
     },
     {
       "id": 644,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12156,6 +12215,7 @@
     },
     {
       "id": 645,
+      "team_id": 43,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12177,6 +12237,7 @@
     },
     {
       "id": 646,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12198,6 +12259,7 @@
     },
     {
       "id": 647,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12219,6 +12281,7 @@
     },
     {
       "id": 648,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12240,6 +12303,7 @@
     },
     {
       "id": 649,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12261,6 +12325,7 @@
     },
     {
       "id": 650,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12282,6 +12347,7 @@
     },
     {
       "id": 651,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12303,6 +12369,7 @@
     },
     {
       "id": 652,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12324,6 +12391,7 @@
     },
     {
       "id": 653,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12345,6 +12413,7 @@
     },
     {
       "id": 654,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12366,6 +12435,7 @@
     },
     {
       "id": 655,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12387,6 +12457,7 @@
     },
     {
       "id": 656,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12408,6 +12479,7 @@
     },
     {
       "id": 657,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12429,6 +12501,7 @@
     },
     {
       "id": 658,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12450,6 +12523,7 @@
     },
     {
       "id": 659,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12471,6 +12545,7 @@
     },
     {
       "id": 660,
+      "team_id": 44,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12492,6 +12567,7 @@
     },
     {
       "id": 616,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12513,6 +12589,7 @@
     },
     {
       "id": 617,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12534,6 +12611,7 @@
     },
     {
       "id": 618,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12555,6 +12633,7 @@
     },
     {
       "id": 619,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12576,6 +12655,7 @@
     },
     {
       "id": 620,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12597,6 +12677,7 @@
     },
     {
       "id": 621,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12618,6 +12699,7 @@
     },
     {
       "id": 622,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12639,6 +12721,7 @@
     },
     {
       "id": 623,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12660,6 +12743,7 @@
     },
     {
       "id": 624,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12681,6 +12765,7 @@
     },
     {
       "id": 625,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12702,6 +12787,7 @@
     },
     {
       "id": 626,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12723,6 +12809,7 @@
     },
     {
       "id": 627,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12744,6 +12831,7 @@
     },
     {
       "id": 628,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12765,6 +12853,7 @@
     },
     {
       "id": 629,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12786,6 +12875,7 @@
     },
     {
       "id": 630,
+      "team_id": 42,
       "year": 2025,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12807,6 +12897,7 @@
     },
     {
       "id": 466,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12828,6 +12919,7 @@
     },
     {
       "id": 467,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12849,6 +12941,7 @@
     },
     {
       "id": 468,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12870,6 +12963,7 @@
     },
     {
       "id": 469,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12891,6 +12985,7 @@
     },
     {
       "id": 470,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12912,6 +13007,7 @@
     },
     {
       "id": 471,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12933,6 +13029,7 @@
     },
     {
       "id": 472,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12954,6 +13051,7 @@
     },
     {
       "id": 473,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12975,6 +13073,7 @@
     },
     {
       "id": 474,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -12996,6 +13095,7 @@
     },
     {
       "id": 475,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13017,6 +13117,7 @@
     },
     {
       "id": 476,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13038,6 +13139,7 @@
     },
     {
       "id": 477,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13059,6 +13161,7 @@
     },
     {
       "id": 478,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13080,6 +13183,7 @@
     },
     {
       "id": 479,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13101,6 +13205,7 @@
     },
     {
       "id": 480,
+      "team_id": 32,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13122,6 +13227,7 @@
     },
     {
       "id": 481,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13143,6 +13249,7 @@
     },
     {
       "id": 482,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13164,6 +13271,7 @@
     },
     {
       "id": 483,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13185,6 +13293,7 @@
     },
     {
       "id": 484,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13206,6 +13315,7 @@
     },
     {
       "id": 485,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13227,6 +13337,7 @@
     },
     {
       "id": 486,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13248,6 +13359,7 @@
     },
     {
       "id": 487,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13269,6 +13381,7 @@
     },
     {
       "id": 488,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13290,6 +13403,7 @@
     },
     {
       "id": 489,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13311,6 +13425,7 @@
     },
     {
       "id": 490,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13332,6 +13447,7 @@
     },
     {
       "id": 491,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13353,6 +13469,7 @@
     },
     {
       "id": 492,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13374,6 +13491,7 @@
     },
     {
       "id": 493,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13395,6 +13513,7 @@
     },
     {
       "id": 494,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13416,6 +13535,7 @@
     },
     {
       "id": 495,
+      "team_id": 33,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13437,6 +13557,7 @@
     },
     {
       "id": 496,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13458,6 +13579,7 @@
     },
     {
       "id": 497,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13479,6 +13601,7 @@
     },
     {
       "id": 498,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13500,6 +13623,7 @@
     },
     {
       "id": 499,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13521,6 +13645,7 @@
     },
     {
       "id": 500,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13542,6 +13667,7 @@
     },
     {
       "id": 501,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13563,6 +13689,7 @@
     },
     {
       "id": 502,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13584,6 +13711,7 @@
     },
     {
       "id": 503,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13605,6 +13733,7 @@
     },
     {
       "id": 504,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13626,6 +13755,7 @@
     },
     {
       "id": 505,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13647,6 +13777,7 @@
     },
     {
       "id": 506,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13668,6 +13799,7 @@
     },
     {
       "id": 507,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13689,6 +13821,7 @@
     },
     {
       "id": 508,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13710,6 +13843,7 @@
     },
     {
       "id": 509,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13731,6 +13865,7 @@
     },
     {
       "id": 510,
+      "team_id": 34,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13752,6 +13887,7 @@
     },
     {
       "id": 571,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13773,6 +13909,7 @@
     },
     {
       "id": 572,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13794,6 +13931,7 @@
     },
     {
       "id": 573,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13815,6 +13953,7 @@
     },
     {
       "id": 574,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13836,6 +13975,7 @@
     },
     {
       "id": 575,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13857,6 +13997,7 @@
     },
     {
       "id": 576,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13878,6 +14019,7 @@
     },
     {
       "id": 577,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13899,6 +14041,7 @@
     },
     {
       "id": 578,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13920,6 +14063,7 @@
     },
     {
       "id": 579,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13941,6 +14085,7 @@
     },
     {
       "id": 580,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13962,6 +14107,7 @@
     },
     {
       "id": 581,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -13983,6 +14129,7 @@
     },
     {
       "id": 582,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14004,6 +14151,7 @@
     },
     {
       "id": 583,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14025,6 +14173,7 @@
     },
     {
       "id": 584,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14046,6 +14195,7 @@
     },
     {
       "id": 585,
+      "team_id": 39,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14067,6 +14217,7 @@
     },
     {
       "id": 511,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14088,6 +14239,7 @@
     },
     {
       "id": 512,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14109,6 +14261,7 @@
     },
     {
       "id": 513,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14130,6 +14283,7 @@
     },
     {
       "id": 514,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14151,6 +14305,7 @@
     },
     {
       "id": 515,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14172,6 +14327,7 @@
     },
     {
       "id": 516,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14193,6 +14349,7 @@
     },
     {
       "id": 517,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14214,6 +14371,7 @@
     },
     {
       "id": 518,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14235,6 +14393,7 @@
     },
     {
       "id": 519,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14256,6 +14415,7 @@
     },
     {
       "id": 520,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14277,6 +14437,7 @@
     },
     {
       "id": 521,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14298,6 +14459,7 @@
     },
     {
       "id": 522,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14319,6 +14481,7 @@
     },
     {
       "id": 523,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14340,6 +14503,7 @@
     },
     {
       "id": 524,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14361,6 +14525,7 @@
     },
     {
       "id": 525,
+      "team_id": 35,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14382,6 +14547,7 @@
     },
     {
       "id": 586,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14403,6 +14569,7 @@
     },
     {
       "id": 587,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14424,6 +14591,7 @@
     },
     {
       "id": 588,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14445,6 +14613,7 @@
     },
     {
       "id": 589,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14466,6 +14635,7 @@
     },
     {
       "id": 590,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14487,6 +14657,7 @@
     },
     {
       "id": 591,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14508,6 +14679,7 @@
     },
     {
       "id": 592,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14529,6 +14701,7 @@
     },
     {
       "id": 593,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14550,6 +14723,7 @@
     },
     {
       "id": 594,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14571,6 +14745,7 @@
     },
     {
       "id": 595,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14592,6 +14767,7 @@
     },
     {
       "id": 596,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14613,6 +14789,7 @@
     },
     {
       "id": 597,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14634,6 +14811,7 @@
     },
     {
       "id": 598,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14655,6 +14833,7 @@
     },
     {
       "id": 599,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14676,6 +14855,7 @@
     },
     {
       "id": 600,
+      "team_id": 40,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14697,6 +14877,7 @@
     },
     {
       "id": 601,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14718,6 +14899,7 @@
     },
     {
       "id": 602,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14739,6 +14921,7 @@
     },
     {
       "id": 603,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14760,6 +14943,7 @@
     },
     {
       "id": 604,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14781,6 +14965,7 @@
     },
     {
       "id": 605,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14802,6 +14987,7 @@
     },
     {
       "id": 606,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14823,6 +15009,7 @@
     },
     {
       "id": 607,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14844,6 +15031,7 @@
     },
     {
       "id": 608,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14865,6 +15053,7 @@
     },
     {
       "id": 609,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14886,6 +15075,7 @@
     },
     {
       "id": 610,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14907,6 +15097,7 @@
     },
     {
       "id": 611,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14928,6 +15119,7 @@
     },
     {
       "id": 612,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14949,6 +15141,7 @@
     },
     {
       "id": 613,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14970,6 +15163,7 @@
     },
     {
       "id": 614,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -14991,6 +15185,7 @@
     },
     {
       "id": 615,
+      "team_id": 41,
       "year": 2025,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15012,6 +15207,7 @@
     },
     {
       "id": 436,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15033,6 +15229,7 @@
     },
     {
       "id": 437,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15054,6 +15251,7 @@
     },
     {
       "id": 438,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15075,6 +15273,7 @@
     },
     {
       "id": 439,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15096,6 +15295,7 @@
     },
     {
       "id": 440,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15117,6 +15317,7 @@
     },
     {
       "id": 441,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15138,6 +15339,7 @@
     },
     {
       "id": 442,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15159,6 +15361,7 @@
     },
     {
       "id": 443,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15180,6 +15383,7 @@
     },
     {
       "id": 444,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15201,6 +15405,7 @@
     },
     {
       "id": 445,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15222,6 +15427,7 @@
     },
     {
       "id": 446,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15243,6 +15449,7 @@
     },
     {
       "id": 447,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15264,6 +15471,7 @@
     },
     {
       "id": 448,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15285,6 +15493,7 @@
     },
     {
       "id": 449,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15306,6 +15515,7 @@
     },
     {
       "id": 450,
+      "team_id": 30,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15327,6 +15537,7 @@
     },
     {
       "id": 451,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15348,6 +15559,7 @@
     },
     {
       "id": 452,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15369,6 +15581,7 @@
     },
     {
       "id": 453,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15390,6 +15603,7 @@
     },
     {
       "id": 454,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15411,6 +15625,7 @@
     },
     {
       "id": 455,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15432,6 +15647,7 @@
     },
     {
       "id": 456,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15453,6 +15669,7 @@
     },
     {
       "id": 457,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15474,6 +15691,7 @@
     },
     {
       "id": 458,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15495,6 +15713,7 @@
     },
     {
       "id": 459,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15516,6 +15735,7 @@
     },
     {
       "id": 460,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15537,6 +15757,7 @@
     },
     {
       "id": 461,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15558,6 +15779,7 @@
     },
     {
       "id": 462,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15579,6 +15801,7 @@
     },
     {
       "id": 463,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15600,6 +15823,7 @@
     },
     {
       "id": 464,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15621,6 +15845,7 @@
     },
     {
       "id": 465,
+      "team_id": 31,
       "year": 2024,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -15642,6 +15867,7 @@
     },
     {
       "id": 361,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15663,6 +15889,7 @@
     },
     {
       "id": 362,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15684,6 +15911,7 @@
     },
     {
       "id": 363,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15705,6 +15933,7 @@
     },
     {
       "id": 364,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15726,6 +15955,7 @@
     },
     {
       "id": 365,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15747,6 +15977,7 @@
     },
     {
       "id": 366,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15768,6 +15999,7 @@
     },
     {
       "id": 367,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15789,6 +16021,7 @@
     },
     {
       "id": 368,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15810,6 +16043,7 @@
     },
     {
       "id": 369,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15831,6 +16065,7 @@
     },
     {
       "id": 370,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15852,6 +16087,7 @@
     },
     {
       "id": 371,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15873,6 +16109,7 @@
     },
     {
       "id": 372,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15894,6 +16131,7 @@
     },
     {
       "id": 373,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15915,6 +16153,7 @@
     },
     {
       "id": 374,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15936,6 +16175,7 @@
     },
     {
       "id": 375,
+      "team_id": 25,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15957,6 +16197,7 @@
     },
     {
       "id": 376,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15978,6 +16219,7 @@
     },
     {
       "id": 377,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -15999,6 +16241,7 @@
     },
     {
       "id": 378,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16020,6 +16263,7 @@
     },
     {
       "id": 379,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16041,6 +16285,7 @@
     },
     {
       "id": 380,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16062,6 +16307,7 @@
     },
     {
       "id": 381,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16083,6 +16329,7 @@
     },
     {
       "id": 382,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16104,6 +16351,7 @@
     },
     {
       "id": 383,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16125,6 +16373,7 @@
     },
     {
       "id": 384,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16146,6 +16395,7 @@
     },
     {
       "id": 385,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16167,6 +16417,7 @@
     },
     {
       "id": 386,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16188,6 +16439,7 @@
     },
     {
       "id": 387,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16209,6 +16461,7 @@
     },
     {
       "id": 388,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16230,6 +16483,7 @@
     },
     {
       "id": 389,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16251,6 +16505,7 @@
     },
     {
       "id": 390,
+      "team_id": 26,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16272,6 +16527,7 @@
     },
     {
       "id": 301,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16293,6 +16549,7 @@
     },
     {
       "id": 302,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16314,6 +16571,7 @@
     },
     {
       "id": 303,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16335,6 +16593,7 @@
     },
     {
       "id": 304,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16356,6 +16615,7 @@
     },
     {
       "id": 305,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16377,6 +16637,7 @@
     },
     {
       "id": 306,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16398,6 +16659,7 @@
     },
     {
       "id": 307,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16419,6 +16681,7 @@
     },
     {
       "id": 308,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16440,6 +16703,7 @@
     },
     {
       "id": 309,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16461,6 +16725,7 @@
     },
     {
       "id": 310,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16482,6 +16747,7 @@
     },
     {
       "id": 311,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16503,6 +16769,7 @@
     },
     {
       "id": 312,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16524,6 +16791,7 @@
     },
     {
       "id": 313,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16545,6 +16813,7 @@
     },
     {
       "id": 314,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16566,6 +16835,7 @@
     },
     {
       "id": 315,
+      "team_id": 21,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16587,6 +16857,7 @@
     },
     {
       "id": 316,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16608,6 +16879,7 @@
     },
     {
       "id": 317,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16629,6 +16901,7 @@
     },
     {
       "id": 318,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16650,6 +16923,7 @@
     },
     {
       "id": 319,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16671,6 +16945,7 @@
     },
     {
       "id": 320,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16692,6 +16967,7 @@
     },
     {
       "id": 321,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16713,6 +16989,7 @@
     },
     {
       "id": 322,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16734,6 +17011,7 @@
     },
     {
       "id": 323,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16755,6 +17033,7 @@
     },
     {
       "id": 324,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16776,6 +17055,7 @@
     },
     {
       "id": 325,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16797,6 +17077,7 @@
     },
     {
       "id": 326,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16818,6 +17099,7 @@
     },
     {
       "id": 327,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16839,6 +17121,7 @@
     },
     {
       "id": 328,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16860,6 +17143,7 @@
     },
     {
       "id": 329,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16881,6 +17165,7 @@
     },
     {
       "id": 330,
+      "team_id": 22,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16902,6 +17187,7 @@
     },
     {
       "id": 331,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16923,6 +17209,7 @@
     },
     {
       "id": 332,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16944,6 +17231,7 @@
     },
     {
       "id": 333,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16965,6 +17253,7 @@
     },
     {
       "id": 334,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -16986,6 +17275,7 @@
     },
     {
       "id": 335,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17007,6 +17297,7 @@
     },
     {
       "id": 336,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17028,6 +17319,7 @@
     },
     {
       "id": 337,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17049,6 +17341,7 @@
     },
     {
       "id": 338,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17070,6 +17363,7 @@
     },
     {
       "id": 339,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17091,6 +17385,7 @@
     },
     {
       "id": 340,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17112,6 +17407,7 @@
     },
     {
       "id": 341,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17133,6 +17429,7 @@
     },
     {
       "id": 342,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17154,6 +17451,7 @@
     },
     {
       "id": 343,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17175,6 +17473,7 @@
     },
     {
       "id": 344,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17196,6 +17495,7 @@
     },
     {
       "id": 345,
+      "team_id": 23,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17217,6 +17517,7 @@
     },
     {
       "id": 346,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17238,6 +17539,7 @@
     },
     {
       "id": 347,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17259,6 +17561,7 @@
     },
     {
       "id": 348,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17280,6 +17583,7 @@
     },
     {
       "id": 349,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17301,6 +17605,7 @@
     },
     {
       "id": 350,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17322,6 +17627,7 @@
     },
     {
       "id": 351,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17343,6 +17649,7 @@
     },
     {
       "id": 352,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17364,6 +17671,7 @@
     },
     {
       "id": 353,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17385,6 +17693,7 @@
     },
     {
       "id": 354,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17406,6 +17715,7 @@
     },
     {
       "id": 355,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17427,6 +17737,7 @@
     },
     {
       "id": 356,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17448,6 +17759,7 @@
     },
     {
       "id": 357,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17469,6 +17781,7 @@
     },
     {
       "id": 358,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17490,6 +17803,7 @@
     },
     {
       "id": 359,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17511,6 +17825,7 @@
     },
     {
       "id": 360,
+      "team_id": 24,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17532,6 +17847,7 @@
     },
     {
       "id": 391,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17553,6 +17869,7 @@
     },
     {
       "id": 392,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17574,6 +17891,7 @@
     },
     {
       "id": 393,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17595,6 +17913,7 @@
     },
     {
       "id": 394,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17616,6 +17935,7 @@
     },
     {
       "id": 395,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17637,6 +17957,7 @@
     },
     {
       "id": 396,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17658,6 +17979,7 @@
     },
     {
       "id": 397,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17679,6 +18001,7 @@
     },
     {
       "id": 398,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17700,6 +18023,7 @@
     },
     {
       "id": 399,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17721,6 +18045,7 @@
     },
     {
       "id": 400,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17742,6 +18067,7 @@
     },
     {
       "id": 401,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17763,6 +18089,7 @@
     },
     {
       "id": 402,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17784,6 +18111,7 @@
     },
     {
       "id": 403,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17805,6 +18133,7 @@
     },
     {
       "id": 404,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17826,6 +18155,7 @@
     },
     {
       "id": 405,
+      "team_id": 27,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17847,6 +18177,7 @@
     },
     {
       "id": 406,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17868,6 +18199,7 @@
     },
     {
       "id": 407,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17889,6 +18221,7 @@
     },
     {
       "id": 408,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17910,6 +18243,7 @@
     },
     {
       "id": 409,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17931,6 +18265,7 @@
     },
     {
       "id": 410,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17952,6 +18287,7 @@
     },
     {
       "id": 411,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17973,6 +18309,7 @@
     },
     {
       "id": 412,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -17994,6 +18331,7 @@
     },
     {
       "id": 413,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18015,6 +18353,7 @@
     },
     {
       "id": 414,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18036,6 +18375,7 @@
     },
     {
       "id": 415,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18057,6 +18397,7 @@
     },
     {
       "id": 416,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18078,6 +18419,7 @@
     },
     {
       "id": 417,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18099,6 +18441,7 @@
     },
     {
       "id": 418,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18120,6 +18463,7 @@
     },
     {
       "id": 419,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18141,6 +18485,7 @@
     },
     {
       "id": 420,
+      "team_id": 28,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18162,6 +18507,7 @@
     },
     {
       "id": 421,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18183,6 +18529,7 @@
     },
     {
       "id": 422,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18204,6 +18551,7 @@
     },
     {
       "id": 423,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18225,6 +18573,7 @@
     },
     {
       "id": 424,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18246,6 +18595,7 @@
     },
     {
       "id": 425,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18267,6 +18617,7 @@
     },
     {
       "id": 426,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18288,6 +18639,7 @@
     },
     {
       "id": 427,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18309,6 +18661,7 @@
     },
     {
       "id": 428,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18330,6 +18683,7 @@
     },
     {
       "id": 429,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18351,6 +18705,7 @@
     },
     {
       "id": 430,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18372,6 +18727,7 @@
     },
     {
       "id": 431,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18393,6 +18749,7 @@
     },
     {
       "id": 432,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18414,6 +18771,7 @@
     },
     {
       "id": 433,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18435,6 +18793,7 @@
     },
     {
       "id": 434,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18456,6 +18815,7 @@
     },
     {
       "id": 435,
+      "team_id": 29,
       "year": 2024,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -18477,6 +18837,7 @@
     },
     {
       "id": 271,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18498,6 +18859,7 @@
     },
     {
       "id": 272,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18519,6 +18881,7 @@
     },
     {
       "id": 273,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18540,6 +18903,7 @@
     },
     {
       "id": 274,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18561,6 +18925,7 @@
     },
     {
       "id": 275,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18582,6 +18947,7 @@
     },
     {
       "id": 276,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18603,6 +18969,7 @@
     },
     {
       "id": 277,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18624,6 +18991,7 @@
     },
     {
       "id": 278,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18645,6 +19013,7 @@
     },
     {
       "id": 279,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18666,6 +19035,7 @@
     },
     {
       "id": 280,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18687,6 +19057,7 @@
     },
     {
       "id": 281,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18708,6 +19079,7 @@
     },
     {
       "id": 282,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18729,6 +19101,7 @@
     },
     {
       "id": 283,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18750,6 +19123,7 @@
     },
     {
       "id": 284,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18771,6 +19145,7 @@
     },
     {
       "id": 285,
+      "team_id": 19,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18792,6 +19167,7 @@
     },
     {
       "id": 286,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18813,6 +19189,7 @@
     },
     {
       "id": 287,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18834,6 +19211,7 @@
     },
     {
       "id": 288,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18855,6 +19233,7 @@
     },
     {
       "id": 289,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18876,6 +19255,7 @@
     },
     {
       "id": 290,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18897,6 +19277,7 @@
     },
     {
       "id": 291,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18918,6 +19299,7 @@
     },
     {
       "id": 292,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18939,6 +19321,7 @@
     },
     {
       "id": 293,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18960,6 +19343,7 @@
     },
     {
       "id": 294,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -18981,6 +19365,7 @@
     },
     {
       "id": 295,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -19002,6 +19387,7 @@
     },
     {
       "id": 296,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -19023,6 +19409,7 @@
     },
     {
       "id": 297,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -19044,6 +19431,7 @@
     },
     {
       "id": 298,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -19065,6 +19453,7 @@
     },
     {
       "id": 299,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -19086,6 +19475,7 @@
     },
     {
       "id": 300,
+      "team_id": 20,
       "year": 2023,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -19107,6 +19497,7 @@
     },
     {
       "id": 196,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19128,6 +19519,7 @@
     },
     {
       "id": 197,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19149,6 +19541,7 @@
     },
     {
       "id": 198,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19170,6 +19563,7 @@
     },
     {
       "id": 199,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19191,6 +19585,7 @@
     },
     {
       "id": 200,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19212,6 +19607,7 @@
     },
     {
       "id": 201,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19233,6 +19629,7 @@
     },
     {
       "id": 202,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19254,6 +19651,7 @@
     },
     {
       "id": 203,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19275,6 +19673,7 @@
     },
     {
       "id": 204,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19296,6 +19695,7 @@
     },
     {
       "id": 205,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19317,6 +19717,7 @@
     },
     {
       "id": 206,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19338,6 +19739,7 @@
     },
     {
       "id": 207,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19359,6 +19761,7 @@
     },
     {
       "id": 208,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19380,6 +19783,7 @@
     },
     {
       "id": 209,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19401,6 +19805,7 @@
     },
     {
       "id": 210,
+      "team_id": 14,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19422,6 +19827,7 @@
     },
     {
       "id": 211,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19443,6 +19849,7 @@
     },
     {
       "id": 212,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19464,6 +19871,7 @@
     },
     {
       "id": 213,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19485,6 +19893,7 @@
     },
     {
       "id": 214,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19506,6 +19915,7 @@
     },
     {
       "id": 215,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19527,6 +19937,7 @@
     },
     {
       "id": 216,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19548,6 +19959,7 @@
     },
     {
       "id": 217,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19569,6 +19981,7 @@
     },
     {
       "id": 218,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19590,6 +20003,7 @@
     },
     {
       "id": 219,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19611,6 +20025,7 @@
     },
     {
       "id": 220,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19632,6 +20047,7 @@
     },
     {
       "id": 221,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19653,6 +20069,7 @@
     },
     {
       "id": 222,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19674,6 +20091,7 @@
     },
     {
       "id": 223,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19695,6 +20113,7 @@
     },
     {
       "id": 224,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19716,6 +20135,7 @@
     },
     {
       "id": 225,
+      "team_id": 15,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19737,6 +20157,7 @@
     },
     {
       "id": 121,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19758,6 +20179,7 @@
     },
     {
       "id": 122,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19779,6 +20201,7 @@
     },
     {
       "id": 123,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19800,6 +20223,7 @@
     },
     {
       "id": 124,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19821,6 +20245,7 @@
     },
     {
       "id": 125,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19842,6 +20267,7 @@
     },
     {
       "id": 126,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19863,6 +20289,7 @@
     },
     {
       "id": 127,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19884,6 +20311,7 @@
     },
     {
       "id": 128,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19905,6 +20333,7 @@
     },
     {
       "id": 129,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19926,6 +20355,7 @@
     },
     {
       "id": 130,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19947,6 +20377,7 @@
     },
     {
       "id": 131,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19968,6 +20399,7 @@
     },
     {
       "id": 132,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -19989,6 +20421,7 @@
     },
     {
       "id": 133,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20010,6 +20443,7 @@
     },
     {
       "id": 134,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20031,6 +20465,7 @@
     },
     {
       "id": 135,
+      "team_id": 9,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20052,6 +20487,7 @@
     },
     {
       "id": 136,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20073,6 +20509,7 @@
     },
     {
       "id": 137,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20094,6 +20531,7 @@
     },
     {
       "id": 138,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20115,6 +20553,7 @@
     },
     {
       "id": 139,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20136,6 +20575,7 @@
     },
     {
       "id": 140,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20157,6 +20597,7 @@
     },
     {
       "id": 141,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20178,6 +20619,7 @@
     },
     {
       "id": 142,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20199,6 +20641,7 @@
     },
     {
       "id": 143,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20220,6 +20663,7 @@
     },
     {
       "id": 144,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20241,6 +20685,7 @@
     },
     {
       "id": 145,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20262,6 +20707,7 @@
     },
     {
       "id": 146,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20283,6 +20729,7 @@
     },
     {
       "id": 147,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20304,6 +20751,7 @@
     },
     {
       "id": 148,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20325,6 +20773,7 @@
     },
     {
       "id": 149,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20346,6 +20795,7 @@
     },
     {
       "id": 150,
+      "team_id": 10,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20367,6 +20817,7 @@
     },
     {
       "id": 151,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20388,6 +20839,7 @@
     },
     {
       "id": 152,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20409,6 +20861,7 @@
     },
     {
       "id": 153,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20430,6 +20883,7 @@
     },
     {
       "id": 154,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20451,6 +20905,7 @@
     },
     {
       "id": 155,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20472,6 +20927,7 @@
     },
     {
       "id": 156,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20493,6 +20949,7 @@
     },
     {
       "id": 157,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20514,6 +20971,7 @@
     },
     {
       "id": 158,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20535,6 +20993,7 @@
     },
     {
       "id": 159,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20556,6 +21015,7 @@
     },
     {
       "id": 160,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20577,6 +21037,7 @@
     },
     {
       "id": 161,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20598,6 +21059,7 @@
     },
     {
       "id": 162,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20619,6 +21081,7 @@
     },
     {
       "id": 163,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20640,6 +21103,7 @@
     },
     {
       "id": 164,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20661,6 +21125,7 @@
     },
     {
       "id": 165,
+      "team_id": 11,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20682,6 +21147,7 @@
     },
     {
       "id": 166,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20703,6 +21169,7 @@
     },
     {
       "id": 167,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20724,6 +21191,7 @@
     },
     {
       "id": 168,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20745,6 +21213,7 @@
     },
     {
       "id": 169,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20766,6 +21235,7 @@
     },
     {
       "id": 170,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20787,6 +21257,7 @@
     },
     {
       "id": 171,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20808,6 +21279,7 @@
     },
     {
       "id": 172,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20829,6 +21301,7 @@
     },
     {
       "id": 173,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20850,6 +21323,7 @@
     },
     {
       "id": 174,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20871,6 +21345,7 @@
     },
     {
       "id": 175,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20892,6 +21367,7 @@
     },
     {
       "id": 176,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20913,6 +21389,7 @@
     },
     {
       "id": 177,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20934,6 +21411,7 @@
     },
     {
       "id": 178,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20955,6 +21433,7 @@
     },
     {
       "id": 179,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20976,6 +21455,7 @@
     },
     {
       "id": 180,
+      "team_id": 12,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -20997,6 +21477,7 @@
     },
     {
       "id": 181,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21018,6 +21499,7 @@
     },
     {
       "id": 182,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21039,6 +21521,7 @@
     },
     {
       "id": 183,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21060,6 +21543,7 @@
     },
     {
       "id": 184,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21081,6 +21565,7 @@
     },
     {
       "id": 185,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21102,6 +21587,7 @@
     },
     {
       "id": 186,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21123,6 +21609,7 @@
     },
     {
       "id": 187,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21144,6 +21631,7 @@
     },
     {
       "id": 188,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21165,6 +21653,7 @@
     },
     {
       "id": 189,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21186,6 +21675,7 @@
     },
     {
       "id": 190,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21207,6 +21697,7 @@
     },
     {
       "id": 191,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21228,6 +21719,7 @@
     },
     {
       "id": 192,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21249,6 +21741,7 @@
     },
     {
       "id": 193,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21270,6 +21763,7 @@
     },
     {
       "id": 194,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21291,6 +21785,7 @@
     },
     {
       "id": 195,
+      "team_id": 13,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21312,6 +21807,7 @@
     },
     {
       "id": 256,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21333,6 +21829,7 @@
     },
     {
       "id": 257,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21354,6 +21851,7 @@
     },
     {
       "id": 258,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21375,6 +21873,7 @@
     },
     {
       "id": 259,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21396,6 +21895,7 @@
     },
     {
       "id": 260,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21417,6 +21917,7 @@
     },
     {
       "id": 261,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21438,6 +21939,7 @@
     },
     {
       "id": 262,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21459,6 +21961,7 @@
     },
     {
       "id": 263,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21480,6 +21983,7 @@
     },
     {
       "id": 264,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21501,6 +22005,7 @@
     },
     {
       "id": 265,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21522,6 +22027,7 @@
     },
     {
       "id": 266,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21543,6 +22049,7 @@
     },
     {
       "id": 267,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21564,6 +22071,7 @@
     },
     {
       "id": 268,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21585,6 +22093,7 @@
     },
     {
       "id": 269,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21606,6 +22115,7 @@
     },
     {
       "id": 270,
+      "team_id": 18,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21627,6 +22137,7 @@
     },
     {
       "id": 226,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21648,6 +22159,7 @@
     },
     {
       "id": 227,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21669,6 +22181,7 @@
     },
     {
       "id": 228,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21690,6 +22203,7 @@
     },
     {
       "id": 229,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21711,6 +22225,7 @@
     },
     {
       "id": 230,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21732,6 +22247,7 @@
     },
     {
       "id": 231,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21753,6 +22269,7 @@
     },
     {
       "id": 232,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21774,6 +22291,7 @@
     },
     {
       "id": 233,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21795,6 +22313,7 @@
     },
     {
       "id": 234,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21816,6 +22335,7 @@
     },
     {
       "id": 235,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21837,6 +22357,7 @@
     },
     {
       "id": 236,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21858,6 +22379,7 @@
     },
     {
       "id": 237,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21879,6 +22401,7 @@
     },
     {
       "id": 238,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21900,6 +22423,7 @@
     },
     {
       "id": 239,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21921,6 +22445,7 @@
     },
     {
       "id": 240,
+      "team_id": 16,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21942,6 +22467,7 @@
     },
     {
       "id": 241,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21963,6 +22489,7 @@
     },
     {
       "id": 242,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -21984,6 +22511,7 @@
     },
     {
       "id": 243,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22005,6 +22533,7 @@
     },
     {
       "id": 244,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22026,6 +22555,7 @@
     },
     {
       "id": 245,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22047,6 +22577,7 @@
     },
     {
       "id": 246,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22068,6 +22599,7 @@
     },
     {
       "id": 247,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22089,6 +22621,7 @@
     },
     {
       "id": 248,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22110,6 +22643,7 @@
     },
     {
       "id": 249,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22131,6 +22665,7 @@
     },
     {
       "id": 250,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22152,6 +22687,7 @@
     },
     {
       "id": 251,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22173,6 +22709,7 @@
     },
     {
       "id": 252,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22194,6 +22731,7 @@
     },
     {
       "id": 253,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22215,6 +22753,7 @@
     },
     {
       "id": 254,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22236,6 +22775,7 @@
     },
     {
       "id": 255,
+      "team_id": 17,
       "year": 2023,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22257,6 +22797,7 @@
     },
     {
       "id": 91,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22278,6 +22819,7 @@
     },
     {
       "id": 106,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22299,6 +22841,7 @@
     },
     {
       "id": 92,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22320,6 +22863,7 @@
     },
     {
       "id": 107,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22341,6 +22885,7 @@
     },
     {
       "id": 93,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22362,6 +22907,7 @@
     },
     {
       "id": 108,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22383,6 +22929,7 @@
     },
     {
       "id": 94,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22404,6 +22951,7 @@
     },
     {
       "id": 109,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22425,6 +22973,7 @@
     },
     {
       "id": 95,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22446,6 +22995,7 @@
     },
     {
       "id": 110,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22467,6 +23017,7 @@
     },
     {
       "id": 96,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22488,6 +23039,7 @@
     },
     {
       "id": 111,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22509,6 +23061,7 @@
     },
     {
       "id": 97,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22530,6 +23083,7 @@
     },
     {
       "id": 112,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22551,6 +23105,7 @@
     },
     {
       "id": 98,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22572,6 +23127,7 @@
     },
     {
       "id": 113,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22593,6 +23149,7 @@
     },
     {
       "id": 99,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22614,6 +23171,7 @@
     },
     {
       "id": 114,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22635,6 +23193,7 @@
     },
     {
       "id": 100,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22656,6 +23215,7 @@
     },
     {
       "id": 115,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22677,6 +23237,7 @@
     },
     {
       "id": 101,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22698,6 +23259,7 @@
     },
     {
       "id": 116,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22719,6 +23281,7 @@
     },
     {
       "id": 102,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22740,6 +23303,7 @@
     },
     {
       "id": 117,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22761,6 +23325,7 @@
     },
     {
       "id": 103,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22782,6 +23347,7 @@
     },
     {
       "id": 118,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22803,6 +23369,7 @@
     },
     {
       "id": 104,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22824,6 +23391,7 @@
     },
     {
       "id": 119,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22845,6 +23413,7 @@
     },
     {
       "id": 105,
+      "team_id": 7,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22866,6 +23435,7 @@
     },
     {
       "id": 120,
+      "team_id": 8,
       "year": 2022,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -22887,6 +23457,7 @@
     },
     {
       "id": 46,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22908,6 +23479,7 @@
     },
     {
       "id": 47,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22929,6 +23501,7 @@
     },
     {
       "id": 48,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22950,6 +23523,7 @@
     },
     {
       "id": 49,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22971,6 +23545,7 @@
     },
     {
       "id": 50,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -22992,6 +23567,7 @@
     },
     {
       "id": 51,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23013,6 +23589,7 @@
     },
     {
       "id": 52,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23034,6 +23611,7 @@
     },
     {
       "id": 53,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23055,6 +23633,7 @@
     },
     {
       "id": 54,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23076,6 +23655,7 @@
     },
     {
       "id": 55,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23097,6 +23677,7 @@
     },
     {
       "id": 56,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23118,6 +23699,7 @@
     },
     {
       "id": 57,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23139,6 +23721,7 @@
     },
     {
       "id": 58,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23160,6 +23743,7 @@
     },
     {
       "id": 59,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23181,6 +23765,7 @@
     },
     {
       "id": 60,
+      "team_id": 4,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23202,6 +23787,7 @@
     },
     {
       "id": 16,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23223,6 +23809,7 @@
     },
     {
       "id": 17,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23244,6 +23831,7 @@
     },
     {
       "id": 18,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23265,6 +23853,7 @@
     },
     {
       "id": 19,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23286,6 +23875,7 @@
     },
     {
       "id": 20,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23307,6 +23897,7 @@
     },
     {
       "id": 21,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23328,6 +23919,7 @@
     },
     {
       "id": 22,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23349,6 +23941,7 @@
     },
     {
       "id": 23,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23370,6 +23963,7 @@
     },
     {
       "id": 24,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23391,6 +23985,7 @@
     },
     {
       "id": 25,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23412,6 +24007,7 @@
     },
     {
       "id": 26,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23433,6 +24029,7 @@
     },
     {
       "id": 27,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23454,6 +24051,7 @@
     },
     {
       "id": 28,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23475,6 +24073,7 @@
     },
     {
       "id": 29,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23496,6 +24095,7 @@
     },
     {
       "id": 30,
+      "team_id": 2,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23517,6 +24117,7 @@
     },
     {
       "id": 31,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23538,6 +24139,7 @@
     },
     {
       "id": 32,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23559,6 +24161,7 @@
     },
     {
       "id": 33,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23580,6 +24183,7 @@
     },
     {
       "id": 34,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23601,6 +24205,7 @@
     },
     {
       "id": 35,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23622,6 +24227,7 @@
     },
     {
       "id": 36,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23643,6 +24249,7 @@
     },
     {
       "id": 37,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23664,6 +24271,7 @@
     },
     {
       "id": 38,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23685,6 +24293,7 @@
     },
     {
       "id": 39,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23706,6 +24315,7 @@
     },
     {
       "id": 40,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23727,6 +24337,7 @@
     },
     {
       "id": 41,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23748,6 +24359,7 @@
     },
     {
       "id": 42,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23769,6 +24381,7 @@
     },
     {
       "id": 43,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23790,6 +24403,7 @@
     },
     {
       "id": 44,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23811,6 +24425,7 @@
     },
     {
       "id": 45,
+      "team_id": 3,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23832,6 +24447,7 @@
     },
     {
       "id": 61,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23853,6 +24469,7 @@
     },
     {
       "id": 62,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23874,6 +24491,7 @@
     },
     {
       "id": 63,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23895,6 +24513,7 @@
     },
     {
       "id": 64,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23916,6 +24535,7 @@
     },
     {
       "id": 65,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23937,6 +24557,7 @@
     },
     {
       "id": 66,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23958,6 +24579,7 @@
     },
     {
       "id": 67,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -23979,6 +24601,7 @@
     },
     {
       "id": 68,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24000,6 +24623,7 @@
     },
     {
       "id": 69,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24021,6 +24645,7 @@
     },
     {
       "id": 70,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24042,6 +24667,7 @@
     },
     {
       "id": 71,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24063,6 +24689,7 @@
     },
     {
       "id": 72,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24084,6 +24711,7 @@
     },
     {
       "id": 73,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24105,6 +24733,7 @@
     },
     {
       "id": 74,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24126,6 +24755,7 @@
     },
     {
       "id": 75,
+      "team_id": 5,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24147,6 +24777,7 @@
     },
     {
       "id": 1,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24168,6 +24799,7 @@
     },
     {
       "id": 2,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24189,6 +24821,7 @@
     },
     {
       "id": 3,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24210,6 +24843,7 @@
     },
     {
       "id": 4,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24231,6 +24865,7 @@
     },
     {
       "id": 5,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24252,6 +24887,7 @@
     },
     {
       "id": 6,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24273,6 +24909,7 @@
     },
     {
       "id": 7,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24294,6 +24931,7 @@
     },
     {
       "id": 8,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24315,6 +24953,7 @@
     },
     {
       "id": 9,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24336,6 +24975,7 @@
     },
     {
       "id": 10,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24357,6 +24997,7 @@
     },
     {
       "id": 11,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24378,6 +25019,7 @@
     },
     {
       "id": 12,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24399,6 +25041,7 @@
     },
     {
       "id": 13,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24420,6 +25063,7 @@
     },
     {
       "id": 14,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24441,6 +25085,7 @@
     },
     {
       "id": 15,
+      "team_id": 1,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24462,6 +25107,7 @@
     },
     {
       "id": 76,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24483,6 +25129,7 @@
     },
     {
       "id": 77,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24504,6 +25151,7 @@
     },
     {
       "id": 78,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24525,6 +25173,7 @@
     },
     {
       "id": 79,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24546,6 +25195,7 @@
     },
     {
       "id": 80,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24567,6 +25217,7 @@
     },
     {
       "id": 81,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24588,6 +25239,7 @@
     },
     {
       "id": 82,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24609,6 +25261,7 @@
     },
     {
       "id": 83,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24630,6 +25283,7 @@
     },
     {
       "id": 84,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24651,6 +25305,7 @@
     },
     {
       "id": 85,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24672,6 +25327,7 @@
     },
     {
       "id": 86,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24693,6 +25349,7 @@
     },
     {
       "id": 87,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24714,6 +25371,7 @@
     },
     {
       "id": 88,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24735,6 +25393,7 @@
     },
     {
       "id": 89,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24756,6 +25415,7 @@
     },
     {
       "id": 90,
+      "team_id": 6,
       "year": 2022,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
@@ -24788,7 +25448,8 @@
       "team_name": "OSI Grils 2025",
       "total_time_text": "1:07:25",
       "total_seconds": 4045,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "women"
     },
     {
       "id": 42,
@@ -24801,7 +25462,8 @@
       "team_name": "OSI herrer 1 2025",
       "total_time_text": "57:12",
       "total_seconds": 3432,
-      "team_rank": 4
+      "team_rank": 4,
+      "division": "men"
     },
     {
       "id": 44,
@@ -24814,7 +25476,8 @@
       "team_name": "OSI O2 mix 2025",
       "total_time_text": "1:10:20",
       "total_seconds": 4220,
-      "team_rank": 8
+      "team_rank": 8,
+      "division": "mixed"
     },
     {
       "id": 36,
@@ -24827,7 +25490,8 @@
       "team_name": "Elite 1 - menn 2025",
       "total_time_text": "50:50",
       "total_seconds": 3050,
-      "team_rank": 5
+      "team_rank": 5,
+      "division": "men"
     },
     {
       "id": 37,
@@ -24840,7 +25504,8 @@
       "team_name": "Elite 2 - menn  2025",
       "total_time_text": "52:44",
       "total_seconds": 3164,
-      "team_rank": 12
+      "team_rank": 12,
+      "division": "men"
     },
     {
       "id": 32,
@@ -24853,7 +25518,8 @@
       "team_name": "SK Vidar 1  2025",
       "total_time_text": "58:17",
       "total_seconds": 3497,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "women"
     },
     {
       "id": 33,
@@ -24866,7 +25532,8 @@
       "team_name": "SK Vidar 2  2025",
       "total_time_text": "1:01:49",
       "total_seconds": 3709,
-      "team_rank": 7
+      "team_rank": 7,
+      "division": "women"
     },
     {
       "id": 34,
@@ -24879,7 +25546,8 @@
       "team_name": "SK Vidar Dreamteam  2025",
       "total_time_text": "1:05:50",
       "total_seconds": 3950,
-      "team_rank": 18
+      "team_rank": 18,
+      "division": "women"
     },
     {
       "id": 35,
@@ -24892,7 +25560,8 @@
       "team_name": "SK Vidar Queens  2025",
       "total_time_text": "1:04:59",
       "total_seconds": 3899,
-      "team_rank": 15
+      "team_rank": 15,
+      "division": "women"
     },
     {
       "id": 38,
@@ -24905,7 +25574,8 @@
       "team_name": "Menn senior 1  2025",
       "total_time_text": "54:43",
       "total_seconds": 3283,
-      "team_rank": 9
+      "team_rank": 9,
+      "division": "men"
     },
     {
       "id": 39,
@@ -24918,7 +25588,8 @@
       "team_name": "SK Vidar MS 2  2025",
       "total_time_text": "59:03",
       "total_seconds": 3543,
-      "team_rank": 29
+      "team_rank": 29,
+      "division": "men"
     },
     {
       "id": 40,
@@ -24931,7 +25602,8 @@
       "team_name": "bue-og-miks  2025",
       "total_time_text": "1:05:11",
       "total_seconds": 3911,
-      "team_rank": 3
+      "team_rank": 3,
+      "division": "mixed"
     },
     {
       "id": 41,
@@ -24944,7 +25616,8 @@
       "team_name": "miks-og-bue  2025",
       "total_time_text": "1:08:22",
       "total_seconds": 4102,
-      "team_rank": 6
+      "team_rank": 6,
+      "division": "mixed"
     },
     {
       "id": 30,
@@ -24957,7 +25630,8 @@
       "team_name": "OSI F student 2024",
       "total_time_text": "55:59",
       "total_seconds": 3359,
-      "team_rank": 1
+      "team_rank": 1,
+      "division": "men"
     },
     {
       "id": 31,
@@ -24970,7 +25644,8 @@
       "team_name": "OSI damer 2024",
       "total_time_text": "1:06:35",
       "total_seconds": 3995,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "women"
     },
     {
       "id": 25,
@@ -24983,7 +25658,8 @@
       "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
       "total_time_text": "50:36",
       "total_seconds": 3036,
-      "team_rank": 4
+      "team_rank": 4,
+      "division": "men"
     },
     {
       "id": 26,
@@ -24996,7 +25672,8 @@
       "team_name": "SK Vidar 2 Elite 2024",
       "total_time_text": "53:03",
       "total_seconds": 3183,
-      "team_rank": 12
+      "team_rank": 12,
+      "division": "men"
     },
     {
       "id": 21,
@@ -25009,7 +25686,8 @@
       "team_name": "SK Vidar Elite 1 2024",
       "total_time_text": "59:02",
       "total_seconds": 3542,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "women"
     },
     {
       "id": 22,
@@ -25022,7 +25700,8 @@
       "team_name": "SK Vidar Elite 2 2024",
       "total_time_text": "1:02:32",
       "total_seconds": 3752,
-      "team_rank": 9
+      "team_rank": 9,
+      "division": "women"
     },
     {
       "id": 23,
@@ -25035,7 +25714,8 @@
       "team_name": "SK Vidar Elite Dreamteam 2024",
       "total_time_text": "1:05:47",
       "total_seconds": 3947,
-      "team_rank": 14
+      "team_rank": 14,
+      "division": "women"
     },
     {
       "id": 24,
@@ -25048,7 +25728,8 @@
       "team_name": "SK Vidar Villa 2024",
       "total_time_text": "1:06:08",
       "total_seconds": 3968,
-      "team_rank": 16
+      "team_rank": 16,
+      "division": "women"
     },
     {
       "id": 27,
@@ -25061,7 +25742,8 @@
       "team_name": "Sk Vidar Senior 1 2024",
       "total_time_text": "54:38",
       "total_seconds": 3278,
-      "team_rank": 6
+      "team_rank": 6,
+      "division": "men"
     },
     {
       "id": 28,
@@ -25074,7 +25756,8 @@
       "team_name": "Sk Vidar senior 2 2024",
       "total_time_text": "1:00:02",
       "total_seconds": 3602,
-      "team_rank": 16
+      "team_rank": 16,
+      "division": "men"
     },
     {
       "id": 29,
@@ -25087,7 +25770,8 @@
       "team_name": "Sk Vidar senior 3 2024",
       "total_time_text": "1:02:04",
       "total_seconds": 3724,
-      "team_rank": 31
+      "team_rank": 31,
+      "division": "men"
     },
     {
       "id": 19,
@@ -25100,7 +25784,8 @@
       "team_name": "OSI F student 2023",
       "total_time_text": "56:53",
       "total_seconds": 3413,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "men"
     },
     {
       "id": 20,
@@ -25113,7 +25798,8 @@
       "team_name": "OSI damer 2023",
       "total_time_text": "1:07:42",
       "total_seconds": 4062,
-      "team_rank": 3
+      "team_rank": 3,
+      "division": "women"
     },
     {
       "id": 14,
@@ -25126,7 +25812,8 @@
       "team_name": "SK Vidar 1 Elite 2023",
       "total_time_text": "50:58",
       "total_seconds": 3058,
-      "team_rank": 5
+      "team_rank": 5,
+      "division": "men"
     },
     {
       "id": 15,
@@ -25139,7 +25826,8 @@
       "team_name": "SK Vidar 2 Elite 2023",
       "total_time_text": "52:49",
       "total_seconds": 3169,
-      "team_rank": 10
+      "team_rank": 10,
+      "division": "men"
     },
     {
       "id": 9,
@@ -25152,7 +25840,8 @@
       "team_name": "SK Vidar Elite 1 2023",
       "total_time_text": "58:49",
       "total_seconds": 3529,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "women"
     },
     {
       "id": 10,
@@ -25165,7 +25854,8 @@
       "team_name": "SK Vidar Elite 2 2023",
       "total_time_text": "1:01:16",
       "total_seconds": 3676,
-      "team_rank": 6
+      "team_rank": 6,
+      "division": "women"
     },
     {
       "id": 11,
@@ -25178,7 +25868,8 @@
       "team_name": "SK Vidar Elite 3 2023",
       "total_time_text": "1:04:22",
       "total_seconds": 3862,
-      "team_rank": 9
+      "team_rank": 9,
+      "division": "women"
     },
     {
       "id": 12,
@@ -25191,7 +25882,8 @@
       "team_name": "SK Vidar Senior 1 2023",
       "total_time_text": "1:08:52",
       "total_seconds": 4132,
-      "team_rank": 1
+      "team_rank": 1,
+      "division": "women"
     },
     {
       "id": 16,
@@ -25204,7 +25896,8 @@
       "team_name": "Sk Vidar Senior 1 2023",
       "total_time_text": "56:15",
       "total_seconds": 3375,
-      "team_rank": 7
+      "team_rank": 7,
+      "division": "men"
     },
     {
       "id": 17,
@@ -25217,7 +25910,8 @@
       "team_name": "Sk Vidar senior 2 2023",
       "total_time_text": "1:00:02",
       "total_seconds": 3602,
-      "team_rank": 22
+      "team_rank": 22,
+      "division": "men"
     },
     {
       "id": 13,
@@ -25230,7 +25924,8 @@
       "team_name": "SK Vidar Veteran 2023",
       "total_time_text": "1:08:40",
       "total_seconds": 4120,
-      "team_rank": 1
+      "team_rank": 1,
+      "division": "women"
     },
     {
       "id": 18,
@@ -25243,7 +25938,8 @@
       "team_name": "Sk Vidar Bue & Mix",
       "total_time_text": "1:06:52",
       "total_seconds": 4012,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "mixed"
     },
     {
       "id": 8,
@@ -25256,7 +25952,8 @@
       "team_name": "OSI F student 2022",
       "total_time_text": "1:07:13",
       "total_seconds": 4033,
-      "team_rank": 1
+      "team_rank": 1,
+      "division": "women"
     },
     {
       "id": 7,
@@ -25269,7 +25966,8 @@
       "team_name": "OSI F student 2022",
       "total_time_text": "57:50",
       "total_seconds": 3470,
-      "team_rank": 3
+      "team_rank": 3,
+      "division": "men"
     },
     {
       "id": 4,
@@ -25282,7 +25980,8 @@
       "team_name": "SK Vidar Elite 2022",
       "total_time_text": "51:54",
       "total_seconds": 3114,
-      "team_rank": 4
+      "team_rank": 4,
+      "division": "men"
     },
     {
       "id": 1,
@@ -25295,7 +25994,8 @@
       "team_name": "SK Vidar elite 2022",
       "total_time_text": "58:46",
       "total_seconds": 3526,
-      "team_rank": 3
+      "team_rank": 3,
+      "division": "women"
     },
     {
       "id": 2,
@@ -25308,7 +26008,8 @@
       "team_name": "SK Vidar Senior 1 2022",
       "total_time_text": "1:03:14",
       "total_seconds": 3794,
-      "team_rank": 1
+      "team_rank": 1,
+      "division": "women"
     },
     {
       "id": 3,
@@ -25321,7 +26022,8 @@
       "team_name": "SK Vidar Senior 2 2022",
       "total_time_text": "1:08:57",
       "total_seconds": 4137,
-      "team_rank": 2
+      "team_rank": 2,
+      "division": "women"
     },
     {
       "id": 5,
@@ -25334,7 +26036,8 @@
       "team_name": "SK Vidar Senior 2022",
       "total_time_text": "54:01",
       "total_seconds": 3241,
-      "team_rank": 1
+      "team_rank": 1,
+      "division": "men"
     },
     {
       "id": 6,
@@ -25347,7 +26050,8 @@
       "team_name": "Sk Vidar senior 2 2022",
       "total_time_text": "59:01",
       "total_seconds": 3541,
-      "team_rank": 13
+      "team_rank": 13,
+      "division": "men"
     }
   ],
   "people": [
@@ -36242,5 +36946,76 @@
       "decision": "reject",
       "notes": "Avvist av bruker 2026-04-15. Riktig kanonisk navn er motsatt vei."
     }
-  ]
+  ],
+  "audit": {
+    "teamWinners": [
+      {
+        "team_id": 30,
+        "year": 2024,
+        "organization_code": "OSIF",
+        "class_code": "StudOSI",
+        "class_label": "OSI student",
+        "division": "men",
+        "team_name": "OSI F student 2024",
+        "total_time_text": "55:59",
+        "team_rank": 1
+      },
+      {
+        "team_id": 12,
+        "year": 2023,
+        "organization_code": "SKV",
+        "class_code": "SeniorSKV",
+        "class_label": "SK Vidar senior",
+        "division": "women",
+        "team_name": "SK Vidar Senior 1 2023",
+        "total_time_text": "1:08:52",
+        "team_rank": 1
+      },
+      {
+        "team_id": 13,
+        "year": 2023,
+        "organization_code": "SKV",
+        "class_code": "Veteran",
+        "class_label": "SK Vidar veteran",
+        "division": "women",
+        "team_name": "SK Vidar Veteran 2023",
+        "total_time_text": "1:08:40",
+        "team_rank": 1
+      },
+      {
+        "team_id": 8,
+        "year": 2022,
+        "organization_code": "OSIF",
+        "class_code": "StudOSI",
+        "class_label": "OSI student",
+        "division": "women",
+        "team_name": "OSI F student 2022",
+        "total_time_text": "1:07:13",
+        "team_rank": 1
+      },
+      {
+        "team_id": 2,
+        "year": 2022,
+        "organization_code": "SKV",
+        "class_code": "SeniorSKV",
+        "class_label": "SK Vidar senior",
+        "division": "women",
+        "team_name": "SK Vidar Senior 1 2022",
+        "total_time_text": "1:03:14",
+        "team_rank": 1
+      },
+      {
+        "team_id": 5,
+        "year": 2022,
+        "organization_code": "SKV",
+        "class_code": "SeniorSKV",
+        "class_label": "SK Vidar senior",
+        "division": "men",
+        "team_name": "SK Vidar Senior 2022",
+        "total_time_text": "54:01",
+        "team_rank": 1
+      }
+    ],
+    "teamDivisionConflicts": []
+  }
 }

@@ -61,6 +61,8 @@ CLASS_META = {
     },
 }
 
+MIX_CLASS_CODES = {"MiksSKV", "MiksOSI"}
+
 ORGANIZATIONS = {
     "SKV": {"name": "SK Vidar", "short_name": "SKV"},
     "OSIF": {"name": "OSI Friidrett", "short_name": "OSIF"},
@@ -1092,6 +1094,7 @@ def export_site_data(
             """
             SELECT
                 r.id,
+                t.id AS team_id,
                 t.year,
                 o.name AS organization_name,
                 o.short_name AS organization_code,
@@ -1144,6 +1147,52 @@ def export_site_data(
             ORDER BY t.year DESC, t.organization_code, tc.sort_order, t.team_name
             """
         )
+    ]
+
+    team_divisions: defaultdict[int, set[str]] = defaultdict(set)
+    for row in results:
+        if row["class_code"] in MIX_CLASS_CODES:
+            team_divisions[row["team_id"]].add("mixed")
+        elif row["division"]:
+            team_divisions[row["team_id"]].add(row["division"])
+
+    division_audit = []
+    for row in teams:
+        if row["class_code"] in MIX_CLASS_CODES:
+            row["division"] = "mixed"
+            continue
+
+        divisions = {value for value in team_divisions.get(row["id"], set()) if value and value != "mixed"}
+        if len(divisions) == 1:
+            row["division"] = next(iter(divisions))
+        else:
+            row["division"] = "unknown"
+            if len(divisions) > 1:
+                division_audit.append(
+                    {
+                        "team_id": row["id"],
+                        "year": row["year"],
+                        "organization_code": row["organization_code"],
+                        "class_code": row["class_code"],
+                        "team_name": row["team_name"],
+                        "divisions": sorted(divisions),
+                    }
+                )
+
+    team_winners = [
+        {
+            "team_id": row["id"],
+            "year": row["year"],
+            "organization_code": row["organization_code"],
+            "class_code": row["class_code"],
+            "class_label": row["class_label"],
+            "division": row["division"],
+            "team_name": row["team_name"],
+            "total_time_text": row["total_time_text"],
+            "team_rank": row["team_rank"],
+        }
+        for row in teams
+        if row["team_rank"] == 1
     ]
 
     people_rows = [
@@ -1281,6 +1330,10 @@ def export_site_data(
         "teams": teams,
         "people": people_rows,
         "nameReview": review_rows,
+        "audit": {
+            "teamWinners": team_winners,
+            "teamDivisionConflicts": division_audit,
+        },
     }
 
     with (PUBLIC_DATA_DIR / "site-data.json").open("w", encoding="utf-8") as handle:

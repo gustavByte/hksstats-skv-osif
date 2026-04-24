@@ -1,6 +1,6 @@
 const app = document.querySelector("#app");
 
-const DATA_VERSION = "2026-04-24-v2-honours-filter";
+const DATA_VERSION = "2026-04-24-v2-team-archive";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
@@ -12,8 +12,15 @@ const DEFAULT_STATE = {
   honoursTab: "skv-men",
   honoursDisplay: "top5",
   search: "",
+  teamClub: "all",
+  teamGroup: "all",
+  teamDivision: "all",
+  teamPlacement: "all",
+  teamYear: "all",
+  teamView: "archive",
   filtersOpen: false,
   expandedHonours: {},
+  expandedTeams: {},
   data: null,
 };
 
@@ -46,6 +53,32 @@ const CLUB_META = {
   },
 };
 
+const TEAM_GROUP_META = {
+  elite: { label: "Elite", sort: 1, chipLabel: "Elite" },
+  senior: { label: "Senior", sort: 2, chipLabel: "Senior" },
+  student: { label: "Student", sort: 3, chipLabel: "Student" },
+  veteran: { label: "Veteran", sort: 4, chipLabel: "Veteran" },
+  superveteran: { label: "Superveteran", sort: 5, chipLabel: "Superveteran" },
+  mixSKV: { label: "Mix SK Vidar", sort: 98, chipLabel: "Mix SK Vidar" },
+  mixStud: { label: "Mix student", sort: 99, chipLabel: "Mix student" },
+};
+
+const TEAM_CLASS_GROUPS = {
+  EliteSKV: "elite",
+  SeniorSKV: "senior",
+  StudOSI: "student",
+  Veteran: "veteran",
+  MiksSKV: "mixSKV",
+  MiksOSI: "mixStud",
+};
+
+const DIVISION_META = {
+  men: { label: "Menn", sort: 1 },
+  women: { label: "Kvinner", sort: 2 },
+  mixed: { label: "Mix", sort: 3 },
+  unknown: { label: "Ukjent", sort: 4 },
+};
+
 const HONOUR_GROUP_FILTERS = {
   "skv-men": {
     organizationCode: "SKV",
@@ -76,6 +109,12 @@ const URL_STATE_KEYS = {
   tab: "honoursTab",
   show: "honoursDisplay",
   q: "search",
+  teamClub: "teamClub",
+  teamGroup: "teamGroup",
+  teamDivision: "teamDivision",
+  teamPlacement: "teamPlacement",
+  teamYear: "teamYear",
+  teamView: "teamView",
 };
 
 function escapeHtml(value) {
@@ -106,6 +145,12 @@ function readStateFromUrl() {
   state.honoursTab = params.get("tab") || DEFAULT_STATE.honoursTab;
   state.honoursDisplay = params.get("show") || DEFAULT_STATE.honoursDisplay;
   state.search = params.get("q") || DEFAULT_STATE.search;
+  state.teamClub = params.get("teamClub") || DEFAULT_STATE.teamClub;
+  state.teamGroup = params.get("teamGroup") || DEFAULT_STATE.teamGroup;
+  state.teamDivision = params.get("teamDivision") || DEFAULT_STATE.teamDivision;
+  state.teamPlacement = params.get("teamPlacement") || DEFAULT_STATE.teamPlacement;
+  state.teamYear = params.get("teamYear") || DEFAULT_STATE.teamYear;
+  state.teamView = params.get("teamView") || DEFAULT_STATE.teamView;
 }
 
 function normaliseState() {
@@ -113,6 +158,10 @@ function normaliseState() {
   const organizations = new Set((state.data.metadata.organizations ?? []).map((item) => item.code));
   const classes = new Set((state.data.metadata.classes ?? []).map((item) => item.code));
   const tabs = new Set((state.data.stageHonours ?? []).map((group) => group.key));
+  const teamGroups = new Set(Object.keys(TEAM_GROUP_META));
+  const teamDivisions = new Set(["men", "women", "mixed", "unknown"]);
+  const teamPlacements = new Set(["all", "wins", "podiums", "best", "bestTime"]);
+  const teamViews = new Set(["archive", "timeSeries"]);
 
   if (state.selectedYear !== "all" && !years.has(String(state.selectedYear))) {
     state.selectedYear = DEFAULT_STATE.selectedYear;
@@ -128,6 +177,24 @@ function normaliseState() {
   }
   if (!["top5", "top10"].includes(state.honoursDisplay)) {
     state.honoursDisplay = DEFAULT_STATE.honoursDisplay;
+  }
+  if (state.teamClub !== "all" && !organizations.has(state.teamClub)) {
+    state.teamClub = DEFAULT_STATE.teamClub;
+  }
+  if (state.teamGroup !== "all" && !teamGroups.has(state.teamGroup)) {
+    state.teamGroup = DEFAULT_STATE.teamGroup;
+  }
+  if (state.teamDivision !== "all" && !teamDivisions.has(state.teamDivision)) {
+    state.teamDivision = DEFAULT_STATE.teamDivision;
+  }
+  if (!teamPlacements.has(state.teamPlacement)) {
+    state.teamPlacement = DEFAULT_STATE.teamPlacement;
+  }
+  if (state.teamYear !== "all" && !years.has(String(state.teamYear))) {
+    state.teamYear = DEFAULT_STATE.teamYear;
+  }
+  if (!teamViews.has(state.teamView)) {
+    state.teamView = DEFAULT_STATE.teamView;
   }
 }
 
@@ -201,6 +268,66 @@ function getClubName(code) {
 function getClassName(code) {
   if (code === "all") return "Alle klasser";
   return state.data.metadata.classes.find((item) => item.code === code)?.label ?? code;
+}
+
+function getTeamId(row) {
+  return row?.team_id ?? row?.id ?? null;
+}
+
+function getTeamClassGroup(classCode) {
+  return TEAM_CLASS_GROUPS[classCode] ?? (/super/i.test(String(classCode ?? "")) ? "superveteran" : "veteran");
+}
+
+function getTeamGroupLabel(group) {
+  return TEAM_GROUP_META[group]?.label ?? group;
+}
+
+function getDivisionLabel(division) {
+  return DIVISION_META[division]?.label ?? DIVISION_META.unknown.label;
+}
+
+function sortGroupKeys(a, b) {
+  const aSort = TEAM_GROUP_META[a]?.sort ?? 50;
+  const bSort = TEAM_GROUP_META[b]?.sort ?? 50;
+  if (aSort !== bSort) return aSort - bSort;
+  return String(a).localeCompare(String(b), "no");
+}
+
+function sortDivisionKeys(a, b) {
+  const aSort = DIVISION_META[a]?.sort ?? DIVISION_META.unknown.sort;
+  const bSort = DIVISION_META[b]?.sort ?? DIVISION_META.unknown.sort;
+  if (aSort !== bSort) return aSort - bSort;
+  return String(a).localeCompare(String(b), "no");
+}
+
+function formatTimeDelta(seconds) {
+  if (!Number.isFinite(seconds)) {
+    return "-";
+  }
+  const sign = seconds > 0 ? "+" : seconds < 0 ? "-" : "";
+  const absoluteSeconds = Math.abs(seconds);
+  const hours = Math.floor(absoluteSeconds / 3600);
+  const minutes = Math.floor((absoluteSeconds % 3600) / 60);
+  const remainingSeconds = absoluteSeconds % 60;
+  const body = hours
+    ? `${hours}:${String(minutes).padStart(2, "0")}:${String(remainingSeconds).padStart(2, "0")}`
+    : `${minutes}:${String(remainingSeconds).padStart(2, "0")}`;
+  return `${sign}${body}`;
+}
+
+function formatBestTime(value) {
+  return value ? value : "—";
+}
+
+function formatStartsLabel(value) {
+  return `${formatNumber(value)} lag`;
+}
+
+function formatArchiveHeading(teamItem) {
+  if (teamItem.classGroup.startsWith("mix")) {
+    return `${formatRank(teamItem.teamRank)} i ${teamItem.classGroupLabel}`;
+  }
+  return `${formatRank(teamItem.teamRank)} i ${teamItem.classGroupLabel} ${teamItem.divisionLabel.toLowerCase()}`;
 }
 
 function getOverviewValue(label) {
@@ -301,13 +428,27 @@ function filterData() {
     return matchesYear && matchesOrganization && matchesClass && matchesSearch(haystack, searchValue);
   });
 
+  const resultTeamIds = new Set(filteredResults.map((row) => getTeamId(row)).filter(Boolean));
+
   const filteredTeams = state.data.teams.filter((row) => {
     const matchesYear = state.selectedYear === "all" || String(row.year) === state.selectedYear;
     const matchesOrganization =
       state.selectedOrganization === "all" || row.organization_code === state.selectedOrganization;
     const matchesClass = state.selectedClass === "all" || row.class_code === state.selectedClass;
-    const haystack = [row.team_name, row.class_label, row.organization_name].join(" ");
-    return matchesYear && matchesOrganization && matchesClass && matchesSearch(haystack, searchValue);
+    const haystack = [
+      row.team_name,
+      row.class_label,
+      row.organization_name,
+      getDivisionLabel(row.division),
+      getTeamGroupLabel(getTeamClassGroup(row.class_code)),
+    ].join(" ");
+    const matchesTeam = matchesSearch(haystack, searchValue);
+    return (
+      matchesYear &&
+      matchesOrganization &&
+      matchesClass &&
+      (!searchValue || matchesTeam || resultTeamIds.has(getTeamId(row)))
+    );
   });
 
   return {
@@ -531,6 +672,317 @@ function buildClassBreakdown(filteredResults) {
     .sort((a, b) => b.results - a.results);
 }
 
+function buildResultsByTeamId(results) {
+  const grouped = new Map();
+  for (const row of results) {
+    const teamId = getTeamId(row);
+    if (!teamId) continue;
+    const entries = grouped.get(teamId) ?? [];
+    entries.push({
+      ...row,
+      stage_name: cleanStageName(row.stage_label),
+      divisionLabel: getDivisionLabel(row.division),
+    });
+    grouped.set(teamId, entries);
+  }
+
+  for (const entries of grouped.values()) {
+    entries.sort((a, b) => a.stage_number - b.stage_number);
+  }
+
+  return grouped;
+}
+
+function getTeamDivision(team, resultsByTeamId) {
+  const classGroup = getTeamClassGroup(team.class_code);
+  if (classGroup === "mixSKV" || classGroup === "mixStud") {
+    return "mixed";
+  }
+  if (team.division && team.division !== "unknown") {
+    return team.division;
+  }
+
+  const divisions = new Set(
+    (resultsByTeamId.get(getTeamId(team)) ?? [])
+      .map((entry) => entry.division)
+      .filter((value) => value && value !== "mixed"),
+  );
+  if (divisions.size === 1) {
+    return [...divisions][0];
+  }
+  return "unknown";
+}
+
+function getBestTeamByTotalTime(teams) {
+  return teams
+    .filter((team) => Number.isFinite(team.totalSeconds))
+    .slice()
+    .sort((a, b) => a.totalSeconds - b.totalSeconds || (a.teamRank ?? 999) - (b.teamRank ?? 999))[0] ?? null;
+}
+
+function buildTeamArchiveItems(filteredTeams, resultsByTeamId) {
+  const items = filteredTeams.map((team) => {
+    const teamId = getTeamId(team);
+    const lineup = (resultsByTeamId.get(teamId) ?? []).map((entry) => ({
+      stage_number: entry.stage_number,
+      stage_label: entry.stage_label,
+      stage_name: entry.stage_name,
+      person_name: entry.person_name,
+      split_text: entry.split_text,
+      category_rank: entry.category_rank,
+      oa_rank: entry.oa_rank,
+    }));
+    const classGroup = getTeamClassGroup(team.class_code);
+    const division = getTeamDivision(team, resultsByTeamId);
+    return {
+      id: teamId,
+      year: team.year,
+      organizationCode: team.organization_code,
+      organizationName: team.organization_name,
+      classCode: team.class_code,
+      classLabel: team.class_label,
+      classGroup,
+      classGroupLabel: getTeamGroupLabel(classGroup),
+      division,
+      divisionLabel: getDivisionLabel(division),
+      teamName: team.team_name,
+      totalTimeText: team.total_time_text,
+      totalSeconds: Number.isFinite(team.total_seconds) ? team.total_seconds : null,
+      teamRank: Number.isFinite(team.team_rank) ? team.team_rank : null,
+      lineup,
+      stageCount: lineup.length,
+      participants: [...new Set(lineup.map((entry) => entry.person_name))],
+      isWinner: team.team_rank === 1,
+      isPodium: Number.isFinite(team.team_rank) && team.team_rank >= 1 && team.team_rank <= 3,
+      isBestRankInGroup: false,
+      isBestTimeInGroup: false,
+    };
+  });
+
+  const grouped = new Map();
+  for (const item of items) {
+    const groupKey = `${item.organizationCode}|${item.classGroup}|${item.division}`;
+    const entries = grouped.get(groupKey) ?? [];
+    entries.push(item);
+    grouped.set(groupKey, entries);
+  }
+
+  for (const entries of grouped.values()) {
+    const bestRank = entries.reduce(
+      (current, entry) => (Number.isFinite(entry.teamRank) ? Math.min(current, entry.teamRank) : current),
+      Number.POSITIVE_INFINITY,
+    );
+    const bestTime = entries.reduce(
+      (current, entry) => (Number.isFinite(entry.totalSeconds) ? Math.min(current, entry.totalSeconds) : current),
+      Number.POSITIVE_INFINITY,
+    );
+    entries.forEach((entry) => {
+      entry.isBestRankInGroup = Number.isFinite(entry.teamRank) && entry.teamRank === bestRank;
+      entry.isBestTimeInGroup = Number.isFinite(entry.totalSeconds) && entry.totalSeconds === bestTime;
+    });
+  }
+
+  return items.sort((a, b) => {
+    if (b.year !== a.year) return b.year - a.year;
+    const aRank = a.teamRank ?? Number.POSITIVE_INFINITY;
+    const bRank = b.teamRank ?? Number.POSITIVE_INFINITY;
+    if (aRank !== bRank) return aRank - bRank;
+    const aTime = a.totalSeconds ?? Number.POSITIVE_INFINITY;
+    const bTime = b.totalSeconds ?? Number.POSITIVE_INFINITY;
+    if (aTime !== bTime) return aTime - bTime;
+    return a.teamName.localeCompare(b.teamName, "no");
+  });
+}
+
+function buildTeamHonoursByClub(filteredTeams, resultsByTeamId) {
+  const archiveItems = buildTeamArchiveItems(filteredTeams, resultsByTeamId);
+  const clubCodes =
+    state.selectedOrganization === "all" ? Object.keys(CLUB_META) : [state.selectedOrganization];
+
+  return clubCodes
+    .map((code) => {
+      const items = archiveItems.filter((item) => item.organizationCode === code);
+      const participants = new Set(items.flatMap((item) => item.participants));
+      const groups = new Map();
+      let totalWins = 0;
+      let totalPodiums = 0;
+      let bestRank = Number.POSITIVE_INFINITY;
+
+      for (const item of items) {
+        totalWins += item.isWinner ? 1 : 0;
+        totalPodiums += item.isPodium ? 1 : 0;
+        if (Number.isFinite(item.teamRank)) {
+          bestRank = Math.min(bestRank, item.teamRank);
+        }
+
+        const rowKey = `${item.classGroup}|${item.division}`;
+        const row = groups.get(rowKey) ?? {
+          key: rowKey,
+          classGroup: item.classGroup,
+          classLabel: item.classGroupLabel,
+          division: item.division,
+          divisionLabel: item.divisionLabel,
+          starts: 0,
+          wins: 0,
+          podiums: 0,
+          bestRank: Number.POSITIVE_INFINITY,
+          bestTotalSeconds: Number.POSITIVE_INFINITY,
+          bestTotalText: null,
+          teams: [],
+        };
+        row.starts += 1;
+        row.wins += item.isWinner ? 1 : 0;
+        row.podiums += item.isPodium ? 1 : 0;
+        if (Number.isFinite(item.teamRank)) {
+          row.bestRank = Math.min(row.bestRank, item.teamRank);
+        }
+        if (Number.isFinite(item.totalSeconds) && item.totalSeconds < row.bestTotalSeconds) {
+          row.bestTotalSeconds = item.totalSeconds;
+          row.bestTotalText = item.totalTimeText;
+        }
+        row.teams.push(item);
+        groups.set(rowKey, row);
+      }
+
+      const rows = [...groups.values()]
+        .map((row) => ({
+          ...row,
+          bestRank: row.bestRank === Number.POSITIVE_INFINITY ? null : row.bestRank,
+          bestTotalSeconds:
+            row.bestTotalSeconds === Number.POSITIVE_INFINITY ? null : row.bestTotalSeconds,
+          winnerTeams: row.teams.filter((team) => team.isWinner),
+          podiumTeams: row.teams.filter((team) => team.isPodium),
+          bestRankTeams: row.teams.filter((team) => team.isBestRankInGroup),
+          bestTimeTeams: row.teams.filter((team) => team.isBestTimeInGroup),
+        }))
+        .sort((a, b) => {
+          const groupCompare = sortGroupKeys(a.classGroup, b.classGroup);
+          if (groupCompare !== 0) return groupCompare;
+          return sortDivisionKeys(a.division, b.division);
+        });
+
+      return {
+        code,
+        name: CLUB_META[code]?.shortName ?? code,
+        participants: participants.size,
+        teams: items.length,
+        results: items.reduce((sum, item) => sum + item.stageCount, 0),
+        totalWins,
+        totalPodiums,
+        bestRank: bestRank === Number.POSITIVE_INFINITY ? null : bestRank,
+        groups: rows,
+      };
+    })
+    .filter((summary) => summary.teams > 0);
+}
+
+function filterTeamArchive(items, archiveState) {
+  return items.filter((item) => {
+    const matchesClub = archiveState.teamClub === "all" || item.organizationCode === archiveState.teamClub;
+    const matchesGroup = archiveState.teamGroup === "all" || item.classGroup === archiveState.teamGroup;
+    const matchesDivision =
+      archiveState.teamDivision === "all" || item.division === archiveState.teamDivision;
+    const matchesYear = archiveState.teamYear === "all" || String(item.year) === String(archiveState.teamYear);
+    const matchesPlacement =
+      archiveState.teamPlacement === "all" ||
+      (archiveState.teamPlacement === "wins" && item.isWinner) ||
+      (archiveState.teamPlacement === "podiums" && item.isPodium) ||
+      (archiveState.teamPlacement === "best" && item.isBestRankInGroup) ||
+      (archiveState.teamPlacement === "bestTime" && item.isBestTimeInGroup);
+    return matchesClub && matchesGroup && matchesDivision && matchesYear && matchesPlacement;
+  });
+}
+
+function groupTeamsForTimeSeries(teams) {
+  const grouped = new Map();
+  for (const team of teams) {
+    if (!Number.isFinite(team.totalSeconds)) continue;
+    const key = `${team.organizationCode}|${team.classGroup}|${team.division}`;
+    const entry = grouped.get(key) ?? {
+      key,
+      organizationCode: team.organizationCode,
+      organizationName: team.organizationName,
+      classGroup: team.classGroup,
+      classLabel: team.classGroupLabel,
+      division: team.division,
+      divisionLabel: team.divisionLabel,
+      teams: [],
+    };
+    entry.teams.push(team);
+    grouped.set(key, entry);
+  }
+  return [...grouped.values()].sort((a, b) => {
+    if (a.organizationCode !== b.organizationCode) {
+      return a.organizationCode.localeCompare(b.organizationCode, "no");
+    }
+    const groupCompare = sortGroupKeys(a.classGroup, b.classGroup);
+    if (groupCompare !== 0) return groupCompare;
+    return sortDivisionKeys(a.division, b.division);
+  });
+}
+
+function buildTeamTimeSeries(filteredTeams, resultsByTeamId) {
+  const archiveItems = buildTeamArchiveItems(filteredTeams, resultsByTeamId);
+  return groupTeamsForTimeSeries(archiveItems).map((series) => {
+    const years = new Map();
+    for (const team of series.teams) {
+      const yearEntry = years.get(team.year) ?? { year: team.year, teams: [] };
+      yearEntry.teams.push(team);
+      years.set(team.year, yearEntry);
+    }
+
+    const yearRows = [...years.values()]
+      .map((row) => {
+        const bestTeam = getBestTeamByTotalTime(row.teams);
+        return bestTeam
+          ? {
+              ...row,
+              bestTeam,
+              bestTotalSeconds: bestTeam.totalSeconds,
+              bestTotalText: bestTeam.totalTimeText,
+            }
+          : null;
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.year - b.year);
+
+    const seriesBest = yearRows.reduce(
+      (current, row) => Math.min(current, row.bestTotalSeconds),
+      Number.POSITIVE_INFINITY,
+    );
+
+    let previousComparable = null;
+    const enhancedYears = yearRows.map((row) => {
+      const deltaFromSeriesBestSeconds =
+        seriesBest === Number.POSITIVE_INFINITY ? null : row.bestTotalSeconds - seriesBest;
+      const deltaFromPreviousComparableYearSeconds = previousComparable
+        ? row.bestTotalSeconds - previousComparable.bestTotalSeconds
+        : null;
+      previousComparable = row;
+      return {
+        ...row,
+        deltaFromSeriesBestSeconds,
+        deltaFromPreviousComparableYearSeconds,
+      };
+    });
+
+    return {
+      ...series,
+      years: enhancedYears,
+      bestTeam: getBestTeamByTotalTime(series.teams),
+    };
+  });
+}
+
+function buildTeamFilterOptions(archiveItems) {
+  return {
+    clubs: [...new Set(archiveItems.map((item) => item.organizationCode))],
+    groups: [...new Set(archiveItems.map((item) => item.classGroup))].sort(sortGroupKeys),
+    divisions: [...new Set(archiveItems.map((item) => item.division))].sort(sortDivisionKeys),
+    years: [...new Set(archiveItems.map((item) => item.year))].sort((a, b) => b - a),
+  };
+}
+
 function renderSectionHeader({ eyebrow, title, id = "", meta = "", actions = "" }) {
   const titleId = id ? ` id="${escapeHtml(id)}"` : "";
   return `
@@ -584,8 +1036,9 @@ function renderHeader() {
       </div>
       <nav class="top-nav" aria-label="Hovednavigasjon">
         <a href="#hederslister" data-nav-link>Hederlister</a>
+        <a href="#klubbmeritter" data-nav-link>Klubbmeritter</a>
+        <a href="#lagarkiv" data-nav-link>Lagarkiv</a>
         <a href="#statistikk" data-nav-link>Deltakelse</a>
-        <a href="#klubber" data-nav-link>Lag og klubber</a>
         <a href="${LEGACY_URL}">Klassisk</a>
       </nav>
     </header>
@@ -688,6 +1141,423 @@ function renderClubSummaryCard(summary) {
         <div><dt>Beste plass</dt><dd>${escapeHtml(bestRank)}</dd></div>
       </dl>
     </article>
+  `;
+}
+
+function renderTeamBadge(label, variant = "neutral") {
+  return `<span class="badge badge-${variant}">${escapeHtml(label)}</span>`;
+}
+
+function renderStatAction({ label, dataset = {}, disabled = false }) {
+  const dataAttrs = Object.entries(dataset)
+    .filter(([, value]) => value !== undefined && value !== null && value !== "")
+    .map(([key, value]) => `data-${key}="${escapeHtml(value)}"`)
+    .join(" ");
+
+  if (disabled) {
+    return `<span class="stat-action is-disabled">${escapeHtml(label)}</span>`;
+  }
+
+  return `<button class="stat-action" type="button" ${dataAttrs}>${escapeHtml(label)}</button>`;
+}
+
+function renderClubHonourRow(summary, row) {
+  const commonDataset = {
+    teamFocus: "true",
+    teamClub: summary.code,
+    teamGroup: row.classGroup,
+    teamDivision: row.division,
+  };
+
+  return `
+    <div class="club-honour-row">
+      <button
+        class="club-honour-row-anchor"
+        type="button"
+        data-team-focus="true"
+        data-team-view="timeSeries"
+        data-team-club="${escapeHtml(summary.code)}"
+        data-team-group="${escapeHtml(row.classGroup)}"
+        data-team-division="${escapeHtml(row.division)}"
+      >
+        <strong>${escapeHtml(row.classLabel)}</strong>
+        ${renderTeamBadge(row.divisionLabel, row.division)}
+      </button>
+      <div class="club-honour-row-actions">
+        ${renderStatAction({
+          label: `${formatNumber(row.wins)} seire`,
+          dataset: { ...commonDataset, teamPlacement: "wins", teamView: "archive" },
+        })}
+        ${renderStatAction({
+          label: `${formatNumber(row.podiums)} pall`,
+          dataset: { ...commonDataset, teamPlacement: "podiums", teamView: "archive" },
+        })}
+        ${renderStatAction({
+          label: row.bestRank ? `Beste ${formatRank(row.bestRank)}` : "Beste -",
+          dataset: { ...commonDataset, teamPlacement: "best", teamView: "archive" },
+          disabled: !row.bestRank,
+        })}
+        ${renderStatAction({
+          label: row.bestTotalText ? `Beste tid ${row.bestTotalText}` : "Beste tid -",
+          dataset: { ...commonDataset, teamPlacement: "bestTime", teamView: "archive" },
+          disabled: !row.bestTotalText,
+        })}
+      </div>
+      <span class="club-honour-row-meta">${formatStartsLabel(row.starts)}</span>
+    </div>
+  `;
+}
+
+function renderClubHonourCard(summary) {
+  const meta = CLUB_META[summary.code];
+  return `
+    <article class="club-honour-card ${meta.accent}">
+      <div class="club-honour-header">
+        <img src="${meta.asset}" alt="${meta.shortName} logo" class="club-summary-logo" />
+        <div class="club-honour-copy">
+          <p>${escapeHtml(meta.shortName)}</p>
+          <h3>${escapeHtml(meta.shortName)}</h3>
+          <strong>${formatNumber(summary.totalWins ?? 0)} seire · ${formatNumber(summary.totalPodiums ?? 0)} pallplasser</strong>
+        </div>
+      </div>
+      <div class="club-honour-list">
+        ${
+          summary.groups?.length
+            ? summary.groups.map((row) => renderClubHonourRow(summary, row)).join("")
+            : renderEmptyState("Ingen lag i utvalget", "Endre filtrene for å se lagmeritter.")
+        }
+      </div>
+      <div class="club-honour-footer">
+        <p>${summary.bestRank ? `Beste plass ${formatRank(summary.bestRank)}` : "Beste plass -"}</p>
+        <p>${formatNumber(summary.participants)} utøvere · ${formatNumber(summary.teams)} lag · ${formatNumber(summary.results)} etapper</p>
+        <small>Pall = 1.-3. plass i klassen</small>
+      </div>
+    </article>
+  `;
+}
+
+function renderTeamFilterChip({ label, isActive, dataset = {}, count = null }) {
+  const dataAttrs = Object.entries(dataset)
+    .filter(([, value]) => value !== undefined && value !== null && value !== "")
+    .map(([key, value]) => `data-${key}="${escapeHtml(value)}"`)
+    .join(" ");
+
+  return `
+    <button class="archive-chip ${isActive ? "is-active" : ""}" type="button" ${dataAttrs}>
+      <span>${escapeHtml(label)}</span>
+      ${count !== null ? `<b>${escapeHtml(formatNumber(count))}</b>` : ""}
+    </button>
+  `;
+}
+
+function renderTeamViewSwitch() {
+  return `
+    <div class="archive-view-switch" role="tablist" aria-label="Lagvisninger">
+      ${renderTeamFilterChip({
+        label: "Lagarkiv",
+        isActive: state.teamView === "archive",
+        dataset: { teamViewSwitch: "archive" },
+      })}
+      ${renderTeamFilterChip({
+        label: "Utvikling i totaltid",
+        isActive: state.teamView === "timeSeries",
+        dataset: { teamViewSwitch: "timeSeries" },
+      })}
+    </div>
+  `;
+}
+
+function renderArchiveFilterBar(archiveItems) {
+  const options = buildTeamFilterOptions(archiveItems);
+  return `
+    <div class="archive-filter-bar">
+      <div class="archive-filter-group">
+        ${renderTeamFilterChip({
+          label: "Alle lag",
+          isActive: state.teamPlacement === "all",
+          dataset: { teamFilterKey: "teamPlacement", teamFilterValue: "all" },
+        })}
+        ${renderTeamFilterChip({
+          label: "Seiere",
+          isActive: state.teamPlacement === "wins",
+          dataset: { teamFilterKey: "teamPlacement", teamFilterValue: "wins" },
+        })}
+        ${renderTeamFilterChip({
+          label: "Pallplasser",
+          isActive: state.teamPlacement === "podiums",
+          dataset: { teamFilterKey: "teamPlacement", teamFilterValue: "podiums" },
+        })}
+        ${renderTeamFilterChip({
+          label: "Beste plass",
+          isActive: state.teamPlacement === "best",
+          dataset: { teamFilterKey: "teamPlacement", teamFilterValue: "best" },
+        })}
+        ${renderTeamFilterChip({
+          label: "Beste tid",
+          isActive: state.teamPlacement === "bestTime",
+          dataset: { teamFilterKey: "teamPlacement", teamFilterValue: "bestTime" },
+        })}
+      </div>
+      <div class="archive-filter-group">
+        ${renderTeamFilterChip({
+          label: "Alle grupper",
+          isActive: state.teamGroup === "all",
+          dataset: { teamFilterKey: "teamGroup", teamFilterValue: "all" },
+        })}
+        ${options.groups
+          .map((group) =>
+            renderTeamFilterChip({
+              label: TEAM_GROUP_META[group]?.chipLabel ?? group,
+              isActive: state.teamGroup === group,
+              dataset: { teamFilterKey: "teamGroup", teamFilterValue: group },
+            }),
+          )
+          .join("")}
+      </div>
+      <div class="archive-filter-group">
+        ${renderTeamFilterChip({
+          label: "Alle divisjoner",
+          isActive: state.teamDivision === "all",
+          dataset: { teamFilterKey: "teamDivision", teamFilterValue: "all" },
+        })}
+        ${options.divisions
+          .map((division) =>
+            renderTeamFilterChip({
+              label: getDivisionLabel(division),
+              isActive: state.teamDivision === division,
+              dataset: { teamFilterKey: "teamDivision", teamFilterValue: division },
+            }),
+          )
+          .join("")}
+      </div>
+      <div class="archive-filter-group">
+        ${renderTeamFilterChip({
+          label: "Alle klubber",
+          isActive: state.teamClub === "all",
+          dataset: { teamFilterKey: "teamClub", teamFilterValue: "all" },
+        })}
+        ${options.clubs
+          .map((club) =>
+            renderTeamFilterChip({
+              label: getClubName(club),
+              isActive: state.teamClub === club,
+              dataset: { teamFilterKey: "teamClub", teamFilterValue: club },
+            }),
+          )
+          .join("")}
+      </div>
+      <div class="archive-filter-group">
+        ${renderTeamFilterChip({
+          label: "Alle år",
+          isActive: state.teamYear === "all",
+          dataset: { teamFilterKey: "teamYear", teamFilterValue: "all" },
+        })}
+        ${options.years
+          .map((year) =>
+            renderTeamFilterChip({
+              label: String(year),
+              isActive: String(state.teamYear) === String(year),
+              dataset: { teamFilterKey: "teamYear", teamFilterValue: String(year) },
+            }),
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
+function renderTeamLineup(teamItem) {
+  return `
+    <div class="team-lineup-list">
+      ${teamItem.lineup
+        .map(
+          (entry) => `
+            <div class="team-lineup-row">
+              <span class="team-lineup-stage">${escapeHtml(entry.stage_number)}. ${escapeHtml(entry.stage_name)}</span>
+              <strong class="team-lineup-runner">${escapeHtml(entry.person_name)}</strong>
+              <span class="team-lineup-time">${escapeHtml(entry.split_text ?? "-")}</span>
+              <span class="team-lineup-rank">Klasse ${escapeHtml(formatRank(entry.category_rank))}</span>
+              ${
+                entry.oa_rank
+                  ? `<span class="team-lineup-rank">O/A ${escapeHtml(formatRank(entry.oa_rank))}</span>`
+                  : `<span class="team-lineup-rank team-lineup-rank-muted">O/A -</span>`
+              }
+            </div>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderTeamArchiveCard(teamItem) {
+  const isExpanded = Boolean(state.expandedTeams[teamItem.id]);
+  const detailsId = `team-lineup-${toDomId(teamItem.id)}`;
+  return `
+    <article class="archive-card ${CLUB_META[teamItem.organizationCode]?.accent ?? ""}">
+      <div class="archive-card-header">
+        <div class="archive-card-copy">
+          <p class="archive-kicker">${escapeHtml(formatArchiveHeading(teamItem))}</p>
+          <h3>${escapeHtml(teamItem.teamName)}</h3>
+          <p class="archive-card-meta">Total tid: ${escapeHtml(teamItem.totalTimeText ?? "Total tid mangler")} · ${escapeHtml(teamItem.stageCount)} etapper</p>
+        </div>
+        <div class="archive-card-tags">
+          ${renderTeamBadge(teamItem.classGroupLabel)}
+          ${renderTeamBadge(teamItem.divisionLabel, teamItem.division)}
+          ${teamItem.isWinner ? renderTeamBadge("Seier", "winner") : ""}
+          ${teamItem.isPodium ? renderTeamBadge("Pall", "podium") : ""}
+          ${teamItem.isBestTimeInGroup ? renderTeamBadge("Beste tid", "time") : ""}
+        </div>
+      </div>
+      <button
+        class="text-link archive-toggle"
+        type="button"
+        data-team-toggle="${escapeHtml(teamItem.id)}"
+        aria-expanded="${isExpanded ? "true" : "false"}"
+        aria-controls="${detailsId}"
+      >
+        ${isExpanded ? "Skjul laget" : "Vis laget"}
+      </button>
+      <div class="archive-card-details" id="${detailsId}" ${isExpanded ? "" : "hidden"}>
+        ${renderTeamLineup(teamItem)}
+      </div>
+    </article>
+  `;
+}
+
+function renderTeamArchive(items) {
+  const filteredItems = filterTeamArchive(items, state);
+  return `
+    <section class="content-card section-card" id="lagarkiv" aria-labelledby="lagarkiv-title">
+      ${renderSectionHeader({
+        eyebrow: "Lagprestasjoner",
+        title: "Lagarkiv",
+        id: "lagarkiv-title",
+        meta: `<span>${formatNumber(filteredItems.length)} lag i visningen</span>`,
+      })}
+      ${renderArchiveFilterBar(items)}
+      <div class="archive-grid">
+        ${
+          filteredItems.length
+            ? filteredItems.map((item) => renderTeamArchiveCard(item)).join("")
+            : renderEmptyState("Ingen lag i dette utvalget", "Endre lagfiltrene eller globale filtre for å se laghistorikk.")
+        }
+      </div>
+    </section>
+  `;
+}
+
+function renderTeamTimeSeriesRow(row, seriesBestSeconds) {
+  return `
+    <article class="time-series-row">
+      <div class="time-series-year">${escapeHtml(row.year)}</div>
+      <div class="time-series-copy">
+        <strong>${escapeHtml(row.bestTeam.teamName)}</strong>
+        <p>${escapeHtml(row.bestTotalText ?? "Total tid mangler")} · ${escapeHtml(formatRank(row.bestTeam.teamRank))}</p>
+      </div>
+      <dl class="time-series-meta">
+        <div>
+          <dt>Mot beste</dt>
+          <dd>${row.deltaFromSeriesBestSeconds === 0 ? "Beste" : escapeHtml(formatTimeDelta(row.deltaFromSeriesBestSeconds))}</dd>
+        </div>
+        <div>
+          <dt>Mot forrige</dt>
+          <dd>${row.deltaFromPreviousComparableYearSeconds === null ? "—" : escapeHtml(formatTimeDelta(row.deltaFromPreviousComparableYearSeconds))}</dd>
+        </div>
+        <div>
+          <dt>Fart</dt>
+          <dd>${escapeHtml(formatPercent((seriesBestSeconds / row.bestTotalSeconds) * 100))}</dd>
+        </div>
+      </dl>
+    </article>
+  `;
+}
+
+function renderTeamTimeSeries(seriesCollection) {
+  const filteredSeries = seriesCollection
+    .filter((series) => state.teamClub === "all" || series.organizationCode === state.teamClub)
+    .filter((series) => state.teamGroup === "all" || series.classGroup === state.teamGroup)
+    .filter((series) => state.teamDivision === "all" || series.division === state.teamDivision)
+    .map((series) => ({
+      ...series,
+      years:
+        state.teamYear === "all"
+          ? series.years
+          : series.years.filter((row) => String(row.year) === String(state.teamYear)),
+    }))
+    .filter((series) => series.years.length);
+
+  return `
+    <section class="content-card section-card" id="totaltid" aria-labelledby="totaltid-title">
+      ${renderSectionHeader({
+        eyebrow: "Totaltid",
+        title: "Utvikling i totaltid",
+        id: "totaltid-title",
+        meta: "<span>Beste lag per år innen samme klubb, klassegruppe og divisjon</span>",
+      })}
+      <div class="time-series-grid">
+        ${
+          filteredSeries.length
+            ? filteredSeries
+                .map((series) => {
+                  const seriesBestSeconds = series.bestTeam?.totalSeconds ?? Number.POSITIVE_INFINITY;
+                  return `
+                    <article class="time-series-card ${CLUB_META[series.organizationCode]?.accent ?? ""}">
+                      <div class="time-series-card-header">
+                        <div>
+                          <p>${escapeHtml(series.organizationName)}</p>
+                          <h3>${escapeHtml(series.classLabel)} · ${escapeHtml(series.divisionLabel)}</h3>
+                        </div>
+                        ${series.bestTeam ? `<strong>${escapeHtml(series.bestTeam.totalTimeText ?? "-")}</strong>` : ""}
+                      </div>
+                      <div class="time-series-list">
+                        ${series.years.map((row) => renderTeamTimeSeriesRow(row, seriesBestSeconds)).join("")}
+                      </div>
+                    </article>
+                  `;
+                })
+                .join("")
+            : renderEmptyState("Ingen sammenlignbare totaltider", "Velg en klubb, gruppe eller divisjon som har totaltider på tvers av år.")
+        }
+      </div>
+    </section>
+  `;
+}
+
+function renderClubHonoursSection(clubSummaries) {
+  return `
+    <section class="content-card section-card" id="klubbmeritter" aria-labelledby="klubbmeritter-title">
+      ${renderSectionHeader({
+        eyebrow: "Lagprestasjoner",
+        title: "Klubbmeritter",
+        id: "klubbmeritter-title",
+        meta: "<span>Pall = 1.-3. plass i klassen</span>",
+      })}
+      <div class="club-honour-grid">
+        ${
+          clubSummaries.length
+            ? clubSummaries.map((summary) => renderClubHonourCard(summary)).join("")
+            : renderEmptyState("Ingen klubbmeritter i utvalget", "Juster filtrene for Ã¥ hente frem laghistorikk.")
+        }
+      </div>
+    </section>
+  `;
+}
+
+function renderTeamHub(archiveItems, teamTimeSeries) {
+  return `
+    <section class="team-hub-stack" aria-label="Lagarkiv og totaltid">
+      <div class="team-hub-toolbar content-card section-card">
+        ${renderSectionHeader({
+          eyebrow: "Navigasjon",
+          title: "Lagvisning",
+          meta: "<span>Bytt mellom lagkort og utvikling i totaltid</span>",
+        })}
+        ${renderTeamViewSwitch()}
+      </div>
+      ${renderTeamArchive(archiveItems)}
+      ${renderTeamTimeSeries(teamTimeSeries)}
+    </section>
   `;
 }
 
@@ -1192,8 +2062,44 @@ function resetFilters() {
   state.selectedOrganization = DEFAULT_STATE.selectedOrganization;
   state.selectedClass = DEFAULT_STATE.selectedClass;
   state.search = DEFAULT_STATE.search;
+  state.teamClub = DEFAULT_STATE.teamClub;
+  state.teamGroup = DEFAULT_STATE.teamGroup;
+  state.teamDivision = DEFAULT_STATE.teamDivision;
+  state.teamPlacement = DEFAULT_STATE.teamPlacement;
+  state.teamYear = DEFAULT_STATE.teamYear;
+  state.teamView = DEFAULT_STATE.teamView;
+  state.expandedTeams = {};
   state.expandedHonours = {};
   render();
+}
+
+function scrollToSection(sectionId) {
+  requestAnimationFrame(() => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function setTeamView(view) {
+  state.teamView = view === "timeSeries" ? "timeSeries" : "archive";
+}
+
+function updateTeamFilter(filterKey, filterValue) {
+  if (!["teamClub", "teamGroup", "teamDivision", "teamPlacement", "teamYear"].includes(filterKey)) {
+    return;
+  }
+  const nextValue = filterValue ?? "all";
+  state[filterKey] = state[filterKey] === nextValue && nextValue !== "all" ? "all" : nextValue;
+}
+
+function applyTeamFocus(dataset) {
+  state.teamClub = dataset.teamClub || DEFAULT_STATE.teamClub;
+  state.teamGroup = dataset.teamGroup || DEFAULT_STATE.teamGroup;
+  state.teamDivision = dataset.teamDivision || DEFAULT_STATE.teamDivision;
+  state.teamPlacement = dataset.teamPlacement || DEFAULT_STATE.teamPlacement;
+  state.teamYear = dataset.teamYear || DEFAULT_STATE.teamYear;
+  setTeamView(dataset.teamView || DEFAULT_STATE.teamView);
+  render();
+  scrollToSection(state.teamView === "timeSeries" ? "totaltid" : "lagarkiv");
 }
 
 function attachEvents() {
@@ -1243,6 +2149,34 @@ function attachEvents() {
       const stageKey = event.currentTarget.dataset.stageToggle;
       state.expandedHonours[stageKey] = !state.expandedHonours[stageKey];
       render();
+    });
+  });
+  document.querySelectorAll("[data-team-focus]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      applyTeamFocus(event.currentTarget.dataset);
+    });
+  });
+  document.querySelectorAll("[data-team-filter-key]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const { teamFilterKey, teamFilterValue } = event.currentTarget.dataset;
+      updateTeamFilter(teamFilterKey, teamFilterValue);
+      render();
+      scrollToSection(state.teamView === "timeSeries" ? "totaltid" : "lagarkiv");
+    });
+  });
+  document.querySelectorAll("[data-team-view-switch]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      setTeamView(event.currentTarget.dataset.teamViewSwitch);
+      render();
+      scrollToSection(state.teamView === "timeSeries" ? "totaltid" : "lagarkiv");
+    });
+  });
+  document.querySelectorAll("[data-team-toggle]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const teamId = event.currentTarget.dataset.teamToggle;
+      state.expandedTeams[teamId] = !state.expandedTeams[teamId];
+      render();
+      scrollToSection("lagarkiv");
     });
   });
 }
@@ -1300,8 +2234,10 @@ function render() {
   const activeGroup = getFilteredStageGroup(honourGroups);
   const honoursGroup = buildDynamicHonoursGroup(activeGroup, filteredResults);
   syncStateToUrl();
-  const clubSummaries = buildClubSummaries(filteredResults, filteredTeams);
-  const seasonHighlights = buildSeasonHighlights(filteredResults, filteredTeams);
+  const resultsByTeamId = buildResultsByTeamId(filteredResults);
+  const clubSummaries = buildTeamHonoursByClub(filteredTeams, resultsByTeamId);
+  const archiveItems = buildTeamArchiveItems(filteredTeams, resultsByTeamId);
+  const teamTimeSeries = buildTeamTimeSeries(filteredTeams, resultsByTeamId);
   const fastestSplits = buildFastestSplits(filteredResults);
   const classBreakdown = buildClassBreakdown(filteredResults);
 
@@ -1311,13 +2247,11 @@ function render() {
       ${renderHeader()}
       <main id="main-content">
         ${renderHero(filteredResults, filteredTeams)}
-        <section class="club-summary-row" aria-label="Klubboppsummering">
-          ${clubSummaries.map((summary) => renderClubSummaryCard(summary)).join("")}
-        </section>
         ${renderFilterPanel(filteredResults, filteredTeams)}
         ${renderHonoursSection(honoursGroup, honourGroups)}
+        ${renderClubHonoursSection(clubSummaries)}
+        ${renderTeamHub(archiveItems, teamTimeSeries)}
         ${renderParticipationSection(personStats, fastestSplits, classBreakdown)}
-        ${renderTeamsSection(filteredTeams, seasonHighlights)}
       </main>
       ${renderFooter()}
     </div>

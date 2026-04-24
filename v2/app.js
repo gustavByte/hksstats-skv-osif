@@ -41,7 +41,7 @@ const CLUB_META = {
   OSIF: {
     shortName: "OSI Friidrett",
     label: "OSI",
-    asset: assetUrl("osi-logo.jpg"),
+    asset: assetUrl("osi-logo.png"),
     accent: "accent-osi",
   },
 };
@@ -574,7 +574,7 @@ function renderHeader() {
             rel="noopener noreferrer"
             aria-label="Gå til OSI Friidrett"
           >
-            <img class="brand-logo brand-logo-osi" src="${assetUrl("osi-logo.jpg")}" alt="OSI Friidrett logo" />
+            <img class="brand-logo brand-logo-osi" src="${assetUrl("osi-logo.png")}" alt="OSI Friidrett logo" />
           </a>
         </span>
         <a class="brand-copy" href="#main-content" aria-label="Gå til HKSstats">

@@ -2,6 +2,9 @@ const app = document.querySelector("#app");
 
 const DATA_VERSION = "2026-04-24-v2-honours-filter";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
+const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
+const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
+const LEGACY_URL = new URL("../legacy/", import.meta.url).toString();
 const DEFAULT_STATE = {
   selectedYear: "all",
   selectedOrganization: "all",
@@ -32,13 +35,13 @@ const CLUB_META = {
   SKV: {
     shortName: "SK Vidar",
     label: "Vidar",
-    asset: "../public/assets/v2/sk-vidar-logo.png",
+    asset: assetUrl("sk-vidar-logo.png"),
     accent: "accent-vidar",
   },
   OSIF: {
     shortName: "OSI Friidrett",
     label: "OSI",
-    asset: "../public/assets/v2/osi-logo.jpg",
+    asset: assetUrl("osi-logo.jpg"),
     accent: "accent-osi",
   },
 };
@@ -81,6 +84,10 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function assetUrl(fileName) {
+  return new URL(fileName, ASSET_ROOT_URL).toString();
 }
 
 function toDomId(value) {
@@ -558,7 +565,7 @@ function renderHeader() {
             rel="noopener noreferrer"
             aria-label="Gå til SK Vidar"
           >
-            <img class="brand-logo brand-logo-vidar" src="../public/assets/v2/sk-vidar-logo.png" alt="SK Vidar logo" />
+            <img class="brand-logo brand-logo-vidar" src="${assetUrl("sk-vidar-logo.png")}" alt="SK Vidar logo" />
           </a>
           <a
             class="logo-plate logo-plate-round"
@@ -567,7 +574,7 @@ function renderHeader() {
             rel="noopener noreferrer"
             aria-label="Gå til OSI Friidrett"
           >
-            <img class="brand-logo brand-logo-osi" src="../public/assets/v2/osi-logo.jpg" alt="OSI Friidrett logo" />
+            <img class="brand-logo brand-logo-osi" src="${assetUrl("osi-logo.jpg")}" alt="OSI Friidrett logo" />
           </a>
         </span>
         <a class="brand-copy" href="#main-content" aria-label="Gå til HKSstats">
@@ -579,7 +586,7 @@ function renderHeader() {
         <a href="#hederslister" data-nav-link>Hederlister</a>
         <a href="#statistikk" data-nav-link>Deltakelse</a>
         <a href="#klubber" data-nav-link>Lag og klubber</a>
-        <a href="../index.html">Original</a>
+        <a href="${LEGACY_URL}">Klassisk</a>
       </nav>
     </header>
   `;
@@ -643,11 +650,11 @@ function renderHero(filteredResults, filteredTeams) {
         <picture>
           <source
             type="image/webp"
-            srcset="../public/assets/v2/hero-group-photo-1600.webp 1600w, ../public/assets/v2/hero-group-photo-2400.webp 2400w, ../public/assets/v2/hero-group-photo-3200.webp 3200w"
+            srcset="${assetUrl("hero-group-photo-1600.webp")} 1600w, ${assetUrl("hero-group-photo-2400.webp")} 2400w, ${assetUrl("hero-group-photo-3200.webp")} 3200w"
             sizes="(max-width: 720px) calc(100vw - 24px), (max-width: 1180px) calc(100vw - 40px), 44vw"
           />
           <img
-            src="../public/assets/v2/hero-group-photo.jpg"
+            src="${assetUrl("hero-group-photo.jpg")}"
             alt="Løpere fra SK Vidar og OSI Friidrett samlet etter Holmenkollstafetten"
             class="hero-photo"
             width="5605"
@@ -1165,7 +1172,7 @@ function renderFooter() {
       ${generatedAt ? `<p>Sist oppdatert: ${escapeHtml(generatedAt)}</p>` : ""}
       <nav aria-label="Footer">
         <a href="${REPOSITORY_URL}">GitHub</a>
-        <a href="../index.html">Originalversjon</a>
+        <a href="${LEGACY_URL}">Klassisk versjon</a>
       </nav>
     </footer>
   `;
@@ -1324,7 +1331,7 @@ async function bootstrap() {
   readStateFromUrl();
   app.innerHTML = `<p class="loading-state">Laster data...</p>`;
 
-  const dataUrl = new URL("../public/data/site-data.json", window.location.href);
+  const dataUrl = new URL(DATA_URL);
   dataUrl.searchParams.set("v", DATA_VERSION);
 
   const response = await fetch(dataUrl.toString(), { cache: "no-store" });

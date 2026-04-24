@@ -18,10 +18,14 @@ Prosjektet gjør tre ting:
   Databasen som nettsiden bygges fra.
 - `data/name_match_review.csv`
   Arbeidsfil for manuell godkjenning av navnematching.
-- `index.html`, `app.js`, `styles.css`
-  Den publiserte statiske nettsiden.
+- `index.html`
+  Hovedinngangen til den publiserte nettsiden. Den laster dagens `v2`-opplevelse.
+- `app.js`, `styles.css`
+  Klassisk frontend som beholdes for `legacy/`.
 - `v2/`
-  Ny versjon av nettsiden med eget designspor, men samme datagrunnlag.
+  Hovedopplevelsen for nettsiden, med eget designspor og samme datagrunnlag.
+- `legacy/`
+  Eldre rotversjon av nettsiden, beholdt som historisk/original visning.
 
 ## Navnematching
 
@@ -79,7 +83,7 @@ Da publiserer GitHub Pages innholdet som ligger i `docs/`.
 
 ## Standard fremover
 
-- Kilde endres i repo-roten og i `scripts/`, ikke direkte i `docs/`.
+- Kilde endres i repo-roten, `v2/`, `legacy/` og `scripts/`, ikke direkte i `docs/`.
 - `docs/` skal alltid være et bygget speil av den publiserte versjonen.
 - Arbeidsfiler som SQLite-database og navnematch-review skal ikke publiseres offentlig.
 - `Validate`-workflowen er standard kvalitetssperre for nye endringer.

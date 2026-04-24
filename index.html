@@ -10,19 +10,30 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       name="description"
-      content="Statistikk fra Holmenkollstafetten for SK Vidar og OSI Friidrett."
+      content="HKSstats for SK Vidar og OSI Friidrett, med hederslister per etappe, filtre, deltakelse og lagstatistikk."
     />
+    <meta name="theme-color" content="#f6f0e6" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>HKSstatsSKV&OSIF</title>
+    <link
+      rel="preload"
+      as="image"
+      href="./public/assets/v2/hero-group-photo-2400.webp"
+      imagesrcset="./public/assets/v2/hero-group-photo-1600.webp 1600w, ./public/assets/v2/hero-group-photo-2400.webp 2400w, ./public/assets/v2/hero-group-photo-3200.webp 3200w"
+      imagesizes="(max-width: 720px) calc(100vw - 24px), (max-width: 1180px) calc(100vw - 40px), 44vw"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="./v2/styles.css" />
+    <title>HKSstats | SK Vidar + OSI Friidrett</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Hopp til innhold</a>
     <div id="app"></div>
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./v2/app.js"></script>
   </body>
-  </html>
+</html>

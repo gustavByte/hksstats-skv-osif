@@ -63,6 +63,14 @@ CLASS_META = {
 
 MIX_CLASS_CODES = {"MiksSKV", "MiksOSI"}
 
+# Source workbook corrections confirmed outside the sheet itself.
+# Keep these here so rebuilds remain stable and auditable.
+TEAM_RECORD_CORRECTIONS = {
+    (2022, "SKV", "EliteSKV", "SK Vidar elite 2022"): {
+        "team_rank": 1,
+    },
+}
+
 ORGANIZATIONS = {
     "SKV": {"name": "SK Vidar", "short_name": "SKV"},
     "OSIF": {"name": "OSI Friidrett", "short_name": "OSIF"},
@@ -528,6 +536,17 @@ def parse_year_sheets(
                         )
                     )
     return teams, results
+
+
+def apply_team_record_corrections(teams: list[TeamRecord]) -> None:
+    for team in teams:
+        correction = TEAM_RECORD_CORRECTIONS.get(
+            (team.year, team.organization_code, team.class_code, team.team_name)
+        )
+        if not correction:
+            continue
+        for field_name, value in correction.items():
+            setattr(team, field_name, value)
 
 
 def load_existing_review_rows() -> dict[tuple[str, str], dict[str, str]]:
@@ -1348,6 +1367,7 @@ def main() -> None:
     stage_lookup = parse_split_stage_lookup(workbook_path)
     record_lookup = parse_record_lookup(workbook_path)
     teams, results = parse_year_sheets(workbook_path, stage_lookup)
+    apply_team_record_corrections(teams)
     suggestions = build_match_suggestions(results)
     review_rows = write_review_file(suggestions)
     build_database(teams, results, review_rows)

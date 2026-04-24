@@ -760,9 +760,10 @@ def create_schema(connection: sqlite3.Connection) -> None:
             event_id INTEGER NOT NULL REFERENCES events(id),
             year INTEGER NOT NULL,
             class_code TEXT NOT NULL REFERENCES team_classes(code),
+            division TEXT NOT NULL,
             stage_number INTEGER NOT NULL,
             stage_label TEXT NOT NULL,
-            UNIQUE(year, class_code, stage_number)
+            UNIQUE(year, class_code, division, stage_number)
         );
 
         CREATE TABLE results (
@@ -845,17 +846,17 @@ def build_database(
         )
         alias_ids[raw_name] = int(cursor.lastrowid)
 
-    stage_ids: dict[tuple[int, str, int], int] = {}
-    for result in sorted(results, key=lambda item: (item.year, item.class_code, item.stage_number)):
-        key = (result.year, result.class_code, result.stage_number)
+    stage_ids: dict[tuple[int, str, str, int], int] = {}
+    for result in sorted(results, key=lambda item: (item.year, item.class_code, item.division, item.stage_number)):
+        key = (result.year, result.class_code, result.division, result.stage_number)
         if key in stage_ids:
             continue
         cursor = connection.execute(
             """
-            INSERT INTO stages (event_id, year, class_code, stage_number, stage_label)
-            VALUES (?, ?, ?, ?, ?)
+            INSERT INTO stages (event_id, year, class_code, division, stage_number, stage_label)
+            VALUES (?, ?, ?, ?, ?, ?)
             """,
-            (event_id, result.year, result.class_code, result.stage_number, result.stage_label),
+            (event_id, result.year, result.class_code, result.division, result.stage_number, result.stage_label),
         )
         stage_ids[key] = int(cursor.lastrowid)
 
@@ -887,7 +888,7 @@ def build_database(
 
     for result in results:
         team_key = (result.year, result.source_sheet, result.header_row, result.group_index)
-        stage_key = (result.year, result.class_code, result.stage_number)
+        stage_key = (result.year, result.class_code, result.division, result.stage_number)
         connection.execute(
             """
             INSERT INTO results (
@@ -1100,6 +1101,7 @@ def export_site_data(
                 t.team_name,
                 t.total_time_text AS team_total_time,
                 t.team_rank,
+                s.division,
                 s.stage_number,
                 s.stage_label,
                 p.canonical_name AS person_name,

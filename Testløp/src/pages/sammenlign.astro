@@ -61,14 +61,14 @@ const fallback = stats.resultYears.find((year) => year !== latest) || stats.resu
     <div class="level-secondary" data-common-section>
       <h2 class="section-title">Samme personer i begge år</h2>
       <div class="table-wrap">
-        <table>
+        <table class="comparison-common-table">
           <thead>
             <tr>
-              <th>Navn</th>
-              <th>Kjønn</th>
-              <th class="num" data-common-year-a>År A</th>
-              <th class="num" data-common-year-b>År B</th>
-              <th class="num">Endring</th>
+              <th class="col-name">Navn</th>
+              <th class="col-gender">Kjønn</th>
+              <th class="num col-time-a" data-common-year-a>År A</th>
+              <th class="num col-time-b" data-common-year-b>År B</th>
+              <th class="num col-diff">Endring</th>
             </tr>
           </thead>
           <tbody data-common-body></tbody>

@@ -51,28 +51,31 @@ const defaultRows = (defaultBoard?.official || []).slice(0, 10);
     <script type="application/json" id="results-data" set:html={JSON.stringify(results)}></script>
 
     <div class="table-wrap">
-      <table>
+      <table class="leaderboard-table">
         <thead>
           <tr>
-            <th class="num">Rank</th>
-            <th>Navn</th>
-            <th class="num">Tid</th>
-            <th class="num">År</th>
-            <th>Dato</th>
-            <th>Testløp</th>
-            <th>Merknad</th>
+            <th class="num col-rank">Rank</th>
+            <th class="col-name">Navn</th>
+            <th class="num col-time">Tid</th>
+            <th class="num col-year">År</th>
+            <th class="col-date">Dato</th>
+            <th class="col-testlop">Testløp</th>
+            <th class="col-note">Merknad</th>
           </tr>
         </thead>
         <tbody>
           {defaultRows.map((row) => (
             <tr>
-              <td class="num">{row.rank}</td>
-              <td class="name-cell"><a href={href(`/person/${row.personId}/`)}>{row.name}</a></td>
-              <td class="time num">{row.timeDisplay}</td>
-              <td class="num">{row.year}</td>
-              <td>{formatDate(row.date)}</td>
-              <td>{row.testlopId || "-"}</td>
-              <td><span class="subtle">-</span></td>
+              <td class="num col-rank">{row.rank}</td>
+              <td class="name-cell col-name"><a href={href(`/person/${row.personId}/`)}>{row.name}</a></td>
+              <td class="time num col-time">{row.timeDisplay}</td>
+              <td class="num col-year">{row.year}</td>
+              <td class="col-date">
+                <span>{formatDate(row.date)}</span>
+                <span class="mobile-meta">{row.testlopId || "-"}</span>
+              </td>
+              <td class="col-testlop">{row.testlopId || "-"}</td>
+              <td class="col-note"><span class="subtle">-</span></td>
             </tr>
           ))}
         </tbody>

@@ -6,10 +6,12 @@ const { results, emptyText = "Ingen resultater." } = Astro.props as {
   emptyText?: string;
   showRank?: boolean;
   sort?: boolean;
+  tableClass?: string;
 };
 
 const showRank = Astro.props.showRank ?? true;
 const shouldSort = Astro.props.sort ?? true;
+const tableClass = Astro.props.tableClass ?? "result-table";
 const rows = shouldSort ? sortByTime(results) : results;
 ---
 
@@ -17,18 +19,18 @@ const rows = shouldSort ? sortByTime(results) : results;
   <div class="empty-state">{emptyText}</div>
 ) : (
   <div class="table-wrap">
-    <table>
+    <table class={tableClass}>
       <thead>
         <tr>
-          {showRank && <th class="num" data-context-header>Plass</th>}
-          <th>Navn</th>
-          <th class="num">Tid</th>
-          <th class="num">År</th>
-          <th>Distanse</th>
-          <th>Kjønn</th>
-          <th>Dato</th>
-          <th>Testløp</th>
-          <th>Merknad</th>
+          {showRank && <th class="num col-rank" data-context-header>Plass</th>}
+          <th class="col-name">Navn</th>
+          <th class="num col-time">Tid</th>
+          <th class="num col-year">År</th>
+          <th class="col-distance">Distanse</th>
+          <th class="col-gender">Kjønn</th>
+          <th class="col-date">Dato</th>
+          <th class="col-testlop">Testløp</th>
+          <th class="col-note">Merknad</th>
         </tr>
       </thead>
       <tbody>
@@ -43,15 +45,18 @@ const rows = shouldSort ? sortByTime(results) : results;
             data-valid={result.validToplist ? "true" : "false"}
             data-search={`${result.name} ${result.testlopId || ""} ${result.note || ""}`.toLowerCase()}
           >
-            {showRank && <td class="num" data-rank>{result.timeSeconds == null ? "" : index + 1}</td>}
-            <td class="name-cell"><a href={href(`/person/${result.personId}/`)}>{result.name}</a></td>
-            <td class="time num">{result.timeDisplay || "-"}</td>
-            <td class="num">{result.year}</td>
-            <td>{result.distance} m</td>
-            <td>{result.gender}</td>
-            <td>{formatDate(result.date)}</td>
-            <td>{displayTestlop(result)}</td>
-            <td>
+            {showRank && <td class="num col-rank" data-rank>{result.timeSeconds == null ? "" : index + 1}</td>}
+            <td class="name-cell col-name"><a href={href(`/person/${result.personId}/`)}>{result.name}</a></td>
+            <td class="time num col-time">{result.timeDisplay || "-"}</td>
+            <td class="num col-year">{result.year}</td>
+            <td class="col-distance">{result.distance} m</td>
+            <td class="col-gender">{result.gender}</td>
+            <td class="col-date">
+              <span>{formatDate(result.date)}</span>
+              <span class="mobile-meta">{displayTestlop(result)}</span>
+            </td>
+            <td class="col-testlop">{displayTestlop(result)}</td>
+            <td class="col-note">
               <span class="note-list">
                 {result.note && <span class="badge warn">{result.note}</span>}
                 {result.checkStatus !== "OK" && <span class="badge bad">{result.checkStatus}</span>}

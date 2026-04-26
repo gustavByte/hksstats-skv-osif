@@ -65,7 +65,7 @@ const quickFilters = [
         </button>
       ))}
     </div>
-    <div class="toolbar-group">
+    <div class="toolbar-group mobile-hide-filter">
       {[600, 1200].map((distance) => (
         <button class:list={["chip", distance === 600 && "is-active"]} data-filter-name="distance" data-filter-value={String(distance)} aria-pressed={distance === 600 ? "true" : "false"}>
           {distance} m
@@ -73,7 +73,7 @@ const quickFilters = [
       ))}
       <button class="chip" data-filter-name="distance" data-filter-value="all" aria-pressed="false">Alle</button>
     </div>
-    <div class="toolbar-group">
+    <div class="toolbar-group mobile-hide-filter">
       {["Kvinner", "Menn"].map((gender) => (
         <button class:list={["chip", gender === "Menn" && "is-active"]} data-filter-name="gender" data-filter-value={gender} aria-pressed={gender === "Menn" ? "true" : "false"}>{genderShort(gender)}</button>
       ))}
@@ -87,5 +87,5 @@ const quickFilters = [
     <input class="text-input" id={`search-${year}`} data-search type="search" placeholder="Søk" />
   </div>
 
-  <ResultTable results={results} emptyText="Ingen resultater for dette året ennå." />
+  <ResultTable results={results} emptyText="Ingen resultater for dette året ennå." tableClass="result-table year-results" />
 </section>

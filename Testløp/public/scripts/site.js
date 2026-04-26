@@ -19,7 +19,7 @@
     if (result.note) labels.push({ text: result.note, type: "warn" });
     if (result.checkStatus && result.checkStatus !== "OK") labels.push({ text: result.checkStatus, type: "bad" });
     if (!result.validToplist) labels.push({ text: "ikke off.", type: "warn" });
-    return labels.map((label) => `<span class="badge ${label.type}">${label.text}</span>`).join("");
+    return labels.map((label) => `<span class="badge ${label.type}">${escapeHtml(label.text)}</span>`).join("");
   };
   const parseJson = (id) => {
     const element = byId(id);
@@ -36,6 +36,31 @@
   const normalizeAll = (value) => (value === "Alle" ? "all" : value);
   const escapeHtml = (value) =>
     String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+
+  function updateTableOverflowHints(root = document) {
+    root.querySelectorAll(".table-wrap").forEach((wrap) => {
+      let hint = wrap.previousElementSibling;
+      if (!hint?.classList?.contains("table-scroll-hint")) {
+        hint = document.createElement("div");
+        hint.className = "table-scroll-hint";
+        hint.textContent = "Sveip sidelengs for flere kolonner";
+        wrap.parentNode?.insertBefore(hint, wrap);
+      }
+      const hasOverflow = wrap.scrollWidth > wrap.clientWidth + 2;
+      wrap.classList.toggle("has-overflow", hasOverflow);
+      hint.hidden = !hasOverflow;
+    });
+  }
+
+  function initTableOverflowHints() {
+    let frame = 0;
+    const schedule = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => updateTableOverflowHints());
+    };
+    schedule();
+    window.addEventListener("resize", schedule);
+  }
 
   function setFilterValue(root, name, value) {
     let found = false;
@@ -321,18 +346,22 @@
         .map(
           (row, index) => `
           <tr>
-            <td class="num">${index + 1}</td>
-            <td class="name-cell"><a href="${personUrl(row.personId)}">${row.name}</a></td>
-            <td class="time num">${row.timeDisplay || "-"}</td>
-            <td class="num">${row.year}</td>
-            <td>${formatDate(row.date)}</td>
-            <td>${row.testlopId || "-"}</td>
-            <td><span class="note-list">${badgeHtml(row)}</span></td>
+            <td class="num col-rank">${index + 1}</td>
+            <td class="name-cell col-name"><a href="${personUrl(row.personId)}">${escapeHtml(row.name)}</a></td>
+            <td class="time num col-time">${row.timeDisplay || "-"}</td>
+            <td class="num col-year">${row.year}</td>
+            <td class="col-date">
+              <span>${formatDate(row.date)}</span>
+              <span class="mobile-meta">${escapeHtml(row.testlopId || "-")}</span>
+            </td>
+            <td class="col-testlop">${escapeHtml(row.testlopId || "-")}</td>
+            <td class="col-note"><span class="note-list">${badgeHtml(row)}</span></td>
           </tr>`
         )
         .join("");
       if (count) count.textContent = String(rows.length);
       if (urlReady) updateUrlState();
+      updateTableOverflowHints(root);
     }
 
     applyUrlState();
@@ -551,6 +580,18 @@
       return `${resultLink(row)}${meta ? `<span class="subtle row-meta">${meta}</span>` : ""}`;
     }
 
+    function resultCompactCell(row) {
+      if (!row) return `<span class="subtle">-</span>`;
+      const date = row.date ? formatDate(row.date) : "";
+      const meta = [date, row.testlopId].filter(Boolean).map(escapeHtml).join(" · ");
+      return `
+        <div class="compare-result-cell">
+          <strong class="compare-time">${escapeHtml(row.timeDisplay || "-")}</strong>
+          <a class="compare-mobile-name" href="${personUrl(row.personId)}">${escapeHtml(row.name)}</a>
+          ${meta ? `<small>${meta}</small>` : ""}
+        </div>`;
+    }
+
     function noteCell(row) {
       if (!row) return "";
       const badges = badgeHtml(row);
@@ -560,13 +601,13 @@
     function renderStatsTable(label, yearA, yearB, statsA, statsB) {
       return `
         <div class="table-wrap level-stats">
-          <table>
+          <table class="level-stats-table">
             <thead>
               <tr>
-                <th>${escapeHtml(label)}</th>
-                <th class="num">${escapeHtml(yearA)}</th>
-                <th class="num">${escapeHtml(yearB)}</th>
-                <th class="num">Diff</th>
+                <th class="col-label">${escapeHtml(label)}</th>
+                <th class="num col-year-a">${escapeHtml(yearA)}</th>
+                <th class="num col-year-b">${escapeHtml(yearB)}</th>
+                <th class="num col-diff">Diff</th>
               </tr>
             </thead>
             <tbody>
@@ -574,10 +615,10 @@
                 .map(
                   (row) => `
                     <tr>
-                      <td>${row.label}</td>
-                      <td class="num time">${statValue(statsA, row)}</td>
-                      <td class="num time">${statValue(statsB, row)}</td>
-                      <td class="num ${diffClass(statsA, statsB, row)}">${statDiff(statsA, statsB, row)}</td>
+                      <td class="col-label">${row.label}</td>
+                      <td class="num time col-year-a">${statValue(statsA, row)}</td>
+                      <td class="num time col-year-b">${statValue(statsB, row)}</td>
+                      <td class="num col-diff ${diffClass(statsA, statsB, row)}">${statDiff(statsA, statsB, row)}</td>
                     </tr>`
                 )
                 .join("")}
@@ -594,26 +635,26 @@
         const diff = a && b ? formatDeltaSeconds(a.timeSeconds - b.timeSeconds) : "";
         return `
           <tr>
-            <td class="num">${index + 1}</td>
-            <td class="time num">${a?.timeDisplay || ""}</td>
-            <td class="name-cell">${resultNameWithMeta(a)}</td>
-            <td class="time num">${b?.timeDisplay || ""}</td>
-            <td class="name-cell">${resultNameWithMeta(b)}</td>
-            <td class="num">${diff}</td>
+            <td class="num col-rank">${index + 1}</td>
+            <td class="time num col-year-a">${resultCompactCell(a)}</td>
+            <td class="name-cell col-name-a">${resultNameWithMeta(a)}</td>
+            <td class="time num col-year-b">${resultCompactCell(b)}</td>
+            <td class="name-cell col-name-b">${resultNameWithMeta(b)}</td>
+            <td class="num col-diff">${diff}</td>
           </tr>`;
       }).join("");
       return `
         <h3 class="subsection-title">Side ved side</h3>
         <div class="table-wrap">
-          <table>
+          <table class="comparison-side-table">
             <thead>
               <tr>
-                <th class="num">Plass</th>
-                <th class="num">${escapeHtml(yearA)}</th>
-                <th>Navn</th>
-                <th class="num">${escapeHtml(yearB)}</th>
-                <th>Navn</th>
-                <th class="num">Diff</th>
+                <th class="num col-rank">Plass</th>
+                <th class="num col-year-a">${escapeHtml(yearA)}</th>
+                <th class="col-name-a">Navn</th>
+                <th class="num col-year-b">${escapeHtml(yearB)}</th>
+                <th class="col-name-b">Navn</th>
+                <th class="num col-diff">Diff</th>
               </tr>
             </thead>
             <tbody>${rows || `<tr><td colspan="6" class="empty-state">Ingen resultater.</td></tr>`}</tbody>
@@ -626,16 +667,16 @@
       return `
         <h3 class="subsection-title">Samlet rangert liste</h3>
         <div class="table-wrap">
-          <table>
+          <table class="comparison-combined-table">
             <thead>
               <tr>
-                <th class="num">Rank</th>
-                <th class="num">År</th>
-                <th>Navn</th>
-                <th class="num">Tid</th>
-                <th>Dato</th>
-                <th>Testløp</th>
-                <th>Merknad</th>
+                <th class="num col-rank">Rank</th>
+                <th class="num col-year">År</th>
+                <th class="col-name">Navn</th>
+                <th class="num col-time">Tid</th>
+                <th class="col-date">Dato</th>
+                <th class="col-testlop">Testløp</th>
+                <th class="col-note">Merknad</th>
               </tr>
             </thead>
             <tbody>
@@ -643,13 +684,16 @@
                 .map(
                   (row, index) => `
                     <tr>
-                      <td class="num">${index + 1}</td>
-                      <td class="num">${escapeHtml(row.compareYear)}</td>
-                      <td class="name-cell">${resultLink(row)}</td>
-                      <td class="time num">${row.timeDisplay || ""}</td>
-                      <td>${formatDate(row.date)}</td>
-                      <td>${escapeHtml(row.testlopId || "-")}</td>
-                      <td>${noteCell(row)}</td>
+                      <td class="num col-rank">${index + 1}</td>
+                      <td class="num col-year">${escapeHtml(row.compareYear)}</td>
+                      <td class="name-cell col-name">${resultLink(row)}</td>
+                      <td class="time num col-time">${row.timeDisplay || ""}</td>
+                      <td class="col-date">
+                        <span>${formatDate(row.date)}</span>
+                        <span class="mobile-meta">${escapeHtml(row.testlopId || "-")}</span>
+                      </td>
+                      <td class="col-testlop">${escapeHtml(row.testlopId || "-")}</td>
+                      <td class="col-note">${noteCell(row)}</td>
                     </tr>`
                 )
                 .join("") || `<tr><td colspan="7" class="empty-state">Ingen resultater.</td></tr>`}
@@ -726,11 +770,11 @@
         .map(
           ({ rowA, rowB, group }) => `
             <tr>
-              <td class="name-cell">${resultLink(rowA)}</td>
-              <td>${genderShort(group)}</td>
-              <td class="time num">${rowA.timeDisplay || ""}</td>
-              <td class="time num">${rowB.timeDisplay || ""}</td>
-              <td class="num">${deltaLabel(rowA, rowB)}</td>
+              <td class="name-cell col-name">${resultLink(rowA)}</td>
+              <td class="col-gender">${genderShort(group)}</td>
+              <td class="time num col-time-a">${rowA.timeDisplay || ""}</td>
+              <td class="time num col-time-b">${rowB.timeDisplay || ""}</td>
+              <td class="num col-diff">${deltaLabel(rowA, rowB)}</td>
             </tr>`
         )
         .join("");
@@ -746,6 +790,7 @@
       sections.innerHTML = blocks.map((block) => block.html).join("");
       renderSummary(yearA, yearB, distance, gender, mode, blocks);
       renderCommonRows(yearA, yearB, distance, gender);
+      updateTableOverflowHints(root);
       if (updateUrl) updateUrlState();
     }
 
@@ -759,4 +804,5 @@
   initPeopleSearch();
   initLeaderboards();
   initComparison();
+  initTableOverflowHints();
 })();

@@ -317,10 +317,15 @@ main.shell {
 .table-wrap {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow);
+}
+
+.table-scroll-hint {
+  display: none;
 }
 
 table {
@@ -407,6 +412,14 @@ td.group-cell {
 .name-cell {
   min-width: 210px;
   white-space: normal;
+}
+
+.mobile-meta,
+.person-meta-mobile,
+.person-year-mobile,
+.compare-mobile-name,
+.compare-result-cell small {
+  display: none;
 }
 
 .note-list {
@@ -596,6 +609,299 @@ td.group-cell {
   .two-col,
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .shell {
+    width: min(100% - 14px, 1180px);
+  }
+
+  .site-header {
+    position: sticky;
+  }
+
+  .header-inner {
+    min-height: 0;
+    padding: 7px 0;
+    gap: 7px;
+  }
+
+  .main-nav a {
+    min-height: 28px;
+    padding-inline: 8px;
+  }
+
+  main.shell {
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+
+  .page-head {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .meta-line {
+    gap: 7px;
+  }
+
+  .toolbar {
+    gap: 5px;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+
+  .toolbar-group {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 5px;
+    overflow-x: auto;
+    padding-bottom: 1px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .toolbar-group-primary {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .toolbar-spacer,
+  .mobile-hide-filter {
+    display: none;
+  }
+
+  .chip {
+    flex: 0 0 auto;
+    min-height: 26px;
+    padding-inline: 8px;
+  }
+
+  .select-input {
+    min-height: 28px;
+  }
+
+  .text-input {
+    width: 100%;
+    min-height: 30px;
+  }
+
+  .section-title {
+    margin: 14px 0 6px;
+    font-size: 14px;
+  }
+
+  .subsection-title {
+    margin: 10px 0 5px;
+  }
+
+  .level-block {
+    margin-top: 12px;
+  }
+
+  .level-summary {
+    gap: 4px 9px;
+    margin-bottom: 10px;
+    padding: 7px 8px;
+  }
+
+  .table-scroll-hint:not([hidden]) {
+    display: block;
+    margin: -2px 0 5px;
+    color: var(--muted);
+    font-size: 11px;
+  }
+
+  .table-wrap {
+    border-radius: 6px;
+    scrollbar-gutter: stable;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 4px 6px;
+  }
+
+  th {
+    position: static;
+    font-size: 11px;
+  }
+
+  .name-cell {
+    min-width: 145px;
+    max-width: 180px;
+  }
+
+  .mobile-meta {
+    display: block;
+    margin-top: 1px;
+    color: var(--muted);
+    font-size: 10.5px;
+    line-height: 1.15;
+  }
+
+  .year-results .col-year,
+  .year-results .col-distance,
+  .year-results .col-gender,
+  .year-results .col-testlop {
+    display: none;
+  }
+
+  .result-table .col-rank {
+    width: 42px;
+    min-width: 42px;
+  }
+
+  .result-table .col-time {
+    width: 58px;
+    min-width: 58px;
+  }
+
+  .result-table .col-date {
+    min-width: 76px;
+  }
+
+  .result-table .col-note {
+    max-width: 130px;
+  }
+
+  .note-list {
+    max-width: 128px;
+  }
+
+  .person-page .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .person-page .summary-item {
+    padding: 6px 7px;
+  }
+
+  .person-page .summary-label {
+    font-size: 10.5px;
+  }
+
+  .person-page .summary-value {
+    font-size: 14px;
+  }
+
+  .person-page .person-results .col-name,
+  .person-page .person-results .col-gender,
+  .person-page .person-results .col-testlop {
+    display: none;
+  }
+
+  .person-year-table {
+    display: none;
+  }
+
+  .person-year-mobile {
+    display: grid;
+    gap: 6px;
+  }
+
+  .year-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: baseline;
+    padding: 7px 8px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--surface);
+    font-size: 12px;
+  }
+
+  .year-line strong {
+    min-width: 48px;
+  }
+
+  .year-line span,
+  .year-line b {
+    white-space: nowrap;
+  }
+
+  .people-table .col-results,
+  .people-table .col-first-year,
+  .people-table .col-last-year {
+    display: none;
+  }
+
+  .people-table .person-meta-mobile {
+    display: block;
+    margin-top: 1px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.15;
+  }
+
+  .people-table .col-name {
+    min-width: 170px;
+  }
+
+  .people-table .col-pb-600,
+  .people-table .col-pb-1200 {
+    min-width: 58px;
+  }
+
+  .leaderboard-table .col-testlop,
+  .comparison-combined-table .col-testlop {
+    display: none;
+  }
+
+  .leaderboard-table .col-date,
+  .comparison-combined-table .col-date {
+    min-width: 72px;
+  }
+
+  .comparison-side-table .col-name-a,
+  .comparison-side-table .col-name-b {
+    display: none;
+  }
+
+  .comparison-side-table .compare-result-cell {
+    display: grid;
+    gap: 1px;
+    min-width: 116px;
+    text-align: left;
+  }
+
+  .comparison-side-table .compare-time {
+    font-weight: 760;
+  }
+
+  .comparison-side-table .compare-mobile-name {
+    display: inline;
+    white-space: normal;
+    line-height: 1.12;
+  }
+
+  .comparison-side-table small {
+    display: block;
+    color: var(--muted);
+    font-size: 10.5px;
+    font-weight: 400;
+    line-height: 1.15;
+    white-space: normal;
+  }
+
+  .comparison-side-table .col-rank {
+    width: 34px;
+    min-width: 34px;
+  }
+
+  .comparison-side-table .col-diff {
+    min-width: 54px;
   }
 }
 

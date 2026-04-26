@@ -48,7 +48,7 @@ const yearBestRows = [600, 1200].map((distance) => {
 ---
 
 <Layout title={person.name}>
-  <section>
+  <section class="person-page">
     <div class="page-head">
       <div>
         <h1 class="page-title">{person.name}</h1>
@@ -80,48 +80,64 @@ const yearBestRows = [600, 1200].map((distance) => {
     </div>
 
     <h2 class="section-title">Årsbeste</h2>
-    <div class="table-wrap">
+    <div class="table-wrap person-year-table">
       <table>
         <thead>
           <tr>
-            <th>Distanse</th>
-            {years.map((year) => <th class="num">{year}</th>)}
-            <th class="num">PB</th>
+            <th class="col-distance">Distanse</th>
+            {years.map((year) => <th class="num col-year">{year}</th>)}
+            <th class="num col-time">PB</th>
           </tr>
         </thead>
         <tbody>
           {yearBestRows.map((row) => (
             <tr>
-              <td>{row.distance} m</td>
-              {years.map((year) => <td class="time num">{displayTime(row.cells[year])}</td>)}
-              <td class="time num">{displayTime(row.pb)}</td>
+              <td class="col-distance">{row.distance} m</td>
+              {years.map((year) => <td class="time num col-year">{displayTime(row.cells[year])}</td>)}
+              <td class="time num col-time">{displayTime(row.pb)}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
+    <div class="person-year-mobile">
+      {yearBestRows.map((row) => {
+        const entries = years
+          .map((year) => ({ year, result: row.cells[year] }))
+          .filter((entry) => entry.result);
+        return (
+          <div class="year-line">
+            <strong>{row.distance} m</strong>
+            {entries.length > 0 ? entries.map((entry) => (
+              <span>{entry.year} {displayTime(entry.result)}</span>
+            )) : <span class="subtle">Ingen resultater</span>}
+            <b>PB {displayTime(row.pb)}</b>
+          </div>
+        );
+      })}
+    </div>
 
     <h2 class="section-title">Alle resultater</h2>
-    <ResultTable results={personResults} showRank={false} sort={false} />
+    <ResultTable results={personResults} showRank={false} sort={false} tableClass="result-table person-results" />
 
     <h2 class="section-title">Utvikling</h2>
     <div class="table-wrap">
-      <table>
+      <table class="person-development-table">
         <thead>
           <tr>
-            <th>Distanse</th>
-            <th class="num">Første gyldige</th>
-            <th class="num">Personlig beste</th>
-            <th class="num">Forbedring</th>
+            <th class="col-distance">Distanse</th>
+            <th class="num col-first">Første gyldige</th>
+            <th class="num col-time">Personlig beste</th>
+            <th class="num col-diff">Forbedring</th>
           </tr>
         </thead>
         <tbody>
           {summaries.map((summary) => (
             <tr>
-              <td>{summary.distance} m</td>
-              <td class="time num">{displayTime(summary.first)}</td>
-              <td class="time num">{displayTime(summary.best)}</td>
-              <td class="num">{summary.delta ? `${summary.delta} sek` : "-"}</td>
+              <td class="col-distance">{summary.distance} m</td>
+              <td class="time num col-first">{displayTime(summary.first)}</td>
+              <td class="time num col-time">{displayTime(summary.best)}</td>
+              <td class="num col-diff">{summary.delta ? `${summary.delta} sek` : "-"}</td>
             </tr>
           ))}
         </tbody>

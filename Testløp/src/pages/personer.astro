@@ -18,40 +18,40 @@ import { displayTime, href } from "../lib/format";
     </div>
 
     <div class="table-wrap">
-      <table data-sortable-table>
+      <table class="people-table" data-sortable-table>
         <thead>
           <tr>
-            <th aria-sort="ascending">
+            <th class="col-name" aria-sort="ascending">
               <button class="sort-button" type="button" data-sort-key="name" data-sort-type="text" data-sort-default="asc">
                 <span>Navn</span>
                 <span class="sort-indicator" aria-hidden="true">↑</span>
               </button>
             </th>
-            <th class="num" aria-sort="none">
+            <th class="num col-results" aria-sort="none">
               <button class="sort-button align-right" type="button" data-sort-key="results" data-sort-type="number" data-sort-default="desc">
                 <span>Resultater</span>
                 <span class="sort-indicator" aria-hidden="true"></span>
               </button>
             </th>
-            <th class="num" aria-sort="none">
+            <th class="num col-first-year" aria-sort="none">
               <button class="sort-button align-right" type="button" data-sort-key="firstYear" data-sort-type="number" data-sort-default="asc">
                 <span>Første år</span>
                 <span class="sort-indicator" aria-hidden="true"></span>
               </button>
             </th>
-            <th class="num" aria-sort="none">
+            <th class="num col-last-year" aria-sort="none">
               <button class="sort-button align-right" type="button" data-sort-key="lastYear" data-sort-type="number" data-sort-default="desc">
                 <span>Siste år</span>
                 <span class="sort-indicator" aria-hidden="true"></span>
               </button>
             </th>
-            <th class="num" aria-sort="none">
+            <th class="num col-pb-600" aria-sort="none">
               <button class="sort-button align-right" type="button" data-sort-key="pb600" data-sort-type="number" data-sort-default="asc">
                 <span>PB 600 m</span>
                 <span class="sort-indicator" aria-hidden="true"></span>
               </button>
             </th>
-            <th class="num" aria-sort="none">
+            <th class="num col-pb-1200" aria-sort="none">
               <button class="sort-button align-right" type="button" data-sort-key="pb1200" data-sort-type="number" data-sort-default="asc">
                 <span>PB 1200 m</span>
                 <span class="sort-indicator" aria-hidden="true"></span>
@@ -70,12 +70,17 @@ import { displayTime, href } from "../lib/format";
               data-sort-pb600={person.pb["600"]?.timeSeconds ?? ""}
               data-sort-pb1200={person.pb["1200"]?.timeSeconds ?? ""}
             >
-              <td class="name-cell"><a href={href(`/person/${person.personId}/`)}>{person.name}</a></td>
-              <td class="num">{person.resultCount}</td>
-              <td class="num">{person.firstYear || "-"}</td>
-              <td class="num">{person.lastYear || "-"}</td>
-              <td class="time num">{displayTime(person.pb["600"])}</td>
-              <td class="time num">{displayTime(person.pb["1200"])}</td>
+              <td class="name-cell col-name">
+                <a href={href(`/person/${person.personId}/`)}>{person.name}</a>
+                <span class="person-meta-mobile">
+                  {person.resultCount} resultater · {person.firstYear && person.lastYear ? `${person.firstYear}-${person.lastYear}` : "-"}
+                </span>
+              </td>
+              <td class="num col-results">{person.resultCount}</td>
+              <td class="num col-first-year">{person.firstYear || "-"}</td>
+              <td class="num col-last-year">{person.lastYear || "-"}</td>
+              <td class="time num col-pb-600">{displayTime(person.pb["600"])}</td>
+              <td class="time num col-pb-1200">{displayTime(person.pb["1200"])}</td>
             </tr>
           ))}
         </tbody>

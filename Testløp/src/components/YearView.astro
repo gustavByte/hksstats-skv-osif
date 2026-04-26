@@ -10,6 +10,13 @@ const { year, results } = Astro.props as {
 
 const stat = stats.yearStats.find((item) => item.year === year);
 const isSoFarYear = year === 2026;
+const quickFilters = [
+  { label: "600 K", distance: "600", gender: "Kvinner" },
+  { label: "600 M", distance: "600", gender: "Menn" },
+  { label: "1200 K", distance: "1200", gender: "Kvinner" },
+  { label: "1200 M", distance: "1200", gender: "Menn" },
+  { label: "Alle", distance: "all", gender: "all" },
+];
 ---
 
 <section data-year-view>
@@ -45,6 +52,19 @@ const isSoFarYear = year === 2026;
       })}
     </div>
     <div class="toolbar-spacer"></div>
+    <div class="toolbar-group toolbar-group-primary" aria-label="Hurtigvalg">
+      {quickFilters.map((filter) => (
+        <button
+          class:list={["chip", filter.distance === "600" && filter.gender === "Menn" && "is-active"]}
+          data-filter-preset
+          data-distance-value={filter.distance}
+          data-gender-value={filter.gender}
+          aria-pressed={filter.distance === "600" && filter.gender === "Menn" ? "true" : "false"}
+        >
+          {filter.label}
+        </button>
+      ))}
+    </div>
     <div class="toolbar-group">
       {[600, 1200].map((distance) => (
         <button class:list={["chip", distance === 600 && "is-active"]} data-filter-name="distance" data-filter-value={String(distance)} aria-pressed={distance === 600 ? "true" : "false"}>
@@ -55,9 +75,9 @@ const isSoFarYear = year === 2026;
     </div>
     <div class="toolbar-group">
       {["Kvinner", "Menn"].map((gender) => (
-        <button class="chip" data-filter-name="gender" data-filter-value={gender} aria-pressed="false">{genderShort(gender)}</button>
+        <button class:list={["chip", gender === "Menn" && "is-active"]} data-filter-name="gender" data-filter-value={gender} aria-pressed={gender === "Menn" ? "true" : "false"}>{genderShort(gender)}</button>
       ))}
-      <button class="chip is-active" data-filter-name="gender" data-filter-value="all" aria-pressed="true">Alle</button>
+      <button class="chip" data-filter-name="gender" data-filter-value="all" aria-pressed="false">Alle</button>
     </div>
     <div class="toolbar-group">
       <button class="chip is-active" data-filter-name="mode" data-filter-value="best" aria-pressed="true">Årsbeste</button>

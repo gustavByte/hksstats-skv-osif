@@ -243,6 +243,11 @@ main.shell {
   gap: 5px;
 }
 
+.toolbar-group-primary {
+  padding-right: 8px;
+  border-right: 1px solid var(--line);
+}
+
 .toolbar label {
   display: inline-flex;
   align-items: center;
@@ -393,6 +398,12 @@ td.time {
   font-weight: 720;
 }
 
+td.group-cell {
+  color: var(--accent-strong);
+  font-weight: 760;
+  text-align: left;
+}
+
 .name-cell {
   min-width: 210px;
   white-space: normal;
@@ -439,6 +450,10 @@ td.time {
   margin-bottom: 14px;
 }
 
+.summary-grid.compact-summary {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .summary-item {
   padding: 12px;
   border: 1px solid var(--line);
@@ -463,6 +478,12 @@ td.time {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 14px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 12px;
 }
 
 .section-title {
@@ -512,12 +533,22 @@ td.time {
     width: 100%;
   }
 
+  .toolbar-group-primary {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 8px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
   .stats-link {
     min-height: 26px;
   }
 
   .summary-grid,
-  .two-col {
+  .summary-grid.compact-summary,
+  .two-col,
+  .stats-grid {
     grid-template-columns: 1fr;
   }
 }

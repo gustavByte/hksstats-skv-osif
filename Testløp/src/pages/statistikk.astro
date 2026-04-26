@@ -1,7 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import people from "../data/people.json";
+import results from "../data/results.json";
 import stats from "../data/stats.json";
-import { formatFullDate } from "../lib/format";
+import { bestValid, displayTime, formatFullDate, href, secondsDelta, type ResultRow } from "../lib/format";
+
+const resultRows = results as ResultRow[];
+const repeaterRows = [...people]
+  .filter((person) => person.years.length >= 4)
+  .sort((a, b) => b.years.length - a.years.length || b.resultCount - a.resultCount || a.name.localeCompare(b.name))
+  .slice(0, 12);
+const bothDistanceRows = [...people]
+  .filter((person) => person.distances.includes(600) && person.distances.includes(1200))
+  .sort((a, b) => b.resultCount - a.resultCount || a.name.localeCompare(b.name))
+  .slice(0, 12);
+const improvementRows = [...people]
+  .flatMap((person) => [600, 1200].map((distance) => {
+    const rows = resultRows.filter((result) => result.personId === person.personId && result.distance === distance && result.validToplist);
+    const result2025 = bestValid(rows.filter((result) => result.year === 2025));
+    const result2026 = bestValid(rows.filter((result) => result.year === 2026));
+    return { person, distance, result2025, result2026 };
+  }))
+  .filter((row) => row.result2025 && row.result2026 && row.result2026.timeSeconds! < row.result2025.timeSeconds!)
+  .sort((a, b) => (a.result2026!.timeSeconds! - a.result2025!.timeSeconds!) - (b.result2026!.timeSeconds! - b.result2025!.timeSeconds!))
+  .slice(0, 12);
 ---
 
 <Layout title="Statistikk">
@@ -15,6 +37,76 @@ import { formatFullDate } from "../lib/format";
           <span>{stats.totals.testlop} testløp</span>
           <span>{stats.totals.deviations} avvik</span>
         </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Gjengangere</h2>
+    <div class="stats-grid">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>4+ år</th>
+              <th class="num">År</th>
+              <th class="num">Resultater</th>
+            </tr>
+          </thead>
+          <tbody>
+            {repeaterRows.map((person) => (
+              <tr>
+                <td class="name-cell"><a href={href(`/person/${person.personId}/`)}>{person.name}</a></td>
+                <td class="num">{person.years.length}</td>
+                <td class="num">{person.resultCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>600 m + 1200 m</th>
+              <th class="num">Resultater</th>
+              <th class="num">PB 600</th>
+              <th class="num">PB 1200</th>
+            </tr>
+          </thead>
+          <tbody>
+            {bothDistanceRows.map((person) => (
+              <tr>
+                <td class="name-cell"><a href={href(`/person/${person.personId}/`)}>{person.name}</a></td>
+                <td class="num">{person.resultCount}</td>
+                <td class="time num">{displayTime(person.pb["600"])}</td>
+                <td class="time num">{displayTime(person.pb["1200"])}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+        <th>Forbedring fra 2025 til 2026</th>
+              <th>Distanse</th>
+              <th class="num">2025</th>
+              <th class="num">2026</th>
+              <th class="num">Endring</th>
+            </tr>
+          </thead>
+          <tbody>
+            {improvementRows.map((row) => (
+              <tr>
+                <td class="name-cell"><a href={href(`/person/${row.person.personId}/`)}>{row.person.name}</a></td>
+                <td>{row.distance} m</td>
+                <td class="time num">{displayTime(row.result2025)}</td>
+                <td class="time num">{displayTime(row.result2026)}</td>
+                <td class="num">{secondsDelta(row.result2026?.timeSeconds, row.result2025?.timeSeconds)} sek</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
 

@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import ResultTable from "../../components/ResultTable.astro";
 import people from "../../data/people.json";
 import results from "../../data/results.json";
+import stats from "../../data/stats.json";
 import { bestValid, displayTime, secondsDelta, type ResultRow } from "../../lib/format";
 
 export function getStaticPaths() {
@@ -26,6 +27,22 @@ const summaries = [600, 1200].map((distance) => {
     first,
     best,
     delta: first && best ? secondsDelta(first.timeSeconds, best.timeSeconds) : null
+  };
+});
+
+const years = [...stats.years].sort((a, b) => a - b);
+const yearBestRows = [600, 1200].map((distance) => {
+  const distanceRows = personResults.filter((result) => result.distance === distance && result.validToplist);
+  const cells = Object.fromEntries(
+    years.map((year) => [
+      year,
+      bestValid(distanceRows.filter((result) => result.year === year))
+    ])
+  );
+  return {
+    distance,
+    cells,
+    pb: bestValid(distanceRows)
   };
 });
 ---
@@ -60,6 +77,28 @@ const summaries = [600, 1200].map((distance) => {
         <span class="summary-label">Distanser</span>
         <span class="summary-value">{person.distances.join(" / ")}</span>
       </div>
+    </div>
+
+    <h2 class="section-title">Årsbeste</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Distanse</th>
+            {years.map((year) => <th class="num">{year}</th>)}
+            <th class="num">PB</th>
+          </tr>
+        </thead>
+        <tbody>
+          {yearBestRows.map((row) => (
+            <tr>
+              <td>{row.distance} m</td>
+              {years.map((year) => <td class="time num">{displayTime(row.cells[year])}</td>)}
+              <td class="time num">{displayTime(row.pb)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
 
     <h2 class="section-title">Alle resultater</h2>

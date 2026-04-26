@@ -1,5 +1,5 @@
 ---
-import { displayTestlop, formatDate, href, statusLabel, sortByTime, type ResultRow } from "../lib/format";
+import { displayTestlop, formatDate, genderShort, href, statusLabel, sortByTime, type ResultRow } from "../lib/format";
 
 const { results, emptyText = "Ingen resultater." } = Astro.props as {
   results: ResultRow[];
@@ -20,7 +20,7 @@ const rows = shouldSort ? sortByTime(results) : results;
     <table>
       <thead>
         <tr>
-          {showRank && <th class="num">Plass</th>}
+          {showRank && <th class="num" data-context-header>Plass</th>}
           <th>Navn</th>
           <th class="num">Tid</th>
           <th class="num">År</th>
@@ -38,6 +38,7 @@ const rows = shouldSort ? sortByTime(results) : results;
             data-name={result.name}
             data-distance={String(result.distance)}
             data-gender={result.gender}
+            data-group={`${result.distance} ${genderShort(result.gender)}`}
             data-time={result.timeSeconds ?? ""}
             data-valid={result.validToplist ? "true" : "false"}
             data-search={`${result.name} ${result.testlopId || ""} ${result.note || ""}`.toLowerCase()}

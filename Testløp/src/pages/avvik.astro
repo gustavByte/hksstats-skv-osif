@@ -1,7 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import quality from "../data/quality.json";
+import results from "../data/results.json";
 import { formatFullDate, href } from "../lib/format";
+
+const archivedAliasCount = quality.archivedNameReview
+  .flatMap((group) => group.entries)
+  .filter((entry) => entry.status === "Avklart i nettside").length;
+const qualityCounts = [
+  { label: "Åpne avvik", value: quality.summary.deviationCount },
+  { label: "Godkjente alias", value: archivedAliasCount },
+  { label: "Arkiverte navnegrupper", value: quality.summary.archivedNameReviewCount },
+  { label: "Resultater ikke offisielle", value: results.filter((row) => !row.validToplist || !row.validRecord).length },
+  { label: "Resultater med merknad", value: results.filter((row) => row.note || row.checkStatus !== "OK").length },
+];
 ---
 
 <Layout title="Avvik">
@@ -16,39 +28,52 @@ import { formatFullDate, href } from "../lib/format";
       </div>
     </div>
 
-    <h2 class="section-title">Fra `Avvik og sjekk`</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th class="num">År</th>
-            <th>Dato</th>
-            <th>Distanse</th>
-            <th>Kjønn</th>
-            <th>Navn</th>
-            <th class="num">Tid</th>
-            <th>Status</th>
-            <th>Merknad</th>
-          </tr>
-        </thead>
-        <tbody>
-          {quality.deviations.map((row) => (
-            <tr>
-              <td>{row.id}</td>
-              <td class="num">{row.year}</td>
-              <td>{formatFullDate(row.date)}</td>
-              <td>{row.distance} m</td>
-              <td>{row.gender}</td>
-              <td class="name-cell"><a href={href(`/person/${row.personId}/`)}>{row.name}</a></td>
-              <td class="time num">{row.timeDisplay || "-"}</td>
-              <td><span class="badge bad">{row.checkStatus}</span></td>
-              <td>{row.checkNote || row.note || "-"}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div class="summary-grid compact-summary">
+      {qualityCounts.map((item) => (
+        <div class="summary-item">
+          <span class="summary-label">{item.label}</span>
+          <span class="summary-value">{item.value}</span>
+        </div>
+      ))}
     </div>
+
+    <h2 class="section-title">Fra `Avvik og sjekk`</h2>
+    {quality.deviations.length === 0 ? (
+      <div class="empty-state">Ingen åpne avvik fra arbeidsboken.</div>
+    ) : (
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th class="num">År</th>
+              <th>Dato</th>
+              <th>Distanse</th>
+              <th>Kjønn</th>
+              <th>Navn</th>
+              <th class="num">Tid</th>
+              <th>Status</th>
+              <th>Merknad</th>
+            </tr>
+          </thead>
+          <tbody>
+            {quality.deviations.map((row) => (
+              <tr>
+                <td>{row.id}</td>
+                <td class="num">{row.year}</td>
+                <td>{formatFullDate(row.date)}</td>
+                <td>{row.distance} m</td>
+                <td>{row.gender}</td>
+                <td class="name-cell"><a href={href(`/person/${row.personId}/`)}>{row.name}</a></td>
+                <td class="time num">{row.timeDisplay || "-"}</td>
+                <td><span class="badge bad">{row.checkStatus}</span></td>
+                <td>{row.checkNote || row.note || "-"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
 
     {quality.manualNameReview.length > 0 && (
       <>

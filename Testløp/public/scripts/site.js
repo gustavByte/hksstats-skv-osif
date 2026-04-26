@@ -1,6 +1,13 @@
 (function () {
   const byId = (id) => document.getElementById(id);
   const asNumber = (value) => (value === "" || value == null ? null : Number(value));
+  const genderShort = (value) => (value === "Kvinner" ? "K" : value === "Menn" ? "M" : value);
+  const groupOrder = {
+    "600_Menn": 0,
+    "600_Kvinner": 1,
+    "1200_Menn": 2,
+    "1200_Kvinner": 3,
+  };
   const formatDate = (value) => {
     if (!value) return "-";
     const [year, month, day] = value.split("-");
@@ -19,6 +26,34 @@
     if (!element) return null;
     return JSON.parse(element.textContent || "null");
   };
+  const getParam = (params, ...names) => {
+    for (const name of names) {
+      const value = params.get(name);
+      if (value) return value;
+    }
+    return null;
+  };
+  const normalizeAll = (value) => (value === "Alle" ? "all" : value);
+
+  function setFilterValue(root, name, value) {
+    let found = false;
+    root.querySelectorAll(`[data-filter-name="${name}"]`).forEach((candidate) => {
+      const active = candidate.dataset.filterValue === value;
+      found = found || active;
+      candidate.classList.toggle("is-active", active);
+      candidate.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    return found;
+  }
+
+  function replaceUrlParams(entries) {
+    const url = new URL(window.location.href);
+    Object.entries(entries).forEach(([name, value]) => {
+      if (value === "" || value == null) url.searchParams.delete(name);
+      else url.searchParams.set(name, value);
+    });
+    window.history.replaceState({}, "", url);
+  }
 
   function initButtonGroups(root, onChange) {
     root.querySelectorAll("[data-filter-name]").forEach((button) => {
@@ -43,12 +78,55 @@
       const rows = Array.from(root.querySelectorAll("tbody tr"));
       const search = root.querySelector("[data-search]");
       const count = root.querySelector("[data-visible-count]");
+      const contextHeader = root.querySelector("[data-context-header]");
 
-      function apply() {
+      function groupKey(row) {
+        return `${row.dataset.distance}_${row.dataset.gender}`;
+      }
+
+      function groupLabel(row) {
+        return `${row.dataset.distance} ${genderShort(row.dataset.gender)}`;
+      }
+
+      function syncPresetButtons() {
+        const distance = selected(root, "distance");
+        const gender = selected(root, "gender");
+        root.querySelectorAll("[data-filter-preset]").forEach((button) => {
+          const active = button.dataset.distanceValue === distance && button.dataset.genderValue === gender;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+      }
+
+      function applyUrlState() {
+        const params = new URLSearchParams(window.location.search);
+        const distance = normalizeAll(getParam(params, "distanse", "distance"));
+        const gender = normalizeAll(getParam(params, "kjonn", "gender"));
+        const mode = normalizeAll(getParam(params, "visning", "mode"));
+        const query = getParam(params, "sok", "q");
+        if (distance) setFilterValue(root, "distance", distance);
+        if (gender) setFilterValue(root, "gender", gender);
+        if (mode) setFilterValue(root, "mode", mode);
+        if (query && search) search.value = query;
+        syncPresetButtons();
+      }
+
+      function updateUrlState() {
+        replaceUrlParams({
+          distanse: selected(root, "distance"),
+          kjonn: selected(root, "gender"),
+          visning: selected(root, "mode"),
+          sok: (search?.value || "").trim() || null,
+        });
+      }
+
+      function apply(options = {}) {
+        const updateUrl = options.updateUrl !== false;
         const distance = selected(root, "distance");
         const gender = selected(root, "gender");
         const mode = selected(root, "mode");
         const query = (search?.value || "").trim().toLowerCase();
+        const exactGroup = distance !== "all" && gender !== "all";
         const candidates = rows.filter((row) => {
           if (distance !== "all" && row.dataset.distance !== distance) return false;
           if (gender !== "all" && row.dataset.gender !== gender) return false;
@@ -70,20 +148,47 @@
           .sort((a, b) => {
             const timeA = asNumber(a.dataset.time) ?? Number.POSITIVE_INFINITY;
             const timeB = asNumber(b.dataset.time) ?? Number.POSITIVE_INFINITY;
+            if (!exactGroup) {
+              const orderA = groupOrder[groupKey(a)] ?? 99;
+              const orderB = groupOrder[groupKey(b)] ?? 99;
+              if (orderA !== orderB) return orderA - orderB;
+            }
             return timeA - timeB || (a.dataset.name || "").localeCompare(b.dataset.name || "");
           });
+        if (contextHeader) {
+          contextHeader.textContent = exactGroup ? "Plass" : "Gruppe";
+          contextHeader.classList.toggle("num", exactGroup);
+        }
         rows.forEach((row) => (row.hidden = true));
         visible.forEach((row, index) => {
           row.hidden = false;
-          row.querySelector("[data-rank]").textContent = row.dataset.time ? String(index + 1) : "";
+          const rankCell = row.querySelector("[data-rank]");
+          if (rankCell) {
+            rankCell.textContent = exactGroup ? (row.dataset.time ? String(index + 1) : "") : groupLabel(row);
+            rankCell.classList.toggle("num", exactGroup);
+            rankCell.classList.toggle("group-cell", !exactGroup);
+          }
           tbody.appendChild(row);
         });
         if (count) count.textContent = String(visible.length);
+        if (updateUrl) updateUrlState();
       }
 
-      initButtonGroups(root, apply);
-      search?.addEventListener("input", apply);
-      apply();
+      applyUrlState();
+      initButtonGroups(root, () => {
+        syncPresetButtons();
+        apply();
+      });
+      root.querySelectorAll("[data-filter-preset]").forEach((button) => {
+        button.addEventListener("click", () => {
+          setFilterValue(root, "distance", button.dataset.distanceValue || "all");
+          setFilterValue(root, "gender", button.dataset.genderValue || "all");
+          syncPresetButtons();
+          apply();
+        });
+      });
+      search?.addEventListener("input", () => apply());
+      apply({ updateUrl: false });
     });
   }
 
@@ -171,12 +276,34 @@
     const results = parseJson("results-data") || [];
     const tbody = root.querySelector("tbody");
     const count = root.querySelector("[data-visible-count]");
+    const includeChecksControl = root.querySelector("[data-include-checks]");
+    let urlReady = false;
+
+    function applyUrlState() {
+      const params = new URLSearchParams(window.location.search);
+      const distance = normalizeAll(getParam(params, "distanse", "distance"));
+      const gender = normalizeAll(getParam(params, "kjonn", "gender"));
+      const limit = getParam(params, "topp", "limit");
+      if (distance) setFilterValue(root, "distance", distance);
+      if (gender) setFilterValue(root, "gender", gender);
+      if (limit) setFilterValue(root, "limit", limit);
+      if (includeChecksControl) includeChecksControl.checked = params.get("sjekk") === "1" || params.get("checks") === "1";
+    }
+
+    function updateUrlState() {
+      replaceUrlParams({
+        distanse: selected(root, "distance"),
+        kjonn: selected(root, "gender"),
+        topp: selected(root, "limit"),
+        sjekk: includeChecksControl?.checked ? "1" : null,
+      });
+    }
 
     function render() {
       const distance = Number(selected(root, "distance"));
       const gender = selected(root, "gender");
       const limit = Number(selected(root, "limit"));
-      const includeChecks = root.querySelector("[data-include-checks]")?.checked;
+      const includeChecks = includeChecksControl?.checked;
       const best = new Map();
       results
         .filter((row) => row.distance === distance && row.gender === gender && row.timeSeconds != null)
@@ -203,11 +330,14 @@
         )
         .join("");
       if (count) count.textContent = String(rows.length);
+      if (urlReady) updateUrlState();
     }
 
+    applyUrlState();
     initButtonGroups(root, render);
-    root.querySelector("[data-include-checks]")?.addEventListener("change", render);
+    includeChecksControl?.addEventListener("change", render);
     render();
+    urlReady = true;
   }
 
   function bestByPerson(rows) {
@@ -239,6 +369,35 @@
 
     function control(name) {
       return root.querySelector(`[name="${name}"]`)?.value;
+    }
+
+    function setControl(name, value) {
+      const element = root.querySelector(`[name="${name}"]`);
+      if (!element || value == null) return;
+      const normalized = normalizeAll(value);
+      const option = Array.from(element.options || []).find((candidate) => candidate.value === normalized || candidate.textContent === value);
+      if (option) element.value = option.value;
+    }
+
+    function applyUrlState() {
+      const params = new URLSearchParams(window.location.search);
+      setControl("yearA", getParam(params, "a", "yearA"));
+      setControl("yearB", getParam(params, "b", "yearB"));
+      setControl("distance", getParam(params, "distanse", "distance"));
+      setControl("gender", getParam(params, "kjonn", "gender"));
+      setControl("matrixDistance", getParam(params, "matriseDistanse", "matrixDistance"));
+      setControl("matrixGender", getParam(params, "matriseKjonn", "matrixGender"));
+    }
+
+    function updateUrlState() {
+      replaceUrlParams({
+        a: control("yearA"),
+        b: control("yearB"),
+        distanse: control("distance"),
+        kjonn: control("gender"),
+        matriseDistanse: control("matrixDistance"),
+        matriseKjonn: control("matrixGender"),
+      });
     }
 
     function filteredRows(year, distance, gender) {
@@ -316,9 +475,11 @@
         .join("");
     }
 
+    applyUrlState();
     root.querySelectorAll("select").forEach((select) => select.addEventListener("change", () => {
       renderAb();
       renderMatrix();
+      updateUrlState();
     }));
     renderAb();
     renderMatrix();

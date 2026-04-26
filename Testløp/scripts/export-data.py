@@ -19,6 +19,10 @@ OUTPUT_DIR = ROOT / "src" / "data"
 
 DISTANCES = (600, 1200)
 GENDERS = ("Kvinner", "Menn")
+PLACE_BY_YEAR = {
+    2025: "Bislett",
+    2026: "Bislett",
+}
 APPROVED_CHECK_RESULT_IDS = {
     "R0035",  # Sofie Kjos Bergum, 600 m, 2022
     "R0072",  # Elisabeth Oiulfstad, 1200 m, 2023
@@ -230,6 +234,8 @@ def result_from_row(row: dict[str, Any]) -> dict[str, Any]:
         "sourceType": as_text(row.get("kildetype")),
         "checkStatus": as_text(row.get("sjekk_status")) or "OK",
     }
+    if result["year"] in PLACE_BY_YEAR:
+        result["place"] = PLACE_BY_YEAR[result["year"]]
     return apply_approved_check(result)
 
 

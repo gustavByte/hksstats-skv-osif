@@ -4,12 +4,18 @@ import ResultTable from "./ResultTable.astro";
 import { href, genderShort, type ResultRow } from "../lib/format";
 
 const { year, results } = Astro.props as {
-  year: number;
+  year: number | "all";
   results: ResultRow[];
 };
 
-const stat = stats.yearStats.find((item) => item.year === year);
-const isSoFarYear = year === 2026;
+const isAllYears = year === "all";
+const numericYear = typeof year === "number" ? year : null;
+const stat = numericYear == null ? null : stats.yearStats.find((item) => item.year === numericYear);
+const resultCount = isAllYears ? stats.totals.results : stat?.resultCount ?? 0;
+const personCount = isAllYears ? stats.totals.people : stat?.personCount ?? 0;
+const testlopCount = isAllYears ? stats.totals.testlop : stat?.testlopCount ?? 0;
+const title = isAllYears ? "Alle år" : String(year);
+const isSoFarYear = numericYear === 2026;
 const quickFilters = [
   { label: "600 K", distance: "600", gender: "Kvinner" },
   { label: "600 M", distance: "600", gender: "Menn" },
@@ -23,13 +29,13 @@ const quickFilters = [
   <div class="page-head">
     <div>
       <h1 class="page-title">
-        <span>{year}</span>
+        <span>{title}</span>
         {isSoFarYear && <span class="year-status">so far</span>}
       </h1>
       <div class="meta-line">
-        <span>{stat?.resultCount ?? 0} resultater</span>
-        <span>{stat?.personCount ?? 0} personer</span>
-        <span>{stat?.testlopCount ?? 0} testløp</span>
+        <span>{resultCount} resultater</span>
+        <span>{personCount} personer</span>
+        <span>{testlopCount} testløp</span>
         {isSoFarYear && <span>foreløpig status</span>}
         <span><span data-visible-count>{results.length}</span> vist</span>
       </div>
@@ -42,7 +48,7 @@ const quickFilters = [
         const itemStat = stats.yearStats.find((candidate) => candidate.year === item);
         return (
           <a
-            class:list={["chip", item === year && "is-active", itemStat?.resultCount === 0 && "is-muted"]}
+            class:list={["chip", item === numericYear && "is-active", itemStat?.resultCount === 0 && "is-muted"]}
             href={href(`/aar/${item}/`)}
           >
             <span>{item}</span>
@@ -50,6 +56,7 @@ const quickFilters = [
           </a>
         );
       })}
+      <a class:list={["chip", isAllYears && "is-active"]} href={href("/aar/alle/")}>Alle</a>
     </div>
     <div class="toolbar-spacer"></div>
     <div class="toolbar-group toolbar-group-primary" aria-label="Hurtigvalg">
@@ -87,5 +94,5 @@ const quickFilters = [
     <input class="text-input" id={`search-${year}`} data-search type="search" placeholder="Søk" />
   </div>
 
-  <ResultTable results={results} emptyText="Ingen resultater for dette året ennå." tableClass="result-table year-results" />
+  <ResultTable results={results} emptyText={isAllYears ? "Ingen resultater." : "Ingen resultater for dette året ennå."} tableClass="result-table year-results" />
 </section>

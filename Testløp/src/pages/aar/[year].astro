@@ -5,13 +5,19 @@ import results from "../../data/results.json";
 import stats from "../../data/stats.json";
 
 export function getStaticPaths() {
-  return stats.years.map((year) => ({ params: { year: String(year) } }));
+  return [
+    { params: { year: "alle" } },
+    ...stats.years.map((year) => ({ params: { year: String(year) } })),
+  ];
 }
 
-const year = Number(Astro.params.year);
-const yearResults = results.filter((result) => result.year === year);
+const yearParam = Astro.params.year;
+const isAllYears = yearParam === "alle";
+const selectedYear = isAllYears ? null : Number(yearParam);
+const year = selectedYear ?? "all";
+const yearResults = selectedYear == null ? results : results.filter((result) => result.year === selectedYear);
 ---
 
-<Layout title={`Resultater ${year}`}>
+<Layout title={isAllYears ? "Alle resultater" : `Resultater ${year}`}>
   <YearView year={year} results={yearResults} />
 </Layout>

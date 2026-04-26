@@ -50,6 +50,7 @@ def main() -> None:
     DIST_DIR.mkdir(parents=True)
 
     copy_if_exists(ROOT / "index.html", DIST_DIR / "index.html")
+    copy_if_exists(ROOT / ".nojekyll", DIST_DIR / ".nojekyll")
     copy_if_exists(ROOT / "styles.css", DIST_DIR / "styles.css")
     copy_if_exists(ROOT / "app.js", DIST_DIR / "app.js")
     copy_if_exists(ROOT / "legacy", DIST_DIR / "legacy")

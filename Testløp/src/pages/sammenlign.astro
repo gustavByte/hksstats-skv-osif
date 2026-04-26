@@ -12,10 +12,10 @@ const fallback = stats.resultYears.find((year) => year !== latest) || stats.resu
   <section data-comparison-page>
     <div class="page-head">
       <div>
-        <h1 class="page-title">Sammenlign</h1>
+        <h1 class="page-title">Sammenlign nivå</h1>
         <div class="meta-line">
-          <span>Årsbeste per person</span>
-          <span>Matrise side ved side</span>
+          <span>Resultatlister mot hverandre</span>
+          <span><span data-comparison-count-a>0</span> mot <span data-comparison-count-b>0</span> resultater</span>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@ const fallback = stats.resultYears.find((year) => year !== latest) || stats.resu
     <script type="application/json" id="results-data" set:html={JSON.stringify(results)}></script>
     <script type="application/json" id="years-data" set:html={JSON.stringify(years)}></script>
 
-    <div class="toolbar" aria-label="A/B-sammenligning">
+    <div class="toolbar" aria-label="Sammenligningsvalg">
       <label>År A
         <select class="select-input" name="yearA">
           {years.map((year) => <option value={year} selected={year === latest}>{year}</option>)}
@@ -44,48 +44,36 @@ const fallback = stats.resultYears.find((year) => year !== latest) || stats.resu
         <select class="select-input" name="gender">
           <option>Alle</option>
           <option>Kvinner</option>
-          <option>Menn</option>
+          <option selected>Menn</option>
+        </select>
+      </label>
+      <label>Grunnlag
+        <select class="select-input" name="mode">
+          <option value="all" selected>Alle resultater</option>
+          <option value="yearBest">Årsbeste per person</option>
         </select>
       </label>
     </div>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Navn</th>
-            <th>Kjønn</th>
-            <th class="num">År A</th>
-            <th class="num">År B</th>
-            <th class="num">Endring</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody data-ab-body></tbody>
-      </table>
-    </div>
+    <div class="level-summary surface" data-level-summary></div>
+    <div data-level-sections></div>
 
-    <h2 class="section-title">Årsmatrise</h2>
-    <div class="toolbar" aria-label="Matrisevalg">
-      <label>Distanse
-        <select class="select-input" name="matrixDistance">
-          <option value="600" selected>600 m</option>
-          <option value="1200">1200 m</option>
-        </select>
-      </label>
-      <label>Kjønn
-        <select class="select-input" name="matrixGender">
-          <option selected>Kvinner</option>
-          <option>Menn</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="table-wrap">
-      <table>
-        <thead data-matrix-head></thead>
-        <tbody data-matrix-body></tbody>
-      </table>
+    <div class="level-secondary" data-common-section>
+      <h2 class="section-title">Samme personer i begge år</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Navn</th>
+              <th>Kjønn</th>
+              <th class="num" data-common-year-a>År A</th>
+              <th class="num" data-common-year-b>År B</th>
+              <th class="num">Endring</th>
+            </tr>
+          </thead>
+          <tbody data-common-body></tbody>
+        </table>
+      </div>
     </div>
   </section>
 </Layout>

@@ -34,6 +34,8 @@
     return null;
   };
   const normalizeAll = (value) => (value === "Alle" ? "all" : value);
+  const escapeHtml = (value) =>
+    String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
 
   function setFilterValue(root, name, value) {
     let found = false;
@@ -362,10 +364,14 @@
     const root = document.querySelector("[data-comparison-page]");
     if (!root) return;
     const results = parseJson("results-data") || [];
-    const years = parseJson("years-data") || [];
-    const abBody = root.querySelector("[data-ab-body]");
-    const matrixBody = root.querySelector("[data-matrix-body]");
-    const matrixHead = root.querySelector("[data-matrix-head]");
+    const sections = root.querySelector("[data-level-sections]");
+    const summary = root.querySelector("[data-level-summary]");
+    const countA = root.querySelector("[data-comparison-count-a]");
+    const countB = root.querySelector("[data-comparison-count-b]");
+    const commonSection = root.querySelector("[data-common-section]");
+    const commonBody = root.querySelector("[data-common-body]");
+    const commonYearA = root.querySelector("[data-common-year-a]");
+    const commonYearB = root.querySelector("[data-common-year-b]");
 
     function control(name) {
       return root.querySelector(`[name="${name}"]`)?.value;
@@ -374,9 +380,19 @@
     function setControl(name, value) {
       const element = root.querySelector(`[name="${name}"]`);
       if (!element || value == null) return;
-      const normalized = normalizeAll(value);
-      const option = Array.from(element.options || []).find((candidate) => candidate.value === normalized || candidate.textContent === value);
+      const normalized = normalizeMode(normalizeAll(value));
+      const option = Array.from(element.options || []).find((candidate) => {
+        const candidateValue = normalizeMode(normalizeAll(candidate.value));
+        const candidateText = normalizeMode(normalizeAll(candidate.textContent?.trim()));
+        return candidateValue === normalized || candidateText === normalized;
+      });
       if (option) element.value = option.value;
+    }
+
+    function normalizeMode(value) {
+      if (value === "best" || value === "arsbeste" || value === "Årsbeste per person") return "yearBest";
+      if (value === "Alle resultater") return "all";
+      return value;
     }
 
     function applyUrlState() {
@@ -385,8 +401,7 @@
       setControl("yearB", getParam(params, "b", "yearB"));
       setControl("distance", getParam(params, "distanse", "distance"));
       setControl("gender", getParam(params, "kjonn", "gender"));
-      setControl("matrixDistance", getParam(params, "matriseDistanse", "matrixDistance"));
-      setControl("matrixGender", getParam(params, "matriseKjonn", "matrixGender"));
+      setControl("mode", getParam(params, "grunnlag", "mode", "visning"));
     }
 
     function updateUrlState() {
@@ -395,94 +410,348 @@
         b: control("yearB"),
         distanse: control("distance"),
         kjonn: control("gender"),
-        matriseDistanse: control("matrixDistance"),
-        matriseKjonn: control("matrixGender"),
+        grunnlag: control("mode"),
+      });
+    }
+
+    function modeLabel(mode) {
+      return mode === "yearBest" ? "Årsbeste per person" : "Alle resultater";
+    }
+
+    function genderGroups(gender) {
+      return gender === "Alle" ? ["Kvinner", "Menn"] : [gender];
+    }
+
+    function sortResults(rows) {
+      return [...rows].sort((a, b) => {
+        const timeA = a.timeSeconds ?? Number.POSITIVE_INFINITY;
+        const timeB = b.timeSeconds ?? Number.POSITIVE_INFINITY;
+        return timeA - timeB || (a.name || "").localeCompare(b.name || "") || (a.date || "").localeCompare(b.date || "");
       });
     }
 
     function filteredRows(year, distance, gender) {
-      return results.filter((row) => {
+      return sortResults(results.filter((row) => {
         if (year && row.year !== Number(year)) return false;
         if (row.distance !== Number(distance)) return false;
-        if (gender !== "Alle" && row.gender !== gender) return false;
-        return row.timeSeconds != null;
-      });
+        if (row.gender !== gender) return false;
+        return row.timeSeconds != null && row.validToplist === true;
+      }));
     }
 
-    function renderAb() {
-      const yearA = control("yearA");
-      const yearB = control("yearB");
-      const distance = control("distance");
-      const gender = control("gender");
-      const a = bestByPerson(filteredRows(yearA, distance, gender));
-      const b = bestByPerson(filteredRows(yearB, distance, gender));
-      const personIds = Array.from(new Set([...a.keys(), ...b.keys()]));
-      const rows = personIds
-        .map((personId) => {
-          const rowA = a.get(personId);
-          const rowB = b.get(personId);
-          const name = rowA?.name || rowB?.name || personId;
-          const genderLabel = rowA?.gender || rowB?.gender || "";
-          const status = rowA && rowB ? (rowA.timeSeconds < rowB.timeSeconds ? "Forbedret" : rowA.timeSeconds > rowB.timeSeconds ? "Svakere" : "Lik") : rowA ? "Ny i år A" : "Mangler i år A";
-          const sort = rowA?.timeSeconds ?? rowB?.timeSeconds ?? 99999;
-          return { personId, name, genderLabel, rowA, rowB, status, sort };
-        })
-        .sort((x, y) => x.sort - y.sort || x.name.localeCompare(y.name));
-      abBody.innerHTML = rows
-        .map(
-          (row) => `
+    function bestRowsPerPerson(rows) {
+      const best = new Map();
+      rows.forEach((row) => {
+        const current = best.get(row.personId);
+        if (!current || row.timeSeconds < current.timeSeconds) best.set(row.personId, row);
+      });
+      return sortResults(Array.from(best.values()));
+    }
+
+    function comparisonResults(year, distance, gender, mode) {
+      const rows = filteredRows(year, distance, gender);
+      return mode === "yearBest" ? bestRowsPerPerson(rows) : rows;
+    }
+
+    function formatSeconds(value) {
+      if (value == null || !Number.isFinite(value)) return "-";
+      const sign = value < 0 ? "-" : "";
+      const tenths = Math.round(Math.abs(value) * 10);
+      const minutes = Math.floor(tenths / 600);
+      const remaining = tenths - minutes * 600;
+      const seconds = Math.floor(remaining / 10);
+      const decimal = remaining % 10;
+      const secondText = `${String(seconds).padStart(minutes ? 2 : 1, "0")}${decimal ? `,${decimal}` : ""}`;
+      return minutes ? `${sign}${minutes}:${secondText}` : `${sign}${secondText}`;
+    }
+
+    function formatDeltaSeconds(value) {
+      if (value == null || !Number.isFinite(value)) return "";
+      if (Math.abs(value) < 0.05) return "0,0 sek";
+      const rounded = Math.round(value * 10) / 10;
+      const formatted = Math.abs(rounded).toLocaleString("nb-NO", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+      return `${rounded > 0 ? "+" : "-"}${formatted} sek`;
+    }
+
+    function formatCountDiff(value) {
+      if (!Number.isFinite(value)) return "";
+      if (value === 0) return "0";
+      return `${value > 0 ? "+" : ""}${value}`;
+    }
+
+    function average(values, minimum) {
+      if (values.length < minimum) return null;
+      return values.slice(0, minimum).reduce((sum, value) => sum + value, 0) / minimum;
+    }
+
+    function median(values) {
+      if (!values.length) return null;
+      const middle = Math.floor(values.length / 2);
+      return values.length % 2 ? values[middle] : (values[middle - 1] + values[middle]) / 2;
+    }
+
+    function calculateStats(rows) {
+      const times = rows.map((row) => row.timeSeconds).filter((value) => value != null).sort((a, b) => a - b);
+      return {
+        resultCount: rows.length,
+        personCount: new Set(rows.map((row) => row.personId)).size,
+        fastest: times[0] ?? null,
+        top5Average: average(times, 5),
+        top10Average: average(times, 10),
+        top20Average: average(times, 20),
+        median: median(times),
+        top5Cutoff: times.length >= 5 ? times[4] : null,
+        top10Cutoff: times.length >= 10 ? times[9] : null,
+        top20Cutoff: times.length >= 20 ? times[19] : null,
+      };
+    }
+
+    const statRows = [
+      { key: "resultCount", label: "Resultater", type: "count" },
+      { key: "personCount", label: "Personer", type: "count" },
+      { key: "fastest", label: "Raskeste", type: "time" },
+      { key: "top5Average", label: "Topp 5 snitt", type: "time" },
+      { key: "top10Average", label: "Topp 10 snitt", type: "time" },
+      { key: "top20Average", label: "Topp 20 snitt", type: "time" },
+      { key: "median", label: "Median", type: "time" },
+      { key: "top5Cutoff", label: "Siste tid topp 5", type: "time" },
+      { key: "top10Cutoff", label: "Siste tid topp 10", type: "time" },
+      { key: "top20Cutoff", label: "Siste tid topp 20", type: "time" },
+    ];
+
+    function statValue(stats, row) {
+      const value = stats[row.key];
+      return row.type === "count" ? String(value) : formatSeconds(value);
+    }
+
+    function statDiff(statsA, statsB, row) {
+      const valueA = statsA[row.key];
+      const valueB = statsB[row.key];
+      if (valueA == null || valueB == null) return "";
+      return row.type === "count" ? formatCountDiff(valueA - valueB) : formatDeltaSeconds(valueA - valueB);
+    }
+
+    function diffClass(statsA, statsB, row) {
+      if (row.type !== "time") return "";
+      const valueA = statsA[row.key];
+      const valueB = statsB[row.key];
+      if (valueA == null || valueB == null || Math.abs(valueA - valueB) < 0.05) return "";
+      return valueA < valueB ? "good" : "bad";
+    }
+
+    function resultLink(row) {
+      if (!row) return "";
+      return `<a href="${personUrl(row.personId)}">${escapeHtml(row.name)}</a>`;
+    }
+
+    function resultNameWithMeta(row) {
+      if (!row) return "";
+      const date = row.date ? formatDate(row.date) : "";
+      const meta = [date, row.testlopId].filter(Boolean).map(escapeHtml).join(" · ");
+      return `${resultLink(row)}${meta ? `<span class="subtle row-meta">${meta}</span>` : ""}`;
+    }
+
+    function noteCell(row) {
+      if (!row) return "";
+      const badges = badgeHtml(row);
+      return badges || `<span class="subtle">-</span>`;
+    }
+
+    function renderStatsTable(label, yearA, yearB, statsA, statsB) {
+      return `
+        <div class="table-wrap level-stats">
+          <table>
+            <thead>
+              <tr>
+                <th>${escapeHtml(label)}</th>
+                <th class="num">${escapeHtml(yearA)}</th>
+                <th class="num">${escapeHtml(yearB)}</th>
+                <th class="num">Diff</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${statRows
+                .map(
+                  (row) => `
+                    <tr>
+                      <td>${row.label}</td>
+                      <td class="num time">${statValue(statsA, row)}</td>
+                      <td class="num time">${statValue(statsB, row)}</td>
+                      <td class="num ${diffClass(statsA, statsB, row)}">${statDiff(statsA, statsB, row)}</td>
+                    </tr>`
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>`;
+    }
+
+    function renderSideBySide(yearA, yearB, rowsA, rowsB) {
+      const length = Math.max(rowsA.length, rowsB.length);
+      const rows = Array.from({ length }, (_, index) => {
+        const a = rowsA[index];
+        const b = rowsB[index];
+        const diff = a && b ? formatDeltaSeconds(a.timeSeconds - b.timeSeconds) : "";
+        return `
           <tr>
-            <td class="name-cell"><a href="${personUrl(row.personId)}">${row.name}</a></td>
-            <td>${row.genderLabel}</td>
-            <td class="time num">${row.rowA?.timeDisplay || ""}</td>
-            <td class="time num">${row.rowB?.timeDisplay || ""}</td>
-            <td class="num">${deltaLabel(row.rowA, row.rowB)}</td>
-            <td>${row.status}</td>
-          </tr>`
+            <td class="num">${index + 1}</td>
+            <td class="time num">${a?.timeDisplay || ""}</td>
+            <td class="name-cell">${resultNameWithMeta(a)}</td>
+            <td class="time num">${b?.timeDisplay || ""}</td>
+            <td class="name-cell">${resultNameWithMeta(b)}</td>
+            <td class="num">${diff}</td>
+          </tr>`;
+      }).join("");
+      return `
+        <h3 class="subsection-title">Side ved side</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Plass</th>
+                <th class="num">${escapeHtml(yearA)}</th>
+                <th>Navn</th>
+                <th class="num">${escapeHtml(yearB)}</th>
+                <th>Navn</th>
+                <th class="num">Diff</th>
+              </tr>
+            </thead>
+            <tbody>${rows || `<tr><td colspan="6" class="empty-state">Ingen resultater.</td></tr>`}</tbody>
+          </table>
+        </div>`;
+    }
+
+    function renderCombined(yearA, yearB, rowsA, rowsB) {
+      const rows = sortResults([...rowsA.map((row) => ({ ...row, compareYear: yearA })), ...rowsB.map((row) => ({ ...row, compareYear: yearB }))]);
+      return `
+        <h3 class="subsection-title">Samlet rangert liste</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Rank</th>
+                <th class="num">År</th>
+                <th>Navn</th>
+                <th class="num">Tid</th>
+                <th>Dato</th>
+                <th>Testløp</th>
+                <th>Merknad</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows
+                .map(
+                  (row, index) => `
+                    <tr>
+                      <td class="num">${index + 1}</td>
+                      <td class="num">${escapeHtml(row.compareYear)}</td>
+                      <td class="name-cell">${resultLink(row)}</td>
+                      <td class="time num">${row.timeDisplay || ""}</td>
+                      <td>${formatDate(row.date)}</td>
+                      <td>${escapeHtml(row.testlopId || "-")}</td>
+                      <td>${noteCell(row)}</td>
+                    </tr>`
+                )
+                .join("") || `<tr><td colspan="7" class="empty-state">Ingen resultater.</td></tr>`}
+            </tbody>
+          </table>
+        </div>`;
+    }
+
+    function renderBlock(group, yearA, yearB, distance, mode) {
+      const rowsA = comparisonResults(yearA, distance, group, mode);
+      const rowsB = comparisonResults(yearB, distance, group, mode);
+      const statsA = calculateStats(rowsA);
+      const statsB = calculateStats(rowsB);
+      const label = `${distance} m ${group.toLowerCase()}`;
+      return {
+        rowsA,
+        rowsB,
+        statsA,
+        statsB,
+        html: `
+          <section class="level-block">
+            <h2 class="section-title">${escapeHtml(label)}</h2>
+            ${renderStatsTable(label, yearA, yearB, statsA, statsB)}
+            ${renderSideBySide(yearA, yearB, rowsA, rowsB)}
+            ${renderCombined(yearA, yearB, rowsA, rowsB)}
+          </section>`,
+      };
+    }
+
+    function renderSummary(yearA, yearB, distance, gender, mode, blocks) {
+      const totalA = blocks.reduce((sum, block) => sum + block.rowsA.length, 0);
+      const totalB = blocks.reduce((sum, block) => sum + block.rowsB.length, 0);
+      const first = blocks[0];
+      countA.textContent = String(totalA);
+      countB.textContent = String(totalB);
+      if (!summary) return;
+      const title = `${distance} m ${gender === "Alle" ? "alle kjønn" : gender.toLowerCase()} · ${modeLabel(mode)}`;
+      if (gender === "Alle") {
+        summary.innerHTML = `
+          <strong>${escapeHtml(title)}</strong>
+          <span>${escapeHtml(yearA)} har ${totalA} resultater, ${escapeHtml(yearB)} har ${totalB} resultater.</span>
+          <span>Kvinner og menn vises som egne blokker.</span>`;
+        return;
+      }
+      const fastest = first ? `${formatSeconds(first.statsA.fastest)} mot ${formatSeconds(first.statsB.fastest)}` : "-";
+      const top10 = first ? `${formatSeconds(first.statsA.top10Average)} mot ${formatSeconds(first.statsB.top10Average)}` : "-";
+      summary.innerHTML = `
+        <strong>${escapeHtml(title)}</strong>
+        <span>${escapeHtml(yearA)} har ${totalA} resultater, ${escapeHtml(yearB)} har ${totalB} resultater.</span>
+        <span>Raskeste tid: ${fastest}.</span>
+        <span>Topp 10-snitt: ${top10}.</span>`;
+    }
+
+    function renderCommonRows(yearA, yearB, distance, gender) {
+      if (!commonBody) return;
+      const groups = genderGroups(gender);
+      const rows = [];
+      groups.forEach((group) => {
+        const a = bestRowsPerPerson(filteredRows(yearA, distance, group));
+        const b = bestRowsPerPerson(filteredRows(yearB, distance, group));
+        const byA = new Map(a.map((row) => [row.personId, row]));
+        const byB = new Map(b.map((row) => [row.personId, row]));
+        byA.forEach((rowA, personId) => {
+          const rowB = byB.get(personId);
+          if (!rowB) return;
+          rows.push({ rowA, rowB, group, sort: rowA.timeSeconds ?? rowB.timeSeconds ?? 99999 });
+        });
+      });
+      rows.sort((a, b) => a.sort - b.sort || a.rowA.name.localeCompare(b.rowA.name));
+      if (commonYearA) commonYearA.textContent = String(yearA);
+      if (commonYearB) commonYearB.textContent = String(yearB);
+      if (commonSection) commonSection.hidden = rows.length === 0;
+      commonBody.innerHTML = rows
+        .map(
+          ({ rowA, rowB, group }) => `
+            <tr>
+              <td class="name-cell">${resultLink(rowA)}</td>
+              <td>${genderShort(group)}</td>
+              <td class="time num">${rowA.timeDisplay || ""}</td>
+              <td class="time num">${rowB.timeDisplay || ""}</td>
+              <td class="num">${deltaLabel(rowA, rowB)}</td>
+            </tr>`
         )
         .join("");
     }
 
-    function renderMatrix() {
-      const distance = Number(root.querySelector('[name="matrixDistance"]')?.value || 600);
-      const gender = root.querySelector('[name="matrixGender"]')?.value || "Kvinner";
-      const rows = results.filter((row) => row.distance === distance && row.gender === gender && row.timeSeconds != null);
-      const byPersonYear = new Map();
-      rows.forEach((row) => {
-        const key = `${row.personId}:${row.year}`;
-        const current = byPersonYear.get(key);
-        if (!current || row.timeSeconds < current.timeSeconds) byPersonYear.set(key, row);
-      });
-      const personIds = Array.from(new Set(rows.map((row) => row.personId)));
-      const matrixRows = personIds
-        .map((personId) => {
-          const personRows = rows.filter((row) => row.personId === personId);
-          const best = personRows.filter((row) => row.validToplist).sort((a, b) => a.timeSeconds - b.timeSeconds)[0] || personRows.sort((a, b) => a.timeSeconds - b.timeSeconds)[0];
-          return { personId, name: best.name, best, personRows };
-        })
-        .sort((a, b) => a.best.timeSeconds - b.best.timeSeconds || a.name.localeCompare(b.name));
-      matrixHead.innerHTML = `<tr><th>Navn</th>${years.map((year) => `<th class="num">${year}</th>`).join("")}<th class="num">PB</th></tr>`;
-      matrixBody.innerHTML = matrixRows
-        .map((row) => {
-          const cells = years
-            .map((year) => {
-              const result = byPersonYear.get(`${row.personId}:${year}`);
-              return `<td class="time num">${result ? `${result.timeDisplay || "-"}${badgeHtml(result) ? " *" : ""}` : ""}</td>`;
-            })
-            .join("");
-          return `<tr><td class="name-cell"><a href="${personUrl(row.personId)}">${row.name}</a></td>${cells}<td class="time num">${row.best?.timeDisplay || ""}</td></tr>`;
-        })
-        .join("");
+    function render(updateUrl = true) {
+      const yearA = control("yearA");
+      const yearB = control("yearB");
+      const distance = control("distance");
+      const gender = control("gender");
+      const mode = control("mode");
+      const blocks = genderGroups(gender).map((group) => renderBlock(group, yearA, yearB, distance, mode));
+      sections.innerHTML = blocks.map((block) => block.html).join("");
+      renderSummary(yearA, yearB, distance, gender, mode, blocks);
+      renderCommonRows(yearA, yearB, distance, gender);
+      if (updateUrl) updateUrlState();
     }
 
     applyUrlState();
-    root.querySelectorAll("select").forEach((select) => select.addEventListener("change", () => {
-      renderAb();
-      renderMatrix();
-      updateUrlState();
-    }));
-    renderAb();
-    renderMatrix();
+    root.querySelectorAll("select").forEach((select) => select.addEventListener("change", () => render()));
+    render(false);
   }
 
   window.__BASE_URL__ = document.querySelector("body")?.dataset.baseUrl || "/";

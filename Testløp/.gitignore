@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.env
+npm-debug.log*
+desktop.ini
+*.xlsx
+!data/Testlop_HKS.xlsx
+!data/2026_HKS_Testlop_Resultater_Pamelding_Hjelpere.xlsx
+4D5C2F00

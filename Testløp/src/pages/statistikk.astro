@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import stats from "../data/stats.json";
+import { formatFullDate } from "../lib/format";
+---
+
+<Layout title="Statistikk">
+  <section>
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">Statistikk</h1>
+        <div class="meta-line">
+          <span>{stats.totals.results} resultater</span>
+          <span>{stats.totals.people} personer</span>
+          <span>{stats.totals.testlop} testløp</span>
+          <span>{stats.totals.deviations} avvik</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Per år</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th class="num">År</th>
+            <th class="num">Resultater</th>
+            <th class="num">Personer</th>
+            <th class="num">600 K</th>
+            <th class="num">600 M</th>
+            <th class="num">1200 K</th>
+            <th class="num">1200 M</th>
+            <th class="num">Testløp</th>
+            <th class="num">Avvik</th>
+          </tr>
+        </thead>
+        <tbody>
+          {stats.yearStats.map((row) => (
+            <tr>
+              <td class="num">{row.year}</td>
+              <td class="num">{row.resultCount}</td>
+              <td class="num">{row.personCount}</td>
+              <td class="num">{row.breakdown["600_Kvinner"]}</td>
+              <td class="num">{row.breakdown["600_Menn"]}</td>
+              <td class="num">{row.breakdown["1200_Kvinner"]}</td>
+              <td class="num">{row.breakdown["1200_Menn"]}</td>
+              <td class="num">{row.testlopCount}</td>
+              <td class="num">{row.deviationCount}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title">Per testløp</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Testløp</th>
+            <th>Dato</th>
+            <th>Sted</th>
+            <th class="num">Resultater</th>
+            <th class="num">Personer</th>
+            <th class="num">600</th>
+            <th class="num">1200</th>
+            <th class="num">K</th>
+            <th class="num">M</th>
+          </tr>
+        </thead>
+        <tbody>
+          {stats.testlopStats.map((row) => (
+            <tr>
+              <td>{row.testlopId}</td>
+              <td>{formatFullDate(row.date)}</td>
+              <td>{row.place || "-"}</td>
+              <td class="num">{row.resultCount}</td>
+              <td class="num">{row.personCount}</td>
+              <td class="num">{row.distance600}</td>
+              <td class="num">{row.distance1200}</td>
+              <td class="num">{row.women}</td>
+              <td class="num">{row.men}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

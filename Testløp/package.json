@@ -1,0 +1,18 @@
+{
+  "name": "hks-testlop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data": "python scripts/export-data.py",
+    "validate:data": "python scripts/validate-data.py",
+    "prebuild": "python scripts/export-data.py && python scripts/validate-data.py",
+    "build": "astro build",
+    "dev": "python scripts/export-data.py && astro dev --host 127.0.0.1",
+    "preview": "astro preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "astro": "^5.9.4"
+  },
+  "devDependencies": {}
+}

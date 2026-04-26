@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+import results from "../data/results.json";
+import leaderboards from "../data/leaderboards.json";
+import { formatDate, href } from "../lib/format";
+
+const defaultBoard = leaderboards.find((board) => board.distance === 600 && board.gender === "Kvinner");
+const defaultRows = (defaultBoard?.official || []).slice(0, 10);
+---
+
+<Layout title="Topplister">
+  <section data-leaderboard-page>
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">Topplister</h1>
+        <div class="meta-line">
+          <span>Raskeste gyldige resultat per person</span>
+          <span><span data-visible-count>{defaultRows.length}</span> vist</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar" aria-label="Topplistevalg">
+      <div class="toolbar-group">
+        {[600, 1200].map((distance) => (
+          <button class:list={["chip", distance === 600 && "is-active"]} data-filter-name="distance" data-filter-value={String(distance)} aria-pressed={distance === 600 ? "true" : "false"}>
+            {distance} m
+          </button>
+        ))}
+      </div>
+      <div class="toolbar-group">
+        {["Kvinner", "Menn"].map((gender) => (
+          <button class:list={["chip", gender === "Kvinner" && "is-active"]} data-filter-name="gender" data-filter-value={gender} aria-pressed={gender === "Kvinner" ? "true" : "false"}>
+            {gender}
+          </button>
+        ))}
+      </div>
+      <div class="toolbar-group">
+        {[5, 10, 15, 20].map((limit) => (
+          <button class:list={["chip", limit === 10 && "is-active"]} data-filter-name="limit" data-filter-value={String(limit)} aria-pressed={limit === 10 ? "true" : "false"}>
+            Topp {limit}
+          </button>
+        ))}
+      </div>
+      <label class="chip">
+        <input data-include-checks type="checkbox" />
+        Vis resultater til sjekk
+      </label>
+    </div>
+
+    <script type="application/json" id="results-data" set:html={JSON.stringify(results)}></script>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th class="num">Rank</th>
+            <th>Navn</th>
+            <th class="num">Tid</th>
+            <th class="num">År</th>
+            <th>Dato</th>
+            <th>Testløp</th>
+            <th>Merknad</th>
+          </tr>
+        </thead>
+        <tbody>
+          {defaultRows.map((row) => (
+            <tr>
+              <td class="num">{row.rank}</td>
+              <td class="name-cell"><a href={href(`/person/${row.personId}/`)}>{row.name}</a></td>
+              <td class="time num">{row.timeDisplay}</td>
+              <td class="num">{row.year}</td>
+              <td>{formatDate(row.date)}</td>
+              <td>{row.testlopId || "-"}</td>
+              <td><span class="subtle">-</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

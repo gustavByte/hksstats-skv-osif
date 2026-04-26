@@ -1,0 +1,92 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ResultTable from "../../components/ResultTable.astro";
+import people from "../../data/people.json";
+import results from "../../data/results.json";
+import { bestValid, displayTime, secondsDelta, type ResultRow } from "../../lib/format";
+
+export function getStaticPaths() {
+  return people.map((person) => ({
+    params: { personId: person.personId },
+    props: { person }
+  }));
+}
+
+const { person } = Astro.props;
+const personResults = (results as ResultRow[])
+  .filter((result) => result.personId === person.personId)
+  .sort((a, b) => (a.year - b.year) || (a.date || "").localeCompare(b.date || ""));
+
+const summaries = [600, 1200].map((distance) => {
+  const rows = personResults.filter((result) => result.distance === distance && result.validToplist);
+  const first = [...rows].sort((a, b) => (a.date || "").localeCompare(b.date || ""))[0] || null;
+  const best = bestValid(rows);
+  return {
+    distance,
+    first,
+    best,
+    delta: first && best ? secondsDelta(first.timeSeconds, best.timeSeconds) : null
+  };
+});
+---
+
+<Layout title={person.name}>
+  <section>
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">{person.name}</h1>
+        <div class="meta-line">
+          <span>{person.resultCount} resultater</span>
+          <span>Første år {person.firstYear || "-"}</span>
+          <span>Siste år {person.lastYear || "-"}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-grid">
+      <div class="summary-item">
+        <span class="summary-label">PB 600 m</span>
+        <span class="summary-value">{displayTime(person.pb["600"])}</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">PB 1200 m</span>
+        <span class="summary-value">{displayTime(person.pb["1200"])}</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">År</span>
+        <span class="summary-value">{person.years.length}</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">Distanser</span>
+        <span class="summary-value">{person.distances.join(" / ")}</span>
+      </div>
+    </div>
+
+    <h2 class="section-title">Alle resultater</h2>
+    <ResultTable results={personResults} showRank={false} sort={false} />
+
+    <h2 class="section-title">Utvikling</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Distanse</th>
+            <th class="num">Første gyldige</th>
+            <th class="num">Personlig beste</th>
+            <th class="num">Forbedring</th>
+          </tr>
+        </thead>
+        <tbody>
+          {summaries.map((summary) => (
+            <tr>
+              <td>{summary.distance} m</td>
+              <td class="time num">{displayTime(summary.first)}</td>
+              <td class="time num">{displayTime(summary.best)}</td>
+              <td class="num">{summary.delta ? `${summary.delta} sek` : "-"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

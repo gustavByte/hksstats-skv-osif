@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import YearView from "../../components/YearView.astro";
+import results from "../../data/results.json";
+import stats from "../../data/stats.json";
+
+export function getStaticPaths() {
+  return stats.years.map((year) => ({ params: { year: String(year) } }));
+}
+
+const year = Number(Astro.params.year);
+const yearResults = results.filter((result) => result.year === year);
+---
+
+<Layout title={`Resultater ${year}`}>
+  <YearView year={year} results={yearResults} />
+</Layout>

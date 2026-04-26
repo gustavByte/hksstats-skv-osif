@@ -20,6 +20,7 @@ DATA_DIR = ROOT / "data"
 PUBLIC_DATA_DIR = ROOT / "public" / "data"
 DB_PATH = DATA_DIR / "hksstats.sqlite"
 REVIEW_PATH = DATA_DIR / "name_match_review.csv"
+REQUIRED_WORKBOOK_SHEETS = {"HKS_menn_splitt", "HKS_kvinner_splitt", "Rekorder"}
 
 
 CLASS_META = {
@@ -144,7 +145,15 @@ def find_workbook() -> Path:
     workbooks = sorted(ROOT.glob("*.xlsx"))
     if not workbooks:
         raise FileNotFoundError("Fant ingen .xlsx-fil i prosjektroten.")
-    return workbooks[0]
+    for workbook_path in workbooks:
+        workbook = load_workbook(workbook_path, read_only=True)
+        try:
+            if REQUIRED_WORKBOOK_SHEETS.issubset(workbook.sheetnames):
+                return workbook_path
+        finally:
+            workbook.close()
+    required_sheets = ", ".join(sorted(REQUIRED_WORKBOOK_SHEETS))
+    raise FileNotFoundError(f"Fant ingen .xlsx-fil i prosjektroten med arkene: {required_sheets}.")
 
 
 def normalize_name(value: str) -> str:

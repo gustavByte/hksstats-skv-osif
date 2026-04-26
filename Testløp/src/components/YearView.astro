@@ -1,0 +1,71 @@
+---
+import stats from "../data/stats.json";
+import ResultTable from "./ResultTable.astro";
+import { href, genderShort, type ResultRow } from "../lib/format";
+
+const { year, results } = Astro.props as {
+  year: number;
+  results: ResultRow[];
+};
+
+const stat = stats.yearStats.find((item) => item.year === year);
+const isSoFarYear = year === 2026;
+---
+
+<section data-year-view>
+  <div class="page-head">
+    <div>
+      <h1 class="page-title">
+        <span>{year}</span>
+        {isSoFarYear && <span class="year-status">so far</span>}
+      </h1>
+      <div class="meta-line">
+        <span>{stat?.resultCount ?? 0} resultater</span>
+        <span>{stat?.personCount ?? 0} personer</span>
+        <span>{stat?.testlopCount ?? 0} testløp</span>
+        {isSoFarYear && <span>foreløpig status</span>}
+        <span><span data-visible-count>{results.length}</span> vist</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar" aria-label="Filtre">
+    <div class="toolbar-group">
+      {stats.years.map((item) => {
+        const itemStat = stats.yearStats.find((candidate) => candidate.year === item);
+        return (
+          <a
+            class:list={["chip", item === year && "is-active", itemStat?.resultCount === 0 && "is-muted"]}
+            href={href(`/aar/${item}/`)}
+          >
+            <span>{item}</span>
+            {item === 2026 && <span class="chip-note">so far</span>}
+          </a>
+        );
+      })}
+    </div>
+    <div class="toolbar-spacer"></div>
+    <div class="toolbar-group">
+      {[600, 1200].map((distance) => (
+        <button class:list={["chip", distance === 600 && "is-active"]} data-filter-name="distance" data-filter-value={String(distance)} aria-pressed={distance === 600 ? "true" : "false"}>
+          {distance} m
+        </button>
+      ))}
+      <button class="chip" data-filter-name="distance" data-filter-value="all" aria-pressed="false">Alle</button>
+    </div>
+    <div class="toolbar-group">
+      {["Kvinner", "Menn"].map((gender) => (
+        <button class="chip" data-filter-name="gender" data-filter-value={gender} aria-pressed="false">{genderShort(gender)}</button>
+      ))}
+      <button class="chip is-active" data-filter-name="gender" data-filter-value="all" aria-pressed="true">Alle</button>
+    </div>
+    <div class="toolbar-group">
+      <button class="chip is-active" data-filter-name="mode" data-filter-value="best" aria-pressed="true">Årsbeste</button>
+      <button class="chip" data-filter-name="mode" data-filter-value="all" aria-pressed="false">Alle resultater</button>
+    </div>
+    <label class="screen-reader" for={`search-${year}`}>Søk</label>
+    <input class="text-input" id={`search-${year}`} data-search type="search" placeholder="Søk" />
+  </div>
+
+  <ResultTable results={results} emptyText="Ingen resultater for dette året ennå." />
+</section>

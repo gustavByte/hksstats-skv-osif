@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import people from "../data/people.json";
+import { displayTime, href } from "../lib/format";
+---
+
+<Layout title="Personer">
+  <section data-people-table>
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">Personer</h1>
+        <div class="meta-line">
+          <span>{people.length} personer</span>
+          <span><span data-visible-count>{people.length}</span> vist</span>
+        </div>
+      </div>
+      <input class="text-input" data-search type="search" placeholder="Søk" />
+    </div>
+
+    <div class="table-wrap">
+      <table data-sortable-table>
+        <thead>
+          <tr>
+            <th aria-sort="ascending">
+              <button class="sort-button" type="button" data-sort-key="name" data-sort-type="text" data-sort-default="asc">
+                <span>Navn</span>
+                <span class="sort-indicator" aria-hidden="true">↑</span>
+              </button>
+            </th>
+            <th class="num" aria-sort="none">
+              <button class="sort-button align-right" type="button" data-sort-key="results" data-sort-type="number" data-sort-default="desc">
+                <span>Resultater</span>
+                <span class="sort-indicator" aria-hidden="true"></span>
+              </button>
+            </th>
+            <th class="num" aria-sort="none">
+              <button class="sort-button align-right" type="button" data-sort-key="firstYear" data-sort-type="number" data-sort-default="asc">
+                <span>Første år</span>
+                <span class="sort-indicator" aria-hidden="true"></span>
+              </button>
+            </th>
+            <th class="num" aria-sort="none">
+              <button class="sort-button align-right" type="button" data-sort-key="lastYear" data-sort-type="number" data-sort-default="desc">
+                <span>Siste år</span>
+                <span class="sort-indicator" aria-hidden="true"></span>
+              </button>
+            </th>
+            <th class="num" aria-sort="none">
+              <button class="sort-button align-right" type="button" data-sort-key="pb600" data-sort-type="number" data-sort-default="asc">
+                <span>PB 600 m</span>
+                <span class="sort-indicator" aria-hidden="true"></span>
+              </button>
+            </th>
+            <th class="num" aria-sort="none">
+              <button class="sort-button align-right" type="button" data-sort-key="pb1200" data-sort-type="number" data-sort-default="asc">
+                <span>PB 1200 m</span>
+                <span class="sort-indicator" aria-hidden="true"></span>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {people.map((person) => (
+            <tr
+              data-search={`${person.name} ${person.personId}`.toLowerCase()}
+              data-sort-name={person.name}
+              data-sort-results={person.resultCount}
+              data-sort-first-year={person.firstYear || ""}
+              data-sort-last-year={person.lastYear || ""}
+              data-sort-pb600={person.pb["600"]?.timeSeconds ?? ""}
+              data-sort-pb1200={person.pb["1200"]?.timeSeconds ?? ""}
+            >
+              <td class="name-cell"><a href={href(`/person/${person.personId}/`)}>{person.name}</a></td>
+              <td class="num">{person.resultCount}</td>
+              <td class="num">{person.firstYear || "-"}</td>
+              <td class="num">{person.lastYear || "-"}</td>
+              <td class="time num">{displayTime(person.pb["600"])}</td>
+              <td class="time num">{displayTime(person.pb["1200"])}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

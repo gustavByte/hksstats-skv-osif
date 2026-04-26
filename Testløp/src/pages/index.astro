@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import YearView from "../components/YearView.astro";
+import results from "../data/results.json";
+import stats from "../data/stats.json";
+
+const latestYear = stats.latestYear;
+const yearResults = results.filter((result) => result.year === latestYear);
+---
+
+<Layout title={`Resultater ${latestYear}`}>
+  <YearView year={latestYear} results={yearResults} />
+</Layout>

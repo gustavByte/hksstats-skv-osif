@@ -1,0 +1,76 @@
+---
+import stats from "../data/stats.json";
+import { href } from "../lib/format";
+import "../styles/global.css";
+
+const {
+  title = "HKS testløp",
+  description = "Resultater og statistikk fra HKS testløp."
+} = Astro.props;
+
+const navItems = [
+  ["Resultater", "/"],
+  ["Personer", "/personer/"],
+  ["Topplister", "/topplister/"],
+  ["Rekorder", "/rekorder/"],
+  ["Sammenlign", "/sammenlign/"],
+  ["Statistikk", "/statistikk/"],
+  ["Avvik", "/avvik/"]
+];
+
+const path = Astro.url.pathname;
+const pageTitle = title === "HKS testløp" ? title : `${title} · HKS testløp`;
+---
+
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+  </head>
+  <body data-base-url={import.meta.env.BASE_URL}>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <div class="brand-group">
+          <a class="brand" href={href("/")}>
+            <span class="brand-mark">HKS</span>
+            <span>testløp</span>
+          </a>
+          <a
+            class="stats-link"
+            href="https://gustavbyte.github.io/hksstats-skv-osif/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Åpne HKS resultater og statistikk"
+          >
+            <span class="stats-mark">HKS</span>
+            <span class="stats-link-text">resultater og statistikk</span>
+          </a>
+        </div>
+        <nav class="main-nav" aria-label="Hovedmeny">
+          {navItems.map(([label, target]) => (
+            <a
+              href={href(target)}
+              class:list={[
+                (path === href(target) || (target !== "/" && path.startsWith(href(target)))) && "is-active"
+              ]}
+            >
+              {label}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main class="shell">
+      <slot />
+    </main>
+    <footer class="shell site-footer">
+      <span>Bygget fra Resultater</span>
+      <span>{stats.totals.results} resultater</span>
+      <span>{stats.generatedAt}</span>
+    </footer>
+    <script src={href("/scripts/site.js")} defer></script>
+  </body>
+</html>

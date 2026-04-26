@@ -1,0 +1,66 @@
+---
+import { displayTestlop, formatDate, href, statusLabel, sortByTime, type ResultRow } from "../lib/format";
+
+const { results, emptyText = "Ingen resultater." } = Astro.props as {
+  results: ResultRow[];
+  emptyText?: string;
+  showRank?: boolean;
+  sort?: boolean;
+};
+
+const showRank = Astro.props.showRank ?? true;
+const shouldSort = Astro.props.sort ?? true;
+const rows = shouldSort ? sortByTime(results) : results;
+---
+
+{rows.length === 0 ? (
+  <div class="empty-state">{emptyText}</div>
+) : (
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          {showRank && <th class="num">Plass</th>}
+          <th>Navn</th>
+          <th class="num">Tid</th>
+          <th class="num">År</th>
+          <th>Distanse</th>
+          <th>Kjønn</th>
+          <th>Dato</th>
+          <th>Testløp</th>
+          <th>Merknad</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((result, index) => (
+          <tr
+            data-person={result.personId}
+            data-name={result.name}
+            data-distance={String(result.distance)}
+            data-gender={result.gender}
+            data-time={result.timeSeconds ?? ""}
+            data-valid={result.validToplist ? "true" : "false"}
+            data-search={`${result.name} ${result.testlopId || ""} ${result.note || ""}`.toLowerCase()}
+          >
+            {showRank && <td class="num" data-rank>{result.timeSeconds == null ? "" : index + 1}</td>}
+            <td class="name-cell"><a href={href(`/person/${result.personId}/`)}>{result.name}</a></td>
+            <td class="time num">{result.timeDisplay || "-"}</td>
+            <td class="num">{result.year}</td>
+            <td>{result.distance} m</td>
+            <td>{result.gender}</td>
+            <td>{formatDate(result.date)}</td>
+            <td>{displayTestlop(result)}</td>
+            <td>
+              <span class="note-list">
+                {result.note && <span class="badge warn">{result.note}</span>}
+                {result.checkStatus !== "OK" && <span class="badge bad">{result.checkStatus}</span>}
+                {!result.validToplist && <span class="badge warn">ikke off.</span>}
+                {!statusLabel(result) && <span class="subtle">-</span>}
+              </span>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}

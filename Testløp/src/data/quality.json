@@ -1,0 +1,498 @@
+{
+  "deviations": [],
+  "manualNameReview": [],
+  "archivedNameReview": [
+    {
+      "names": [
+        "Anne-Line Evenstad Dahlen",
+        "Anne-Line Evenstad Dalen"
+      ],
+      "entries": [
+        {
+          "alias": "Anne-Line Evenstad Dahlen",
+          "personId": "anne_line_evenstad_dahlen",
+          "status": "OK",
+          "comment": null
+        },
+        {
+          "alias": "Anne-Line Evenstad Dalen",
+          "personId": "anne_line_evenstad_dahlen",
+          "status": "Avklart i nettside",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "anne_line_evenstad_dahlen"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Martin Stay Egeberg",
+        "Martin Stray Egeberg"
+      ],
+      "entries": [
+        {
+          "alias": "Martin Stay Egeberg",
+          "personId": "martin_stray_egeberg",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Martin Stray Egeberg",
+          "personId": "martin_stray_egeberg",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "martin_stray_egeberg"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Tobias Bauman",
+        "Tobias Baumann"
+      ],
+      "entries": [
+        {
+          "alias": "Tobias Bauman",
+          "personId": "tobias_baumann",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Tobias Baumann",
+          "personId": "tobias_baumann",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "tobias_baumann"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Frdrik Fyksen",
+        "Fredrik Fyksen"
+      ],
+      "entries": [
+        {
+          "alias": "Frdrik Fyksen",
+          "personId": "fredrik_saetereng_fyksen",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Fredrik Fyksen",
+          "personId": "fredrik_saetereng_fyksen",
+          "status": "Avklart i nettside",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "fredrik_saetereng_fyksen"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Henning Mæhle",
+        "Henning Mæle"
+      ],
+      "entries": [
+        {
+          "alias": "Henning Mæhle",
+          "personId": "henning_maele",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Henning Mæle",
+          "personId": "henning_maele",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "henning_maele"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Hanne Tingelstad",
+        "Hanne Tingstad"
+      ],
+      "entries": [
+        {
+          "alias": "Hanne Tingelstad",
+          "personId": "hanne_tingelstad",
+          "status": "OK",
+          "comment": null
+        },
+        {
+          "alias": "Hanne Tingstad",
+          "personId": "hanne_tingelstad",
+          "status": "Avklart i nettside",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "hanne_tingelstad"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Erlend G. Sørtveit",
+        "Erlend Sørtveit",
+        "Erlend Gjerdevik Sørtveit"
+      ],
+      "entries": [
+        {
+          "alias": "Erlend G. Sørtveit",
+          "personId": "erlend_gjerdevik_sortveit",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Erlend Sørtveit",
+          "personId": "erlend_gjerdevik_sortveit",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Erlend Gjerdevik Sørtveit",
+          "personId": "erlend_gjerdevik_sortveit",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "erlend_gjerdevik_sortveit"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Telma Dagestad",
+        "Telma Eckhoff Dagestad"
+      ],
+      "entries": [
+        {
+          "alias": "Telma Dagestad",
+          "personId": "telma_eckhoff_dagestad",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Telma Eckhoff Dagestad",
+          "personId": "telma_eckhoff_dagestad",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "telma_eckhoff_dagestad"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Veslemøy",
+        "Veslemøy Rønnevik"
+      ],
+      "entries": [
+        {
+          "alias": "Veslemøy",
+          "personId": "veslemoy_ronnevik",
+          "status": "Avklart i nettside",
+          "comment": "Kort eller tvetydig navn"
+        },
+        {
+          "alias": "Veslemøy Rønnevik",
+          "personId": "veslemoy_ronnevik",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "veslemoy_ronnevik"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Anna Leikanger Aasen",
+        "Anna Liv Leikanger Aasen"
+      ],
+      "entries": [
+        {
+          "alias": "Anna Leikanger Aasen",
+          "personId": "anna_liv_leikanger_aasen",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Anna Liv Leikanger Aasen",
+          "personId": "anna_liv_leikanger_aasen",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "anna_liv_leikanger_aasen"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Henrik Hansen",
+        "Henrik Victor Hansen"
+      ],
+      "entries": [
+        {
+          "alias": "Henrik Hansen",
+          "personId": "henrik_victor_hansen",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Henrik Victor Hansen",
+          "personId": "henrik_victor_hansen",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "henrik_victor_hansen"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Ida Nordengen",
+        "Ida Marie Sirevaag Nordengen"
+      ],
+      "entries": [
+        {
+          "alias": "Ida Nordengen",
+          "personId": "ida_marie_sirevaag_nordengen",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Ida Marie Sirevaag Nordengen",
+          "personId": "ida_marie_sirevaag_nordengen",
+          "status": "Avklart i nettside",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "ida_marie_sirevaag_nordengen"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Maja Blegen",
+        "Maja Maria Blegen"
+      ],
+      "entries": [
+        {
+          "alias": "Maja Blegen",
+          "personId": "maja_maria_blegen",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Maja Maria Blegen",
+          "personId": "maja_maria_blegen",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "maja_maria_blegen"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Sofie Amundsgård",
+        "Sofie Karlsen Amundsgård"
+      ],
+      "entries": [
+        {
+          "alias": "Sofie Amundsgård",
+          "personId": "sofie_karlsen_amundsgard",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Sofie Karlsen Amundsgård",
+          "personId": "sofie_karlsen_amundsgard",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "sofie_karlsen_amundsgard"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Sofie Kjos",
+        "Sofie Kjos Bergum"
+      ],
+      "entries": [
+        {
+          "alias": "Sofie Kjos",
+          "personId": "sofie_kjos_bergum",
+          "status": "Avklart i nettside",
+          "comment": "Kortform"
+        },
+        {
+          "alias": "Sofie Kjos Bergum",
+          "personId": "sofie_kjos_bergum",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "sofie_kjos_bergum"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Anne Cecilie Grindheim",
+        "Anne Cecilie Grindstad"
+      ],
+      "entries": [
+        {
+          "alias": "Anne Cecilie Grindheim",
+          "personId": "anne_cecilie_grindstad",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Anne Cecilie Grindstad",
+          "personId": "anne_cecilie_grindstad",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "anne_cecilie_grindstad"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Fredrik Fyksen",
+        "Fredrik Sætereng Fyksen"
+      ],
+      "entries": [
+        {
+          "alias": "Fredrik Fyksen",
+          "personId": "fredrik_saetereng_fyksen",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Fredrik Sætereng Fyksen",
+          "personId": "fredrik_saetereng_fyksen",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "fredrik_saetereng_fyksen"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Matilde Belsvik",
+        "Matilde Reinholdt Belsvik"
+      ],
+      "entries": [
+        {
+          "alias": "Matilde Belsvik",
+          "personId": "matilde_reinholdt_belsvik",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Matilde Reinholdt Belsvik",
+          "personId": "matilde_reinholdt_belsvik",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "matilde_reinholdt_belsvik"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Siri Staver",
+        "Siri Vegsund Staver"
+      ],
+      "entries": [
+        {
+          "alias": "Siri Staver",
+          "personId": "siri_vegsund_staver",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Siri Vegsund Staver",
+          "personId": "siri_vegsund_staver",
+          "status": "Avklart i nettside",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "siri_vegsund_staver"
+      ],
+      "needsReview": false
+    },
+    {
+      "names": [
+        "Elisavbeth Ø",
+        "Elisabeth Øiulfstad"
+      ],
+      "entries": [
+        {
+          "alias": "Elisavbeth Ø",
+          "personId": "elisabeth_oiulfstad",
+          "status": "Avklart i nettside",
+          "comment": "Siste navneledd er forkortet"
+        },
+        {
+          "alias": "Elisabeth Øiulfstad",
+          "personId": "elisabeth_oiulfstad",
+          "status": "Avklart i nettside",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "elisabeth_oiulfstad"
+      ],
+      "needsReview": false
+    }
+  ],
+  "summary": {
+    "deviationCount": 0,
+    "manualNameReviewCount": 0,
+    "archivedNameReviewCount": 20
+  }
+}

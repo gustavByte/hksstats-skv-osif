@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import records from "../data/records.json";
+import { formatDate, href, statusLabel } from "../lib/format";
+
+function resultText(result) {
+  if (!result) return "-";
+  return `${result.name}, ${result.timeDisplay}, ${result.year}`;
+}
+---
+
+<Layout title="Rekorder">
+  <section>
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">Rekorder</h1>
+        <div class="meta-line">
+          <span>Offisielle rekorder og raskeste registrerte til sjekk</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Distanse</th>
+            <th>Kjønn</th>
+            <th>Offisiell rekord</th>
+            <th>Til sjekk</th>
+          </tr>
+        </thead>
+        <tbody>
+          {records.map((record) => (
+            <tr>
+              <td>{record.distance} m</td>
+              <td>{record.gender}</td>
+              <td>
+                {record.official ? (
+                  <>
+                    <a href={href(`/person/${record.official.personId}/`)}>{resultText(record.official)}</a>
+                    <span class="subtle"> · {formatDate(record.official.date)}</span>
+                  </>
+                ) : "-"}
+              </td>
+              <td>
+                {record.pending ? (
+                  <>
+                    <a href={href(`/person/${record.pending.personId}/`)}>{resultText(record.pending)}</a>
+                    <span class="subtle"> · {statusLabel(record.pending) || formatDate(record.pending.date)}</span>
+                  </>
+                ) : <span class="subtle">-</span>}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

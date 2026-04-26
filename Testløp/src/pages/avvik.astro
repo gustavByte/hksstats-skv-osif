@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import quality from "../data/quality.json";
+import { formatFullDate, href } from "../lib/format";
+---
+
+<Layout title="Avvik">
+  <section>
+    <div class="page-head">
+      <div>
+        <h1 class="page-title">Avvik og sjekk</h1>
+        <div class="meta-line">
+          <span>{quality.summary.deviationCount} avvik fra arbeidsboken</span>
+          <span>{quality.summary.manualNameReviewCount} navnegrupper til manuell vurdering</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Fra `Avvik og sjekk`</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th class="num">År</th>
+            <th>Dato</th>
+            <th>Distanse</th>
+            <th>Kjønn</th>
+            <th>Navn</th>
+            <th class="num">Tid</th>
+            <th>Status</th>
+            <th>Merknad</th>
+          </tr>
+        </thead>
+        <tbody>
+          {quality.deviations.map((row) => (
+            <tr>
+              <td>{row.id}</td>
+              <td class="num">{row.year}</td>
+              <td>{formatFullDate(row.date)}</td>
+              <td>{row.distance} m</td>
+              <td>{row.gender}</td>
+              <td class="name-cell"><a href={href(`/person/${row.personId}/`)}>{row.name}</a></td>
+              <td class="time num">{row.timeDisplay || "-"}</td>
+              <td><span class="badge bad">{row.checkStatus}</span></td>
+              <td>{row.checkNote || row.note || "-"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    {quality.manualNameReview.length > 0 && (
+      <>
+        <h2 class="section-title">Navnealias til vurdering</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Navn</th>
+                <th>Person-ID-er nå</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {quality.manualNameReview.map((group) => (
+                <tr>
+                  <td class="name-cell">{group.names.join(" / ")}</td>
+                  <td>{group.personIds.join(" / ") || "-"}</td>
+                  <td><span class="badge warn">må vurderes</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>
+    )}
+  </section>
+</Layout>

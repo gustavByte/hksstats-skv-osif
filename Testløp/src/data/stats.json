@@ -1,0 +1,315 @@
+{
+  "generatedAt": "2026-04-26T15:09:57",
+  "sourceWorkbook": "data/Testlop_HKS.xlsx",
+  "years": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "resultYears": [
+    2026,
+    2025,
+    2024,
+    2023,
+    2022
+  ],
+  "latestYear": 2026,
+  "totals": {
+    "results": 422,
+    "people": 258,
+    "testlop": 17,
+    "deviations": 0
+  },
+  "yearStats": [
+    {
+      "year": 2026,
+      "resultCount": 52,
+      "personCount": 45,
+      "testlopCount": 3,
+      "deviationCount": 0,
+      "breakdown": {
+        "600_Kvinner": 9,
+        "600_Menn": 17,
+        "1200_Kvinner": 14,
+        "1200_Menn": 12
+      }
+    },
+    {
+      "year": 2025,
+      "resultCount": 100,
+      "personCount": 93,
+      "testlopCount": 4,
+      "deviationCount": 0,
+      "breakdown": {
+        "600_Kvinner": 15,
+        "600_Menn": 21,
+        "1200_Kvinner": 28,
+        "1200_Menn": 36
+      }
+    },
+    {
+      "year": 2024,
+      "resultCount": 115,
+      "personCount": 98,
+      "testlopCount": 3,
+      "deviationCount": 0,
+      "breakdown": {
+        "600_Kvinner": 19,
+        "600_Menn": 28,
+        "1200_Kvinner": 28,
+        "1200_Menn": 40
+      }
+    },
+    {
+      "year": 2023,
+      "resultCount": 111,
+      "personCount": 107,
+      "testlopCount": 4,
+      "deviationCount": 0,
+      "breakdown": {
+        "600_Kvinner": 19,
+        "600_Menn": 16,
+        "1200_Kvinner": 36,
+        "1200_Menn": 40
+      }
+    },
+    {
+      "year": 2022,
+      "resultCount": 44,
+      "personCount": 43,
+      "testlopCount": 3,
+      "deviationCount": 0,
+      "breakdown": {
+        "600_Kvinner": 8,
+        "600_Menn": 8,
+        "1200_Kvinner": 10,
+        "1200_Menn": 18
+      }
+    }
+  ],
+  "testlopStats": [
+    {
+      "testlopId": "2026_HKS_3",
+      "year": 2026,
+      "date": "2026-04-25",
+      "place": null,
+      "resultCount": 13,
+      "personCount": 13,
+      "distance600": 4,
+      "distance1200": 9,
+      "women": 7,
+      "men": 6,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2026_HKS_2",
+      "year": 2026,
+      "date": "2026-04-23",
+      "place": null,
+      "resultCount": 23,
+      "personCount": 23,
+      "distance600": 13,
+      "distance1200": 10,
+      "women": 10,
+      "men": 13,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2026_HKS_1",
+      "year": 2026,
+      "date": "2026-04-18",
+      "place": null,
+      "resultCount": 16,
+      "personCount": 16,
+      "distance600": 9,
+      "distance1200": 7,
+      "women": 6,
+      "men": 10,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2025_HKS_4",
+      "year": 2025,
+      "date": "2025-05-03",
+      "place": null,
+      "resultCount": 30,
+      "personCount": 30,
+      "distance600": 9,
+      "distance1200": 21,
+      "women": 9,
+      "men": 21,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2025_HKS_3",
+      "year": 2025,
+      "date": "2025-04-29",
+      "place": null,
+      "resultCount": 32,
+      "personCount": 32,
+      "distance600": 16,
+      "distance1200": 16,
+      "women": 19,
+      "men": 13,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2025_HKS_2",
+      "year": 2025,
+      "date": "2025-04-26",
+      "place": null,
+      "resultCount": 24,
+      "personCount": 24,
+      "distance600": 5,
+      "distance1200": 19,
+      "women": 11,
+      "men": 13,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2025_HKS_1",
+      "year": 2025,
+      "date": "2025-04-24",
+      "place": null,
+      "resultCount": 14,
+      "personCount": 14,
+      "distance600": 6,
+      "distance1200": 8,
+      "women": 4,
+      "men": 10,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2024_HKS_3",
+      "year": 2024,
+      "date": "2024-04-27",
+      "place": "Bislett",
+      "resultCount": 26,
+      "personCount": 26,
+      "distance600": 8,
+      "distance1200": 18,
+      "women": 12,
+      "men": 14,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2024_HKS_2",
+      "year": 2024,
+      "date": "2024-04-25",
+      "place": "Bislett",
+      "resultCount": 41,
+      "personCount": 41,
+      "distance600": 21,
+      "distance1200": 20,
+      "women": 19,
+      "men": 22,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2024_HKS_1",
+      "year": 2024,
+      "date": "2024-04-20",
+      "place": "Bislett",
+      "resultCount": 48,
+      "personCount": 43,
+      "distance600": 18,
+      "distance1200": 30,
+      "women": 16,
+      "men": 32,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2023_20230529",
+      "year": 2023,
+      "date": "2023-05-29",
+      "place": null,
+      "resultCount": 10,
+      "personCount": 10,
+      "distance600": 6,
+      "distance1200": 4,
+      "women": 5,
+      "men": 5,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2023_20230507",
+      "year": 2023,
+      "date": "2023-05-07",
+      "place": null,
+      "resultCount": 12,
+      "personCount": 12,
+      "distance600": 4,
+      "distance1200": 8,
+      "women": 5,
+      "men": 7,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2023_20230506",
+      "year": 2023,
+      "date": "2023-05-06",
+      "place": null,
+      "resultCount": 43,
+      "personCount": 43,
+      "distance600": 10,
+      "distance1200": 33,
+      "women": 27,
+      "men": 16,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2023_20230504",
+      "year": 2023,
+      "date": "2023-05-04",
+      "place": null,
+      "resultCount": 46,
+      "personCount": 46,
+      "distance600": 15,
+      "distance1200": 31,
+      "women": 18,
+      "men": 28,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2022_20220507",
+      "year": 2022,
+      "date": "2022-05-07",
+      "place": "NIH-banen",
+      "resultCount": 11,
+      "personCount": 11,
+      "distance600": 6,
+      "distance1200": 5,
+      "women": 5,
+      "men": 6,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2022_20220505",
+      "year": 2022,
+      "date": "2022-05-05",
+      "place": "Bislett",
+      "resultCount": 32,
+      "personCount": 32,
+      "distance600": 10,
+      "distance1200": 22,
+      "women": 13,
+      "men": 19,
+      "deviationCount": 0
+    },
+    {
+      "testlopId": "2022_20220503",
+      "year": 2022,
+      "date": "2022-05-03",
+      "place": "Bislett",
+      "resultCount": 1,
+      "personCount": 1,
+      "distance600": 0,
+      "distance1200": 1,
+      "women": 0,
+      "men": 1,
+      "deviationCount": 0
+    }
+  ]
+}

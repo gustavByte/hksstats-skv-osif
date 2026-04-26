@@ -417,6 +417,7 @@ td.group-cell {
 .mobile-meta,
 .person-meta-mobile,
 .person-year-mobile,
+.mobile-label,
 .compare-mobile-name,
 .compare-result-cell small {
   display: none;
@@ -831,10 +832,17 @@ td.group-cell {
     white-space: nowrap;
   }
 
-  .people-table .col-results,
   .people-table .col-first-year,
   .people-table .col-last-year {
     display: none;
+  }
+
+  .people-table .desktop-label {
+    display: none;
+  }
+
+  .people-table .mobile-label {
+    display: inline;
   }
 
   .people-table .person-meta-mobile {
@@ -846,7 +854,11 @@ td.group-cell {
   }
 
   .people-table .col-name {
-    min-width: 170px;
+    min-width: 155px;
+  }
+
+  .people-table .col-results {
+    min-width: 38px;
   }
 
   .people-table .col-pb-600,

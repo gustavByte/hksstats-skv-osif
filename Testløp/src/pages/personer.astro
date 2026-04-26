@@ -29,7 +29,8 @@ import { displayTime, href } from "../lib/format";
             </th>
             <th class="num col-results" aria-sort="none">
               <button class="sort-button align-right" type="button" data-sort-key="results" data-sort-type="number" data-sort-default="desc">
-                <span>Resultater</span>
+                <span class="desktop-label">Resultater</span>
+                <span class="mobile-label">Res</span>
                 <span class="sort-indicator" aria-hidden="true"></span>
               </button>
             </th>
@@ -73,7 +74,7 @@ import { displayTime, href } from "../lib/format";
               <td class="name-cell col-name">
                 <a href={href(`/person/${person.personId}/`)}>{person.name}</a>
                 <span class="person-meta-mobile">
-                  {person.resultCount} resultater · {person.firstYear && person.lastYear ? `${person.firstYear}-${person.lastYear}` : "-"}
+                  {person.firstYear && person.lastYear ? `${person.firstYear}-${person.lastYear}` : "-"}
                 </span>
               </td>
               <td class="num col-results">{person.resultCount}</td>

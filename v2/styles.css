@@ -162,6 +162,7 @@ select:focus-visible {
 
 .brand-lockup,
 .brand-logos,
+.header-actions,
 .top-nav,
 .hero-actions,
 .pill-row,
@@ -240,6 +241,61 @@ select:focus-visible {
   justify-content: flex-end;
   gap: 6px;
   flex-wrap: wrap;
+}
+
+.header-actions {
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  min-width: 0;
+}
+
+.testlop-header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 13px 0 8px;
+  border: 1px solid rgba(0, 120, 111, 0.22);
+  border-radius: var(--radius-card);
+  background: linear-gradient(135deg, #eef8f6, #f9fffd);
+  color: #063f3a;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(0, 96, 88, 0.08);
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.testlop-header-link:hover {
+  border-color: #007c73;
+  background: #007c73;
+  color: #fffaf2;
+  box-shadow: 0 14px 28px rgba(0, 96, 88, 0.16);
+  transform: translateY(-1px);
+}
+
+.testlop-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 28px;
+  border-radius: 8px;
+  background: #007c73;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.testlop-header-link:hover .testlop-mark {
+  background: #fffaf2;
+  color: #007c73;
 }
 
 .top-nav a {
@@ -1590,6 +1646,12 @@ h3 {
     flex-direction: column;
   }
 
+  .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
   .top-nav {
     width: 100%;
     justify-content: flex-start;
@@ -1670,6 +1732,15 @@ h3 {
 
   .brand-lockup {
     width: 100%;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .testlop-header-link {
+    min-height: 42px;
+    padding-right: 12px;
   }
 
   .brand-copy strong {

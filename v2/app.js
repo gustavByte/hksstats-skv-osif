@@ -5,6 +5,7 @@ const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
 const LEGACY_URL = new URL("../legacy/", import.meta.url).toString();
+const TESTLOP_URL = new URL("../testlop/", import.meta.url).toString();
 const DEFAULT_STATE = {
   selectedYear: "all",
   selectedOrganization: "all",
@@ -1073,13 +1074,19 @@ function renderHeader() {
           <strong>HKSstats SKV + OSI</strong>
         </a>
       </div>
-      <nav class="top-nav" aria-label="Hovednavigasjon">
-        <a href="#hederslister" data-nav-link>Hederlister</a>
-        <a href="#klubbmeritter" data-nav-link>Klubbmeritter</a>
-        <a href="#lagarkiv" data-nav-link>Lagarkiv</a>
-        <a href="#statistikk" data-nav-link>Deltakelse</a>
-        <a href="${LEGACY_URL}">Klassisk</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="top-nav" aria-label="Hovednavigasjon">
+          <a href="#hederslister" data-nav-link>Hederlister</a>
+          <a href="#klubbmeritter" data-nav-link>Klubbmeritter</a>
+          <a href="#lagarkiv" data-nav-link>Lagarkiv</a>
+          <a href="#statistikk" data-nav-link>Deltakelse</a>
+          <a href="${LEGACY_URL}">Klassisk</a>
+        </nav>
+        <a class="testlop-header-link" href="${TESTLOP_URL}" aria-label="Åpne HKS testløp">
+          <span class="testlop-mark">HKS</span>
+          <span>testløp</span>
+        </a>
+      </div>
     </header>
   `;
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T15:48:50",
+  "generatedAt": "2026-04-27T21:31:22",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -2681,8 +2681,8 @@
             },
             {
               "rank": 4,
-              "person_id": "p00558ce8a3",
-              "person_name": "Daniel Fikstveita",
+              "person_id": "p401b1f46ce",
+              "person_name": "Daniel Fikstvedt",
               "raw_name": "Daniel Fikstveita",
               "split_text": "5:40",
               "split_seconds": 340,
@@ -2758,8 +2758,8 @@
             },
             {
               "rank": 4,
-              "person_id": "p00558ce8a3",
-              "person_name": "Daniel Fikstveita",
+              "person_id": "p401b1f46ce",
+              "person_name": "Daniel Fikstvedt",
               "raw_name": "Daniel Fikstveita",
               "split_text": "5:40",
               "split_seconds": 340,
@@ -22374,8 +22374,8 @@
       "division": "men",
       "stage_number": 4,
       "stage_label": "04. Berg og dal",
-      "person_id": "p00558ce8a3",
-      "person_name": "Daniel Fikstveita",
+      "person_id": "p401b1f46ce",
+      "person_name": "Daniel Fikstvedt",
       "raw_name": "Daniel Fikstveita",
       "split_text": "5:40",
       "split_seconds": 340,
@@ -44011,37 +44011,39 @@
     },
     {
       "id": 63,
-      "person_id": "p00558ce8a3",
-      "canonical_name": "Daniel Fikstveita",
-      "slug": "daniel-fikstveita",
+      "person_id": "p401b1f46ce",
+      "canonical_name": "Daniel Fikstvedt",
+      "slug": "daniel-fikstvedt",
       "appearances": 1,
       "seasons": 1,
       "teams": 1,
       "best_category_rank": 12,
       "category_wins": 0,
       "best_split_seconds": 340,
-      "profile_slug": "p00558ce8a3-daniel-fikstveita",
-      "profile_path": "person/p00558ce8a3-daniel-fikstveita/",
-      "testlop_person_id": null,
-      "testlop_profile_path": null,
-      "global_person_id": "daniel_fikstveita",
+      "profile_slug": "p401b1f46ce-daniel-fikstvedt",
+      "profile_path": "person/p401b1f46ce-daniel-fikstvedt/",
+      "testlop_person_id": "daniel_fikstvedt",
+      "testlop_profile_path": "testlop/person/daniel_fikstvedt/",
+      "global_person_id": "daniel_fikstvedt",
       "identity_status": "confirmed",
       "aliases": [
         {
           "alias_id": 66,
           "alias_name": "Daniel Fikstveita",
           "normalized_name": "daniel fikstveita",
-          "status": "seed"
+          "status": "approved"
         }
       ],
       "raw_names": [
         "Daniel Fikstveita"
       ],
       "search_names": [
+        "daniel fikstvedt",
         "daniel fikstveita"
       ],
       "search_tokens": [
         "daniel",
+        "fikstvedt",
         "fikstveita"
       ],
       "hks_result_ids": [
@@ -56024,11 +56026,11 @@
       "alias_id": 66,
       "alias_name": "Daniel Fikstveita",
       "normalized_name": "daniel fikstveita",
-      "person_id": "p00558ce8a3",
-      "canonical_name": "Daniel Fikstveita",
-      "slug": "daniel-fikstveita",
-      "status": "seed",
-      "profile_slug": "p00558ce8a3-daniel-fikstveita"
+      "person_id": "p401b1f46ce",
+      "canonical_name": "Daniel Fikstvedt",
+      "slug": "daniel-fikstvedt",
+      "status": "approved",
+      "profile_slug": "p401b1f46ce-daniel-fikstvedt"
     },
     {
       "alias_id": 67,
@@ -62388,10 +62390,10 @@
       ]
     },
     {
-      "global_person_id": "daniel_fikstveita",
-      "canonical_name": "Daniel Fikstveita",
-      "hks_person_id": "p00558ce8a3",
-      "testlop_person_id": null,
+      "global_person_id": "daniel_fikstvedt",
+      "canonical_name": "Daniel Fikstvedt",
+      "hks_person_id": "p401b1f46ce",
+      "testlop_person_id": "daniel_fikstvedt",
       "status": "confirmed",
       "aliases": [
         "Daniel Fikstveita"
@@ -64663,6 +64665,15 @@
       "status": "rejected"
     },
     {
+      "raw_name": "Daniel Fikstveita",
+      "suggested_canonical_name": "Daniel Fikstvedt",
+      "confidence": "",
+      "reason": "Bevart tidligere vurdering",
+      "decision": "approve",
+      "notes": "Godkjent av bruker 2026-04-27",
+      "status": "approved"
+    },
+    {
       "raw_name": "David Stefan Rieger",
       "suggested_canonical_name": "David Rieger",
       "confidence": "",
@@ -64917,11 +64928,11 @@
   ],
   "quality": {
     "summary": {
-      "identityIssues": 120,
+      "identityIssues": 121,
       "dataIssues": 0,
       "pending": 0,
       "needsReview": 0,
-      "autoSuggested": 22
+      "autoSuggested": 21
     },
     "identityIssues": [
       {
@@ -65259,6 +65270,15 @@
       },
       {
         "id": "name-review-38",
+        "type": "approved_alias",
+        "status": "approved",
+        "raw_name": "Daniel Fikstveita",
+        "suggested_canonical_name": "Daniel Fikstvedt",
+        "confidence": null,
+        "message": "Bevart tidligere vurdering"
+      },
+      {
+        "id": "name-review-39",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "David Stefan Rieger",
@@ -65267,7 +65287,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-39",
+        "id": "name-review-40",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Eldbjørg D. Moxnes",
@@ -65276,7 +65296,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-40",
+        "id": "name-review-41",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Elene Mauseth Tangen",
@@ -65285,7 +65305,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-41",
+        "id": "name-review-42",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Emma Liv Leiner",
@@ -65294,7 +65314,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-42",
+        "id": "name-review-43",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Frederik Emil Juul",
@@ -65303,7 +65323,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-43",
+        "id": "name-review-44",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Fredrik Sætereng Fyksen",
@@ -65312,7 +65332,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-44",
+        "id": "name-review-45",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Hanna Aarnes Nisja",
@@ -65321,7 +65341,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-45",
+        "id": "name-review-46",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Helene Støle Melsom",
@@ -65330,7 +65350,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-46",
+        "id": "name-review-47",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Håkon Lund",
@@ -65339,7 +65359,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-47",
+        "id": "name-review-48",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Ida Marie Nordengen",
@@ -65348,7 +65368,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-48",
+        "id": "name-review-49",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Ingrid Aarbogh Skogum",
@@ -65357,7 +65377,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-49",
+        "id": "name-review-50",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Ingrid Marie Schaumburg Huitfeldt",
@@ -65366,7 +65386,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-50",
+        "id": "name-review-51",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Joakim S. Mohn",
@@ -65375,7 +65395,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-51",
+        "id": "name-review-52",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Julie Benedicte Aspesletten",
@@ -65384,7 +65404,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-52",
+        "id": "name-review-53",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Karoline Holum Kjærnes",
@@ -65393,7 +65413,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-53",
+        "id": "name-review-54",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Kristian Bjune Sveen",
@@ -65402,7 +65422,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-54",
+        "id": "name-review-55",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Kristine Alne",
@@ -65411,7 +65431,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-55",
+        "id": "name-review-56",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Magnus W Warvik",
@@ -65420,7 +65440,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-56",
+        "id": "name-review-57",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Maja Maria Blegen",
@@ -65429,7 +65449,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-57",
+        "id": "name-review-58",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Morten Olsen Dalhaug",
@@ -65438,7 +65458,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-58",
+        "id": "name-review-59",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Ragnhild Brørs Kløven",
@@ -65447,7 +65467,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-59",
+        "id": "name-review-60",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Simen Hagerup Kjeldsen",
@@ -65456,7 +65476,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-60",
+        "id": "name-review-61",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Siri Vegsund Staver",
@@ -65465,7 +65485,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-61",
+        "id": "name-review-62",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Sofie Karlsen Amundsgård",
@@ -65474,7 +65494,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-62",
+        "id": "name-review-63",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Synne Våge Bertelsmann Opheim",
@@ -65483,7 +65503,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-63",
+        "id": "name-review-64",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Telma Eckhoff Dagestad",
@@ -65492,7 +65512,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-64",
+        "id": "name-review-65",
         "type": "approved_alias",
         "status": "approved",
         "raw_name": "Veselemøy Rønnevik",
@@ -65501,7 +65521,7 @@
         "message": "Bevart tidligere vurdering"
       },
       {
-        "id": "name-review-65",
+        "id": "name-review-66",
         "type": "rejected_alias",
         "status": "rejected",
         "raw_name": "Åsne Skram Trømborg",
@@ -65525,6 +65545,15 @@
         "person_id": "p7a373e8a1e",
         "canonical_name": "Anne-Line Evenstad Dahlen",
         "raw_name": "Anne-Line Dahlen",
+        "message": "Rånavnet peker til en annen kanonisk skrivemåte."
+      },
+      {
+        "id": "raw-name-diff-66",
+        "type": "raw_name_differs_from_canonical",
+        "status": "approved",
+        "person_id": "p401b1f46ce",
+        "canonical_name": "Daniel Fikstvedt",
+        "raw_name": "Daniel Fikstveita",
         "message": "Rånavnet peker til en annen kanonisk skrivemåte."
       },
       {
@@ -65932,21 +65961,6 @@
             "testlop_person_id": "caroline_brekke_karlesen",
             "testlop_name": "Caroline Brekke Karlesen",
             "confidence": 0.96
-          }
-        ]
-      },
-      {
-        "id": "identity-testlop-suggest-p00558ce8a3-daniel_fikstvedt",
-        "type": "possible_testlop_link",
-        "status": "auto_suggested",
-        "hks_person_id": "p00558ce8a3",
-        "canonical_name": "Daniel Fikstveita",
-        "message": "Mulig kobling mellom HKS og testløp. Ikke automatisk godkjent.",
-        "candidates": [
-          {
-            "testlop_person_id": "daniel_fikstvedt",
-            "testlop_name": "Daniel Fikstvedt",
-            "confidence": 0.88
           }
         ]
       },

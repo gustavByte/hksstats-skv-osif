@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import re
 import shutil
@@ -21,6 +22,19 @@ PUBLIC_DATA_DIR = ROOT / "public" / "data"
 DB_PATH = DATA_DIR / "hksstats.sqlite"
 REVIEW_PATH = DATA_DIR / "name_match_review.csv"
 REQUIRED_WORKBOOK_SHEETS = {"HKS_menn_splitt", "HKS_kvinner_splitt", "Rekorder"}
+TESTLOP_PEOPLE_PATH = ROOT / "Testløp" / "src" / "data" / "people.json"
+TESTLOP_PROFILE_ROOT = "testlop/person"
+
+NORWEGIAN_TRANSLITERATION = str.maketrans(
+    {
+        "Æ": "AE",
+        "Ø": "O",
+        "Å": "A",
+        "æ": "ae",
+        "ø": "o",
+        "å": "a",
+    }
+)
 
 
 CLASS_META = {
@@ -157,6 +171,7 @@ def find_workbook() -> Path:
 
 
 def normalize_name(value: str) -> str:
+    value = str(value).translate(NORWEGIAN_TRANSLITERATION)
     stripped = "".join(
         ch for ch in unicodedata.normalize("NFKD", value) if not unicodedata.combining(ch)
     )
@@ -167,6 +182,37 @@ def normalize_name(value: str) -> str:
 
 def tokenize_name(value: str) -> list[str]:
     return normalize_name(value).split()
+
+
+def slugify_name(value: str, fallback: str = "person") -> str:
+    slug = normalize_name(value).replace(" ", "-")
+    slug = re.sub(r"-+", "-", slug).strip("-")
+    return slug or fallback
+
+
+def stable_person_id(value: str, length: int = 10) -> str:
+    normalized = normalize_name(value)
+    digest = hashlib.sha1(normalized.encode("utf-8")).hexdigest()
+    return f"p{digest[:length]}"
+
+
+def stable_global_person_id(value: str) -> str:
+    return slugify_name(value).replace("-", "_")
+
+
+def build_search_names(names: list[str]) -> list[str]:
+    variants: list[str] = []
+    seen: set[str] = set()
+    for name in names:
+        if not name:
+            continue
+        raw = re.sub(r"\s+", " ", str(name).strip().casefold())
+        normalized = normalize_name(str(name))
+        for variant in (raw, normalized):
+            if variant and variant not in seen:
+                variants.append(variant)
+                seen.add(variant)
+    return variants
 
 
 def edit_distance(a: str, b: str) -> int:
@@ -757,8 +803,10 @@ def create_schema(connection: sqlite3.Connection) -> None:
 
         CREATE TABLE people (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            person_key TEXT NOT NULL UNIQUE,
             canonical_name TEXT NOT NULL UNIQUE,
-            normalized_name TEXT NOT NULL
+            normalized_name TEXT NOT NULL,
+            slug TEXT NOT NULL
         );
 
         CREATE TABLE person_aliases (
@@ -852,11 +900,27 @@ def build_database(
     )
     person_ids: dict[str, int] = {}
     alias_ids: dict[str, int] = {}
+    used_person_keys: set[str] = set()
+    slug_counts: defaultdict[str, int] = defaultdict(int)
+    person_slugs: dict[str, str] = {}
 
     for canonical_name in canonical_names:
+        base_slug = slugify_name(canonical_name)
+        slug_counts[base_slug] += 1
+        person_slugs[canonical_name] = (
+            base_slug if slug_counts[base_slug] == 1 else f"{base_slug}-{slug_counts[base_slug]}"
+        )
+
+    for canonical_name in canonical_names:
+        key_length = 10
+        person_key = stable_person_id(canonical_name, key_length)
+        while person_key in used_person_keys:
+            key_length += 2
+            person_key = stable_person_id(canonical_name, key_length)
+        used_person_keys.add(person_key)
         cursor = connection.execute(
-            "INSERT INTO people (canonical_name, normalized_name) VALUES (?, ?)",
-            (canonical_name, normalize_name(canonical_name)),
+            "INSERT INTO people (person_key, canonical_name, normalized_name, slug) VALUES (?, ?, ?, ?)",
+            (person_key, canonical_name, normalize_name(canonical_name), person_slugs[canonical_name]),
         )
         person_ids[canonical_name] = int(cursor.lastrowid)
 
@@ -957,6 +1021,126 @@ def build_approved_name_map(review_rows: list[dict[str, Any]]) -> dict[str, str]
     return approved_map
 
 
+def load_testlop_people() -> list[dict[str, Any]]:
+    if not TESTLOP_PEOPLE_PATH.exists():
+        return []
+    return json.loads(TESTLOP_PEOPLE_PATH.read_text(encoding="utf-8"))
+
+
+def review_decision_to_status(decision: str) -> str:
+    normalized = decision.strip().lower()
+    if normalized in {"approve", "approved"}:
+        return "approved"
+    if normalized in {"reject", "rejected"}:
+        return "rejected"
+    if normalized in {"needs_review", "review"}:
+        return "needs_review"
+    if normalized in {"pending"}:
+        return "pending"
+    return "auto_suggested"
+
+
+def build_identity_model(
+    people_rows: list[dict[str, Any]],
+    aliases_by_person: dict[str, list[dict[str, Any]]],
+    testlop_people: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]], list[dict[str, Any]]]:
+    testlop_by_normalized: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
+    for person in testlop_people:
+        name = str(person.get("name") or "").strip()
+        person_id = str(person.get("personId") or "").strip()
+        if not name or not person_id:
+            continue
+        testlop_by_normalized[normalize_name(name)].append(person)
+
+    testlop_candidates = [
+        person
+        for person in testlop_people
+        if str(person.get("name") or "").strip() and str(person.get("personId") or "").strip()
+    ]
+
+    confirmed_by_hks_id: dict[str, dict[str, Any]] = {}
+    issues: list[dict[str, Any]] = []
+    global_people: list[dict[str, Any]] = []
+
+    for person in people_rows:
+        hks_person_id = person["person_id"]
+        canonical_name = person["canonical_name"]
+        normalized = normalize_name(canonical_name)
+        exact_matches = testlop_by_normalized.get(normalized, [])
+        testlop_person_id: str | None = None
+        link_status = "confirmed"
+
+        if len(exact_matches) == 1:
+            testlop_person = exact_matches[0]
+            testlop_person_id = str(testlop_person["personId"])
+            confirmed_by_hks_id[hks_person_id] = {
+                "testlop_person_id": testlop_person_id,
+                "testlop_name": testlop_person["name"],
+                "status": "confirmed",
+                "confidence": 1.0,
+            }
+        elif len(exact_matches) > 1:
+            link_status = "needs_review"
+            issues.append(
+                {
+                    "id": f"identity-multiple-testlop-{hks_person_id}",
+                    "type": "possible_testlop_link",
+                    "status": "needs_review",
+                    "hks_person_id": hks_person_id,
+                    "canonical_name": canonical_name,
+                    "message": "Flere testløp-personer har samme normaliserte navn.",
+                    "candidates": [
+                        {
+                            "testlop_person_id": str(candidate["personId"]),
+                            "testlop_name": candidate["name"],
+                            "confidence": 1.0,
+                        }
+                        for candidate in exact_matches
+                    ],
+                }
+            )
+        else:
+            best_candidate: dict[str, Any] | None = None
+            best_score = 0.0
+            for candidate in testlop_candidates:
+                score = similarity(canonical_name, str(candidate.get("name") or ""))
+                if score > best_score:
+                    best_score = score
+                    best_candidate = candidate
+            if best_candidate and best_score >= 0.84:
+                issues.append(
+                    {
+                        "id": f"identity-testlop-suggest-{hks_person_id}-{best_candidate['personId']}",
+                        "type": "possible_testlop_link",
+                        "status": "auto_suggested",
+                        "hks_person_id": hks_person_id,
+                        "canonical_name": canonical_name,
+                        "message": "Mulig kobling mellom HKS og testløp. Ikke automatisk godkjent.",
+                        "candidates": [
+                            {
+                                "testlop_person_id": str(best_candidate["personId"]),
+                                "testlop_name": best_candidate["name"],
+                                "confidence": round(best_score, 2),
+                            }
+                        ],
+                    }
+                )
+
+        global_people.append(
+            {
+                "global_person_id": stable_global_person_id(canonical_name),
+                "canonical_name": canonical_name,
+                "hks_person_id": hks_person_id,
+                "testlop_person_id": testlop_person_id,
+                "status": link_status,
+                "aliases": [alias["alias_name"] for alias in aliases_by_person.get(hks_person_id, [])],
+            }
+        )
+
+    return global_people, confirmed_by_hks_id, issues
+
+
 def build_stage_honours(
     results: list[ResultRecord],
     review_rows: list[dict[str, Any]],
@@ -974,6 +1158,7 @@ def build_stage_honours(
             percent_of_record = round(record["record_seconds"] / result.split_seconds * 100, 1)
         grouped[(result.organization_code, result.division, result.stage_number, result.stage_label)].append(
             {
+                "person_id": stable_person_id(approved_map.get(result.raw_name, result.raw_name)),
                 "person_name": approved_map.get(result.raw_name, result.raw_name),
                 "raw_name": result.raw_name,
                 "split_text": result.split_text,
@@ -1135,6 +1320,7 @@ def export_site_data(
                 s.division,
                 s.stage_number,
                 s.stage_label,
+                p.person_key AS person_id,
                 p.canonical_name AS person_name,
                 r.raw_name,
                 r.split_text,
@@ -1229,7 +1415,9 @@ def export_site_data(
             """
             SELECT
                 p.id,
+                p.person_key AS person_id,
                 p.canonical_name,
+                p.slug,
                 COUNT(r.id) AS appearances,
                 COUNT(DISTINCT t.year) AS seasons,
                 COUNT(DISTINCT t.team_name) AS teams,
@@ -1246,24 +1434,105 @@ def export_site_data(
         )
     ]
 
+    aliases = [
+        dict(row)
+        for row in connection.execute(
+            """
+            SELECT
+                pa.id AS alias_id,
+                pa.alias_name,
+                pa.normalized_name,
+                pa.review_status,
+                p.person_key AS person_id,
+                p.canonical_name,
+                p.slug
+            FROM person_aliases pa
+            JOIN people p ON p.id = pa.person_id
+            ORDER BY p.canonical_name, pa.alias_name
+            """
+        )
+    ]
+
+    aliases_by_person: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in aliases:
+        row["status"] = row.pop("review_status")
+        row["profile_slug"] = f'{row["person_id"]}-{row["slug"]}'
+        aliases_by_person[row["person_id"]].append(
+            {
+                "alias_id": row["alias_id"],
+                "alias_name": row["alias_name"],
+                "normalized_name": row["normalized_name"],
+                "status": row["status"],
+            }
+        )
+
+    for row in results:
+        record = record_lookup.get((row["division"], row["stage_label"]), {})
+        record_seconds = record.get("record_seconds")
+        row["percent_of_record"] = (
+            round(record_seconds / row["split_seconds"] * 100, 1)
+            if record_seconds and row["split_seconds"]
+            else None
+        )
+
     person_teams = defaultdict(set)
     person_classes = defaultdict(set)
     person_years = defaultdict(set)
     person_orgs = defaultdict(set)
+    person_results = defaultdict(list)
+    person_stages = defaultdict(set)
     for row in results:
-        person_teams[row["person_name"]].add(f'{row["year"]} · {row["team_name"]}')
-        person_classes[row["person_name"]].add(row["class_label"])
-        person_years[row["person_name"]].add(row["year"])
-        person_orgs[row["person_name"]].add(row["organization_code"])
+        person_id = row["person_id"]
+        person_teams[person_id].add(f'{row["year"]} · {row["team_name"]}')
+        person_classes[person_id].add(row["class_label"])
+        person_years[person_id].add(row["year"])
+        person_orgs[person_id].add(row["organization_code"])
+        person_results[person_id].append(row["id"])
+        person_stages[person_id].add(f'{row["stage_number"]}. {row["stage_label"]}')
+
+    testlop_people = load_testlop_people()
+    global_people, confirmed_testlop_links, testlop_identity_issues = build_identity_model(
+        people_rows,
+        aliases_by_person,
+        testlop_people,
+    )
 
     for row in people_rows:
+        person_id = row["person_id"]
+        alias_rows = aliases_by_person.get(person_id, [])
+        raw_names = sorted({alias["alias_name"] for alias in alias_rows})
+        testlop_link = confirmed_testlop_links.get(person_id)
+        row["profile_slug"] = f'{row["person_id"]}-{row["slug"]}'
+        row["profile_path"] = f'person/{row["profile_slug"]}/'
+        row["testlop_person_id"] = testlop_link["testlop_person_id"] if testlop_link else None
+        row["testlop_profile_path"] = (
+            f'{TESTLOP_PROFILE_ROOT}/{row["testlop_person_id"]}/' if row["testlop_person_id"] else None
+        )
+        row["global_person_id"] = stable_global_person_id(row["canonical_name"])
+        row["identity_status"] = "confirmed"
+        row["aliases"] = alias_rows
+        row["raw_names"] = raw_names
+        row["search_names"] = build_search_names([row["canonical_name"], *raw_names])
+        row["search_tokens"] = sorted({token for name in row["search_names"] for token in tokenize_name(name)})
+        row["hks_result_ids"] = sorted(person_results[person_id])
         row["best_split_text"] = (
             seconds_to_display(row["best_split_seconds"]) if row["best_split_seconds"] is not None else None
         )
-        row["classes"] = sorted(person_classes[row["canonical_name"]])
-        row["years"] = sorted(person_years[row["canonical_name"]], reverse=True)
-        row["organizations"] = sorted(person_orgs[row["canonical_name"]])
-        row["team_history"] = sorted(person_teams[row["canonical_name"]], reverse=True)
+        row["best_percent_of_record"] = max(
+            (
+                result["percent_of_record"]
+                for result in results
+                if result["person_id"] == person_id and result["percent_of_record"] is not None
+            ),
+            default=None,
+        )
+        row["classes"] = sorted(person_classes[person_id])
+        row["years"] = sorted(person_years[person_id], reverse=True)
+        row["first_year"] = min(person_years[person_id]) if person_years[person_id] else None
+        row["last_year"] = max(person_years[person_id]) if person_years[person_id] else None
+        row["organizations"] = sorted(person_orgs[person_id])
+        row["team_history"] = sorted(person_teams[person_id], reverse=True)
+        row["stage_history"] = sorted(person_stages[person_id])
 
     class_breakdown = [
         dict(row)
@@ -1310,7 +1579,123 @@ def export_site_data(
         for row in review_rows
         if row["decision"].strip().lower() not in {"approve", "approved", "reject", "rejected"}
     )
+    for row in review_rows:
+        row["status"] = review_decision_to_status(row.get("decision", ""))
+
     stage_honours = build_stage_honours(raw_results, review_rows, record_lookup)
+
+    identity_issues: list[dict[str, Any]] = []
+    for index, row in enumerate(review_rows, start=1):
+        status = row["status"]
+        if status == "approved":
+            issue_type = "approved_alias"
+        elif status == "rejected":
+            issue_type = "rejected_alias"
+        else:
+            issue_type = "possible_duplicate_person"
+        identity_issues.append(
+            {
+                "id": f"name-review-{index}",
+                "type": issue_type,
+                "status": status,
+                "raw_name": row["raw_name"],
+                "suggested_canonical_name": row["suggested_canonical_name"],
+                "confidence": float(row["confidence"]) if row.get("confidence") else None,
+                "message": row["reason"],
+            }
+        )
+
+    for alias in aliases:
+        if normalize_name(alias["alias_name"]) == normalize_name(alias["canonical_name"]):
+            continue
+        identity_issues.append(
+            {
+                "id": f'raw-name-diff-{alias["alias_id"]}',
+                "type": "raw_name_differs_from_canonical",
+                "status": "approved" if alias["status"] == "approved" else "needs_review",
+                "person_id": alias["person_id"],
+                "canonical_name": alias["canonical_name"],
+                "raw_name": alias["alias_name"],
+                "message": "Rånavnet peker til en annen kanonisk skrivemåte.",
+            }
+        )
+
+    identity_issues.extend(testlop_identity_issues)
+
+    duplicate_groups: defaultdict[tuple[int, int, int], list[dict[str, Any]]] = defaultdict(list)
+    for row in results:
+        duplicate_groups[(row["year"], row["team_id"], row["stage_number"])].append(row)
+
+    data_issues: list[dict[str, Any]] = []
+    for row in results:
+        if not row.get("person_id"):
+            data_issues.append(
+                {
+                    "id": f'missing-person-{row["id"]}',
+                    "type": "missing_person_id",
+                    "status": "needs_review",
+                    "result_id": row["id"],
+                    "message": "Resultatet mangler person_id.",
+                }
+            )
+        if row.get("split_seconds") is None:
+            data_issues.append(
+                {
+                    "id": f'missing-time-{row["id"]}',
+                    "type": "missing_time",
+                    "status": "needs_review",
+                    "result_id": row["id"],
+                    "person_id": row.get("person_id"),
+                    "person_name": row.get("person_name"),
+                    "year": row.get("year"),
+                    "team_name": row.get("team_name"),
+                    "stage_label": row.get("stage_label"),
+                    "message": "Resultatet mangler splittid.",
+                }
+            )
+
+    for (year, team_id, stage_number), rows in duplicate_groups.items():
+        if len(rows) <= 1:
+            continue
+        data_issues.append(
+            {
+                "id": f"duplicate-stage-{year}-{team_id}-{stage_number}",
+                "type": "duplicate_same_year_team_stage",
+                "status": "needs_review",
+                "year": year,
+                "team_id": team_id,
+                "stage_number": stage_number,
+                "result_ids": [row["id"] for row in rows],
+                "message": "Flere resultater ligger på samme år, lag og etappe.",
+            }
+        )
+
+    for conflict in division_audit:
+        data_issues.append(
+            {
+                "id": f'team-division-conflict-{conflict["team_id"]}',
+                "type": "unusual_team_division",
+                "status": "needs_review",
+                **conflict,
+                "message": "Laget har resultater med flere divisjoner.",
+            }
+        )
+
+    quality = {
+        "summary": {
+            "identityIssues": len(identity_issues),
+            "dataIssues": len(data_issues),
+            "pending": sum(1 for issue in [*identity_issues, *data_issues] if issue["status"] == "pending"),
+            "needsReview": sum(
+                1 for issue in [*identity_issues, *data_issues] if issue["status"] == "needs_review"
+            ),
+            "autoSuggested": sum(
+                1 for issue in [*identity_issues, *data_issues] if issue["status"] == "auto_suggested"
+            ),
+        },
+        "identityIssues": identity_issues,
+        "dataIssues": data_issues,
+    }
 
     site_data = {
         "generatedAt": datetime.now().isoformat(timespec="seconds"),
@@ -1357,7 +1742,10 @@ def export_site_data(
         "results": results,
         "teams": teams,
         "people": people_rows,
+        "aliases": aliases,
+        "globalPeople": global_people,
         "nameReview": review_rows,
+        "quality": quality,
         "audit": {
             "teamWinners": team_winners,
             "teamDivisionConflicts": division_audit,

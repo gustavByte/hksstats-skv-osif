@@ -1,5 +1,7 @@
 node_modules/
 dist/
+.build-static-site/
+.build-preserve-docs/
 __pycache__/
 *.pyc
 desktop.ini

@@ -1,9 +1,10 @@
 const app = document.querySelector("#app");
 
-const DATA_VERSION = "2026-04-24-v2-team-archive-division-filter";
+const DATA_VERSION = "2026-04-27-v2-search-profiles-quality";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
+const SITE_ROOT_URL = new URL("../", import.meta.url);
 const LEGACY_URL = new URL("../legacy/", import.meta.url).toString();
 const DEFAULT_STATE = {
   selectedYear: "all",
@@ -80,6 +81,23 @@ const DIVISION_META = {
   unknown: { label: "Ukjent", sort: 4 },
 };
 
+const NORWEGIAN_SEARCH_MAP = {
+  Æ: "AE",
+  Ø: "O",
+  Å: "A",
+  æ: "ae",
+  ø: "o",
+  å: "a",
+};
+
+const SEARCH_RESULT_LIMITS = {
+  people: 6,
+  suggestions: 5,
+  results: 12,
+  teams: 6,
+  issues: 6,
+};
+
 const HONOUR_GROUP_FILTERS = {
   "skv-men": {
     organizationCode: "SKV",
@@ -129,6 +147,81 @@ function escapeHtml(value) {
 
 function assetUrl(fileName) {
   return new URL(fileName, ASSET_ROOT_URL).toString();
+}
+
+function siteUrl(path = "") {
+  return new URL(path, SITE_ROOT_URL).toString();
+}
+
+function foldNorwegianLetters(value) {
+  return String(value ?? "").replace(/[ÆØÅæøå]/g, (char) => NORWEGIAN_SEARCH_MAP[char] ?? char);
+}
+
+function normalizeSearchText(value) {
+  return foldNorwegianLetters(value)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tokenizeSearch(value) {
+  return normalizeSearchText(value).split(" ").filter(Boolean);
+}
+
+function normalizeWithMap(value) {
+  const source = String(value ?? "");
+  let normalized = "";
+  const map = [];
+
+  for (let index = 0; index < source.length; index += 1) {
+    const folded = foldNorwegianLetters(source[index])
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
+    for (const char of folded) {
+      if (/^[a-z0-9]$/.test(char)) {
+        normalized += char;
+        map.push(index);
+      } else if (normalized && normalized.at(-1) !== " ") {
+        normalized += " ";
+        map.push(index);
+      }
+    }
+  }
+
+  return { normalized: normalized.replace(/\s+/g, " ").trim(), map };
+}
+
+function highlightMatch(value, query) {
+  const text = String(value ?? "");
+  const queryNorm = normalizeSearchText(query);
+  if (!text || !queryNorm) {
+    return escapeHtml(text);
+  }
+
+  const { normalized, map } = normalizeWithMap(text);
+  const index = normalized.indexOf(queryNorm);
+  if (index < 0 || map[index] === undefined) {
+    const token = tokenizeSearch(query).find((item) => item && normalized.includes(item));
+    if (!token) {
+      return escapeHtml(text);
+    }
+    const tokenIndex = normalized.indexOf(token);
+    const tokenStart = map[tokenIndex];
+    const tokenEnd = (map[tokenIndex + token.length - 1] ?? tokenStart) + 1;
+    return `${escapeHtml(text.slice(0, tokenStart))}<mark>${escapeHtml(
+      text.slice(tokenStart, tokenEnd),
+    )}</mark>${escapeHtml(text.slice(tokenEnd))}`;
+  }
+
+  const start = map[index];
+  const end = (map[index + queryNorm.length - 1] ?? start) + 1;
+  return `${escapeHtml(text.slice(0, start))}<mark>${escapeHtml(text.slice(start, end))}</mark>${escapeHtml(
+    text.slice(end),
+  )}`;
 }
 
 function toDomId(value) {
@@ -264,7 +357,13 @@ function cleanStageName(label) {
 }
 
 function matchesSearch(haystack, needle) {
-  return !needle || haystack.toLowerCase().includes(needle);
+  const normalizedNeedle = normalizeSearchText(needle);
+  if (!normalizedNeedle) {
+    return true;
+  }
+  const normalizedHaystack = normalizeSearchText(haystack);
+  const tokens = normalizedNeedle.split(" ").filter(Boolean);
+  return normalizedHaystack.includes(normalizedNeedle) || tokens.every((token) => normalizedHaystack.includes(token));
 }
 
 function getClubName(code) {
@@ -283,6 +382,60 @@ function getClassName(code) {
 
 function getTeamId(row) {
   return row?.team_id ?? row?.id ?? null;
+}
+
+function getPersonById(personId) {
+  if (!personId) return null;
+  return (state.data?.people ?? []).find((person) => person.person_id === personId) ?? null;
+}
+
+function getPersonUrlById(personId) {
+  const person = getPersonById(personId);
+  if (!person) {
+    return null;
+  }
+  return siteUrl(person.profile_path || `person/${person.profile_slug || person.slug}/`);
+}
+
+function renderPersonLink(personId, label, className = "person-link") {
+  const href = getPersonUrlById(personId);
+  const safeLabel = escapeHtml(label);
+  if (!href) {
+    return `<span class="${escapeHtml(className)}">${safeLabel}</span>`;
+  }
+  return `<a class="${escapeHtml(className)}" href="${escapeHtml(href)}">${safeLabel}</a>`;
+}
+
+function getCurrentRoute() {
+  const currentUrl = new URL(window.location.href);
+  const rootPath = SITE_ROOT_URL.pathname.endsWith("/")
+    ? SITE_ROOT_URL.pathname
+    : `${SITE_ROOT_URL.pathname}/`;
+  const relativePath = currentUrl.pathname.startsWith(rootPath)
+    ? currentUrl.pathname.slice(rootPath.length)
+    : currentUrl.pathname.replace(/^\/+/, "");
+  const parts = relativePath.split("/").filter(Boolean);
+
+  if (parts[0] === "person" && parts[1]) {
+    return { type: "person", segment: parts[1] };
+  }
+  if (parts[0] === "avvik") {
+    return { type: "quality" };
+  }
+  return { type: "home" };
+}
+
+function findPersonByRouteSegment(segment) {
+  const decoded = decodeURIComponent(segment || "");
+  return (
+    (state.data?.people ?? []).find(
+      (person) =>
+        person.profile_slug === decoded ||
+        person.person_id === decoded ||
+        person.slug === decoded ||
+        decoded.startsWith(`${person.person_id}-`),
+    ) ?? null
+  );
 }
 
 function getTeamClassGroup(classCode) {
@@ -379,7 +532,9 @@ function buildPersonStats(results) {
   const people = new Map();
 
   for (const row of results) {
-    const current = people.get(row.person_name) ?? {
+    const personKey = row.person_id || row.person_name;
+    const current = people.get(personKey) ?? {
+      person_id: row.person_id,
       canonical_name: row.person_name,
       appearances: 0,
       seasons: new Set(),
@@ -406,11 +561,12 @@ function buildPersonStats(results) {
       current.best_split_seconds = row.split_seconds;
       current.best_split_text = row.split_text;
     }
-    people.set(row.person_name, current);
+    people.set(personKey, current);
   }
 
   return [...people.values()]
     .map((item) => ({
+      person_id: item.person_id,
       canonical_name: item.canonical_name,
       appearances: item.appearances,
       seasons: item.seasons.size,
@@ -429,13 +585,17 @@ function buildPersonStats(results) {
 }
 
 function filterData() {
-  const searchValue = state.search.trim().toLowerCase();
-  const filteredResults = state.data.results.filter((row) => {
+  const searchValue = state.search.trim();
+  const facetedResults = state.data.results.filter((row) => {
     const matchesYear = state.selectedYear === "all" || String(row.year) === state.selectedYear;
     const matchesOrganization =
       state.selectedOrganization === "all" || row.organization_code === state.selectedOrganization;
     const matchesClass = state.selectedClass === "all" || row.class_code === state.selectedClass;
     const matchesDivision = state.selectedDivision === "all" || row.division === state.selectedDivision;
+    return matchesYear && matchesOrganization && matchesClass && matchesDivision;
+  });
+
+  const filteredResults = facetedResults.filter((row) => {
     const haystack = [
       row.person_name,
       row.raw_name,
@@ -444,23 +604,21 @@ function filterData() {
       row.class_label,
       row.organization_name,
     ].join(" ");
-    return (
-      matchesYear &&
-      matchesOrganization &&
-      matchesClass &&
-      matchesDivision &&
-      matchesSearch(haystack, searchValue)
-    );
+    return matchesSearch(haystack, searchValue);
   });
 
   const resultTeamIds = new Set(filteredResults.map((row) => getTeamId(row)).filter(Boolean));
 
-  const filteredTeams = state.data.teams.filter((row) => {
+  const facetedTeams = state.data.teams.filter((row) => {
     const matchesYear = state.selectedYear === "all" || String(row.year) === state.selectedYear;
     const matchesOrganization =
       state.selectedOrganization === "all" || row.organization_code === state.selectedOrganization;
     const matchesClass = state.selectedClass === "all" || row.class_code === state.selectedClass;
     const matchesDivision = state.selectedDivision === "all" || row.division === state.selectedDivision;
+    return matchesYear && matchesOrganization && matchesClass && matchesDivision;
+  });
+
+  const filteredTeams = facetedTeams.filter((row) => {
     const haystack = [
       row.team_name,
       row.class_label,
@@ -469,18 +627,14 @@ function filterData() {
       getTeamGroupLabel(getTeamClassGroup(row.class_code)),
     ].join(" ");
     const matchesTeam = matchesSearch(haystack, searchValue);
-    return (
-      matchesYear &&
-      matchesOrganization &&
-      matchesClass &&
-      matchesDivision &&
-      (!searchValue || matchesTeam || resultTeamIds.has(getTeamId(row)))
-    );
+    return !searchValue || matchesTeam || resultTeamIds.has(getTeamId(row));
   });
 
   return {
     filteredResults,
     filteredTeams,
+    facetedResults,
+    facetedTeams,
     personStats: buildPersonStats(filteredResults),
   };
 }
@@ -538,9 +692,6 @@ function buildHonoursScopeLabel() {
   if (state.selectedDivision !== "all") {
     parts.push(getDivisionLabel(state.selectedDivision));
   }
-  if (state.search.trim()) {
-    parts.push(`Søk: ${state.search.trim()}`);
-  }
   return parts.join(" · ");
 }
 
@@ -569,6 +720,7 @@ function buildDynamicHonoursGroup(activeGroup, filteredResults) {
     const entries = groupedByStage.get(row.stage_number) ?? [];
     entries.push({
       rank: 0,
+      person_id: row.person_id,
       person_name: row.person_name,
       raw_name: row.raw_name,
       split_text: row.split_text,
@@ -586,7 +738,9 @@ function buildDynamicHonoursGroup(activeGroup, filteredResults) {
 
   return {
     ...activeGroup,
-    subtitle: `Rangert per etappe for ${activeGroup.title}. Viser ${buildHonoursScopeLabel()}.`,
+    subtitle: `Rangert per etappe for ${activeGroup.title}. Viser ${buildHonoursScopeLabel()}${
+      state.search.trim() ? ". Søketreff vises i panelet over, mens rangeringen her beholdes mot hele filteret" : ""
+    }.`,
     stages: activeGroup.stages.map((stage) => {
       const rankedEntries = (groupedByStage.get(stage.stage_number) ?? [])
         .slice()
@@ -633,7 +787,7 @@ function buildClubSummaries(filteredResults, filteredTeams) {
     const entry = summaries.get(result.organization_code);
     if (!entry) continue;
     entry.results += 1;
-    entry.participants.add(result.person_name);
+    entry.participants.add(result.person_id ?? result.person_name);
   }
 
   return [...summaries.values()].map((entry) => ({
@@ -655,7 +809,7 @@ function buildSeasonHighlights(filteredResults, filteredTeams) {
       teams: 0,
     };
     entry.results += 1;
-    entry.participants.add(result.person_name);
+    entry.participants.add(result.person_id ?? result.person_name);
     byYear.set(year, entry);
   }
 
@@ -766,6 +920,7 @@ function buildTeamArchiveItems(filteredTeams, resultsByTeamId) {
       stage_number: entry.stage_number,
       stage_label: entry.stage_label,
       stage_name: entry.stage_name,
+      person_id: entry.person_id,
       person_name: entry.person_name,
       split_text: entry.split_text,
       category_rank: entry.category_rank,
@@ -790,7 +945,7 @@ function buildTeamArchiveItems(filteredTeams, resultsByTeamId) {
       teamRank: Number.isFinite(team.team_rank) ? team.team_rank : null,
       lineup,
       stageCount: lineup.length,
-      participants: [...new Set(lineup.map((entry) => entry.person_name))],
+      participants: [...new Set(lineup.map((entry) => entry.person_id ?? entry.person_name))],
       isWinner: team.team_rank === 1,
       isPodium: Number.isFinite(team.team_rank) && team.team_rank >= 1 && team.team_rank <= 3,
       isBestRankInGroup: false,
@@ -1022,6 +1177,207 @@ function buildTeamFilterOptions(archiveItems) {
   };
 }
 
+function editDistance(a, b) {
+  if (a === b) return 0;
+  if (!a) return b.length;
+  if (!b) return a.length;
+
+  let previous = Array.from({ length: b.length + 1 }, (_, index) => index);
+  for (let i = 1; i <= a.length; i += 1) {
+    const current = [i];
+    for (let j = 1; j <= b.length; j += 1) {
+      current[j] = Math.min(
+        current[j - 1] + 1,
+        previous[j] + 1,
+        previous[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+    }
+    previous = current;
+  }
+  return previous[b.length];
+}
+
+function similarityScore(a, b) {
+  const left = normalizeSearchText(a);
+  const right = normalizeSearchText(b);
+  if (!left || !right) return 0;
+  return 1 - editDistance(left, right) / Math.max(left.length, right.length);
+}
+
+function getPersonNameCandidates(person) {
+  const aliases = (person.aliases ?? []).map((alias) => alias.alias_name);
+  return [
+    person.canonical_name,
+    ...(person.raw_names ?? []),
+    ...aliases,
+    ...(person.search_names ?? []),
+  ].filter(Boolean);
+}
+
+function isFuzzyTokenMatch(queryTokens, candidateTokens) {
+  if (!queryTokens.length || !candidateTokens.length) {
+    return false;
+  }
+
+  return queryTokens.every((queryToken) =>
+    candidateTokens.some((candidateToken) => {
+      if (candidateToken === queryToken) return true;
+      if (Math.min(candidateToken.length, queryToken.length) < 4) return false;
+      const distance = editDistance(candidateToken, queryToken);
+      return distance <= 1 || 1 - distance / Math.max(candidateToken.length, queryToken.length) >= 0.78;
+    }),
+  );
+}
+
+function getPersonSearchMatch(person, query) {
+  const queryNorm = normalizeSearchText(query);
+  const queryTokens = tokenizeSearch(query);
+  if (!queryNorm || !queryTokens.length) return null;
+
+  const canonicalNorm = normalizeSearchText(person.canonical_name);
+  const aliasNames = [...(person.raw_names ?? []), ...(person.aliases ?? []).map((alias) => alias.alias_name)];
+  const aliasNorms = aliasNames.map(normalizeSearchText).filter(Boolean);
+  const candidates = getPersonNameCandidates(person);
+  const candidateNorms = candidates.map(normalizeSearchText).filter(Boolean);
+  const candidateTokens = [...new Set(candidateNorms.flatMap((name) => name.split(" ").filter(Boolean)))];
+
+  if (canonicalNorm === queryNorm) {
+    return { rank: 1, label: "Eksakt kanonisk navn", isFuzzy: false };
+  }
+  if (aliasNorms.includes(queryNorm)) {
+    return { rank: 2, label: "Eksakt alias eller rånavn", isFuzzy: false };
+  }
+  if (queryTokens.every((token) => candidateTokens.includes(token))) {
+    return { rank: 3, label: "Alle søkeord matcher personnavn", isFuzzy: false };
+  }
+  if (candidateNorms.some((name) => name.startsWith(queryNorm))) {
+    return { rank: 4, label: "Navn starter med søket", isFuzzy: false };
+  }
+  if (
+    candidateNorms.some((name) => name.includes(queryNorm)) ||
+    queryTokens.every((token) => candidateNorms.some((name) => name.includes(token)))
+  ) {
+    return { rank: 5, label: "Normalisert navnetreff", isFuzzy: false };
+  }
+  if (isFuzzyTokenMatch(queryTokens, candidateTokens)) {
+    return { rank: 6, label: "Fuzzy forslag, ikke bekreftet identitet", isFuzzy: true };
+  }
+
+  const bestNameScore = Math.max(...candidates.map((name) => similarityScore(query, name)), 0);
+  if (bestNameScore >= 0.74) {
+    return { rank: 6, label: "Fuzzy forslag, ikke bekreftet identitet", isFuzzy: true };
+  }
+
+  return null;
+}
+
+function getResultSearchHaystack(row) {
+  return [
+    row.person_name,
+    row.raw_name,
+    row.team_name,
+    row.stage_label,
+    row.class_label,
+    row.organization_name,
+  ].join(" ");
+}
+
+function getTeamSearchHaystack(row) {
+  return [
+    row.team_name,
+    row.class_label,
+    row.organization_name,
+    getDivisionLabel(row.division),
+    getTeamGroupLabel(getTeamClassGroup(row.class_code)),
+  ].join(" ");
+}
+
+function issueMatchesSearch(issue, query) {
+  return matchesSearch(
+    [
+      issue.type,
+      issue.status,
+      issue.message,
+      issue.raw_name,
+      issue.suggested_canonical_name,
+      issue.canonical_name,
+      ...(issue.candidates ?? []).map((candidate) => `${candidate.testlop_name} ${candidate.testlop_person_id}`),
+    ].join(" "),
+    query,
+  );
+}
+
+function buildSearchResults(query, facetedResults, facetedTeams) {
+  const queryNorm = normalizeSearchText(query);
+  if (!queryNorm) {
+    return null;
+  }
+
+  const peopleMatches = (state.data.people ?? [])
+    .map((person) => {
+      const match = getPersonSearchMatch(person, query);
+      return match ? { ...person, searchMatch: match } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => {
+      if (a.searchMatch.rank !== b.searchMatch.rank) return a.searchMatch.rank - b.searchMatch.rank;
+      if ((b.appearances ?? 0) !== (a.appearances ?? 0)) return (b.appearances ?? 0) - (a.appearances ?? 0);
+      return a.canonical_name.localeCompare(b.canonical_name, "no");
+    });
+
+  const safePeople = peopleMatches.filter((person) => !person.searchMatch.isFuzzy);
+  const suggestions = peopleMatches.filter((person) => person.searchMatch.isFuzzy);
+  const personRankById = new Map(peopleMatches.map((person) => [person.person_id, person.searchMatch.rank]));
+
+  const resultMatches = facetedResults
+    .filter((row) => matchesSearch(getResultSearchHaystack(row), query))
+    .map((row) => ({
+      ...row,
+      searchRank: personRankById.get(row.person_id) ?? 7,
+    }))
+    .sort((a, b) => {
+      if (a.searchRank !== b.searchRank) return a.searchRank - b.searchRank;
+      if ((b.year ?? 0) !== (a.year ?? 0)) return (b.year ?? 0) - (a.year ?? 0);
+      return (a.stage_number ?? 999) - (b.stage_number ?? 999);
+    });
+
+  const resultTeamIds = new Set(resultMatches.map((row) => getTeamId(row)).filter(Boolean));
+  const teamMatches = facetedTeams
+    .filter((team) => matchesSearch(getTeamSearchHaystack(team), query) || resultTeamIds.has(getTeamId(team)))
+    .sort((a, b) => {
+      const aDirect = matchesSearch(getTeamSearchHaystack(a), query) ? 0 : 1;
+      const bDirect = matchesSearch(getTeamSearchHaystack(b), query) ? 0 : 1;
+      if (aDirect !== bDirect) return aDirect - bDirect;
+      if ((b.year ?? 0) !== (a.year ?? 0)) return (b.year ?? 0) - (a.year ?? 0);
+      return String(a.team_name).localeCompare(String(b.team_name), "no");
+    });
+
+  const issues = [
+    ...(state.data.quality?.identityIssues ?? []),
+    ...(state.data.quality?.dataIssues ?? []),
+  ]
+    .filter((issue) => issueMatchesSearch(issue, query))
+    .slice(0, SEARCH_RESULT_LIMITS.issues);
+
+  const total =
+    safePeople.length + suggestions.length + resultMatches.length + teamMatches.length + issues.length;
+
+  return {
+    query,
+    total,
+    people: safePeople.slice(0, SEARCH_RESULT_LIMITS.people),
+    peopleTotal: safePeople.length,
+    suggestions: suggestions.slice(0, SEARCH_RESULT_LIMITS.suggestions),
+    suggestionsTotal: suggestions.length,
+    results: resultMatches.slice(0, SEARCH_RESULT_LIMITS.results),
+    resultsTotal: resultMatches.length,
+    teams: teamMatches.slice(0, SEARCH_RESULT_LIMITS.teams),
+    teamsTotal: teamMatches.length,
+    issues,
+    issuesTotal: issues.length,
+  };
+}
+
 function renderSectionHeader({ eyebrow, title, id = "", meta = "", actions = "" }) {
   const titleId = id ? ` id="${escapeHtml(id)}"` : "";
   return `
@@ -1041,6 +1397,203 @@ function renderEmptyState(title, text) {
       <strong>${escapeHtml(title)}</strong>
       <p>${escapeHtml(text)}</p>
     </div>
+  `;
+}
+
+function renderPersonResultCard(person, query, variant = "person") {
+  const clubs = (person.organizations ?? []).map(getClubName).join(" / ") || "Ukjent klubb";
+  const matchLabel = person.searchMatch?.label ?? "Person";
+  const profileHref = getPersonUrlById(person.person_id);
+  const testlopHref = person.testlop_profile_path ? siteUrl(person.testlop_profile_path) : null;
+  return `
+    <article class="search-person-card ${variant === "suggestion" ? "is-suggestion" : ""}">
+      <div class="search-person-main">
+        <span class="search-match-label">${escapeHtml(matchLabel)}</span>
+        <h3>${highlightMatch(person.canonical_name, query)}</h3>
+        <p>${escapeHtml(clubs)} · ${formatNumber(person.appearances ?? 0)} HKS-starter · ${formatNumber(
+          person.seasons ?? person.years?.length ?? 0,
+        )} sesonger</p>
+        ${
+          person.raw_names?.length
+            ? `<small>Rånavn: ${person.raw_names
+                .slice(0, 3)
+                .map((name) => highlightMatch(name, query))
+                .join(", ")}</small>`
+            : ""
+        }
+      </div>
+      <div class="search-person-actions">
+        ${profileHref ? `<a class="text-link" href="${escapeHtml(profileHref)}">Profil</a>` : ""}
+        ${testlopHref ? `<a class="text-link" href="${escapeHtml(testlopHref)}">Testløp</a>` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderSearchResultRow(row, query) {
+  return `
+    <tr>
+      <td class="name-cell">
+        <strong>${renderPersonLink(row.person_id, row.person_name)}</strong>
+        ${
+          row.raw_name && normalizeSearchText(row.raw_name) !== normalizeSearchText(row.person_name)
+            ? `<span>Rånavn: ${highlightMatch(row.raw_name, query)}</span>`
+            : ""
+        }
+      </td>
+      <td>${highlightMatch(row.stage_label, query)}</td>
+      <td class="time-cell">${escapeHtml(row.split_text ?? "-")}</td>
+      <td>${escapeHtml(row.year)}</td>
+      <td>${highlightMatch(row.team_name, query)}</td>
+      <td>${escapeHtml(row.class_label)}</td>
+    </tr>
+  `;
+}
+
+function renderSearchTeamCard(team, query) {
+  return `
+    <article class="search-team-card">
+      <div>
+        <span class="search-match-label">Lagtreff</span>
+        <h3>${highlightMatch(team.team_name, query)}</h3>
+        <p>${escapeHtml(team.year)} · ${escapeHtml(team.organization_name)} · ${escapeHtml(team.class_label)}</p>
+      </div>
+      <dl class="search-team-meta">
+        <div><dt>Total tid</dt><dd>${escapeHtml(team.total_time_text ?? "-")}</dd></div>
+        <div><dt>Plass</dt><dd>${escapeHtml(formatRank(team.team_rank))}</dd></div>
+      </dl>
+    </article>
+  `;
+}
+
+function renderSearchIssue(issue, query) {
+  const candidateText = (issue.candidates ?? [])
+    .map((candidate) => `${candidate.testlop_name ?? candidate.testlop_person_id} (${candidate.confidence ?? "-"})`)
+    .join(", ");
+  const title = issue.raw_name || issue.canonical_name || issue.suggested_canonical_name || issue.type;
+  return `
+    <article class="search-issue-card">
+      <span class="quality-status quality-${escapeHtml(issue.status)}">${escapeHtml(issue.status)}</span>
+      <div>
+        <strong>${highlightMatch(title, query)}</strong>
+        <p>${escapeHtml(issue.message ?? issue.type)}</p>
+        ${candidateText ? `<small>Forslag: ${highlightMatch(candidateText, query)}</small>` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderSearchPanel(searchResults) {
+  if (!searchResults) {
+    return "";
+  }
+
+  const query = searchResults.query;
+  const hasHits = searchResults.total > 0;
+  const summary = hasHits
+    ? `${formatNumber(searchResults.total)} treff for "${query}"`
+    : `Ingen treff for "${query}"`;
+
+  return `
+    <section class="search-results-panel" id="soketreff" aria-labelledby="soketreff-title">
+      <div class="search-results-head">
+        <div>
+          <p class="eyebrow">Søketreff</p>
+          <h2 id="soketreff-title">${escapeHtml(summary)}</h2>
+        </div>
+        <p aria-live="polite">${escapeHtml(summary)}</p>
+      </div>
+      ${
+        hasHits
+          ? `
+            <div class="search-results-grid">
+              <section class="search-block search-block-people" aria-labelledby="search-people-title">
+                <div class="search-block-head">
+                  <h3 id="search-people-title">Personer</h3>
+                  <span>${formatNumber(searchResults.peopleTotal)}</span>
+                </div>
+                ${
+                  searchResults.people.length
+                    ? searchResults.people.map((person) => renderPersonResultCard(person, query)).join("")
+                    : renderEmptyState("Ingen sikre persontreff", "Se forslagene eller konkrete resultater under.")
+                }
+              </section>
+
+              <section class="search-block search-block-suggestions" aria-labelledby="search-suggestions-title">
+                <div class="search-block-head">
+                  <h3 id="search-suggestions-title">Mulige personforslag</h3>
+                  <span>${formatNumber(searchResults.suggestionsTotal)}</span>
+                </div>
+                ${
+                  searchResults.suggestions.length
+                    ? searchResults.suggestions
+                        .map((person) => renderPersonResultCard(person, query, "suggestion"))
+                        .join("")
+                    : renderEmptyState("Ingen fuzzy forslag", "Søket ga ingen usikre navneforslag.")
+                }
+              </section>
+
+              <section class="search-block search-block-wide" aria-labelledby="search-results-title">
+                <div class="search-block-head">
+                  <h3 id="search-results-title">Konkrete HKS-resultater</h3>
+                  <span>${formatNumber(searchResults.resultsTotal)}</span>
+                </div>
+                ${
+                  searchResults.results.length
+                    ? `
+                      <div class="table-wrap search-table-wrap">
+                        <table class="mini-table search-table">
+                          <thead>
+                            <tr>
+                              <th>Navn</th>
+                              <th>Etappe</th>
+                              <th>Tid</th>
+                              <th>År</th>
+                              <th>Lag</th>
+                              <th>Klasse</th>
+                            </tr>
+                          </thead>
+                          <tbody>${searchResults.results
+                            .map((row) => renderSearchResultRow(row, query))
+                            .join("")}</tbody>
+                        </table>
+                      </div>
+                    `
+                    : renderEmptyState("Ingen konkrete resultater", "Fuzzy personforslag vises ikke som sikre resultater.")
+                }
+              </section>
+
+              <section class="search-block" aria-labelledby="search-teams-title">
+                <div class="search-block-head">
+                  <h3 id="search-teams-title">Lag</h3>
+                  <span>${formatNumber(searchResults.teamsTotal)}</span>
+                </div>
+                ${
+                  searchResults.teams.length
+                    ? searchResults.teams.map((team) => renderSearchTeamCard(team, query)).join("")
+                    : renderEmptyState("Ingen lagtreff", "Søket traff ikke lag, klasse, klubb eller divisjon.")
+                }
+              </section>
+
+              <section class="search-block" aria-labelledby="search-issues-title">
+                <div class="search-block-head">
+                  <h3 id="search-issues-title">Navneavvik og alias</h3>
+                  <span>${formatNumber(searchResults.issuesTotal)}</span>
+                </div>
+                ${
+                  searchResults.issues.length
+                    ? searchResults.issues.map((issue) => renderSearchIssue(issue, query)).join("")
+                    : renderEmptyState("Ingen avvik for søket", "Det finnes ingen registrerte navneavvik i dette søket.")
+                }
+              </section>
+            </div>
+          `
+          : renderEmptyState(
+              "Ingen treff",
+              "Prøv et kortere navn, for eksempel fornavn eller etternavn uten spesialtegn.",
+            )
+      }
+    </section>
   `;
 }
 
@@ -1068,16 +1621,17 @@ function renderHeader() {
             <img class="brand-logo brand-logo-osi" src="${assetUrl("osi-logo.png")}" alt="OSI Friidrett logo" />
           </a>
         </span>
-        <a class="brand-copy" href="#main-content" aria-label="Gå til HKSstats">
+        <a class="brand-copy" href="${siteUrl("")}" aria-label="Gå til HKSstats">
           <span class="eyebrow">Holmenkollstafetten</span>
           <strong>HKSstats SKV + OSI</strong>
         </a>
       </div>
       <nav class="top-nav" aria-label="Hovednavigasjon">
-        <a href="#hederslister" data-nav-link>Hederlister</a>
-        <a href="#klubbmeritter" data-nav-link>Klubbmeritter</a>
-        <a href="#lagarkiv" data-nav-link>Lagarkiv</a>
-        <a href="#statistikk" data-nav-link>Deltakelse</a>
+        <a href="${siteUrl("#hederslister")}" data-nav-link>Hederslister</a>
+        <a href="${siteUrl("#klubbmeritter")}" data-nav-link>Klubbmeritter</a>
+        <a href="${siteUrl("#lagarkiv")}" data-nav-link>Lagarkiv</a>
+        <a href="${siteUrl("#statistikk")}" data-nav-link>Deltakelse</a>
+        <a href="${siteUrl("avvik/")}">Avvik</a>
         <a href="${LEGACY_URL}">Klassisk</a>
       </nav>
     </header>
@@ -1085,7 +1639,7 @@ function renderHeader() {
 }
 
 function renderHero(filteredResults, filteredTeams) {
-  const participants = new Set(filteredResults.map((row) => row.person_name)).size;
+  const participants = new Set(filteredResults.map((row) => row.person_id ?? row.person_name)).size;
   const years = buildSeasonHighlights(filteredResults, filteredTeams);
   const earliestYear = years.length ? years[years.length - 1].year : null;
   const latestYear = years.length ? years[0].year : null;
@@ -1413,7 +1967,7 @@ function renderTeamLineup(teamItem) {
           (entry) => `
             <div class="team-lineup-row">
               <span class="team-lineup-stage">${escapeHtml(entry.stage_number)}. ${escapeHtml(entry.stage_name)}</span>
-              <strong class="team-lineup-runner">${escapeHtml(entry.person_name)}</strong>
+              <strong class="team-lineup-runner">${renderPersonLink(entry.person_id, entry.person_name)}</strong>
               <span class="team-lineup-time">${escapeHtml(entry.split_text ?? "-")}</span>
               <span class="team-lineup-rank">Klasse ${escapeHtml(formatRank(entry.category_rank))}</span>
               ${
@@ -1631,6 +2185,18 @@ function renderFilterPanel(filteredResults, filteredTeams) {
           <p class="eyebrow">Filter</p>
           <strong>${formatNumber(filteredResults.length)} etapper · ${formatNumber(filteredTeams.length)} lag</strong>
         </div>
+        <label class="filter-search-main">
+          <span class="sr-only">Søk</span>
+          <input
+            id="search-filter"
+            name="search"
+            type="search"
+            value="${escapeHtml(state.search)}"
+            placeholder="Søk løper, lag eller etappe"
+            autocomplete="off"
+            aria-controls="soketreff"
+          />
+        </label>
         <div class="filter-actions">
           <button class="reset-button" type="button" data-reset-filters ${hasActiveFilters ? "" : "disabled"}>
             Nullstill filtre
@@ -1714,17 +2280,6 @@ function renderFilterPanel(filteredResults, filteredTeams) {
                 .join("")}
             </select>
           </label>
-          <label class="search-field">
-            <span>Søk</span>
-            <input
-              id="search-filter"
-              name="search"
-              type="search"
-              value="${escapeHtml(state.search)}"
-              placeholder="Lag, løper eller etappe"
-              autocomplete="off"
-            />
-          </label>
         </div>
       </div>
     </section>
@@ -1752,7 +2307,7 @@ function renderHonourEntryRow(entry) {
     <tr>
       <td class="rank-cell">${escapeHtml(entry.rank)}</td>
       <td class="name-cell">
-        <strong>${escapeHtml(entry.person_name)}</strong>
+        <strong>${renderPersonLink(entry.person_id, entry.person_name)}</strong>
         <span>${escapeHtml(entry.team_name)}</span>
       </td>
       <td class="time-cell">${escapeHtml(entry.split_text ?? "-")}</td>
@@ -1769,7 +2324,7 @@ function renderHonourEntryCard(entry) {
     <article class="result-card">
       <span class="result-rank">${escapeHtml(entry.rank)}</span>
       <div class="result-main">
-        <strong>${escapeHtml(entry.person_name)}</strong>
+        <strong>${renderPersonLink(entry.person_id, entry.person_name)}</strong>
         <span>${escapeHtml(entry.team_name)}</span>
       </div>
       <div class="result-time">
@@ -1930,7 +2485,7 @@ function renderParticipationSection(personStats, fastestSplits, classBreakdown) 
                       <article class="leader-card">
                         <span class="leader-rank">${index + 1}</span>
                         <div class="leader-copy">
-                          <strong>${escapeHtml(row.canonical_name)}</strong>
+                          <strong>${renderPersonLink(row.person_id, row.canonical_name)}</strong>
                           <p>${escapeHtml(row.organizations.join(" / "))} · ${formatNumber(row.seasons)} sesonger</p>
                         </div>
                         <div class="leader-values">
@@ -1960,7 +2515,7 @@ function renderParticipationSection(personStats, fastestSplits, classBreakdown) 
                     (row) => `
                       <article class="spotlight-card">
                         <div>
-                          <strong>${escapeHtml(row.person_name)}</strong>
+                          <strong>${renderPersonLink(row.person_id, row.person_name)}</strong>
                           <p>${escapeHtml(row.stage_label)} · ${escapeHtml(row.team_name)}</p>
                         </div>
                         <div class="spotlight-value">
@@ -2091,6 +2646,267 @@ function renderTeamsSection(filteredTeams, seasonHighlights) {
   `;
 }
 
+function uniqueSorted(values) {
+  return [...new Set(values.filter((value) => value !== undefined && value !== null && value !== ""))].sort((a, b) =>
+    String(a).localeCompare(String(b), "no"),
+  );
+}
+
+function renderProfileMetric(label, value) {
+  return `
+    <div class="profile-metric">
+      <dt>${escapeHtml(label)}</dt>
+      <dd>${escapeHtml(value ?? "-")}</dd>
+    </div>
+  `;
+}
+
+function renderPersonProfile(person) {
+  const personResults = (state.data.results ?? [])
+    .filter((row) => row.person_id === person.person_id)
+    .sort((a, b) => {
+      if ((b.year ?? 0) !== (a.year ?? 0)) return (b.year ?? 0) - (a.year ?? 0);
+      return (a.stage_number ?? 999) - (b.stage_number ?? 999);
+    });
+  const personIssues = [
+    ...(state.data.quality?.identityIssues ?? []),
+    ...(state.data.quality?.dataIssues ?? []),
+  ].filter((issue) => issue.person_id === person.person_id || issue.hks_person_id === person.person_id);
+  const clubHistory = uniqueSorted(personResults.map((row) => `${row.organization_name} (${row.year})`));
+  const teamHistory = uniqueSorted(personResults.map((row) => `${row.year} · ${row.team_name}`));
+  const stageHistory = uniqueSorted(personResults.map((row) => `${row.stage_number}. ${cleanStageName(row.stage_label)}`));
+  const testlopHref = person.testlop_profile_path ? siteUrl(person.testlop_profile_path) : null;
+  const bestCategory = Number.isFinite(person.best_category_rank) ? formatRank(person.best_category_rank) : "-";
+  const firstYear = person.first_year ?? person.years?.at(-1) ?? "-";
+  const lastYear = person.last_year ?? person.years?.[0] ?? "-";
+
+  return `
+    <section class="profile-page" aria-labelledby="profile-title">
+      <div class="profile-hero">
+        <div class="profile-title-block">
+          <p class="eyebrow">Personprofil</p>
+          <h1 id="profile-title">${escapeHtml(person.canonical_name)}</h1>
+          <p>
+            ${escapeHtml((person.organizations ?? []).map(getClubName).join(" / ") || "HKS-person")}
+            · ${escapeHtml(person.identity_status ?? "confirmed")}
+          </p>
+          <div class="profile-actions">
+            <a class="cta-secondary" href="${siteUrl("")}">Til HKSstats</a>
+            ${
+              testlopHref
+                ? `<a class="cta-primary" href="${escapeHtml(testlopHref)}">Åpne testløp-profil</a>`
+                : `<span class="profile-muted-action">Ingen bekreftet testløp-kobling</span>`
+            }
+          </div>
+        </div>
+        <dl class="profile-metrics">
+          ${renderProfileMetric("HKS-starter", formatNumber(person.appearances ?? personResults.length))}
+          ${renderProfileMetric("Sesonger", formatNumber(person.seasons ?? person.years?.length ?? 0))}
+          ${renderProfileMetric("Første år", firstYear)}
+          ${renderProfileMetric("Siste år", lastYear)}
+          ${renderProfileMetric("Beste etappetid", person.best_split_text ?? "-")}
+          ${renderProfileMetric("Beste klasseplassering", bestCategory)}
+          ${renderProfileMetric("Beste % av rekord", formatPercent(person.best_percent_of_record))}
+        </dl>
+      </div>
+
+      <div class="profile-grid">
+        <article class="content-card profile-card">
+          ${renderSectionHeader({ eyebrow: "Historikk", title: "Klubb og lag" })}
+          <div class="profile-list-columns">
+            <div>
+              <h3>Klubbhistorikk</h3>
+              <ul>${clubHistory.map((item) => `<li>${escapeHtml(item)}</li>`).join("") || "<li>-</li>"}</ul>
+            </div>
+            <div>
+              <h3>Laghistorikk</h3>
+              <ul>${teamHistory.map((item) => `<li>${escapeHtml(item)}</li>`).join("") || "<li>-</li>"}</ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="content-card profile-card">
+          ${renderSectionHeader({ eyebrow: "Identitet", title: "Navn og aliaser" })}
+          <dl class="profile-identity-list">
+            <div><dt>Person-ID</dt><dd>${escapeHtml(person.person_id)}</dd></div>
+            <div><dt>Global ID</dt><dd>${escapeHtml(person.global_person_id ?? "-")}</dd></div>
+            <div><dt>Slug</dt><dd>${escapeHtml(person.slug ?? "-")}</dd></div>
+            <div><dt>Testløp-ID</dt><dd>${escapeHtml(person.testlop_person_id ?? "-")}</dd></div>
+          </dl>
+          <div class="alias-list">
+            ${
+              (person.aliases ?? []).length
+                ? person.aliases
+                    .map(
+                      (alias) => `
+                        <span class="alias-chip">
+                          ${escapeHtml(alias.alias_name)}
+                          <small>${escapeHtml(alias.status)}</small>
+                        </span>
+                      `,
+                    )
+                    .join("")
+                : `<span class="alias-chip">Ingen aliaser</span>`
+            }
+          </div>
+        </article>
+
+        <article class="content-card profile-card">
+          ${renderSectionHeader({ eyebrow: "Etapper", title: "Etappehistorikk" })}
+          <ul class="profile-inline-list">
+            ${stageHistory.map((item) => `<li>${escapeHtml(item)}</li>`).join("") || "<li>-</li>"}
+          </ul>
+        </article>
+
+        <article class="content-card profile-card">
+          ${renderSectionHeader({ eyebrow: "Avklaring", title: "Navnekvalitet" })}
+          ${
+            personIssues.length
+              ? `<div class="quality-list">${personIssues.map((issue) => renderSearchIssue(issue, person.canonical_name)).join("")}</div>`
+              : renderEmptyState("Ingen åpne avvik", "Det finnes ingen registrerte avvik for denne personen.")
+          }
+        </article>
+
+        <article class="content-card profile-card profile-results-card">
+          ${renderSectionHeader({
+            eyebrow: "Resultater",
+            title: "Alle HKS-resultater",
+            meta: `<span>${formatNumber(personResults.length)} etapper</span>`,
+          })}
+          <div class="table-wrap profile-table-wrap">
+            <table class="mini-table profile-results-table">
+              <thead>
+                <tr>
+                  <th>År</th>
+                  <th>Etappe</th>
+                  <th>Tid</th>
+                  <th>% rekord</th>
+                  <th>Klasse</th>
+                  <th>Lag</th>
+                  <th>Cat</th>
+                  <th>O/A</th>
+                  <th>Rånavn</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${personResults
+                  .map(
+                    (row) => `
+                      <tr>
+                        <td>${escapeHtml(row.year)}</td>
+                        <td>${escapeHtml(row.stage_label)}</td>
+                        <td class="time-cell">${escapeHtml(row.split_text ?? "-")}</td>
+                        <td>${escapeHtml(formatPercent(row.percent_of_record))}</td>
+                        <td>${escapeHtml(row.class_label)}</td>
+                        <td>${escapeHtml(row.team_name)}</td>
+                        <td>${escapeHtml(formatRank(row.category_rank))}</td>
+                        <td>${escapeHtml(formatRank(row.oa_rank))}</td>
+                        <td>${escapeHtml(row.raw_name)}</td>
+                      </tr>
+                    `,
+                  )
+                  .join("")}
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+  `;
+}
+
+function renderPersonNotFound(segment) {
+  return `
+    <section class="content-card section-card profile-not-found">
+      ${renderSectionHeader({ eyebrow: "Personprofil", title: "Fant ikke personen" })}
+      ${renderEmptyState(
+        "Ukjent person-URL",
+        `Ingen person matcher "${segment}". Gå tilbake til søket og velg en profil fra trefflisten.`,
+      )}
+      <a class="cta-primary" href="${siteUrl("")}">Til forsiden</a>
+    </section>
+  `;
+}
+
+function renderQualityIssueCard(issue) {
+  const title = issue.raw_name || issue.canonical_name || issue.suggested_canonical_name || issue.type;
+  const personHref = issue.person_id || issue.hks_person_id ? getPersonUrlById(issue.person_id || issue.hks_person_id) : null;
+  return `
+    <article class="quality-card">
+      <span class="quality-status quality-${escapeHtml(issue.status)}">${escapeHtml(issue.status)}</span>
+      <div class="quality-card-copy">
+        <h3>${escapeHtml(title)}</h3>
+        <p>${escapeHtml(issue.message ?? issue.type)}</p>
+        <small>${escapeHtml(issue.type)}</small>
+      </div>
+      ${personHref ? `<a class="text-link" href="${escapeHtml(personHref)}">Profil</a>` : ""}
+    </article>
+  `;
+}
+
+function renderQualityPage() {
+  const identityIssues = state.data.quality?.identityIssues ?? [];
+  const dataIssues = state.data.quality?.dataIssues ?? [];
+  const summary = state.data.quality?.summary ?? {};
+  const visibleIdentityIssues = identityIssues.filter((issue) => issue.status !== "approved").slice(0, 80);
+  const visibleDataIssues = dataIssues.slice(0, 80);
+
+  return `
+    <section class="quality-page" aria-labelledby="quality-title">
+      <div class="profile-hero quality-hero">
+        <div class="profile-title-block">
+          <p class="eyebrow">Datakvalitet</p>
+          <h1 id="quality-title">Avvik og navnekvalitet</h1>
+          <p>Mulige duplikater, aliaser, testløp-koblinger og uvanlige dataforhold samlet på ett sted.</p>
+          <div class="profile-actions">
+            <a class="cta-secondary" href="${siteUrl("")}">Til HKSstats</a>
+          </div>
+        </div>
+        <dl class="profile-metrics">
+          ${renderProfileMetric("Identitetsavvik", formatNumber(summary.identityIssues ?? identityIssues.length))}
+          ${renderProfileMetric("Dataavvik", formatNumber(summary.dataIssues ?? dataIssues.length))}
+          ${renderProfileMetric("Auto-forslag", formatNumber(summary.autoSuggested ?? 0))}
+          ${renderProfileMetric("Trenger sjekk", formatNumber(summary.needsReview ?? 0))}
+        </dl>
+      </div>
+
+      <div class="quality-layout">
+        <section class="content-card quality-section" aria-labelledby="identity-quality-title">
+          ${renderSectionHeader({
+            eyebrow: "Navn",
+            title: "Identitet og aliaser",
+            id: "identity-quality-title",
+            meta: `<span>${formatNumber(visibleIdentityIssues.length)} vist</span>`,
+          })}
+          <div class="quality-list">
+            ${
+              visibleIdentityIssues.length
+                ? visibleIdentityIssues.map((issue) => renderQualityIssueCard(issue)).join("")
+                : renderEmptyState("Ingen identitetsavvik", "Alle kjente navneavvik er avklart.")
+            }
+          </div>
+        </section>
+
+        <section class="content-card quality-section" aria-labelledby="data-quality-title">
+          ${renderSectionHeader({
+            eyebrow: "Data",
+            title: "Resultat- og lagavvik",
+            id: "data-quality-title",
+            meta: `<span>${formatNumber(visibleDataIssues.length)} vist</span>`,
+          })}
+          <div class="quality-list">
+            ${
+              visibleDataIssues.length
+                ? visibleDataIssues.map((issue) => renderQualityIssueCard(issue)).join("")
+                : renderEmptyState("Ingen dataavvik", "Alle resultater har person-ID, og ingen dubletter eller manglende tider er funnet.")
+            }
+          </div>
+        </section>
+      </div>
+    </section>
+  `;
+}
+
 function renderFooter() {
   const generatedAt = formatGeneratedAt(state.data.generatedAt);
   return `
@@ -2099,6 +2915,7 @@ function renderFooter() {
       ${generatedAt ? `<p>Sist oppdatert: ${escapeHtml(generatedAt)}</p>` : ""}
       <nav aria-label="Footer">
         <a href="${REPOSITORY_URL}">GitHub</a>
+        <a href="${siteUrl("avvik/")}">Avvik</a>
         <a href="${LEGACY_URL}">Klassisk versjon</a>
       </nav>
     </footer>
@@ -2187,10 +3004,19 @@ function attachEvents() {
     render();
   });
   document.querySelector("#search-filter")?.addEventListener("input", (event) => {
+    const selectionStart = event.target.selectionStart;
+    const selectionEnd = event.target.selectionEnd;
     state.search = event.target.value;
     state.filtersOpen = true;
     render();
-    document.querySelector("#search-filter")?.focus();
+    const searchInput = document.querySelector("#search-filter");
+    if (searchInput) {
+      searchInput.focus();
+      const fallbackPosition = searchInput.value.length;
+      const nextStart = Number.isFinite(selectionStart) ? selectionStart : fallbackPosition;
+      const nextEnd = Number.isFinite(selectionEnd) ? selectionEnd : nextStart;
+      searchInput.setSelectionRange(nextStart, nextEnd);
+    }
   });
   document.querySelector("[data-filter-toggle]")?.addEventListener("click", () => {
     state.filtersOpen = !state.filtersOpen;
@@ -2248,12 +3074,18 @@ function attachEvents() {
 function setupNavState() {
   const links = [...document.querySelectorAll("[data-nav-link]")];
   const sections = links
-    .map((link) => document.querySelector(link.getAttribute("href")))
+    .map((link) => {
+      const href = link.getAttribute("href");
+      const hash = href ? new URL(href, window.location.href).hash : "";
+      return hash ? document.querySelector(hash) : null;
+    })
     .filter(Boolean);
 
   function setActive(id) {
     links.forEach((link) => {
-      const isActive = link.getAttribute("href") === `#${id}`;
+      const href = link.getAttribute("href");
+      const hash = href ? new URL(href, window.location.href).hash : "";
+      const isActive = hash === `#${id}`;
       link.classList.toggle("is-active", isActive);
       if (isActive) {
         link.setAttribute("aria-current", "true");
@@ -2261,6 +3093,14 @@ function setupNavState() {
         link.removeAttribute("aria-current");
       }
     });
+  }
+
+  if (!sections.length) {
+    links.forEach((link) => {
+      link.classList.remove("is-active");
+      link.removeAttribute("aria-current");
+    });
+    return;
   }
 
   setActive(window.location.hash.replace("#", "") || "hederslister");
@@ -2293,11 +3133,47 @@ function render() {
     return;
   }
 
-  const { filteredResults, filteredTeams, personStats } = filterData();
+  const route = getCurrentRoute();
+  syncStateToUrl();
+
+  if (route.type === "person") {
+    const person = findPersonByRouteSegment(route.segment);
+    app.innerHTML = `
+      <div class="page-shell">
+        <div class="page-backdrop" aria-hidden="true"></div>
+        ${renderHeader()}
+        <main id="main-content">
+          ${person ? renderPersonProfile(person) : renderPersonNotFound(route.segment)}
+        </main>
+        ${renderFooter()}
+      </div>
+    `;
+    attachEvents();
+    setupNavState();
+    return;
+  }
+
+  if (route.type === "quality") {
+    app.innerHTML = `
+      <div class="page-shell">
+        <div class="page-backdrop" aria-hidden="true"></div>
+        ${renderHeader()}
+        <main id="main-content">
+          ${renderQualityPage()}
+        </main>
+        ${renderFooter()}
+      </div>
+    `;
+    attachEvents();
+    setupNavState();
+    return;
+  }
+
+  const { filteredResults, filteredTeams, facetedResults, facetedTeams, personStats } = filterData();
   const honourGroups = getAvailableStageGroups();
   const activeGroup = getFilteredStageGroup(honourGroups);
-  const honoursGroup = buildDynamicHonoursGroup(activeGroup, filteredResults);
-  syncStateToUrl();
+  const honoursGroup = buildDynamicHonoursGroup(activeGroup, facetedResults);
+  const searchResults = buildSearchResults(state.search, facetedResults, facetedTeams);
   const resultsByTeamId = buildResultsByTeamId(filteredResults);
   const clubSummaries = buildTeamHonoursByClub(filteredTeams, resultsByTeamId);
   const archiveItems = buildTeamArchiveItems(filteredTeams, resultsByTeamId);
@@ -2312,6 +3188,7 @@ function render() {
       <main id="main-content">
         ${renderHero(filteredResults, filteredTeams)}
         ${renderFilterPanel(filteredResults, filteredTeams)}
+        ${renderSearchPanel(searchResults)}
         ${renderHonoursSection(honoursGroup, honourGroups)}
         ${renderClubHonoursSection(clubSummaries)}
         ${renderTeamHub(archiveItems, teamTimeSeries)}

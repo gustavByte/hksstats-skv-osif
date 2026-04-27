@@ -1,4 +1,5 @@
 raw_name,suggested_canonical_name,confidence,reason,decision,notes
+Henning Mæle,Henning Mæhle,0.93,Samme fornavn og liten skriveforskjell i etternavn,,
 🔁Håkon Lund,Håkon Lund,0.99,Lik stavemåte etter normalisering,approve,Godkjent av bruker 2026-04-07
 Kristan Bjune Sveen,Kristian Bjune Sveen,0.95,Nesten identisk navn med liten staveforskjell,approve,Godkjent av bruker 2026-04-07
 Ragnhild Brøs Kløven,Ragnhild Brørs Kløven,0.95,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent av bruker 2026-04-07

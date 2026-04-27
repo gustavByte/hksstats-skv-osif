@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="Personprofil med HKS-resultater, aliaser, klubbhistorikk og testløp-kobling." />
+    <meta name="theme-color" content="#f6f0e6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="../../public/assets/v2/hero-group-photo-2400.webp"
+      imagesrcset="../../public/assets/v2/hero-group-photo-1600.webp 1600w, ../../public/assets/v2/hero-group-photo-2400.webp 2400w, ../../public/assets/v2/hero-group-photo-3200.webp 3200w"
+      imagesizes="(max-width: 720px) calc(100vw - 24px), (max-width: 1180px) calc(100vw - 40px), 44vw"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="../../v2/styles.css" />
+    <title>Christoffer Hagen | HKSstats</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Hopp til innhold</a>
+    <div id="app"></div>
+    <script type="module" src="../../v2/app.js"></script>
+  </body>
+</html>

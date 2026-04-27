@@ -925,9 +925,9 @@ h3 {
 }
 
 .filter-head {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(170px, auto) minmax(240px, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
   gap: 14px;
 }
 
@@ -942,8 +942,24 @@ h3 {
 }
 
 .filter-actions {
+  justify-content: flex-end;
   gap: 8px;
   flex: 0 0 auto;
+}
+
+.filter-search-main {
+  min-width: 0;
+}
+
+.filter-search-main input {
+  width: 100%;
+  min-height: 48px;
+  border: 2px solid var(--vidar);
+  border-radius: var(--radius-card);
+  padding: 0 14px;
+  background: var(--surface-strong);
+  color: var(--ink);
+  box-shadow: 0 8px 18px rgba(191, 67, 47, 0.1);
 }
 
 .reset-button {
@@ -1009,7 +1025,7 @@ h3 {
 
 .filter-grid {
   display: grid;
-  grid-template-columns: 0.72fr 1fr 1fr 0.82fr minmax(220px, 1.35fr);
+  grid-template-columns: 0.72fr 1fr 1fr 0.82fr;
   gap: 10px;
 }
 
@@ -1510,6 +1526,339 @@ h3 {
   text-underline-offset: 4px;
 }
 
+.person-link {
+  color: var(--vidar-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.person-link:hover {
+  color: var(--osi-dark);
+}
+
+mark {
+  padding: 0 2px;
+  border-radius: 4px;
+  background: rgba(168, 121, 47, 0.25);
+  color: inherit;
+}
+
+.search-results-panel,
+.profile-hero,
+.quality-hero {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: rgba(255, 250, 242, 0.96);
+  box-shadow: var(--shadow-soft);
+}
+
+.search-results-panel {
+  padding: 18px;
+}
+
+.search-results-head,
+.search-block-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.search-results-head {
+  margin-bottom: 14px;
+}
+
+.search-results-head p,
+.search-block-head span,
+.search-person-main p,
+.search-person-main small,
+.search-team-card p,
+.search-team-meta dt,
+.search-issue-card p,
+.search-issue-card small,
+.profile-title-block p,
+.profile-muted-action,
+.profile-identity-list dt,
+.profile-metric dt,
+.quality-card p,
+.quality-card small {
+  color: var(--ink-soft);
+}
+
+.search-results-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 14px;
+}
+
+.search-block {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface-strong);
+}
+
+.search-block-wide {
+  grid-column: 1 / -1;
+}
+
+.search-block-head h3,
+.search-person-main h3,
+.search-team-card h3,
+.profile-list-columns h3,
+.quality-card h3 {
+  margin: 0;
+}
+
+.search-block-head span,
+.search-match-label,
+.quality-status {
+  flex: 0 0 auto;
+  min-height: 28px;
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: #f8efe4;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.search-person-card,
+.search-team-card,
+.search-issue-card,
+.quality-card {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: #fffdf8;
+}
+
+.search-person-card {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+}
+
+.search-person-card.is-suggestion {
+  border-style: dashed;
+  background: #f8efe4;
+}
+
+.search-person-main {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.search-person-main p,
+.search-person-main small,
+.search-team-card p,
+.search-issue-card p,
+.search-issue-card small,
+.quality-card p,
+.quality-card small {
+  margin: 0;
+}
+
+.search-person-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.search-team-card {
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 0.38fr);
+}
+
+.search-team-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin: 0;
+}
+
+.search-team-meta dd,
+.profile-metric dd,
+.profile-identity-list dd {
+  margin: 3px 0 0;
+  font-weight: 900;
+}
+
+.search-issue-card,
+.quality-card {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+}
+
+.quality-card {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.quality-status {
+  color: var(--ink);
+  text-transform: capitalize;
+}
+
+.quality-approved {
+  background: var(--osi-soft);
+  border-color: rgba(37, 75, 55, 0.25);
+}
+
+.quality-rejected {
+  background: var(--vidar-soft);
+  border-color: rgba(191, 67, 47, 0.28);
+}
+
+.quality-needs_review,
+.quality-auto_suggested,
+.quality-pending {
+  background: rgba(168, 121, 47, 0.18);
+  border-color: rgba(168, 121, 47, 0.34);
+}
+
+.profile-page,
+.quality-page {
+  display: grid;
+  gap: 18px;
+}
+
+.profile-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1fr);
+  gap: 18px;
+  padding: 20px;
+}
+
+.profile-title-block {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.profile-title-block h1 {
+  max-width: 16ch;
+  font-size: 3.4rem;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-muted-action {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface-muted);
+  font-weight: 800;
+}
+
+.profile-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.profile-metric,
+.profile-identity-list div {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: var(--surface-strong);
+}
+
+.profile-metric dd {
+  font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  font-size: 1.28rem;
+}
+
+.profile-grid,
+.quality-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.profile-card,
+.quality-section {
+  min-width: 0;
+}
+
+.profile-results-card {
+  grid-column: 1 / -1;
+}
+
+.profile-list-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.profile-list-columns ul,
+.profile-inline-list {
+  display: grid;
+  gap: 7px;
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.profile-identity-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.alias-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.alias-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: #f8efe4;
+  font-weight: 800;
+}
+
+.alias-chip small {
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.quality-list {
+  display: grid;
+  gap: 10px;
+}
+
+.quality-card-copy {
+  min-width: 0;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -1571,7 +1920,11 @@ h3 {
 
   .club-honour-grid,
   .archive-grid,
-  .time-series-grid {
+  .time-series-grid,
+  .search-results-grid,
+  .profile-hero,
+  .profile-grid,
+  .quality-layout {
     grid-template-columns: 1fr;
   }
 
@@ -1744,7 +2097,12 @@ h3 {
   }
 
   .filter-head {
+    grid-template-columns: 1fr auto;
     align-items: flex-start;
+  }
+
+  .filter-title {
+    grid-column: 1 / -1;
   }
 
   .filter-actions {
@@ -1773,7 +2131,9 @@ h3 {
   .spotlight-card,
   .club-honour-header,
   .archive-card-header,
-  .time-series-card-header {
+  .time-series-card-header,
+  .search-results-head,
+  .search-block-head {
     flex-direction: column;
   }
 
@@ -1794,6 +2154,11 @@ h3 {
 
   .table-wrap {
     display: none;
+  }
+
+  .search-table-wrap,
+  .profile-table-wrap {
+    display: block;
   }
 
   .result-card-list {
@@ -1826,6 +2191,20 @@ h3 {
 
   .time-series-meta {
     grid-template-columns: 1fr;
+  }
+
+  .search-person-card,
+  .search-team-card,
+  .search-issue-card,
+  .quality-card,
+  .profile-list-columns,
+  .profile-identity-list,
+  .profile-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .search-person-actions {
+    justify-content: flex-start;
   }
 
   .team-lineup-row {
@@ -1874,6 +2253,7 @@ h3 {
 
   .filter-head {
     display: grid;
+    grid-template-columns: 1fr;
   }
 
   .filter-actions {
@@ -1914,6 +2294,24 @@ h3 {
   .archive-filter-group,
   .archive-card-tags {
     display: grid;
+  }
+
+  .search-person-card,
+  .search-team-card,
+  .search-issue-card,
+  .quality-card,
+  .profile-list-columns,
+  .profile-identity-list,
+  .profile-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .search-person-actions {
+    justify-content: flex-start;
+  }
+
+  .profile-title-block h1 {
+    font-size: 2.25rem;
   }
 }
 

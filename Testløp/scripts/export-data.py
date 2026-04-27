@@ -353,9 +353,14 @@ def fastest_per_person(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 def rank_entries(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     ranked = []
+    previous_time = None
+    previous_rank = 0
     for index, row in enumerate(rows, start=1):
+        if row["timeSeconds"] != previous_time:
+            previous_rank = index
+            previous_time = row["timeSeconds"]
         entry = public_result(row)
-        entry["rank"] = index
+        entry["rank"] = previous_rank
         ranked.append(entry)
     return ranked
 
@@ -427,7 +432,7 @@ def build_records(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
     for distance in DISTANCES:
         for gender in GENDERS:
-            official = min(
+            official_candidates = sorted(
                 (
                     row
                     for row in results
@@ -437,8 +442,12 @@ def build_records(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     and row["timeSeconds"] is not None
                 ),
                 key=lambda row: (row["timeSeconds"], row["date"] or "", row["name"]),
-                default=None,
             )
+            official = official_candidates[0] if official_candidates else None
+            official_time = official["timeSeconds"] if official else None
+            officials = [
+                row for row in official_candidates if row["timeSeconds"] == official_time
+            ]
             pending = min(
                 (
                     row
@@ -460,6 +469,7 @@ def build_records(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "distance": distance,
                     "gender": gender,
                     "official": public_result(official) if official else None,
+                    "officials": [public_result(row) for row in officials],
                     "pending": public_result(pending) if pending else None,
                 }
             )

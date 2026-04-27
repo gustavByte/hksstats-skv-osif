@@ -14,10 +14,10 @@
         "name": "Vilde Antonsen",
         "originalName": "Vilde Antonsen",
         "personId": "vilde_antonsen",
-        "timeOriginal": "1:34 (høy)",
-        "timeSeconds": 94.0,
-        "timeDisplay": "1:34",
-        "note": "høy",
+        "timeOriginal": "1:34,5",
+        "timeSeconds": 94.5,
+        "timeDisplay": "1:34,5",
+        "note": null,
         "validToplist": true,
         "validRecord": true,
         "sourceSheet": "2023",
@@ -47,7 +47,7 @@
         "sourceCell": "A12:B12",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 2
+        "rank": 1
       },
       {
         "id": "R2026_040",
@@ -507,7 +507,7 @@
         "sourceCell": "A17:B17",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 22
+        "rank": 21
       },
       {
         "id": "R0147",
@@ -1005,10 +1005,10 @@
         "name": "Vilde Antonsen",
         "originalName": "Vilde Antonsen",
         "personId": "vilde_antonsen",
-        "timeOriginal": "1:34 (høy)",
-        "timeSeconds": 94.0,
-        "timeDisplay": "1:34",
-        "note": "høy",
+        "timeOriginal": "1:34,5",
+        "timeSeconds": 94.5,
+        "timeDisplay": "1:34,5",
+        "note": null,
         "validToplist": true,
         "validRecord": true,
         "sourceSheet": "2023",
@@ -1038,7 +1038,7 @@
         "sourceCell": "A12:B12",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 2
+        "rank": 1
       },
       {
         "id": "R2026_040",
@@ -1498,7 +1498,7 @@
         "sourceCell": "A17:B17",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 22
+        "rank": 21
       },
       {
         "id": "R0147",
@@ -2631,7 +2631,7 @@
         "sourceCell": "D16:E16",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 28
+        "rank": 27
       },
       {
         "id": "R0220",
@@ -2792,7 +2792,7 @@
         "sourceCell": "A21:B21",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 35
+        "rank": 34
       },
       {
         "id": "R0254",
@@ -2861,7 +2861,7 @@
         "sourceCell": "A110:B110",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 38
+        "rank": 37
       },
       {
         "id": "R0255",
@@ -2930,7 +2930,7 @@
         "sourceCell": "A240:B240",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 41
+        "rank": 40
       },
       {
         "id": "R0327",
@@ -3137,7 +3137,7 @@
         "sourceCell": "C44:D44",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 50
+        "rank": 49
       },
       {
         "id": "R0225",
@@ -3275,7 +3275,7 @@
         "sourceCell": "A25:B25",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 56
+        "rank": 55
       },
       {
         "id": "R0228",
@@ -4036,7 +4036,7 @@
         "sourceCell": "D16:E16",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 28
+        "rank": 27
       },
       {
         "id": "R0220",
@@ -4197,7 +4197,7 @@
         "sourceCell": "A21:B21",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 35
+        "rank": 34
       },
       {
         "id": "R0254",
@@ -4266,7 +4266,7 @@
         "sourceCell": "A110:B110",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 38
+        "rank": 37
       },
       {
         "id": "R0255",
@@ -4335,7 +4335,7 @@
         "sourceCell": "A240:B240",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 41
+        "rank": 40
       },
       {
         "id": "R0327",
@@ -4542,7 +4542,7 @@
         "sourceCell": "C44:D44",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 50
+        "rank": 49
       },
       {
         "id": "R0225",
@@ -4680,7 +4680,7 @@
         "sourceCell": "A25:B25",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 56
+        "rank": 55
       },
       {
         "id": "R0228",
@@ -4939,7 +4939,7 @@
         "sourceCell": "E19:F19",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 6
+        "rank": 5
       },
       {
         "id": "R2026_018",
@@ -5330,7 +5330,7 @@
         "sourceCell": "C15:D15",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 23
+        "rank": 22
       },
       {
         "id": "R0234",
@@ -5399,7 +5399,7 @@
         "sourceCell": "G18:H18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 26
+        "rank": 25
       },
       {
         "id": "R0259",
@@ -5514,7 +5514,7 @@
         "sourceCell": "E24:F24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 31
+        "rank": 30
       },
       {
         "id": "R0235",
@@ -5537,7 +5537,7 @@
         "sourceCell": "C152:D152",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 32
+        "rank": 30
       },
       {
         "id": "R0334",
@@ -5813,7 +5813,7 @@
         "sourceCell": "C13:D13",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 44
+        "rank": 43
       },
       {
         "id": "R0238",
@@ -5859,7 +5859,7 @@
         "sourceCell": "C220:D220",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 46
+        "rank": 45
       },
       {
         "id": "R2026_043",
@@ -6020,7 +6020,7 @@
         "sourceCell": "C18:D18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 53
+        "rank": 52
       },
       {
         "id": "R0358",
@@ -6388,7 +6388,7 @@
         "sourceCell": "C15:D15",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 69
+        "rank": 68
       },
       {
         "id": "R0282",
@@ -6503,7 +6503,7 @@
         "sourceCell": "E30:F30",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 74
+        "rank": 73
       },
       {
         "id": "R0117",
@@ -6526,7 +6526,7 @@
         "sourceCell": "E29:F29",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 75
+        "rank": 73
       },
       {
         "id": "R0178",
@@ -6850,7 +6850,7 @@
         "sourceCell": "E19:F19",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 6
+        "rank": 5
       },
       {
         "id": "R2026_018",
@@ -7241,7 +7241,7 @@
         "sourceCell": "C15:D15",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 23
+        "rank": 22
       },
       {
         "id": "R0234",
@@ -7310,7 +7310,7 @@
         "sourceCell": "G18:H18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 26
+        "rank": 25
       },
       {
         "id": "R0259",
@@ -7425,7 +7425,7 @@
         "sourceCell": "E24:F24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 31
+        "rank": 30
       },
       {
         "id": "R0235",
@@ -7448,7 +7448,7 @@
         "sourceCell": "C152:D152",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 32
+        "rank": 30
       },
       {
         "id": "R0334",
@@ -7724,7 +7724,7 @@
         "sourceCell": "C13:D13",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 44
+        "rank": 43
       },
       {
         "id": "R0238",
@@ -7770,7 +7770,7 @@
         "sourceCell": "C220:D220",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 46
+        "rank": 45
       },
       {
         "id": "R2026_043",
@@ -7931,7 +7931,7 @@
         "sourceCell": "C18:D18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 53
+        "rank": 52
       },
       {
         "id": "R0358",
@@ -8299,7 +8299,7 @@
         "sourceCell": "C15:D15",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 69
+        "rank": 68
       },
       {
         "id": "R0282",
@@ -8414,7 +8414,7 @@
         "sourceCell": "E30:F30",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 74
+        "rank": 73
       },
       {
         "id": "R0117",
@@ -8437,7 +8437,7 @@
         "sourceCell": "E29:F29",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 75
+        "rank": 73
       },
       {
         "id": "R0178",
@@ -8903,7 +8903,7 @@
         "sourceCell": "C112:D112",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 12
+        "rank": 11
       },
       {
         "id": "R0186",
@@ -8972,7 +8972,7 @@
         "sourceCell": "C20:D20",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 15
+        "rank": 14
       },
       {
         "id": "R0340",
@@ -9248,7 +9248,7 @@
         "sourceCell": "E53:F53",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 27
+        "rank": 26
       },
       {
         "id": "R0124",
@@ -9363,7 +9363,7 @@
         "sourceCell": "G51:H51",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 32
+        "rank": 31
       },
       {
         "id": "R0143",
@@ -9386,7 +9386,7 @@
         "sourceCell": "G52:H52",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 33
+        "rank": 31
       },
       {
         "id": "R0189",
@@ -9524,7 +9524,7 @@
         "sourceCell": "E56:F56",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 39
+        "rank": 38
       },
       {
         "id": "R0364",
@@ -9731,7 +9731,7 @@
         "sourceCell": "C240:D240",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 48
+        "rank": 47
       },
       {
         "id": "R0194",
@@ -9869,7 +9869,7 @@
         "sourceCell": "E64:F64",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 54
+        "rank": 53
       },
       {
         "id": "R0129",
@@ -9892,7 +9892,7 @@
         "sourceCell": "E58:F58",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 55
+        "rank": 53
       },
       {
         "id": "R0144",
@@ -9938,7 +9938,7 @@
         "sourceCell": "G54:H54",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 57
+        "rank": 56
       },
       {
         "id": "R0082",
@@ -10237,7 +10237,7 @@
         "sourceCell": "C242:D242",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 70
+        "rank": 69
       },
       {
         "id": "R0273",
@@ -10398,7 +10398,7 @@
         "sourceCell": "C24:D24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 77
+        "rank": 76
       },
       {
         "id": "R0248",
@@ -11136,7 +11136,7 @@
         "sourceCell": "C112:D112",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 12
+        "rank": 11
       },
       {
         "id": "R0186",
@@ -11205,7 +11205,7 @@
         "sourceCell": "C20:D20",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 15
+        "rank": 14
       },
       {
         "id": "R0340",
@@ -11481,7 +11481,7 @@
         "sourceCell": "E53:F53",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 27
+        "rank": 26
       },
       {
         "id": "R0124",
@@ -11596,7 +11596,7 @@
         "sourceCell": "G51:H51",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 32
+        "rank": 31
       },
       {
         "id": "R0143",
@@ -11619,7 +11619,7 @@
         "sourceCell": "G52:H52",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 33
+        "rank": 31
       },
       {
         "id": "R0189",
@@ -11757,7 +11757,7 @@
         "sourceCell": "E56:F56",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 39
+        "rank": 38
       },
       {
         "id": "R0364",
@@ -11964,7 +11964,7 @@
         "sourceCell": "C240:D240",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 48
+        "rank": 47
       },
       {
         "id": "R0194",
@@ -12102,7 +12102,7 @@
         "sourceCell": "E64:F64",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 54
+        "rank": 53
       },
       {
         "id": "R0129",
@@ -12125,7 +12125,7 @@
         "sourceCell": "E58:F58",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 55
+        "rank": 53
       },
       {
         "id": "R0144",
@@ -12171,7 +12171,7 @@
         "sourceCell": "G54:H54",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 57
+        "rank": 56
       },
       {
         "id": "R0082",
@@ -12470,7 +12470,7 @@
         "sourceCell": "C242:D242",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 70
+        "rank": 69
       },
       {
         "id": "R0273",
@@ -12631,7 +12631,7 @@
         "sourceCell": "C24:D24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 77
+        "rank": 76
       },
       {
         "id": "R0248",

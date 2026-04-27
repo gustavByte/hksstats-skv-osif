@@ -7,6 +7,10 @@ function resultText(result) {
   if (!result) return "-";
   return `${result.name}, ${result.timeDisplay}, ${result.year}`;
 }
+
+function officialResults(record) {
+  return record.officials?.length ? record.officials : record.official ? [record.official] : [];
+}
 ---
 
 <Layout title="Rekorder">
@@ -36,11 +40,13 @@ function resultText(result) {
               <td>{record.distance} m</td>
               <td>{record.gender}</td>
               <td>
-                {record.official ? (
-                  <>
-                    <a href={href(`/person/${record.official.personId}/`)}>{resultText(record.official)}</a>
-                    <span class="subtle"> · {formatDate(record.official.date)}</span>
-                  </>
+                {officialResults(record).length ? (
+                  officialResults(record).map((result) => (
+                    <div>
+                      <a href={href(`/person/${result.personId}/`)}>{resultText(result)}</a>
+                      <span class="subtle"> · {formatDate(result.date)}</span>
+                    </div>
+                  ))
                 ) : "-"}
               </td>
               <td>

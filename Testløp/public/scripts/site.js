@@ -340,13 +340,22 @@
           if (!current || row.timeSeconds < current.timeSeconds) best.set(row.personId, row);
         });
       const rows = Array.from(best.values())
-        .sort((a, b) => a.timeSeconds - b.timeSeconds || a.name.localeCompare(b.name))
+        .sort((a, b) => a.timeSeconds - b.timeSeconds || (a.date || "").localeCompare(b.date || "") || a.name.localeCompare(b.name))
         .slice(0, limit);
-      tbody.innerHTML = rows
+      let previousTime = null;
+      let previousRank = 0;
+      const rankedRows = rows.map((row, index) => {
+        if (row.timeSeconds !== previousTime) {
+          previousRank = index + 1;
+          previousTime = row.timeSeconds;
+        }
+        return { row, rank: previousRank };
+      });
+      tbody.innerHTML = rankedRows
         .map(
-          (row, index) => `
+          ({ row, rank }) => `
           <tr>
-            <td class="num col-rank">${index + 1}</td>
+            <td class="num col-rank">${rank}</td>
             <td class="name-cell col-name"><a href="${personUrl(row.personId)}">${escapeHtml(row.name)}</a></td>
             <td class="time num col-time">${row.timeDisplay || "-"}</td>
             <td class="num col-year">${row.year}</td>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T15:12:43",
+  "generatedAt": "2026-04-28T11:52:11",
   "sourceWorkbook": "data/Testlop_HKS.xlsx",
   "years": [
     2026,
@@ -17,21 +17,21 @@
   ],
   "latestYear": 2026,
   "totals": {
-    "results": 422,
-    "people": 258,
-    "testlop": 17,
+    "results": 425,
+    "people": 260,
+    "testlop": 18,
     "deviations": 0
   },
   "yearStats": [
     {
       "year": 2026,
-      "resultCount": 52,
-      "personCount": 45,
-      "testlopCount": 3,
+      "resultCount": 55,
+      "personCount": 48,
+      "testlopCount": 4,
       "deviationCount": 0,
       "breakdown": {
-        "600_Kvinner": 9,
-        "600_Menn": 17,
+        "600_Kvinner": 11,
+        "600_Menn": 18,
         "1200_Kvinner": 14,
         "1200_Menn": 12
       }
@@ -90,6 +90,19 @@
     }
   ],
   "testlopStats": [
+    {
+      "testlopId": "2026_HKS_4",
+      "year": 2026,
+      "date": "2026-04-28",
+      "place": "Bislett",
+      "resultCount": 3,
+      "personCount": 3,
+      "distance600": 3,
+      "distance1200": 0,
+      "women": 2,
+      "men": 1,
+      "deviationCount": 0
+    },
     {
       "testlopId": "2026_HKS_3",
       "year": 2026,

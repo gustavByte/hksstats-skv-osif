@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T21:31:22",
+  "generatedAt": "2026-04-28T11:54:08",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -40444,8 +40444,8 @@
       "best_split_seconds": 312,
       "profile_slug": "p55c2610ee2-jo-trieu-soreide",
       "profile_path": "person/p55c2610ee2-jo-trieu-soreide/",
-      "testlop_person_id": null,
-      "testlop_profile_path": null,
+      "testlop_person_id": "jo_trieu_soreide",
+      "testlop_profile_path": "testlop/person/jo_trieu_soreide/",
       "global_person_id": "jo_trieu_soreide",
       "identity_status": "confirmed",
       "aliases": [
@@ -61783,7 +61783,7 @@
       "global_person_id": "jo_trieu_soreide",
       "canonical_name": "Jo Trieu Søreide",
       "hks_person_id": "p55c2610ee2",
-      "testlop_person_id": null,
+      "testlop_person_id": "jo_trieu_soreide",
       "status": "confirmed",
       "aliases": [
         "Jo Trieu Søreide"

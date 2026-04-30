@@ -1599,6 +1599,47 @@
     }
   },
   {
+    "personId": "celeste_van_essen",
+    "name": "Celeste van Essen",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Kvinner"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_060",
+        "year": 2026,
+        "testlopId": "2026_HKS_5",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Kvinner",
+        "name": "Celeste van Essen",
+        "originalName": "Celeste van Essen",
+        "personId": "celeste_van_essen",
+        "timeOriginal": "1:59,6",
+        "timeSeconds": 119.6,
+        "timeDisplay": "1:59,6",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #5",
+        "sourceCell": "A12:B12",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "celine_hakestad",
     "name": "Celine Håkestad",
     "resultCount": 1,
@@ -3894,6 +3935,47 @@
     }
   },
   {
+    "personId": "gioia_chiesurin",
+    "name": "Gioia Chiesurin",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Kvinner"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_056",
+        "year": 2026,
+        "testlopId": "2026_HKS_5",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Kvinner",
+        "name": "Gioia Chiesurin",
+        "originalName": "Gioia Chiesurin",
+        "personId": "gioia_chiesurin",
+        "timeOriginal": "1:49,3",
+        "timeSeconds": 109.3,
+        "timeDisplay": "1:49,3",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #5",
+        "sourceCell": "A10:B10",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "gjermund_ulleberg",
     "name": "Gjermund Ulleberg",
     "resultCount": 1,
@@ -4016,6 +4098,47 @@
         "checkStatus": "OK"
       },
       "1200": null
+    }
+  },
+  {
+    "personId": "gunnar_berthelsen",
+    "name": "Gunnar Berthelsen",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      1200
+    ],
+    "pb": {
+      "600": null,
+      "1200": {
+        "id": "R2026_063",
+        "year": 2026,
+        "testlopId": "2026_HKS_5",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 1200,
+        "gender": "Menn",
+        "name": "Gunnar Berthelsen",
+        "originalName": "Gunnar Berthelsen",
+        "personId": "gunnar_berthelsen",
+        "timeOriginal": "4:32,3",
+        "timeSeconds": 272.3,
+        "timeDisplay": "4:32,3",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #5",
+        "sourceCell": "C19:D19",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      }
     }
   },
   {
@@ -5056,6 +5179,47 @@
         "checkStatus": "OK"
       },
       "1200": null
+    }
+  },
+  {
+    "personId": "ine_bakken",
+    "name": "Ine Bakken",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Kvinner"
+    ],
+    "distances": [
+      1200
+    ],
+    "pb": {
+      "600": null,
+      "1200": {
+        "id": "R2026_057",
+        "year": 2026,
+        "testlopId": "2026_HKS_5",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 1200,
+        "gender": "Kvinner",
+        "name": "Ine Bakken",
+        "originalName": "Ine Bakken",
+        "personId": "ine_bakken",
+        "timeOriginal": "3:35,8",
+        "timeSeconds": 215.8,
+        "timeDisplay": "3:35,8",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #5",
+        "sourceCell": "C10:D10",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      }
     }
   },
   {
@@ -8050,6 +8214,47 @@
     }
   },
   {
+    "personId": "mathilde_knutsen",
+    "name": "Mathilde Knutsen",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Kvinner"
+    ],
+    "distances": [
+      1200
+    ],
+    "pb": {
+      "600": null,
+      "1200": {
+        "id": "R2026_059",
+        "year": 2026,
+        "testlopId": "2026_HKS_5",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 1200,
+        "gender": "Kvinner",
+        "name": "Mathilde Knutsen",
+        "originalName": "Mathilde Knutsen",
+        "personId": "mathilde_knutsen",
+        "timeOriginal": "3:40,1",
+        "timeSeconds": 220.1,
+        "timeDisplay": "3:40,1",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #5",
+        "sourceCell": "C11:D11",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      }
+    }
+  },
+  {
     "personId": "mathilde_theisen",
     "name": "Mathilde Theisen",
     "resultCount": 1,
@@ -8175,6 +8380,47 @@
     }
   },
   {
+    "personId": "michelle_geertse",
+    "name": "Michelle Geertse",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Kvinner"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_061",
+        "year": 2026,
+        "testlopId": "2026_HKS_5",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Kvinner",
+        "name": "Michelle Geertse",
+        "originalName": "Michelle Geertse",
+        "personId": "michelle_geertse",
+        "timeOriginal": "2:05,4",
+        "timeSeconds": 125.4,
+        "timeDisplay": "2:05,4",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #5",
+        "sourceCell": "A13:B13",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "nikolai_fongaard",
     "name": "Nikolai Fongaard",
     "resultCount": 1,
@@ -8294,6 +8540,47 @@
         "sourceSheet": "HKS 2025-04-29 Løp #3",
         "sourceCell": "A14:B14",
         "sourceType": "Enkelttestløp",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
+    "personId": "noa_antonissen",
+    "name": "Noa Antonissen",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Kvinner"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_058",
+        "year": 2026,
+        "testlopId": "2026_HKS_5",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Kvinner",
+        "name": "Noa Antonissen",
+        "originalName": "Noa Antonissen",
+        "personId": "noa_antonissen",
+        "timeOriginal": "1:55,7",
+        "timeSeconds": 115.7,
+        "timeDisplay": "1:55,7",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #5",
+        "sourceCell": "A11:B11",
+        "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
       "1200": null
@@ -9395,7 +9682,7 @@
   {
     "personId": "simen_hagerup_kjeldsen",
     "name": "Simen Hagerup Kjeldsen",
-    "resultCount": 4,
+    "resultCount": 5,
     "firstYear": 2024,
     "lastYear": 2026,
     "years": [

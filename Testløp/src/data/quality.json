@@ -488,11 +488,35 @@
         "elisabeth_oiulfstad"
       ],
       "needsReview": false
+    },
+    {
+      "names": [
+        "Frida Konow",
+        "Frida Bjørnstad Konow"
+      ],
+      "entries": [
+        {
+          "alias": "Frida Konow",
+          "personId": "frida_bjornstad_konow",
+          "status": "Avklart i nettside",
+          "comment": null
+        },
+        {
+          "alias": "Frida Bjørnstad Konow",
+          "personId": "frida_bjornstad_konow",
+          "status": "OK",
+          "comment": null
+        }
+      ],
+      "personIds": [
+        "frida_bjornstad_konow"
+      ],
+      "needsReview": false
     }
   ],
   "summary": {
     "deviationCount": 0,
     "manualNameReviewCount": 0,
-    "archivedNameReviewCount": 20
+    "archivedNameReviewCount": 21
   }
 }

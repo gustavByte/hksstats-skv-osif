@@ -67,6 +67,7 @@ NAME_ALIAS_OVERRIDES = {
     "Matilde Belsvik": "Matilde Reinholdt Belsvik",
     "Siri Staver": "Siri Vegsund Staver",
     "Elisavbeth Ø": "Elisabeth Øiulfstad",
+    "Frida Konow": "Frida Bjørnstad Konow",
 }
 
 MANUAL_NAME_REVIEW_GROUPS = [
@@ -90,6 +91,7 @@ MANUAL_NAME_REVIEW_GROUPS = [
     ["Matilde Belsvik", "Matilde Reinholdt Belsvik"],
     ["Siri Staver", "Siri Vegsund Staver"],
     ["Elisavbeth Ø", "Elisabeth Øiulfstad"],
+    ["Frida Konow", "Frida Bjørnstad Konow"],
 ]
 
 

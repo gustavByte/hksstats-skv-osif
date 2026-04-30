@@ -1,5 +1,46 @@
 [
   {
+    "personId": "adam_olsen",
+    "name": "Adam Olsen",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_077",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Menn",
+        "name": "Adam Olsen",
+        "originalName": "Adam Olsen",
+        "personId": "adam_olsen",
+        "timeOriginal": "1:42,0",
+        "timeSeconds": 102.0,
+        "timeDisplay": "1:42,0",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A24:B24",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "aksel_p_spence",
     "name": "Aksel P. Spence",
     "resultCount": 1,
@@ -2761,6 +2802,47 @@
     }
   },
   {
+    "personId": "emil_skogheim",
+    "name": "Emil Skogheim",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_070",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Menn",
+        "name": "Emil Skogheim",
+        "originalName": "Emil Skogheim",
+        "personId": "emil_skogheim",
+        "timeOriginal": "1:34,7",
+        "timeSeconds": 94.7,
+        "timeDisplay": "1:34,7",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A20:B20",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "emma_leiner",
     "name": "Emma Leiner",
     "resultCount": 2,
@@ -3078,6 +3160,47 @@
     }
   },
   {
+    "personId": "erlend_aune",
+    "name": "Erlend Aune",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      1200
+    ],
+    "pb": {
+      "600": null,
+      "1200": {
+        "id": "R2026_075",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 1200,
+        "gender": "Menn",
+        "name": "Erlend Aune",
+        "originalName": "Erlend Aune",
+        "personId": "erlend_aune",
+        "timeOriginal": "3:50,1",
+        "timeSeconds": 230.1,
+        "timeDisplay": "3:50,1",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "C22:D22",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      }
+    }
+  },
+  {
     "personId": "erlend_berger",
     "name": "Erlend Berger",
     "resultCount": 2,
@@ -3122,13 +3245,14 @@
   {
     "personId": "erlend_gjerdevik_sortveit",
     "name": "Erlend Gjerdevik Sørtveit",
-    "resultCount": 3,
+    "resultCount": 4,
     "firstYear": 2022,
-    "lastYear": 2025,
+    "lastYear": 2026,
     "years": [
       2022,
       2024,
-      2025
+      2025,
+      2026
     ],
     "genders": [
       "Menn"
@@ -3517,20 +3641,43 @@
   {
     "personId": "fredrik_camilo_halsbog",
     "name": "Fredrik Camilo Halsbog",
-    "resultCount": 1,
+    "resultCount": 2,
     "firstYear": 2024,
-    "lastYear": 2024,
+    "lastYear": 2026,
     "years": [
-      2024
+      2024,
+      2026
     ],
     "genders": [
       "Menn"
     ],
     "distances": [
+      600,
       1200
     ],
     "pb": {
-      "600": null,
+      "600": {
+        "id": "R2026_076",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Menn",
+        "name": "Fredrik Camilo Halsbog",
+        "originalName": "Fredrik Camilo Halsbog",
+        "personId": "fredrik_camilo_halsbog",
+        "timeOriginal": "1:40,7",
+        "timeSeconds": 100.7,
+        "timeDisplay": "1:40,7",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A23:B23",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
       "1200": {
         "id": "R0271",
         "year": 2024,
@@ -3771,18 +3918,20 @@
   {
     "personId": "frida_bjornstad_konow",
     "name": "Frida Bjørnstad Konow",
-    "resultCount": 2,
+    "resultCount": 3,
     "firstYear": 2023,
-    "lastYear": 2025,
+    "lastYear": 2026,
     "years": [
       2023,
-      2025
+      2025,
+      2026
     ],
     "genders": [
       "Kvinner"
     ],
     "distances": [
-      600
+      600,
+      1200
     ],
     "pb": {
       "600": {
@@ -3807,7 +3956,28 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null
+      "1200": {
+        "id": "R2026_065",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 1200,
+        "gender": "Kvinner",
+        "name": "Frida Bjørnstad Konow",
+        "originalName": "Frida Konow",
+        "personId": "frida_bjornstad_konow",
+        "timeOriginal": "3:35,9",
+        "timeSeconds": 215.9,
+        "timeDisplay": "3:35,9",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "C10:D10",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      }
     }
   },
   {
@@ -4185,11 +4355,12 @@
   {
     "personId": "haakon_engelsen_berg",
     "name": "Haakon Engelsen Berg",
-    "resultCount": 1,
+    "resultCount": 2,
     "firstYear": 2024,
-    "lastYear": 2024,
+    "lastYear": 2026,
     "years": [
-      2024
+      2024,
+      2026
     ],
     "genders": [
       "Menn"
@@ -5388,6 +5559,47 @@
     }
   },
   {
+    "personId": "ingrid_rustad_roflo",
+    "name": "Ingrid Rustad Røflo",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Kvinner"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_066",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Kvinner",
+        "name": "Ingrid Rustad Røflo",
+        "originalName": "Ingrid Rustad Røflo",
+        "personId": "ingrid_rustad_roflo",
+        "timeOriginal": "1:44,9",
+        "timeSeconds": 104.9,
+        "timeDisplay": "1:44,9",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A11:B11",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "jakob_slengsol",
     "name": "Jakob Slengsol",
     "resultCount": 1,
@@ -6162,6 +6374,47 @@
     }
   },
   {
+    "personId": "jorgen_engoy",
+    "name": "Jørgen Engøy",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_072",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Menn",
+        "name": "Jørgen Engøy",
+        "originalName": "Jørgen Engøy",
+        "personId": "jorgen_engoy",
+        "timeOriginal": "1:37,5",
+        "timeSeconds": 97.5,
+        "timeDisplay": "1:37,5",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A21:B21",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "jorgen_moen",
     "name": "Jørgen Moen",
     "resultCount": 1,
@@ -6568,6 +6821,47 @@
         "validRecord": true,
         "sourceSheet": "HKS 2026-04-18 Løp #1",
         "sourceCell": "C23:D23",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      }
+    }
+  },
+  {
+    "personId": "kristian_stenerud",
+    "name": "Kristian Stenerud",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      1200
+    ],
+    "pb": {
+      "600": null,
+      "1200": {
+        "id": "R2026_073",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 1200,
+        "gender": "Menn",
+        "name": "Kristian Stenerud",
+        "originalName": "Kristian Stenerud",
+        "personId": "kristian_stenerud",
+        "timeOriginal": "3:32,6",
+        "timeSeconds": 212.6,
+        "timeDisplay": "3:32,6",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "C21:D21",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       }
@@ -7380,12 +7674,13 @@
   {
     "personId": "mai_watson",
     "name": "Mai Watson",
-    "resultCount": 2,
+    "resultCount": 3,
     "firstYear": 2024,
-    "lastYear": 2025,
+    "lastYear": 2026,
     "years": [
       2024,
-      2025
+      2025,
+      2026
     ],
     "genders": [
       "Kvinner"
@@ -9121,6 +9416,47 @@
     }
   },
   {
+    "personId": "riley_mcgown",
+    "name": "Riley McGown",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_068",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Menn",
+        "name": "Riley McGown",
+        "originalName": "Riley McGown",
+        "personId": "riley_mcgown",
+        "timeOriginal": "1:24,9",
+        "timeSeconds": 84.9,
+        "timeDisplay": "1:24,9",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A19:B19",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "robert_kammel",
     "name": "Robert Kammel",
     "resultCount": 1,
@@ -9493,6 +9829,47 @@
     }
   },
   {
+    "personId": "shervin_fashkhami",
+    "name": "Shervin Fashkhami",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_078",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Menn",
+        "name": "Shervin Fashkhami",
+        "originalName": "Shervin Fashkhami",
+        "personId": "shervin_fashkhami",
+        "timeOriginal": "1:46,3",
+        "timeSeconds": 106.3,
+        "timeDisplay": "1:46,3",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A25:B25",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
+    }
+  },
+  {
     "personId": "sigrun_aker_nordeng",
     "name": "Sigrun Aker Nordeng",
     "resultCount": 2,
@@ -9742,6 +10119,47 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       }
+    }
+  },
+  {
+    "personId": "simen_modin_engesaeth",
+    "name": "Simen Modin Engesæth",
+    "resultCount": 1,
+    "firstYear": 2026,
+    "lastYear": 2026,
+    "years": [
+      2026
+    ],
+    "genders": [
+      "Menn"
+    ],
+    "distances": [
+      600
+    ],
+    "pb": {
+      "600": {
+        "id": "R2026_074",
+        "year": 2026,
+        "testlopId": "2026_HKS_6",
+        "date": "2026-04-30",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Menn",
+        "name": "Simen Modin Engesæth",
+        "originalName": "Simen Modin Engesæth",
+        "personId": "simen_modin_engesaeth",
+        "timeOriginal": "1:39,1",
+        "timeSeconds": 99.1,
+        "timeDisplay": "1:39,1",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-04-30 Løp #6 p.m.",
+        "sourceCell": "A22:B22",
+        "sourceType": "2026-arbeidsbok",
+        "checkStatus": "OK"
+      },
+      "1200": null
     }
   },
   {
@@ -10603,12 +11021,13 @@
   {
     "personId": "telma_eckhoff_dagestad",
     "name": "Telma Eckhoff Dagestad",
-    "resultCount": 2,
+    "resultCount": 3,
     "firstYear": 2022,
-    "lastYear": 2025,
+    "lastYear": 2026,
     "years": [
       2022,
-      2025
+      2025,
+      2026
     ],
     "genders": [
       "Kvinner"

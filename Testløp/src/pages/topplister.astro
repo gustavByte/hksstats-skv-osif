@@ -22,7 +22,7 @@ const defaultRows = (defaultBoard?.official || []).slice(0, 10);
 
     <div class="toolbar" aria-label="Topplistevalg">
       <div class="toolbar-group">
-        {[600, 1200].map((distance) => (
+        {[600, 1200, 1500].map((distance) => (
           <button class:list={["chip", distance === 600 && "is-active"]} data-filter-name="distance" data-filter-value={String(distance)} aria-pressed={distance === 600 ? "true" : "false"}>
             {distance} m
           </button>
@@ -72,9 +72,9 @@ const defaultRows = (defaultBoard?.official || []).slice(0, 10);
               <td class="num col-year">{row.year}</td>
               <td class="col-date">
                 <span>{formatDate(row.date)}</span>
-                <span class="mobile-meta">{row.testlopId || "-"}</span>
+                <span class="mobile-meta">{row.sourceType === "Baneløp" ? "Baneløp" : row.testlopId || "-"}</span>
               </td>
-              <td class="col-testlop">{row.testlopId || "-"}</td>
+              <td class="col-testlop">{row.sourceType === "Baneløp" ? `Baneløp · ${row.testlopId || "-"}` : row.testlopId || "-"}</td>
               <td class="col-note"><span class="subtle">-</span></td>
             </tr>
           ))}

@@ -7,6 +7,8 @@
     "600_Kvinner": 1,
     "1200_Menn": 2,
     "1200_Kvinner": 3,
+    "1500_Menn": 4,
+    "1500_Kvinner": 5,
   };
   const formatDate = (value) => {
     if (!value) return "-";
@@ -14,6 +16,13 @@
     return year && month && day ? `${day}.${month}.${year.slice(2)}` : value;
   };
   const personUrl = (personId) => `${window.__BASE_URL__ || "/"}person/${personId}/`;
+  const displayEvent = (result) => {
+    if (!result) return "-";
+    if (result.sourceType === "Baneløp") {
+      return ["Baneløp", result.testlopId, result.place].filter(Boolean).join(" · ");
+    }
+    return result.place ? `${result.testlopId || "-"} · ${result.place}` : result.testlopId || "-";
+  };
   const badgeHtml = (result) => {
     const labels = [];
     if (result.note) labels.push({ text: result.note, type: "warn" });
@@ -361,9 +370,9 @@
             <td class="num col-year">${row.year}</td>
             <td class="col-date">
               <span>${formatDate(row.date)}</span>
-              <span class="mobile-meta">${escapeHtml(row.testlopId || "-")}</span>
+              <span class="mobile-meta">${escapeHtml(displayEvent(row))}</span>
             </td>
-            <td class="col-testlop">${escapeHtml(row.testlopId || "-")}</td>
+            <td class="col-testlop">${escapeHtml(displayEvent(row))}</td>
             <td class="col-note"><span class="note-list">${badgeHtml(row)}</span></td>
           </tr>`
         )
@@ -585,14 +594,14 @@
     function resultNameWithMeta(row) {
       if (!row) return "";
       const date = row.date ? formatDate(row.date) : "";
-      const meta = [date, row.testlopId].filter(Boolean).map(escapeHtml).join(" · ");
+      const meta = [date, displayEvent(row)].filter(Boolean).map(escapeHtml).join(" · ");
       return `${resultLink(row)}${meta ? `<span class="subtle row-meta">${meta}</span>` : ""}`;
     }
 
     function resultCompactCell(row) {
       if (!row) return `<span class="subtle">-</span>`;
       const date = row.date ? formatDate(row.date) : "";
-      const meta = [date, row.testlopId].filter(Boolean).map(escapeHtml).join(" · ");
+      const meta = [date, displayEvent(row)].filter(Boolean).map(escapeHtml).join(" · ");
       return `
         <div class="compare-result-cell">
           <strong class="compare-time">${escapeHtml(row.timeDisplay || "-")}</strong>
@@ -699,9 +708,9 @@
                       <td class="time num col-time">${row.timeDisplay || ""}</td>
                       <td class="col-date">
                         <span>${formatDate(row.date)}</span>
-                        <span class="mobile-meta">${escapeHtml(row.testlopId || "-")}</span>
+                        <span class="mobile-meta">${escapeHtml(displayEvent(row))}</span>
                       </td>
-                      <td class="col-testlop">${escapeHtml(row.testlopId || "-")}</td>
+                      <td class="col-testlop">${escapeHtml(displayEvent(row))}</td>
                       <td class="col-note">${noteCell(row)}</td>
                     </tr>`
                 )

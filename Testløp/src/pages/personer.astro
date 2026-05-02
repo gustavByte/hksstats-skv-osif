@@ -58,6 +58,12 @@ import { displayTime, href } from "../lib/format";
                 <span class="sort-indicator" aria-hidden="true"></span>
               </button>
             </th>
+            <th class="num col-pb-1500" aria-sort="none">
+              <button class="sort-button align-right" type="button" data-sort-key="pb1500" data-sort-type="number" data-sort-default="asc">
+                <span>PB 1500 m</span>
+                <span class="sort-indicator" aria-hidden="true"></span>
+              </button>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -70,6 +76,7 @@ import { displayTime, href } from "../lib/format";
               data-sort-last-year={person.lastYear || ""}
               data-sort-pb600={person.pb["600"]?.timeSeconds ?? ""}
               data-sort-pb1200={person.pb["1200"]?.timeSeconds ?? ""}
+              data-sort-pb1500={person.pb["1500"]?.timeSeconds ?? ""}
             >
               <td class="name-cell col-name">
                 <a href={href(`/person/${person.personId}/`)}>{person.name}</a>
@@ -82,6 +89,7 @@ import { displayTime, href } from "../lib/format";
               <td class="num col-last-year">{person.lastYear || "-"}</td>
               <td class="time num col-pb-600">{displayTime(person.pb["600"])}</td>
               <td class="time num col-pb-1200">{displayTime(person.pb["1200"])}</td>
+              <td class="time num col-pb-1500">{displayTime(person.pb["1500"])}</td>
             </tr>
           ))}
         </tbody>

@@ -4,7 +4,7 @@ export type ResultRow = {
   testlopId: string | null;
   date: string | null;
   place: string | null;
-  distance: number;
+  distance: 600 | 1200;
   gender: "Kvinner" | "Menn";
   name: string;
   personId: string;
@@ -14,7 +14,6 @@ export type ResultRow = {
   validToplist: boolean;
   validRecord: boolean;
   checkStatus: string;
-  sourceType?: string | null;
 };
 
 export const base = import.meta.env.BASE_URL;
@@ -42,12 +41,9 @@ export function displayTime(result: Pick<ResultRow, "timeDisplay" | "timeSeconds
   return result.timeDisplay || "-";
 }
 
-export function displayTestlop(result: Pick<ResultRow, "testlopId" | "place" | "sourceType"> | null | undefined) {
+export function displayTestlop(result: Pick<ResultRow, "testlopId" | "place"> | null | undefined) {
   if (!result) return "-";
   const id = result.testlopId || "-";
-  if (result.sourceType === "Baneløp") {
-    return ["Baneløp", id, result.place].filter(Boolean).join(" · ");
-  }
   return result.place ? `${id} · ${result.place}` : id;
 }
 

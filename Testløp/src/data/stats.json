@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T20:06:52",
+  "generatedAt": "2026-05-02T19:34:55",
   "sourceWorkbook": "data/Testlop_HKS.xlsx",
   "years": [
     2026,
@@ -17,27 +17,23 @@
   ],
   "latestYear": 2026,
   "totals": {
-    "results": 483,
-    "people": 294,
+    "results": 463,
+    "people": 280,
     "testlop": 21,
-    "banelop": 1,
     "deviations": 0
   },
   "yearStats": [
     {
       "year": 2026,
-      "resultCount": 113,
-      "personCount": 97,
+      "resultCount": 93,
+      "personCount": 81,
       "testlopCount": 7,
-      "banelopCount": 1,
       "deviationCount": 0,
       "breakdown": {
         "600_Kvinner": 23,
-        "600_Menn": 29,
+        "600_Menn": 28,
         "1200_Kvinner": 19,
-        "1200_Menn": 23,
-        "1500_Kvinner": 6,
-        "1500_Menn": 13
+        "1200_Menn": 23
       }
     },
     {
@@ -45,15 +41,12 @@
       "resultCount": 100,
       "personCount": 93,
       "testlopCount": 4,
-      "banelopCount": 0,
       "deviationCount": 0,
       "breakdown": {
         "600_Kvinner": 15,
         "600_Menn": 21,
         "1200_Kvinner": 28,
-        "1200_Menn": 36,
-        "1500_Kvinner": 0,
-        "1500_Menn": 0
+        "1200_Menn": 36
       }
     },
     {
@@ -61,15 +54,12 @@
       "resultCount": 115,
       "personCount": 98,
       "testlopCount": 3,
-      "banelopCount": 0,
       "deviationCount": 0,
       "breakdown": {
         "600_Kvinner": 19,
         "600_Menn": 28,
         "1200_Kvinner": 28,
-        "1200_Menn": 40,
-        "1500_Kvinner": 0,
-        "1500_Menn": 0
+        "1200_Menn": 40
       }
     },
     {
@@ -77,15 +67,12 @@
       "resultCount": 111,
       "personCount": 107,
       "testlopCount": 4,
-      "banelopCount": 0,
       "deviationCount": 0,
       "breakdown": {
         "600_Kvinner": 19,
         "600_Menn": 16,
         "1200_Kvinner": 36,
-        "1200_Menn": 40,
-        "1500_Kvinner": 0,
-        "1500_Menn": 0
+        "1200_Menn": 40
       }
     },
     {
@@ -93,45 +80,25 @@
       "resultCount": 44,
       "personCount": 43,
       "testlopCount": 3,
-      "banelopCount": 0,
       "deviationCount": 0,
       "breakdown": {
         "600_Kvinner": 8,
         "600_Menn": 8,
         "1200_Kvinner": 10,
-        "1200_Menn": 18,
-        "1500_Kvinner": 0,
-        "1500_Menn": 0
+        "1200_Menn": 18
       }
     }
   ],
   "testlopStats": [
     {
-      "testlopId": "Bislett Spring",
-      "year": 2026,
-      "date": "2026-05-02",
-      "place": "Bislett",
-      "sourceType": "Baneløp",
-      "resultCount": 20,
-      "personCount": 20,
-      "distance600": 1,
-      "distance1200": 0,
-      "distance1500": 19,
-      "women": 6,
-      "men": 14,
-      "deviationCount": 0
-    },
-    {
       "testlopId": "2026_HKS_7",
       "year": 2026,
       "date": "2026-05-02",
       "place": "Bislett",
-      "sourceType": "2026-arbeidsbok",
       "resultCount": 15,
       "personCount": 15,
       "distance600": 7,
       "distance1200": 8,
-      "distance1500": 0,
       "women": 7,
       "men": 8,
       "deviationCount": 0
@@ -141,12 +108,10 @@
       "year": 2026,
       "date": "2026-04-30",
       "place": "Bislett",
-      "sourceType": "2026-arbeidsbok",
       "resultCount": 15,
       "personCount": 15,
       "distance600": 10,
       "distance1200": 5,
-      "distance1500": 0,
       "women": 4,
       "men": 11,
       "deviationCount": 0
@@ -156,12 +121,10 @@
       "year": 2026,
       "date": "2026-04-30",
       "place": "Bislett",
-      "sourceType": "2026-arbeidsbok",
       "resultCount": 8,
       "personCount": 8,
       "distance600": 5,
       "distance1200": 3,
-      "distance1500": 0,
       "women": 6,
       "men": 2,
       "deviationCount": 0
@@ -171,12 +134,10 @@
       "year": 2026,
       "date": "2026-04-28",
       "place": "Bislett",
-      "sourceType": "2026-arbeidsbok",
       "resultCount": 3,
       "personCount": 3,
       "distance600": 3,
       "distance1200": 0,
-      "distance1500": 0,
       "women": 2,
       "men": 1,
       "deviationCount": 0
@@ -186,12 +147,10 @@
       "year": 2026,
       "date": "2026-04-25",
       "place": "Bislett",
-      "sourceType": "2026-arbeidsbok",
       "resultCount": 13,
       "personCount": 13,
       "distance600": 4,
       "distance1200": 9,
-      "distance1500": 0,
       "women": 7,
       "men": 6,
       "deviationCount": 0
@@ -201,12 +160,10 @@
       "year": 2026,
       "date": "2026-04-23",
       "place": "Bislett",
-      "sourceType": "2026-arbeidsbok",
       "resultCount": 23,
       "personCount": 23,
       "distance600": 13,
       "distance1200": 10,
-      "distance1500": 0,
       "women": 10,
       "men": 13,
       "deviationCount": 0
@@ -216,12 +173,10 @@
       "year": 2026,
       "date": "2026-04-18",
       "place": "Bislett",
-      "sourceType": "2026-arbeidsbok",
       "resultCount": 16,
       "personCount": 16,
       "distance600": 9,
       "distance1200": 7,
-      "distance1500": 0,
       "women": 6,
       "men": 10,
       "deviationCount": 0
@@ -231,12 +186,10 @@
       "year": 2025,
       "date": "2025-05-03",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 30,
       "personCount": 30,
       "distance600": 9,
       "distance1200": 21,
-      "distance1500": 0,
       "women": 9,
       "men": 21,
       "deviationCount": 0
@@ -246,12 +199,10 @@
       "year": 2025,
       "date": "2025-04-29",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 32,
       "personCount": 32,
       "distance600": 16,
       "distance1200": 16,
-      "distance1500": 0,
       "women": 19,
       "men": 13,
       "deviationCount": 0
@@ -261,12 +212,10 @@
       "year": 2025,
       "date": "2025-04-26",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 24,
       "personCount": 24,
       "distance600": 5,
       "distance1200": 19,
-      "distance1500": 0,
       "women": 11,
       "men": 13,
       "deviationCount": 0
@@ -276,12 +225,10 @@
       "year": 2025,
       "date": "2025-04-24",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 14,
       "personCount": 14,
       "distance600": 6,
       "distance1200": 8,
-      "distance1500": 0,
       "women": 4,
       "men": 10,
       "deviationCount": 0
@@ -291,12 +238,10 @@
       "year": 2024,
       "date": "2024-04-27",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 26,
       "personCount": 26,
       "distance600": 8,
       "distance1200": 18,
-      "distance1500": 0,
       "women": 12,
       "men": 14,
       "deviationCount": 0
@@ -306,12 +251,10 @@
       "year": 2024,
       "date": "2024-04-25",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 41,
       "personCount": 41,
       "distance600": 21,
       "distance1200": 20,
-      "distance1500": 0,
       "women": 19,
       "men": 22,
       "deviationCount": 0
@@ -321,12 +264,10 @@
       "year": 2024,
       "date": "2024-04-20",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 48,
       "personCount": 43,
       "distance600": 18,
       "distance1200": 30,
-      "distance1500": 0,
       "women": 16,
       "men": 32,
       "deviationCount": 0
@@ -336,12 +277,10 @@
       "year": 2023,
       "date": "2023-05-29",
       "place": null,
-      "sourceType": "Enkelttestløp",
       "resultCount": 10,
       "personCount": 10,
       "distance600": 6,
       "distance1200": 4,
-      "distance1500": 0,
       "women": 5,
       "men": 5,
       "deviationCount": 0
@@ -351,12 +290,10 @@
       "year": 2023,
       "date": "2023-05-07",
       "place": null,
-      "sourceType": "Enkelttestløp",
       "resultCount": 12,
       "personCount": 12,
       "distance600": 4,
       "distance1200": 8,
-      "distance1500": 0,
       "women": 5,
       "men": 7,
       "deviationCount": 0
@@ -366,12 +303,10 @@
       "year": 2023,
       "date": "2023-05-06",
       "place": null,
-      "sourceType": "Enkelttestløp",
       "resultCount": 43,
       "personCount": 43,
       "distance600": 10,
       "distance1200": 33,
-      "distance1500": 0,
       "women": 27,
       "men": 16,
       "deviationCount": 0
@@ -381,12 +316,10 @@
       "year": 2023,
       "date": "2023-05-04",
       "place": null,
-      "sourceType": "Enkelttestløp",
       "resultCount": 46,
       "personCount": 46,
       "distance600": 15,
       "distance1200": 31,
-      "distance1500": 0,
       "women": 18,
       "men": 28,
       "deviationCount": 0
@@ -396,12 +329,10 @@
       "year": 2022,
       "date": "2022-05-07",
       "place": "NIH-banen",
-      "sourceType": "Enkelttestløp",
       "resultCount": 11,
       "personCount": 11,
       "distance600": 6,
       "distance1200": 5,
-      "distance1500": 0,
       "women": 5,
       "men": 6,
       "deviationCount": 0
@@ -411,12 +342,10 @@
       "year": 2022,
       "date": "2022-05-05",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 32,
       "personCount": 32,
       "distance600": 10,
       "distance1200": 22,
-      "distance1500": 0,
       "women": 13,
       "men": 19,
       "deviationCount": 0
@@ -426,12 +355,10 @@
       "year": 2022,
       "date": "2022-05-03",
       "place": "Bislett",
-      "sourceType": "Enkelttestløp",
       "resultCount": 1,
       "personCount": 1,
       "distance600": 0,
       "distance1200": 1,
-      "distance1500": 0,
       "women": 0,
       "men": 1,
       "deviationCount": 0

@@ -47,8 +47,8 @@ def main() -> int:
             errors.append(f"{label}: navn mangler")
         if row.get("gender") not in {"Kvinner", "Menn"}:
             errors.append(f"{label}: kjønn er ikke Kvinner eller Menn")
-        if row.get("distance") not in {600, 1200, 1500}:
-            errors.append(f"{label}: distanse er ikke 600, 1200 eller 1500")
+        if row.get("distance") not in {600, 1200}:
+            errors.append(f"{label}: distanse er ikke 600 eller 1200")
         if row.get("validToplist") and row.get("timeSeconds") is None:
             errors.append(f"{label}: gyldig_toppliste har ikke gyldig tid")
         if row.get("validRecord") and row.get("timeSeconds") is None:

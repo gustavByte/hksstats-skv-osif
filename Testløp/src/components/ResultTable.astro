@@ -43,7 +43,7 @@ const rows = shouldSort ? sortByTime(results) : results;
             data-group={`${result.distance} ${genderShort(result.gender)}`}
             data-time={result.timeSeconds ?? ""}
             data-valid={result.validToplist ? "true" : "false"}
-            data-search={`${result.name} ${result.testlopId || ""} ${result.sourceType || ""} ${result.note || ""}`.toLowerCase()}
+            data-search={`${result.name} ${result.testlopId || ""} ${result.note || ""}`.toLowerCase()}
           >
             {showRank && <td class="num col-rank" data-rank>{result.timeSeconds == null ? "" : index + 1}</td>}
             <td class="name-cell col-name"><a href={href(`/person/${result.personId}/`)}>{result.name}</a></td>

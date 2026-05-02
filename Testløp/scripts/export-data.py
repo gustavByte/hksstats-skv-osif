@@ -17,7 +17,7 @@ WORKBOOK_PATH = ROOT / "data" / "Testlop_HKS.xlsx"
 EXTRA_2026_WORKBOOK_PATH = ROOT / "data" / "2026_HKS_Testlop_Resultater_Pamelding_Hjelpere.xlsx"
 OUTPUT_DIR = ROOT / "src" / "data"
 
-DISTANCES = (600, 1200, 1500)
+DISTANCES = (600, 1200)
 GENDERS = ("Kvinner", "Menn")
 PLACE_BY_YEAR = {
     2025: "Bislett",
@@ -68,10 +68,6 @@ NAME_ALIAS_OVERRIDES = {
     "Siri Staver": "Siri Vegsund Staver",
     "Elisavbeth Ø": "Elisabeth Øiulfstad",
     "Frida Konow": "Frida Bjørnstad Konow",
-    "Fredrik Aleksander Skovdahl Killerud": "Fredrik Killerud",
-    "Jakob Slengesol": "Jakob Slengsol",
-    "Joakim Skjæggestad Mohn": "Joakim Mohn",
-    "Truls Vegard Skarvøy": "Truls Skarvøy",
 }
 
 MANUAL_NAME_REVIEW_GROUPS = [
@@ -96,10 +92,6 @@ MANUAL_NAME_REVIEW_GROUPS = [
     ["Siri Staver", "Siri Vegsund Staver"],
     ["Elisavbeth Ø", "Elisabeth Øiulfstad"],
     ["Frida Konow", "Frida Bjørnstad Konow"],
-    ["Fredrik Aleksander Skovdahl Killerud", "Fredrik Killerud"],
-    ["Jakob Slengesol", "Jakob Slengsol"],
-    ["Joakim Skjæggestad Mohn", "Joakim Mohn"],
-    ["Truls Vegard Skarvøy", "Truls Skarvøy"],
 ]
 
 
@@ -541,10 +533,6 @@ def build_matrices(results: list[dict[str, Any]], years: list[int]) -> list[dict
 
 def build_stats(results: list[dict[str, Any]], years: list[int]) -> dict[str, Any]:
     year_stats = []
-
-    def is_banelop(row: dict[str, Any]) -> bool:
-        return row["sourceType"] == "Baneløp"
-
     for year in years:
         rows = [row for row in results if row["year"] == year]
         breakdown = {
@@ -561,8 +549,7 @@ def build_stats(results: list[dict[str, Any]], years: list[int]) -> dict[str, An
                 "year": year,
                 "resultCount": len(rows),
                 "personCount": len({row["personId"] for row in rows}),
-                "testlopCount": len({row["testlopId"] for row in rows if row["testlopId"] and not is_banelop(row)}),
-                "banelopCount": len({row["testlopId"] for row in rows if row["testlopId"] and is_banelop(row)}),
+                "testlopCount": len({row["testlopId"] for row in rows if row["testlopId"]}),
                 "deviationCount": sum(1 for row in rows if row["checkStatus"] != "OK"),
                 "breakdown": breakdown,
             }
@@ -579,14 +566,10 @@ def build_stats(results: list[dict[str, Any]], years: list[int]) -> dict[str, An
                 "year": rows[0]["year"],
                 "date": dates[0] if dates else None,
                 "place": Counter(places).most_common(1)[0][0] if places else None,
-                "sourceType": Counter(row["sourceType"] for row in rows if row["sourceType"]).most_common(1)[0][0]
-                if any(row["sourceType"] for row in rows)
-                else None,
                 "resultCount": len(rows),
                 "personCount": len({row["personId"] for row in rows}),
                 "distance600": sum(1 for row in rows if row["distance"] == 600),
                 "distance1200": sum(1 for row in rows if row["distance"] == 1200),
-                "distance1500": sum(1 for row in rows if row["distance"] == 1500),
                 "women": sum(1 for row in rows if row["gender"] == "Kvinner"),
                 "men": sum(1 for row in rows if row["gender"] == "Menn"),
                 "deviationCount": sum(1 for row in rows if row["checkStatus"] != "OK"),
@@ -607,8 +590,7 @@ def build_stats(results: list[dict[str, Any]], years: list[int]) -> dict[str, An
         "totals": {
             "results": len(results),
             "people": len({row["personId"] for row in results}),
-            "testlop": len({row["testlopId"] for row in results if row["testlopId"] and not is_banelop(row)}),
-            "banelop": len({row["testlopId"] for row in results if row["testlopId"] and is_banelop(row)}),
+            "testlop": len({row["testlopId"] for row in results if row["testlopId"]}),
             "deviations": sum(1 for row in results if row["checkStatus"] != "OK"),
         },
         "yearStats": sorted(year_stats, key=lambda item: item["year"], reverse=True),

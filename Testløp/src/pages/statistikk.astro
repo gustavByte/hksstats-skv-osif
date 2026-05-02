@@ -15,7 +15,7 @@ const bothDistanceRows = [...people]
   .sort((a, b) => b.resultCount - a.resultCount || a.name.localeCompare(b.name))
   .slice(0, 12);
 const improvementRows = [...people]
-  .flatMap((person) => [600, 1200, 1500].map((distance) => {
+  .flatMap((person) => [600, 1200].map((distance) => {
     const rows = resultRows.filter((result) => result.personId === person.personId && result.distance === distance && result.validToplist);
     const result2025 = bestValid(rows.filter((result) => result.year === 2025));
     const result2026 = bestValid(rows.filter((result) => result.year === 2026));
@@ -122,10 +122,7 @@ const improvementRows = [...people]
             <th class="num">600 M</th>
             <th class="num">1200 K</th>
             <th class="num">1200 M</th>
-            <th class="num">1500 K</th>
-            <th class="num">1500 M</th>
             <th class="num">Testløp</th>
-            <th class="num">Baneløp</th>
             <th class="num">Avvik</th>
           </tr>
         </thead>
@@ -139,10 +136,7 @@ const improvementRows = [...people]
               <td class="num">{row.breakdown["600_Menn"]}</td>
               <td class="num">{row.breakdown["1200_Kvinner"]}</td>
               <td class="num">{row.breakdown["1200_Menn"]}</td>
-              <td class="num">{row.breakdown["1500_Kvinner"]}</td>
-              <td class="num">{row.breakdown["1500_Menn"]}</td>
               <td class="num">{row.testlopCount}</td>
-              <td class="num">{row.banelopCount}</td>
               <td class="num">{row.deviationCount}</td>
             </tr>
           ))}
@@ -150,20 +144,18 @@ const improvementRows = [...people]
       </table>
     </div>
 
-    <h2 class="section-title">Per løp</h2>
+    <h2 class="section-title">Per testløp</h2>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>Løp</th>
+            <th>Testløp</th>
             <th>Dato</th>
             <th>Sted</th>
-            <th>Type</th>
             <th class="num">Resultater</th>
             <th class="num">Personer</th>
             <th class="num">600</th>
             <th class="num">1200</th>
-            <th class="num">1500</th>
             <th class="num">K</th>
             <th class="num">M</th>
           </tr>
@@ -174,12 +166,10 @@ const improvementRows = [...people]
               <td>{row.testlopId}</td>
               <td>{formatFullDate(row.date)}</td>
               <td>{row.place || "-"}</td>
-              <td>{row.sourceType || "Testløp"}</td>
               <td class="num">{row.resultCount}</td>
               <td class="num">{row.personCount}</td>
               <td class="num">{row.distance600}</td>
               <td class="num">{row.distance1200}</td>
-              <td class="num">{row.distance1500}</td>
               <td class="num">{row.women}</td>
               <td class="num">{row.men}</td>
             </tr>

@@ -512,107 +512,11 @@
         "frida_bjornstad_konow"
       ],
       "needsReview": false
-    },
-    {
-      "names": [
-        "Fredrik Aleksander Skovdahl Killerud",
-        "Fredrik Killerud"
-      ],
-      "entries": [
-        {
-          "alias": "Fredrik Aleksander Skovdahl Killerud",
-          "personId": "fredrik_killerud",
-          "status": "Avklart i nettside",
-          "comment": null
-        },
-        {
-          "alias": "Fredrik Killerud",
-          "personId": "fredrik_killerud",
-          "status": "OK",
-          "comment": null
-        }
-      ],
-      "personIds": [
-        "fredrik_killerud"
-      ],
-      "needsReview": false
-    },
-    {
-      "names": [
-        "Jakob Slengesol",
-        "Jakob Slengsol"
-      ],
-      "entries": [
-        {
-          "alias": "Jakob Slengesol",
-          "personId": "jakob_slengsol",
-          "status": "Avklart i nettside",
-          "comment": null
-        },
-        {
-          "alias": "Jakob Slengsol",
-          "personId": "jakob_slengsol",
-          "status": "OK",
-          "comment": null
-        }
-      ],
-      "personIds": [
-        "jakob_slengsol"
-      ],
-      "needsReview": false
-    },
-    {
-      "names": [
-        "Joakim Skjæggestad Mohn",
-        "Joakim Mohn"
-      ],
-      "entries": [
-        {
-          "alias": "Joakim Skjæggestad Mohn",
-          "personId": "joakim_mohn",
-          "status": "Avklart i nettside",
-          "comment": null
-        },
-        {
-          "alias": "Joakim Mohn",
-          "personId": "joakim_mohn",
-          "status": "OK",
-          "comment": null
-        }
-      ],
-      "personIds": [
-        "joakim_mohn"
-      ],
-      "needsReview": false
-    },
-    {
-      "names": [
-        "Truls Vegard Skarvøy",
-        "Truls Skarvøy"
-      ],
-      "entries": [
-        {
-          "alias": "Truls Vegard Skarvøy",
-          "personId": "truls_skarvoy",
-          "status": "Avklart i nettside",
-          "comment": null
-        },
-        {
-          "alias": "Truls Skarvøy",
-          "personId": "truls_skarvoy",
-          "status": "OK",
-          "comment": null
-        }
-      ],
-      "personIds": [
-        "truls_skarvoy"
-      ],
-      "needsReview": false
     }
   ],
   "summary": {
     "deviationCount": 0,
     "manualNameReviewCount": 0,
-    "archivedNameReviewCount": 25
+    "archivedNameReviewCount": 21
   }
 }

@@ -18,9 +18,7 @@ const personResults = (results as ResultRow[])
   .filter((result) => result.personId === person.personId)
   .sort((a, b) => (a.year - b.year) || (a.date || "").localeCompare(b.date || ""));
 
-const distances = [600, 1200, 1500];
-
-const summaries = distances.map((distance) => {
+const summaries = [600, 1200].map((distance) => {
   const rows = personResults.filter((result) => result.distance === distance && result.validToplist);
   const first = [...rows].sort((a, b) => (a.date || "").localeCompare(b.date || ""))[0] || null;
   const best = bestValid(rows);
@@ -33,7 +31,7 @@ const summaries = distances.map((distance) => {
 });
 
 const years = [...stats.years].sort((a, b) => a - b);
-const yearBestRows = distances.map((distance) => {
+const yearBestRows = [600, 1200].map((distance) => {
   const distanceRows = personResults.filter((result) => result.distance === distance && result.validToplist);
   const cells = Object.fromEntries(
     years.map((year) => [
@@ -70,10 +68,6 @@ const yearBestRows = distances.map((distance) => {
       <div class="summary-item">
         <span class="summary-label">PB 1200 m</span>
         <span class="summary-value">{displayTime(person.pb["1200"])}</span>
-      </div>
-      <div class="summary-item">
-        <span class="summary-label">PB 1500 m</span>
-        <span class="summary-value">{displayTime(person.pb["1500"])}</span>
       </div>
       <div class="summary-item">
         <span class="summary-label">År</span>

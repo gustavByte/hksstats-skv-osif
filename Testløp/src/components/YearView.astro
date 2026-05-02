@@ -14,7 +14,6 @@ const stat = numericYear == null ? null : stats.yearStats.find((item) => item.ye
 const resultCount = isAllYears ? stats.totals.results : stat?.resultCount ?? 0;
 const personCount = isAllYears ? stats.totals.people : stat?.personCount ?? 0;
 const testlopCount = isAllYears ? stats.totals.testlop : stat?.testlopCount ?? 0;
-const banelopCount = isAllYears ? stats.totals.banelop : stat?.banelopCount ?? 0;
 const title = isAllYears ? "Alle år" : String(year);
 const isSoFarYear = numericYear === 2026;
 const quickFilters = [
@@ -22,8 +21,6 @@ const quickFilters = [
   { label: "600 M", distance: "600", gender: "Menn" },
   { label: "1200 K", distance: "1200", gender: "Kvinner" },
   { label: "1200 M", distance: "1200", gender: "Menn" },
-  { label: "1500 K", distance: "1500", gender: "Kvinner" },
-  { label: "1500 M", distance: "1500", gender: "Menn" },
   { label: "Alle", distance: "all", gender: "all" },
 ];
 ---
@@ -39,7 +36,6 @@ const quickFilters = [
         <span>{resultCount} resultater</span>
         <span>{personCount} personer</span>
         <span>{testlopCount} testløp</span>
-        {banelopCount > 0 && <span>{banelopCount} baneløp</span>}
         {isSoFarYear && <span>foreløpig status</span>}
         <span><span data-visible-count>{results.length}</span> vist</span>
       </div>
@@ -77,7 +73,7 @@ const quickFilters = [
       ))}
     </div>
     <div class="toolbar-group mobile-hide-filter">
-      {[600, 1200, 1500].map((distance) => (
+      {[600, 1200].map((distance) => (
         <button class:list={["chip", distance === 600 && "is-active"]} data-filter-name="distance" data-filter-value={String(distance)} aria-pressed={distance === 600 ? "true" : "false"}>
           {distance} m
         </button>

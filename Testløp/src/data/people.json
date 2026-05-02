@@ -37,8 +37,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -79,8 +78,7 @@
         "sourceCell": "C28:D28",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -121,8 +119,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -163,8 +160,7 @@
         "sourceCell": "C181:D181",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -205,8 +201,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -247,8 +242,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -289,8 +283,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -331,8 +324,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -373,8 +365,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -415,8 +406,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -457,8 +447,7 @@
         "sourceCell": "C236:D236",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -499,8 +488,7 @@
         "sourceCell": "C214:D214",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -542,8 +530,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -584,8 +571,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -627,8 +613,7 @@
         "sourceCell": "C122:D122",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -669,8 +654,7 @@
         "sourceCell": "C21:D21",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -712,8 +696,7 @@
         "sourceCell": "C22:D22",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -754,8 +737,7 @@
         "sourceCell": "C11:D11",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -796,8 +778,7 @@
         "sourceCell": "E17:F17",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -839,8 +820,7 @@
         "sourceCell": "C11:D11",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -881,8 +861,7 @@
         "sourceCell": "C23:D23",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -923,8 +902,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -965,49 +943,6 @@
         "sourceSheet": "2024",
         "sourceCell": "C215:D215",
         "sourceType": "Enkelttestløp",
-        "checkStatus": "OK"
-      },
-      "1500": null
-    }
-  },
-  {
-    "personId": "anna_marie_nordengen_sirevag",
-    "name": "Anna Marie Nordengen Sirevåg",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Kvinner"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_016",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Kvinner",
-        "name": "Anna Marie Nordengen Sirevåg",
-        "originalName": "Anna Marie Nordengen Sirevåg",
-        "personId": "anna_marie_nordengen_sirevag",
-        "timeOriginal": "4:23.48",
-        "timeSeconds": 263.48,
-        "timeDisplay": "4:23,48",
-        "note": "PB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A170:J170",
-        "sourceType": "Baneløp",
         "checkStatus": "OK"
       }
     }
@@ -1051,8 +986,7 @@
         "sourceCell": "C221:D221",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1093,8 +1027,7 @@
         "sourceCell": "C26:D26",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1135,8 +1068,7 @@
         "sourceCell": "E22:F22",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1178,8 +1110,7 @@
         "sourceCell": "D21:E21",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1221,8 +1152,7 @@
         "sourceCell": "C213:D213",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1286,8 +1216,7 @@
         "sourceCell": "C92:D92",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1352,8 +1281,7 @@
         "sourceCell": "C31:D31",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1394,8 +1322,7 @@
         "sourceCell": "C151:D151",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1436,8 +1363,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -1480,8 +1406,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -1522,8 +1447,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -1587,8 +1511,7 @@
         "sourceCell": "C26:D26",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1631,8 +1554,7 @@
         "sourceCell": "C118:D118",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1673,8 +1595,7 @@
         "sourceCell": "A40:B40",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -1715,8 +1636,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -1756,49 +1676,6 @@
         "sourceSheet": "2022",
         "sourceCell": "A27:B27",
         "sourceType": "Enkelttestløp",
-        "checkStatus": "OK"
-      },
-      "1500": null
-    }
-  },
-  {
-    "personId": "caroline_marie_wiig",
-    "name": "Caroline Marie Wiig",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Kvinner"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_020",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Kvinner",
-        "name": "Caroline Marie Wiig",
-        "originalName": "Caroline Marie Wiig",
-        "personId": "caroline_marie_wiig",
-        "timeOriginal": "5:28.66",
-        "timeSeconds": 328.66,
-        "timeDisplay": "5:28,66",
-        "note": "SB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A178:J178",
-        "sourceType": "Baneløp",
         "checkStatus": "OK"
       }
     }
@@ -1841,8 +1718,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -1883,8 +1759,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -1925,8 +1800,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -1992,8 +1866,7 @@
         "sourceCell": "C176:D176",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2034,8 +1907,7 @@
         "sourceCell": "C18:D18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2076,8 +1948,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -2118,8 +1989,7 @@
         "sourceCell": "E52:F52",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2159,49 +2029,6 @@
         "sourceSheet": "2023",
         "sourceCell": "C53:D53",
         "sourceType": "Enkelttestløp",
-        "checkStatus": "OK"
-      },
-      "1500": null
-    }
-  },
-  {
-    "personId": "david_ormstad_meier",
-    "name": "David Ormstad Meier",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_004",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "David Ormstad Meier",
-        "originalName": "David Ormstad Meier",
-        "personId": "david_ormstad_meier",
-        "timeOriginal": "4:04.89",
-        "timeSeconds": 244.89,
-        "timeDisplay": "4:04,89",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A66:J66",
-        "sourceType": "Baneløp",
         "checkStatus": "OK"
       }
     }
@@ -2267,8 +2094,7 @@
         "sourceCell": "C124:D124",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2309,8 +2135,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -2375,8 +2200,7 @@
         "sourceCell": "E54:F54",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2417,8 +2241,7 @@
         "sourceCell": "A26:B26",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2459,8 +2282,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -2524,8 +2346,7 @@
         "sourceCell": "C33:D33",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2566,8 +2387,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -2608,8 +2428,7 @@
         "sourceCell": "C108:D108",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2650,8 +2469,7 @@
         "sourceCell": "E57:F57",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2693,8 +2511,7 @@
         "sourceCell": "G50:H50",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2735,8 +2552,7 @@
         "sourceCell": "C22:D22",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2777,8 +2593,7 @@
         "sourceCell": "G51:H51",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2819,8 +2634,7 @@
         "sourceCell": "E24:F24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2861,8 +2675,7 @@
         "sourceCell": "C17:D17",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2903,8 +2716,7 @@
         "sourceCell": "E53:F53",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2945,8 +2757,7 @@
         "sourceCell": "E21:F21",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -2987,8 +2798,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -3029,8 +2839,7 @@
         "sourceCell": "C27:D27",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3071,8 +2880,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -3113,50 +2921,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "emilie_mo",
-    "name": "Emilie Mo",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Kvinner"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_018",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Kvinner",
-        "name": "Emilie Mo",
-        "originalName": "Emilie Mo",
-        "personId": "emilie_mo",
-        "timeOriginal": "4:41.53",
-        "timeSeconds": 281.53,
-        "timeDisplay": "4:41,53",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A173:J173",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -3198,8 +2963,7 @@
         "sourceCell": "A23:B23",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3264,8 +3028,7 @@
         "sourceCell": "C23:D23",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3329,8 +3092,7 @@
         "sourceCell": "C36:D36",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3371,8 +3133,7 @@
         "sourceCell": "G52:H52",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3437,8 +3198,7 @@
         "sourceCell": "C130:D130",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3479,8 +3239,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -3521,8 +3280,7 @@
         "sourceCell": "C22:D22",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3564,8 +3322,7 @@
         "sourceCell": "C114:D114",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3609,8 +3366,7 @@
         "sourceCell": "C110:D110",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3651,8 +3407,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -3693,8 +3448,7 @@
         "sourceCell": "G53:H53",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3735,8 +3489,7 @@
         "sourceCell": "C32:D32",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3778,8 +3531,7 @@
         "sourceCell": "C244:D244",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3821,8 +3573,7 @@
         "sourceCell": "C30:D30",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3863,8 +3614,7 @@
         "sourceCell": "C25:D25",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -3905,8 +3655,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -3969,8 +3718,7 @@
         "sourceCell": "C243:D243",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4034,8 +3782,7 @@
         "sourceCell": "C241:D241",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4100,14 +3847,13 @@
         "sourceCell": "C29:D29",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
     "personId": "fredrik_killerud",
     "name": "Fredrik Killerud",
-    "resultCount": 5,
+    "resultCount": 4,
     "firstYear": 2023,
     "lastYear": 2026,
     "years": [
@@ -4120,8 +3866,7 @@
     ],
     "distances": [
       600,
-      1200,
-      1500
+      1200
     ],
     "pb": {
       "600": {
@@ -4167,28 +3912,6 @@
         "sourceCell": "C20:D20",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": {
-        "id": "RBS2026_008",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Fredrik Killerud",
-        "originalName": "Fredrik Aleksander Skovdahl Killerud",
-        "personId": "fredrik_killerud",
-        "timeOriginal": "4:11.82",
-        "timeSeconds": 251.82,
-        "timeDisplay": "4:11,82",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A72:J72",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
       }
     }
   },
@@ -4231,8 +3954,7 @@
         "sourceCell": "E64:F64",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4273,8 +3995,7 @@
         "sourceCell": "E50:F50",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4339,8 +4060,7 @@
         "sourceCell": "C10:D10",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4382,8 +4102,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -4424,8 +4143,7 @@
         "sourceCell": "C60:D60",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4466,8 +4184,7 @@
         "sourceCell": "C158:D158",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4508,8 +4225,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -4550,8 +4266,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -4594,8 +4309,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -4636,8 +4350,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -4678,8 +4391,7 @@
         "sourceCell": "C19:D19",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4720,8 +4432,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -4763,8 +4474,7 @@
         "sourceCell": "C109:D109",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4805,8 +4515,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -4872,8 +4581,7 @@
         "sourceCell": "C120:D120",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4914,8 +4622,7 @@
         "sourceCell": "C19:D19",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -4958,8 +4665,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -5000,8 +4706,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -5042,8 +4747,7 @@
         "sourceCell": "C13:D13",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5084,8 +4788,7 @@
         "sourceCell": "G20:H20",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5126,8 +4829,7 @@
         "sourceCell": "C19:D19",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5171,8 +4873,7 @@
         "sourceCell": "C14:D14",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5213,8 +4914,7 @@
         "sourceCell": "A33:B33",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5255,8 +4955,7 @@
         "sourceCell": "C154:D154",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5297,8 +4996,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -5339,8 +5037,7 @@
         "sourceCell": "C21:D21",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5381,8 +5078,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -5424,8 +5120,7 @@
         "sourceCell": "D31:E31",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5466,8 +5161,7 @@
         "sourceCell": "E30:F30",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5509,8 +5203,7 @@
         "sourceCell": "C180:D180",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5575,8 +5268,7 @@
         "sourceCell": "C240:D240",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5617,8 +5309,7 @@
         "sourceCell": "E58:F58",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5659,8 +5350,7 @@
         "sourceCell": "C23:D23",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5701,8 +5391,7 @@
         "sourceCell": "C116:D116",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5744,8 +5433,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -5786,8 +5474,7 @@
         "sourceCell": "C10:D10",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5828,8 +5515,7 @@
         "sourceCell": "C152:D152",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5870,8 +5556,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -5913,8 +5598,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -5955,8 +5639,7 @@
         "sourceCell": "E23:F23",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -5997,68 +5680,23 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
-    "personId": "iver_johan_andreassen_holm",
-    "name": "Iver Johan Andreassen-Holm",
+    "personId": "jakob_slengsol",
+    "name": "Jakob Slengsol",
     "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
+    "firstYear": 2023,
+    "lastYear": 2023,
     "years": [
-      2026
+      2023
     ],
     "genders": [
       "Menn"
     ],
     "distances": [
       600
-    ],
-    "pb": {
-      "600": {
-        "id": "RBS2026_001",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 600,
-        "gender": "Menn",
-        "name": "Iver Johan Andreassen-Holm",
-        "originalName": "Iver Johan Andreassen-Holm",
-        "personId": "iver_johan_andreassen_holm",
-        "timeOriginal": "1:28.13",
-        "timeSeconds": 88.13,
-        "timeDisplay": "1:28,13",
-        "note": "PB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A11:J11",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "jakob_slengsol",
-    "name": "Jakob Slengsol",
-    "resultCount": 2,
-    "firstYear": 2023,
-    "lastYear": 2026,
-    "years": [
-      2023,
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      600,
-      1500
     ],
     "pb": {
       "600": {
@@ -6083,29 +5721,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_006",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Jakob Slengsol",
-        "originalName": "Jakob Slengesol",
-        "personId": "jakob_slengsol",
-        "timeOriginal": "4:05.57",
-        "timeSeconds": 245.57,
-        "timeDisplay": "4:05,57",
-        "note": "PB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A69:J69",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -6170,8 +5786,7 @@
         "sourceCell": "C242:D242",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6212,8 +5827,7 @@
         "sourceCell": "C10:D10",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6279,8 +5893,7 @@
         "sourceCell": "D32:E32",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6321,27 +5934,24 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
     "personId": "joakim_mohn",
     "name": "Joakim Mohn",
-    "resultCount": 3,
+    "resultCount": 2,
     "firstYear": 2023,
-    "lastYear": 2026,
+    "lastYear": 2025,
     "years": [
       2023,
-      2025,
-      2026
+      2025
     ],
     "genders": [
       "Menn"
     ],
     "distances": [
-      1200,
-      1500
+      1200
     ],
     "pb": {
       "600": null,
@@ -6365,28 +5975,6 @@
         "sourceSheet": "HKS 2025-05-03 Løp #4",
         "sourceCell": "C24:D24",
         "sourceType": "Enkelttestløp",
-        "checkStatus": "OK"
-      },
-      "1500": {
-        "id": "RBS2026_014",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Joakim Mohn",
-        "originalName": "Joakim Skjæggestad Mohn",
-        "personId": "joakim_mohn",
-        "timeOriginal": "3:58.49",
-        "timeSeconds": 238.49,
-        "timeDisplay": "3:58,49",
-        "note": "PB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A100:J100",
-        "sourceType": "Baneløp",
         "checkStatus": "OK"
       }
     }
@@ -6431,8 +6019,7 @@
         "sourceCell": "C15:D15",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6473,14 +6060,13 @@
         "sourceCell": "C22:D22",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
     "personId": "jonas_njerve",
     "name": "Jonas Njerve",
-    "resultCount": 6,
+    "resultCount": 5,
     "firstYear": 2024,
     "lastYear": 2026,
     "years": [
@@ -6493,8 +6079,7 @@
     ],
     "distances": [
       600,
-      1200,
-      1500
+      1200
     ],
     "pb": {
       "600": {
@@ -6540,28 +6125,6 @@
         "sourceCell": "C113:D113",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": {
-        "id": "RBS2026_009",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Jonas Njerve",
-        "originalName": "Jonas Njerve",
-        "personId": "jonas_njerve",
-        "timeOriginal": "4:16.67",
-        "timeSeconds": 256.67,
-        "timeDisplay": "4:16,67",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A74:J74",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
       }
     }
   },
@@ -6603,8 +6166,7 @@
         "sourceCell": "C21:D21",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6645,8 +6207,7 @@
         "sourceCell": "D33:E33",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6687,8 +6248,7 @@
         "sourceCell": "C129:D129",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6729,8 +6289,7 @@
         "sourceCell": "G18:H18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6772,8 +6331,7 @@
         "sourceCell": "C217:D217",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6814,8 +6372,7 @@
         "sourceCell": "E18:F18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6856,8 +6413,7 @@
         "sourceCell": "C148:D148",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -6898,8 +6454,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -6940,8 +6495,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -6982,8 +6536,7 @@
         "sourceCell": "C52:D52",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7024,8 +6577,7 @@
         "sourceCell": "E29:F29",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7066,8 +6618,7 @@
         "sourceCell": "C150:D150",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7108,8 +6659,7 @@
         "sourceCell": "C24:D24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7151,8 +6701,7 @@
         "sourceCell": "C220:D220",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7194,50 +6743,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "kasper_sorlie_reininger",
-    "name": "Kasper Sørlie-Reininger",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_002",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Kasper Sørlie-Reininger",
-        "originalName": "Kasper Sørlie-Reininger",
-        "personId": "kasper_sorlie_reininger",
-        "timeOriginal": "3:59.37",
-        "timeSeconds": 239.37,
-        "timeDisplay": "3:59,37",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A64:J64",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -7278,8 +6784,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -7320,8 +6825,7 @@
         "sourceCell": "C177:D177",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7362,8 +6866,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -7404,8 +6907,7 @@
         "sourceCell": "C23:D23",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7446,8 +6948,7 @@
         "sourceCell": "C21:D21",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7488,8 +6989,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -7531,8 +7031,7 @@
         "sourceCell": "C17:D17",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7573,50 +7072,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "kristine_meinert_rod",
-    "name": "Kristine Meinert Rød",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Kvinner"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_017",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Kvinner",
-        "name": "Kristine Meinert Rød",
-        "originalName": "Kristine Meinert Rød",
-        "personId": "kristine_meinert_rod",
-        "timeOriginal": "4:30.44",
-        "timeSeconds": 270.44,
-        "timeDisplay": "4:30,44",
-        "note": "PB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A171:J171",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -7657,8 +7113,7 @@
         "sourceCell": "C20:D20",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7699,8 +7154,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -7741,8 +7195,7 @@
         "sourceCell": "C56:D56",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7783,8 +7236,7 @@
         "sourceCell": "C20:D20",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7825,8 +7277,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -7868,8 +7319,7 @@
         "sourceCell": "C179:D179",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7910,8 +7360,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -7952,8 +7401,7 @@
         "sourceCell": "E28:F28",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -7994,8 +7442,7 @@
         "sourceCell": "C11:D11",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8059,8 +7506,7 @@
         "sourceCell": "C91:D91",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8101,50 +7547,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "madelen_tronstad_sagebakken",
-    "name": "Madelén Tronstad Sagebakken",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Kvinner"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_019",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Kvinner",
-        "name": "Madelén Tronstad Sagebakken",
-        "originalName": "Madelén Tronstad Sagebakken",
-        "personId": "madelen_tronstad_sagebakken",
-        "timeOriginal": "4:58.58",
-        "timeSeconds": 298.58,
-        "timeDisplay": "4:58,58",
-        "note": "PB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A176:J176",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -8185,8 +7588,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -8227,8 +7629,7 @@
         "sourceCell": "A36:B36",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8269,8 +7670,7 @@
         "sourceCell": "A42:B42",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8311,8 +7711,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -8353,8 +7752,7 @@
         "sourceCell": "C112:D112",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8419,8 +7817,7 @@
         "sourceCell": "C218:D218",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8462,8 +7859,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -8504,8 +7900,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -8548,8 +7943,7 @@
         "sourceCell": "C147:D147",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8614,8 +8008,7 @@
         "sourceCell": "C15:D15",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8656,8 +8049,7 @@
         "sourceCell": "E19:F19",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8698,8 +8090,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -8740,8 +8131,7 @@
         "sourceCell": "C219:D219",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8783,8 +8173,7 @@
         "sourceCell": "C17:D17",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8825,8 +8214,7 @@
         "sourceCell": "A35:B35",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8868,8 +8256,7 @@
         "sourceCell": "C12:D12",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8910,8 +8297,7 @@
         "sourceCell": "C16:D16",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8952,8 +8338,7 @@
         "sourceCell": "A28:B28",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -8994,8 +8379,7 @@
         "sourceCell": "C59:D59",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9037,8 +8421,7 @@
         "sourceCell": "C24:D24",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9079,8 +8462,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -9122,8 +8504,7 @@
         "sourceCell": "C27:D27",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9164,8 +8545,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -9210,8 +8590,7 @@
         "sourceCell": "C22:D22",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9252,8 +8631,7 @@
         "sourceCell": "C11:D11",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9294,8 +8672,7 @@
         "sourceCell": "E16:F16",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9337,8 +8714,7 @@
         "sourceCell": "C22:D22",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9380,8 +8756,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -9422,50 +8797,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "nicolay_andersen",
-    "name": "Nicolay Andersen",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_013",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Nicolay Andersen",
-        "originalName": "Nicolay Andersen",
-        "personId": "nicolay_andersen",
-        "timeOriginal": "3:56.43",
-        "timeSeconds": 236.43,
-        "timeDisplay": "3:56,43",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A96:J96",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -9506,8 +8838,7 @@
         "sourceCell": "C66:D66",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9548,8 +8879,7 @@
         "sourceCell": "E61:F61",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9592,8 +8922,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -9634,8 +8963,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -9676,8 +9004,7 @@
         "sourceCell": "C29:D29",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9718,8 +9045,7 @@
         "sourceCell": "A24:B24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9760,8 +9086,7 @@
         "sourceCell": "C90:D90",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9802,8 +9127,7 @@
         "sourceCell": "C13:D13",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9844,8 +9168,7 @@
         "sourceCell": "E56:F56",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9887,8 +9210,7 @@
         "sourceCell": "C31:D31",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -9928,49 +9250,6 @@
         "sourceSheet": "HKS 2025-04-29 Løp #3",
         "sourceCell": "C35:D35",
         "sourceType": "Enkelttestløp",
-        "checkStatus": "OK"
-      },
-      "1500": null
-    }
-  },
-  {
-    "personId": "ole_skjelten_daasvatn",
-    "name": "Ole Skjelten Daasvatn",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_003",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Ole Skjelten Daasvatn",
-        "originalName": "Ole Skjelten Daasvatn",
-        "personId": "ole_skjelten_daasvatn",
-        "timeOriginal": "4:03.93",
-        "timeSeconds": 243.93,
-        "timeDisplay": "4:03,93",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A65:J65",
-        "sourceType": "Baneløp",
         "checkStatus": "OK"
       }
     }
@@ -10013,8 +9292,7 @@
         "sourceCell": "C19:D19",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10055,8 +9333,7 @@
         "sourceCell": "C65:D65",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10097,8 +9374,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -10139,8 +9415,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -10181,8 +9456,7 @@
         "sourceCell": "A22:B22",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10223,8 +9497,7 @@
         "sourceCell": "C12:D12",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10265,8 +9538,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -10307,8 +9579,7 @@
         "sourceCell": "C131:D131",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10350,8 +9621,7 @@
         "sourceCell": "C117:D117",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10393,8 +9663,7 @@
         "sourceCell": "E15:F15",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10435,8 +9704,7 @@
         "sourceCell": "C51:D51",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10477,8 +9745,7 @@
         "sourceCell": "C156:D156",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10520,8 +9787,7 @@
         "sourceCell": "C10:D10",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10562,8 +9828,7 @@
         "sourceCell": "C16:D16",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10604,8 +9869,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -10646,8 +9910,7 @@
         "sourceCell": "G54:H54",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10688,8 +9951,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -10731,8 +9993,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -10795,8 +10056,7 @@
         "sourceCell": "E60:F60",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10837,8 +10097,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -10879,8 +10138,7 @@
         "sourceCell": "C54:D54",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10945,8 +10203,7 @@
         "sourceCell": "C34:D34",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -10987,8 +10244,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -11029,8 +10285,7 @@
         "sourceCell": "A37:B37",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11072,8 +10327,7 @@
         "sourceCell": "C155:D155",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11114,8 +10368,7 @@
         "sourceCell": "C57:D57",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11156,8 +10409,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -11221,8 +10473,7 @@
         "sourceCell": "E32:F32",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11266,8 +10517,7 @@
         "sourceCell": "E20:F20",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11312,8 +10562,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -11357,49 +10606,6 @@
         "sourceCell": "C64:D64",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
-    }
-  },
-  {
-    "personId": "sondre_taugbol_lomeland",
-    "name": "Sondre Taugbøl Lomeland",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_007",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Sondre Taugbøl Lomeland",
-        "originalName": "Sondre Taugbøl Lomeland",
-        "personId": "sondre_taugbol_lomeland",
-        "timeOriginal": "4:10.29",
-        "timeSeconds": 250.29,
-        "timeDisplay": "4:10,29",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A70:J70",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
       }
     }
   },
@@ -11442,8 +10648,7 @@
         "sourceCell": "C111:D111",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11484,8 +10689,7 @@
         "sourceCell": "C13:D13",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11526,8 +10730,7 @@
         "sourceCell": "C12:D12",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11568,8 +10771,7 @@
         "sourceCell": "C14:D14",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11610,8 +10812,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -11653,8 +10854,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -11695,8 +10895,7 @@
         "sourceCell": "C238:D238",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11760,8 +10959,7 @@
         "sourceCell": "C153:D153",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11803,8 +11001,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -11845,8 +11042,7 @@
         "sourceCell": "D22:E22",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11887,8 +11083,7 @@
         "sourceCell": "C88:D88",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11930,8 +11125,7 @@
         "sourceCell": "E34:F34",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -11974,8 +11168,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12016,8 +11209,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12058,56 +11250,13 @@
         "sourceCell": "C157:D157",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
-    }
-  },
-  {
-    "personId": "theodor_berre_jacobsen",
-    "name": "Theodor Berre Jacobsen",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_011",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Theodor Berre Jacobsen",
-        "originalName": "Theodor Berre Jacobsen",
-        "personId": "theodor_berre_jacobsen",
-        "timeOriginal": "3:55.25",
-        "timeSeconds": 235.25,
-        "timeDisplay": "3:55,25",
-        "note": "SB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A93:J93",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
       }
     }
   },
   {
     "personId": "thomas_kjellberg",
     "name": "Thomas Kjellberg",
-    "resultCount": 6,
+    "resultCount": 5,
     "firstYear": 2024,
     "lastYear": 2026,
     "years": [
@@ -12120,8 +11269,7 @@
     ],
     "distances": [
       600,
-      1200,
-      1500
+      1200
     ],
     "pb": {
       "600": {
@@ -12166,28 +11314,6 @@
         "sourceSheet": "HKS 2026-04-25 Løp #3",
         "sourceCell": "C19:D19",
         "sourceType": "2026-arbeidsbok",
-        "checkStatus": "OK"
-      },
-      "1500": {
-        "id": "RBS2026_005",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Thomas Kjellberg",
-        "originalName": "Thomas Kjellberg",
-        "personId": "thomas_kjellberg",
-        "timeOriginal": "4:05.34",
-        "timeSeconds": 245.34,
-        "timeDisplay": "4:05,34",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A67:J67",
-        "sourceType": "Baneløp",
         "checkStatus": "OK"
       }
     }
@@ -12254,8 +11380,7 @@
         "sourceCell": "A52:B52",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12296,8 +11421,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12338,8 +11462,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12381,8 +11504,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12424,8 +11546,7 @@
         "sourceCell": "E55:F55",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12466,8 +11587,7 @@
         "sourceCell": "C121:D121",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12511,8 +11631,7 @@
         "sourceCell": "C13:D13",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12555,8 +11674,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12597,8 +11715,7 @@
         "sourceCell": "C93:D93",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12639,14 +11756,13 @@
         "sourceCell": "C19:D19",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
     "personId": "truls_skarvoy",
     "name": "Truls Skarvøy",
-    "resultCount": 5,
+    "resultCount": 4,
     "firstYear": 2023,
     "lastYear": 2026,
     "years": [
@@ -12659,8 +11775,7 @@
       "Menn"
     ],
     "distances": [
-      600,
-      1500
+      600
     ],
     "pb": {
       "600": {
@@ -12685,29 +11800,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_010",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Truls Skarvøy",
-        "originalName": "Truls Vegard Skarvøy",
-        "personId": "truls_skarvoy",
-        "timeOriginal": "4:17.19",
-        "timeSeconds": 257.19,
-        "timeDisplay": "4:17,19",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A75:J75",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -12748,8 +11841,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12790,8 +11882,7 @@
         "sourceCell": "C18:D18",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12832,8 +11923,7 @@
         "sourceCell": "C24:D24",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12875,8 +11965,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -12918,8 +12007,7 @@
         "sourceCell": "C62:D62",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -12960,8 +12048,7 @@
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
+      "1200": null
     }
   },
   {
@@ -13002,8 +12089,7 @@
         "sourceCell": "C15:D15",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -13046,50 +12132,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "vilde_vage_henriksen",
-    "name": "Vilde Våge Henriksen",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Kvinner"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_015",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Kvinner",
-        "name": "Vilde Våge Henriksen",
-        "originalName": "Vilde Våge Henriksen",
-        "personId": "vilde_vage_henriksen",
-        "timeOriginal": "4:18.42",
-        "timeSeconds": 258.42,
-        "timeDisplay": "4:18,42",
-        "note": "PB",
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A169:J169",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -13130,8 +12173,7 @@
         "sourceCell": "C11:D11",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   },
   {
@@ -13172,50 +12214,7 @@
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
       },
-      "1200": null,
-      "1500": null
-    }
-  },
-  {
-    "personId": "adne_andersen",
-    "name": "Ådne Andersen",
-    "resultCount": 1,
-    "firstYear": 2026,
-    "lastYear": 2026,
-    "years": [
-      2026
-    ],
-    "genders": [
-      "Menn"
-    ],
-    "distances": [
-      1500
-    ],
-    "pb": {
-      "600": null,
-      "1200": null,
-      "1500": {
-        "id": "RBS2026_012",
-        "year": 2026,
-        "testlopId": "Bislett Spring",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 1500,
-        "gender": "Menn",
-        "name": "Ådne Andersen",
-        "originalName": "Ådne Andersen",
-        "personId": "adne_andersen",
-        "timeOriginal": "3:55.36",
-        "timeSeconds": 235.36,
-        "timeDisplay": "3:55,36",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "bislett-spring_results.xls",
-        "sourceCell": "Results!A94:J94",
-        "sourceType": "Baneløp",
-        "checkStatus": "OK"
-      }
+      "1200": null
     }
   },
   {
@@ -13257,8 +12256,7 @@
         "sourceCell": "C149:D149",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK"
-      },
-      "1500": null
+      }
     }
   }
 ]

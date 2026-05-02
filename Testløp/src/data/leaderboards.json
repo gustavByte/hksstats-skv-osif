@@ -4,29 +4,6 @@
     "gender": "Kvinner",
     "official": [
       {
-        "id": "R2026_079",
-        "year": 2026,
-        "testlopId": "2026_HKS_7",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 600,
-        "gender": "Kvinner",
-        "name": "Telma Eckhoff Dagestad",
-        "originalName": "Telma Eckhoff Dagestad",
-        "personId": "telma_eckhoff_dagestad",
-        "timeOriginal": "1:30,1",
-        "timeSeconds": 90.1,
-        "timeDisplay": "1:30,1",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "HKS 2026-05-02 Løp #7",
-        "sourceCell": "A10:B10",
-        "sourceType": "2026-arbeidsbok",
-        "checkStatus": "OK",
-        "rank": 1
-      },
-      {
         "id": "R0045",
         "year": 2023,
         "testlopId": "2023_20230504",
@@ -47,7 +24,7 @@
         "sourceCell": "C4:D4",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 2
+        "rank": 1
       },
       {
         "id": "R0313",
@@ -70,7 +47,7 @@
         "sourceCell": "A12:B12",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 2
+        "rank": 1
       },
       {
         "id": "R2026_040",
@@ -93,7 +70,7 @@
         "sourceCell": "A10:B10",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 4
+        "rank": 3
       },
       {
         "id": "R0314",
@@ -116,7 +93,7 @@
         "sourceCell": "A13:B13",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 5
+        "rank": 4
       },
       {
         "id": "R0092",
@@ -138,6 +115,29 @@
         "sourceSheet": "2023",
         "sourceCell": "E4:F4",
         "sourceType": "Enkelttestløp",
+        "checkStatus": "OK",
+        "rank": 5
+      },
+      {
+        "id": "R2026_079",
+        "year": 2026,
+        "testlopId": "2026_HKS_7",
+        "date": "2026-05-02",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Kvinner",
+        "name": "Telma Eckhoff Dagestad",
+        "originalName": "Telma Eckhoff Dagestad",
+        "personId": "telma_eckhoff_dagestad",
+        "timeOriginal": "1:40,1",
+        "timeSeconds": 100.1,
+        "timeDisplay": "1:40,1",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-05-02 Løp #7",
+        "sourceCell": "A10:B10",
+        "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
         "rank": 6
       },
@@ -1179,29 +1179,6 @@
     ],
     "withChecks": [
       {
-        "id": "R2026_079",
-        "year": 2026,
-        "testlopId": "2026_HKS_7",
-        "date": "2026-05-02",
-        "place": "Bislett",
-        "distance": 600,
-        "gender": "Kvinner",
-        "name": "Telma Eckhoff Dagestad",
-        "originalName": "Telma Eckhoff Dagestad",
-        "personId": "telma_eckhoff_dagestad",
-        "timeOriginal": "1:30,1",
-        "timeSeconds": 90.1,
-        "timeDisplay": "1:30,1",
-        "note": null,
-        "validToplist": true,
-        "validRecord": true,
-        "sourceSheet": "HKS 2026-05-02 Løp #7",
-        "sourceCell": "A10:B10",
-        "sourceType": "2026-arbeidsbok",
-        "checkStatus": "OK",
-        "rank": 1
-      },
-      {
         "id": "R0045",
         "year": 2023,
         "testlopId": "2023_20230504",
@@ -1222,7 +1199,7 @@
         "sourceCell": "C4:D4",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 2
+        "rank": 1
       },
       {
         "id": "R0313",
@@ -1245,7 +1222,7 @@
         "sourceCell": "A12:B12",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 2
+        "rank": 1
       },
       {
         "id": "R2026_040",
@@ -1268,7 +1245,7 @@
         "sourceCell": "A10:B10",
         "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
-        "rank": 4
+        "rank": 3
       },
       {
         "id": "R0314",
@@ -1291,7 +1268,7 @@
         "sourceCell": "A13:B13",
         "sourceType": "Enkelttestløp",
         "checkStatus": "OK",
-        "rank": 5
+        "rank": 4
       },
       {
         "id": "R0092",
@@ -1313,6 +1290,29 @@
         "sourceSheet": "2023",
         "sourceCell": "E4:F4",
         "sourceType": "Enkelttestløp",
+        "checkStatus": "OK",
+        "rank": 5
+      },
+      {
+        "id": "R2026_079",
+        "year": 2026,
+        "testlopId": "2026_HKS_7",
+        "date": "2026-05-02",
+        "place": "Bislett",
+        "distance": 600,
+        "gender": "Kvinner",
+        "name": "Telma Eckhoff Dagestad",
+        "originalName": "Telma Eckhoff Dagestad",
+        "personId": "telma_eckhoff_dagestad",
+        "timeOriginal": "1:40,1",
+        "timeSeconds": 100.1,
+        "timeDisplay": "1:40,1",
+        "note": null,
+        "validToplist": true,
+        "validRecord": true,
+        "sourceSheet": "HKS 2026-05-02 Løp #7",
+        "sourceCell": "A10:B10",
+        "sourceType": "2026-arbeidsbok",
         "checkStatus": "OK",
         "rank": 6
       },

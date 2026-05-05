@@ -1141,6 +1141,36 @@ h3 {
   min-height: 44px;
 }
 
+.segmented-control {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: 0;
+  padding: 4px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-card);
+  background: var(--surface-muted);
+}
+
+.segmented-button {
+  min-height: 36px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-weight: 900;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.segmented-button:hover,
+.segmented-button.is-active {
+  background: var(--vidar);
+  color: #fffaf2;
+}
+
 .pill-row {
   gap: 8px;
   flex-wrap: wrap;
@@ -2206,6 +2236,14 @@ mark {
   .search-results-head,
   .search-block-head {
     flex-direction: column;
+  }
+
+  .segmented-control {
+    width: 100%;
+  }
+
+  .segmented-button {
+    flex: 1 1 0;
   }
 
   .leader-values,

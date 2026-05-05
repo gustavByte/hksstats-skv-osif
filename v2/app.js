@@ -1,6 +1,6 @@
 const app = document.querySelector("#app");
 
-const DATA_VERSION = "2026-04-27-v2-search-profiles-quality";
+const DATA_VERSION = "2026-05-04-v2-top20";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
@@ -26,6 +26,18 @@ const DEFAULT_STATE = {
   expandedTeams: {},
   data: null,
 };
+
+const HONOURS_DISPLAY_OPTIONS = [
+  { key: "top5", label: "Topp 5", limit: 5 },
+  { key: "top10", label: "Topp 10", limit: 10 },
+  { key: "top20", label: "Topp 20", limit: 20 },
+];
+
+const HONOURS_DISPLAY_LIMITS = Object.fromEntries(
+  HONOURS_DISPLAY_OPTIONS.map((option) => [option.key, option.limit]),
+);
+
+const HONOURS_STAGE_LIMIT_STEPS = HONOURS_DISPLAY_OPTIONS.map((option) => option.limit);
 
 const state = {
   ...DEFAULT_STATE,
@@ -232,6 +244,38 @@ function toDomId(value) {
     .replace(/^-|-$/g, "");
 }
 
+function getHonoursDisplayLimit(display = state.honoursDisplay) {
+  return HONOURS_DISPLAY_LIMITS[display] ?? HONOURS_DISPLAY_LIMITS[DEFAULT_STATE.honoursDisplay];
+}
+
+function getStageEntryCount(stage) {
+  return (stage.all_entries ?? stage.expanded_entries ?? stage.entries ?? []).length;
+}
+
+function getStageHonoursLimit(stageKey) {
+  const baseLimit = getHonoursDisplayLimit();
+  const overrideLimit = Number(state.expandedHonours[stageKey]);
+  return Number.isFinite(overrideLimit) && overrideLimit > baseLimit ? overrideLimit : baseLimit;
+}
+
+function getStageHonourEntries(stage, stageKey) {
+  const limit = getStageHonoursLimit(stageKey);
+  return (stage.all_entries ?? stage.expanded_entries ?? stage.entries ?? []).slice(0, limit);
+}
+
+function getNextStageHonoursLimit(stage, stageKey) {
+  const baseLimit = getHonoursDisplayLimit();
+  const currentLimit = getStageHonoursLimit(stageKey);
+  const entryCount = getStageEntryCount(stage);
+  const nextLimit = HONOURS_STAGE_LIMIT_STEPS.find((limit) => limit > currentLimit && entryCount > currentLimit);
+
+  if (nextLimit) {
+    return nextLimit;
+  }
+
+  return currentLimit > baseLimit ? baseLimit : null;
+}
+
 function readStateFromUrl() {
   const url = new URL(window.location.href);
   const params = url.searchParams;
@@ -280,7 +324,7 @@ function normaliseState() {
   if (!tabs.has(state.honoursTab)) {
     state.honoursTab = state.data.stageHonours?.[0]?.key ?? DEFAULT_STATE.honoursTab;
   }
-  if (!["top5", "top10"].includes(state.honoursDisplay)) {
+  if (!Object.hasOwn(HONOURS_DISPLAY_LIMITS, state.honoursDisplay)) {
     state.honoursDisplay = DEFAULT_STATE.honoursDisplay;
   }
   if (state.teamClub !== "all" && !organizations.has(state.teamClub)) {
@@ -751,7 +795,9 @@ function buildDynamicHonoursGroup(activeGroup, filteredResults) {
         ...stage,
         default_limit: 5,
         expanded_limit: 10,
+        total_entries: rankedEntries.length,
         has_expansion: rankedEntries.length > 5,
+        all_entries: rankedEntries,
         entries: rankedEntries.slice(0, 5),
         expanded_entries: rankedEntries.slice(0, 10),
       };
@@ -2350,12 +2396,14 @@ function renderHonourEntryCard(entry) {
 function renderStageCard(activeGroup, stage) {
   const stageKey = `${activeGroup.key}:${stage.stage_number}`;
   const stageDomId = toDomId(stageKey);
-  const isExpanded = Boolean(state.expandedHonours[stageKey]);
-  const entries =
-    state.honoursDisplay === "top10" || isExpanded
-      ? stage.expanded_entries ?? stage.entries
-      : stage.entries;
+  const baseLimit = getHonoursDisplayLimit();
+  const currentLimit = getStageHonoursLimit(stageKey);
+  const nextStageLimit = getNextStageHonoursLimit(stage, stageKey);
+  const isExpanded = currentLimit > baseLimit;
+  const entries = getStageHonourEntries(stage, stageKey);
   const hasEntries = entries.length > 0;
+  const stageToggleLabel =
+    nextStageLimit && nextStageLimit > currentLimit ? `Vis topp ${nextStageLimit}` : "Vis færre";
 
   return `
     <article class="stage-card">
@@ -2395,16 +2443,17 @@ function renderStageCard(activeGroup, stage) {
       </div>
       ` : renderEmptyState("Ingen treff på denne etappen", "Endre år, klasse eller søk for å se flere resultater.")}
       ${
-        hasEntries && stage.has_expansion && state.honoursDisplay !== "top10"
+        hasEntries && nextStageLimit !== null
           ? `
             <button
               class="text-link"
               type="button"
               data-stage-toggle="${escapeHtml(stageKey)}"
+              data-stage-limit="${escapeHtml(nextStageLimit)}"
               aria-expanded="${isExpanded ? "true" : "false"}"
               aria-controls="stage-results-${stageDomId}"
             >
-              ${isExpanded ? "Vis færre" : "Vis topp 10"}
+              ${stageToggleLabel}
             </button>
           `
           : ""
@@ -2418,14 +2467,21 @@ function renderHonoursSection(activeGroup, honourGroups) {
     return "";
   }
 
-  const displaySelect = `
-    <label class="compact-select">
-      <span class="sr-only">Antall resultater</span>
-      <select id="honours-display-filter" name="show">
-        <option value="top5" ${state.honoursDisplay === "top5" ? "selected" : ""}>Topp 5</option>
-        <option value="top10" ${state.honoursDisplay === "top10" ? "selected" : ""}>Topp 10</option>
-      </select>
-    </label>
+  const displayControl = `
+    <div class="segmented-control" role="group" aria-label="Antall toppresultater">
+      ${HONOURS_DISPLAY_OPTIONS.map(
+        (option) => `
+          <button
+            class="segmented-button ${state.honoursDisplay === option.key ? "is-active" : ""}"
+            type="button"
+            data-honours-display="${escapeHtml(option.key)}"
+            aria-pressed="${state.honoursDisplay === option.key ? "true" : "false"}"
+          >
+            ${escapeHtml(option.label)}
+          </button>
+        `,
+      ).join("")}
+    </div>
   `;
 
   return `
@@ -2437,7 +2493,7 @@ function renderHonoursSection(activeGroup, honourGroups) {
         </div>
         <div class="section-header-meta">
           <span>${escapeHtml(activeGroup.subtitle)}</span>
-          ${displaySelect}
+          ${displayControl}
         </div>
       </div>
       <div class="pill-row" role="tablist" aria-label="Klubb og klasse">
@@ -3008,7 +3064,19 @@ function attachEvents() {
   });
   document.querySelector("#honours-display-filter")?.addEventListener("change", (event) => {
     state.honoursDisplay = event.target.value;
+    state.expandedHonours = {};
     render();
+  });
+  document.querySelectorAll("[data-honours-display]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const nextDisplay = event.currentTarget.dataset.honoursDisplay;
+      if (!Object.hasOwn(HONOURS_DISPLAY_LIMITS, nextDisplay)) {
+        return;
+      }
+      state.honoursDisplay = nextDisplay;
+      state.expandedHonours = {};
+      render();
+    });
   });
   document.querySelector("#search-filter")?.addEventListener("input", (event) => {
     const selectionStart = event.target.selectionStart;
@@ -3044,7 +3112,13 @@ function attachEvents() {
   document.querySelectorAll("[data-stage-toggle]").forEach((button) => {
     button.addEventListener("click", (event) => {
       const stageKey = event.currentTarget.dataset.stageToggle;
-      state.expandedHonours[stageKey] = !state.expandedHonours[stageKey];
+      const nextLimit = Number(event.currentTarget.dataset.stageLimit);
+      const baseLimit = getHonoursDisplayLimit();
+      if (Number.isFinite(nextLimit) && nextLimit > baseLimit) {
+        state.expandedHonours[stageKey] = nextLimit;
+      } else {
+        delete state.expandedHonours[stageKey];
+      }
       render();
     });
   });

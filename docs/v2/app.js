@@ -901,7 +901,7 @@ function buildLatestYearSnapshot() {
   const bestWomenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "women"));
   const bestMenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "men"));
   const eliteResults = yearResults.filter((row) => row.class_code === "EliteSKV");
-  const eliteStagePlacements = buildTopStagePlacements(eliteResults, 3);
+  const eliteStagePlacements = buildTopStagePlacements(eliteResults);
   const winners = archiveItems.filter((team) => team.isWinner);
   const podiums = archiveItems.filter((team) => team.isPodium);
 
@@ -919,7 +919,7 @@ function buildLatestYearSnapshot() {
   };
 }
 
-function buildTopStagePlacements(filteredResults, limit = 3) {
+function buildTopStagePlacements(filteredResults) {
   return filteredResults
     .filter(
       (row) =>
@@ -939,8 +939,7 @@ function buildTopStagePlacements(filteredResults, limit = 3) {
       if (aPercentOfRecord !== bPercentOfRecord) return bPercentOfRecord - aPercentOfRecord;
       if (a.split_seconds !== b.split_seconds) return b.split_seconds - a.split_seconds;
       return a.stage_number - b.stage_number;
-    })
-    .slice(0, limit);
+    });
 }
 
 function buildFastestSplits(filteredResults) {
@@ -1980,7 +1979,7 @@ function renderLatestYearSection() {
 
         <div class="latest-list-panel">
           <div class="latest-list-head">
-            <p class="eyebrow">Eliteklassens topp 3</p>
+            <p class="eyebrow">Alle topp 3 i elite</p>
             <strong>${formatNumber(snapshot.eliteStagePlacements.length)} plasseringer</strong>
           </div>
           <div class="latest-split-list">

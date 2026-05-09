@@ -898,7 +898,8 @@ function buildLatestYearSnapshot() {
   const resultsByTeamId = buildResultsByTeamId(yearResults);
   const archiveItems = buildTeamArchiveItems(yearTeams, resultsByTeamId);
   const participants = new Set(yearResults.map((row) => row.person_id ?? row.person_name)).size;
-  const fastestTeam = getBestTeamByTotalTime(archiveItems);
+  const bestWomenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "women"));
+  const bestMenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "men"));
   const eliteResults = yearResults.filter((row) => row.class_code === "EliteSKV");
   const fastestSplits = buildFastestSplits(eliteResults).slice(0, 3);
   const winners = archiveItems.filter((team) => team.isWinner);
@@ -910,7 +911,8 @@ function buildLatestYearSnapshot() {
     yearTeams,
     archiveItems,
     participants,
-    fastestTeam,
+    bestWomenTeam,
+    bestMenTeam,
     fastestSplits,
     winners,
     podiums,
@@ -1806,11 +1808,8 @@ function renderHero(filteredResults, filteredTeams) {
   `;
 }
 
-function renderLatestTeamItem(teamItem) {
+function renderTeamFocusAttributes(teamItem) {
   return `
-    <button
-      class="latest-team-item"
-      type="button"
       data-team-focus="true"
       data-team-id="${escapeHtml(teamItem.id)}"
       data-team-view="archive"
@@ -1824,6 +1823,15 @@ function renderLatestTeamItem(teamItem) {
       data-selected-class="${escapeHtml(teamItem.classCode)}"
       data-selected-division="${escapeHtml(teamItem.division)}"
       aria-label="Vis etapper for ${escapeHtml(teamItem.teamName)}"
+  `.trim();
+}
+
+function renderLatestTeamItem(teamItem) {
+  return `
+    <button
+      class="latest-team-item"
+      type="button"
+      ${renderTeamFocusAttributes(teamItem)}
     >
       <div>
         <p>${escapeHtml(formatArchiveHeading(teamItem))}</p>
@@ -1838,6 +1846,23 @@ function renderLatestTeamItem(teamItem) {
         ${renderTeamBadge(teamItem.divisionLabel, teamItem.division)}
         ${teamItem.isWinner ? renderTeamBadge("Seier", "winner") : ""}
         ${teamItem.isPodium ? renderTeamBadge("Pall", "podium") : ""}
+      </div>
+    </button>
+  `;
+}
+
+function renderLatestBestTeam(teamItem, label) {
+  return `
+    <button
+      class="latest-best-team"
+      type="button"
+      ${renderTeamFocusAttributes(teamItem)}
+    >
+      <span class="latest-best-team-label">${escapeHtml(label)}</span>
+      <h3>${escapeHtml(teamItem.teamName)}</h3>
+      <div class="latest-best-team-meta">
+        <strong>${escapeHtml(teamItem.totalTimeText ?? "DNF")}</strong>
+        <small>${escapeHtml(formatArchiveHeading(teamItem))}</small>
       </div>
     </button>
   `;
@@ -1866,6 +1891,10 @@ function renderLatestYearSection() {
   }
 
   const featuredTeams = snapshot.archiveItems.slice(0, 6);
+  const bestTeams = [
+    { label: "Damer", team: snapshot.bestWomenTeam },
+    { label: "Herrer", team: snapshot.bestMenTeam },
+  ].filter(({ team }) => Boolean(team));
   const metrics = [
     { label: "Lag", value: formatNumber(snapshot.yearTeams.length) },
     { label: "Etapper", value: formatNumber(snapshot.yearResults.length) },
@@ -1900,20 +1929,18 @@ function renderLatestYearSection() {
 
       <div class="latest-year-grid">
         <article class="latest-feature">
-          <p class="eyebrow">Raskest totalt</p>
+          <p class="eyebrow">Beste lag</p>
           ${
-            snapshot.fastestTeam
-              ? `
-                <h3>${escapeHtml(snapshot.fastestTeam.teamName)}</h3>
-                <strong>${escapeHtml(snapshot.fastestTeam.totalTimeText ?? "-")}</strong>
-                <span>${escapeHtml(formatArchiveHeading(snapshot.fastestTeam))}</span>
-              `
+            bestTeams.length
+              ? `<div class="latest-best-team-list">
+                  ${bestTeams.map(({ label, team }) => renderLatestBestTeam(team, label)).join("")}
+                </div>`
               : renderEmptyState("Ingen totaltid", "Årets ferdige lag mangler totaltider.")
           }
           <button class="cta-secondary latest-year-action" type="button" data-year-focus="${escapeHtml(
             snapshot.latestYear,
           )}">
-            Åpne ${escapeHtml(snapshot.latestYear)} i lagarkivet
+            Åpne alle ${escapeHtml(snapshot.latestYear)}-lag
           </button>
         </article>
 

@@ -772,6 +772,32 @@ h3 {
   gap: 8px;
 }
 
+.latest-placement-panel {
+  max-height: min(720px, 74vh);
+}
+
+.latest-placement-list {
+  max-height: 610px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 4px;
+  scrollbar-color: rgba(255, 250, 242, 0.52) rgba(255, 250, 242, 0.1);
+}
+
+.latest-placement-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.latest-placement-list::-webkit-scrollbar-track {
+  background: rgba(255, 250, 242, 0.1);
+  border-radius: 999px;
+}
+
+.latest-placement-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 250, 242, 0.48);
+  border-radius: 999px;
+}
+
 .latest-team-item,
 .latest-split-item {
   min-width: 0;
@@ -2598,6 +2624,11 @@ mark {
 
   .latest-feature > strong {
     font-size: 1.7rem;
+  }
+
+  .latest-placement-panel,
+  .latest-placement-list {
+    max-height: 460px;
   }
 
   .latest-team-item,

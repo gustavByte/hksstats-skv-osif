@@ -1977,12 +1977,12 @@ function renderLatestYearSection() {
           </div>
         </div>
 
-        <div class="latest-list-panel">
+        <div class="latest-list-panel latest-placement-panel">
           <div class="latest-list-head">
             <p class="eyebrow">Alle topp 3 i elite</p>
             <strong>${formatNumber(snapshot.eliteStagePlacements.length)} plasseringer</strong>
           </div>
-          <div class="latest-split-list">
+          <div class="latest-split-list latest-placement-list">
             ${snapshot.eliteStagePlacements.map((row, index) => renderLatestSplitItem(row, index)).join("")}
           </div>
         </div>

@@ -901,7 +901,7 @@ function buildLatestYearSnapshot() {
   const bestWomenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "women"));
   const bestMenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "men"));
   const eliteResults = yearResults.filter((row) => row.class_code === "EliteSKV");
-  const fastestSplits = buildFastestSplits(eliteResults).slice(0, 3);
+  const eliteStagePlacements = buildTopStagePlacements(eliteResults, 3);
   const winners = archiveItems.filter((team) => team.isWinner);
   const podiums = archiveItems.filter((team) => team.isPodium);
 
@@ -913,10 +913,34 @@ function buildLatestYearSnapshot() {
     participants,
     bestWomenTeam,
     bestMenTeam,
-    fastestSplits,
+    eliteStagePlacements,
     winners,
     podiums,
   };
+}
+
+function buildTopStagePlacements(filteredResults, limit = 3) {
+  return filteredResults
+    .filter(
+      (row) =>
+        Number.isFinite(row.category_rank) &&
+        row.category_rank <= 3 &&
+        Number.isFinite(row.split_seconds),
+    )
+    .slice()
+    .sort((a, b) => {
+      if (a.category_rank !== b.category_rank) return a.category_rank - b.category_rank;
+      const aPercentOfRecord = Number.isFinite(a.percent_of_record)
+        ? a.percent_of_record
+        : Number.NEGATIVE_INFINITY;
+      const bPercentOfRecord = Number.isFinite(b.percent_of_record)
+        ? b.percent_of_record
+        : Number.NEGATIVE_INFINITY;
+      if (aPercentOfRecord !== bPercentOfRecord) return bPercentOfRecord - aPercentOfRecord;
+      if (a.split_seconds !== b.split_seconds) return b.split_seconds - a.split_seconds;
+      return a.stage_number - b.stage_number;
+    })
+    .slice(0, limit);
 }
 
 function buildFastestSplits(filteredResults) {
@@ -1957,10 +1981,10 @@ function renderLatestYearSection() {
         <div class="latest-list-panel">
           <div class="latest-list-head">
             <p class="eyebrow">Eliteklassens topp 3</p>
-            <strong>${formatNumber(snapshot.fastestSplits.length)} tider</strong>
+            <strong>${formatNumber(snapshot.eliteStagePlacements.length)} plasseringer</strong>
           </div>
           <div class="latest-split-list">
-            ${snapshot.fastestSplits.map((row, index) => renderLatestSplitItem(row, index)).join("")}
+            ${snapshot.eliteStagePlacements.map((row, index) => renderLatestSplitItem(row, index)).join("")}
           </div>
         </div>
       </div>

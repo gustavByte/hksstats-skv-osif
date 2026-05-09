@@ -724,6 +724,18 @@ h3 {
 .latest-team-item {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
+  width: 100%;
+  color: inherit;
+  text-align: left;
+  border-radius: 6px;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.latest-team-item:hover {
+  background: rgba(255, 250, 242, 0.08);
+  transform: translateX(2px);
 }
 
 .latest-team-meta,

@@ -20,6 +20,7 @@ const DEFAULT_STATE = {
   teamDivision: "all",
   teamPlacement: "all",
   teamYear: "all",
+  focusedTeamId: null,
   teamView: "archive",
   filtersOpen: false,
   expandedHonours: {},
@@ -1153,6 +1154,8 @@ function buildTeamHonoursByClub(filteredTeams, resultsByTeamId) {
 
 function filterTeamArchive(items, archiveState) {
   return items.filter((item) => {
+    const matchesFocusedTeam =
+      !archiveState.focusedTeamId || String(item.id) === String(archiveState.focusedTeamId);
     const matchesClub = archiveState.teamClub === "all" || item.organizationCode === archiveState.teamClub;
     const matchesGroup = archiveState.teamGroup === "all" || item.classGroup === archiveState.teamGroup;
     const matchesDivision =
@@ -1164,7 +1167,7 @@ function filterTeamArchive(items, archiveState) {
       (archiveState.teamPlacement === "podiums" && item.isPodium) ||
       (archiveState.teamPlacement === "best" && item.isBestRankInGroup) ||
       (archiveState.teamPlacement === "bestTime" && item.isBestTimeInGroup);
-    return matchesClub && matchesGroup && matchesDivision && matchesYear && matchesPlacement;
+    return matchesFocusedTeam && matchesClub && matchesGroup && matchesDivision && matchesYear && matchesPlacement;
   });
 }
 
@@ -1805,7 +1808,23 @@ function renderHero(filteredResults, filteredTeams) {
 
 function renderLatestTeamItem(teamItem) {
   return `
-    <article class="latest-team-item">
+    <button
+      class="latest-team-item"
+      type="button"
+      data-team-focus="true"
+      data-team-id="${escapeHtml(teamItem.id)}"
+      data-team-view="archive"
+      data-team-club="${escapeHtml(teamItem.organizationCode)}"
+      data-team-group="${escapeHtml(teamItem.classGroup)}"
+      data-team-division="${escapeHtml(teamItem.division)}"
+      data-team-placement="all"
+      data-team-year="${escapeHtml(teamItem.year)}"
+      data-selected-year="${escapeHtml(teamItem.year)}"
+      data-selected-organization="${escapeHtml(teamItem.organizationCode)}"
+      data-selected-class="${escapeHtml(teamItem.classCode)}"
+      data-selected-division="${escapeHtml(teamItem.division)}"
+      aria-label="Vis etapper for ${escapeHtml(teamItem.teamName)}"
+    >
       <div>
         <p>${escapeHtml(formatArchiveHeading(teamItem))}</p>
         <h3>${escapeHtml(teamItem.teamName)}</h3>
@@ -1820,7 +1839,7 @@ function renderLatestTeamItem(teamItem) {
         ${teamItem.isWinner ? renderTeamBadge("Seier", "winner") : ""}
         ${teamItem.isPodium ? renderTeamBadge("Pall", "podium") : ""}
       </div>
-    </article>
+    </button>
   `;
 }
 
@@ -3145,6 +3164,7 @@ function removeFilter(filterKey) {
   if (filterKey === "class") state.selectedClass = DEFAULT_STATE.selectedClass;
   if (filterKey === "division") state.selectedDivision = DEFAULT_STATE.selectedDivision;
   if (filterKey === "search") state.search = DEFAULT_STATE.search;
+  state.focusedTeamId = null;
   state.filtersOpen = true;
   render();
 }
@@ -3160,6 +3180,7 @@ function resetFilters() {
   state.teamDivision = DEFAULT_STATE.teamDivision;
   state.teamPlacement = DEFAULT_STATE.teamPlacement;
   state.teamYear = DEFAULT_STATE.teamYear;
+  state.focusedTeamId = DEFAULT_STATE.focusedTeamId;
   state.teamView = DEFAULT_STATE.teamView;
   state.expandedTeams = {};
   state.expandedHonours = {};
@@ -3180,16 +3201,25 @@ function updateTeamFilter(filterKey, filterValue) {
   if (!["teamClub", "teamGroup", "teamDivision", "teamPlacement", "teamYear"].includes(filterKey)) {
     return;
   }
+  state.focusedTeamId = null;
   const nextValue = filterValue ?? "all";
   state[filterKey] = state[filterKey] === nextValue && nextValue !== "all" ? "all" : nextValue;
 }
 
 function applyTeamFocus(dataset) {
+  if (dataset.selectedYear) state.selectedYear = dataset.selectedYear;
+  if (dataset.selectedOrganization) state.selectedOrganization = dataset.selectedOrganization;
+  if (dataset.selectedClass) state.selectedClass = dataset.selectedClass;
+  if (dataset.selectedDivision) state.selectedDivision = dataset.selectedDivision;
   state.teamClub = dataset.teamClub || DEFAULT_STATE.teamClub;
   state.teamGroup = dataset.teamGroup || DEFAULT_STATE.teamGroup;
   state.teamDivision = dataset.teamDivision || DEFAULT_STATE.teamDivision;
   state.teamPlacement = dataset.teamPlacement || DEFAULT_STATE.teamPlacement;
   state.teamYear = dataset.teamYear || DEFAULT_STATE.teamYear;
+  state.focusedTeamId = dataset.teamId || null;
+  if (dataset.teamId) {
+    state.expandedTeams = { [dataset.teamId]: true };
+  }
   setTeamView(dataset.teamView || DEFAULT_STATE.teamView);
   render();
   scrollToSection(state.teamView === "timeSeries" ? "totaltid" : "lagarkiv");
@@ -3257,6 +3287,7 @@ function attachEvents() {
       const year = event.currentTarget.dataset.yearFocus;
       state.selectedYear = String(year);
       state.teamYear = String(year);
+      state.focusedTeamId = null;
       state.filtersOpen = true;
       render();
       scrollToSection("lagarkiv");

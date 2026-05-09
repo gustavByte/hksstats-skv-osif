@@ -1,6 +1,6 @@
 const app = document.querySelector("#app");
 
-const DATA_VERSION = "2026-05-04-v2-top20";
+const DATA_VERSION = "2026-05-09-hks-2026";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
@@ -882,6 +882,39 @@ function buildSeasonHighlights(filteredResults, filteredTeams) {
     .sort((a, b) => Number(b.year) - Number(a.year));
 }
 
+function buildLatestYearSnapshot() {
+  const latestYear = state.data.metadata.years?.[0] ?? null;
+  if (!latestYear) {
+    return null;
+  }
+
+  const yearResults = state.data.results.filter((row) => row.year === latestYear);
+  const yearTeams = state.data.teams.filter((row) => row.year === latestYear);
+  if (!yearTeams.length && !yearResults.length) {
+    return null;
+  }
+
+  const resultsByTeamId = buildResultsByTeamId(yearResults);
+  const archiveItems = buildTeamArchiveItems(yearTeams, resultsByTeamId);
+  const participants = new Set(yearResults.map((row) => row.person_id ?? row.person_name)).size;
+  const fastestTeam = getBestTeamByTotalTime(archiveItems);
+  const fastestSplits = buildFastestSplits(yearResults).slice(0, 5);
+  const winners = archiveItems.filter((team) => team.isWinner);
+  const podiums = archiveItems.filter((team) => team.isPodium);
+
+  return {
+    latestYear,
+    yearResults,
+    yearTeams,
+    archiveItems,
+    participants,
+    fastestTeam,
+    fastestSplits,
+    winners,
+    podiums,
+  };
+}
+
 function buildFastestSplits(filteredResults) {
   return filteredResults
     .filter((row) => Number.isFinite(row.split_seconds))
@@ -1675,6 +1708,7 @@ function renderHeader() {
       </div>
       <div class="header-actions">
         <nav class="top-nav" aria-label="Hovednavigasjon">
+          <a href="${siteUrl("#nytt-2026")}" data-nav-link>2026</a>
           <a href="${siteUrl("#hederslister")}" data-nav-link>Hederslister</a>
           <a href="${siteUrl("#klubbmeritter")}" data-nav-link>Klubbmeritter</a>
           <a href="${siteUrl("#lagarkiv")}" data-nav-link>Lagarkiv</a>
@@ -1764,6 +1798,125 @@ function renderHero(filteredResults, filteredTeams) {
         </picture>
         <figcaption>SK Vidar og OSI Friidrett, 2025</figcaption>
       </figure>
+    </section>
+  `;
+}
+
+function renderLatestTeamItem(teamItem) {
+  return `
+    <article class="latest-team-item">
+      <div>
+        <p>${escapeHtml(formatArchiveHeading(teamItem))}</p>
+        <h3>${escapeHtml(teamItem.teamName)}</h3>
+      </div>
+      <div class="latest-team-meta">
+        <strong>${escapeHtml(teamItem.totalTimeText ?? "DNF")}</strong>
+        <span>${escapeHtml(teamItem.stageCount)} etapper</span>
+      </div>
+      <div class="latest-team-tags">
+        ${renderTeamBadge(teamItem.classGroupLabel)}
+        ${renderTeamBadge(teamItem.divisionLabel, teamItem.division)}
+        ${teamItem.isWinner ? renderTeamBadge("Seier", "winner") : ""}
+        ${teamItem.isPodium ? renderTeamBadge("Pall", "podium") : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderLatestSplitItem(row, index) {
+  return `
+    <article class="latest-split-item">
+      <span class="result-rank">${index + 1}</span>
+      <div class="latest-split-copy">
+        <strong>${renderPersonLink(row.person_id, row.person_name)}</strong>
+        <span>${escapeHtml(row.stage_label)} · ${escapeHtml(row.team_name)}</span>
+      </div>
+      <div class="latest-split-time">
+        <strong>${escapeHtml(row.split_text ?? "-")}</strong>
+        <span>${escapeHtml(formatRank(row.category_rank))}</span>
+      </div>
+    </article>
+  `;
+}
+
+function renderLatestYearSection() {
+  const snapshot = buildLatestYearSnapshot();
+  if (!snapshot) {
+    return "";
+  }
+
+  const featuredTeams = snapshot.archiveItems.slice(0, 6);
+  const metrics = [
+    { label: "Lag", value: formatNumber(snapshot.yearTeams.length) },
+    { label: "Etapper", value: formatNumber(snapshot.yearResults.length) },
+    { label: "Utøvere", value: formatNumber(snapshot.participants) },
+    { label: "Pall", value: formatNumber(snapshot.podiums.length) },
+  ];
+
+  return `
+    <section class="latest-year-band" id="nytt-2026" aria-labelledby="nytt-2026-title">
+      <div class="latest-year-head">
+        <div class="latest-year-copy">
+          <p class="eyebrow">Nytt i ${escapeHtml(snapshot.latestYear)}</p>
+          <h2 id="nytt-2026-title">${escapeHtml(snapshot.latestYear)}-resultatene ligger først</h2>
+          <p>
+            Årets SK Vidar-lag er importert fra Ultimate-resultatene, med navnealiaser samlet inn i
+            de eksisterende personprofilene.
+          </p>
+        </div>
+        <div class="latest-year-metrics" aria-label="${escapeHtml(snapshot.latestYear)} nøkkeltall">
+          ${metrics
+            .map(
+              (item) => `
+                <div class="latest-year-metric">
+                  <span>${escapeHtml(item.label)}</span>
+                  <strong>${escapeHtml(item.value)}</strong>
+                </div>
+              `,
+            )
+            .join("")}
+        </div>
+      </div>
+
+      <div class="latest-year-grid">
+        <article class="latest-feature">
+          <p class="eyebrow">Raskest totalt</p>
+          ${
+            snapshot.fastestTeam
+              ? `
+                <h3>${escapeHtml(snapshot.fastestTeam.teamName)}</h3>
+                <strong>${escapeHtml(snapshot.fastestTeam.totalTimeText ?? "-")}</strong>
+                <span>${escapeHtml(formatArchiveHeading(snapshot.fastestTeam))}</span>
+              `
+              : renderEmptyState("Ingen totaltid", "Årets ferdige lag mangler totaltider.")
+          }
+          <button class="cta-secondary latest-year-action" type="button" data-year-focus="${escapeHtml(
+            snapshot.latestYear,
+          )}">
+            Åpne ${escapeHtml(snapshot.latestYear)} i lagarkivet
+          </button>
+        </article>
+
+        <div class="latest-list-panel">
+          <div class="latest-list-head">
+            <p class="eyebrow">Lag</p>
+            <strong>${formatNumber(featuredTeams.length)} vist</strong>
+          </div>
+          <div class="latest-team-list">
+            ${featuredTeams.map((team) => renderLatestTeamItem(team)).join("")}
+          </div>
+        </div>
+
+        <div class="latest-list-panel">
+          <div class="latest-list-head">
+            <p class="eyebrow">Raskeste splitter</p>
+            <strong>${formatNumber(snapshot.fastestSplits.length)} tider</strong>
+          </div>
+          <div class="latest-split-list">
+            ${snapshot.fastestSplits.map((row, index) => renderLatestSplitItem(row, index)).join("")}
+          </div>
+        </div>
+      </div>
     </section>
   `;
 }
@@ -3098,6 +3251,16 @@ function attachEvents() {
     render();
   });
   document.querySelector("[data-reset-filters]")?.addEventListener("click", resetFilters);
+  document.querySelectorAll("[data-year-focus]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const year = event.currentTarget.dataset.yearFocus;
+      state.selectedYear = String(year);
+      state.teamYear = String(year);
+      state.filtersOpen = true;
+      render();
+      scrollToSection("lagarkiv");
+    });
+  });
   document.querySelectorAll("[data-filter-remove]").forEach((button) => {
     button.addEventListener("click", (event) => {
       removeFilter(event.currentTarget.dataset.filterRemove);
@@ -3184,7 +3347,7 @@ function setupNavState() {
     return;
   }
 
-  setActive(window.location.hash.replace("#", "") || "hederslister");
+  setActive(window.location.hash.replace("#", "") || "nytt-2026");
 
   if (navObserver) {
     navObserver.disconnect();
@@ -3267,6 +3430,7 @@ function render() {
       <div class="page-backdrop" aria-hidden="true"></div>
       ${renderHeader()}
       <main id="main-content">
+        ${renderLatestYearSection()}
         ${renderHero(filteredResults, filteredTeams)}
         ${renderFilterPanel(filteredResults, filteredTeams)}
         ${renderSearchPanel(searchResults)}

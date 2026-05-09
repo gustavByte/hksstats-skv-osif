@@ -12,11 +12,12 @@ DOCS_DIR = ROOT / "docs"
 PRESERVE_DIR = ROOT / ".build-preserve-docs"
 PRESERVED_DOCS_SUBTREES = ("testlop",)
 SITE_DATA_PATH = ROOT / "public" / "data" / "site-data.json"
+COPY_IGNORE = shutil.ignore_patterns("desktop.ini")
 
 
 def copy_if_exists(source: Path, target: Path) -> None:
     if source.is_dir():
-        shutil.copytree(source, target, dirs_exist_ok=True)
+        shutil.copytree(source, target, dirs_exist_ok=True, ignore=COPY_IGNORE)
     elif source.exists():
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
@@ -31,7 +32,7 @@ def preserve_docs_subtrees() -> dict[str, Path]:
         source = DOCS_DIR / subtree
         if source.exists():
             target = PRESERVE_DIR / subtree
-            shutil.copytree(source, target)
+            shutil.copytree(source, target, ignore=COPY_IGNORE)
             preserved[subtree] = target
     return preserved
 
@@ -41,7 +42,7 @@ def restore_docs_subtrees(preserved: dict[str, Path]) -> None:
         target = DOCS_DIR / subtree
         if target.exists():
             shutil.rmtree(target)
-        shutil.copytree(source, target)
+        shutil.copytree(source, target, ignore=COPY_IGNORE)
 
     if PRESERVE_DIR.exists():
         shutil.rmtree(PRESERVE_DIR)
@@ -134,7 +135,7 @@ def main() -> None:
 
     if DOCS_DIR.exists():
         shutil.rmtree(DOCS_DIR)
-    shutil.copytree(DIST_DIR, DOCS_DIR, dirs_exist_ok=True)
+    shutil.copytree(DIST_DIR, DOCS_DIR, dirs_exist_ok=True, ignore=COPY_IGNORE)
     restore_docs_subtrees(preserved_docs)
 
     print(f"Built static site in {DIST_DIR} and mirrored it to {DOCS_DIR}.")

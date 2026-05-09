@@ -362,9 +362,16 @@ def choose_stage_meta(
     raw_name: str,
     fallback: str,
 ) -> dict[str, str]:
+    if class_code in MIX_CLASS_CODES:
+        fallback_division = "mixed"
+    elif class_code == "Veteran":
+        fallback_division = "women"
+    else:
+        fallback_division = "men"
+
     return lookup.get(
         (year, class_code, stage_number, normalize_name(raw_name)),
-        {"label": fallback, "division": "women" if class_code == "Veteran" else "men"},
+        {"label": fallback, "division": fallback_division},
     )
 
 

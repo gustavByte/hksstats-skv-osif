@@ -558,6 +558,212 @@ h3 {
   font-weight: 700;
 }
 
+.latest-year-band {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(24, 40, 32, 0.32);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(135deg, rgba(24, 40, 32, 0.96), rgba(191, 67, 47, 0.9)),
+    var(--ink);
+  color: #fffaf2;
+  box-shadow: var(--shadow-card);
+}
+
+.latest-year-band .eyebrow {
+  color: #ffd9c9;
+}
+
+.latest-year-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  gap: 16px;
+  align-items: end;
+}
+
+.latest-year-copy {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.latest-year-copy h2 {
+  max-width: 18ch;
+  font-size: 2.35rem;
+}
+
+.latest-year-copy p {
+  max-width: 58rem;
+  margin: 0;
+  color: rgba(255, 250, 242, 0.82);
+  line-height: 1.5;
+}
+
+.latest-year-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.latest-year-metric,
+.latest-feature,
+.latest-list-panel {
+  border: 1px solid rgba(255, 250, 242, 0.18);
+  border-radius: var(--radius-card);
+  background: rgba(255, 250, 242, 0.11);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.latest-year-metric {
+  min-width: 0;
+  padding: 10px;
+}
+
+.latest-year-metric span,
+.latest-team-item p,
+.latest-team-meta span,
+.latest-split-copy span,
+.latest-split-time span,
+.latest-list-head strong,
+.latest-feature span {
+  color: rgba(255, 250, 242, 0.76);
+}
+
+.latest-year-metric strong {
+  display: block;
+  margin-top: 3px;
+  font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  font-size: 1.4rem;
+}
+
+.latest-year-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+}
+
+.latest-feature,
+.latest-list-panel {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+}
+
+.latest-feature h3,
+.latest-feature strong,
+.latest-feature span,
+.latest-team-item h3,
+.latest-team-item p,
+.latest-team-meta strong,
+.latest-team-meta span,
+.latest-split-copy strong,
+.latest-split-copy span,
+.latest-split-time strong,
+.latest-split-time span {
+  margin: 0;
+}
+
+.latest-feature > strong {
+  font-family: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.latest-feature .empty-state {
+  color: rgba(255, 250, 242, 0.78);
+}
+
+.latest-feature .empty-state strong {
+  color: #fffaf2;
+}
+
+.latest-year-action {
+  justify-self: start;
+  border-color: rgba(255, 250, 242, 0.52);
+  background: #fffaf2;
+}
+
+.latest-list-head,
+.latest-team-item,
+.latest-split-item,
+.latest-team-tags {
+  display: flex;
+  align-items: center;
+}
+
+.latest-list-head,
+.latest-team-item {
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.latest-team-list,
+.latest-split-list {
+  display: grid;
+  gap: 8px;
+}
+
+.latest-team-item,
+.latest-split-item {
+  min-width: 0;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 250, 242, 0.14);
+}
+
+.latest-team-item:first-child,
+.latest-split-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.latest-team-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.latest-team-meta,
+.latest-split-copy,
+.latest-split-time {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.latest-team-meta,
+.latest-split-time {
+  text-align: right;
+}
+
+.latest-team-tags {
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.latest-year-band .badge {
+  border-color: rgba(255, 250, 242, 0.2);
+  background: rgba(255, 250, 242, 0.12);
+  color: #fffaf2;
+}
+
+.latest-split-item {
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.latest-split-item .person-link {
+  color: #fffaf2;
+}
+
+.latest-year-band + .hero-panel {
+  margin-top: 18px;
+}
+
 .club-summary-row,
 .stats-grid,
 .teams-layout,
@@ -2007,6 +2213,8 @@ mark {
   .club-honour-grid,
   .archive-grid,
   .time-series-grid,
+  .latest-year-head,
+  .latest-year-grid,
   .search-results-grid,
   .profile-hero,
   .profile-grid,
@@ -2189,6 +2397,7 @@ mark {
   }
 
   .club-summary-stats,
+  .latest-year-metrics,
   .metric-legend {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2302,6 +2511,29 @@ mark {
     grid-template-columns: 1fr;
   }
 
+  .latest-year-band {
+    padding: 12px;
+  }
+
+  .latest-year-copy h2 {
+    max-width: none;
+    font-size: 1.7rem;
+  }
+
+  .latest-feature > strong {
+    font-size: 1.7rem;
+  }
+
+  .latest-team-item,
+  .latest-split-item {
+    grid-template-columns: 1fr;
+  }
+
+  .latest-team-meta,
+  .latest-split-time {
+    text-align: left;
+  }
+
   .search-person-card,
   .search-team-card,
   .search-issue-card,
@@ -2350,6 +2582,7 @@ mark {
   .hero-actions,
   .hero-meta,
   .club-summary-stats,
+  .latest-year-metrics,
   .metric-legend,
   .team-card-stats,
   .club-honour-row-actions {

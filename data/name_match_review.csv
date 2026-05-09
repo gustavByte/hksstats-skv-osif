@@ -1,6 +1,8 @@
 raw_name,suggested_canonical_name,confidence,reason,decision,notes
-Henning Mæle,Henning Mæhle,0.93,Samme fornavn og liten skriveforskjell i etternavn,,
+Henry Mcnulty,Henry McNulty,0.99,Lik stavemåte etter normalisering,approve,Godkjent ved 2026-import 2026-05-09
+Martin Kjäll-Ohlsson,Martin Kjäll Ohlsson,0.99,Lik stavemåte etter normalisering,approve,Godkjent ved 2026-import 2026-05-09
 🔁Håkon Lund,Håkon Lund,0.99,Lik stavemåte etter normalisering,approve,Godkjent av bruker 2026-04-07
+Madelén Tronstad Sagebakken,Madelene Tronstad Sagebakken,0.96,Nesten identisk navn med liten staveforskjell,approve,Godkjent ved 2026-import 2026-05-09
 Kristan Bjune Sveen,Kristian Bjune Sveen,0.95,Nesten identisk navn med liten staveforskjell,approve,Godkjent av bruker 2026-04-07
 Ragnhild Brøs Kløven,Ragnhild Brørs Kløven,0.95,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent av bruker 2026-04-07
 Simen Hagrup Kjeldsen,Simen Hagerup Kjeldsen,0.95,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent av bruker 2026-04-07
@@ -8,14 +10,19 @@ Eivind Klokkhaug,Eivind Klokkehaug,0.94,Samme fornavn og liten skriveforskjell i
 Fredrik Emil Juul,Frederik Emil Juul,0.94,Nesten identisk navn med liten staveforskjell,approve,Godkjent av bruker 2026-04-07
 Hanna Arnes Nisja,Hanna Aarnes Nisja,0.94,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent av bruker 2026-04-07
 Veslemøy Rønnevik,Veselemøy Rønnevik,0.94,Nesten identisk navn med liten staveforskjell,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
+Henning Mæle,Henning Mæhle,0.93,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent ved 2026-import 2026-05-09
 Sofie Gotholt,Sofie Gotuholt,0.93,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent av bruker 2026-04-15
 Tobias Bauman,Tobias Baumann,0.93,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent av bruker 2026-04-15
+Ida Flaaten,Ida Flaatten,0.92,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent ved 2026-import 2026-05-09
+Anne Myht,Anne Myhr,0.89,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent ved 2026-import 2026-05-09
 Eldbjørg Moxnes,Eldbjørg D. Moxnes,0.88,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
+Anna Sirevåg,Anna Marie Sirevåg,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent ved 2026-import 2026-05-09
 Anne-Line Dahlen,Anne-Line Evenstad Dahlen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 David Rieger,David Stefan Rieger,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Elene Tangen,Elene Mauseth Tangen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Emma Leiner,Emma Liv Leiner,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Fredrik Fyksen,Fredrik Sætereng Fyksen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
+Hanna Larsen,Hanna Kristine Larsen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent ved 2026-import 2026-05-09
 Helene Melsom,Helene Støle Melsom,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Ida Nordengen,Ida Marie Nordengen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Ingrid Huitfeldt,Ingrid Marie Schaumburg Huitfeldt,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
@@ -26,7 +33,9 @@ Karoline Kjærnes,Karoline Holum Kjærnes,0.87,"Samme fornavn/etternavn, ulik br
 Magnus Warvik,Magnus W Warvik,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Maja Blegen,Maja Maria Blegen,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
 Morten Dalhaug,Morten Olsen Dalhaug,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
+Runa Falch,Runa Skrove Falch,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent ved 2026-import 2026-05-09
 Siri Staver,Siri Vegsund Staver,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-07
+Sjur Prestsæter,Sjur Krystad Prestsæter,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent ved 2026-import 2026-05-09
 Sofie Amundsgård,Sofie Karlsen Amundsgård,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-15
 Synne Opheim,Synne Våge Bertelsmann Opheim,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-15
 Telma Dagestad,Telma Eckhoff Dagestad,0.87,"Samme fornavn/etternavn, ulik bruk av mellomnavn",approve,Godkjent av bruker 2026-04-15
@@ -35,6 +44,7 @@ Anette Killerud,Anette Killerud Ødegård,0.86,Kortform av fullt navn,approve,Go
 Anjara R.,Dina Anjara Herilanto Randrianampiantsoa,0.86,Kortform med initialer som matcher fullt navn,approve,Godkjent av bruker 2026-04-15
 Dina Anjara,Dina Anjara Herilanto Randrianampiantsoa,0.86,Kortform av fullt navn,approve,Godkjent av bruker 2026-04-15
 Sofie Fosslie,Sofie Fosseli,0.85,Samme fornavn og liten skriveforskjell i etternavn,approve,Godkjent av bruker 2026-04-15
+Marianne G Ullsand,Marianne Garmann Ullsand,0.83,Samme fornavn og etternavn med liten skriveforskjell,approve,Godkjent ved 2026-import 2026-05-09
 Anne-Line Evenstad Dahlen,Anne-Line Dahlen,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.
 Daniel Fikstveita,Daniel Fikstvedt,,Bevart tidligere vurdering,approve,Godkjent av bruker 2026-04-27
 David Stefan Rieger,David Rieger,,Bevart tidligere vurdering,reject,Avvist av bruker 2026-04-07. Riktig kanonisk navn er motsatt vei.

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T15:37:46",
+  "generatedAt": "2026-05-09T15:57:00",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -364,7 +364,7 @@
           748
         ],
         "best_split_text": "2:59",
-        "best_percent_of_record": 93.6,
+        "best_percent_of_record": 92.8,
         "classes": [
           "SK Vidar elite"
         ],
@@ -437,7 +437,7 @@
           683
         ],
         "best_split_text": "5:00",
-        "best_percent_of_record": 95.7,
+        "best_percent_of_record": 94.3,
         "classes": [
           "SK Vidar elite"
         ],
@@ -592,7 +592,7 @@
           700
         ],
         "best_split_text": "1:36",
-        "best_percent_of_record": 92.0,
+        "best_percent_of_record": 90.7,
         "classes": [
           "SK Vidar elite",
           "SK Vidar senior"
@@ -675,7 +675,7 @@
           661
         ],
         "best_split_text": "3:22",
-        "best_percent_of_record": 99.1,
+        "best_percent_of_record": 96.0,
         "classes": [
           "SK Vidar elite",
           "SK Vidar senior"
@@ -754,7 +754,7 @@
           517
         ],
         "best_split_text": "1:38",
-        "best_percent_of_record": 86.6,
+        "best_percent_of_record": 83.0,
         "classes": [
           "SK Vidar elite",
           "SK Vidar senior"
@@ -898,7 +898,7 @@
           664
         ],
         "best_split_text": "3:25",
-        "best_percent_of_record": 100.0,
+        "best_percent_of_record": 99.7,
         "classes": [
           "SK Vidar elite"
         ],
@@ -1042,7 +1042,7 @@
           673
         ],
         "best_split_text": "3:20",
-        "best_percent_of_record": 98.7,
+        "best_percent_of_record": 94.6,
         "classes": [
           "SK Vidar elite"
         ],
@@ -1115,7 +1115,7 @@
           451
         ],
         "best_split_text": "3:40",
-        "best_percent_of_record": 84.8,
+        "best_percent_of_record": 84.1,
         "classes": [
           "OSI student",
           "SK Vidar senior"
@@ -1190,7 +1190,7 @@
           633
         ],
         "best_split_text": "1:56",
-        "best_percent_of_record": 86.7,
+        "best_percent_of_record": 84.0,
         "classes": [
           "OSI student"
         ],
@@ -1350,7 +1350,7 @@
           661
         ],
         "best_split_text": "3:22",
-        "best_percent_of_record": 99.1,
+        "best_percent_of_record": 96.0,
         "classes": [
           "SK Vidar elite",
           "SK Vidar senior"
@@ -1420,7 +1420,7 @@
           634
         ],
         "best_split_text": "5:22",
-        "best_percent_of_record": 85.2,
+        "best_percent_of_record": 84.1,
         "classes": [
           "OSI student"
         ],
@@ -1624,7 +1624,7 @@
           670
         ],
         "best_split_text": "8:07",
-        "best_percent_of_record": 102.9,
+        "best_percent_of_record": 100.0,
         "classes": [
           "SK Vidar elite"
         ],
@@ -1818,7 +1818,7 @@
           668
         ],
         "best_split_text": "4:43",
-        "best_percent_of_record": 101.4,
+        "best_percent_of_record": 100.0,
         "classes": [
           "SK Vidar elite"
         ],
@@ -4383,11 +4383,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "11. Frognerparken",
-            "record_text": "3:54",
-            "record_seconds": 234,
-            "record_holder": "Per Svela",
+            "record_text": "3:52",
+            "record_seconds": 232,
+            "record_holder": "Trym Fjøsne-Hexeberg",
             "record_club": "Ull/Kisa IL",
-            "record_year": 2022
+            "record_year": 2026
           },
           "entries": [
             {
@@ -4397,7 +4397,7 @@
               "raw_name": "Ole Skjelten Daasvatn",
               "split_text": "4:08",
               "split_seconds": 248,
-              "percent_of_record": 94.4,
+              "percent_of_record": 93.5,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar M Elite 1 2026",
@@ -4412,7 +4412,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "4:10",
               "split_seconds": 250,
-              "percent_of_record": 93.6,
+              "percent_of_record": 92.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2022",
@@ -4427,7 +4427,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "4:10",
               "split_seconds": 250,
-              "percent_of_record": 93.6,
+              "percent_of_record": 92.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1 Elite 2023",
@@ -4442,7 +4442,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "4:12",
               "split_seconds": 252,
-              "percent_of_record": 92.9,
+              "percent_of_record": 92.1,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "Elite 1 - menn 2025",
@@ -4457,7 +4457,7 @@
               "raw_name": "Magnus Warvik",
               "split_text": "4:14",
               "split_seconds": 254,
-              "percent_of_record": 92.1,
+              "percent_of_record": 91.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2 Elite 2024",
@@ -4474,7 +4474,7 @@
               "raw_name": "Ole Skjelten Daasvatn",
               "split_text": "4:08",
               "split_seconds": 248,
-              "percent_of_record": 94.4,
+              "percent_of_record": 93.5,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar M Elite 1 2026",
@@ -4489,7 +4489,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "4:10",
               "split_seconds": 250,
-              "percent_of_record": 93.6,
+              "percent_of_record": 92.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2022",
@@ -4504,7 +4504,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "4:10",
               "split_seconds": 250,
-              "percent_of_record": 93.6,
+              "percent_of_record": 92.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1 Elite 2023",
@@ -4519,7 +4519,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "4:12",
               "split_seconds": 252,
-              "percent_of_record": 92.9,
+              "percent_of_record": 92.1,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "Elite 1 - menn 2025",
@@ -4534,7 +4534,7 @@
               "raw_name": "Magnus Warvik",
               "split_text": "4:14",
               "split_seconds": 254,
-              "percent_of_record": 92.1,
+              "percent_of_record": 91.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2 Elite 2024",
@@ -4549,7 +4549,7 @@
               "raw_name": "Eivind Klokkhaug",
               "split_text": "4:15",
               "split_seconds": 255,
-              "percent_of_record": 91.8,
+              "percent_of_record": 91.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
@@ -4564,7 +4564,7 @@
               "raw_name": "Matias Brekkå",
               "split_text": "4:19",
               "split_seconds": 259,
-              "percent_of_record": 90.3,
+              "percent_of_record": 89.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "Elite 2 - menn  2025",
@@ -4579,7 +4579,7 @@
               "raw_name": "Harald Solhaug Næss",
               "split_text": "4:22",
               "split_seconds": 262,
-              "percent_of_record": 89.3,
+              "percent_of_record": 88.5,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 2022",
@@ -4594,7 +4594,7 @@
               "raw_name": "Fredrik Killerud",
               "split_text": "4:24",
               "split_seconds": 264,
-              "percent_of_record": 88.6,
+              "percent_of_record": 87.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar M Elite 2 2026",
@@ -4609,7 +4609,7 @@
               "raw_name": "Tobias Baumann",
               "split_text": "4:26",
               "split_seconds": 266,
-              "percent_of_record": 88.0,
+              "percent_of_record": 87.2,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "Menn senior 1  2025",
@@ -4873,11 +4873,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "13. Trappa",
-            "record_text": "2:39",
-            "record_seconds": 159,
+            "record_text": "2:38",
+            "record_seconds": 158,
             "record_holder": "Andreas Fjeld Halvorsen",
             "record_club": "Ull/Kisa IL",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -4887,7 +4887,7 @@
               "raw_name": "Sander Dybwad Mathiesen",
               "split_text": "2:46",
               "split_seconds": 166,
-              "percent_of_record": 95.8,
+              "percent_of_record": 95.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2022",
@@ -4902,7 +4902,7 @@
               "raw_name": "Kasper Sørlie-Reininger",
               "split_text": "2:56",
               "split_seconds": 176,
-              "percent_of_record": 90.3,
+              "percent_of_record": 89.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar M Elite 1 2026",
@@ -4917,7 +4917,7 @@
               "raw_name": "Erlend Gjerdevik Sørtveit",
               "split_text": "2:57",
               "split_seconds": 177,
-              "percent_of_record": 89.8,
+              "percent_of_record": 89.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
@@ -4932,7 +4932,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "2:59",
               "split_seconds": 179,
-              "percent_of_record": 88.8,
+              "percent_of_record": 88.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar M Elite 2 2026",
@@ -4947,7 +4947,7 @@
               "raw_name": "Markus Borge Harbo",
               "split_text": "3:01",
               "split_seconds": 181,
-              "percent_of_record": 87.8,
+              "percent_of_record": 87.3,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 2022",
@@ -4964,7 +4964,7 @@
               "raw_name": "Sander Dybwad Mathiesen",
               "split_text": "2:46",
               "split_seconds": 166,
-              "percent_of_record": 95.8,
+              "percent_of_record": 95.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2022",
@@ -4979,7 +4979,7 @@
               "raw_name": "Kasper Sørlie-Reininger",
               "split_text": "2:56",
               "split_seconds": 176,
-              "percent_of_record": 90.3,
+              "percent_of_record": 89.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar M Elite 1 2026",
@@ -4994,7 +4994,7 @@
               "raw_name": "Erlend Gjerdevik Sørtveit",
               "split_text": "2:57",
               "split_seconds": 177,
-              "percent_of_record": 89.8,
+              "percent_of_record": 89.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1 | Bib 1204 | 13:15",
@@ -5009,7 +5009,7 @@
               "raw_name": "Mathias Moen",
               "split_text": "2:59",
               "split_seconds": 179,
-              "percent_of_record": 88.8,
+              "percent_of_record": 88.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar M Elite 2 2026",
@@ -5024,7 +5024,7 @@
               "raw_name": "Markus Borge Harbo",
               "split_text": "3:01",
               "split_seconds": 181,
-              "percent_of_record": 87.8,
+              "percent_of_record": 87.3,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 2022",
@@ -5039,7 +5039,7 @@
               "raw_name": "Morten Dalhaug",
               "split_text": "3:02",
               "split_seconds": 182,
-              "percent_of_record": 87.4,
+              "percent_of_record": 86.8,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "Menn senior 1  2025",
@@ -5054,7 +5054,7 @@
               "raw_name": "Steinar Bøe",
               "split_text": "3:02",
               "split_seconds": 182,
-              "percent_of_record": 87.4,
+              "percent_of_record": 86.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "Elite 1 - menn 2025",
@@ -5069,7 +5069,7 @@
               "raw_name": "Jørgen Moen",
               "split_text": "3:03",
               "split_seconds": 183,
-              "percent_of_record": 86.9,
+              "percent_of_record": 86.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1 Elite 2023",
@@ -5084,7 +5084,7 @@
               "raw_name": "Harald Solhaug Næss",
               "split_text": "3:03",
               "split_seconds": 183,
-              "percent_of_record": 86.9,
+              "percent_of_record": 86.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2 Elite 2023",
@@ -5099,7 +5099,7 @@
               "raw_name": "Christoffer Hagen",
               "split_text": "3:03",
               "split_seconds": 183,
-              "percent_of_record": 86.9,
+              "percent_of_record": 86.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "Elite 2 - menn  2025",
@@ -5618,11 +5618,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "01. Bislett",
-            "record_text": "3:16",
-            "record_seconds": 196,
-            "record_holder": "Ingeborg Østgård",
+            "record_text": "3:14",
+            "record_seconds": 194,
+            "record_holder": "Malin Nyfors",
             "record_club": "IK Tjalve",
-            "record_year": 2024
+            "record_year": 2026
           },
           "entries": [
             {
@@ -5632,7 +5632,7 @@
               "raw_name": "Hanna Larsen",
               "split_text": "3:22",
               "split_seconds": 202,
-              "percent_of_record": 97.0,
+              "percent_of_record": 96.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -5647,7 +5647,7 @@
               "raw_name": "Anne Gine Løvnes",
               "split_text": "3:22",
               "split_seconds": 202,
-              "percent_of_record": 97.0,
+              "percent_of_record": 96.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -5662,7 +5662,7 @@
               "raw_name": "Vilde Antonsen",
               "split_text": "3:28",
               "split_seconds": 208,
-              "percent_of_record": 94.2,
+              "percent_of_record": 93.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -5677,7 +5677,7 @@
               "raw_name": "Sara Aarvoll Svarstad",
               "split_text": "3:31",
               "split_seconds": 211,
-              "percent_of_record": 92.9,
+              "percent_of_record": 91.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -5692,7 +5692,7 @@
               "raw_name": "Ingvild Brennhovd",
               "split_text": "3:37",
               "split_seconds": 217,
-              "percent_of_record": 90.3,
+              "percent_of_record": 89.4,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -5709,7 +5709,7 @@
               "raw_name": "Hanna Larsen",
               "split_text": "3:22",
               "split_seconds": 202,
-              "percent_of_record": 97.0,
+              "percent_of_record": 96.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -5724,7 +5724,7 @@
               "raw_name": "Anne Gine Løvnes",
               "split_text": "3:22",
               "split_seconds": 202,
-              "percent_of_record": 97.0,
+              "percent_of_record": 96.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -5739,7 +5739,7 @@
               "raw_name": "Vilde Antonsen",
               "split_text": "3:28",
               "split_seconds": 208,
-              "percent_of_record": 94.2,
+              "percent_of_record": 93.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -5754,7 +5754,7 @@
               "raw_name": "Sara Aarvoll Svarstad",
               "split_text": "3:31",
               "split_seconds": 211,
-              "percent_of_record": 92.9,
+              "percent_of_record": 91.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -5769,7 +5769,7 @@
               "raw_name": "Ingvild Brennhovd",
               "split_text": "3:37",
               "split_seconds": 217,
-              "percent_of_record": 90.3,
+              "percent_of_record": 89.4,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -5784,7 +5784,7 @@
               "raw_name": "Sofie Amundsgård",
               "split_text": "3:38",
               "split_seconds": 218,
-              "percent_of_record": 89.9,
+              "percent_of_record": 89.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2  2025",
@@ -5799,7 +5799,7 @@
               "raw_name": "Telma Eckhoff Dagestad",
               "split_text": "3:39",
               "split_seconds": 219,
-              "percent_of_record": 89.5,
+              "percent_of_record": 88.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -5814,7 +5814,7 @@
               "raw_name": "Anne-Line Evenstad Dahlen",
               "split_text": "3:43",
               "split_seconds": 223,
-              "percent_of_record": 87.9,
+              "percent_of_record": 87.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2024",
@@ -5829,7 +5829,7 @@
               "raw_name": "Madelén Tronstad Sagebakken",
               "split_text": "3:44",
               "split_seconds": 224,
-              "percent_of_record": 87.5,
+              "percent_of_record": 86.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -5844,7 +5844,7 @@
               "raw_name": "June Kieu-Van Bui",
               "split_text": "3:46",
               "split_seconds": 226,
-              "percent_of_record": 86.7,
+              "percent_of_record": 85.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 3 2023",
@@ -6353,11 +6353,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "04. Berg og dal",
-            "record_text": "5:56",
-            "record_seconds": 356,
-            "record_holder": "Ingvill Måkestad Bovim",
+            "record_text": "5:55",
+            "record_seconds": 355,
+            "record_holder": "Ingeborg Østgård",
             "record_club": "IK Tjalve",
-            "record_year": 2016
+            "record_year": 2026
           },
           "entries": [
             {
@@ -6367,7 +6367,7 @@
               "raw_name": "Madelène Wanvik Holum",
               "split_text": "5:56",
               "split_seconds": 356,
-              "percent_of_record": 100.0,
+              "percent_of_record": 99.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -6382,7 +6382,7 @@
               "raw_name": "Malin Edland",
               "split_text": "6:11",
               "split_seconds": 371,
-              "percent_of_record": 96.0,
+              "percent_of_record": 95.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -6397,7 +6397,7 @@
               "raw_name": "Kristine Meinert Rød",
               "split_text": "6:27",
               "split_seconds": 387,
-              "percent_of_record": 92.0,
+              "percent_of_record": 91.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -6412,7 +6412,7 @@
               "raw_name": "Karoline Wisløff Rud",
               "split_text": "6:31",
               "split_seconds": 391,
-              "percent_of_record": 91.0,
+              "percent_of_record": 90.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -6427,7 +6427,7 @@
               "raw_name": "Anna Marie Nordengen",
               "split_text": "6:35",
               "split_seconds": 395,
-              "percent_of_record": 90.1,
+              "percent_of_record": 89.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -6444,7 +6444,7 @@
               "raw_name": "Madelène Wanvik Holum",
               "split_text": "5:56",
               "split_seconds": 356,
-              "percent_of_record": 100.0,
+              "percent_of_record": 99.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -6459,7 +6459,7 @@
               "raw_name": "Malin Edland",
               "split_text": "6:11",
               "split_seconds": 371,
-              "percent_of_record": 96.0,
+              "percent_of_record": 95.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -6474,7 +6474,7 @@
               "raw_name": "Kristine Meinert Rød",
               "split_text": "6:27",
               "split_seconds": 387,
-              "percent_of_record": 92.0,
+              "percent_of_record": 91.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -6489,7 +6489,7 @@
               "raw_name": "Karoline Wisløff Rud",
               "split_text": "6:31",
               "split_seconds": 391,
-              "percent_of_record": 91.0,
+              "percent_of_record": 90.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -6504,7 +6504,7 @@
               "raw_name": "Anna Marie Nordengen",
               "split_text": "6:35",
               "split_seconds": 395,
-              "percent_of_record": 90.1,
+              "percent_of_record": 89.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -6519,7 +6519,7 @@
               "raw_name": "Runa Skrove Falch",
               "split_text": "6:38",
               "split_seconds": 398,
-              "percent_of_record": 89.4,
+              "percent_of_record": 89.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -6534,7 +6534,7 @@
               "raw_name": "Anette Killerud Ødegård",
               "split_text": "6:39",
               "split_seconds": 399,
-              "percent_of_record": 89.2,
+              "percent_of_record": 89.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -6549,7 +6549,7 @@
               "raw_name": "Liv Kulle Andreassen",
               "split_text": "6:39",
               "split_seconds": 399,
-              "percent_of_record": 89.2,
+              "percent_of_record": 89.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 3 2026",
@@ -6564,7 +6564,7 @@
               "raw_name": "Asta Ellingsen",
               "split_text": "6:42",
               "split_seconds": 402,
-              "percent_of_record": 88.6,
+              "percent_of_record": 88.3,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 1 2022",
@@ -6579,7 +6579,7 @@
               "raw_name": "Katerina Hatzigiannis",
               "split_text": "6:42",
               "split_seconds": 402,
-              "percent_of_record": 88.6,
+              "percent_of_record": 88.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2024",
@@ -6598,11 +6598,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "05. Forskningsparken",
-            "record_text": "3:41",
-            "record_seconds": 221,
-            "record_holder": "Ingrid Helene Nyhus",
+            "record_text": "3:32",
+            "record_seconds": 212,
+            "record_holder": "Anna Marie Sirevåg",
             "record_club": "SK Vidar",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -6612,7 +6612,7 @@
               "raw_name": "Anna Marie Sirevåg",
               "split_text": "3:32",
               "split_seconds": 212,
-              "percent_of_record": 104.2,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -6627,7 +6627,7 @@
               "raw_name": "Ingrid Helene Nyhus",
               "split_text": "3:41",
               "split_seconds": 221,
-              "percent_of_record": 100.0,
+              "percent_of_record": 95.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -6642,7 +6642,7 @@
               "raw_name": "Hanna Kristine Larsen",
               "split_text": "3:43",
               "split_seconds": 223,
-              "percent_of_record": 99.1,
+              "percent_of_record": 95.1,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -6657,7 +6657,7 @@
               "raw_name": "Vilde Antonsen",
               "split_text": "3:44",
               "split_seconds": 224,
-              "percent_of_record": 98.7,
+              "percent_of_record": 94.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -6672,7 +6672,7 @@
               "raw_name": "Hanna Kristine Larsen",
               "split_text": "3:45",
               "split_seconds": 225,
-              "percent_of_record": 98.2,
+              "percent_of_record": 94.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -6689,7 +6689,7 @@
               "raw_name": "Anna Marie Sirevåg",
               "split_text": "3:32",
               "split_seconds": 212,
-              "percent_of_record": 104.2,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -6704,7 +6704,7 @@
               "raw_name": "Ingrid Helene Nyhus",
               "split_text": "3:41",
               "split_seconds": 221,
-              "percent_of_record": 100.0,
+              "percent_of_record": 95.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -6719,7 +6719,7 @@
               "raw_name": "Hanna Kristine Larsen",
               "split_text": "3:43",
               "split_seconds": 223,
-              "percent_of_record": 99.1,
+              "percent_of_record": 95.1,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -6734,7 +6734,7 @@
               "raw_name": "Vilde Antonsen",
               "split_text": "3:44",
               "split_seconds": 224,
-              "percent_of_record": 98.7,
+              "percent_of_record": 94.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -6749,7 +6749,7 @@
               "raw_name": "Hanna Kristine Larsen",
               "split_text": "3:45",
               "split_seconds": 225,
-              "percent_of_record": 98.2,
+              "percent_of_record": 94.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -6764,7 +6764,7 @@
               "raw_name": "Asta Ellingvåg",
               "split_text": "3:50",
               "split_seconds": 230,
-              "percent_of_record": 96.1,
+              "percent_of_record": 92.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2  2025",
@@ -6779,7 +6779,7 @@
               "raw_name": "Mathilde Christin Knutsen",
               "split_text": "3:53",
               "split_seconds": 233,
-              "percent_of_record": 94.8,
+              "percent_of_record": 91.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -6794,7 +6794,7 @@
               "raw_name": "Delphine Poirot",
               "split_text": "3:59",
               "split_seconds": 239,
-              "percent_of_record": 92.5,
+              "percent_of_record": 88.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -6809,7 +6809,7 @@
               "raw_name": "Vilde Moser",
               "split_text": "4:01",
               "split_seconds": 241,
-              "percent_of_record": 91.7,
+              "percent_of_record": 88.0,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 1 2023",
@@ -6824,7 +6824,7 @@
               "raw_name": "Hanne Tingelstad",
               "split_text": "4:01",
               "split_seconds": 241,
-              "percent_of_record": 91.7,
+              "percent_of_record": 88.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Queens  2025",
@@ -7333,11 +7333,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "08. Utfor",
-            "record_text": "4:47",
-            "record_seconds": 287,
-            "record_holder": "Ingeborg Løvnes",
-            "record_club": "IK Tjave",
-            "record_year": 2023
+            "record_text": "4:43",
+            "record_seconds": 283,
+            "record_holder": "Sara Kjeldsen Lie",
+            "record_club": "SK Vidar",
+            "record_year": 2026
           },
           "entries": [
             {
@@ -7347,7 +7347,7 @@
               "raw_name": "Sara Kjeldsen Lie",
               "split_text": "4:43",
               "split_seconds": 283,
-              "percent_of_record": 101.4,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -7362,7 +7362,7 @@
               "raw_name": "Sara Kjeldsen Lie",
               "split_text": "4:53",
               "split_seconds": 293,
-              "percent_of_record": 98.0,
+              "percent_of_record": 96.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -7377,7 +7377,7 @@
               "raw_name": "Marianne Harnes",
               "split_text": "4:58",
               "split_seconds": 298,
-              "percent_of_record": 96.3,
+              "percent_of_record": 95.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -7392,7 +7392,7 @@
               "raw_name": "Sofie Kjos Bergum",
               "split_text": "5:00",
               "split_seconds": 300,
-              "percent_of_record": 95.7,
+              "percent_of_record": 94.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -7407,7 +7407,7 @@
               "raw_name": "Frida Bjørnstad Konow",
               "split_text": "5:00",
               "split_seconds": 300,
-              "percent_of_record": 95.7,
+              "percent_of_record": 94.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -7424,7 +7424,7 @@
               "raw_name": "Sara Kjeldsen Lie",
               "split_text": "4:43",
               "split_seconds": 283,
-              "percent_of_record": 101.4,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -7439,7 +7439,7 @@
               "raw_name": "Sara Kjeldsen Lie",
               "split_text": "4:53",
               "split_seconds": 293,
-              "percent_of_record": 98.0,
+              "percent_of_record": 96.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -7454,7 +7454,7 @@
               "raw_name": "Marianne Harnes",
               "split_text": "4:58",
               "split_seconds": 298,
-              "percent_of_record": 96.3,
+              "percent_of_record": 95.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -7469,7 +7469,7 @@
               "raw_name": "Sofie Kjos Bergum",
               "split_text": "5:00",
               "split_seconds": 300,
-              "percent_of_record": 95.7,
+              "percent_of_record": 94.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -7484,7 +7484,7 @@
               "raw_name": "Frida Bjørnstad Konow",
               "split_text": "5:00",
               "split_seconds": 300,
-              "percent_of_record": 95.7,
+              "percent_of_record": 94.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -7499,7 +7499,7 @@
               "raw_name": "Sofie Kjos Bergum",
               "split_text": "5:01",
               "split_seconds": 301,
-              "percent_of_record": 95.3,
+              "percent_of_record": 94.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -7514,7 +7514,7 @@
               "raw_name": "Sofie Kjos Bergum",
               "split_text": "5:04",
               "split_seconds": 304,
-              "percent_of_record": 94.4,
+              "percent_of_record": 93.1,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2024",
@@ -7529,7 +7529,7 @@
               "raw_name": "Marte Sønstevold",
               "split_text": "5:07",
               "split_seconds": 307,
-              "percent_of_record": 93.5,
+              "percent_of_record": 92.2,
               "class_code": "Veteran",
               "class_label": "SK Vidar veteran",
               "team_name": "SK Vidar K Veteran 2026",
@@ -7544,7 +7544,7 @@
               "raw_name": "Hanna Kristine Larsen",
               "split_text": "5:07",
               "split_seconds": 307,
-              "percent_of_record": 93.5,
+              "percent_of_record": 92.2,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 1 2022",
@@ -7559,7 +7559,7 @@
               "raw_name": "Sofie Kjos Bergum",
               "split_text": "5:08",
               "split_seconds": 308,
-              "percent_of_record": 93.2,
+              "percent_of_record": 91.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2  2025",
@@ -7578,11 +7578,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "09. Gressbanen",
-            "record_text": "1:37",
-            "record_seconds": 97,
-            "record_holder": "Margrete Baustad",
-            "record_club": "IK Tjalve",
-            "record_year": 2023
+            "record_text": "1:33",
+            "record_seconds": 93,
+            "record_holder": "Alice Ulla Berg",
+            "record_club": "SK Vidar",
+            "record_year": 2026
           },
           "entries": [
             {
@@ -7592,7 +7592,7 @@
               "raw_name": "Alice Ulla Berg",
               "split_text": "1:33",
               "split_seconds": 93,
-              "percent_of_record": 104.3,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -7607,7 +7607,7 @@
               "raw_name": "Nina Andersen",
               "split_text": "1:39",
               "split_seconds": 99,
-              "percent_of_record": 98.0,
+              "percent_of_record": 93.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -7622,7 +7622,7 @@
               "raw_name": "Frida Thorsås",
               "split_text": "1:40",
               "split_seconds": 100,
-              "percent_of_record": 97.0,
+              "percent_of_record": 93.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -7637,7 +7637,7 @@
               "raw_name": "Astrid Ingebrigtsen",
               "split_text": "1:45",
               "split_seconds": 105,
-              "percent_of_record": 92.4,
+              "percent_of_record": 88.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -7652,7 +7652,7 @@
               "raw_name": "Mai Watson",
               "split_text": "1:45",
               "split_seconds": 105,
-              "percent_of_record": 92.4,
+              "percent_of_record": 88.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -7669,7 +7669,7 @@
               "raw_name": "Alice Ulla Berg",
               "split_text": "1:33",
               "split_seconds": 93,
-              "percent_of_record": 104.3,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -7684,7 +7684,7 @@
               "raw_name": "Nina Andersen",
               "split_text": "1:39",
               "split_seconds": 99,
-              "percent_of_record": 98.0,
+              "percent_of_record": 93.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -7699,7 +7699,7 @@
               "raw_name": "Frida Thorsås",
               "split_text": "1:40",
               "split_seconds": 100,
-              "percent_of_record": 97.0,
+              "percent_of_record": 93.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -7714,7 +7714,7 @@
               "raw_name": "Astrid Ingebrigtsen",
               "split_text": "1:45",
               "split_seconds": 105,
-              "percent_of_record": 92.4,
+              "percent_of_record": 88.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -7729,7 +7729,7 @@
               "raw_name": "Mai Watson",
               "split_text": "1:45",
               "split_seconds": 105,
-              "percent_of_record": 92.4,
+              "percent_of_record": 88.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -7744,7 +7744,7 @@
               "raw_name": "Sigrun Aker Nordeng",
               "split_text": "1:46",
               "split_seconds": 106,
-              "percent_of_record": 91.5,
+              "percent_of_record": 87.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -7759,7 +7759,7 @@
               "raw_name": "Anne-Line Dahlen",
               "split_text": "1:47",
               "split_seconds": 107,
-              "percent_of_record": 90.7,
+              "percent_of_record": 86.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -7774,7 +7774,7 @@
               "raw_name": "Celine Håkestad",
               "split_text": "1:49",
               "split_seconds": 109,
-              "percent_of_record": 89.0,
+              "percent_of_record": 85.3,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2024",
@@ -7789,7 +7789,7 @@
               "raw_name": "Martine Svendsen",
               "split_text": "1:51",
               "split_seconds": 111,
-              "percent_of_record": 87.4,
+              "percent_of_record": 83.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2  2025",
@@ -7804,7 +7804,7 @@
               "raw_name": "Emma Leiner",
               "split_text": "1:52",
               "split_seconds": 112,
-              "percent_of_record": 86.6,
+              "percent_of_record": 83.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 3 2023",
@@ -7823,11 +7823,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "10. Den lange",
-            "record_text": "8:21",
-            "record_seconds": 501,
+            "record_text": "8:07",
+            "record_seconds": 487,
             "record_holder": "Amalie Sæten",
             "record_club": "SK Vidar",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -7837,7 +7837,7 @@
               "raw_name": "Amalie Sæten",
               "split_text": "8:07",
               "split_seconds": 487,
-              "percent_of_record": 102.9,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -7852,7 +7852,7 @@
               "raw_name": "Amalie Sæten",
               "split_text": "8:21",
               "split_seconds": 501,
-              "percent_of_record": 100.0,
+              "percent_of_record": 97.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -7867,7 +7867,7 @@
               "raw_name": "Madelène Wanvik Holum",
               "split_text": "8:41",
               "split_seconds": 521,
-              "percent_of_record": 96.2,
+              "percent_of_record": 93.5,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -7882,7 +7882,7 @@
               "raw_name": "Emilie Mo",
               "split_text": "8:50",
               "split_seconds": 530,
-              "percent_of_record": 94.5,
+              "percent_of_record": 91.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -7897,7 +7897,7 @@
               "raw_name": "Ine Bakken",
               "split_text": "8:51",
               "split_seconds": 531,
-              "percent_of_record": 94.4,
+              "percent_of_record": 91.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -7914,7 +7914,7 @@
               "raw_name": "Amalie Sæten",
               "split_text": "8:07",
               "split_seconds": 487,
-              "percent_of_record": 102.9,
+              "percent_of_record": 100.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -7929,7 +7929,7 @@
               "raw_name": "Amalie Sæten",
               "split_text": "8:21",
               "split_seconds": 501,
-              "percent_of_record": 100.0,
+              "percent_of_record": 97.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -7944,7 +7944,7 @@
               "raw_name": "Madelène Wanvik Holum",
               "split_text": "8:41",
               "split_seconds": 521,
-              "percent_of_record": 96.2,
+              "percent_of_record": 93.5,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -7959,7 +7959,7 @@
               "raw_name": "Emilie Mo",
               "split_text": "8:50",
               "split_seconds": 530,
-              "percent_of_record": 94.5,
+              "percent_of_record": 91.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -7974,7 +7974,7 @@
               "raw_name": "Ine Bakken",
               "split_text": "8:51",
               "split_seconds": 531,
-              "percent_of_record": 94.4,
+              "percent_of_record": 91.7,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -7989,7 +7989,7 @@
               "raw_name": "Emilie Mo",
               "split_text": "8:56",
               "split_seconds": 536,
-              "percent_of_record": 93.5,
+              "percent_of_record": 90.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -8004,7 +8004,7 @@
               "raw_name": "Bethina Løver Valle",
               "split_text": "9:07",
               "split_seconds": 547,
-              "percent_of_record": 91.6,
+              "percent_of_record": 89.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2  2025",
@@ -8019,7 +8019,7 @@
               "raw_name": "Kathrine Kvernmo",
               "split_text": "9:23",
               "split_seconds": 563,
-              "percent_of_record": 89.0,
+              "percent_of_record": 86.5,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 1 2022",
@@ -8034,7 +8034,7 @@
               "raw_name": "Eldbjørg Moxnes",
               "split_text": "9:25",
               "split_seconds": 565,
-              "percent_of_record": 88.7,
+              "percent_of_record": 86.2,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 3 2023",
@@ -8049,7 +8049,7 @@
               "raw_name": "Siri Schøne Ness",
               "split_text": "9:26",
               "split_seconds": 566,
-              "percent_of_record": 88.5,
+              "percent_of_record": 86.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2024",
@@ -8068,11 +8068,11 @@
           "has_expansion": true,
           "record": {
             "stage_label": "11. Frognerparken",
-            "record_text": "4:35",
-            "record_seconds": 275,
+            "record_text": "4:27",
+            "record_seconds": 267,
             "record_holder": "Amanda Frøynes",
             "record_club": "IK Tjalve",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -8082,7 +8082,7 @@
               "raw_name": "Vilde Våge Henriksen",
               "split_text": "4:33",
               "split_seconds": 273,
-              "percent_of_record": 100.7,
+              "percent_of_record": 97.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -8097,7 +8097,7 @@
               "raw_name": "Madelène Wanvik Holum",
               "split_text": "4:44",
               "split_seconds": 284,
-              "percent_of_record": 96.8,
+              "percent_of_record": 94.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -8112,7 +8112,7 @@
               "raw_name": "Anna Marie Nordengen",
               "split_text": "4:47",
               "split_seconds": 287,
-              "percent_of_record": 95.8,
+              "percent_of_record": 93.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -8127,7 +8127,7 @@
               "raw_name": "Vilde Antonsen",
               "split_text": "4:50",
               "split_seconds": 290,
-              "percent_of_record": 94.8,
+              "percent_of_record": 92.1,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -8142,7 +8142,7 @@
               "raw_name": "June Bakken Hodt",
               "split_text": "4:54",
               "split_seconds": 294,
-              "percent_of_record": 93.5,
+              "percent_of_record": 90.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -8159,7 +8159,7 @@
               "raw_name": "Vilde Våge Henriksen",
               "split_text": "4:33",
               "split_seconds": 273,
-              "percent_of_record": 100.7,
+              "percent_of_record": 97.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 1 2026",
@@ -8174,7 +8174,7 @@
               "raw_name": "Madelène Wanvik Holum",
               "split_text": "4:44",
               "split_seconds": 284,
-              "percent_of_record": 96.8,
+              "percent_of_record": 94.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 1  2025",
@@ -8189,7 +8189,7 @@
               "raw_name": "Anna Marie Nordengen",
               "split_text": "4:47",
               "split_seconds": 287,
-              "percent_of_record": 95.8,
+              "percent_of_record": 93.0,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar elite 2022",
@@ -8204,7 +8204,7 @@
               "raw_name": "Vilde Antonsen",
               "split_text": "4:50",
               "split_seconds": 290,
-              "percent_of_record": 94.8,
+              "percent_of_record": 92.1,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2023",
@@ -8219,7 +8219,7 @@
               "raw_name": "June Bakken Hodt",
               "split_text": "4:54",
               "split_seconds": 294,
-              "percent_of_record": 93.5,
+              "percent_of_record": 90.8,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2023",
@@ -8234,7 +8234,7 @@
               "raw_name": "Marit Haslie",
               "split_text": "4:55",
               "split_seconds": 295,
-              "percent_of_record": 93.2,
+              "percent_of_record": 90.5,
               "class_code": "SeniorSKV",
               "class_label": "SK Vidar senior",
               "team_name": "SK Vidar Senior 1 2022",
@@ -8249,7 +8249,7 @@
               "raw_name": "Ingrid Helene Nyhus",
               "split_text": "4:55",
               "split_seconds": 295,
-              "percent_of_record": 93.2,
+              "percent_of_record": 90.5,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 1 2024",
@@ -8264,7 +8264,7 @@
               "raw_name": "Sofie Karlsen Amundsgård",
               "split_text": "4:57",
               "split_seconds": 297,
-              "percent_of_record": 92.6,
+              "percent_of_record": 89.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar Elite 2 2024",
@@ -8279,7 +8279,7 @@
               "raw_name": "Stine Holager",
               "split_text": "4:58",
               "split_seconds": 298,
-              "percent_of_record": 92.3,
+              "percent_of_record": 89.6,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar 2  2025",
@@ -8294,7 +8294,7 @@
               "raw_name": "Marte Lien Johnsen",
               "split_text": "5:11",
               "split_seconds": 311,
-              "percent_of_record": 88.4,
+              "percent_of_record": 85.9,
               "class_code": "EliteSKV",
               "class_label": "SK Vidar elite",
               "team_name": "SK Vidar K Elite 2 2026",
@@ -10403,11 +10403,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "11. Frognerparken",
-            "record_text": "3:54",
-            "record_seconds": 234,
-            "record_holder": "Per Svela",
+            "record_text": "3:52",
+            "record_seconds": 232,
+            "record_holder": "Trym Fjøsne-Hexeberg",
             "record_club": "Ull/Kisa IL",
-            "record_year": 2022
+            "record_year": 2026
           },
           "entries": [
             {
@@ -10417,7 +10417,7 @@
               "raw_name": "Andreas Vågen",
               "split_text": "4:25",
               "split_seconds": 265,
-              "percent_of_record": 88.3,
+              "percent_of_record": 87.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2023",
@@ -10432,7 +10432,7 @@
               "raw_name": "Bendik Håland Pedersen",
               "split_text": "4:36",
               "split_seconds": 276,
-              "percent_of_record": 84.8,
+              "percent_of_record": 84.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI herrer 1 2025",
@@ -10447,7 +10447,7 @@
               "raw_name": "David Stefan Rieger",
               "split_text": "4:38",
               "split_seconds": 278,
-              "percent_of_record": 84.2,
+              "percent_of_record": 83.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -10464,7 +10464,7 @@
               "raw_name": "Andreas Vågen",
               "split_text": "4:25",
               "split_seconds": 265,
-              "percent_of_record": 88.3,
+              "percent_of_record": 87.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2023",
@@ -10479,7 +10479,7 @@
               "raw_name": "Bendik Håland Pedersen",
               "split_text": "4:36",
               "split_seconds": 276,
-              "percent_of_record": 84.8,
+              "percent_of_record": 84.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI herrer 1 2025",
@@ -10494,7 +10494,7 @@
               "raw_name": "David Stefan Rieger",
               "split_text": "4:38",
               "split_seconds": 278,
-              "percent_of_record": 84.2,
+              "percent_of_record": 83.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -10623,11 +10623,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "13. Trappa",
-            "record_text": "2:39",
-            "record_seconds": 159,
+            "record_text": "2:38",
+            "record_seconds": 158,
             "record_holder": "Andreas Fjeld Halvorsen",
             "record_club": "Ull/Kisa IL",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -10637,7 +10637,7 @@
               "raw_name": "Magnus Myrmo Osberg",
               "split_text": "3:11",
               "split_seconds": 191,
-              "percent_of_record": 83.2,
+              "percent_of_record": 82.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -10652,7 +10652,7 @@
               "raw_name": "Magnus Myrmo Osberg",
               "split_text": "3:18",
               "split_seconds": 198,
-              "percent_of_record": 80.3,
+              "percent_of_record": 79.8,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2023",
@@ -10667,7 +10667,7 @@
               "raw_name": "🔁Håkon Lund",
               "split_text": "3:24",
               "split_seconds": 204,
-              "percent_of_record": 77.9,
+              "percent_of_record": 77.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI herrer 1 2025",
@@ -10684,7 +10684,7 @@
               "raw_name": "Magnus Myrmo Osberg",
               "split_text": "3:11",
               "split_seconds": 191,
-              "percent_of_record": 83.2,
+              "percent_of_record": 82.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -10699,7 +10699,7 @@
               "raw_name": "Magnus Myrmo Osberg",
               "split_text": "3:18",
               "split_seconds": 198,
-              "percent_of_record": 80.3,
+              "percent_of_record": 79.8,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2023",
@@ -10714,7 +10714,7 @@
               "raw_name": "🔁Håkon Lund",
               "split_text": "3:24",
               "split_seconds": 204,
-              "percent_of_record": 77.9,
+              "percent_of_record": 77.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI herrer 1 2025",
@@ -10963,11 +10963,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "01. Bislett",
-            "record_text": "3:16",
-            "record_seconds": 196,
-            "record_holder": "Ingeborg Østgård",
+            "record_text": "3:14",
+            "record_seconds": 194,
+            "record_holder": "Malin Nyfors",
             "record_club": "IK Tjalve",
-            "record_year": 2024
+            "record_year": 2026
           },
           "entries": [
             {
@@ -10977,7 +10977,7 @@
               "raw_name": "Louise Høj Jensen",
               "split_text": "3:51",
               "split_seconds": 231,
-              "percent_of_record": 84.8,
+              "percent_of_record": 84.0,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -10992,7 +10992,7 @@
               "raw_name": "Eliska Sottova",
               "split_text": "3:54",
               "split_seconds": 234,
-              "percent_of_record": 83.8,
+              "percent_of_record": 82.9,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -11007,7 +11007,7 @@
               "raw_name": "Mari Jakobsen",
               "split_text": "4:03",
               "split_seconds": 243,
-              "percent_of_record": 80.7,
+              "percent_of_record": 79.8,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11024,7 +11024,7 @@
               "raw_name": "Louise Høj Jensen",
               "split_text": "3:51",
               "split_seconds": 231,
-              "percent_of_record": 84.8,
+              "percent_of_record": 84.0,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11039,7 +11039,7 @@
               "raw_name": "Eliska Sottova",
               "split_text": "3:54",
               "split_seconds": 234,
-              "percent_of_record": 83.8,
+              "percent_of_record": 82.9,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -11054,7 +11054,7 @@
               "raw_name": "Mari Jakobsen",
               "split_text": "4:03",
               "split_seconds": 243,
-              "percent_of_record": 80.7,
+              "percent_of_record": 79.8,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11293,11 +11293,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "04. Berg og dal",
-            "record_text": "5:56",
-            "record_seconds": 356,
-            "record_holder": "Ingvill Måkestad Bovim",
+            "record_text": "5:55",
+            "record_seconds": 355,
+            "record_holder": "Ingeborg Østgård",
             "record_club": "IK Tjalve",
-            "record_year": 2016
+            "record_year": 2026
           },
           "entries": [
             {
@@ -11307,7 +11307,7 @@
               "raw_name": "Andrea Opstad Andersen",
               "split_text": "7:02",
               "split_seconds": 422,
-              "percent_of_record": 84.4,
+              "percent_of_record": 84.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11322,7 +11322,7 @@
               "raw_name": "Ingvild Tveita",
               "split_text": "7:20",
               "split_seconds": 440,
-              "percent_of_record": 80.9,
+              "percent_of_record": 80.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11337,7 +11337,7 @@
               "raw_name": "Clotilde Ginestet",
               "split_text": "7:36",
               "split_seconds": 456,
-              "percent_of_record": 78.1,
+              "percent_of_record": 77.9,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11354,7 +11354,7 @@
               "raw_name": "Andrea Opstad Andersen",
               "split_text": "7:02",
               "split_seconds": 422,
-              "percent_of_record": 84.4,
+              "percent_of_record": 84.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11369,7 +11369,7 @@
               "raw_name": "Ingvild Tveita",
               "split_text": "7:20",
               "split_seconds": 440,
-              "percent_of_record": 80.9,
+              "percent_of_record": 80.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11384,7 +11384,7 @@
               "raw_name": "Clotilde Ginestet",
               "split_text": "7:36",
               "split_seconds": 456,
-              "percent_of_record": 78.1,
+              "percent_of_record": 77.9,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11403,11 +11403,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "05. Forskningsparken",
-            "record_text": "3:41",
-            "record_seconds": 221,
-            "record_holder": "Ingrid Helene Nyhus",
+            "record_text": "3:32",
+            "record_seconds": 212,
+            "record_holder": "Anna Marie Sirevåg",
             "record_club": "SK Vidar",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -11417,7 +11417,7 @@
               "raw_name": "Ingrid Skogum",
               "split_text": "4:09",
               "split_seconds": 249,
-              "percent_of_record": 88.8,
+              "percent_of_record": 85.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11432,7 +11432,7 @@
               "raw_name": "Siri Vegsund Staver",
               "split_text": "4:15",
               "split_seconds": 255,
-              "percent_of_record": 86.7,
+              "percent_of_record": 83.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11447,7 +11447,7 @@
               "raw_name": "Erika Turunen",
               "split_text": "4:34",
               "split_seconds": 274,
-              "percent_of_record": 80.7,
+              "percent_of_record": 77.4,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11464,7 +11464,7 @@
               "raw_name": "Ingrid Skogum",
               "split_text": "4:09",
               "split_seconds": 249,
-              "percent_of_record": 88.8,
+              "percent_of_record": 85.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11479,7 +11479,7 @@
               "raw_name": "Siri Vegsund Staver",
               "split_text": "4:15",
               "split_seconds": 255,
-              "percent_of_record": 86.7,
+              "percent_of_record": 83.1,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11494,7 +11494,7 @@
               "raw_name": "Erika Turunen",
               "split_text": "4:34",
               "split_seconds": 274,
-              "percent_of_record": 80.7,
+              "percent_of_record": 77.4,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11733,11 +11733,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "08. Utfor",
-            "record_text": "4:47",
-            "record_seconds": 287,
-            "record_holder": "Ingeborg Løvnes",
-            "record_club": "IK Tjave",
-            "record_year": 2023
+            "record_text": "4:43",
+            "record_seconds": 283,
+            "record_holder": "Sara Kjeldsen Lie",
+            "record_club": "SK Vidar",
+            "record_year": 2026
           },
           "entries": [
             {
@@ -11747,7 +11747,7 @@
               "raw_name": "Lene Heimdal",
               "split_text": "5:35",
               "split_seconds": 335,
-              "percent_of_record": 85.7,
+              "percent_of_record": 84.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11762,7 +11762,7 @@
               "raw_name": "Lene Heimdal",
               "split_text": "5:45",
               "split_seconds": 345,
-              "percent_of_record": 83.2,
+              "percent_of_record": 82.0,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11777,7 +11777,7 @@
               "raw_name": "Lene Heimdal",
               "split_text": "5:48",
               "split_seconds": 348,
-              "percent_of_record": 82.5,
+              "percent_of_record": 81.3,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11794,7 +11794,7 @@
               "raw_name": "Lene Heimdal",
               "split_text": "5:35",
               "split_seconds": 335,
-              "percent_of_record": 85.7,
+              "percent_of_record": 84.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11809,7 +11809,7 @@
               "raw_name": "Lene Heimdal",
               "split_text": "5:45",
               "split_seconds": 345,
-              "percent_of_record": 83.2,
+              "percent_of_record": 82.0,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11824,7 +11824,7 @@
               "raw_name": "Lene Heimdal",
               "split_text": "5:48",
               "split_seconds": 348,
-              "percent_of_record": 82.5,
+              "percent_of_record": 81.3,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11843,11 +11843,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "09. Gressbanen",
-            "record_text": "1:37",
-            "record_seconds": 97,
-            "record_holder": "Margrete Baustad",
-            "record_club": "IK Tjalve",
-            "record_year": 2023
+            "record_text": "1:33",
+            "record_seconds": 93,
+            "record_holder": "Alice Ulla Berg",
+            "record_club": "SK Vidar",
+            "record_year": 2026
           },
           "entries": [
             {
@@ -11857,7 +11857,7 @@
               "raw_name": "Eileen Kolberg",
               "split_text": "1:52",
               "split_seconds": 112,
-              "percent_of_record": 86.6,
+              "percent_of_record": 83.0,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -11872,7 +11872,7 @@
               "raw_name": "Louisa Omoruyi",
               "split_text": "1:54",
               "split_seconds": 114,
-              "percent_of_record": 85.1,
+              "percent_of_record": 81.6,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11887,7 +11887,7 @@
               "raw_name": "Henriette Louise Malerstuen",
               "split_text": "1:57",
               "split_seconds": 117,
-              "percent_of_record": 82.9,
+              "percent_of_record": 79.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11904,7 +11904,7 @@
               "raw_name": "Eileen Kolberg",
               "split_text": "1:52",
               "split_seconds": 112,
-              "percent_of_record": 86.6,
+              "percent_of_record": 83.0,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -11919,7 +11919,7 @@
               "raw_name": "Louisa Omoruyi",
               "split_text": "1:54",
               "split_seconds": 114,
-              "percent_of_record": 85.1,
+              "percent_of_record": 81.6,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -11934,7 +11934,7 @@
               "raw_name": "Henriette Louise Malerstuen",
               "split_text": "1:57",
               "split_seconds": 117,
-              "percent_of_record": 82.9,
+              "percent_of_record": 79.5,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -11953,11 +11953,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "10. Den lange",
-            "record_text": "8:21",
-            "record_seconds": 501,
+            "record_text": "8:07",
+            "record_seconds": 487,
             "record_holder": "Amalie Sæten",
             "record_club": "SK Vidar",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -11967,7 +11967,7 @@
               "raw_name": "Petronella Tordsdatter Halle",
               "split_text": "9:15",
               "split_seconds": 555,
-              "percent_of_record": 90.3,
+              "percent_of_record": 87.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -11982,7 +11982,7 @@
               "raw_name": "Helene Melsom",
               "split_text": "9:30",
               "split_seconds": 570,
-              "percent_of_record": 87.9,
+              "percent_of_record": 85.4,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -11997,7 +11997,7 @@
               "raw_name": "Andrea Opstad Andersen",
               "split_text": "9:48",
               "split_seconds": 588,
-              "percent_of_record": 85.2,
+              "percent_of_record": 82.8,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -12014,7 +12014,7 @@
               "raw_name": "Petronella Tordsdatter Halle",
               "split_text": "9:15",
               "split_seconds": 555,
-              "percent_of_record": 90.3,
+              "percent_of_record": 87.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI Grils 2025",
@@ -12029,7 +12029,7 @@
               "raw_name": "Helene Melsom",
               "split_text": "9:30",
               "split_seconds": 570,
-              "percent_of_record": 87.9,
+              "percent_of_record": 85.4,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -12044,7 +12044,7 @@
               "raw_name": "Andrea Opstad Andersen",
               "split_text": "9:48",
               "split_seconds": 588,
-              "percent_of_record": 85.2,
+              "percent_of_record": 82.8,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -12063,11 +12063,11 @@
           "has_expansion": false,
           "record": {
             "stage_label": "11. Frognerparken",
-            "record_text": "4:35",
-            "record_seconds": 275,
+            "record_text": "4:27",
+            "record_seconds": 267,
             "record_holder": "Amanda Frøynes",
             "record_club": "IK Tjalve",
-            "record_year": 2025
+            "record_year": 2026
           },
           "entries": [
             {
@@ -12077,7 +12077,7 @@
               "raw_name": "Kristin Svendby Otervik",
               "split_text": "4:49",
               "split_seconds": 289,
-              "percent_of_record": 95.2,
+              "percent_of_record": 92.4,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -12092,7 +12092,7 @@
               "raw_name": "Tabea Sostmann",
               "split_text": "5:25",
               "split_seconds": 325,
-              "percent_of_record": 84.6,
+              "percent_of_record": 82.2,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -12107,7 +12107,7 @@
               "raw_name": "Hannah Engeskaug Nilsen",
               "split_text": "5:27",
               "split_seconds": 327,
-              "percent_of_record": 84.1,
+              "percent_of_record": 81.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -12124,7 +12124,7 @@
               "raw_name": "Kristin Svendby Otervik",
               "split_text": "4:49",
               "split_seconds": 289,
-              "percent_of_record": 95.2,
+              "percent_of_record": 92.4,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI F student 2022",
@@ -12139,7 +12139,7 @@
               "raw_name": "Tabea Sostmann",
               "split_text": "5:25",
               "split_seconds": 325,
-              "percent_of_record": 84.6,
+              "percent_of_record": 82.2,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2024",
@@ -12154,7 +12154,7 @@
               "raw_name": "Hannah Engeskaug Nilsen",
               "split_text": "5:27",
               "split_seconds": 327,
-              "percent_of_record": 84.1,
+              "percent_of_record": 81.7,
               "class_code": "StudOSI",
               "class_label": "OSI student",
               "team_name": "OSI damer 2023",
@@ -12630,7 +12630,7 @@
       "split_seconds": 202,
       "oa_rank": 47,
       "category_rank": 2,
-      "percent_of_record": 97.0
+      "percent_of_record": 96.0
     },
     {
       "id": 662,
@@ -12702,7 +12702,7 @@
       "split_seconds": 356,
       "oa_rank": 33,
       "category_rank": 2,
-      "percent_of_record": 100.0
+      "percent_of_record": 99.7
     },
     {
       "id": 665,
@@ -12726,7 +12726,7 @@
       "split_seconds": 212,
       "oa_rank": 24,
       "category_rank": 1,
-      "percent_of_record": 104.2
+      "percent_of_record": 100.0
     },
     {
       "id": 666,
@@ -12798,7 +12798,7 @@
       "split_seconds": 283,
       "oa_rank": 45,
       "category_rank": 1,
-      "percent_of_record": 101.4
+      "percent_of_record": 100.0
     },
     {
       "id": 669,
@@ -12822,7 +12822,7 @@
       "split_seconds": 93,
       "oa_rank": 19,
       "category_rank": 1,
-      "percent_of_record": 104.3
+      "percent_of_record": 100.0
     },
     {
       "id": 670,
@@ -12846,7 +12846,7 @@
       "split_seconds": 487,
       "oa_rank": 34,
       "category_rank": 1,
-      "percent_of_record": 102.9
+      "percent_of_record": 100.0
     },
     {
       "id": 671,
@@ -12870,7 +12870,7 @@
       "split_seconds": 273,
       "oa_rank": 38,
       "category_rank": 2,
-      "percent_of_record": 100.7
+      "percent_of_record": 97.8
     },
     {
       "id": 672,
@@ -12990,7 +12990,7 @@
       "split_seconds": 224,
       "oa_rank": 95,
       "category_rank": 11,
-      "percent_of_record": 87.5
+      "percent_of_record": 86.6
     },
     {
       "id": 677,
@@ -13062,7 +13062,7 @@
       "split_seconds": 399,
       "oa_rank": 87,
       "category_rank": 11,
-      "percent_of_record": 89.2
+      "percent_of_record": 89.0
     },
     {
       "id": 680,
@@ -13086,7 +13086,7 @@
       "split_seconds": 233,
       "oa_rank": 64,
       "category_rank": 3,
-      "percent_of_record": 94.8
+      "percent_of_record": 91.0
     },
     {
       "id": 681,
@@ -13158,7 +13158,7 @@
       "split_seconds": 309,
       "oa_rank": 89,
       "category_rank": 10,
-      "percent_of_record": 92.9
+      "percent_of_record": 91.6
     },
     {
       "id": 684,
@@ -13182,7 +13182,7 @@
       "split_seconds": 105,
       "oa_rank": 69,
       "category_rank": 6,
-      "percent_of_record": 92.4
+      "percent_of_record": 88.6
     },
     {
       "id": 685,
@@ -13206,7 +13206,7 @@
       "split_seconds": 530,
       "oa_rank": 81,
       "category_rank": 10,
-      "percent_of_record": 94.5
+      "percent_of_record": 91.9
     },
     {
       "id": 686,
@@ -13230,7 +13230,7 @@
       "split_seconds": 311,
       "oa_rank": 101,
       "category_rank": 10,
-      "percent_of_record": 88.4
+      "percent_of_record": 85.9
     },
     {
       "id": 687,
@@ -13350,7 +13350,7 @@
       "split_seconds": 228,
       "oa_rank": 105,
       "category_rank": 15,
-      "percent_of_record": 86.0
+      "percent_of_record": 85.1
     },
     {
       "id": 692,
@@ -13422,7 +13422,7 @@
       "split_seconds": 399,
       "oa_rank": 88,
       "category_rank": 12,
-      "percent_of_record": 89.2
+      "percent_of_record": 89.0
     },
     {
       "id": 695,
@@ -13446,7 +13446,7 @@
       "split_seconds": 257,
       "oa_rank": 109,
       "category_rank": 17,
-      "percent_of_record": 86.0
+      "percent_of_record": 82.5
     },
     {
       "id": 696,
@@ -13518,7 +13518,7 @@
       "split_seconds": 317,
       "oa_rank": 97,
       "category_rank": 13,
-      "percent_of_record": 90.5
+      "percent_of_record": 89.3
     },
     {
       "id": 699,
@@ -13542,7 +13542,7 @@
       "split_seconds": 112,
       "oa_rank": 94,
       "category_rank": 13,
-      "percent_of_record": 86.6
+      "percent_of_record": 83.0
     },
     {
       "id": 700,
@@ -13566,7 +13566,7 @@
       "split_seconds": 571,
       "oa_rank": 112,
       "category_rank": 15,
-      "percent_of_record": 87.7
+      "percent_of_record": 85.3
     },
     {
       "id": 701,
@@ -13590,7 +13590,7 @@
       "split_seconds": 320,
       "oa_rank": 109,
       "category_rank": 13,
-      "percent_of_record": 85.9
+      "percent_of_record": 83.4
     },
     {
       "id": 702,
@@ -13710,7 +13710,7 @@
       "split_seconds": 259,
       "oa_rank": 163,
       "category_rank": 4,
-      "percent_of_record": 75.7
+      "percent_of_record": 74.9
     },
     {
       "id": 707,
@@ -13782,7 +13782,7 @@
       "split_seconds": 469,
       "oa_rank": 153,
       "category_rank": 3,
-      "percent_of_record": 75.9
+      "percent_of_record": 75.7
     },
     {
       "id": 710,
@@ -13806,7 +13806,7 @@
       "split_seconds": 267,
       "oa_rank": 130,
       "category_rank": 1,
-      "percent_of_record": 82.8
+      "percent_of_record": 79.4
     },
     {
       "id": 711,
@@ -13878,7 +13878,7 @@
       "split_seconds": 307,
       "oa_rank": 87,
       "category_rank": 1,
-      "percent_of_record": 93.5
+      "percent_of_record": 92.2
     },
     {
       "id": 714,
@@ -13902,7 +13902,7 @@
       "split_seconds": 141,
       "oa_rank": 179,
       "category_rank": 6,
-      "percent_of_record": 68.8
+      "percent_of_record": 66.0
     },
     {
       "id": 715,
@@ -13926,7 +13926,7 @@
       "split_seconds": 590,
       "oa_rank": 123,
       "category_rank": 4,
-      "percent_of_record": 84.9
+      "percent_of_record": 82.5
     },
     {
       "id": 716,
@@ -13950,7 +13950,7 @@
       "split_seconds": 324,
       "oa_rank": 114,
       "category_rank": 3,
-      "percent_of_record": 84.9
+      "percent_of_record": 82.4
     },
     {
       "id": 717,
@@ -14310,7 +14310,7 @@
       "split_seconds": 248,
       "oa_rank": 7,
       "category_rank": 6,
-      "percent_of_record": 94.4
+      "percent_of_record": 93.5
     },
     {
       "id": 732,
@@ -14358,7 +14358,7 @@
       "split_seconds": 176,
       "oa_rank": 5,
       "category_rank": 5,
-      "percent_of_record": 90.3
+      "percent_of_record": 89.8
     },
     {
       "id": 734,
@@ -14670,7 +14670,7 @@
       "split_seconds": 264,
       "oa_rank": 26,
       "category_rank": 14,
-      "percent_of_record": 88.6
+      "percent_of_record": 87.9
     },
     {
       "id": 747,
@@ -14718,7 +14718,7 @@
       "split_seconds": 179,
       "oa_rank": 10,
       "category_rank": 8,
-      "percent_of_record": 88.8
+      "percent_of_record": 88.3
     },
     {
       "id": 749,
@@ -15030,7 +15030,7 @@
       "split_seconds": 376,
       "oa_rank": 158,
       "category_rank": 47,
-      "percent_of_record": 62.2
+      "percent_of_record": 61.7
     },
     {
       "id": 762,
@@ -15078,7 +15078,7 @@
       "split_seconds": 186,
       "oa_rank": 19,
       "category_rank": 4,
-      "percent_of_record": 85.5
+      "percent_of_record": 84.9
     },
     {
       "id": 764,
@@ -15390,7 +15390,7 @@
       "split_seconds": 339,
       "oa_rank": 131,
       "category_rank": 4,
-      "percent_of_record": 69.0
+      "percent_of_record": 68.4
     },
     {
       "id": 777,
@@ -15438,7 +15438,7 @@
       "split_seconds": 217,
       "oa_rank": 82,
       "category_rank": 2,
-      "percent_of_record": 73.3
+      "percent_of_record": 72.8
     },
     {
       "id": 779,
@@ -15918,7 +15918,7 @@
       "split_seconds": 252,
       "oa_rank": 6,
       "category_rank": 6,
-      "percent_of_record": 92.9
+      "percent_of_record": 92.1
     },
     {
       "id": 537,
@@ -15966,7 +15966,7 @@
       "split_seconds": 182,
       "oa_rank": 13,
       "category_rank": 9,
-      "percent_of_record": 87.4
+      "percent_of_record": 86.8
     },
     {
       "id": 539,
@@ -16278,7 +16278,7 @@
       "split_seconds": 259,
       "oa_rank": 12,
       "category_rank": 10,
-      "percent_of_record": 90.3
+      "percent_of_record": 89.6
     },
     {
       "id": 552,
@@ -16326,7 +16326,7 @@
       "split_seconds": 183,
       "oa_rank": 15,
       "category_rank": 10,
-      "percent_of_record": 86.9
+      "percent_of_record": 86.3
     },
     {
       "id": 554,
@@ -16638,7 +16638,7 @@
       "split_seconds": 266,
       "oa_rank": 19,
       "category_rank": 3,
-      "percent_of_record": 88.0
+      "percent_of_record": 87.2
     },
     {
       "id": 567,
@@ -16686,7 +16686,7 @@
       "split_seconds": 182,
       "oa_rank": 12,
       "category_rank": 4,
-      "percent_of_record": 87.4
+      "percent_of_record": 86.8
     },
     {
       "id": 569,
@@ -16758,7 +16758,7 @@
       "split_seconds": 243,
       "oa_rank": 130,
       "category_rank": 2,
-      "percent_of_record": 80.7
+      "percent_of_record": 79.8
     },
     {
       "id": 632,
@@ -16830,7 +16830,7 @@
       "split_seconds": 422,
       "oa_rank": 116,
       "category_rank": 1,
-      "percent_of_record": 84.4
+      "percent_of_record": 84.1
     },
     {
       "id": 635,
@@ -16854,7 +16854,7 @@
       "split_seconds": 274,
       "oa_rank": 141,
       "category_rank": 3,
-      "percent_of_record": 80.7
+      "percent_of_record": 77.4
     },
     {
       "id": 636,
@@ -16926,7 +16926,7 @@
       "split_seconds": 348,
       "oa_rank": 138,
       "category_rank": 2,
-      "percent_of_record": 82.5
+      "percent_of_record": 81.3
     },
     {
       "id": 639,
@@ -16950,7 +16950,7 @@
       "split_seconds": 118,
       "oa_rank": 110,
       "category_rank": 1,
-      "percent_of_record": 82.2
+      "percent_of_record": 78.8
     },
     {
       "id": 640,
@@ -16974,7 +16974,7 @@
       "split_seconds": 555,
       "oa_rank": 99,
       "category_rank": 1,
-      "percent_of_record": 90.3
+      "percent_of_record": 87.7
     },
     {
       "id": 641,
@@ -16998,7 +16998,7 @@
       "split_seconds": 340,
       "oa_rank": 135,
       "category_rank": 2,
-      "percent_of_record": 80.9
+      "percent_of_record": 78.5
     },
     {
       "id": 642,
@@ -17358,7 +17358,7 @@
       "split_seconds": 408,
       "oa_rank": 2530,
       "category_rank": 11,
-      "percent_of_record": 57.4
+      "percent_of_record": 56.9
     },
     {
       "id": 657,
@@ -17406,7 +17406,7 @@
       "split_seconds": 230,
       "oa_rank": 365,
       "category_rank": 2,
-      "percent_of_record": 69.1
+      "percent_of_record": 68.7
     },
     {
       "id": 659,
@@ -17718,7 +17718,7 @@
       "split_seconds": 276,
       "oa_rank": 35,
       "category_rank": 3,
-      "percent_of_record": 84.8
+      "percent_of_record": 84.1
     },
     {
       "id": 627,
@@ -17766,7 +17766,7 @@
       "split_seconds": 204,
       "oa_rank": 55,
       "category_rank": 5,
-      "percent_of_record": 77.9
+      "percent_of_record": 77.5
     },
     {
       "id": 629,
@@ -17838,7 +17838,7 @@
       "split_seconds": 219,
       "oa_rank": 87,
       "category_rank": 7,
-      "percent_of_record": 89.5
+      "percent_of_record": 88.6
     },
     {
       "id": 467,
@@ -17910,7 +17910,7 @@
       "split_seconds": 371,
       "oa_rank": 54,
       "category_rank": 4,
-      "percent_of_record": 96.0
+      "percent_of_record": 95.7
     },
     {
       "id": 470,
@@ -17934,7 +17934,7 @@
       "split_seconds": 221,
       "oa_rank": 43,
       "category_rank": 1,
-      "percent_of_record": 100.0
+      "percent_of_record": 95.9
     },
     {
       "id": 471,
@@ -18006,7 +18006,7 @@
       "split_seconds": 293,
       "oa_rank": 51,
       "category_rank": 1,
-      "percent_of_record": 98.0
+      "percent_of_record": 96.6
     },
     {
       "id": 474,
@@ -18030,7 +18030,7 @@
       "split_seconds": 107,
       "oa_rank": 72,
       "category_rank": 3,
-      "percent_of_record": 90.7
+      "percent_of_record": 86.9
     },
     {
       "id": 475,
@@ -18054,7 +18054,7 @@
       "split_seconds": 501,
       "oa_rank": 39,
       "category_rank": 1,
-      "percent_of_record": 100.0
+      "percent_of_record": 97.2
     },
     {
       "id": 476,
@@ -18078,7 +18078,7 @@
       "split_seconds": 284,
       "oa_rank": 53,
       "category_rank": 3,
-      "percent_of_record": 96.8
+      "percent_of_record": 94.0
     },
     {
       "id": 477,
@@ -18198,7 +18198,7 @@
       "split_seconds": 218,
       "oa_rank": 85,
       "category_rank": 6,
-      "percent_of_record": 89.9
+      "percent_of_record": 89.0
     },
     {
       "id": 482,
@@ -18270,7 +18270,7 @@
       "split_seconds": 403,
       "oa_rank": 93,
       "category_rank": 10,
-      "percent_of_record": 88.3
+      "percent_of_record": 88.1
     },
     {
       "id": 485,
@@ -18294,7 +18294,7 @@
       "split_seconds": 230,
       "oa_rank": 60,
       "category_rank": 5,
-      "percent_of_record": 96.1
+      "percent_of_record": 92.2
     },
     {
       "id": 486,
@@ -18366,7 +18366,7 @@
       "split_seconds": 308,
       "oa_rank": 76,
       "category_rank": 7,
-      "percent_of_record": 93.2
+      "percent_of_record": 91.9
     },
     {
       "id": 489,
@@ -18390,7 +18390,7 @@
       "split_seconds": 111,
       "oa_rank": 84,
       "category_rank": 6,
-      "percent_of_record": 87.4
+      "percent_of_record": 83.8
     },
     {
       "id": 490,
@@ -18414,7 +18414,7 @@
       "split_seconds": 547,
       "oa_rank": 95,
       "category_rank": 10,
-      "percent_of_record": 91.6
+      "percent_of_record": 89.0
     },
     {
       "id": 491,
@@ -18438,7 +18438,7 @@
       "split_seconds": 298,
       "oa_rank": 72,
       "category_rank": 4,
-      "percent_of_record": 92.3
+      "percent_of_record": 89.6
     },
     {
       "id": 492,
@@ -18558,7 +18558,7 @@
       "split_seconds": 231,
       "oa_rank": 115,
       "category_rank": 18,
-      "percent_of_record": 84.8
+      "percent_of_record": 84.0
     },
     {
       "id": 497,
@@ -18630,7 +18630,7 @@
       "split_seconds": 411,
       "oa_rank": 105,
       "category_rank": 13,
-      "percent_of_record": 86.6
+      "percent_of_record": 86.4
     },
     {
       "id": 500,
@@ -18654,7 +18654,7 @@
       "split_seconds": 245,
       "oa_rank": 93,
       "category_rank": 11,
-      "percent_of_record": 90.2
+      "percent_of_record": 86.5
     },
     {
       "id": 501,
@@ -18726,7 +18726,7 @@
       "split_seconds": 347,
       "oa_rank": 135,
       "category_rank": 19,
-      "percent_of_record": 82.7
+      "percent_of_record": 81.6
     },
     {
       "id": 504,
@@ -18750,7 +18750,7 @@
       "split_seconds": 119,
       "oa_rank": 113,
       "category_rank": 15,
-      "percent_of_record": 81.5
+      "percent_of_record": 78.2
     },
     {
       "id": 505,
@@ -18774,7 +18774,7 @@
       "split_seconds": 578,
       "oa_rank": 124,
       "category_rank": 17,
-      "percent_of_record": 86.7
+      "percent_of_record": 84.3
     },
     {
       "id": 506,
@@ -18798,7 +18798,7 @@
       "split_seconds": 320,
       "oa_rank": 104,
       "category_rank": 13,
-      "percent_of_record": 85.9
+      "percent_of_record": 83.4
     },
     {
       "id": 507,
@@ -19158,7 +19158,7 @@
       "split_seconds": 298,
       "oa_rank": 71,
       "category_rank": 30,
-      "percent_of_record": 78.5
+      "percent_of_record": 77.9
     },
     {
       "id": 582,
@@ -19206,7 +19206,7 @@
       "split_seconds": 211,
       "oa_rank": 82,
       "category_rank": 35,
-      "percent_of_record": 75.4
+      "percent_of_record": 74.9
     },
     {
       "id": 584,
@@ -19278,7 +19278,7 @@
       "split_seconds": 234,
       "oa_rank": 118,
       "category_rank": 19,
-      "percent_of_record": 83.8
+      "percent_of_record": 82.9
     },
     {
       "id": 512,
@@ -19350,7 +19350,7 @@
       "split_seconds": 416,
       "oa_rank": 111,
       "category_rank": 15,
-      "percent_of_record": 85.6
+      "percent_of_record": 85.3
     },
     {
       "id": 515,
@@ -19374,7 +19374,7 @@
       "split_seconds": 241,
       "oa_rank": 83,
       "category_rank": 8,
-      "percent_of_record": 91.7
+      "percent_of_record": 88.0
     },
     {
       "id": 516,
@@ -19446,7 +19446,7 @@
       "split_seconds": 312,
       "oa_rank": 85,
       "category_rank": 8,
-      "percent_of_record": 92.0
+      "percent_of_record": 90.7
     },
     {
       "id": 519,
@@ -19470,7 +19470,7 @@
       "split_seconds": 115,
       "oa_rank": 100,
       "category_rank": 10,
-      "percent_of_record": 84.3
+      "percent_of_record": 80.9
     },
     {
       "id": 520,
@@ -19494,7 +19494,7 @@
       "split_seconds": 569,
       "oa_rank": 115,
       "category_rank": 15,
-      "percent_of_record": 88.0
+      "percent_of_record": 85.6
     },
     {
       "id": 521,
@@ -19518,7 +19518,7 @@
       "split_seconds": 323,
       "oa_rank": 108,
       "category_rank": 15,
-      "percent_of_record": 85.1
+      "percent_of_record": 82.7
     },
     {
       "id": 522,
@@ -19734,7 +19734,7 @@
       "split_seconds": 277,
       "oa_rank": null,
       "category_rank": 6,
-      "percent_of_record": 79.8
+      "percent_of_record": 76.5
     },
     {
       "id": 591,
@@ -19830,7 +19830,7 @@
       "split_seconds": 125,
       "oa_rank": null,
       "category_rank": 7,
-      "percent_of_record": 77.6
+      "percent_of_record": 74.4
     },
     {
       "id": 595,
@@ -19878,7 +19878,7 @@
       "split_seconds": 316,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 74.1
+      "percent_of_record": 73.4
     },
     {
       "id": 597,
@@ -20238,7 +20238,7 @@
       "split_seconds": 319,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 73.4
+      "percent_of_record": 72.7
     },
     {
       "id": 612,
@@ -20598,7 +20598,7 @@
       "split_seconds": 285,
       "oa_rank": 40,
       "category_rank": 3,
-      "percent_of_record": 82.1
+      "percent_of_record": 81.4
     },
     {
       "id": 447,
@@ -20646,7 +20646,7 @@
       "split_seconds": 206,
       "oa_rank": 57,
       "category_rank": 4,
-      "percent_of_record": 77.2
+      "percent_of_record": 76.7
     },
     {
       "id": 449,
@@ -20718,7 +20718,7 @@
       "split_seconds": 231,
       "oa_rank": 103,
       "category_rank": 1,
-      "percent_of_record": 84.8
+      "percent_of_record": 84.0
     },
     {
       "id": 452,
@@ -20790,7 +20790,7 @@
       "split_seconds": 440,
       "oa_rank": 130,
       "category_rank": 2,
-      "percent_of_record": 80.9
+      "percent_of_record": 80.7
     },
     {
       "id": 455,
@@ -20814,7 +20814,7 @@
       "split_seconds": 249,
       "oa_rank": 107,
       "category_rank": 1,
-      "percent_of_record": 88.8
+      "percent_of_record": 85.1
     },
     {
       "id": 456,
@@ -20886,7 +20886,7 @@
       "split_seconds": 345,
       "oa_rank": 123,
       "category_rank": 2,
-      "percent_of_record": 83.2
+      "percent_of_record": 82.0
     },
     {
       "id": 459,
@@ -20910,7 +20910,7 @@
       "split_seconds": 114,
       "oa_rank": 83,
       "category_rank": 1,
-      "percent_of_record": 85.1
+      "percent_of_record": 81.6
     },
     {
       "id": 460,
@@ -20934,7 +20934,7 @@
       "split_seconds": 588,
       "oa_rank": 116,
       "category_rank": 3,
-      "percent_of_record": 85.2
+      "percent_of_record": 82.8
     },
     {
       "id": 461,
@@ -20958,7 +20958,7 @@
       "split_seconds": 325,
       "oa_rank": 114,
       "category_rank": 2,
-      "percent_of_record": 84.6
+      "percent_of_record": 82.2
     },
     {
       "id": 462,
@@ -21318,7 +21318,7 @@
       "split_seconds": 255,
       "oa_rank": 8,
       "category_rank": 7,
-      "percent_of_record": 91.8
+      "percent_of_record": 91.0
     },
     {
       "id": 372,
@@ -21366,7 +21366,7 @@
       "split_seconds": 177,
       "oa_rank": 4,
       "category_rank": 4,
-      "percent_of_record": 89.8
+      "percent_of_record": 89.3
     },
     {
       "id": 374,
@@ -21678,7 +21678,7 @@
       "split_seconds": 254,
       "oa_rank": 7,
       "category_rank": 6,
-      "percent_of_record": 92.1
+      "percent_of_record": 91.3
     },
     {
       "id": 387,
@@ -21726,7 +21726,7 @@
       "split_seconds": 186,
       "oa_rank": 15,
       "category_rank": 10,
-      "percent_of_record": 85.5
+      "percent_of_record": 84.9
     },
     {
       "id": 389,
@@ -21798,7 +21798,7 @@
       "split_seconds": 208,
       "oa_rank": 52,
       "category_rank": 2,
-      "percent_of_record": 94.2
+      "percent_of_record": 93.3
     },
     {
       "id": 302,
@@ -21870,7 +21870,7 @@
       "split_seconds": 387,
       "oa_rank": 65,
       "category_rank": 6,
-      "percent_of_record": 92.0
+      "percent_of_record": 91.7
     },
     {
       "id": 305,
@@ -21894,7 +21894,7 @@
       "split_seconds": 223,
       "oa_rank": 42,
       "category_rank": 1,
-      "percent_of_record": 99.1
+      "percent_of_record": 95.1
     },
     {
       "id": 306,
@@ -21966,7 +21966,7 @@
       "split_seconds": 300,
       "oa_rank": 61,
       "category_rank": 5,
-      "percent_of_record": 95.7
+      "percent_of_record": 94.3
     },
     {
       "id": 309,
@@ -21990,7 +21990,7 @@
       "split_seconds": 100,
       "oa_rank": 33,
       "category_rank": 1,
-      "percent_of_record": 97.0
+      "percent_of_record": 93.0
     },
     {
       "id": 310,
@@ -22014,7 +22014,7 @@
       "split_seconds": 521,
       "oa_rank": 60,
       "category_rank": 3,
-      "percent_of_record": 96.2
+      "percent_of_record": 93.5
     },
     {
       "id": 311,
@@ -22038,7 +22038,7 @@
       "split_seconds": 295,
       "oa_rank": 63,
       "category_rank": 4,
-      "percent_of_record": 93.2
+      "percent_of_record": 90.5
     },
     {
       "id": 312,
@@ -22158,7 +22158,7 @@
       "split_seconds": 223,
       "oa_rank": 88,
       "category_rank": 11,
-      "percent_of_record": 87.9
+      "percent_of_record": 87.0
     },
     {
       "id": 317,
@@ -22230,7 +22230,7 @@
       "split_seconds": 402,
       "oa_rank": 87,
       "category_rank": 12,
-      "percent_of_record": 88.6
+      "percent_of_record": 88.3
     },
     {
       "id": 320,
@@ -22254,7 +22254,7 @@
       "split_seconds": 247,
       "oa_rank": 103,
       "category_rank": 10,
-      "percent_of_record": 89.5
+      "percent_of_record": 85.8
     },
     {
       "id": 321,
@@ -22326,7 +22326,7 @@
       "split_seconds": 304,
       "oa_rank": 66,
       "category_rank": 6,
-      "percent_of_record": 94.4
+      "percent_of_record": 93.1
     },
     {
       "id": 324,
@@ -22350,7 +22350,7 @@
       "split_seconds": 109,
       "oa_rank": 76,
       "category_rank": 5,
-      "percent_of_record": 89.0
+      "percent_of_record": 85.3
     },
     {
       "id": 325,
@@ -22374,7 +22374,7 @@
       "split_seconds": 566,
       "oa_rank": 100,
       "category_rank": 14,
-      "percent_of_record": 88.5
+      "percent_of_record": 86.0
     },
     {
       "id": 326,
@@ -22398,7 +22398,7 @@
       "split_seconds": 297,
       "oa_rank": 69,
       "category_rank": 5,
-      "percent_of_record": 92.6
+      "percent_of_record": 89.9
     },
     {
       "id": 327,
@@ -22518,7 +22518,7 @@
       "split_seconds": 237,
       "oa_rank": 112,
       "category_rank": 14,
-      "percent_of_record": 82.7
+      "percent_of_record": 81.9
     },
     {
       "id": 332,
@@ -22590,7 +22590,7 @@
       "split_seconds": 410,
       "oa_rank": 101,
       "category_rank": 15,
-      "percent_of_record": 86.8
+      "percent_of_record": 86.6
     },
     {
       "id": 335,
@@ -22614,7 +22614,7 @@
       "split_seconds": 242,
       "oa_rank": 88,
       "category_rank": 7,
-      "percent_of_record": 91.3
+      "percent_of_record": 87.6
     },
     {
       "id": 336,
@@ -22686,7 +22686,7 @@
       "split_seconds": 326,
       "oa_rank": 98,
       "category_rank": 10,
-      "percent_of_record": 88.0
+      "percent_of_record": 86.8
     },
     {
       "id": 339,
@@ -22710,7 +22710,7 @@
       "split_seconds": 115,
       "oa_rank": 94,
       "category_rank": 12,
-      "percent_of_record": 84.3
+      "percent_of_record": 80.9
     },
     {
       "id": 340,
@@ -22734,7 +22734,7 @@
       "split_seconds": 581,
       "oa_rank": 113,
       "category_rank": 17,
-      "percent_of_record": 86.2
+      "percent_of_record": 83.8
     },
     {
       "id": 341,
@@ -22758,7 +22758,7 @@
       "split_seconds": 322,
       "oa_rank": 108,
       "category_rank": 14,
-      "percent_of_record": 85.4
+      "percent_of_record": 82.9
     },
     {
       "id": 342,
@@ -22878,7 +22878,7 @@
       "split_seconds": 251,
       "oa_rank": 139,
       "category_rank": 19,
-      "percent_of_record": 78.1
+      "percent_of_record": 77.3
     },
     {
       "id": 347,
@@ -22950,7 +22950,7 @@
       "split_seconds": 429,
       "oa_rank": 116,
       "category_rank": 17,
-      "percent_of_record": 83.0
+      "percent_of_record": 82.8
     },
     {
       "id": 350,
@@ -22974,7 +22974,7 @@
       "split_seconds": 258,
       "oa_rank": 124,
       "category_rank": 16,
-      "percent_of_record": 85.7
+      "percent_of_record": 82.2
     },
     {
       "id": 351,
@@ -23046,7 +23046,7 @@
       "split_seconds": 330,
       "oa_rank": 109,
       "category_rank": 14,
-      "percent_of_record": 87.0
+      "percent_of_record": 85.8
     },
     {
       "id": 354,
@@ -23070,7 +23070,7 @@
       "split_seconds": 120,
       "oa_rank": 116,
       "category_rank": 17,
-      "percent_of_record": 80.8
+      "percent_of_record": 77.5
     },
     {
       "id": 355,
@@ -23094,7 +23094,7 @@
       "split_seconds": 589,
       "oa_rank": 119,
       "category_rank": 18,
-      "percent_of_record": 85.1
+      "percent_of_record": 82.7
     },
     {
       "id": 356,
@@ -23118,7 +23118,7 @@
       "split_seconds": 319,
       "oa_rank": 102,
       "category_rank": 12,
-      "percent_of_record": 86.2
+      "percent_of_record": 83.7
     },
     {
       "id": 357,
@@ -23478,7 +23478,7 @@
       "split_seconds": 276,
       "oa_rank": 29,
       "category_rank": 11,
-      "percent_of_record": 84.8
+      "percent_of_record": 84.1
     },
     {
       "id": 402,
@@ -23526,7 +23526,7 @@
       "split_seconds": 188,
       "oa_rank": 18,
       "category_rank": 6,
-      "percent_of_record": 84.6
+      "percent_of_record": 84.0
     },
     {
       "id": 404,
@@ -23838,7 +23838,7 @@
       "split_seconds": 281,
       "oa_rank": 35,
       "category_rank": 13,
-      "percent_of_record": 83.3
+      "percent_of_record": 82.6
     },
     {
       "id": 417,
@@ -23886,7 +23886,7 @@
       "split_seconds": 212,
       "oa_rank": 69,
       "category_rank": 20,
-      "percent_of_record": 75.0
+      "percent_of_record": 74.5
     },
     {
       "id": 419,
@@ -24198,7 +24198,7 @@
       "split_seconds": 312,
       "oa_rank": 90,
       "category_rank": 31,
-      "percent_of_record": 75.0
+      "percent_of_record": 74.4
     },
     {
       "id": 432,
@@ -24246,7 +24246,7 @@
       "split_seconds": 223,
       "oa_rank": 94,
       "category_rank": 29,
-      "percent_of_record": 71.3
+      "percent_of_record": 70.9
     },
     {
       "id": 434,
@@ -24558,7 +24558,7 @@
       "split_seconds": 265,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 88.3
+      "percent_of_record": 87.5
     },
     {
       "id": 282,
@@ -24606,7 +24606,7 @@
       "split_seconds": 198,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 80.3
+      "percent_of_record": 79.8
     },
     {
       "id": 284,
@@ -24678,7 +24678,7 @@
       "split_seconds": 248,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 79.0
+      "percent_of_record": 78.2
     },
     {
       "id": 287,
@@ -24750,7 +24750,7 @@
       "split_seconds": 456,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 78.1
+      "percent_of_record": 77.9
     },
     {
       "id": 290,
@@ -24774,7 +24774,7 @@
       "split_seconds": 255,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 86.7
+      "percent_of_record": 83.1
     },
     {
       "id": 291,
@@ -24846,7 +24846,7 @@
       "split_seconds": 335,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 85.7
+      "percent_of_record": 84.5
     },
     {
       "id": 294,
@@ -24870,7 +24870,7 @@
       "split_seconds": 117,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 82.9
+      "percent_of_record": 79.5
     },
     {
       "id": 295,
@@ -24894,7 +24894,7 @@
       "split_seconds": 593,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 84.5
+      "percent_of_record": 82.1
     },
     {
       "id": 296,
@@ -24918,7 +24918,7 @@
       "split_seconds": 327,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 84.1
+      "percent_of_record": 81.7
     },
     {
       "id": 297,
@@ -25278,7 +25278,7 @@
       "split_seconds": 250,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 93.6
+      "percent_of_record": 92.8
     },
     {
       "id": 207,
@@ -25326,7 +25326,7 @@
       "split_seconds": 183,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 86.9
+      "percent_of_record": 86.3
     },
     {
       "id": 209,
@@ -25638,7 +25638,7 @@
       "split_seconds": 266,
       "oa_rank": null,
       "category_rank": 9,
-      "percent_of_record": 88.0
+      "percent_of_record": 87.2
     },
     {
       "id": 222,
@@ -25686,7 +25686,7 @@
       "split_seconds": 183,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 86.9
+      "percent_of_record": 86.3
     },
     {
       "id": 224,
@@ -25758,7 +25758,7 @@
       "split_seconds": 211,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 92.9
+      "percent_of_record": 91.9
     },
     {
       "id": 122,
@@ -25830,7 +25830,7 @@
       "split_seconds": 395,
       "oa_rank": null,
       "category_rank": 7,
-      "percent_of_record": 90.1
+      "percent_of_record": 89.9
     },
     {
       "id": 125,
@@ -25854,7 +25854,7 @@
       "split_seconds": 225,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 98.2
+      "percent_of_record": 94.2
     },
     {
       "id": 126,
@@ -25926,7 +25926,7 @@
       "split_seconds": 298,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 96.3
+      "percent_of_record": 95.0
     },
     {
       "id": 129,
@@ -25950,7 +25950,7 @@
       "split_seconds": 99,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 98.0
+      "percent_of_record": 93.9
     },
     {
       "id": 130,
@@ -25974,7 +25974,7 @@
       "split_seconds": 531,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 94.4
+      "percent_of_record": 91.7
     },
     {
       "id": 131,
@@ -25998,7 +25998,7 @@
       "split_seconds": 290,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 94.8
+      "percent_of_record": 92.1
     },
     {
       "id": 132,
@@ -26118,7 +26118,7 @@
       "split_seconds": 217,
       "oa_rank": null,
       "category_rank": 7,
-      "percent_of_record": 90.3
+      "percent_of_record": 89.4
     },
     {
       "id": 137,
@@ -26190,7 +26190,7 @@
       "split_seconds": 391,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 91.0
+      "percent_of_record": 90.8
     },
     {
       "id": 140,
@@ -26214,7 +26214,7 @@
       "split_seconds": 239,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 92.5
+      "percent_of_record": 88.7
     },
     {
       "id": 141,
@@ -26286,7 +26286,7 @@
       "split_seconds": 301,
       "oa_rank": null,
       "category_rank": 6,
-      "percent_of_record": 95.3
+      "percent_of_record": 94.0
     },
     {
       "id": 144,
@@ -26310,7 +26310,7 @@
       "split_seconds": 106,
       "oa_rank": null,
       "category_rank": 6,
-      "percent_of_record": 91.5
+      "percent_of_record": 87.7
     },
     {
       "id": 145,
@@ -26334,7 +26334,7 @@
       "split_seconds": 570,
       "oa_rank": null,
       "category_rank": 11,
-      "percent_of_record": 87.9
+      "percent_of_record": 85.4
     },
     {
       "id": 146,
@@ -26358,7 +26358,7 @@
       "split_seconds": 294,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 93.5
+      "percent_of_record": 90.8
     },
     {
       "id": 147,
@@ -26478,7 +26478,7 @@
       "split_seconds": 226,
       "oa_rank": null,
       "category_rank": 10,
-      "percent_of_record": 86.7
+      "percent_of_record": 85.8
     },
     {
       "id": 152,
@@ -26550,7 +26550,7 @@
       "split_seconds": 417,
       "oa_rank": null,
       "category_rank": 13,
-      "percent_of_record": 85.4
+      "percent_of_record": 85.1
     },
     {
       "id": 155,
@@ -26574,7 +26574,7 @@
       "split_seconds": 243,
       "oa_rank": null,
       "category_rank": 8,
-      "percent_of_record": 90.9
+      "percent_of_record": 87.2
     },
     {
       "id": 156,
@@ -26646,7 +26646,7 @@
       "split_seconds": 319,
       "oa_rank": null,
       "category_rank": 10,
-      "percent_of_record": 90.0
+      "percent_of_record": 88.7
     },
     {
       "id": 159,
@@ -26670,7 +26670,7 @@
       "split_seconds": 112,
       "oa_rank": null,
       "category_rank": 12,
-      "percent_of_record": 86.6
+      "percent_of_record": 83.0
     },
     {
       "id": 160,
@@ -26694,7 +26694,7 @@
       "split_seconds": 565,
       "oa_rank": null,
       "category_rank": 9,
-      "percent_of_record": 88.7
+      "percent_of_record": 86.2
     },
     {
       "id": 161,
@@ -26718,7 +26718,7 @@
       "split_seconds": 324,
       "oa_rank": null,
       "category_rank": 13,
-      "percent_of_record": 84.9
+      "percent_of_record": 82.4
     },
     {
       "id": 162,
@@ -26838,7 +26838,7 @@
       "split_seconds": 245,
       "oa_rank": null,
       "category_rank": 6,
-      "percent_of_record": 80.0
+      "percent_of_record": 79.2
     },
     {
       "id": 167,
@@ -26910,7 +26910,7 @@
       "split_seconds": 434,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 82.0
+      "percent_of_record": 81.8
     },
     {
       "id": 170,
@@ -26934,7 +26934,7 @@
       "split_seconds": 241,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 91.7
+      "percent_of_record": 88.0
     },
     {
       "id": 171,
@@ -27006,7 +27006,7 @@
       "split_seconds": 334,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 85.9
+      "percent_of_record": 84.7
     },
     {
       "id": 174,
@@ -27030,7 +27030,7 @@
       "split_seconds": 131,
       "oa_rank": null,
       "category_rank": 9,
-      "percent_of_record": 74.0
+      "percent_of_record": 71.0
     },
     {
       "id": 175,
@@ -27054,7 +27054,7 @@
       "split_seconds": 615,
       "oa_rank": null,
       "category_rank": 7,
-      "percent_of_record": 81.5
+      "percent_of_record": 79.2
     },
     {
       "id": 176,
@@ -27078,7 +27078,7 @@
       "split_seconds": 359,
       "oa_rank": null,
       "category_rank": 8,
-      "percent_of_record": 76.6
+      "percent_of_record": 74.4
     },
     {
       "id": 177,
@@ -27198,7 +27198,7 @@
       "split_seconds": 245,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 80.0
+      "percent_of_record": 79.2
     },
     {
       "id": 182,
@@ -27270,7 +27270,7 @@
       "split_seconds": 424,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 84.0
+      "percent_of_record": 83.7
     },
     {
       "id": 185,
@@ -27294,7 +27294,7 @@
       "split_seconds": 256,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 86.3
+      "percent_of_record": 82.8
     },
     {
       "id": 186,
@@ -27366,7 +27366,7 @@
       "split_seconds": 352,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 81.5
+      "percent_of_record": 80.4
     },
     {
       "id": 189,
@@ -27390,7 +27390,7 @@
       "split_seconds": 140,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 69.3
+      "percent_of_record": 66.4
     },
     {
       "id": 190,
@@ -27414,7 +27414,7 @@
       "split_seconds": 613,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 81.7
+      "percent_of_record": 79.4
     },
     {
       "id": 191,
@@ -27438,7 +27438,7 @@
       "split_seconds": 342,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 80.4
+      "percent_of_record": 78.1
     },
     {
       "id": 192,
@@ -27750,7 +27750,7 @@
       "split_seconds": 124,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 78.2
+      "percent_of_record": 75.0
     },
     {
       "id": 265,
@@ -27798,7 +27798,7 @@
       "split_seconds": 425,
       "oa_rank": null,
       "category_rank": 6,
-      "percent_of_record": 64.7
+      "percent_of_record": 62.8
     },
     {
       "id": 267,
@@ -27846,7 +27846,7 @@
       "split_seconds": 225,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 70.7
+      "percent_of_record": 70.2
     },
     {
       "id": 269,
@@ -28158,7 +28158,7 @@
       "split_seconds": 280,
       "oa_rank": null,
       "category_rank": 11,
-      "percent_of_record": 83.6
+      "percent_of_record": 82.9
     },
     {
       "id": 237,
@@ -28206,7 +28206,7 @@
       "split_seconds": 189,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 84.1
+      "percent_of_record": 83.6
     },
     {
       "id": 239,
@@ -28518,7 +28518,7 @@
       "split_seconds": 294,
       "oa_rank": null,
       "category_rank": 22,
-      "percent_of_record": 79.6
+      "percent_of_record": 78.9
     },
     {
       "id": 252,
@@ -28566,7 +28566,7 @@
       "split_seconds": 206,
       "oa_rank": null,
       "category_rank": 20,
-      "percent_of_record": 77.2
+      "percent_of_record": 76.7
     },
     {
       "id": 254,
@@ -28662,7 +28662,7 @@
       "split_seconds": 234,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 83.8
+      "percent_of_record": 82.9
     },
     {
       "id": 92,
@@ -28806,7 +28806,7 @@
       "split_seconds": 479,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 74.3
+      "percent_of_record": 74.1
     },
     {
       "id": 95,
@@ -28854,7 +28854,7 @@
       "split_seconds": 281,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 78.6
+      "percent_of_record": 75.4
     },
     {
       "id": 96,
@@ -28998,7 +28998,7 @@
       "split_seconds": 349,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 82.2
+      "percent_of_record": 81.1
     },
     {
       "id": 99,
@@ -29046,7 +29046,7 @@
       "split_seconds": 112,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 86.6
+      "percent_of_record": 83.0
     },
     {
       "id": 100,
@@ -29094,7 +29094,7 @@
       "split_seconds": 570,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 87.9
+      "percent_of_record": 85.4
     },
     {
       "id": 101,
@@ -29118,7 +29118,7 @@
       "split_seconds": 278,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 84.2
+      "percent_of_record": 83.5
     },
     {
       "id": 116,
@@ -29142,7 +29142,7 @@
       "split_seconds": 289,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 95.2
+      "percent_of_record": 92.4
     },
     {
       "id": 102,
@@ -29214,7 +29214,7 @@
       "split_seconds": 191,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 83.2
+      "percent_of_record": 82.7
     },
     {
       "id": 118,
@@ -29598,7 +29598,7 @@
       "split_seconds": 250,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 93.6
+      "percent_of_record": 92.8
     },
     {
       "id": 57,
@@ -29646,7 +29646,7 @@
       "split_seconds": 166,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 95.8
+      "percent_of_record": 95.2
     },
     {
       "id": 59,
@@ -29718,7 +29718,7 @@
       "split_seconds": 235,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 83.4
+      "percent_of_record": 82.6
     },
     {
       "id": 17,
@@ -29790,7 +29790,7 @@
       "split_seconds": 402,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 88.6
+      "percent_of_record": 88.3
     },
     {
       "id": 20,
@@ -29814,7 +29814,7 @@
       "split_seconds": 243,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 90.9
+      "percent_of_record": 87.2
     },
     {
       "id": 21,
@@ -29886,7 +29886,7 @@
       "split_seconds": 307,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 93.5
+      "percent_of_record": 92.2
     },
     {
       "id": 24,
@@ -29910,7 +29910,7 @@
       "split_seconds": 113,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 85.8
+      "percent_of_record": 82.3
     },
     {
       "id": 25,
@@ -29934,7 +29934,7 @@
       "split_seconds": 563,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 89.0
+      "percent_of_record": 86.5
     },
     {
       "id": 26,
@@ -29958,7 +29958,7 @@
       "split_seconds": 295,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 93.2
+      "percent_of_record": 90.5
     },
     {
       "id": 27,
@@ -30078,7 +30078,7 @@
       "split_seconds": 256,
       "oa_rank": null,
       "category_rank": 6,
-      "percent_of_record": 76.6
+      "percent_of_record": 75.8
     },
     {
       "id": 32,
@@ -30150,7 +30150,7 @@
       "split_seconds": 468,
       "oa_rank": null,
       "category_rank": 4,
-      "percent_of_record": 76.1
+      "percent_of_record": 75.9
     },
     {
       "id": 35,
@@ -30174,7 +30174,7 @@
       "split_seconds": 273,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 81.0
+      "percent_of_record": 77.7
     },
     {
       "id": 36,
@@ -30246,7 +30246,7 @@
       "split_seconds": 330,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 87.0
+      "percent_of_record": 85.8
     },
     {
       "id": 39,
@@ -30270,7 +30270,7 @@
       "split_seconds": 114,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 85.1
+      "percent_of_record": 81.6
     },
     {
       "id": 40,
@@ -30294,7 +30294,7 @@
       "split_seconds": 583,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 85.9
+      "percent_of_record": 83.5
     },
     {
       "id": 41,
@@ -30318,7 +30318,7 @@
       "split_seconds": 335,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 82.1
+      "percent_of_record": 79.7
     },
     {
       "id": 42,
@@ -30678,7 +30678,7 @@
       "split_seconds": 262,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 89.3
+      "percent_of_record": 88.5
     },
     {
       "id": 72,
@@ -30726,7 +30726,7 @@
       "split_seconds": 181,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 87.8
+      "percent_of_record": 87.3
     },
     {
       "id": 74,
@@ -30798,7 +30798,7 @@
       "split_seconds": 202,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 97.0
+      "percent_of_record": 96.0
     },
     {
       "id": 2,
@@ -30870,7 +30870,7 @@
       "split_seconds": 398,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 89.4
+      "percent_of_record": 89.2
     },
     {
       "id": 5,
@@ -30894,7 +30894,7 @@
       "split_seconds": 224,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 98.7
+      "percent_of_record": 94.6
     },
     {
       "id": 6,
@@ -30966,7 +30966,7 @@
       "split_seconds": 300,
       "oa_rank": null,
       "category_rank": 3,
-      "percent_of_record": 95.7
+      "percent_of_record": 94.3
     },
     {
       "id": 9,
@@ -30990,7 +30990,7 @@
       "split_seconds": 105,
       "oa_rank": null,
       "category_rank": 2,
-      "percent_of_record": 92.4
+      "percent_of_record": 88.6
     },
     {
       "id": 10,
@@ -31014,7 +31014,7 @@
       "split_seconds": 536,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 93.5
+      "percent_of_record": 90.9
     },
     {
       "id": 11,
@@ -31038,7 +31038,7 @@
       "split_seconds": 287,
       "oa_rank": null,
       "category_rank": 1,
-      "percent_of_record": 95.8
+      "percent_of_record": 93.0
     },
     {
       "id": 12,
@@ -31398,7 +31398,7 @@
       "split_seconds": 288,
       "oa_rank": null,
       "category_rank": 16,
-      "percent_of_record": 81.2
+      "percent_of_record": 80.6
     },
     {
       "id": 87,
@@ -31446,7 +31446,7 @@
       "split_seconds": 188,
       "oa_rank": null,
       "category_rank": 5,
-      "percent_of_record": 84.6
+      "percent_of_record": 84.0
     },
     {
       "id": 89,
@@ -32443,7 +32443,7 @@
         748
       ],
       "best_split_text": "2:59",
-      "best_percent_of_record": 93.6,
+      "best_percent_of_record": 92.8,
       "classes": [
         "SK Vidar elite"
       ],
@@ -32516,7 +32516,7 @@
         683
       ],
       "best_split_text": "5:00",
-      "best_percent_of_record": 95.7,
+      "best_percent_of_record": 94.3,
       "classes": [
         "SK Vidar elite"
       ],
@@ -32671,7 +32671,7 @@
         700
       ],
       "best_split_text": "1:36",
-      "best_percent_of_record": 92.0,
+      "best_percent_of_record": 90.7,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -32754,7 +32754,7 @@
         661
       ],
       "best_split_text": "3:22",
-      "best_percent_of_record": 99.1,
+      "best_percent_of_record": 96.0,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -32833,7 +32833,7 @@
         517
       ],
       "best_split_text": "1:38",
-      "best_percent_of_record": 86.6,
+      "best_percent_of_record": 83.0,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -32977,7 +32977,7 @@
         664
       ],
       "best_split_text": "3:25",
-      "best_percent_of_record": 100.0,
+      "best_percent_of_record": 99.7,
       "classes": [
         "SK Vidar elite"
       ],
@@ -33121,7 +33121,7 @@
         673
       ],
       "best_split_text": "3:20",
-      "best_percent_of_record": 98.7,
+      "best_percent_of_record": 94.6,
       "classes": [
         "SK Vidar elite"
       ],
@@ -33423,7 +33423,7 @@
         559
       ],
       "best_split_text": "3:49",
-      "best_percent_of_record": 88.0,
+      "best_percent_of_record": 87.3,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -33992,7 +33992,7 @@
         698
       ],
       "best_split_text": "4:01",
-      "best_percent_of_record": 91.7,
+      "best_percent_of_record": 89.3,
       "classes": [
         "SK Vidar elite"
       ],
@@ -34198,7 +34198,7 @@
         638
       ],
       "best_split_text": "5:35",
-      "best_percent_of_record": 85.7,
+      "best_percent_of_record": 84.5,
       "classes": [
         "OSI student"
       ],
@@ -34333,7 +34333,7 @@
         678
       ],
       "best_split_text": "1:39",
-      "best_percent_of_record": 98.0,
+      "best_percent_of_record": 93.9,
       "classes": [
         "SK Vidar elite"
       ],
@@ -34492,7 +34492,7 @@
         688
       ],
       "best_split_text": "3:30",
-      "best_percent_of_record": 92.6,
+      "best_percent_of_record": 89.9,
       "classes": [
         "SK Vidar elite"
       ],
@@ -34562,7 +34562,7 @@
         699
       ],
       "best_split_text": "1:03",
-      "best_percent_of_record": 86.6,
+      "best_percent_of_record": 83.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -34631,7 +34631,7 @@
         763
       ],
       "best_split_text": "1:28",
-      "best_percent_of_record": 85.5,
+      "best_percent_of_record": 84.9,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -34703,7 +34703,7 @@
         451
       ],
       "best_split_text": "3:40",
-      "best_percent_of_record": 84.8,
+      "best_percent_of_record": 84.1,
       "classes": [
         "OSI student",
         "SK Vidar senior"
@@ -34778,7 +34778,7 @@
         633
       ],
       "best_split_text": "1:56",
-      "best_percent_of_record": 86.7,
+      "best_percent_of_record": 84.0,
       "classes": [
         "OSI student"
       ],
@@ -34845,7 +34845,7 @@
         634
       ],
       "best_split_text": "5:22",
-      "best_percent_of_record": 85.2,
+      "best_percent_of_record": 84.1,
       "classes": [
         "OSI student"
       ],
@@ -35183,7 +35183,7 @@
         500
       ],
       "best_split_text": "1:03",
-      "best_percent_of_record": 90.2,
+      "best_percent_of_record": 86.5,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -35460,7 +35460,7 @@
         348
       ],
       "best_split_text": "2:05",
-      "best_percent_of_record": 74.0,
+      "best_percent_of_record": 73.6,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -35593,7 +35593,7 @@
         569
       ],
       "best_split_text": "1:36",
-      "best_percent_of_record": 84.6,
+      "best_percent_of_record": 84.4,
       "classes": [
         "SK Vidar senior"
       ],
@@ -36358,7 +36358,7 @@
         499
       ],
       "best_split_text": "6:51",
-      "best_percent_of_record": 86.6,
+      "best_percent_of_record": 86.4,
       "classes": [
         "SK Vidar elite"
       ],
@@ -36435,7 +36435,7 @@
         504
       ],
       "best_split_text": "1:59",
-      "best_percent_of_record": 81.5,
+      "best_percent_of_record": 81.4,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -36503,7 +36503,7 @@
         448
       ],
       "best_split_text": "3:11",
-      "best_percent_of_record": 83.2,
+      "best_percent_of_record": 82.7,
       "classes": [
         "OSI student"
       ],
@@ -36576,7 +36576,7 @@
         565
       ],
       "best_split_text": "4:14",
-      "best_percent_of_record": 92.1,
+      "best_percent_of_record": 91.3,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -36710,7 +36710,7 @@
         681
       ],
       "best_split_text": "3:54",
-      "best_percent_of_record": 96.3,
+      "best_percent_of_record": 95.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -36842,7 +36842,7 @@
         401
       ],
       "best_split_text": "4:36",
-      "best_percent_of_record": 84.8,
+      "best_percent_of_record": 84.1,
       "classes": [
         "SK Vidar senior"
       ],
@@ -37059,7 +37059,7 @@
         682
       ],
       "best_split_text": "6:38",
-      "best_percent_of_record": 89.4,
+      "best_percent_of_record": 89.2,
       "classes": [
         "SK Vidar elite"
       ],
@@ -37478,7 +37478,7 @@
         705
       ],
       "best_split_text": "1:33",
-      "best_percent_of_record": 91.3,
+      "best_percent_of_record": 87.6,
       "classes": [
         "SK Vidar elite"
       ],
@@ -37679,7 +37679,7 @@
         342
       ],
       "best_split_text": "1:06",
-      "best_percent_of_record": 82.1,
+      "best_percent_of_record": 79.7,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -37825,7 +37825,7 @@
         511
       ],
       "best_split_text": "3:54",
-      "best_percent_of_record": 89.5,
+      "best_percent_of_record": 85.8,
       "classes": [
         "SK Vidar elite"
       ],
@@ -37891,7 +37891,7 @@
         670
       ],
       "best_split_text": "8:07",
-      "best_percent_of_record": 102.9,
+      "best_percent_of_record": 100.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -38085,7 +38085,7 @@
         668
       ],
       "best_split_text": "4:43",
-      "best_percent_of_record": 101.4,
+      "best_percent_of_record": 100.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -38209,7 +38209,7 @@
         124
       ],
       "best_split_text": "4:47",
-      "best_percent_of_record": 95.8,
+      "best_percent_of_record": 93.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -38282,7 +38282,7 @@
         665
       ],
       "best_split_text": "3:32",
-      "best_percent_of_record": 104.2,
+      "best_percent_of_record": 100.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -38416,7 +38416,7 @@
         155
       ],
       "best_split_text": "1:53",
-      "best_percent_of_record": 90.9,
+      "best_percent_of_record": 87.2,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -38543,7 +38543,7 @@
         685
       ],
       "best_split_text": "8:50",
-      "best_percent_of_record": 94.5,
+      "best_percent_of_record": 91.9,
       "classes": [
         "SK Vidar elite"
       ],
@@ -38605,7 +38605,7 @@
         309
       ],
       "best_split_text": "1:28",
-      "best_percent_of_record": 97.0,
+      "best_percent_of_record": 93.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -38669,7 +38669,7 @@
         707
       ],
       "best_split_text": "4:27",
-      "best_percent_of_record": 84.0,
+      "best_percent_of_record": 83.7,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -38741,7 +38741,7 @@
         295
       ],
       "best_split_text": "9:30",
-      "best_percent_of_record": 87.9,
+      "best_percent_of_record": 85.4,
       "classes": [
         "OSI student"
       ],
@@ -38803,7 +38803,7 @@
         462
       ],
       "best_split_text": "1:07",
-      "best_percent_of_record": 82.9,
+      "best_percent_of_record": 79.5,
       "classes": [
         "OSI student"
       ],
@@ -38936,7 +38936,7 @@
         632
       ],
       "best_split_text": "4:09",
-      "best_percent_of_record": 88.8,
+      "best_percent_of_record": 85.1,
       "classes": [
         "OSI student"
       ],
@@ -38999,7 +38999,7 @@
         470
       ],
       "best_split_text": "3:41",
-      "best_percent_of_record": 100.0,
+      "best_percent_of_record": 95.9,
       "classes": [
         "SK Vidar elite"
       ],
@@ -39259,7 +39259,7 @@
         459
       ],
       "best_split_text": "1:54",
-      "best_percent_of_record": 85.1,
+      "best_percent_of_record": 81.6,
       "classes": [
         "OSI student"
       ],
@@ -40110,7 +40110,7 @@
         497
       ],
       "best_split_text": "4:27",
-      "best_percent_of_record": 86.2,
+      "best_percent_of_record": 83.7,
       "classes": [
         "SK Vidar elite"
       ],
@@ -40255,7 +40255,7 @@
         474
       ],
       "best_split_text": "1:47",
-      "best_percent_of_record": 90.7,
+      "best_percent_of_record": 87.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -40638,7 +40638,7 @@
         446
       ],
       "best_split_text": "4:38",
-      "best_percent_of_record": 84.2,
+      "best_percent_of_record": 83.5,
       "classes": [
         "OSI student"
       ],
@@ -40700,7 +40700,7 @@
         353
       ],
       "best_split_text": "5:30",
-      "best_percent_of_record": 87.0,
+      "best_percent_of_record": 85.8,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -40774,7 +40774,7 @@
         160
       ],
       "best_split_text": "9:25",
-      "best_percent_of_record": 88.7,
+      "best_percent_of_record": 86.2,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -41413,7 +41413,7 @@
         259
       ],
       "best_split_text": "4:48",
-      "best_percent_of_record": 81.2,
+      "best_percent_of_record": 80.6,
       "classes": [
         "SK Vidar miks",
         "SK Vidar senior"
@@ -41601,7 +41601,7 @@
         738
       ],
       "best_split_text": "1:33",
-      "best_percent_of_record": 83.6,
+      "best_percent_of_record": 82.9,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -41674,7 +41674,7 @@
         180
       ],
       "best_split_text": "1:37",
-      "best_percent_of_record": 85.1,
+      "best_percent_of_record": 81.6,
       "classes": [
         "SK Vidar senior"
       ],
@@ -41801,7 +41801,7 @@
         223
       ],
       "best_split_text": "3:03",
-      "best_percent_of_record": 89.3,
+      "best_percent_of_record": 88.5,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -42203,7 +42203,7 @@
         328
       ],
       "best_split_text": "3:40",
-      "best_percent_of_record": 86.7,
+      "best_percent_of_record": 85.8,
       "classes": [
         "SK Vidar elite"
       ],
@@ -42329,7 +42329,7 @@
         487
       ],
       "best_split_text": "6:42",
-      "best_percent_of_record": 88.6,
+      "best_percent_of_record": 88.3,
       "classes": [
         "SK Vidar elite"
       ],
@@ -42850,7 +42850,7 @@
         676
       ],
       "best_split_text": "3:32",
-      "best_percent_of_record": 87.5,
+      "best_percent_of_record": 87.3,
       "classes": [
         "SK Vidar elite"
       ],
@@ -42912,7 +42912,7 @@
         589
       ],
       "best_split_text": "5:12",
-      "best_percent_of_record": 75.0,
+      "best_percent_of_record": 74.4,
       "classes": [
         "SK Vidar miks",
         "SK Vidar senior"
@@ -43038,7 +43038,7 @@
         684
       ],
       "best_split_text": "1:41",
-      "best_percent_of_record": 92.4,
+      "best_percent_of_record": 91.1,
       "classes": [
         "SK Vidar elite"
       ],
@@ -43101,7 +43101,7 @@
         176
       ],
       "best_split_text": "5:59",
-      "best_percent_of_record": 76.6,
+      "best_percent_of_record": 74.4,
       "classes": [
         "OSI student",
         "SK Vidar senior"
@@ -43291,7 +43291,7 @@
         785
       ],
       "best_split_text": "4:21",
-      "best_percent_of_record": 85.1,
+      "best_percent_of_record": 82.7,
       "classes": [
         "SK Vidar elite",
         "SK Vidar miks"
@@ -43355,7 +43355,7 @@
         411
       ],
       "best_split_text": "3:01",
-      "best_percent_of_record": 87.8,
+      "best_percent_of_record": 87.3,
       "classes": [
         "SK Vidar senior"
       ],
@@ -43480,7 +43480,7 @@
         704
       ],
       "best_split_text": "1:51",
-      "best_percent_of_record": 87.4,
+      "best_percent_of_record": 86.4,
       "classes": [
         "SK Vidar elite"
       ],
@@ -43675,7 +43675,7 @@
         568
       ],
       "best_split_text": "3:02",
-      "best_percent_of_record": 87.4,
+      "best_percent_of_record": 86.8,
       "classes": [
         "SK Vidar senior"
       ],
@@ -43799,7 +43799,7 @@
         596
       ],
       "best_split_text": "5:16",
-      "best_percent_of_record": 74.1,
+      "best_percent_of_record": 73.4,
       "classes": [
         "SK Vidar miks"
       ],
@@ -43925,7 +43925,7 @@
         503
       ],
       "best_split_text": "4:05",
-      "best_percent_of_record": 82.7,
+      "best_percent_of_record": 81.6,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -43989,7 +43989,7 @@
         264
       ],
       "best_split_text": "2:04",
-      "best_percent_of_record": 78.2,
+      "best_percent_of_record": 75.0,
       "classes": [
         "SK Vidar miks",
         "SK Vidar senior"
@@ -44052,7 +44052,7 @@
         505
       ],
       "best_split_text": "9:38",
-      "best_percent_of_record": 86.7,
+      "best_percent_of_record": 84.3,
       "classes": [
         "SK Vidar elite"
       ],
@@ -44113,7 +44113,7 @@
         583
       ],
       "best_split_text": "3:31",
-      "best_percent_of_record": 75.4,
+      "best_percent_of_record": 74.9,
       "classes": [
         "SK Vidar senior"
       ],
@@ -44237,7 +44237,7 @@
         714
       ],
       "best_split_text": "2:20",
-      "best_percent_of_record": 69.3,
+      "best_percent_of_record": 66.4,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -44299,7 +44299,7 @@
         144
       ],
       "best_split_text": "1:46",
-      "best_percent_of_record": 91.5,
+      "best_percent_of_record": 87.7,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -44559,7 +44559,7 @@
         491
       ],
       "best_split_text": "4:57",
-      "best_percent_of_record": 92.3,
+      "best_percent_of_record": 90.6,
       "classes": [
         "SK Vidar elite"
       ],
@@ -45005,7 +45005,7 @@
         703
       ],
       "best_split_text": "3:44",
-      "best_percent_of_record": 85.9,
+      "best_percent_of_record": 83.4,
       "classes": [
         "SK Vidar elite"
       ],
@@ -45131,7 +45131,7 @@
         349
       ],
       "best_split_text": "5:30",
-      "best_percent_of_record": 87.0,
+      "best_percent_of_record": 85.8,
       "classes": [
         "SK Vidar elite",
         "SK Vidar senior"
@@ -45310,7 +45310,7 @@
         669
       ],
       "best_split_text": "1:33",
-      "best_percent_of_record": 104.3,
+      "best_percent_of_record": 100.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -45428,7 +45428,7 @@
         19
       ],
       "best_split_text": "6:42",
-      "best_percent_of_record": 88.6,
+      "best_percent_of_record": 88.3,
       "classes": [
         "SK Vidar senior"
       ],
@@ -45603,7 +45603,7 @@
         181
       ],
       "best_split_text": "4:05",
-      "best_percent_of_record": 80.0,
+      "best_percent_of_record": 79.2,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -45662,7 +45662,7 @@
         185
       ],
       "best_split_text": "4:16",
-      "best_percent_of_record": 86.3,
+      "best_percent_of_record": 82.8,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -45780,7 +45780,7 @@
         191
       ],
       "best_split_text": "5:42",
-      "best_percent_of_record": 80.4,
+      "best_percent_of_record": 78.1,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -45955,7 +45955,7 @@
         25
       ],
       "best_split_text": "9:23",
-      "best_percent_of_record": 89.0,
+      "best_percent_of_record": 86.5,
       "classes": [
         "SK Vidar senior"
       ],
@@ -46129,7 +46129,7 @@
         188
       ],
       "best_split_text": "5:52",
-      "best_percent_of_record": 81.5,
+      "best_percent_of_record": 80.4,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -46188,7 +46188,7 @@
         116
       ],
       "best_split_text": "4:49",
-      "best_percent_of_record": 95.2,
+      "best_percent_of_record": 92.4,
       "classes": [
         "OSI student"
       ],
@@ -46305,7 +46305,7 @@
         20
       ],
       "best_split_text": "4:03",
-      "best_percent_of_record": 90.9,
+      "best_percent_of_record": 87.2,
       "classes": [
         "SK Vidar senior"
       ],
@@ -46423,7 +46423,7 @@
         710
       ],
       "best_split_text": "4:27",
-      "best_percent_of_record": 82.8,
+      "best_percent_of_record": 79.4,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -46540,7 +46540,7 @@
         190
       ],
       "best_split_text": "10:13",
-      "best_percent_of_record": 81.7,
+      "best_percent_of_record": 79.4,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -46598,7 +46598,7 @@
         26
       ],
       "best_split_text": "4:55",
-      "best_percent_of_record": 93.2,
+      "best_percent_of_record": 90.5,
       "classes": [
         "SK Vidar senior"
       ],
@@ -46657,7 +46657,7 @@
         713
       ],
       "best_split_text": "5:07",
-      "best_percent_of_record": 93.5,
+      "best_percent_of_record": 92.2,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -46715,7 +46715,7 @@
         639
       ],
       "best_split_text": "1:58",
-      "best_percent_of_record": 82.2,
+      "best_percent_of_record": 78.8,
       "classes": [
         "OSI student"
       ],
@@ -47064,7 +47064,7 @@
         640
       ],
       "best_split_text": "9:15",
-      "best_percent_of_record": 90.3,
+      "best_percent_of_record": 87.7,
       "classes": [
         "OSI student"
       ],
@@ -47590,7 +47590,7 @@
         170
       ],
       "best_split_text": "4:01",
-      "best_percent_of_record": 91.7,
+      "best_percent_of_record": 88.0,
       "classes": [
         "SK Vidar senior"
       ],
@@ -47824,7 +47824,7 @@
         418
       ],
       "best_split_text": "3:32",
-      "best_percent_of_record": 75.0,
+      "best_percent_of_record": 74.5,
       "classes": [
         "SK Vidar senior"
       ],
@@ -48523,7 +48523,7 @@
         281
       ],
       "best_split_text": "4:25",
-      "best_percent_of_record": 88.3,
+      "best_percent_of_record": 87.5,
       "classes": [
         "OSI student"
       ],
@@ -48641,7 +48641,7 @@
         173
       ],
       "best_split_text": "5:34",
-      "best_percent_of_record": 85.9,
+      "best_percent_of_record": 84.7,
       "classes": [
         "SK Vidar senior"
       ],
@@ -48700,7 +48700,7 @@
         35
       ],
       "best_split_text": "4:33",
-      "best_percent_of_record": 81.0,
+      "best_percent_of_record": 77.7,
       "classes": [
         "SK Vidar senior"
       ],
@@ -48760,7 +48760,7 @@
         1
       ],
       "best_split_text": "3:22",
-      "best_percent_of_record": 97.0,
+      "best_percent_of_record": 96.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -48999,7 +48999,7 @@
         485
       ],
       "best_split_text": "3:50",
-      "best_percent_of_record": 96.1,
+      "best_percent_of_record": 92.2,
       "classes": [
         "SK Vidar elite"
       ],
@@ -49057,7 +49057,7 @@
         9
       ],
       "best_split_text": "1:45",
-      "best_percent_of_record": 92.4,
+      "best_percent_of_record": 88.6,
       "classes": [
         "SK Vidar elite"
       ],
@@ -49292,7 +49292,7 @@
         626
       ],
       "best_split_text": "4:36",
-      "best_percent_of_record": 84.8,
+      "best_percent_of_record": 84.1,
       "classes": [
         "OSI student"
       ],
@@ -49410,7 +49410,7 @@
         490
       ],
       "best_split_text": "9:07",
-      "best_percent_of_record": 91.6,
+      "best_percent_of_record": 89.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -49646,7 +49646,7 @@
         324
       ],
       "best_split_text": "1:49",
-      "best_percent_of_record": 89.0,
+      "best_percent_of_record": 85.3,
       "classes": [
         "SK Vidar elite"
       ],
@@ -49882,7 +49882,7 @@
         140
       ],
       "best_split_text": "3:59",
-      "best_percent_of_record": 92.5,
+      "best_percent_of_record": 88.7,
       "classes": [
         "SK Vidar elite"
       ],
@@ -49940,7 +49940,7 @@
         114
       ],
       "best_split_text": "1:52",
-      "best_percent_of_record": 86.6,
+      "best_percent_of_record": 83.0,
       "classes": [
         "OSI student"
       ],
@@ -50529,7 +50529,7 @@
         106
       ],
       "best_split_text": "3:54",
-      "best_percent_of_record": 83.8,
+      "best_percent_of_record": 82.9,
       "classes": [
         "OSI student"
       ],
@@ -50587,7 +50587,7 @@
         641
       ],
       "best_split_text": "5:40",
-      "best_percent_of_record": 80.9,
+      "best_percent_of_record": 78.5,
       "classes": [
         "OSI student"
       ],
@@ -50881,7 +50881,7 @@
         635
       ],
       "best_split_text": "4:34",
-      "best_percent_of_record": 80.7,
+      "best_percent_of_record": 77.4,
       "classes": [
         "OSI student"
       ],
@@ -51466,7 +51466,7 @@
         354
       ],
       "best_split_text": "2:00",
-      "best_percent_of_record": 80.8,
+      "best_percent_of_record": 77.5,
       "classes": [
         "SK Vidar elite"
       ],
@@ -51933,7 +51933,7 @@
         701
       ],
       "best_split_text": "5:20",
-      "best_percent_of_record": 85.9,
+      "best_percent_of_record": 83.4,
       "classes": [
         "SK Vidar elite"
       ],
@@ -52050,7 +52050,7 @@
         296
       ],
       "best_split_text": "5:27",
-      "best_percent_of_record": 84.1,
+      "best_percent_of_record": 81.7,
       "classes": [
         "OSI student"
       ],
@@ -52287,7 +52287,7 @@
         350
       ],
       "best_split_text": "4:18",
-      "best_percent_of_record": 85.7,
+      "best_percent_of_record": 82.2,
       "classes": [
         "SK Vidar elite"
       ],
@@ -52696,7 +52696,7 @@
         656
       ],
       "best_split_text": "6:48",
-      "best_percent_of_record": 57.4,
+      "best_percent_of_record": 56.9,
       "classes": [
         "OSI miks"
       ],
@@ -53286,7 +53286,7 @@
         136
       ],
       "best_split_text": "3:37",
-      "best_percent_of_record": 90.3,
+      "best_percent_of_record": 89.4,
       "classes": [
         "SK Vidar elite"
       ],
@@ -53344,7 +53344,7 @@
         454
       ],
       "best_split_text": "7:20",
-      "best_percent_of_record": 80.9,
+      "best_percent_of_record": 80.7,
       "classes": [
         "OSI student"
       ],
@@ -53518,7 +53518,7 @@
         716
       ],
       "best_split_text": "5:24",
-      "best_percent_of_record": 84.9,
+      "best_percent_of_record": 82.4,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -53867,7 +53867,7 @@
         146
       ],
       "best_split_text": "4:54",
-      "best_percent_of_record": 93.5,
+      "best_percent_of_record": 90.8,
       "classes": [
         "SK Vidar elite"
       ],
@@ -53984,7 +53984,7 @@
         208
       ],
       "best_split_text": "3:03",
-      "best_percent_of_record": 86.9,
+      "best_percent_of_record": 86.3,
       "classes": [
         "SK Vidar elite"
       ],
@@ -54163,7 +54163,7 @@
         139
       ],
       "best_split_text": "6:31",
-      "best_percent_of_record": 91.0,
+      "best_percent_of_record": 90.8,
       "classes": [
         "SK Vidar elite"
       ],
@@ -54281,7 +54281,7 @@
         733
       ],
       "best_split_text": "2:56",
-      "best_percent_of_record": 90.3,
+      "best_percent_of_record": 89.8,
       "classes": [
         "SK Vidar elite"
       ],
@@ -54339,7 +54339,7 @@
         590
       ],
       "best_split_text": "4:37",
-      "best_percent_of_record": 79.8,
+      "best_percent_of_record": 76.5,
       "classes": [
         "SK Vidar miks"
       ],
@@ -54688,7 +54688,7 @@
         175
       ],
       "best_split_text": "10:15",
-      "best_percent_of_record": 81.5,
+      "best_percent_of_record": 79.2,
       "classes": [
         "SK Vidar senior"
       ],
@@ -54747,7 +54747,7 @@
         691
       ],
       "best_split_text": "3:48",
-      "best_percent_of_record": 86.0,
+      "best_percent_of_record": 85.1,
       "classes": [
         "SK Vidar elite"
       ],
@@ -55332,7 +55332,7 @@
         778
       ],
       "best_split_text": "3:37",
-      "best_percent_of_record": 73.3,
+      "best_percent_of_record": 72.8,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -55390,7 +55390,7 @@
         110
       ],
       "best_split_text": "4:41",
-      "best_percent_of_record": 78.6,
+      "best_percent_of_record": 75.4,
       "classes": [
         "OSI student"
       ],
@@ -55509,7 +55509,7 @@
         694
       ],
       "best_split_text": "6:39",
-      "best_percent_of_record": 89.2,
+      "best_percent_of_record": 89.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -55685,7 +55685,7 @@
         266
       ],
       "best_split_text": "7:05",
-      "best_percent_of_record": 64.7,
+      "best_percent_of_record": 62.8,
       "classes": [
         "SK Vidar miks"
       ],
@@ -56095,7 +56095,7 @@
         469
       ],
       "best_split_text": "6:11",
-      "best_percent_of_record": 96.0,
+      "best_percent_of_record": 95.7,
       "classes": [
         "SK Vidar elite"
       ],
@@ -56445,7 +56445,7 @@
         631
       ],
       "best_split_text": "4:03",
-      "best_percent_of_record": 80.7,
+      "best_percent_of_record": 79.8,
       "classes": [
         "OSI student"
       ],
@@ -56503,7 +56503,7 @@
         34
       ],
       "best_split_text": "7:48",
-      "best_percent_of_record": 76.1,
+      "best_percent_of_record": 75.9,
       "classes": [
         "SK Vidar senior"
       ],
@@ -56970,7 +56970,7 @@
         251
       ],
       "best_split_text": "4:54",
-      "best_percent_of_record": 79.6,
+      "best_percent_of_record": 78.9,
       "classes": [
         "SK Vidar senior"
       ],
@@ -57088,7 +57088,7 @@
         680
       ],
       "best_split_text": "3:53",
-      "best_percent_of_record": 94.8,
+      "best_percent_of_record": 91.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -57147,7 +57147,7 @@
         658
       ],
       "best_split_text": "3:50",
-      "best_percent_of_record": 69.1,
+      "best_percent_of_record": 68.7,
       "classes": [
         "OSI miks"
       ],
@@ -57672,7 +57672,7 @@
         169
       ],
       "best_split_text": "7:14",
-      "best_percent_of_record": 82.0,
+      "best_percent_of_record": 81.8,
       "classes": [
         "SK Vidar senior"
       ],
@@ -58082,7 +58082,7 @@
         611
       ],
       "best_split_text": "5:19",
-      "best_percent_of_record": 73.4,
+      "best_percent_of_record": 72.7,
       "classes": [
         "SK Vidar miks"
       ],
@@ -58202,7 +58202,7 @@
         731
       ],
       "best_split_text": "4:08",
-      "best_percent_of_record": 94.4,
+      "best_percent_of_record": 93.5,
       "classes": [
         "SK Vidar elite"
       ],
@@ -58675,7 +58675,7 @@
         268
       ],
       "best_split_text": "3:45",
-      "best_percent_of_record": 70.7,
+      "best_percent_of_record": 70.2,
       "classes": [
         "SK Vidar miks"
       ],
@@ -58792,7 +58792,7 @@
         121
       ],
       "best_split_text": "3:31",
-      "best_percent_of_record": 92.9,
+      "best_percent_of_record": 91.9,
       "classes": [
         "SK Vidar elite"
       ],
@@ -59496,7 +59496,7 @@
         325
       ],
       "best_split_text": "9:26",
-      "best_percent_of_record": 88.5,
+      "best_percent_of_record": 86.0,
       "classes": [
         "SK Vidar elite"
       ],
@@ -59556,7 +59556,7 @@
         715
       ],
       "best_split_text": "9:50",
-      "best_percent_of_record": 84.9,
+      "best_percent_of_record": 82.5,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -59673,7 +59673,7 @@
         594
       ],
       "best_split_text": "2:05",
-      "best_percent_of_record": 77.6,
+      "best_percent_of_record": 74.4,
       "classes": [
         "SK Vidar miks"
       ],
@@ -59906,7 +59906,7 @@
         695
       ],
       "best_split_text": "4:17",
-      "best_percent_of_record": 86.0,
+      "best_percent_of_record": 82.5,
       "classes": [
         "SK Vidar elite"
       ],
@@ -60314,7 +60314,7 @@
         706
       ],
       "best_split_text": "4:19",
-      "best_percent_of_record": 75.7,
+      "best_percent_of_record": 74.9,
       "classes": [
         "SK Vidar veteran"
       ],
@@ -60372,7 +60372,7 @@
         461
       ],
       "best_split_text": "5:25",
-      "best_percent_of_record": 84.6,
+      "best_percent_of_record": 82.2,
       "classes": [
         "OSI student"
       ],
@@ -60663,7 +60663,7 @@
         88
       ],
       "best_split_text": "3:08",
-      "best_percent_of_record": 84.6,
+      "best_percent_of_record": 84.0,
       "classes": [
         "SK Vidar senior"
       ],
@@ -61488,7 +61488,7 @@
         671
       ],
       "best_split_text": "4:33",
-      "best_percent_of_record": 100.7,
+      "best_percent_of_record": 97.8,
       "classes": [
         "SK Vidar elite"
       ],
@@ -61723,7 +61723,7 @@
         776
       ],
       "best_split_text": "5:39",
-      "best_percent_of_record": 69.0,
+      "best_percent_of_record": 68.4,
       "classes": [
         "SK Vidar veteran"
       ],

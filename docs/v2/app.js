@@ -898,7 +898,8 @@ function buildLatestYearSnapshot() {
   const archiveItems = buildTeamArchiveItems(yearTeams, resultsByTeamId);
   const participants = new Set(yearResults.map((row) => row.person_id ?? row.person_name)).size;
   const fastestTeam = getBestTeamByTotalTime(archiveItems);
-  const fastestSplits = buildFastestSplits(yearResults).slice(0, 5);
+  const eliteResults = yearResults.filter((row) => row.class_code === "EliteSKV");
+  const fastestSplits = buildFastestSplits(eliteResults).slice(0, 3);
   const winners = archiveItems.filter((team) => team.isWinner);
   const podiums = archiveItems.filter((team) => team.isPodium);
 
@@ -1909,7 +1910,7 @@ function renderLatestYearSection() {
 
         <div class="latest-list-panel">
           <div class="latest-list-head">
-            <p class="eyebrow">Raskeste splitter</p>
+            <p class="eyebrow">Eliteklassens topp 3</p>
             <strong>${formatNumber(snapshot.fastestSplits.length)} tider</strong>
           </div>
           <div class="latest-split-list">

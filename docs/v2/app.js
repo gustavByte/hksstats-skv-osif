@@ -2258,7 +2258,7 @@ function renderLatestYearMatrixSection() {
         meta: `<span>${formatNumber(snapshot.yearTeams.length)} lag · ${formatNumber(snapshot.yearResults.length)} etapper</span>`,
       })}
       <p class="matrix-intro">
-        Kompakt oversikt inspirert av 2025-arket: én blokk for hver klubb/kjønn-gruppe, én kolonne per lag
+        Kompakt oversikt: én blokk for hver klubb/kjønn-gruppe, én kolonne per lag
         og alle 15 etapper nedover. Klikk på et lagnavn for å åpne laget i lagarkivet.
       </p>
       <div class="latest-matrix-grid">

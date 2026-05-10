@@ -133,7 +133,7 @@ const LATEST_MATRIX_TEAM_OVERRIDES = [
     matrixName: "3682 SK Vidar Super Miks",
     classGroupLabel: "Super Miks A2",
     classLabel: "SK Vidar Super Miks",
-    matrixOrder: 2,
+    matrixOrder: 1,
   },
   {
     year: 2026,
@@ -143,7 +143,7 @@ const LATEST_MATRIX_TEAM_OVERRIDES = [
     matrixName: "2602 SK Vidar Bue",
     classGroupLabel: "Bue A3",
     classLabel: "SK Vidar Bue A3",
-    matrixOrder: 1,
+    matrixOrder: 2,
   },
 ];
 
@@ -1021,6 +1021,28 @@ function getLatestMatrixExtraTeams(group, latestYear) {
   );
 }
 
+function getLatestMatrixTeamOrder(team, group) {
+  if (Number.isFinite(team.matrixOrder)) {
+    return team.matrixOrder;
+  }
+
+  if (group.key === "mixed") {
+    if (team.classCode === "MiksSKVA2" || /a2|super miks/i.test(`${team.classLabel} ${team.teamName}`)) return 1;
+    if (team.organizationCode === "SKV" && (team.classCode === "MiksSKVA3" || /a3|bue/i.test(`${team.classLabel} ${team.teamName}`))) return 2;
+    if (team.organizationCode === "OSIF" && (team.classCode === "MiksOSI" || /a3|osi/i.test(`${team.classLabel} ${team.teamName}`))) return 3;
+    return 50;
+  }
+
+  if (team.classCode === "EliteSKV") {
+    const eliteNumber = Number(team.teamName.match(/\belite\s*(\d+)\b/i)?.[1]);
+    return Number.isFinite(eliteNumber) ? eliteNumber : 3.5;
+  }
+  if (team.classCode === "SeniorSKV") return 4;
+  if (team.classCode === "Veteran") return /superveteran/i.test(team.teamName) ? 6 : 5;
+  if (team.classCode === "StudOSI") return 7;
+  return 50;
+}
+
 function buildLatestMatrixGroups(archiveItems) {
   const latestYear = archiveItems[0]?.year ?? state.data.overview.latestYear;
   return LATEST_MATRIX_GROUPS.map((group) => {
@@ -1031,6 +1053,8 @@ function buildLatestMatrixGroups(archiveItems) {
       ...getLatestMatrixExtraTeams(group, latestYear),
     ]
       .sort((a, b) => {
+        const matrixTeamOrderCompare = getLatestMatrixTeamOrder(a, group) - getLatestMatrixTeamOrder(b, group);
+        if (matrixTeamOrderCompare !== 0) return matrixTeamOrderCompare;
         const aFilterIndex = getLatestMatrixFilterIndex(a, group);
         const bFilterIndex = getLatestMatrixFilterIndex(b, group);
         if (aFilterIndex !== bFilterIndex) return aFilterIndex - bFilterIndex;

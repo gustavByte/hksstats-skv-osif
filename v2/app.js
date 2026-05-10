@@ -1,6 +1,6 @@
 const app = document.querySelector("#app");
 
-const DATA_VERSION = "2026-05-09-hks-2026";
+const DATA_VERSION = "2026-05-10-miks-complete";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);

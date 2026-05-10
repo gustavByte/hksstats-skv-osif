@@ -68,15 +68,27 @@ CLASS_META = {
         "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
         "sort_order": 5,
     },
+    "MiksSKVA2": {
+        "label": "SK Vidar Super Miks A2",
+        "organization": "SKV",
+        "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
+        "sort_order": 6,
+    },
+    "MiksSKVA3": {
+        "label": "SK Vidar Bue A3",
+        "organization": "SKV",
+        "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+        "sort_order": 7,
+    },
     "MiksOSI": {
         "label": "OSI miks",
         "organization": "OSIF",
         "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
-        "sort_order": 6,
+        "sort_order": 8,
     },
 }
 
-MIX_CLASS_CODES = {"MiksSKV", "MiksOSI"}
+MIX_CLASS_CODES = {"MiksSKV", "MiksSKVA2", "MiksSKVA3", "MiksOSI"}
 
 # Source workbook corrections confirmed outside the sheet itself.
 # Keep these here so rebuilds remain stable and auditable.
@@ -143,7 +155,7 @@ class ResultRecord:
     stage_number: int
     stage_label: str
     stage_label_source: str
-    raw_name: str
+    raw_name: str | None
     split_text: str | None
     split_seconds: int | None
     oa_rank: int | None
@@ -337,6 +349,10 @@ def infer_class_code(team_name: str, fallback: Any = None) -> str:
     if isinstance(fallback, str) and fallback.strip():
         return fallback.strip()
     lower = team_name.lower()
+    if "super miks" in lower:
+        return "MiksSKVA2"
+    if "bue" in lower:
+        return "MiksSKVA3"
     if "veteran" in lower:
         return "Veteran"
     if "miks" in lower or "mix" in lower:
@@ -492,7 +508,13 @@ def parse_year_sheets(
                     )
                     for offset, row_index in enumerate(range(header_row + 1, total_row), start=1):
                         raw_name_value = sheet.cell(row_index, start_col).value
-                        if not raw_name_value:
+                        raw_name = str(raw_name_value).strip() if raw_name_value else None
+                        split_text, split_seconds = parse_time_value(
+                            sheet.cell(row_index, start_col + 1).value
+                        )
+                        oa_rank = coerce_rank(sheet.cell(row_index, start_col + 2).value)
+                        category_rank = coerce_rank(sheet.cell(row_index, start_col + 3).value)
+                        if not raw_name and split_text is None and oa_rank is None and category_rank is None:
                             continue
                         stage_label_source = str(sheet.cell(row_index, 1).value).strip()
                         stage_number = parse_stage_number(stage_label_source, offset)
@@ -501,11 +523,8 @@ def parse_year_sheets(
                             year,
                             class_code,
                             stage_number,
-                            str(raw_name_value).strip(),
+                            raw_name or "",
                             stage_label_source,
-                        )
-                        split_text, split_seconds = parse_time_value(
-                            sheet.cell(row_index, start_col + 1).value
                         )
                         results.append(
                             ResultRecord(
@@ -522,11 +541,11 @@ def parse_year_sheets(
                                 stage_number=stage_number,
                                 stage_label=stage_meta["label"],
                                 stage_label_source=stage_label_source,
-                                raw_name=str(raw_name_value).strip(),
+                                raw_name=raw_name,
                                 split_text=split_text,
                                 split_seconds=split_seconds,
-                                oa_rank=coerce_rank(sheet.cell(row_index, start_col + 2).value),
-                                category_rank=coerce_rank(sheet.cell(row_index, start_col + 3).value),
+                                oa_rank=oa_rank,
+                                category_rank=category_rank,
                             )
                         )
                 continue
@@ -560,7 +579,13 @@ def parse_year_sheets(
                 )
                 for offset, row_index in enumerate(range(header_row + 1, total_row), start=1):
                     raw_name_value = sheet.cell(row_index, start_col).value
-                    if not raw_name_value:
+                    raw_name = str(raw_name_value).strip() if raw_name_value else None
+                    split_text, split_seconds = parse_time_value(
+                        sheet.cell(row_index, start_col + 1).value
+                    )
+                    oa_rank = coerce_rank(sheet.cell(row_index, start_col + 2).value)
+                    category_rank = coerce_rank(sheet.cell(row_index, start_col + 3).value)
+                    if not raw_name and split_text is None and oa_rank is None and category_rank is None:
                         continue
                     stage_label_source = str(sheet.cell(row_index, 1).value).strip()
                     stage_number = parse_stage_number(stage_label_source, offset)
@@ -569,11 +594,8 @@ def parse_year_sheets(
                         year,
                         class_code,
                         stage_number,
-                        str(raw_name_value).strip(),
+                        raw_name or "",
                         stage_label_source,
-                    )
-                    split_text, split_seconds = parse_time_value(
-                        sheet.cell(row_index, start_col + 1).value
                     )
                     results.append(
                         ResultRecord(
@@ -590,11 +612,11 @@ def parse_year_sheets(
                             stage_number=stage_number,
                             stage_label=stage_meta["label"],
                             stage_label_source=stage_label_source,
-                            raw_name=str(raw_name_value).strip(),
+                            raw_name=raw_name,
                             split_text=split_text,
                             split_seconds=split_seconds,
-                            oa_rank=coerce_rank(sheet.cell(row_index, start_col + 2).value),
-                            category_rank=coerce_rank(sheet.cell(row_index, start_col + 3).value),
+                            oa_rank=oa_rank,
+                            category_rank=category_rank,
                         )
                     )
     return teams, results
@@ -630,7 +652,7 @@ def load_existing_review_rows() -> dict[tuple[str, str], dict[str, str]]:
 
 
 def build_match_suggestions(results: list[ResultRecord]) -> list[dict[str, Any]]:
-    counts = Counter(result.raw_name for result in results)
+    counts = Counter(result.raw_name for result in results if result.raw_name)
     unique_names = sorted(counts)
     suggestions: list[dict[str, Any]] = []
 
@@ -855,8 +877,8 @@ def create_schema(connection: sqlite3.Connection) -> None:
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             team_id INTEGER NOT NULL REFERENCES teams(id),
             stage_id INTEGER NOT NULL REFERENCES stages(id),
-            raw_name TEXT NOT NULL,
-            alias_id INTEGER NOT NULL REFERENCES person_aliases(id),
+            raw_name TEXT,
+            alias_id INTEGER REFERENCES person_aliases(id),
             split_text TEXT,
             split_seconds INTEGER,
             oa_rank INTEGER,
@@ -901,7 +923,7 @@ def build_database(
             (code, meta["label"], meta["official_label"], meta["organization"], meta["sort_order"]),
         )
 
-    raw_names = sorted({result.raw_name for result in results})
+    raw_names = sorted({result.raw_name for result in results if result.raw_name})
     canonical_names = sorted(
         {approved_map.get(raw_name, raw_name) for raw_name in raw_names} | set(approved_map.values())
     )
@@ -1002,7 +1024,7 @@ def build_database(
                 team_ids[team_key],
                 stage_ids[stage_key],
                 result.raw_name,
-                alias_ids[result.raw_name],
+                alias_ids.get(result.raw_name) if result.raw_name else None,
                 result.split_text,
                 result.split_seconds,
                 result.oa_rank,
@@ -1157,6 +1179,8 @@ def build_stage_honours(
     grouped: dict[tuple[str, str, int, str], list[dict[str, Any]]] = defaultdict(list)
 
     for result in results:
+        if not result.raw_name:
+            continue
         if result.split_seconds is None:
             continue
         record = record_lookup.get((result.division, result.stage_label), {})
@@ -1339,8 +1363,8 @@ def export_site_data(
             JOIN organizations o ON o.code = t.organization_code
             JOIN team_classes tc ON tc.code = t.class_code
             JOIN stages s ON s.id = r.stage_id
-            JOIN person_aliases pa ON pa.id = r.alias_id
-            JOIN people p ON p.id = pa.person_id
+            LEFT JOIN person_aliases pa ON pa.id = r.alias_id
+            LEFT JOIN people p ON p.id = pa.person_id
             ORDER BY t.year DESC, t.team_name, s.stage_number
             """
         )
@@ -1490,6 +1514,8 @@ def export_site_data(
     person_stages = defaultdict(set)
     for row in results:
         person_id = row["person_id"]
+        if not person_id:
+            continue
         person_teams[person_id].add(f'{row["year"]} · {row["team_name"]}')
         person_classes[person_id].add(row["class_label"])
         person_years[person_id].add(row["year"])
@@ -1635,7 +1661,7 @@ def export_site_data(
 
     data_issues: list[dict[str, Any]] = []
     for row in results:
-        if not row.get("person_id"):
+        if row.get("raw_name") and not row.get("person_id"):
             data_issues.append(
                 {
                     "id": f'missing-person-{row["id"]}',

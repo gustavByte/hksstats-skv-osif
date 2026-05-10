@@ -85,6 +85,8 @@ const TEAM_CLASS_GROUPS = {
   StudOSI: "student",
   Veteran: "veteran",
   MiksSKV: "mixSKV",
+  MiksSKVA2: "mixSKV",
+  MiksSKVA3: "mixSKV",
   MiksOSI: "mixStud",
 };
 
@@ -133,35 +135,19 @@ const LATEST_MATRIX_TEAM_OVERRIDES = [
     classLabel: "SK Vidar Super Miks",
     matrixOrder: 2,
   },
-];
-
-const LATEST_MATRIX_EXTRA_TEAMS = [
   {
-    id: "matrix-2026-skv-bue-a3",
     year: 2026,
     organizationCode: "SKV",
-    organizationName: "SK Vidar",
-    classCode: "MiksSKV",
-    classLabel: "SK Vidar Bue",
-    classGroup: "mixSKV",
-    classGroupLabel: "Bue A3",
     division: "mixed",
-    divisionLabel: "Mix",
-    teamName: "SK Vidar Bue",
+    teamName: "SK Vidar Bue 2026",
     matrixName: "2602 SK Vidar Bue",
-    totalTimeText: null,
-    totalSeconds: null,
-    teamRank: null,
-    lineup: [],
-    stageCount: 0,
-    participants: [],
-    isWinner: false,
-    isPodium: false,
+    classGroupLabel: "Bue A3",
+    classLabel: "SK Vidar Bue A3",
     matrixOrder: 1,
-    matrixOnly: true,
-    matrixNote: "Etapper mangler",
   },
 ];
+
+const LATEST_MATRIX_EXTRA_TEAMS = [];
 
 const NORWEGIAN_SEARCH_MAP = {
   Æ: "AE",
@@ -512,6 +498,9 @@ function getPersonUrlById(personId) {
 }
 
 function renderPersonLink(personId, label, className = "person-link") {
+  if (!label) {
+    return `<span class="${escapeHtml(className)} person-link-muted">Ukjent løper</span>`;
+  }
   const href = getPersonUrlById(personId);
   const safeLabel = escapeHtml(label);
   if (!href) {
@@ -646,6 +635,7 @@ function buildPersonStats(results) {
   const people = new Map();
 
   for (const row of results) {
+    if (!row.person_id && !row.person_name) continue;
     const personKey = row.person_id || row.person_name;
     const current = people.get(personKey) ?? {
       person_id: row.person_id,
@@ -903,7 +893,10 @@ function buildClubSummaries(filteredResults, filteredTeams) {
     const entry = summaries.get(result.organization_code);
     if (!entry) continue;
     entry.results += 1;
-    entry.participants.add(result.person_id ?? result.person_name);
+    const participantKey = result.person_id ?? result.person_name;
+    if (participantKey) {
+      entry.participants.add(participantKey);
+    }
   }
 
   return [...summaries.values()].map((entry) => ({
@@ -925,7 +918,10 @@ function buildSeasonHighlights(filteredResults, filteredTeams) {
       teams: 0,
     };
     entry.results += 1;
-    entry.participants.add(result.person_id ?? result.person_name);
+    const participantKey = result.person_id ?? result.person_name;
+    if (participantKey) {
+      entry.participants.add(participantKey);
+    }
     byYear.set(year, entry);
   }
 
@@ -965,7 +961,7 @@ function buildLatestYearSnapshot() {
 
   const resultsByTeamId = buildResultsByTeamId(yearResults);
   const archiveItems = buildTeamArchiveItems(yearTeams, resultsByTeamId);
-  const participants = new Set(yearResults.map((row) => row.person_id ?? row.person_name)).size;
+  const participants = new Set(yearResults.map((row) => row.person_id ?? row.person_name).filter(Boolean)).size;
   const bestWomenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "women"));
   const bestMenTeam = getBestTeamByTotalTime(archiveItems.filter((team) => team.division === "men"));
   const eliteResults = yearResults.filter((row) => row.class_code === "EliteSKV");
@@ -1124,7 +1120,9 @@ function buildClassBreakdown(filteredResults) {
       people: new Set(),
     };
     entry.results += 1;
-    entry.people.add(row.person_name);
+    if (row.person_name) {
+      entry.people.add(row.person_name);
+    }
     groups.set(row.class_label, entry);
   }
 
@@ -1217,7 +1215,7 @@ function buildTeamArchiveItems(filteredTeams, resultsByTeamId) {
       teamRank: Number.isFinite(team.team_rank) ? team.team_rank : null,
       lineup,
       stageCount: lineup.length,
-      participants: [...new Set(lineup.map((entry) => entry.person_id ?? entry.person_name))],
+      participants: [...new Set(lineup.map((entry) => entry.person_id ?? entry.person_name).filter(Boolean))],
       isWinner: team.team_rank === 1,
       isPodium: Number.isFinite(team.team_rank) && team.team_rank >= 1 && team.team_rank <= 3,
       isBestRankInGroup: false,
@@ -1920,7 +1918,7 @@ function renderHeader() {
 }
 
 function renderHero(filteredResults, filteredTeams) {
-  const participants = new Set(filteredResults.map((row) => row.person_id ?? row.person_name)).size;
+  const participants = new Set(filteredResults.map((row) => row.person_id ?? row.person_name).filter(Boolean)).size;
   const years = buildSeasonHighlights(filteredResults, filteredTeams);
   const earliestYear = years.length ? years[years.length - 1].year : null;
   const latestYear = years.length ? years[0].year : null;

@@ -127,6 +127,8 @@ def validate_site_data() -> None:
 
     for result in results:
         person_id = result.get("person_id")
+        if not person_id and not result.get("raw_name"):
+            continue
         assert_condition(person_id, f"Result {result.get('id')} is missing person_id.")
         assert_condition(
             person_id in people_by_id,

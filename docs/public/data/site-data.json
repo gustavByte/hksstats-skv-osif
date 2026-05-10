@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T16:44:22",
+  "generatedAt": "2026-05-10T23:40:30",
   "metadata": {
     "title": "HKSstatsSKV&OSIF",
     "stageDistanceSource": "https://holmenkollstafetten.no/nyheter/om-m%C3%A5ling-av-etappenes-distanser",
@@ -54,6 +54,18 @@
         "organizationCode": "SKV"
       },
       {
+        "code": "MiksSKVA2",
+        "label": "SK Vidar Super Miks A2",
+        "officialLabel": "A2 - Bedriftslag, mosjonslag, andre lag",
+        "organizationCode": "SKV"
+      },
+      {
+        "code": "MiksSKVA3",
+        "label": "SK Vidar Bue A3",
+        "officialLabel": "A3 - Lag tilsluttet andre særforbund i NIF",
+        "organizationCode": "SKV"
+      },
+      {
         "code": "MiksOSI",
         "label": "OSI miks",
         "officialLabel": "A3 Lag tilsluttet andre særforbund i NIF",
@@ -61,8 +73,8 @@
       }
     ],
     "totals": {
-      "results": 840,
-      "teams": 56,
+      "results": 855,
+      "teams": 57,
       "people": 522,
       "pendingNameReviews": 0
     }
@@ -71,11 +83,11 @@
     "kpis": [
       {
         "label": "Etapper i databasen",
-        "value": 840
+        "value": 855
       },
       {
         "label": "Lag importert",
-        "value": 56
+        "value": 57
       },
       {
         "label": "Unike personer",
@@ -118,9 +130,23 @@
       {
         "class_label": "SK Vidar miks",
         "class_code": "MiksSKV",
-        "result_count": 60,
-        "people_count": 52,
-        "team_count": 4
+        "result_count": 45,
+        "people_count": 41,
+        "team_count": 3
+      },
+      {
+        "class_label": "SK Vidar Super Miks A2",
+        "class_code": "MiksSKVA2",
+        "result_count": 15,
+        "people_count": 15,
+        "team_count": 1
+      },
+      {
+        "class_label": "SK Vidar Bue A3",
+        "class_code": "MiksSKVA3",
+        "result_count": 15,
+        "people_count": 0,
+        "team_count": 1
       },
       {
         "class_label": "OSI miks",
@@ -133,9 +159,9 @@
     "yearBreakdown": [
       {
         "year": 2026,
-        "result_count": 180,
+        "result_count": 195,
         "people_count": 180,
-        "team_count": 12
+        "team_count": 13
       },
       {
         "year": 2025,
@@ -381,7 +407,7 @@
           280,
           445,
           616,
-          825
+          840
         ],
         "best_split_text": "1:26",
         "best_percent_of_record": 86.0,
@@ -765,7 +791,7 @@
           290,
           452,
           633,
-          806
+          821
         ],
         "best_split_text": "1:56",
         "best_percent_of_record": 84.0,
@@ -1148,7 +1174,7 @@
           290,
           452,
           633,
-          806
+          821
         ],
         "best_split_text": "1:56",
         "best_percent_of_record": 84.0,
@@ -12641,8 +12667,8 @@
   ],
   "results": [
     {
-      "id": 826,
-      "team_id": 56,
+      "id": 841,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12665,8 +12691,8 @@
       "percent_of_record": null
     },
     {
-      "id": 827,
-      "team_id": 56,
+      "id": 842,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12689,8 +12715,8 @@
       "percent_of_record": null
     },
     {
-      "id": 828,
-      "team_id": 56,
+      "id": 843,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12713,8 +12739,8 @@
       "percent_of_record": null
     },
     {
-      "id": 829,
-      "team_id": 56,
+      "id": 844,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12737,8 +12763,8 @@
       "percent_of_record": null
     },
     {
-      "id": 830,
-      "team_id": 56,
+      "id": 845,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12761,8 +12787,8 @@
       "percent_of_record": null
     },
     {
-      "id": 831,
-      "team_id": 56,
+      "id": 846,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12785,8 +12811,8 @@
       "percent_of_record": null
     },
     {
-      "id": 832,
-      "team_id": 56,
+      "id": 847,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12809,8 +12835,8 @@
       "percent_of_record": null
     },
     {
-      "id": 833,
-      "team_id": 56,
+      "id": 848,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12833,8 +12859,8 @@
       "percent_of_record": null
     },
     {
-      "id": 834,
-      "team_id": 56,
+      "id": 849,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12857,8 +12883,8 @@
       "percent_of_record": null
     },
     {
-      "id": 835,
-      "team_id": 56,
+      "id": 850,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12881,8 +12907,8 @@
       "percent_of_record": null
     },
     {
-      "id": 836,
-      "team_id": 56,
+      "id": 851,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12905,8 +12931,8 @@
       "percent_of_record": null
     },
     {
-      "id": 837,
-      "team_id": 56,
+      "id": 852,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12929,8 +12955,8 @@
       "percent_of_record": null
     },
     {
-      "id": 838,
-      "team_id": 56,
+      "id": 853,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12953,8 +12979,8 @@
       "percent_of_record": null
     },
     {
-      "id": 839,
-      "team_id": 56,
+      "id": 854,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -12977,8 +13003,8 @@
       "percent_of_record": null
     },
     {
-      "id": 840,
-      "team_id": 56,
+      "id": 855,
+      "team_id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13001,8 +13027,8 @@
       "percent_of_record": null
     },
     {
-      "id": 796,
-      "team_id": 54,
+      "id": 811,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13025,8 +13051,8 @@
       "percent_of_record": 81.2
     },
     {
-      "id": 797,
-      "team_id": 54,
+      "id": 812,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13049,8 +13075,8 @@
       "percent_of_record": 82.2
     },
     {
-      "id": 798,
-      "team_id": 54,
+      "id": 813,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13073,8 +13099,8 @@
       "percent_of_record": 68.7
     },
     {
-      "id": 799,
-      "team_id": 54,
+      "id": 814,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13097,8 +13123,8 @@
       "percent_of_record": 85.5
     },
     {
-      "id": 800,
-      "team_id": 54,
+      "id": 815,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13121,8 +13147,8 @@
       "percent_of_record": 77.7
     },
     {
-      "id": 801,
-      "team_id": 54,
+      "id": 816,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13145,8 +13171,8 @@
       "percent_of_record": 78.9
     },
     {
-      "id": 802,
-      "team_id": 54,
+      "id": 817,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13169,8 +13195,8 @@
       "percent_of_record": 77.1
     },
     {
-      "id": 803,
-      "team_id": 54,
+      "id": 818,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13193,8 +13219,8 @@
       "percent_of_record": 85.8
     },
     {
-      "id": 804,
-      "team_id": 54,
+      "id": 819,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13217,8 +13243,8 @@
       "percent_of_record": 80.9
     },
     {
-      "id": 805,
-      "team_id": 54,
+      "id": 820,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13241,8 +13267,8 @@
       "percent_of_record": 85.7
     },
     {
-      "id": 806,
-      "team_id": 54,
+      "id": 821,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13265,8 +13291,8 @@
       "percent_of_record": 78.5
     },
     {
-      "id": 807,
-      "team_id": 54,
+      "id": 822,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13289,8 +13315,8 @@
       "percent_of_record": 73.5
     },
     {
-      "id": 808,
-      "team_id": 54,
+      "id": 823,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13313,8 +13339,8 @@
       "percent_of_record": 81.5
     },
     {
-      "id": 809,
-      "team_id": 54,
+      "id": 824,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13337,8 +13363,8 @@
       "percent_of_record": 79.2
     },
     {
-      "id": 810,
-      "team_id": 54,
+      "id": 825,
+      "team_id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13361,8 +13387,8 @@
       "percent_of_record": 78.0
     },
     {
-      "id": 811,
-      "team_id": 55,
+      "id": 826,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13385,8 +13411,8 @@
       "percent_of_record": 84.9
     },
     {
-      "id": 812,
-      "team_id": 55,
+      "id": 827,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13409,8 +13435,8 @@
       "percent_of_record": 81.4
     },
     {
-      "id": 813,
-      "team_id": 55,
+      "id": 828,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13433,8 +13459,8 @@
       "percent_of_record": 77.3
     },
     {
-      "id": 814,
-      "team_id": 55,
+      "id": 829,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13457,8 +13483,8 @@
       "percent_of_record": 81.5
     },
     {
-      "id": 815,
-      "team_id": 55,
+      "id": 830,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13481,8 +13507,8 @@
       "percent_of_record": 81.6
     },
     {
-      "id": 816,
-      "team_id": 55,
+      "id": 831,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13505,8 +13531,8 @@
       "percent_of_record": 81.3
     },
     {
-      "id": 817,
-      "team_id": 55,
+      "id": 832,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13529,8 +13555,8 @@
       "percent_of_record": 81.9
     },
     {
-      "id": 818,
-      "team_id": 55,
+      "id": 833,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13553,8 +13579,8 @@
       "percent_of_record": 80.2
     },
     {
-      "id": 819,
-      "team_id": 55,
+      "id": 834,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13577,8 +13603,8 @@
       "percent_of_record": 79.4
     },
     {
-      "id": 820,
-      "team_id": 55,
+      "id": 835,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13601,8 +13627,8 @@
       "percent_of_record": 85.5
     },
     {
-      "id": 821,
-      "team_id": 55,
+      "id": 836,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13625,8 +13651,8 @@
       "percent_of_record": 82.3
     },
     {
-      "id": 822,
-      "team_id": 55,
+      "id": 837,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13649,8 +13675,8 @@
       "percent_of_record": null
     },
     {
-      "id": 823,
-      "team_id": 55,
+      "id": 838,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13673,8 +13699,8 @@
       "percent_of_record": 75.2
     },
     {
-      "id": 824,
-      "team_id": 55,
+      "id": 839,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13697,8 +13723,8 @@
       "percent_of_record": 79.2
     },
     {
-      "id": 825,
-      "team_id": 55,
+      "id": 840,
+      "team_id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -13719,6 +13745,366 @@
       "oa_rank": 47,
       "category_rank": 3,
       "percent_of_record": 82.6
+    },
+    {
+      "id": 796,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 1,
+      "stage_label": "01. St. Hanshaugen",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "3:59",
+      "split_seconds": 239,
+      "oa_rank": 983,
+      "category_rank": 8,
+      "percent_of_record": null
+    },
+    {
+      "id": 797,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 2,
+      "stage_label": "02. Norabakken",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "4:06",
+      "split_seconds": 246,
+      "oa_rank": 689,
+      "category_rank": 7,
+      "percent_of_record": null
+    },
+    {
+      "id": 798,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 3,
+      "stage_label": "03. Blåsen",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "2:09",
+      "split_seconds": 129,
+      "oa_rank": 795,
+      "category_rank": 5,
+      "percent_of_record": null
+    },
+    {
+      "id": 799,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 4,
+      "stage_label": "04. Berg og dal",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "7:35",
+      "split_seconds": 455,
+      "oa_rank": 953,
+      "category_rank": 7,
+      "percent_of_record": null
+    },
+    {
+      "id": 800,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 5,
+      "stage_label": "05. Forskningsparken",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "4:45",
+      "split_seconds": 285,
+      "oa_rank": 1194,
+      "category_rank": 8,
+      "percent_of_record": null
+    },
+    {
+      "id": 801,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 6,
+      "stage_label": "06. Lille Besserud",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "5:39",
+      "split_seconds": 339,
+      "oa_rank": 1231,
+      "category_rank": 7,
+      "percent_of_record": null
+    },
+    {
+      "id": 802,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 7,
+      "stage_label": "07. Besserud",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "8:00",
+      "split_seconds": 480,
+      "oa_rank": 1282,
+      "category_rank": 9,
+      "percent_of_record": null
+    },
+    {
+      "id": 803,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 8,
+      "stage_label": "08. Utfor",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "5:29",
+      "split_seconds": 329,
+      "oa_rank": 435,
+      "category_rank": 6,
+      "percent_of_record": null
+    },
+    {
+      "id": 804,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 9,
+      "stage_label": "09. Gressbanen",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "2:08",
+      "split_seconds": 128,
+      "oa_rank": 871,
+      "category_rank": 5,
+      "percent_of_record": null
+    },
+    {
+      "id": 805,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 10,
+      "stage_label": "10. Den lange",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "10:25",
+      "split_seconds": 625,
+      "oa_rank": 1378,
+      "category_rank": 9,
+      "percent_of_record": null
+    },
+    {
+      "id": 806,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 11,
+      "stage_label": "11. Frognerparken",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "5:16",
+      "split_seconds": 316,
+      "oa_rank": 348,
+      "category_rank": 7,
+      "percent_of_record": null
+    },
+    {
+      "id": 807,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 12,
+      "stage_label": "12. Dumpa",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "1:03",
+      "split_seconds": 63,
+      "oa_rank": 370,
+      "category_rank": 4,
+      "percent_of_record": null
+    },
+    {
+      "id": 808,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 13,
+      "stage_label": "13. Trappa",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "4:08",
+      "split_seconds": 248,
+      "oa_rank": 879,
+      "category_rank": 7,
+      "percent_of_record": null
+    },
+    {
+      "id": 809,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 14,
+      "stage_label": "14. Sjarmøren",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "2:31",
+      "split_seconds": 151,
+      "oa_rank": 755,
+      "category_rank": 8,
+      "percent_of_record": null
+    },
+    {
+      "id": 810,
+      "team_id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "team_total_time": "1:08:56",
+      "team_rank": 6,
+      "division": "mixed",
+      "stage_number": 15,
+      "stage_label": "15. Siste",
+      "person_id": null,
+      "person_name": null,
+      "raw_name": null,
+      "split_text": "1:48",
+      "split_seconds": 108,
+      "oa_rank": 967,
+      "category_rank": 7,
+      "percent_of_record": null
     },
     {
       "id": 661,
@@ -16606,9 +16992,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16630,9 +17016,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16654,9 +17040,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16678,9 +17064,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16702,9 +17088,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16726,9 +17112,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16750,9 +17136,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16774,9 +17160,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16798,9 +17184,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16822,9 +17208,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16846,9 +17232,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16870,9 +17256,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16894,9 +17280,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16918,9 +17304,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -16942,9 +17328,9 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "team_total_time": "1:03:33",
       "team_rank": 8,
@@ -32803,7 +33189,7 @@
   ],
   "teams": [
     {
-      "id": 54,
+      "id": 55,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -32817,7 +33203,7 @@
       "division": "women"
     },
     {
-      "id": 55,
+      "id": 56,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -32831,7 +33217,7 @@
       "division": "men"
     },
     {
-      "id": 56,
+      "id": 57,
       "year": 2026,
       "organization_name": "OSI Friidrett",
       "organization_code": "OSIF",
@@ -32961,13 +33347,27 @@
       "year": 2026,
       "organization_name": "SK Vidar",
       "organization_code": "SKV",
-      "class_code": "MiksSKV",
-      "class_label": "SK Vidar miks",
-      "official_label": "A3 Lag tilsluttet andre særforbund i NIF",
+      "class_code": "MiksSKVA2",
+      "class_label": "SK Vidar Super Miks A2",
+      "official_label": "A2 - Bedriftslag, mosjonslag, andre lag",
       "team_name": "SK Vidar Super Miks 2026",
       "total_time_text": "1:03:33",
       "total_seconds": 3813,
       "team_rank": 8,
+      "division": "mixed"
+    },
+    {
+      "id": 54,
+      "year": 2026,
+      "organization_name": "SK Vidar",
+      "organization_code": "SKV",
+      "class_code": "MiksSKVA3",
+      "class_label": "SK Vidar Bue A3",
+      "official_label": "A3 - Lag tilsluttet andre særforbund i NIF",
+      "team_name": "SK Vidar Bue 2026",
+      "total_time_text": "1:08:56",
+      "total_seconds": 4136,
+      "team_rank": 6,
       "division": "mixed"
     },
     {
@@ -33806,7 +34206,7 @@
         280,
         445,
         616,
-        825
+        840
       ],
       "best_split_text": "1:26",
       "best_percent_of_record": 86.0,
@@ -34190,7 +34590,7 @@
         290,
         452,
         633,
-        806
+        821
       ],
       "best_split_text": "1:56",
       "best_percent_of_record": 84.0,
@@ -34781,8 +35181,8 @@
       "best_percent_of_record": 80.0,
       "classes": [
         "OSI student",
-        "SK Vidar elite",
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2",
+        "SK Vidar elite"
       ],
       "years": [
         2026,
@@ -36472,6 +36872,7 @@
       "best_split_text": "3:45",
       "best_percent_of_record": 82.7,
       "classes": [
+        "SK Vidar Super Miks A2",
         "SK Vidar miks",
         "SK Vidar senior"
       ],
@@ -36673,7 +37074,7 @@
       "best_percent_of_record": 83.6,
       "classes": [
         "OSI student",
-        "SK Vidar miks",
+        "SK Vidar Super Miks A2",
         "SK Vidar senior"
       ],
       "years": [
@@ -39502,6 +39903,7 @@
       "best_split_text": "3:32",
       "best_percent_of_record": null,
       "classes": [
+        "SK Vidar Super Miks A2",
         "SK Vidar miks"
       ],
       "years": [
@@ -39759,7 +40161,7 @@
       ],
       "hks_result_ids": [
         621,
-        811
+        826
       ],
       "best_split_text": "3:19",
       "best_percent_of_record": 84.9,
@@ -41277,6 +41679,7 @@
       "best_split_text": "9:11",
       "best_percent_of_record": 76.3,
       "classes": [
+        "SK Vidar Super Miks A2",
         "SK Vidar miks"
       ],
       "years": [
@@ -42503,7 +42906,7 @@
       ],
       "hks_result_ids": [
         635,
-        810
+        825
       ],
       "best_split_text": "1:40",
       "best_percent_of_record": 78.0,
@@ -43610,7 +44013,7 @@
       ],
       "hks_result_ids": [
         643,
-        801
+        816
       ],
       "best_split_text": "3:59",
       "best_percent_of_record": 78.9,
@@ -43678,6 +44081,7 @@
       "best_split_text": "1:11",
       "best_percent_of_record": 70.4,
       "classes": [
+        "SK Vidar Super Miks A2",
         "SK Vidar miks"
       ],
       "years": [
@@ -44959,8 +45363,8 @@
       "best_split_text": "4:21",
       "best_percent_of_record": 82.7,
       "classes": [
-        "SK Vidar elite",
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2",
+        "SK Vidar elite"
       ],
       "years": [
         2026,
@@ -45143,7 +45547,7 @@
       ],
       "hks_result_ids": [
         619,
-        820
+        835
       ],
       "best_split_text": "6:01",
       "best_percent_of_record": 85.5,
@@ -47211,7 +47615,7 @@
         "omdal"
       ],
       "hks_result_ids": [
-        797
+        812
       ],
       "best_split_text": "4:29",
       "best_percent_of_record": 82.2,
@@ -47445,7 +47849,7 @@
         "log"
       ],
       "hks_result_ids": [
-        804
+        819
       ],
       "best_split_text": "1:55",
       "best_percent_of_record": 80.9,
@@ -47622,7 +48026,7 @@
         "gioia"
       ],
       "hks_result_ids": [
-        808
+        823
       ],
       "best_split_text": "3:47",
       "best_percent_of_record": 81.5,
@@ -47856,7 +48260,7 @@
         "ingrid"
       ],
       "hks_result_ids": [
-        805
+        820
       ],
       "best_split_text": "9:28",
       "best_percent_of_record": 85.7,
@@ -48206,7 +48610,7 @@
         "van"
       ],
       "hks_result_ids": [
-        796
+        811
       ],
       "best_split_text": "3:59",
       "best_percent_of_record": 81.2,
@@ -48965,7 +49369,7 @@
         "noa"
       ],
       "hks_result_ids": [
-        809
+        824
       ],
       "best_split_text": "2:24",
       "best_percent_of_record": 79.2,
@@ -49081,7 +49485,7 @@
         "olav"
       ],
       "hks_result_ids": [
-        814
+        829
       ],
       "best_split_text": "6:12",
       "best_percent_of_record": 81.5,
@@ -49257,7 +49661,7 @@
         "sarah"
       ],
       "hks_result_ids": [
-        803
+        818
       ],
       "best_split_text": "5:30",
       "best_percent_of_record": 85.8,
@@ -49433,7 +49837,7 @@
         "stormer"
       ],
       "hks_result_ids": [
-        799
+        814
       ],
       "best_split_text": "6:55",
       "best_percent_of_record": 85.5,
@@ -49491,7 +49895,7 @@
         "shervin"
       ],
       "hks_result_ids": [
-        826
+        841
       ],
       "best_split_text": "3:36",
       "best_percent_of_record": null,
@@ -50019,7 +50423,7 @@
         "olsen"
       ],
       "hks_result_ids": [
-        822
+        837
       ],
       "best_split_text": null,
       "best_percent_of_record": null,
@@ -50136,7 +50540,7 @@
         "segui"
       ],
       "hks_result_ids": [
-        798
+        813
       ],
       "best_split_text": "2:14",
       "best_percent_of_record": 68.7,
@@ -50719,7 +51123,7 @@
         "rozas"
       ],
       "hks_result_ids": [
-        827
+        842
       ],
       "best_split_text": "4:26",
       "best_percent_of_record": null,
@@ -51131,7 +51535,7 @@
         "ribaut"
       ],
       "hks_result_ids": [
-        839
+        854
       ],
       "best_split_text": "2:55",
       "best_percent_of_record": null,
@@ -51488,7 +51892,7 @@
         "daleng"
       ],
       "hks_result_ids": [
-        828
+        843
       ],
       "best_split_text": "2:27",
       "best_percent_of_record": null,
@@ -51545,7 +51949,7 @@
         "arnau"
       ],
       "hks_result_ids": [
-        824
+        839
       ],
       "best_split_text": "2:05",
       "best_percent_of_record": 79.2,
@@ -51603,7 +52007,7 @@
         "bratteland"
       ],
       "hks_result_ids": [
-        832
+        847
       ],
       "best_split_text": "7:09",
       "best_percent_of_record": null,
@@ -52310,7 +52714,7 @@
         "van"
       ],
       "hks_result_ids": [
-        835
+        850
       ],
       "best_split_text": "11:19",
       "best_percent_of_record": null,
@@ -52369,7 +52773,7 @@
         "van"
       ],
       "hks_result_ids": [
-        807
+        822
       ],
       "best_split_text": "1:08",
       "best_percent_of_record": 73.5,
@@ -52487,7 +52891,7 @@
         "jahren"
       ],
       "hks_result_ids": [
-        813
+        828
       ],
       "best_split_text": "1:37",
       "best_percent_of_record": 77.3,
@@ -52550,7 +52954,7 @@
       "best_split_text": "5:14",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -53550,7 +53954,7 @@
       "best_split_text": "2:35",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -53603,7 +54007,7 @@
         "skogheim"
       ],
       "hks_result_ids": [
-        815
+        830
       ],
       "best_split_text": "3:48",
       "best_percent_of_record": 81.6,
@@ -53839,7 +54243,7 @@
         "erlend"
       ],
       "hks_result_ids": [
-        823
+        838
       ],
       "best_split_text": "3:30",
       "best_percent_of_record": 75.2,
@@ -54135,7 +54539,7 @@
       "best_split_text": "5:05",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -55713,7 +56117,7 @@
         "hildur"
       ],
       "hks_result_ids": [
-        831
+        846
       ],
       "best_split_text": "6:09",
       "best_percent_of_record": null,
@@ -56188,7 +56592,7 @@
         "sodal"
       ],
       "hks_result_ids": [
-        834
+        849
       ],
       "best_split_text": "2:10",
       "best_percent_of_record": null,
@@ -56248,7 +56652,7 @@
         "rustad"
       ],
       "hks_result_ids": [
-        800
+        815
       ],
       "best_split_text": "4:33",
       "best_percent_of_record": 77.7,
@@ -56480,7 +56884,7 @@
         "janne"
       ],
       "hks_result_ids": [
-        802
+        817
       ],
       "best_split_text": "7:43",
       "best_percent_of_record": 77.1,
@@ -56770,7 +57174,7 @@
         "johannes"
       ],
       "hks_result_ids": [
-        829
+        844
       ],
       "best_split_text": "7:49",
       "best_percent_of_record": null,
@@ -56828,7 +57232,7 @@
         "virtanen"
       ],
       "hks_result_ids": [
-        818
+        833
       ],
       "best_split_text": "5:03",
       "best_percent_of_record": 80.2,
@@ -57236,7 +57640,7 @@
         "jorgen"
       ],
       "hks_result_ids": [
-        816
+        831
       ],
       "best_split_text": "4:38",
       "best_percent_of_record": 81.3,
@@ -58471,7 +58875,7 @@
       "best_split_text": "3:37",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -58825,7 +59229,7 @@
       "best_split_text": "1:07",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -59002,7 +59406,7 @@
       "best_split_text": "1:45",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -60288,7 +60692,7 @@
       "best_split_text": "3:45",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -60459,7 +60863,7 @@
         "mathias"
       ],
       "hks_result_ids": [
-        812
+        827
       ],
       "best_split_text": "3:46",
       "best_percent_of_record": 81.4,
@@ -60870,7 +61274,7 @@
         "merlin"
       ],
       "hks_result_ids": [
-        837
+        852
       ],
       "best_split_text": "1:12",
       "best_percent_of_record": null,
@@ -60928,7 +61332,7 @@
         "michelle"
       ],
       "hks_result_ids": [
-        836
+        851
       ],
       "best_split_text": "6:23",
       "best_percent_of_record": null,
@@ -61931,7 +62335,7 @@
       "best_split_text": "2:06",
       "best_percent_of_record": null,
       "classes": [
-        "SK Vidar miks"
+        "SK Vidar Super Miks A2"
       ],
       "years": [
         2026
@@ -62163,7 +62567,7 @@
         "ragna"
       ],
       "hks_result_ids": [
-        840
+        855
       ],
       "best_split_text": "1:51",
       "best_percent_of_record": null,
@@ -62926,7 +63330,7 @@
         "simen"
       ],
       "hks_result_ids": [
-        819
+        834
       ],
       "best_split_text": "1:42",
       "best_percent_of_record": 79.4,
@@ -64329,7 +64733,7 @@
         "theodor"
       ],
       "hks_result_ids": [
-        817
+        832
       ],
       "best_split_text": "6:38",
       "best_percent_of_record": 81.9,
@@ -64446,7 +64850,7 @@
         "thomas"
       ],
       "hks_result_ids": [
-        838
+        853
       ],
       "best_split_text": "4:03",
       "best_percent_of_record": null,
@@ -64504,7 +64908,7 @@
         "tijn"
       ],
       "hks_result_ids": [
-        821
+        836
       ],
       "best_split_text": "4:42",
       "best_percent_of_record": 82.3,
@@ -64680,7 +65084,7 @@
         "trine"
       ],
       "hks_result_ids": [
-        830
+        845
       ],
       "best_split_text": "5:13",
       "best_percent_of_record": null,
@@ -65212,7 +65616,7 @@
         "vanja"
       ],
       "hks_result_ids": [
-        833
+        848
       ],
       "best_split_text": "5:54",
       "best_percent_of_record": null,
@@ -78911,10 +79315,10 @@
     ],
     "dataIssues": [
       {
-        "id": "missing-time-822",
+        "id": "missing-time-837",
         "type": "missing_time",
         "status": "needs_review",
-        "result_id": 822,
+        "result_id": 837,
         "person_id": "p97357188d5",
         "person_name": "Adam Nathaniel Olsen",
         "year": 2026,
@@ -78927,7 +79331,7 @@
   "audit": {
     "teamWinners": [
       {
-        "team_id": 54,
+        "team_id": 55,
         "year": 2026,
         "organization_code": "OSIF",
         "class_code": "StudOSI",

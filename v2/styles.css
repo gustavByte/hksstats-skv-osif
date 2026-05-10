@@ -2129,6 +2129,12 @@ h3 {
   color: var(--osi-dark);
 }
 
+.person-link-muted {
+  color: var(--ink-soft);
+  font-style: italic;
+  text-decoration: none;
+}
+
 mark {
   padding: 0 2px;
   border-radius: 4px;

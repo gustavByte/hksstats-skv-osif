@@ -866,6 +866,203 @@ h3 {
   margin-top: 18px;
 }
 
+.latest-matrix-section {
+  display: grid;
+  gap: 14px;
+}
+
+.matrix-intro {
+  max-width: 78ch;
+  margin: -4px 0 0;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.latest-matrix-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.latest-matrix-group {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.latest-matrix-group-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.latest-matrix-group-head h3,
+.latest-matrix-group-head p {
+  margin: 0;
+}
+
+.latest-matrix-group-head h3 {
+  font-size: 1.35rem;
+}
+
+.latest-matrix-group-head dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(88px, auto));
+  gap: 8px;
+  margin: 0;
+}
+
+.latest-matrix-group-head dt {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.latest-matrix-group-head dd {
+  margin: 2px 0 0;
+  font-weight: 900;
+  text-align: right;
+}
+
+.latest-matrix-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid rgba(24, 40, 32, 0.12);
+  border-radius: var(--radius-card);
+  background: rgba(255, 253, 248, 0.82);
+  scrollbar-width: thin;
+}
+
+.latest-matrix-table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.latest-matrix-table th,
+.latest-matrix-table td {
+  min-width: 156px;
+  padding: 6px 8px;
+  border-right: 1px solid rgba(24, 40, 32, 0.1);
+  border-bottom: 1px solid rgba(24, 40, 32, 0.1);
+  vertical-align: top;
+}
+
+.latest-matrix-table th:last-child,
+.latest-matrix-table td:last-child {
+  border-right: 0;
+}
+
+.latest-matrix-table thead th {
+  background: rgba(24, 40, 32, 0.06);
+  text-align: left;
+}
+
+.latest-matrix-table tfoot th,
+.latest-matrix-table tfoot td {
+  border-bottom: 0;
+  background: rgba(24, 40, 32, 0.055);
+}
+
+.latest-matrix-stage-col,
+.latest-matrix-stage {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  min-width: 116px;
+  width: 116px;
+  background: #fffaf2;
+}
+
+.latest-matrix-stage-col {
+  z-index: 3;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+
+.latest-matrix-stage {
+  display: grid;
+  gap: 1px;
+}
+
+.latest-matrix-stage span,
+.latest-matrix-total span,
+.latest-matrix-team-head small,
+.latest-matrix-cell small {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.latest-matrix-stage strong,
+.latest-matrix-cell strong,
+.latest-matrix-total strong,
+.latest-matrix-team-head span {
+  overflow-wrap: anywhere;
+}
+
+.latest-matrix-team-head {
+  display: grid;
+  gap: 2px;
+  width: 100%;
+  color: var(--ink);
+  text-align: left;
+}
+
+.latest-matrix-team-head-static {
+  cursor: default;
+}
+
+.latest-matrix-team-head span {
+  font-weight: 900;
+}
+
+.latest-matrix-team-head:hover span,
+.matrix-person-link:hover {
+  color: var(--vidar-dark);
+  text-decoration: underline;
+}
+
+.latest-matrix-team-head-static:hover span {
+  color: inherit;
+  text-decoration: none;
+}
+
+.latest-matrix-cell {
+  display: grid;
+  gap: 3px;
+}
+
+.latest-matrix-cell > span {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+
+.latest-matrix-cell b,
+.latest-matrix-total strong {
+  color: var(--osi-dark);
+  font-weight: 900;
+}
+
+.latest-matrix-total {
+  display: grid;
+  gap: 2px;
+}
+
+.latest-matrix-empty {
+  color: var(--ink-faint);
+}
+
 .club-summary-row,
 .stats-grid,
 .teams-layout,
@@ -2576,6 +2773,34 @@ mark {
     display: none;
   }
 
+  .latest-matrix-group {
+    padding: 10px;
+  }
+
+  .latest-matrix-group-head {
+    display: grid;
+  }
+
+  .latest-matrix-group-head dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .latest-matrix-group-head dd {
+    text-align: left;
+  }
+
+  .latest-matrix-table th,
+  .latest-matrix-table td {
+    min-width: 148px;
+    padding: 5px 7px;
+  }
+
+  .latest-matrix-stage-col,
+  .latest-matrix-stage {
+    min-width: 96px;
+    width: 96px;
+  }
+
   .search-table-wrap,
   .profile-table-wrap {
     display: block;
@@ -2693,6 +2918,7 @@ mark {
   .club-summary-stats,
   .latest-year-metrics,
   .metric-legend,
+  .latest-matrix-group-head dl,
   .team-card-stats,
   .club-honour-row-actions {
     grid-template-columns: 1fr;

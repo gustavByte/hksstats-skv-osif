@@ -95,6 +95,74 @@ const DIVISION_META = {
   unknown: { label: "Ukjent", sort: 4 },
 };
 
+const LATEST_MATRIX_GROUPS = [
+  {
+    key: "women",
+    title: "SK Vidar + OSI kvinner",
+    filters: [
+      { organizationCode: "SKV", division: "women" },
+      { organizationCode: "OSIF", division: "women" },
+    ],
+  },
+  {
+    key: "men",
+    title: "SK Vidar + OSI menn",
+    filters: [
+      { organizationCode: "SKV", division: "men" },
+      { organizationCode: "OSIF", division: "men" },
+    ],
+  },
+  {
+    key: "mixed",
+    title: "Mikslag",
+    filters: [
+      { organizationCode: "SKV", division: "mixed" },
+      { organizationCode: "OSIF", division: "mixed" },
+    ],
+  },
+];
+
+const LATEST_MATRIX_TEAM_OVERRIDES = [
+  {
+    year: 2026,
+    organizationCode: "SKV",
+    division: "mixed",
+    teamName: "SK Vidar Super Miks 2026",
+    matrixName: "3682 SK Vidar Super Miks",
+    classGroupLabel: "Super Miks A2",
+    classLabel: "SK Vidar Super Miks",
+    matrixOrder: 2,
+  },
+];
+
+const LATEST_MATRIX_EXTRA_TEAMS = [
+  {
+    id: "matrix-2026-skv-bue-a3",
+    year: 2026,
+    organizationCode: "SKV",
+    organizationName: "SK Vidar",
+    classCode: "MiksSKV",
+    classLabel: "SK Vidar Bue",
+    classGroup: "mixSKV",
+    classGroupLabel: "Bue A3",
+    division: "mixed",
+    divisionLabel: "Mix",
+    teamName: "SK Vidar Bue",
+    matrixName: "2602 SK Vidar Bue",
+    totalTimeText: null,
+    totalSeconds: null,
+    teamRank: null,
+    lineup: [],
+    stageCount: 0,
+    participants: [],
+    isWinner: false,
+    isPodium: false,
+    matrixOrder: 1,
+    matrixOnly: true,
+    matrixNote: "Etapper mangler",
+  },
+];
+
 const NORWEGIAN_SEARCH_MAP = {
   Æ: "AE",
   Ø: "O",
@@ -917,6 +985,103 @@ function buildLatestYearSnapshot() {
     winners,
     podiums,
   };
+}
+
+function matchesLatestMatrixFilter(team, group) {
+  return group.filters.some(
+    (filter) => team.organizationCode === filter.organizationCode && team.division === filter.division,
+  );
+}
+
+function getLatestMatrixFilterIndex(team, group) {
+  const index = group.filters.findIndex(
+    (filter) => team.organizationCode === filter.organizationCode && team.division === filter.division,
+  );
+  return index === -1 ? Number.POSITIVE_INFINITY : index;
+}
+
+function getLatestMatrixTeamOverride(team) {
+  return LATEST_MATRIX_TEAM_OVERRIDES.find(
+    (override) =>
+      team.year === override.year &&
+      team.organizationCode === override.organizationCode &&
+      team.division === override.division &&
+      team.teamName === override.teamName,
+  );
+}
+
+function applyLatestMatrixTeamDisplay(team) {
+  const override = getLatestMatrixTeamOverride(team);
+  return {
+    ...team,
+    ...(override ?? {}),
+    matrixName: override?.matrixName ?? team.matrixName ?? team.teamName,
+  };
+}
+
+function getLatestMatrixExtraTeams(group, latestYear) {
+  return LATEST_MATRIX_EXTRA_TEAMS.filter(
+    (team) => team.year === latestYear && matchesLatestMatrixFilter(team, group),
+  );
+}
+
+function buildLatestMatrixGroups(archiveItems) {
+  const latestYear = archiveItems[0]?.year ?? state.data.overview.latestYear;
+  return LATEST_MATRIX_GROUPS.map((group) => {
+    const teams = [
+      ...archiveItems
+        .filter((team) => matchesLatestMatrixFilter(team, group) && team.stageCount > 0)
+        .map(applyLatestMatrixTeamDisplay),
+      ...getLatestMatrixExtraTeams(group, latestYear),
+    ]
+      .sort((a, b) => {
+        const aFilterIndex = getLatestMatrixFilterIndex(a, group);
+        const bFilterIndex = getLatestMatrixFilterIndex(b, group);
+        if (aFilterIndex !== bFilterIndex) return aFilterIndex - bFilterIndex;
+        const matrixOrderCompare =
+          (a.matrixOrder ?? Number.POSITIVE_INFINITY) - (b.matrixOrder ?? Number.POSITIVE_INFINITY);
+        if (matrixOrderCompare !== 0) return matrixOrderCompare;
+        const groupCompare = sortGroupKeys(a.classGroup, b.classGroup);
+        if (groupCompare !== 0) return groupCompare;
+        const rankCompare =
+          (a.teamRank ?? Number.POSITIVE_INFINITY) - (b.teamRank ?? Number.POSITIVE_INFINITY);
+        if (rankCompare !== 0) return rankCompare;
+        const timeCompare =
+          (a.totalSeconds ?? Number.POSITIVE_INFINITY) - (b.totalSeconds ?? Number.POSITIVE_INFINITY);
+        if (timeCompare !== 0) return timeCompare;
+        return a.teamName.localeCompare(b.teamName, "no");
+      });
+
+    return {
+      ...group,
+      teams,
+      bestTeam: getBestTeamByTotalTime(teams),
+      stageRows: buildLatestMatrixStageRows(teams),
+    };
+  }).filter((group) => group.teams.length > 0);
+}
+
+function buildLatestMatrixStageRows(teams) {
+  const byStage = new Map();
+  for (const team of teams) {
+    for (const entry of team.lineup) {
+      if (!Number.isFinite(entry.stage_number)) continue;
+      const current = byStage.get(entry.stage_number);
+      if (!current) {
+        byStage.set(entry.stage_number, {
+          stageNumber: entry.stage_number,
+          stageLabel: entry.stage_label,
+          stageName: entry.stage_name || cleanStageName(entry.stage_label),
+        });
+      }
+    }
+  }
+
+  return [...byStage.values()].sort((a, b) => a.stageNumber - b.stageNumber);
+}
+
+function findLatestMatrixEntry(team, stageNumber) {
+  return team.lineup.find((entry) => entry.stage_number === stageNumber) ?? null;
 }
 
 function buildTopStagePlacements(filteredResults) {
@@ -1907,6 +2072,180 @@ function renderLatestSplitItem(row, index) {
   `;
 }
 
+function renderLatestMatrixCell(entry) {
+  if (!entry) {
+    return `<span class="latest-matrix-empty">-</span>`;
+  }
+
+  const rankText = [
+    entry.oa_rank ? `O/A ${formatRank(entry.oa_rank)}` : "O/A -",
+    entry.category_rank ? `Kat ${formatRank(entry.category_rank)}` : "Kat -",
+  ].join(" · ");
+
+  return `
+    <div class="latest-matrix-cell">
+      <strong>${renderPersonLink(entry.person_id, entry.person_name, "matrix-person-link")}</strong>
+      <span>
+        <b>${escapeHtml(entry.split_text ?? "-")}</b>
+        <small>${escapeHtml(rankText)}</small>
+      </span>
+    </div>
+  `;
+}
+
+function formatLatestMatrixTeamMeta(team) {
+  const parts = [];
+  if (team.totalTimeText) {
+    parts.push(team.totalTimeText);
+  }
+  if (team.matrixNote) {
+    parts.push(team.matrixNote);
+  }
+  parts.push(team.matrixOnly ? team.classGroupLabel : formatArchiveHeading(team));
+  return parts.filter(Boolean).join(" · ");
+}
+
+function renderLatestMatrixTeamHeader(team) {
+  const body = `
+    <span>${escapeHtml(team.matrixName ?? team.teamName)}</span>
+    <small>${escapeHtml(formatLatestMatrixTeamMeta(team))}</small>
+  `;
+
+  if (team.matrixOnly) {
+    return `
+      <div class="latest-matrix-team-head latest-matrix-team-head-static">
+        ${body}
+      </div>
+    `;
+  }
+
+  return `
+    <button class="latest-matrix-team-head" type="button" ${renderTeamFocusAttributes(team)}>
+      ${body}
+    </button>
+  `;
+}
+
+function renderLatestMatrixTable(group) {
+  return `
+    <div class="latest-matrix-scroll" role="region" aria-label="${escapeHtml(group.title)} lagmatrise">
+      <table class="latest-matrix-table">
+        <thead>
+          <tr>
+            <th scope="col" class="latest-matrix-stage-col">Etappe</th>
+            ${group.teams
+              .map(
+                (team) => `
+                  <th scope="col">
+                    ${renderLatestMatrixTeamHeader(team)}
+                  </th>
+                `,
+              )
+              .join("")}
+          </tr>
+        </thead>
+        <tbody>
+          ${group.stageRows
+            .map(
+              (stage) => `
+                <tr>
+                  <th scope="row" class="latest-matrix-stage">
+                    <span>${String(stage.stageNumber).padStart(2, "0")}</span>
+                    <strong>${escapeHtml(stage.stageName)}</strong>
+                  </th>
+                  ${group.teams
+                    .map((team) => `<td>${renderLatestMatrixCell(findLatestMatrixEntry(team, stage.stageNumber))}</td>`)
+                    .join("")}
+                </tr>
+              `,
+            )
+            .join("")}
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" class="latest-matrix-stage">
+              <span>Sum</span>
+              <strong>Total</strong>
+            </th>
+            ${group.teams
+              .map(
+                (team) => `
+                  <td>
+                    <div class="latest-matrix-total">
+                      <strong>${escapeHtml(team.totalTimeText ?? "-")}</strong>
+                      <span>${escapeHtml(team.matrixNote ?? formatRank(team.teamRank))} · ${escapeHtml(team.classGroupLabel)}</span>
+                    </div>
+                  </td>
+                `,
+              )
+              .join("")}
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  `;
+}
+
+function renderLatestMatrixGroup(group) {
+  const bestText = group.bestTeam
+    ? `${group.bestTeam.totalTimeText ?? "-"} · ${formatRank(group.bestTeam.teamRank)}`
+    : "Ingen totaltid";
+  const hasOsi = group.filters.some((filter) => filter.organizationCode === "OSIF");
+  const clubAccent = hasOsi ? "accent-osi" : "accent-vidar";
+
+  return `
+    <article class="latest-matrix-group ${clubAccent}">
+      <div class="latest-matrix-group-head">
+        <div>
+          <p class="eyebrow">${escapeHtml(group.title)}</p>
+          <h3>${formatNumber(group.teams.length)} lag</h3>
+        </div>
+        <dl>
+          <div>
+            <dt>Beste</dt>
+            <dd>${escapeHtml(bestText)}</dd>
+          </div>
+          <div>
+            <dt>Etapper</dt>
+            <dd>${formatNumber(group.stageRows.length)}</dd>
+          </div>
+        </dl>
+      </div>
+      ${renderLatestMatrixTable(group)}
+    </article>
+  `;
+}
+
+function renderLatestYearMatrixSection() {
+  const snapshot = buildLatestYearSnapshot();
+  if (!snapshot) {
+    return "";
+  }
+
+  const groups = buildLatestMatrixGroups(snapshot.archiveItems);
+  if (!groups.length) {
+    return "";
+  }
+
+  return `
+    <section class="content-card section-card latest-matrix-section" id="lagmatrise-2026" aria-labelledby="lagmatrise-2026-title">
+      ${renderSectionHeader({
+        eyebrow: `Regnearkvisning ${snapshot.latestYear}`,
+        title: "Årets lagmatrise",
+        id: "lagmatrise-2026-title",
+        meta: `<span>${formatNumber(snapshot.yearTeams.length)} lag · ${formatNumber(snapshot.yearResults.length)} etapper</span>`,
+      })}
+      <p class="matrix-intro">
+        Kompakt oversikt inspirert av 2025-arket: én blokk for hver klubb/kjønn-gruppe, én kolonne per lag
+        og alle 15 etapper nedover. Klikk på et lagnavn for å åpne laget i lagarkivet.
+      </p>
+      <div class="latest-matrix-grid">
+        ${groups.map((group) => renderLatestMatrixGroup(group)).join("")}
+      </div>
+    </section>
+  `;
+}
+
 function renderLatestYearSection() {
   const snapshot = buildLatestYearSnapshot();
   if (!snapshot) {
@@ -1932,7 +2271,7 @@ function renderLatestYearSection() {
           <p class="eyebrow">Nytt i ${escapeHtml(snapshot.latestYear)}</p>
           <h2 id="nytt-2026-title">${escapeHtml(snapshot.latestYear)}-resultatene ligger først</h2>
           <p>
-            Årets SK Vidar-lag er importert fra Ultimate-resultatene, med navnealiaser samlet inn i
+            Årets SK Vidar- og OSI-lag er importert fra Ultimate-resultatene, med navnealiaser samlet inn i
             de eksisterende personprofilene.
           </p>
         </div>
@@ -3513,6 +3852,7 @@ function render() {
       ${renderHeader()}
       <main id="main-content">
         ${renderLatestYearSection()}
+        ${renderLatestYearMatrixSection()}
         ${renderHero(filteredResults, filteredTeams)}
         ${renderFilterPanel(filteredResults, filteredTeams)}
         ${renderSearchPanel(searchResults)}

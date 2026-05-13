@@ -12,7 +12,7 @@
     "preview": "astro preview --host 127.0.0.1"
   },
   "dependencies": {
-    "astro": "^5.9.4"
+    "astro": "^6.1.10"
   },
   "devDependencies": {}
 }

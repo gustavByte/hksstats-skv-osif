@@ -98,6 +98,20 @@ TEAM_RECORD_CORRECTIONS = {
     },
 }
 
+# Same-name runners that must stay as separate HKS profiles. The workbook keeps
+# the source name unchanged; these overrides only affect identity grouping.
+MANUAL_PERSON_SPLITS: dict[tuple[int, str, str, str, int, str], dict[str, Any]] = {
+    (2024, "SKV", "SeniorSKV", "Sk Vidar senior 3 2024", 10, "Kristian Myhre"): {
+        "identity_key": "Kristian Myhre|hks-2024-skv-senior-3-stage-10",
+        "canonical_name": "Kristian Myhre",
+        "profile_disambiguator": "2024",
+        "profile_note": "2024-resultatet er skilt ut som egen HKS-profil.",
+        "slug": "kristian-myhre-2024",
+        "global_person_id": "kristian_myhre_2024",
+        "testlop_auto_link": False,
+    },
+}
+
 ORGANIZATIONS = {
     "SKV": {"name": "SK Vidar", "short_name": "SKV"},
     "OSIF": {"name": "OSI Friidrett", "short_name": "OSIF"},
@@ -160,6 +174,17 @@ class ResultRecord:
     split_seconds: int | None
     oa_rank: int | None
     category_rank: int | None
+
+
+@dataclass(frozen=True)
+class PersonIdentity:
+    identity_key: str
+    canonical_name: str
+    profile_disambiguator: str | None = None
+    profile_note: str | None = None
+    slug: str | None = None
+    global_person_id: str | None = None
+    testlop_auto_link: bool = True
 
 
 def ensure_directories() -> None:
@@ -805,6 +830,61 @@ def write_review_file(suggestions: list[dict[str, Any]]) -> list[dict[str, Any]]
     return rows
 
 
+def build_approved_name_map(review_rows: list[dict[str, Any]]) -> dict[str, str]:
+    approved_map: dict[str, str] = {}
+    for row in review_rows:
+        raw_name = row["raw_name"].strip()
+        target = row["suggested_canonical_name"].strip()
+        decision = row["decision"].strip().lower()
+        if raw_name and target and decision in {"approve", "approved"}:
+            approved_map[raw_name] = target
+    return approved_map
+
+
+def get_manual_person_split(result: ResultRecord) -> dict[str, Any] | None:
+    if not result.raw_name:
+        return None
+    return MANUAL_PERSON_SPLITS.get(
+        (
+            result.year,
+            result.organization_code,
+            result.class_code,
+            result.team_name,
+            result.stage_number,
+            result.raw_name,
+        )
+    )
+
+
+def resolve_result_identity(result: ResultRecord, approved_map: dict[str, str]) -> PersonIdentity | None:
+    if not result.raw_name:
+        return None
+
+    override = get_manual_person_split(result)
+    if override:
+        canonical_name = str(override.get("canonical_name") or approved_map.get(result.raw_name, result.raw_name))
+        return PersonIdentity(
+            identity_key=str(override.get("identity_key") or canonical_name),
+            canonical_name=canonical_name,
+            profile_disambiguator=override.get("profile_disambiguator"),
+            profile_note=override.get("profile_note"),
+            slug=override.get("slug"),
+            global_person_id=override.get("global_person_id") or stable_global_person_id(canonical_name),
+            testlop_auto_link=bool(override.get("testlop_auto_link", True)),
+        )
+
+    canonical_name = approved_map.get(result.raw_name, result.raw_name)
+    return PersonIdentity(
+        identity_key=canonical_name,
+        canonical_name=canonical_name,
+        global_person_id=stable_global_person_id(canonical_name),
+    )
+
+
+def alias_key_for_identity(identity_key: str, raw_name: str) -> str:
+    return f"{identity_key}\u001f{raw_name}"
+
+
 def create_schema(connection: sqlite3.Connection) -> None:
     connection.executescript(
         """
@@ -833,14 +913,19 @@ def create_schema(connection: sqlite3.Connection) -> None:
         CREATE TABLE people (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             person_key TEXT NOT NULL UNIQUE,
-            canonical_name TEXT NOT NULL UNIQUE,
+            canonical_name TEXT NOT NULL,
             normalized_name TEXT NOT NULL,
-            slug TEXT NOT NULL
+            slug TEXT NOT NULL,
+            profile_disambiguator TEXT,
+            profile_note TEXT,
+            global_person_id TEXT NOT NULL UNIQUE,
+            testlop_auto_link INTEGER NOT NULL DEFAULT 1
         );
 
         CREATE TABLE person_aliases (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            alias_name TEXT NOT NULL UNIQUE,
+            alias_key TEXT NOT NULL UNIQUE,
+            alias_name TEXT NOT NULL,
             normalized_name TEXT NOT NULL,
             person_id INTEGER NOT NULL REFERENCES people(id),
             review_status TEXT NOT NULL DEFAULT 'seed'
@@ -923,51 +1008,92 @@ def build_database(
             (code, meta["label"], meta["official_label"], meta["organization"], meta["sort_order"]),
         )
 
-    raw_names = sorted({result.raw_name for result in results if result.raw_name})
-    canonical_names = sorted(
-        {approved_map.get(raw_name, raw_name) for raw_name in raw_names} | set(approved_map.values())
-    )
+    person_definitions: dict[str, PersonIdentity] = {}
+    alias_definitions: dict[str, tuple[str, str, str]] = {}
+
+    for result in results:
+        identity = resolve_result_identity(result, approved_map)
+        if not identity or not result.raw_name:
+            continue
+        person_definitions.setdefault(identity.identity_key, identity)
+        alias_key = alias_key_for_identity(identity.identity_key, result.raw_name)
+        alias_status = "approved" if result.raw_name in approved_map else "seed"
+        alias_definitions.setdefault(alias_key, (result.raw_name, identity.identity_key, alias_status))
+
+    for canonical_name in sorted(set(approved_map.values())):
+        person_definitions.setdefault(
+            canonical_name,
+            PersonIdentity(
+                identity_key=canonical_name,
+                canonical_name=canonical_name,
+                global_person_id=stable_global_person_id(canonical_name),
+            ),
+        )
+
     person_ids: dict[str, int] = {}
     alias_ids: dict[str, int] = {}
     used_person_keys: set[str] = set()
     slug_counts: defaultdict[str, int] = defaultdict(int)
     person_slugs: dict[str, str] = {}
 
-    for canonical_name in canonical_names:
-        base_slug = slugify_name(canonical_name)
+    sorted_identities = sorted(
+        person_definitions.values(),
+        key=lambda identity: (identity.canonical_name, identity.profile_disambiguator or "", identity.identity_key),
+    )
+
+    for identity in sorted_identities:
+        base_slug = identity.slug or slugify_name(identity.canonical_name)
         slug_counts[base_slug] += 1
-        person_slugs[canonical_name] = (
+        person_slugs[identity.identity_key] = (
             base_slug if slug_counts[base_slug] == 1 else f"{base_slug}-{slug_counts[base_slug]}"
         )
 
-    for canonical_name in canonical_names:
+    for identity in sorted_identities:
         key_length = 10
-        person_key = stable_person_id(canonical_name, key_length)
+        person_key = stable_person_id(identity.identity_key, key_length)
         while person_key in used_person_keys:
             key_length += 2
-            person_key = stable_person_id(canonical_name, key_length)
+            person_key = stable_person_id(identity.identity_key, key_length)
         used_person_keys.add(person_key)
         cursor = connection.execute(
-            "INSERT INTO people (person_key, canonical_name, normalized_name, slug) VALUES (?, ?, ?, ?)",
-            (person_key, canonical_name, normalize_name(canonical_name), person_slugs[canonical_name]),
-        )
-        person_ids[canonical_name] = int(cursor.lastrowid)
-
-    for raw_name in raw_names:
-        canonical_name = approved_map.get(raw_name, raw_name)
-        cursor = connection.execute(
             """
-            INSERT INTO person_aliases (alias_name, normalized_name, person_id, review_status)
-            VALUES (?, ?, ?, ?)
+            INSERT INTO people (
+                person_key, canonical_name, normalized_name, slug, profile_disambiguator,
+                profile_note, global_person_id, testlop_auto_link
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
-                raw_name,
-                normalize_name(raw_name),
-                person_ids[canonical_name],
-                "approved" if raw_name in approved_map else "seed",
+                person_key,
+                identity.canonical_name,
+                normalize_name(identity.canonical_name),
+                person_slugs[identity.identity_key],
+                identity.profile_disambiguator,
+                identity.profile_note,
+                identity.global_person_id or stable_global_person_id(identity.canonical_name),
+                1 if identity.testlop_auto_link else 0,
             ),
         )
-        alias_ids[raw_name] = int(cursor.lastrowid)
+        person_ids[identity.identity_key] = int(cursor.lastrowid)
+
+    for alias_key, (raw_name, identity_key, alias_status) in sorted(
+        alias_definitions.items(),
+        key=lambda item: (item[1][0], item[1][1]),
+    ):
+        cursor = connection.execute(
+            """
+            INSERT INTO person_aliases (alias_key, alias_name, normalized_name, person_id, review_status)
+            VALUES (?, ?, ?, ?, ?)
+            """,
+            (
+                alias_key,
+                raw_name,
+                normalize_name(raw_name),
+                person_ids[identity_key],
+                alias_status,
+            ),
+        )
+        alias_ids[alias_key] = int(cursor.lastrowid)
 
     stage_ids: dict[tuple[int, str, str, int], int] = {}
     for result in sorted(results, key=lambda item: (item.year, item.class_code, item.division, item.stage_number)):
@@ -1012,6 +1138,8 @@ def build_database(
     for result in results:
         team_key = (result.year, result.source_sheet, result.header_row, result.group_index)
         stage_key = (result.year, result.class_code, result.division, result.stage_number)
+        identity = resolve_result_identity(result, approved_map)
+        alias_key = alias_key_for_identity(identity.identity_key, result.raw_name) if identity and result.raw_name else None
         connection.execute(
             """
             INSERT INTO results (
@@ -1024,7 +1152,7 @@ def build_database(
                 team_ids[team_key],
                 stage_ids[stage_key],
                 result.raw_name,
-                alias_ids.get(result.raw_name) if result.raw_name else None,
+                alias_ids.get(alias_key) if alias_key else None,
                 result.split_text,
                 result.split_seconds,
                 result.oa_rank,
@@ -1037,17 +1165,6 @@ def build_database(
 
     connection.commit()
     connection.close()
-
-
-def build_approved_name_map(review_rows: list[dict[str, Any]]) -> dict[str, str]:
-    approved_map: dict[str, str] = {}
-    for row in review_rows:
-        raw_name = row["raw_name"].strip()
-        target = row["suggested_canonical_name"].strip()
-        decision = row["decision"].strip().lower()
-        if raw_name and target and decision in {"approve", "approved"}:
-            approved_map[raw_name] = target
-    return approved_map
 
 
 def load_testlop_people() -> list[dict[str, Any]]:
@@ -1100,7 +1217,9 @@ def build_identity_model(
         testlop_person_id: str | None = None
         link_status = "confirmed"
 
-        if len(exact_matches) == 1:
+        if not person.get("testlop_auto_link", 1):
+            link_status = "separate_hks_profile"
+        elif len(exact_matches) == 1:
             testlop_person = exact_matches[0]
             testlop_person_id = str(testlop_person["personId"])
             confirmed_by_hks_id[hks_person_id] = {
@@ -1158,7 +1277,7 @@ def build_identity_model(
 
         global_people.append(
             {
-                "global_person_id": stable_global_person_id(canonical_name),
+                "global_person_id": person.get("global_person_id") or stable_global_person_id(canonical_name),
                 "canonical_name": canonical_name,
                 "hks_person_id": hks_person_id,
                 "testlop_person_id": testlop_person_id,
@@ -1183,14 +1302,18 @@ def build_stage_honours(
             continue
         if result.split_seconds is None:
             continue
+        identity = resolve_result_identity(result, approved_map)
+        if not identity:
+            continue
         record = record_lookup.get((result.division, result.stage_label), {})
         percent_of_record = None
         if record.get("record_seconds"):
             percent_of_record = round(record["record_seconds"] / result.split_seconds * 100, 1)
         grouped[(result.organization_code, result.division, result.stage_number, result.stage_label)].append(
             {
-                "person_id": stable_person_id(approved_map.get(result.raw_name, result.raw_name)),
-                "person_name": approved_map.get(result.raw_name, result.raw_name),
+                "person_id": stable_person_id(identity.identity_key),
+                "person_name": identity.canonical_name,
+                "profile_disambiguator": identity.profile_disambiguator,
                 "raw_name": result.raw_name,
                 "split_text": result.split_text,
                 "split_seconds": result.split_seconds,
@@ -1449,6 +1572,10 @@ def export_site_data(
                 p.person_key AS person_id,
                 p.canonical_name,
                 p.slug,
+                p.profile_disambiguator,
+                p.profile_note,
+                p.global_person_id,
+                p.testlop_auto_link,
                 COUNT(r.id) AS appearances,
                 COUNT(DISTINCT t.year) AS seasons,
                 COUNT(DISTINCT t.team_name) AS teams,
@@ -1531,6 +1658,10 @@ def export_site_data(
     )
 
     for row in people_rows:
+        profile_disambiguator = row.pop("profile_disambiguator", None)
+        profile_note = row.pop("profile_note", None)
+        global_person_id = row.pop("global_person_id", None)
+        row.pop("testlop_auto_link", None)
         person_id = row["person_id"]
         alias_rows = aliases_by_person.get(person_id, [])
         raw_names = sorted({alias["alias_name"] for alias in alias_rows})
@@ -1541,7 +1672,11 @@ def export_site_data(
         row["testlop_profile_path"] = (
             f'{TESTLOP_PROFILE_ROOT}/{row["testlop_person_id"]}/' if row["testlop_person_id"] else None
         )
-        row["global_person_id"] = stable_global_person_id(row["canonical_name"])
+        row["global_person_id"] = global_person_id or stable_global_person_id(row["canonical_name"])
+        if profile_disambiguator:
+            row["profile_disambiguator"] = profile_disambiguator
+        if profile_note:
+            row["profile_note"] = profile_note
         row["identity_status"] = "confirmed"
         row["aliases"] = alias_rows
         row["raw_names"] = raw_names

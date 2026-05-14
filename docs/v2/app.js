@@ -1,6 +1,6 @@
 const app = document.querySelector("#app");
 
-const DATA_VERSION = "2026-05-10-miks-complete";
+const DATA_VERSION = "2026-05-14-kristian-myhre-split";
 const REPOSITORY_URL = "https://github.com/gustavByte/hksstats-skv-osif";
 const ASSET_ROOT_URL = new URL("../public/assets/v2/", import.meta.url);
 const DATA_URL = new URL("../public/data/site-data.json", import.meta.url);
@@ -497,16 +497,28 @@ function getPersonUrlById(personId) {
   return siteUrl(person.profile_path || `person/${person.profile_slug || person.slug}/`);
 }
 
+function renderPersonNameWithDisambiguator(person, query = "", highlight = false) {
+  const name = highlight ? highlightMatch(person.canonical_name, query) : escapeHtml(person.canonical_name);
+  const disambiguator = person.profile_disambiguator
+    ? `<span class="person-disambiguator">${escapeHtml(person.profile_disambiguator)}</span>`
+    : "";
+  return `${name}${disambiguator}`;
+}
+
 function renderPersonLink(personId, label, className = "person-link") {
   if (!label) {
     return `<span class="${escapeHtml(className)} person-link-muted">Ukjent løper</span>`;
   }
+  const person = getPersonById(personId);
   const href = getPersonUrlById(personId);
   const safeLabel = escapeHtml(label);
+  const disambiguator = person?.profile_disambiguator
+    ? `<span class="person-link-disambiguator">${escapeHtml(person.profile_disambiguator)}</span>`
+    : "";
   if (!href) {
-    return `<span class="${escapeHtml(className)}">${safeLabel}</span>`;
+    return `<span class="${escapeHtml(className)}">${safeLabel}${disambiguator}</span>`;
   }
-  return `<a class="${escapeHtml(className)}" href="${escapeHtml(href)}">${safeLabel}</a>`;
+  return `<a class="${escapeHtml(className)}" href="${escapeHtml(href)}">${safeLabel}${disambiguator}</a>`;
 }
 
 function getCurrentRoute() {
@@ -1504,6 +1516,8 @@ function getPersonNameCandidates(person) {
   const aliases = (person.aliases ?? []).map((alias) => alias.alias_name);
   return [
     person.canonical_name,
+    person.profile_disambiguator,
+    person.profile_note,
     ...(person.raw_names ?? []),
     ...aliases,
     ...(person.search_names ?? []),
@@ -1705,7 +1719,7 @@ function renderPersonResultCard(person, query, variant = "person") {
     <article class="search-person-card ${variant === "suggestion" ? "is-suggestion" : ""}">
       <div class="search-person-main">
         <span class="search-match-label">${escapeHtml(matchLabel)}</span>
-        <h3>${highlightMatch(person.canonical_name, query)}</h3>
+        <h3>${renderPersonNameWithDisambiguator(person, query, true)}</h3>
         <p>${escapeHtml(clubs)} · ${formatNumber(person.appearances ?? 0)} HKS-starter · ${formatNumber(
           person.seasons ?? person.years?.length ?? 0,
         )} sesonger</p>
@@ -3332,7 +3346,7 @@ function renderPersonProfile(person) {
       <div class="profile-hero">
         <div class="profile-title-block">
           <p class="eyebrow">Personprofil</p>
-          <h1 id="profile-title">${escapeHtml(person.canonical_name)}</h1>
+          <h1 id="profile-title">${renderPersonNameWithDisambiguator(person)}</h1>
           <p>
             ${escapeHtml((person.organizations ?? []).map(getClubName).join(" / ") || "HKS-person")}
             · ${escapeHtml(person.identity_status ?? "confirmed")}

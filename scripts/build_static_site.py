@@ -98,12 +98,15 @@ def generate_route_shells(dist_dir: Path) -> None:
         profile_slug = person.get("profile_slug")
         if not profile_slug:
             continue
+        page_title = f'{person.get("canonical_name", "Person")} | HKSstats'
+        if person.get("profile_disambiguator"):
+            page_title = f'{person.get("canonical_name", "Person")} ({person["profile_disambiguator"]}) | HKSstats'
         target = dist_dir / "person" / profile_slug / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(
             render_app_shell(
                 "../../",
-                f'{person.get("canonical_name", "Person")} | HKSstats',
+                page_title,
                 "Personprofil med HKS-resultater, aliaser, klubbhistorikk og testløp-kobling.",
             ),
             encoding="utf-8",
